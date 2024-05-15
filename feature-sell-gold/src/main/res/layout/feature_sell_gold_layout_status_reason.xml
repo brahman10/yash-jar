@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMoneyCredited"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:drawableStart="@drawable/feature_sell_gold_ic_auto_flash"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/feature_sell_gold_money_credited" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyCredited" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvSelectReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:background="@drawable/feature_sell_gold_bg_rounded_3c3357_10dp"
+        app:layout_constraintTop_toBottomOf="@id/line2">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSelectReason"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/feature_sell_gold_select_reason" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReasons"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            tools:orientation="horizontal"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:scrollbarTrackVertical="@drawable/feature_sell_gold_scroll_bar_track"
+            android:scrollbarThumbVertical="@drawable/feature_sell_gold_scroll_bar_thumb"
+            tools:layout_editor_absoluteX="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSelectReason"
+            tools:listitem="@layout/feature_sell_gold_cell_reason" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_duo"
+    app:startDestination="@id/featureDuoDetailFragmentV2">
+
+    <fragment
+        android:id="@+id/featureDuoDetailFragmentV2"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.duo_group_detail.v2.DuoGroupDetailFragmentV2"
+        android:label="FeatureDuoDetailFragment"
+        tools:layout="@layout/feature_duo_detail_fragment_v2">
+
+        <argument
+            android:name="groupID"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_featureDuoDetailFragment_to_renameGroupFragment"
+            app:destination="@id/renameGroupFragment" />
+        <action
+            android:id="@+id/action_featureDuoDetailFragment_to_deleteGroupFragment2"
+            app:destination="@id/deleteGroupFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/featureDuoDetailFragment"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.duo_group_detail.DuoGroupDetailFragment"
+        android:label="FeatureDuoDetailFragment"
+        tools:layout="@layout/feature_duo_detail_fragment_v2">
+
+        <argument
+            android:name="groupID"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_featureDuoDetailFragment_to_renameGroupFragment"
+            app:destination="@id/renameGroupFragment" />
+        <action
+            android:id="@+id/action_featureDuoDetailFragment_to_deleteGroupFragment2"
+            app:destination="@id/deleteGroupFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/duosList"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.duo_list.DuosListFragment"
+        android:label="DuosList"
+        tools:layout="@layout/feature_duo_duo_list">
+        <deepLink app:uri="android-app://com.jar.app/duoList" />
+        <action
+            android:id="@+id/action_duosList_to_featureDuoDetailFragment"
+            app:destination="@id/featureDuoDetailFragmentV2" />
+        <action
+            android:id="@+id/action_duosList_to_renameGroupFragment2"
+            app:destination="@id/renameGroupFragment" />
+        <action
+            android:id="@+id/action_duosList_to_deleteGroupFragment2"
+            app:destination="@id/deleteGroupFragment2" />
+        <action
+            android:id="@+id/action_duosList_to_pendingInviteListFragment"
+            app:destination="@id/pendingInviteListFragment" />
+        <action
+            android:id="@+id/action_duosList_to_duoOnIntroStoryFragment"
+            app:destination="@id/duoOnIntroStoryFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/renameGroupFragment"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.rename.DuoRenameGroupFragment"
+        android:label="RenameGroupFragment"
+        tools:layout="@layout/feature_duo_rename_group">
+
+        <argument
+            android:name="groupID"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="groupName"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+    <dialog
+        android:id="@+id/deleteGroupFragment2"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.delete.DuoDeleteGroupFragment"
+        android:label="DeleteGroupFragment"
+        tools:layout="@layout/feature_duo_fragment_delete_group">
+        <argument
+            android:name="groupID"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+    <fragment
+        android:id="@+id/pendingInviteListFragment"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.pending_invites.PendingInviteListFragment"
+        android:label="PendingInviteListFragment"
+        tools:layout="@layout/feature_duo_fragment_pending_invite_list">
+        <deepLink app:uri="android-app://com.jar.app/duoPendingInviteList" />
+        <action
+            android:id="@+id/action_pendingInviteListFragment_to_duoOnIntroStoryFragment"
+            app:destination="@id/duoOnIntroStoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duoOnIntroStoryFragment"
+        android:name="com.jar.app.feature_jar_duo.impl.ui.duo_intro_story.DuoOnIntroStoryFragment"
+        android:label="DuoOnIntroStoryFragment"
+        tools:layout="@layout/feature_duo_fragment_intro_story">
+
+        <deepLink app:uri="android-app://com.jar.app/duoIntroStory?fromScreen={fromScreen}&amp;pendingInvites={pendingInvites}&amp;duoGroups={duoGroups}&amp;hasContactSynced={hasContactSynced}"/>
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="pendingInvites"
+            app:argType="integer"
+            app:nullable="false"
+            android:defaultValue="0"/>
+
+        <argument
+            android:name="duoGroups"
+            app:argType="integer"
+            app:nullable="false"
+            android:defaultValue="0"/>
+        <argument
+            android:name="hasContactSynced"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+        <action
+            android:id="@+id/action_duoOnIntroStoryFragment_to_duosList"
+            app:destination="@id/duosList" />
+    </fragment>
+</navigation>

@@ -1,0 +1,31 @@
+package com.jar.app.feature_buy_gold_v2.shared.domain.event
+
+object RewardsEventKey {
+    const val Shown_rewards_Section = "Shown_Rewards section"
+    const val Tab = "Tab"
+    const val Jar = "Jar"
+    const val Other_Brand = "Other Brand"
+    const val ShownSpinRewardsScreen = "ShownSpinRewardsScreen"
+    const val Screen = "Screen"
+    const val Offer_List = "Offer List"
+    const val Feature_type = "Feature_type"
+    const val spin_and_win_Screen = " spin_and_win Screen"
+    const val Jackpot_OtherBrand = "Jackpot_OtherBrand"
+    const val ClickedButtonRewardsSection = "ClickedButtonRewardsSection"
+    const val Go_to_Spin = " Go to Spin"
+    const val Jar_Coupon = " Jar coupon"
+    const val Brand_Coupon = "Other brand coupon"
+    const val CTA = "CTA"
+    const val Clicked_WMPostOrderScreen ="Clicked_WMPostOrderScreen"
+    const val Unlock_more_cards ="Unlock_more_cards"
+    const val Shown_WMPostOrderScreen ="Shown_WMPostOrderScreen"
+    const val cards_left ="cards_left"
+    const val days_left ="days_left"
+    const val target_cards = "target_cards"
+    const val card_copy_primary = "card_copy_primary"
+    const val card_copy_secondary = "card_copy_secondary"
+    const val card_copy_tertiary = "card_copy_tertiary"
+    const val Active_Coupons_Title = "Active_Coupons_Title"
+    const val Coupon_Title_Clicked = "Coupon_Title_Clicked"
+
+}

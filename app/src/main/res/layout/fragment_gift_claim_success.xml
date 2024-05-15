@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGiftForYou"
+        style="@style/BigTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="64dp"
+        android:text="@string/someone_has_sent_a_gift_for_you"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/goldAmountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@drawable/ic_yellow_frame"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtGiftForYou">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/goldAmount"
+            style="@style/BigTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="0.5gm Gold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:text="@string/_99_percent_24k_pure_gold"
+            android:textColor="@color/brown"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="@dimen/dimen_12dp"
+        android:background="@drawable/feature_gifting_rounded_voilet_grey_12dp"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintTop_toTopOf="@id/footer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/message"
+        style="@style/BigTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_black_bg_16dp"
+        android:gravity="start"
+        android:padding="@dimen/dimen_24dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/commonTxtColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goldAmountLayout"
+        tools:text="Message goes here" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnOk"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingHorizontal="36dp"
+        app:buttonText="@string/okay2"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginHorizontal="@dimen/dimen_12dp"
+        android:background="@drawable/feature_gifting_ic_purple_gradient_v"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dimen_8dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

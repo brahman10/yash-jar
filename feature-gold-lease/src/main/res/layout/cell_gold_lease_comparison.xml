@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:gravity="center"
+    tools:background="@color/color_3c3457">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvComparisonTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/SmallTextViewStyle"
+        tools:text="Saved amount"
+        android:gravity="start"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvComparisonGoldXValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/CommonBoldTextViewStyle"
+        tools:text="₹10,000"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvComparisonGoldValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/CommonTextViewStyle"
+        tools:text="₹10,000"
+        android:gravity="center"
+        android:textColor="@color/color_D5CDF2"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

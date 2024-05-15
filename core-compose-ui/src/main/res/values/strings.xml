@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_compose_ui_success">Success</string>
+    <string name="core_compose_ui_in_progress">In Progress</string>
+    <string name="core_compose_ui_failed">Failed</string>
+    <string name="gold_price_is_about_to_change">Gold price is about to change (%1$s)</string>
+    <string name="gold_sell_price">Sell Price: ₹%.2f/gm</string>
+    <string name="gold_price_valid_for">Valid for: %1$s</string>
+    <string name="new_gold_price_fetched">New Gold Price Fetched!</string>
+</resources>

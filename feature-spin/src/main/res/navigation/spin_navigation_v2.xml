@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spin_navigation_v2"
+    app:startDestination="@id/spinGameFragmentV2">
+
+    <fragment
+        android:id="@+id/spinGameFragmentV2"
+        android:name="com.jar.app.feature_spin.impl.SpinGameFragmentV2"
+        android:label="SpinGameFragmentV2"
+        tools:layout="@layout/fragment_spin_v2">
+
+        <deepLink app:uri="android-app://com.jar.app/spinGameFragmentV2/{context}/{backStackId}" />
+        <deepLink app:uri="android-app://com.jar.app/spinGameFragmentV2/{context}" />
+        <argument
+            android:name="context"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="backStackId"
+            app:argType="string"
+            android:defaultValue=""
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_spinGameFragmentV2_to_spinGameIntro"
+            app:destination="@id/spinGameIntroPage" />
+
+        <action
+            android:id="@+id/action_spinGameFragmentV2_to_UseWinning"
+            app:destination="@id/useWinningDialog" />
+
+        <action
+            android:id="@+id/action_spinGameFragmentV2_to_resultJackpot"
+            app:destination="@id/resultJackpot" />
+        <action
+            android:id="@+id/action_spinGameFragmentV2_to_resultBrandJackpot"
+            app:destination="@id/resultBrandJackpot" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/spinGameIntroPage"
+        android:name="com.jar.app.feature_spin.impl.ui.SpinIntroFragment"
+        android:label="SpinIntro"
+        tools:layout="@layout/fragment_spin_intro">
+
+        <argument
+            android:name="spinIntro"
+            app:argType="com.jar.app.feature_spin.shared.domain.model.IntroPageModel"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/useWinningDialog"
+        android:name="com.jar.app.feature_spin.impl.ui.UseWinningsBottomSheet"
+        android:label="UseWinningsBottomSheet"
+        tools:layout="@layout/fragment_use_winnings">
+
+        <argument
+            android:name="useWinning"
+            app:argType="com.jar.app.feature_spin.shared.domain.model.UseWinningModel"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/resultJackpot"
+        android:name="com.jar.app.feature_spin.impl.ui.SpinJackpotFragment"
+        android:label="spinJackpotFragment"
+        tools:layout="@layout/fragment_spin_jackpot">
+
+        <argument
+            android:name="resultJackpot"
+            app:argType="com.jar.app.core_base.domain.model.JackpotResponse"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/resultBrandJackpot"
+        android:name="com.jar.app.feature_spin.impl.ui.SpinJackPotWithBrandCoupons"
+        android:label="spinJackpotFragment">
+
+        <argument
+            android:name="resultJackpot"
+            app:argType="com.jar.app.core_base.domain.model.SpinBrandCouponOutcomeResponse"
+            app:nullable="false" />
+    </dialog>
+
+</navigation>

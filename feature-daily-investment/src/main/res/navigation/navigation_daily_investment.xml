@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_daily_investment"
+    app:startDestination="@id/setupDailySavingsFragment">
+
+    <action
+        android:id="@+id/to_intermediateTransitionFragment"
+        app:destination="@id/intermediateTransitionFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_preDailyInvestmentAutopaySetupFragment"
+        app:destination="@id/preDailyInvestmentAutopaySetupFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_pauseOrDisableDailySavingsConfirmationBottomSheet"
+        app:destination="@id/pauseOrDisableDailySavingsConfirmationBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_pauseOrDisableDailySavingsConfirmationBottomSheetNew"
+        app:destination="@id/pauseOrDisableDailySavingsConfirmationBottomSheetNew"
+        app:launchSingleTop="true" />
+
+
+    <action
+        android:id="@+id/action_to_pauseDailySavings"
+        app:destination="@id/pauseDailySavingsDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/to_mandateBottomSheet"
+        app:destination="@id/dailySavingMandateBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_dailySavingOnboardingStoriesFragment"
+        app:destination="@id/dailySavingOnboardingStoriesFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/dailyInvestOnboardingFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.onboarding_setup.DailyInvestOnboardingFragment"
+        android:label="DailyInvestOnboardingFragment"
+        tools:layout="@layout/fragment_daily_invest_onboarding">
+
+        <argument
+            android:name="isFromOnboarding"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/dailyInvestOnboardingFragment/{isFromOnboarding}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupDailyInvestmentFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.setup_daily_investment.SetupDailyInvestmentFragment"
+        android:label="SetupDailyInvestmentFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_setup_daily_investment">
+
+        <deepLink app:uri="android-app://com.jar.app/setupDailyInvestment/{dailyInvestmentArgsData}" />
+
+        <action
+            android:id="@+id/action_setupDailyInvestmentFragment_to_autoPayRedirectionFragment"
+            app:destination="@id/autoPayRedirectionFragment" />
+
+        <argument
+            android:name="dailyInvestmentArgsData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_setupDailyInvestmentFragment_to_dailySavingsV2IntroductionBottomSheet"
+            app:destination="@id/dailySavingsV2IntroductionBottomSheet" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editDailySavingsFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.daily_savings_settings.DailySavingSettingsFragment"
+        android:label="DailySavingSettingsFragment"
+        tools:layout="@layout/feature_daily_savings_settings_fragment">
+
+        <action
+            android:id="@+id/action_to_pauseDailySavings"
+            app:destination="@id/pauseDailySavingsDialog"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_to_resumeDailySavings"
+            app:destination="@id/dailySavingsResumedFragment"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_to_updateSetupDailySavingsBottomSheet"
+            app:destination="@id/updateSetupDailySavingsBottomSheet"
+            app:launchSingleTop="true" />
+        <deepLink app:uri="android-app://com.jar.app/dailySavings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupDailySavingsFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.setup_daily_savings.SetupDailySavingsFragment"
+        tools:layout="@layout/feature_dailysavings_fragment_setup">
+
+        <action
+            android:id="@+id/action_to_updateSetupDailySavingsBottomSheet"
+            app:destination="@id/updateSetupDailySavingsBottomSheet"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_to_EditDailySavings"
+            app:destination="@id/editDailySavingsFragment"
+            app:launchSingleTop="true" />
+
+        <deepLink app:uri="android-app://com.jar.app/updateSetupDailySavingsBottomSheet" />
+        <action
+            android:id="@+id/action_setupDailySavingsFragment_to_setupDailyInvestmentFragment"
+            app:destination="@id/setupDailyInvestmentFragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/setupDailyInvestmentBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.SetupDailyInvestmentBottomSheet"
+        android:label="SetupDailyInvestmentBottomSheet"
+        tools:layout="@layout/feature_daily_investment_fragment_setup_daily_investment_bottom_sheet">
+
+        <argument
+            android:name="defaultAmount"
+            android:defaultValue="0"
+            app:argType="float"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/setupDailyInvestmentBottomSheet/{defaultAmount}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/pauseDailySavingsDialog"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.pause_dialog.PauseDailySavingsBottomSheet"
+        android:label="PauseDailySavingsDialog"
+        tools:layout="@layout/feature_daily_savings_pause_daily_savings_dialog" />
+
+    <dialog
+        android:id="@+id/pauseOrDisableDailySavingsConfirmationBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.disable_savings.PauseOrDisableDailySavingsConfirmationBottomSheet"
+        android:label="PauseOrDisableDailySavingsConfirmationBottomSheet"
+        tools:layout="@layout/feature_daily_savings_disable_daily_savings_confirmation_dialog">
+        <argument
+            android:name="isPaused"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+    </dialog>
+    <dialog
+        android:id="@+id/pauseOrDisableDailySavingsConfirmationBottomSheetNew"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.disable_savings.PauseOrDisableDailySavingsConfirmationBottomSheetNew"
+        android:label="PauseOrDisableDailySavingsConfirmationBottomSheet"
+        tools:layout="@layout/feature_daily_savings_disable_daily_savings_confirmation_dialog_new">
+        <argument
+            android:name="isPaused"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <argument
+            android:name="defaultAmount"
+            android:defaultValue="0"
+            app:argType="float"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_pauseOrDisableDailySavingsConfirmationBottomSheet_to_updateSetupDailySavingsBottomSheet"
+            app:destination="@id/updateSetupDailySavingsBottomSheet" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/dailySavingsResumedFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.daily_savings_resumed.DailySavingsResumedFragment"
+        android:label="DailySavingsResumed"
+        tools:layout="@layout/feature_daily_savings_fragment_daily_savings_resumed" />
+
+    <dialog
+        android:id="@+id/updateSetupDailySavingsBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.setup_savings.UpdateSetupDailySavingsBottomSheet"
+        android:label="UpdateSetupDailySavingsBottomSheet"
+        tools:layout="@layout/feature_daily_investment_fragment_setup_daily_investment_dialog">
+        <deepLink
+            android:id="@+id/deepLinkSetupDailySavingsDialog"
+            app:uri="android-app://com.jar.app/updateDailySavingBottomSheet/{defaultAmount}/{isFromCancellationFlow}" />
+
+        <argument
+            android:name="defaultAmount"
+            android:defaultValue="0"
+            app:argType="float"
+            app:nullable="false" />
+
+        <argument
+            android:name="isFromCancellationFlow"
+            app:argType="boolean"
+            app:nullable="false" />
+    </dialog>
+
+
+    <fragment
+        android:id="@+id/autoPayRedirectionFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.auto_pay_redirection.AutoPayRedirectionFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_autopay_redirection">
+
+        <argument
+            android:name="dailySavingAmount"
+            app:argType="float"
+            app:nullable="false" />
+
+        <argument
+            android:name="mandateAmount"
+            app:argType="float"
+            app:nullable="false" />
+
+        <argument
+            android:name="goldVolume"
+            app:argType="float"
+            app:nullable="false" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dailySavingSetupStatusFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.daily_saving_status.DailySavingSetupStatusFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_daily_saving_setup_status">
+
+        <argument
+            android:name="fetchAutoInvestStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="mandatePaymentResultFromSDK"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="dailySavingSetupStatusData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/dailySavingSetupStatus/{fetchAutoInvestStatusResponse}/{mandatePaymentResultFromSDK}/{dailySavingSetupStatusData}" />
+
+        <action
+            android:id="@+id/action_dailySavingSetupStatusFragment_to_editDailySavingsFragment"
+            app:destination="@id/editDailySavingsFragment" />
+        <action
+            android:id="@+id/action_dailySavingSetupStatusFragment_to_dailySavingEducationFragment"
+            app:destination="@id/dailySavingEducationFragment" />
+        <action
+            android:id="@+id/action_dailySavingSetupStatusFragment_to_setupDailyInvestmentFragment"
+            app:destination="@id/setupDailyInvestmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preSetupFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.pre_setup.PreDailySavingSetupFragment"
+        android:label="PreDailySavingSetupFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_pre_daily_saving_setup">
+        <argument
+            android:name="status"
+            android:defaultValue="SUCCESS"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/preSetupFragment/{status}" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/intermediateTransitionFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.intermediate_transition.IntermediateTransitionFragment"
+        android:label="IntermediateTransitionFragment"
+        tools:layout="@layout/feature_daily_savings_fragment_intermediate_transition">
+        <argument
+            android:name="data"
+            app:argType="com.jar.app.feature_daily_investment.impl.domain.data.IntermediateTransitionScreenArgs"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/preDailyInvestmentAutopaySetupFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.pre_autopay.PreDailyInvestmentAutopaySetupFragment"
+        android:label="PreDailyInvestmentAutopaySetupFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_pre_autopay">
+        <deepLink app:uri="android-app://com.jar.app/preDailySavingAutopay/{flowType}/{dailySavingAmount}" />
+
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="dailySavingAmount"
+            app:argType="float"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailySavingEducationFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.education.DailySavingEducationFragment"
+        android:label="PreDailyInvestmentAutopaySetupFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_education">
+
+        <deepLink app:uri="android-app://com.jar.app/dailySavingEducation/{isDSSetupFlow}" />
+        <argument
+            android:name="isDSSetupFlow"
+            android:defaultValue="true"
+            app:argType="boolean"
+            app:nullable="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/updateDailySavingV2Fragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.update_ds_v2.UpdateDailySavingV2Fragment"
+        android:label="UpdateDailySavingV2Fragment"
+        tools:layout="@layout/feature_daily_investment_fragment_update_saving_v2">
+        <argument
+            android:name="flow"
+            android:defaultValue="Setup"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/updateDailySavingV2/{flow}" />
+    </fragment>
+    <fragment
+        android:id="@+id/dSSuccessStateFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.ds_setup_state.DSSuccessStateFragment"
+        android:label="DSSuccessStateFragment"
+        tools:layout="@layout/feature_daily_investment_fragment_ds_success_state">
+        <argument
+            android:name="flow"
+            android:defaultValue="Setup"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/dsSuccessState/{flow}" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailySavingsV2Fragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.daily_saving_setup_v2.DailySavingsV2Fragment"
+        android:label="DailySavingsV2Fragment"
+        tools:layout="@layout/feature_daily_investment_amount_selection">
+        <deepLink app:uri="android-app://com.jar.app/dailySavingAmountSelection/{featureFlowData}/{showIntroBottomSheet}/{fromAbandonFlow}/{clickTime}" />
+        <action
+            android:id="@+id/action_dailySavingsV2Fragment_to_dailySavingsBreakdown"
+            app:destination="@id/dailySavingsBreakdown" />
+        <action
+            android:id="@+id/action_dailySavingsV2Fragment_to_abandonScreenBottomSheet"
+            app:destination="@id/abandonScreenBottomSheet" />
+        <action
+            android:id="@+id/action_dailySavingsV2Fragment_to_editDailySavingValueBottomSheet"
+            app:destination="@id/editDailySavingValueBottomSheet" />
+        <argument
+            android:name="dsAmount"
+            android:defaultValue="0"
+            app:argType="float" />
+        <argument
+            android:name="dsTime"
+            android:defaultValue="3"
+            app:argType="integer" />
+        <argument
+            android:name="dsTotalGold"
+            android:defaultValue="0"
+            app:argType="float" />
+        <action
+            android:id="@+id/action_dailySavingsV2Fragment_to_genericFaqFragment"
+            app:destination="@id/genericFaqFragment" />
+        <argument
+            android:name="featureFlowData"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="showIntroBottomSheet"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="fromAbandonFlow"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:nullable="false"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_dailySavingsV2Fragment_to_dailySavingsV2IntroductionBottomSheet"
+            app:destination="@id/dailySavingsV2IntroductionBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/abandonScreenBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.abandonScreen.DailySavingsV2AbandonBottomSheet"
+        android:label="AbandonScreenBottomSheet"
+        tools:layout="@layout/feature_daily_investment_abandon_screen_bottom_sheet">
+
+        <argument
+            android:name="backstackId"
+            app:argType="integer"
+            app:nullable="false" />
+
+        <argument
+            android:name="isOnboardingFlow"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <deepLink app:uri="android-app://com.jar.app/dailySavingsAbandonScreenBottomSheet/{backstackId}/{isOnboardingFlow}" />
+    </dialog>
+    <dialog
+        android:id="@+id/dailySavingsBreakdown"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.ds_breakdown.DailySavingsV2BreakdownBottomSheet"
+        android:label="DailySavingsBreakdown"
+        tools:layout="@layout/feature_daily_investment_daily_savings_breakdown">
+        <argument
+            android:name="dsAmount"
+            app:argType="float"
+            app:nullable="false" />
+        <argument
+            android:name="dsTime"
+            app:argType="integer"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_dailySavingsBreakdown_to_dailySavingsV2Fragment"
+            app:destination="@id/dailySavingsV2Fragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/editDailySavingValueBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.ds_edit_amount.DailySavingsV2EditValueBottomSheet"
+        android:label="EditDailySavingValueBottomSheet"
+        tools:layout="@layout/feature_daily_saving_edit_amount_bottomsheet">
+        <argument
+            android:name="dsAmount"
+            app:argType="float"
+            app:nullable="false" />
+        <argument
+            android:name="dsTime"
+            app:argType="integer"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_editDailySavingValueBottomSheet_to_dailySavingsV2Fragment"
+            app:destination="@id/dailySavingsV2Fragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/genericFaqFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.faq.DailySavingsV2FaqFragment"
+        android:label="GenericFaqFragment"
+        tools:layout="@layout/core_ui_fragment_generic_faq" />
+
+    <dialog
+        android:id="@+id/dailySavingsV2IntroductionBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.ds_intro.DailySavingsV2IntroductionBottomSheet"
+        android:label="DailySavingsV2IntroductionBottomSheet"
+        tools:layout="@layout/feature_daily_investment_intro_bottomsheet" />
+
+    <dialog
+        android:id="@+id/dailySavingMandateBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.mandate.DailySavingMandateBottomSheet"
+        android:label="DailySavingMandateBottomSheet"
+        tools:layout="@layout/layout_daily_investment_mandate_bottomsheet">
+
+        <argument
+            android:name="dsAmount"
+            app:argType="float" />
+
+        <argument
+            android:name="containerFragmentId"
+            app:argType="integer" />
+
+        <deepLink app:uri="android-app://com.jar.app/dailyInvestMandateBottomSheet/{dsAmount}/{containerFragmentId}" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/dailySavingOnboardingStoriesFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.oboarding_stories.DailySavingOnboardingStoriesFragment"
+        android:label="DailySavingOnboardingFragment"
+        tools:layout="@layout/feature_daily_investment_onboarding_stories_fragment">
+        <deepLink app:uri="android-app://com.jar.app/dailySavingOnboardingStoriesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dailyInvestmentCustomOnboardingVariantsFragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.onboarding_setup.DailyInvestmentCustomOnboardingVariantsFragment"
+        android:label="DailyInvestmentCustomOnboardingVariantsFragment"
+        tools:layout="@layout/feature_daily_investment_custom_onboarding_variants">
+        <argument
+            android:name="version"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="fromOnboardingScreen"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:nullable="false"
+            app:argType="string" />
+        <deepLink app:uri="android-app://com.jar.app/dailyInvestOnboardingVariantFragment/{version}/{fromOnboardingScreen}/{fromScreen}/{clickTime}" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/setupDailyInvestmentBottomSheetV2"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.bottom_sheet.setup_daily_investment_v2.SetupDailyInvestmentBottomSheetV2"
+        tools:layout="@layout/feature_setup_daily_investment_bottomsheet_v2"
+        android:label="SetupDailyInvestmentBottomSheetV2">
+        <deepLink app:uri="android-app://com.jar.app/setupDailyInvestmentBottomSheetV2" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/updateDailySavingsV3Fragment"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.daily_savings_update_v3.UpdateDailySavingsV3Fragment"
+        android:label="UpdateDailySavingsV3Fragment">
+        <deepLink
+            app:uri="android-app://com.jar.app/updateDailySavingsV3Fragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/updateDailySavingsV3EditValueBottomSheet"
+        android:name="com.jar.app.feature_daily_investment.impl.ui.daily_savings_update_v3.UpdateDailySavingsV3EditValueBottomSheet"
+        android:label="UpdateDailySavingsV3EditValueBottomSheet">
+        <argument
+            android:name="dsAmount"
+            app:argType="float"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/updateDailySavingsFragmentEditValueBottomSheet/{dsAmount}" />
+    </dialog>
+</navigation>

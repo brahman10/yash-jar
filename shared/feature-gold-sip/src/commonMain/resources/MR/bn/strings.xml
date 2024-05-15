@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_gold_sip_label">সেভিংস প্ল্যান</string>
+    <string name="feature_gold_sip_setup_gold_sip">সেভিংস প্ল্যান সেট করুন</string>
+    <string name="feature_gold_sip_save_a_fixed_amount">সাপ্তাহিক অথবা মাসিক ভিত্তিতে একটা নির্দিষ্ট টাকার পরিমাণ সঞ্চয় করুন, এবং আপনার টাকাকে বাড়তে দেখুন</string>
+    <string name="feature_gold_sip_save_smart_with_gold_sips">সেভিংস প্ল্যানের সাথে স্মার্টভাবে সঞ্চয় করুন</string>
+    <string name="feature_gold_sip_setup_now">এখনই সেট করুন</string>
+    <string name="feature_gold_sip_powered_by">দ্বারা পরিচালিত</string>
+    <string name="feature_gold_sip_weekly">সাপ্তাহিক</string>
+    <string name="feature_gold_sip_monthly">মাসিক</string>
+    <string name="feature_gold_sip_weekly_saving_plan">সাপ্তাহিক সেভিংস প্ল্যান</string>
+    <string name="feature_gold_sip_monthly_saving_plan">মাসিক সেভিংস প্ল্যান</string>
+    <string name="feature_gold_sip_how_would_you_like_to_save_weekly">আপনি সপ্তাহে কত টাকা \nসঞ্চয় করতে চান?</string>
+    <string name="feature_gold_sip_how_would_you_like_to_save_monthly">আপনি মাসে কত টাকা \nসঞ্চয় করতে চান?</string>
+    <string name="feature_gold_sip_select_a_day_for_payment">\nপেমেন্ট করার জন্য একটা দিন নির্বাচন করুন</string>
+    <string name="feature_gold_sip_select_a_date_for_payment">\nপেমেন্ট করার জন্য একটা তারিখ নির্বাচন করুন</string>
+    <string name="feature_gold_sip_you_will_save_x_on_every"><![CDATA[আপনি সঞ্চয় করবেন <b><font color=\'#EBB46A\'>₹%d</font></b> প্রতি…]]></string>
+    <string name="feature_gold_sip_you_will_save_x_every_month_on"><![CDATA[আপনি সঞ্চয় করবেন <b><font color=\'#EBB46A\'>₹%d</font></b> প্রতি মাসে…]]></string>
+
+
+    <string name="feature_gold_sip_please_select_a_day_to_proceed">এগিয়ে যাওয়ার জন্য অনুগ্রহ করে একটা দিন নির্বাচন করুন</string>
+    <string name="feature_gold_sip_minimum_amount_required_to_setup_sip_is_x">সেভিংস প্ল্যান সেট করার জন্য যে ন্যূনতম টাকার পরিমাণ প্রয়োজন সেটা হলো %d</string>
+    <string name="feature_gold_sip_gold_sip_settings">সেভিংস প্ল্যানের সেটিংস</string>
+    <string name="feature_gold_sip_sip_details">সেভিংস প্ল্যানের বিবরণ</string>
+    <string name="feature_gold_sip_was_setup_on">সেভিংস প্ল্যান %s-তে সেট করা হয়েছে</string>
+    <string name="feature_gold_sip_auto_save_details">অটো-সেভের বিবরণ</string>
+    <string name="feature_gold_sip_money_will_be_debited_automatically">টাকা অটোমেটিকভাবে কেটে নেওয়া হবে</string>
+    <string name="feature_gold_sip_update_gold_sip">সেভিংস প্ল্যানকে আপডেট করুন</string>
+    <string name="feature_gold_sip_disable_gold_sip"><u>সেভিংস প্ল্যানকে নিষ্ক্রিয় করুন</u></string>
+    <string name="feature_gold_sip_update_sip_details">সেভিংস প্ল্যানের বিবরণকে আপডেট করুন</string>
+    <string name="feature_gold_sip_are_you_sure_you_want_to_disable_gold_sip">আপনি কি সত্যিই সেভিংস প্ল্যানকে নিষ্ক্রিয় করতে চান?</string>
+    <string name="feature_gold_sip_you_will_miss_out_on_saving">আপনি 24K সোনাতে বিনিয়োগ করতে পারবেন না!</string>
+    <string name="feature_gold_sip_disable_sip">সেভিংস প্ল্যানকে নিষ্ক্রিয় করুন</string>
+    <string name="feature_gold_sip_no_i_will_continue_saving">না, আমি সঞ্চয় করতে থাকবো</string>
+    <string name="feature_gold_sip_select_a_frequency">ফ্রিকোয়েন্সি নির্বাচন করুন</string>
+    <string name="feature_gold_sip_how_much_would_you_like_to_save">আপনি কত টাকা সঞ্চয় করতে চান?</string>
+    <string name="feature_gold_sip_minimum_value_for_weekly_sip_is_x">সাপ্তাহিক সেভিংস প্ল্যানের জন্য ন্যূনতম মূল্য হলো ₹%d</string>
+    <string name="feature_gold_sip_you_will_save_every_week_on">আপনি প্রতি সপ্তাহে এই দিনে সঞ্চয় করবেন …</string>
+    <string name="feature_gold_sip_you_will_save_every_month_on">আপনি প্রতি মাসে এই দিনে সঞ্চয় করবেন…</string>
+    <string name="feature_gold_sip_go_ahead">এগিয়ে যান</string>
+    <string name="feature_gold_sip_select_the_day_or_date">দিন/ তারিখ নির্বাচন করুন</string>
+    <string name="feature_gold_sip_you_can_save_up_to_x_per_week">আপনি প্রতি সপ্তাহে ₹%d পর্যন্ত সঞ্চয় করতে পারবেন</string>
+    <string name="feature_gold_sip_you_can_save_up_to_x_per_month">আপনি প্রতি মাসে ₹%d পর্যন্ত সঞ্চয় করতে পারবেন</string>
+    <string name="feature_gold_sip_you_will_be_required_to_provide_auto_save_permission_again">আপনার সেভিংস প্ল্যানে করা পরিবর্তনগুলোর ওপর ভিত্তি করে আপনাকে আবার অটো-সেভের জন্য অনুমতি দিতে হবে</string>
+    <string name="feature_gold_sip_yay_gold_sip_updated_successfully">বাহঃ… \nসেভিংস প্ল্যান সফলভাবে আপডেট করা হয়েছে!</string>
+    <string name="feature_gold_sip_yay_s_sip_setup_successfully">বাহঃ, %s সেভিংস প্ল্যান\n সফলভাবে সেট করা হয়েছে!</string>
+    <string name="feature_gold_sip_yay_gold_sip_has_been_resumed_successfully">বাহঃ… \nসেভিংস প্ল্যান সফলভাবে আবার চালু করা হয়েছে!</string>
+    <string name="feature_gold_sip_your_saving_will_continue_from_tomorrow">আপনার সঞ্চয় \nআগামীকাল থেকে চালু হবে</string>
+    <string name="feature_gold_sip_best">সেরা</string>
+    <string name="feature_gold_sip_you_are_just_a_step_away_from_setting_up_sip">আপনি সেভিংস প্ল্যান সেট করার থেকে মাত্র এক ধাপ দূরে আছেন</string>
+    <string name="feature_gold_sip_continue_setup">সেটআপ করা চালিয়ে যান</string>
+    <string name="feature_gold_sip_cancel_setup">সেটআপ ক্যান্সেল করুন</string>
+    <string name="feature_gold_sip_want_to_pause_instead">এর পরিবর্তে স্থগিত রাখতে চান</string>
+    <string name="feature_gold_sip_disabled">সেভিংস প্ল্যানকে নিষ্ক্রিয় করা হয়েছে</string>
+    <string name="feature_gold_sip_you_will_no_longer_be_saving_via_sip">আপনি আর সেভিংস প্ল্যানের মাধ্যমে সঞ্চয় করতে পারবেন না</string>
+    <string name="feature_gold_sip_paused">সেভিংস প্ল্যানকে স্থগিত রাখা হয়েছে</string>
+    <string name="feature_gold_sip_we_will_not_debiting_your_s_sip_got_the_next_s">আমরা পরবর্তী %s-এর জন্য আপনার %s সেভিংস প্ল্যানকে কেটে নেবো না</string>
+    <string name="feature_gold_sip_pause_gold_sip_for_next">পরবর্তী এত সময়ের জন্য সেভিংস প্ল্যানকে স্থগিত রাখুন…</string>
+    <string name="feature_gold_sip_updated_amount_will_be_debited_from_date_s">আপডেট করা টাকার পরিমাণ \n%s থেকে কেটে নেওয়া হবে</string>
+    <string name="feature_gold_sip_great_thanks">দারুণ! ধন্যবাদ</string>
+    <string name="feature_gold_sip_hmm_this_is_taking_a_bit_longer">হুম…\nএটা করতে একটু বেশি সময় লাগছে</string>
+    <string name="feature_gold_sip_as_soon_we_have_an_update_we_will_let_you_know">আমাদের কাছে কোনো আপডেট আসার সঙ্গে সঙ্গেই, আমরা\n আপনাকে জানাবো। \n\nচিন্তা করবেন না, আপনার টাকা সম্পূর্ণভাবে সুরক্ষিত আছে।</string>
+    <string name="feature_gold_sip_uh_oh_gold_sip_not_updated">ওহঃ\nসেভিংস প্ল্যান আপডেট করা হয়নি!</string>
+    <string name="feature_gold_sip_as_soon_as_we_have_update">আমাদের কাছে কোনো আপডেট আসার সঙ্গে সঙ্গেই, আমরা আপনাকে জানাবো।\n\n
+চিন্তা করবেন না, আপনার টাকা সম্পূর্ণভাবে সুরক্ষিত আছে।</string>
+    <string name="feature_gold_sip_hi_i_am_facing_some_issue_in_setting_up_my_gold_sip">নমস্কার, আমার সেভিংস প্ল্যানকে সেট করতে আমার কিছু সমস্যা হচ্ছে।</string>
+    <string name="feature_gold_sip_hi_i_am_facing_some_issue_in_updating_my_gold_sip_details">নমস্কার, আমার সেভিংস প্ল্যানের বিবরণ আপডেট করতে আমার কিছু সমস্যা হচ্ছে।</string>
+    <string name="feature_gold_sip_rs_1_will_be_debited_to_setup_auto_save">অটো-সেভ সেট করার জন্য ₹1 আপনার ব্যাংক অ্যাকাউন্ট থেকে কেটে নেওয়া হবে (ফেরতযোগ্য)।</string>
+    <string name="feature_gold_sip_x_will_be_saved_every_s_day_of_week">₹%d প্রতি %s-এ 24k খাঁটি সোনায় সঞ্চয় করা হবে</string>
+    <string name="feature_gold_sip_x_will_be_saved_every_s_day_of_month">₹%d প্রতি মাসের %s-এ 24k খাঁটি সোনায় সঞ্চয় করা হবে</string>
+    <string name="feature_gold_sip_amount">পরিমাণ</string>
+    <string name="feature_gold_sip_day">দিন</string>
+    <string name="feature_gold_sip_next_installment">পরবর্তী ইনস্টলমেন্ট</string>
+    <string name="feature_gold_sip_payment_from">থেকে পেমেন্ট</string>
+    <string name="feature_gold_sip_you_need_to_select_a_day_to_proceed">সেটআপ করতে এগিয়ে যাওয়ার জন্য আপনাকে একটা দিন নির্বাচন করতে হবে</string>
+    <string name="feature_gold_sip_uh_oh_gold_sip_setup_failed">ওহঃ\nসেভিংস প্ল্যানের সেটআপ সফল হয়নি!</string>
+    <string name="feature_gold_sip_your_attempt_to_setup_gold_sip_failed">আপনার সেভিংস প্ল্যান সেটআপ করার প্রচেষ্টা সফল হয়নি। অনুগ্রহ করে আবার চেষ্টা করবেন?</string>
+    <string name="feature_gold_sip_hold_up_gold_sip_setup_in_progress">অপেক্ষা করুন…\nসেভিংস প্ল্যান সেট করার কাজ চলছে</string>
+    <string name="feature_gold_sip_we_will_notify_you_as_soon_as_we_get_udpate"> আমরা আপডেট পাওয়ার সঙ্গে সঙ্গেই আপনাকে জানাবো।</string>
+    <string name="feature_gold_sip_pause_sip_for_next_1_month">আগামী 1 মাসের জন্য সেভিংস প্ল্যানকে স্থগিত রাখুন…</string>
+    <string name="feature_gold_sip_we_will_not_be_debiting_your_sip_for_next_month"> আমরা আগামী মাসের জন্য আপনার সেভিংস প্ল্যানের টাকা কেটে নেবো না</string>
+    <string name="feature_gold_sip_is_paused_for_next_s">সেভিংস প্ল্যান আগামী %s-এর জন্য স্থগিত রাখা হয়েছে</string>
+    <string name="feature_gold_sip_auto_resuming_on_s">অটোমেটিক চালু হয়ে যাবে: %s</string>
+    <string name="feature_gold_sip_resume_now">এখনই আবার চালু করুন</string>
+    <string name="feature_gold_sip_minimum_value_for_sip_is_x">ন্যূনতম মূল্য ₹%d হতে হবে</string>
+    <string name="feature_gold_sip_maximum_value_for_sip_is_x">সর্বোচ্চ মূল্য ₹%d হতে হবে</string>
+    <string name="feature_gold_sip_this_field_cannot_be_left_empty">এই ক্ষেত্রটা খালি রাখা যাবে না</string>
+    <string name="feature_gold_sip_rs_x_will_be_auto_saved_every_week_on_s">₹%d প্রতি সপ্তাহের %s-এ অটো সেভ করা হবে</string>
+    <string name="feature_gold_sip_rs_x_will_be_auto_saved_on_s_of_every_month">₹%d প্রতি মাসের %s-এ অটো সেভ করা হবে</string>
+    <string name="feature_gold_sip_uh_ho_s_gold_sip_setup_failed">ওহঃ! %s সেভিংস প্ল্যান সেটআপ করা সফল হয়নি!</string>
+    <string name="feature_gold_sip_if_your_money_was_debited">যদি আপনার টাকা কেটে নেওয়া হয় তাহলে চিন্তা করবেন না। আপনি 24 ঘন্টার মধ্যে এটা আপনার অ্যাকাউন্টে ফেরত পাবেন।</string>
+    <string name="feature_gold_sip_payment_still_in_progress">পেমেন্টের কাজ এখনো চলছে, অনুগ্রহ করে পরে চেষ্টা করুন</string>
+    <string name="feature_gold_sip_"></string>
+
+    <string name="feature_gold_sip_monday">সোমবার</string>
+    <string name="feature_gold_sip_tuesday">মঙ্গলবার</string>
+    <string name="feature_gold_sip_wednesday">বুধবার</string>
+    <string name="feature_gold_sip_thursday">বৃহস্পতিবার</string>
+    <string name="feature_gold_sip_friday">শুক্রবার</string>
+    <string name="feature_gold_sip_saturday">শনিবার</string>
+    <string name="feature_gold_sip_sunday">রবিবার</string>
+</resources>

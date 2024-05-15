@@ -1,0 +1,386 @@
+[
+  {
+    "key": "testing_new_key",
+    "value": "New RC Working"
+  },
+  {
+    "key": "whatsapp_num",
+    "value": 916366693874
+  },
+  {
+    "key": "max_device_limit",
+    "value": 5
+  },
+  {
+    "key": "min_gold_for_delivery",
+    "value": 0.5
+  },
+  {
+    "key": "auth_on_sell",
+    "value": false
+  },
+  {
+    "key": "show_gold_delivery_card",
+    "value": true
+  },
+  {
+    "key": "should_skip_local_cache",
+    "value": false
+  },
+  {
+    "key": "should_use_new_onboarding",
+    "value": true
+  },
+  {
+    "key": "terms_and_conditions_url",
+    "value": "https://www.myjar.app/terms-and-conditions"
+  },
+  {
+    "key": "privacy_policy_url",
+    "value": "https://www.myjar.app/privacy-policy"
+  },
+  {
+    "key": "initiate_truecaller_dialog_time_in_seconds",
+    "value": 5
+  },
+  {
+    "key": "show_help_support",
+    "value": true
+  },
+  {
+    "key": "help_and_support_url",
+    "value": "https://android.wiki.myjar.app"
+  },
+  {
+    "key": "help_and_support_multi_lang",
+    "value": false
+  },
+  {
+    "key": "minimum_sell_amount",
+    "value": 5
+  },
+  {
+    "key": "rating_dialog",
+    "value": "play_store"
+  },
+  {
+    "key": "show_rating_dialog",
+    "value": true
+  },
+  {
+    "key": "one_time_payment_gateway",
+    "value": "JUSPAY"
+  },
+  {
+    "key": "new_onboarding_story_data",
+    "value": "{\n            \"onboardingStories\": [\n            {\n            \"imageUrl\": \"https://d21tpkh2l1zb46.cloudfront.net/App_Images/screen_1.webp\",\n            \"title\": \"Fastest way to start\\nyour saving journey\"\n            },\n            {\n            \"imageUrl\": \"https://d21tpkh2l1zb46.cloudfront.net/App_Images/screen_2_new.webp\",\n            \"title\": \"Buy or Sell 99.5%\\nPure 24k Gold\"\n            },\n            {\n            \"imageUrl\": \"https://d21tpkh2l1zb46.cloudfront.net/App_Images/screen_3.webp\",\n            \"title\": \"Trusted by 1 crore \\nIndians\"\n            }\n            ]\n            }"
+  },
+  {
+    "key": "minimum_gold_buy_amount",
+    "value": 10
+  },
+  {
+    "key": "maximum_gold_buy_amount",
+    "value": 100000
+  },
+  {
+    "key": "no_of_days_for_past_messages",
+    "value": 3
+  },
+  {
+    "key": "no_of_days_for_historical_messages",
+    "value": 10
+  },
+  {
+    "key": "use_newstory_view",
+    "value": true
+  },
+  {
+    "key": "min_version_supported",
+    "value": 200
+  },
+  {
+    "key": "upi_apps_logo_url",
+    "value": "https://d21tpkh2l1zb46.cloudfront.net/UpiAppLogos/upiApps.webp"
+  },
+  {
+    "key": "bank_apps_logo_url",
+    "value": "https://d21tpkh2l1zb46.cloudfront.net/BankLogos/banks.png"
+  },
+  {
+    "key": "supported_api_apps",
+    "value": "com.phonepe.app,com.google.android.apps.nbu.paisa.user,net.one97.paytm"
+  },
+  {
+    "key": "onboarding_reminder_notification",
+    "value": false
+  },
+  {
+    "key": "double_savings_description",
+    "value": "Spin to double your most recent saving"
+  },
+  {
+    "key": "double_savings_title",
+    "value": "Double your savings"
+  },
+  {
+    "key": "should_use_finart",
+    "value": false
+  },
+  {
+    "key": "feature_gifting",
+    "value": true
+  },
+  {
+    "key": "should_show_upi_collect_flow",
+    "value": false
+  },
+  {
+    "key": "is_manual_payment_card_autopay_experiment_running",
+    "value": false
+  },
+  {
+    "key": "should_invoke_autopay_after_initial_daily_saving_setup",
+    "value": false
+  },
+  {
+    "key": "min_amount_to_initiate_penny_drop_in_autopay",
+    "value": 100
+  },
+  {
+    "key": "buy_gold_variant",
+    "value": "FAB"
+  },
+  {
+    "key": "referral_earning_description",
+    "value": "Refer and win upto ₹500"
+  },
+  {
+    "key": "min_amount_to_initiate_penny_drop_in_autoinvest",
+    "value": 100
+  },
+  {
+    "key": "workflow_type_for_autoinvest",
+    "value": "TRANSACTION"
+  },
+  {
+    "key": "should_show_video_for_autoinvest",
+    "value": false
+  },
+  {
+    "key": "round_off_amount",
+    "value": 20
+  },
+  {
+    "key": "setup_autopay_experiment_v2",
+    "value": false
+  },
+  {
+    "key": "setup_autopay_amount",
+    "value": 20
+  },
+  {
+    "key": "gold_transaction_primary_cta_action",
+    "value": "Invest More,dl.myjar.app/buyGold"
+  },
+  {
+    "key": "enable_only_manual_payment_experiment",
+    "value": false
+  },
+  {
+    "key": "is_vasooli_reminder_self",
+    "value": false
+  },
+  {
+    "key": "is_onboarding_daily_saving_autopay_experiment_running",
+    "value": false
+  },
+  {
+    "key": "autopay_provider",
+    "value": "PHONE_PE"
+  },
+  {
+    "key": "is_google_pay_supporting_all_banks_for_mandate_via",
+    "value": true
+  },
+  {
+    "key": "should_show_google_pay_for_mandate_if_no_other_app_present",
+    "value": true
+  },
+  {
+    "key": "mandate_supported_upi_apps",
+    "value": "com.phonepe.app,in.org.npci.upiapp,net.one97.paytm,com.google.android.apps.nbu.paisa.user"
+  },
+  {
+    "key": "should_filter_mandate_apps",
+    "value": false
+  },
+  {
+    "key": "is_daily_saving_single_card_experiment_running",
+    "value": false
+  },
+  {
+    "key": "get_setup_autopay_single_card_experiment_running_state",
+    "value": "NONE"
+  },
+  {
+    "key": "is_round_off_card_experiment_running",
+    "value": false
+  },
+  {
+    "key": "should_hide_digital_coin_skip_button",
+    "value": false
+  },
+  {
+    "key": "is_daily_saving_single_card_experiment_running",
+    "value": false
+  },
+  {
+    "key": "is_setup_autopay_single_card_experiment_running",
+    "value": false
+  },
+  {
+    "key": "is_onboarding_saving_plan_experiment_running",
+    "value": true
+  },
+  {
+    "key": "should_enable_sell_gold_identity_verification_updated",
+    "value": true
+  },
+  {
+    "key": "should_use_recommended_value_as_hint",
+    "value": false
+  },
+  {
+    "key": "should_show_quick_actions",
+    "value": false
+  },
+  {
+    "key": "should_show_pre_notification_card",
+    "value": false
+  },
+  {
+    "key": "quick_action_experiment_type",
+    "value": "HOME_QUICK_ACTION"
+  },
+  {
+    "key": "sip_subscription_type",
+    "value": "WEEKLY_SIP"
+  },
+  {
+    "key": "is_onboarding_skip_age_and_gender_experiment_running",
+    "value": false
+  },
+  {
+    "key": "should_show_daily_saving_experiment_v2",
+    "value": false
+  },
+  {
+    "key": "is_language_screen_experiment_running",
+    "value": false
+  },
+  {
+    "key": "should_show_spins_v2",
+    "value": false
+  },
+  {
+    "key": "show_new_ds_bottomsheet",
+    "value": false
+  },
+  {
+    "key": "should_ask_read_contact_permission",
+    "value": false
+  },
+  {
+    "key": "should_ask_read_contact_permission",
+    "value": false
+  },
+  {
+    "key": "update_ds_v2_month_count",
+    "value": 6
+  },
+  {
+    "key": "is_detect_phone_number_new_api",
+    "value": true
+  },
+  {
+    "key": "should_have_wa_btn_on_top_in_refer",
+    "value": true
+  },
+  {
+    "key": "is_mandate_bottom_sheet_experiment_running",
+    "value": false
+  },
+  {
+    "key": "SHOULD_SHOW_DAILY_SAVINGS_V2_FLOW",
+    "value": false
+  },
+  {
+    "key": "daily_savings_onboarding_experiment",
+    "value": "v1"
+  },
+  {
+    "key": "should_by_pass_custom_onboarding_based_on_upi_apps",
+    "value": false
+  },
+  {
+    "key": "is_sms_permission_required",
+    "value": true
+  },
+  {
+    "key": "should_show_skip_button_on_ds_custom_onboarding_lottie",
+    "value": false
+  },
+  {
+    "key": "should_use_otl",
+    "value": false
+  },
+  {
+    "key": "in_app_story_experiment",
+    "value": false
+  },
+  {
+    "key": "in_app_story_media_url",
+    "value": ""
+  },
+  {
+    "key": "direct_redirection_deeplink",
+    "value": ""
+  },
+  {
+    "key": "goal_selection_fragment_variant",
+    "value": "1"
+  },
+  {
+    "key": "is_one_step_ds_experiment_running",
+    "value": true
+  },
+  {
+    "key": "should_enable_pinless_digilocker",
+    "value": ""
+  },
+  {
+    "key": "splash_screen_diwali_asset",
+    "value": ""
+  },
+  {
+    "key": "diwali_asset_home_screen_lamp",
+    "value": ""
+  },
+  {
+    "key": "diwali_asset_home_screen_flowers",
+    "value": ""
+  },
+  {
+    "key": "diwali_asset_buy_gold_flowers",
+    "value": ""
+  },
+  {
+    "key": "is_diwali_campaign_enabled",
+    "value": true
+  },
+  {
+    "key": "diwali_asset_daily_savings_banner",
+    "value": ""
+  }
+]

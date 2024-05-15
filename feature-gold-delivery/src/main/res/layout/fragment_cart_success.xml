@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dimen_20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieCelebration"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="imageView"
+            app:layout_constraintBottom_toBottomOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSuccessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="70dp"
+            android:background="@drawable/rounded_black_bg_10dp"
+            android:backgroundTint="@color/color_3c3357"
+            android:paddingBottom="@dimen/dimen_20dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="46dp"
+                android:layout_marginTop="85dp"
+                android:gravity="center"
+                android:text="@string/gold_order_placed_nsuccessfully"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/itemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_12dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/core_ui_bg_circle_white"
+                android:backgroundTint="@color/bgColor"
+                android:elevation="10dp"
+                android:translationX="-10dp"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/dottedLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dottedLine" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/core_ui_bg_circle_white"
+                android:backgroundTint="@color/bgColor"
+                android:elevation="10dp"
+                android:translationX="10dp"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/dottedLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dottedLine" />
+
+            <View
+                android:id="@+id/dottedLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/core_ui_dotted_line"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                app:layout_constraintBottom_toTopOf="@id/tvBankAccount"
+                app:layout_constraintTop_toBottomOf="@id/itemsContainer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBankAccount"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/order_details"
+                app:textAllCaps="true"
+                android:textColor="#ACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/round_black_bg_16dp"
+                android:backgroundTint="@color/color_352F4F"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tvBankAccount"
+                tools:itemCount="4"
+                tools:listitem="@layout/core_ui_cell_label_and_value" />
+
+            <View
+                android:id="@+id/dottedLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/core_ui_dotted_line"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                app:layout_constraintTop_toBottomOf="@id/rvDetails" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBankAccount2"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/tracking_link_will_be_generated_in_72_hrs"
+                android:textColor="#58DDC8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine2" />
+
+            <View
+                android:id="@+id/dottedLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/core_ui_dotted_line"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                app:layout_constraintTop_toBottomOf="@id/tvBankAccount2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBankAccount3"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/please_share_feedback_on_your_ngold_order_experience"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine3" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/smileyContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dimen_10dp"
+                android:paddingVertical="@dimen/dimen_20dp"
+                app:layout_constraintTop_toBottomOf="@id/tvBankAccount3">
+
+                <TextView
+                    android:id="@+id/sad1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_circle_2e2942"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="😡"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toStartOf="@+id/sad2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sad2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/bg_circle_2e2942"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="😞"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toStartOf="@+id/sad3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/sad1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sad3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/bg_circle_2e2942"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="😕"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toStartOf="@+id/sad4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/sad2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sad4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/bg_circle_2e2942"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="🙂"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toStartOf="@+id/sad5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/sad3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sad5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/bg_circle_2e2942"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="😁"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/sad4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sad1Label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/very_bad"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="2dp"
+                    android:textColor="#ACA1D3"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/sad1"
+                    app:layout_constraintStart_toStartOf="@id/sad1"
+                    app:layout_constraintTop_toBottomOf="@id/sad1" />
+
+                <TextView
+                    android:id="@+id/sad2Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/bad"
+                    android:textColor="#ACA1D3"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/sad2"
+                    app:layout_constraintStart_toStartOf="@id/sad2"
+                    app:layout_constraintTop_toBottomOf="@id/sad2" />
+
+                <TextView
+                    android:id="@+id/sad3Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/average"
+                    android:textColor="#ACA1D3"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/sad3"
+                    app:layout_constraintStart_toStartOf="@id/sad3"
+                    app:layout_constraintTop_toBottomOf="@id/sad3" />
+
+                <TextView
+                    android:id="@+id/sad4Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/happy"
+                    android:textColor="#ACA1D3"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/sad4"
+                    app:layout_constraintStart_toStartOf="@id/sad4"
+                    app:layout_constraintTop_toBottomOf="@id/sad4" />
+
+                <TextView
+                    android:id="@+id/sad5Label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/very_happy"
+                    android:gravity="center"
+                    android:textColor="#ACA1D3"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/sad5"
+                    app:layout_constraintStart_toStartOf="@id/sad5"
+                    app:layout_constraintTop_toBottomOf="@id/sad5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieFeedbackCelebration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine3"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/feature_gold_delivery_feedback_thumbs_up" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCelebration3"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/thank_you_for_the_feedback"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lottieFeedbackCelebration" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/celebrationFeedbackGroup"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="tvCelebration3,tvCelebration4,lottieFeedbackCelebration" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCelebration4"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/we_will_try_to_improve_based_on_your_feedback"
+                android:textColor="#ACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCelebration3" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:elevation="@dimen/dimen_20dp"
+                android:layout_marginHorizontal="16dp"
+                app:buttonText="SUBMIT"
+                app:buttonTextAllCaps="false"
+                app:buttonType="secondaryHollowButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/smileyContainer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/feature_gold_delivery_bg_circle_272239"
+            android:src="@drawable/core_ui_ic_green_tick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="0dp"
+            android:background="#ACA1D3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/dynamicRecyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="10dp"
+            android:layout_marginHorizontal="@dimen/dimen_18dp"
+            android:requiresFadingEdge="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clSuccessContainer"
+            tools:itemCount="2"
+            tools:layout_marginTop="10dp"
+            tools:listitem="@layout/dynamic_cards_cell_strip_two"
+            tools:visibility="visible" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnGoToHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="24dp"
+            app:buttonText="@string/core_ui_go_to_homepage"
+            app:buttonTextAllCaps="false"
+            app:layout_constraintHeight_min="54dp"
+            app:layout_constraintTop_toBottomOf="@id/dynamicRecyclerView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

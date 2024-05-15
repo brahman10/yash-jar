@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_v2_navigation"
+    app:startDestination="@id/settingsFragmentV2">
+
+    <fragment
+        android:id="@+id/settingsFragmentV2"
+        android:name="com.jar.app.feature_settings.impl.ui.settings.SettingsFragmentV2"
+        android:label="SettingsFragmentV2"
+        tools:layout="@layout/fragment_settings_v2">
+        <deepLink app:uri="android-app://com.jar.app/settings/{fromScreen}" />
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/securityShieldFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.security_shield.SecurityShieldFragment"
+        android:label="SecurityShieldFragment"
+        tools:layout="@layout/fragment_security_shield">
+
+        <deepLink app:uri="android-app://com.jar.app/jarSecurityShield" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/batteryOptimizationFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.battery_optimization.BatteryOptimizationFragment"
+        android:label="BatteryOptimizationFragment"
+        tools:layout="@layout/fragment_battery_optimization">
+
+        <deepLink app:uri="android-app://com.jar.app/batteryOptimization" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chooseAppLanguageFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.language.ChooseAppLanguageFragment"
+        android:label="ChooseAppLanguageFragment"
+        tools:layout="@layout/fragment_choose_app_language">
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/language/{fromScreen}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationSettingsFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.notification.NotificationSettingsFragment"
+        android:label="NotificationSettingsFragment"
+        tools:layout="@layout/fragment_notification_settings">
+
+        <deepLink app:uri="android-app://com.jar.app/notificationSettings" />
+        <action
+            android:id="@+id/action_notificationSettingsFragment_to_postNotificationSettingActionDialog"
+            app:destination="@id/postNotificationSettingActionDialog" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNewCardFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.payment_methods.add_card.AddNewCardFragment"
+        android:label="AddNewCardFragment"
+        tools:layout="@layout/fragment_add_new_card">
+
+        <deepLink app:uri="android-app://com.jar.app/addNewCard" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentMethodsFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.payment_methods.PaymentMethodsFragment"
+        android:label="PaymentMethodsFragment"
+        tools:layout="@layout/fragment_payment_methods">
+
+        <deepLink app:uri="android-app://com.jar.app/paymentMethods" />
+
+        <action
+            android:id="@+id/action_paymentMethodsFragment_to_addUpiFragment"
+            app:destination="@id/addUpiFragment" />
+
+        <action
+            android:id="@+id/action_paymentMethodsFragment_to_deletePaymentMethodDialogFragment"
+            app:destination="@id/deletePaymentMethodDialogFragment" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/addUpiFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.payment_methods.dialog_add_upi.AddUpiFragment"
+        android:label="AddUpiFragment"
+        tools:layout="@layout/fragment_add_upi">
+
+        <deepLink app:uri="android-app://com.jar.app/addUpi" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/deletePaymentMethodDialogFragment"
+        android:name="com.jar.app.feature_settings.impl.ui.payment_methods.delete_payment_method.DeletePaymentMethodDialogFragment"
+        android:label="DeletePaymentMethodDialogFragment"
+        tools:layout="@layout/fragment_dialog_delete_payment_method">
+        <argument
+            android:name="source"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="paymentMethodId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="isAutopay"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/postNotificationSettingActionDialog"
+        android:name="com.jar.app.feature_settings.impl.ui.notification.PostNotificationSettingActionDialog"
+        android:label="PostNotificationSettingActionDialog"
+        tools:layout="@layout/feature_settings_dialog_post_notification_setting_action">
+
+        <argument
+            android:name="isSuccessAction"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="false" />
+
+    </dialog>
+    <dialog
+        android:id="@+id/baseUrlSettingsBottomSheet"
+        android:name="com.jar.app.feature_settings.impl.ui.base_url.BaseUrlSettingsBottomSheet"
+        android:label="BaseUrlSettingsBottomSheet"
+        tools:layout="@layout/fragment_base_url_settings">
+        <deepLink app:uri="android-app://com.jar.app/baseUrlSettingsBottomSheet" />
+    </dialog>
+
+</navigation>

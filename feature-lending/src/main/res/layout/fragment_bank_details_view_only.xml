@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDarkColor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/leftGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rightGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardBankDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/core_ui_bg_rounded_2e2942_18dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBankDetails"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/core_ui_bg_top_rounded_corner"
+                    android:backgroundTint="@color/color_3c3357"
+                    android:padding="16dp"
+                    android:text="@string/feature_lending_bank_details_verified"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/clBankDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvBankDetails">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivBankLogo"
+                        android:layout_width="43dp"
+                        android:layout_height="25dp"
+                        tools:src="@drawable/feature_lending_ic_experian_logo" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvBankName"
+                        style="@style/SmallTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        app:textAllCaps="true"
+                        tools:text="Axis BanK with a ling  name" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAccountNumber"
+                        style="@style/SmallTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textColor="@color/white"
+                        app:textAllCaps="true"
+                        tools:text="123456789549499" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStaticInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_black_bg_16dp"
+                android:orientation="vertical"
+                android:paddingVertical="8dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@id/cardBankDetails"
+                tools:itemCount="3"
+                tools:listitem="@layout/cell_bank_checklist" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        app:buttonText="@string/feature_lending_continue"
+        app:buttonTextAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPoweredBy"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:gravity="center"
+            android:text="@string/feature_lending_powered_by" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCreditProvider"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            tools:src="@drawable/feature_lending_ic_experian_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNpci"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            tools:src="@drawable/feature_lending_ic_experian_logo" />
+    </LinearLayout>
+</LinearLayout>

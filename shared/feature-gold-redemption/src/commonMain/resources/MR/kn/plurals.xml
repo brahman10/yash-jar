@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources xmlns:tools="">
+
+    <plurals name="feature_gold_redemption_items">
+        <item quantity="one" tools:ignore="ImpliedQuantity">ಐಟಂ</item>
+        <item quantity="other"> ಐಟಂ ಗಳು</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_my_orders_x">
+        <item quantity="one" tools:ignore="ImpliedQuantity">ಆರ್ಡರ್</item>
+        <item quantity="other">ನನ್ನ ಆರ್ಡರ್ ಗಳು (%d)</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_items_available">
+        <item quantity="one">%d ತೂಕ ಲಭ್ಯವಿದೆ</item>
+        <item quantity="other">%d ತೂಕ ಲಭ್ಯವಿದೆ</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_showing_cities">
+        <item quantity="one">Showing %d ನಗರ</item>
+        <item quantity="other">Showing %dನಗರಗಳು</item>
+    </plurals>
+
+</resources>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_margin="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHelloName"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        tools:text="Hello, Name" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/core_ui_bg_radial_gradient"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_jar_balance_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_black_bg_16dp"
+            android:clickable="false"
+            android:elevation="3dp"
+            android:focusable="false"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/disclaimer"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/_24_karat_gold_99_5_purity"
+                android:textSize="10sp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toStartOf="@id/tvCachedDisclaimer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txtSaved"
+                app:layout_constraintTop_toBottomOf="@+id/txtSaved"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_current_value"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:clickable="true"
+                android:drawablePadding="12dp"
+                android:focusable="true"
+                android:textColor="@color/color_EEEAFF"
+                android:textSize="18sp"
+                app:drawableEndCompat="@drawable/feature_homepage_ic_custom_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="0.1213gm" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCachedDisclaimer"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="10sp"
+                android:translationX="-10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tv_current_value"
+                app:layout_constraintStart_toStartOf="@id/tv_current_value"
+                app:layout_constraintTop_toBottomOf="@+id/txtSaved"
+                tools:ignore="SmallSp"
+                tools:text="Updated 23 mins ago" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSaved"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:clickable="false"
+                android:drawableStart="@drawable/feature_transaction_ic_gold_brick"
+                android:drawablePadding="8dp"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:text="@string/gold_in_locker"
+                android:textColor="@color/color_EEEAFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/tv_current_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clOnBoarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/home_jar_balance_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/anim_gift_box" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="start"
+                android:text="@string/get_exciting_rewards"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvLearnMore"
+                app:layout_constraintStart_toEndOf="@id/animView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLearnMore"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/learn_more"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clMileStoneReached"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/home_jar_balance_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animView2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/anim_gift_box" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMileStoneReached"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/you_reached_a_milestone"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintStart_toEndOf="@id/animView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/unlock_reward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/animView2"
+                app:layout_constraintTop_toBottomOf="@id/tvMileStoneReached" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/actionBarItemBackground"
+                android:clickable="false"
+                android:focusable="false"
+                android:padding="6dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCurrentMileStone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/home_jar_balance_parent"
+            tools:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/animMileStone"
+                style="@style/BigTextViewStyle"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/core_ui_ic_coin_base"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="@color/txtBrown"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineHeight="8sp"
+                tools:ignore="SmallSp"
+                tools:text="0.1\ngm" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNext"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:background="?attr/actionBarItemBackground"
+                android:clickable="false"
+                android:focusable="false"
+                android:padding="6dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#aca1d3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvKeepInvesting"
+                style="@style/MarqueeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:text="@string/keep_investing"
+                android:textColor="@color/color_EEEAFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/ivNext"
+                app:layout_constraintStart_toEndOf="@id/animMileStone"
+                app:layout_constraintTop_toTopOf="@id/animMileStone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStart"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintStart_toEndOf="@id/animMileStone"
+                app:layout_constraintTop_toBottomOf="@id/tvKeepInvesting"
+                tools:text="0.0gm" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:progress="10"
+                app:indicatorColor="@color/color_ebb46a"
+                app:layout_constraintBottom_toBottomOf="@id/tvStart"
+                app:layout_constraintEnd_toStartOf="@id/tvEnd"
+                app:layout_constraintStart_toEndOf="@id/tvStart"
+                app:layout_constraintTop_toTopOf="@id/tvStart"
+                app:trackColor="#26ffffff"
+                app:trackCornerRadius="10dp"
+                app:trackThickness="6dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mileStoneIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:padding="2dp"
+                android:src="@drawable/core_ui_ic_spinner_new"
+                android:translationX="4dp"
+                app:layout_constraintBottom_toBottomOf="@id/progressBar"
+                app:layout_constraintEnd_toEndOf="@id/progressBar"
+                app:layout_constraintTop_toTopOf="@id/progressBar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEnd"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                tools:text="0.1gm"
+                app:layout_constraintEnd_toStartOf="@id/ivNext"
+                app:layout_constraintTop_toBottomOf="@id/tvKeepInvesting" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_marquee"
+        style="@style/MarqueeTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:drawablePadding="8dp"
+        android:text="@string/your_saving_are_invested_gold"
+        android:textColor="@color/color_ACA1D3"
+        android:textSize="10sp"
+        app:drawableEndCompat="@drawable/core_ui_ic_safe_gold_brinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clParent"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_marquee" />
+</LinearLayout>

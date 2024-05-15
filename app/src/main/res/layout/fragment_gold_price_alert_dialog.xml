@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgColor"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/dimen_20dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_buy_alert" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="10sp"
+        android:paddingHorizontal="@dimen/dimen_32dp"
+        android:text="@string/gold_price_alerts"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="@dimen/dimen_32dp"
+        android:text="@string/get_timely_alerts_whenever_gold_prices_drop_so_you_can_invest_at_best_prices"
+        android:textColor="@color/smallTxtColor"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnPriceAlert"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:paddingHorizontal="42dp"
+        app:buttonTextAllCaps="false"
+        app:buttonText="@string/get_price_alerts" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnLater"
+        style="@style/CommonTextViewStyle"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/dimen_24dp"
+        android:paddingHorizontal="@dimen/dimen_24dp"
+        android:text="@string/core_ui_i_ll_do_it_later"
+        android:textColor="@color/smallTxtColor" />
+
+</LinearLayout>

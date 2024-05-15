@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/bgColor">
+
+    <View
+        android:id="@+id/lineTop"
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/markContainer"
+        app:layout_constraintEnd_toEndOf="@id/markContainer"
+        app:layout_constraintStart_toStartOf="@id/markContainer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/markContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_lending_kyc_bg_white_ring"
+        app:layout_constraintBottom_toTopOf="@id/lineBottom"
+        app:layout_constraintEnd_toStartOf="@id/tvStepTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineTop">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivTickIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/feature_lending_kyc_ic_white_tick" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStepNumber"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/lineBottom"
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/markContainer"
+        app:layout_constraintStart_toStartOf="@id/markContainer"
+        app:layout_constraintTop_toBottomOf="@id/markContainer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStepTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/markContainer"
+        app:layout_constraintEnd_toStartOf="@id/spacer"
+        app:layout_constraintStart_toEndOf="@id/markContainer"
+        app:layout_constraintTop_toTopOf="@id/markContainer"
+        tools:text="E-mail verification" />
+
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tvStepTitle"
+        app:layout_constraintEnd_toStartOf="@id/tvStepStatus"
+        app:layout_constraintStart_toEndOf="@id/tvStepTitle"
+        app:layout_constraintTop_toTopOf="@id/tvStepTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStepStatus"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/markContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spacer"
+        app:layout_constraintTop_toTopOf="@id/markContainer"
+        tools:text="Completed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

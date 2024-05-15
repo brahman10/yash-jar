@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_divider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".50" />
+
+    <View
+        android:id="@+id/container_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/core_ui_bg_top_rounded_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_middle_anim" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrentWeekTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/feature_weekly_magic_common_omg_you_won_a_mystery_card"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvOnTransactionOf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOnTransactionOf"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="44dp"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintBottom_toTopOf="@+id/btnShowMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="On your transaction of ₹20" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnShowMe"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="36dp"
+        app:buttonText="@string/feature_weekly_magic_common_show_me"
+        app:buttonTextColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvCheckLater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCheckLater"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/feature_weekly_magic_common_i_ll_check_later"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/gl_horizontal_i_ll_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_i_ll_check"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:barrierDirection="bottom"
+        app:layout_constraintGuide_percent=".94" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvCurrentWeekTitle"
+        app:layout_constraintEnd_toEndOf="@+id/gl_vertical_end_lottie"
+        app:layout_constraintStart_toStartOf="@+id/gl_vertical_start_lottie"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <View
+        android:id="@+id/layout_middle_anim"
+        app:layout_constraintTop_toTopOf="@+id/animViewMain"
+        app:layout_constraintBottom_toBottomOf="@+id/animViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_start_lottie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_end_lottie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_onboarding_navigation"
+    app:startDestination="@id/newOnBoardingRedirectionFragment">
+
+    <action
+        android:id="@+id/action_to_newOnBoardingRedirectionFragment"
+        app:destination="@id/newOnBoardingRedirectionFragment" />
+
+    <action
+        android:id="@+id/action_to_onboardingStoryFragment"
+        app:destination="@id/onBoardingStoryFragment" />
+
+    <action
+        android:id="@+id/action_to_newEnterNumberFragment"
+        app:destination="@id/newEnterNumberFragment" />
+
+    <action
+        android:id="@+id/action_to_newEnterOtpFragment"
+        app:destination="@id/newEnterOtpFragment" />
+
+    <action
+        android:id="@+id/action_to_otlLoginStatusFragment"
+        app:destination="@id/otlLoginStatusFragment" />
+
+    <action
+        android:id="@+id/action_to_newEnterNameFragment"
+        app:destination="@id/newEnterNameFragment" />
+
+    <action
+        android:id="@+id/action_to_newSmsPermissionFragment"
+        app:destination="@id/newSmsPermissionFragment" />
+
+    <action
+        android:id="@+id/action_to_homeFragment"
+        app:destination="@id/homePagerFragment"
+        app:launchSingleTop="true"
+        app:popUpToSaveState="true"
+        app:restoreState="true" />
+
+    <action
+        android:id="@+id/action_to_selectNumberFragment"
+        app:destination="@id/selectNumberFragment" />
+
+    <action
+        android:id="@+id/action_to_savingGoalSelectionFragment"
+        app:destination="@id/savingGoalSelectionFragment" />
+
+    <fragment
+        android:id="@+id/onBoardingStoryFragment"
+        android:name="com.jar.app.feature.onboarding.ui.onboarding_story.OnBoardingStoryFragment"
+        android:label="OnBoardingStoryFragment"
+        tools:layout="@layout/fragment_onboarding_story" />
+
+    <fragment
+        android:id="@+id/newEnterNumberFragment"
+        android:name="com.jar.app.feature.onboarding.ui.enter_number.EnterNumberFragment"
+        android:label="NewEnterNumberFragment"
+        tools:layout="@layout/fragment_new_enter_number">
+
+        <argument
+            android:name="number"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_newEnterNumberFragment_to_chooseLanguageBottomSheet"
+            app:destination="@id/chooseLanguageBottomSheet" />
+        <action
+            android:id="@+id/action_newEnterNumberFragment_to_experianTCBottomSheet"
+            app:destination="@id/experianTCBottomSheet" />
+        <action
+            android:id="@+id/action_newEnterNumberFragment_to_experianConsentBottomSheet"
+            app:destination="@id/experianConsentBottomSheet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newEnterOtpFragment"
+        android:name="com.jar.app.feature.onboarding.ui.enter_otp.EnterOtpFragment"
+        android:label="NewEnterOtpFragment"
+        tools:layout="@layout/fragment_new_enter_otp">
+
+        <argument
+            android:name="phoneNumber"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="countryCode"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="hasExperianConsent"
+            app:argType="boolean"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/otlLoginStatusFragment"
+        android:name="com.jar.app.feature.onboarding.ui.otl_login.OtlLoginStatusFragment"
+        android:label="OtlLoginStatusFragment"
+        tools:layout="@layout/fragment_otl_login_status">
+
+        <argument
+            android:name="phoneNumber"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="countryCode"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="hasExperianConsent"
+            app:argType="boolean"
+            app:nullable="false"/>
+        <argument
+            android:name="correlationId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newEnterNameFragment"
+        android:name="com.jar.app.feature.onboarding.ui.name.EnterNameFragment"
+        android:label="NewEnterNameFragment"
+        tools:layout="@layout/fragment_new_enter_name" />
+
+    <fragment
+        android:id="@+id/savingGoalSelectionFragment"
+        android:name="com.jar.app.feature.onboarding.ui.saving_goal.SavingGoalSelectionFragment"
+        android:label="SavingGoalSelectionFragment"
+        tools:layout="@layout/fragment_saving_goal_selection" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/newSmsPermissionFragment"
+        android:name="com.jar.app.feature.onboarding.ui.sms.SmsPermissionFragment"
+        android:label="NewSmsPermissionFragment"
+        tools:layout="@layout/fargment_new_sms_permission">
+        <action
+            android:id="@+id/action_to_commonFaqFragment"
+            app:destination="@+id/commonFaqFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newOnBoardingRedirectionFragment"
+        android:name="com.jar.app.feature.onboarding.ui.OnBoardingRedirectionFragment"
+        android:label="NewOnBoardingRedirectionFragment"
+        tools:layout="@layout/fragment_new_onboarding_redirection" />
+
+    <dialog
+        android:id="@+id/commonFaqFragment"
+        android:name="com.jar.app.feature.onboarding.ui.sms.CommonFaqFragment"
+        android:label="commonFaqFragment"
+        tools:layout="@layout/fragment_sms_faq">
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.jar.app.feature.choose_language.ui.ChooseLanguageFragment"
+        android:label="ChooseLanguageFragment"
+        tools:layout="@layout/fragment_choose_language">
+
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/chooseLanguageBottomSheet"
+        android:name="com.jar.app.feature.choose_language.ui.ChooseLanguageBottomSheet"
+        android:label="ChooseLanguageFragment"
+        tools:layout="@layout/fragment_choose_language">
+
+        <argument
+            android:name="preSelectedLanguage"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/selectNumberFragment"
+        android:name="com.jar.app.feature.onboarding.ui.select_number.SelectNumberFragment"
+        android:label="SelectNumberFragment"
+        tools:layout="@layout/fragment_select_number">
+
+
+        <argument
+            android:name="number"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_selectNumberFragment_to_chooseLanguageBottomSheet"
+            app:destination="@id/chooseLanguageBottomSheet" />
+        <action
+            android:id="@+id/action_selectNumberFragment_to_experianConsentBottomSheet"
+            app:destination="@id/experianConsentBottomSheet" />
+        <action
+            android:id="@+id/action_selectNumberFragment_to_experianTCBottomSheet"
+            app:destination="@id/experianTCBottomSheet" />
+    </fragment>
+    <action
+        android:id="@+id/action_to_appLanguageFragment"
+        app:destination="@id/chooseLanguageFragment" />
+    <dialog
+        android:id="@+id/experianTCBottomSheet"
+        android:name="com.jar.app.feature.onboarding.ui.experian_bottomsheet.ExperianTCBottomSheet"
+        android:label="ExperianTCBottomSheet"
+        tools:layout="@layout/bottom_sheet_experian_tc"/>
+    <dialog
+        android:id="@+id/experianConsentBottomSheet"
+        android:name="com.jar.app.feature.onboarding.ui.experian_bottomsheet.ExperianConsentBottomSheet"
+        android:label="ExperianConsentBottomSheet"
+        tools:layout="@layout/bottom_sheet_experian_consent">
+
+        <argument
+            android:name="backstackId"
+            app:argType="integer"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_experianConsentBottomSheet_to_selectNumberFragment"
+            app:destination="@id/selectNumberFragment" />
+        <action
+            android:id="@+id/action_experianConsentBottomSheet_to_newEnterNumberFragment"
+            app:destination="@id/newEnterNumberFragment" />
+        <action
+            android:id="@+id/action_experianConsentBottomSheet_to_experianTCBottomSheet"
+            app:destination="@id/experianTCBottomSheet" />
+    </dialog>
+
+</navigation>

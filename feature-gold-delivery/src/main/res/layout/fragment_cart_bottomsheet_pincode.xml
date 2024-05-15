@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/dimen_50dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple400">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderPinCode"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/check_if_we_deliver_to_your_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnClose" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:focusable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_close"
+        android:translationZ="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPinCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvHeaderPinCode"
+        android:background="@drawable/round_black_bg_16dp"
+        android:paddingHorizontal="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaderPinCode">
+
+        <ImageView
+            android:id="@+id/locationPinImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPinCode"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="12sp"
+            android:background="@null"
+            android:digits="0123456789"
+            android:gravity="start|center_vertical"
+            android:hint="Enter Pincode"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingVertical="18dp"
+            android:textColorHint="@color/color_6e7ea7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCheck"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toEndOf="@id/locationPinImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnCheck"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/check"
+            android:textAllCaps="true"
+            android:textColor="@color/color_58DDC8_30"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/etPinCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etPinCode" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnClear"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/clear"
+            android:textAllCaps="true"
+            android:textColor="#ACA1D3"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/etPinCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etPinCode" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPinCodeEligibilityText"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="@dimen/dimen_4dp"
+        app:layout_constraintTop_toBottomOf="@id/clPinCode"
+        app:layout_constraintStart_toStartOf="@id/clPinCode"
+        android:textColor="@color/white"
+        tools:text="Bangalore, Karnataka" />
+</androidx.constraintlayout.widget.ConstraintLayout>

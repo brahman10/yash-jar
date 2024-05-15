@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_gold_redemption_items">
+        <item quantity="one"> സാധനം</item>
+        <item quantity="other"> സാധനങ്ങൾ</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_my_orders_x">
+        <item quantity="one">എന്റെ ഓർഡർ</item>
+        <item quantity="other">എന്റെ ഓർഡറുകൾ (%d)</item>
+    </plurals>
+
+    <plurals name="feature_gold_redemption_items_available">
+        <item quantity="one">%d ഭാരം ലഭ്യമാണ്</item>
+        <item quantity="other">%d ഭാരങ്ങൾ ലഭ്യമാണ്</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_showing_cities">
+        <item quantity="one">%d നഗരം കാണിക്കുന്നു</item>
+        <item quantity="other">%d നഗരങ്ങൾ കാണിക്കുന്നു</item>
+    </plurals>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ivIllustration"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvVerifyPanLabel"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/feature_lending_kyc_pan_verification"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivQuestionMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvVerifyPanLabel"
+        app:layout_constraintStart_toEndOf="@id/tvVerifyPanLabel"
+        app:layout_constraintTop_toTopOf="@id/tvVerifyPanLabel"
+        app:srcCompat="@drawable/core_ui_ic_custom_question_mark"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPanOtpSent"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/feature_lending_kyc_help_us_fetch_your_credit_report_for_s"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVerifyPanLabel" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnGetOtp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="58dp"
+        app:buttonTextAllCaps="false"
+        app:buttonText="@string/feature_lending_kyc_get_otp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="46dp"
+        app:layout_goneMarginBottom="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

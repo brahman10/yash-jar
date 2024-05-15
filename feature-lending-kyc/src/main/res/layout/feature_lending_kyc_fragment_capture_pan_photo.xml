@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCaptureAadhaarPhoto"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/feature_lending_kyc_capture_pan_photo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMakeSure"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:text="@string/feature_lending_kyc_make_sure_the_pan_is_your_personal_pan"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCaptureAadhaarPhoto" />
+
+    <!--    FIRST ILLUSTRATION-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFirstIllustration"
+        android:layout_width="108dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/feature_lending_kyc_bg_rounded_layer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMakeSure" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivInnerFirstIllustration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivFirstIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivFirstIllustration"
+        app:layout_constraintStart_toStartOf="@id/ivFirstIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivFirstIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/feature_lending_kyc_ic_green_checkmark"
+        app:layout_constraintBottom_toTopOf="@id/ivFirstIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivFirstIllustration"
+        app:layout_constraintStart_toEndOf="@id/ivFirstIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivFirstIllustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFirstMessage"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/feature_lending_kyc_make_sure_you_click_the_front_side_of_the_pan_card"
+        app:layout_constraintBottom_toBottomOf="@id/ivFirstIllustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivFirstIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivFirstIllustration" />
+
+    <!--    SECOND ILLUSTRATION-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSecondIllustration"
+        android:layout_width="108dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/feature_lending_kyc_bg_rounded_layer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivFirstIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivInnerSecondIllustration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivSecondIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivSecondIllustration"
+        app:layout_constraintStart_toStartOf="@id/ivSecondIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivSecondIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/core_ui_ic_red_cross"
+        app:layout_constraintBottom_toTopOf="@id/ivSecondIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivSecondIllustration"
+        app:layout_constraintStart_toEndOf="@id/ivSecondIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivSecondIllustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSecondMessage"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/feature_lending_kyc_make_sure_the_pan_is_inside_the_frame"
+        app:layout_constraintBottom_toBottomOf="@id/ivSecondIllustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivSecondIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivSecondIllustration" />
+
+    <!--    THIRD ILLUSTRATION-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThirdIllustration"
+        android:layout_width="108dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/feature_lending_kyc_bg_rounded_layer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSecondIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivInnerThirdIllustration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivThirdIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivThirdIllustration"
+        app:layout_constraintStart_toStartOf="@id/ivThirdIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivThirdIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/core_ui_ic_red_cross"
+        app:layout_constraintBottom_toTopOf="@id/ivThirdIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivThirdIllustration"
+        app:layout_constraintStart_toEndOf="@id/ivThirdIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivThirdIllustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThirdMessage"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/feature_lending_kyc_the_pan_card_should_fit_inside_the_frame"
+        app:layout_constraintBottom_toBottomOf="@id/ivThirdIllustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivThirdIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivThirdIllustration" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="42dp"
+        app:buttonDrawablePadding="8dp"
+        app:buttonDrawableStart="@drawable/core_ui_ic_camera_outline"
+        app:buttonTextAllCaps="false"
+        app:buttonText="@string/feature_lending_kyc_open_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

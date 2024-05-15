@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_onboarding_stories_header">Made with ❤️ \nin India</string>
+    <string name="click_button_to_get_started">Shuru karne ke liye iss button par click karein</string>
+    <string name="next">Aage Badhein </string>
+    <string name="feature_onboarding_stories_footer">Surakshit lockers mein gold save kiya jata hai</string>
+    <string name="login_signup">Account banaein</string>
+    <string name="enter_your_phone_number_to_start_saving">Apna phone number dalein</string>
+    <string name="feature_onboarding_experian_warning">Aage badhne ke liye kripya isse chunein</string>
+    <string name="get_otp">OTP Paein</string>
+    <string name="feature_onboarding_flow_tc_text">Main <u><b>Jar ke niyam, sharton</b></u> aur <u><b>Privacy Policy</b></u> ko sweekar karta/karti hu</string>
+    <string name="feature_onboarding_enter_number_checkbox_text">Jar ko sabse acche loan offers dene ke liye <b>RBI approved </b> companies se aapki credit creport ko access karne ki anumati dein. Main<u><b>niyam aur amp;sharton se sehmat hun</b></u></string>
+    <string name="feature_onboarding_TC">niyam auramp;sharton</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="mobile_number_is_not_valid">Kripya anya phone number dalein</string>
+    <string name="feature_onboarding_select_number_cta_2"><u>Doosre number se login karein</u></string>
+    <string name="feature_onboarding_select_number_welcome_back">Aapka fir se swagat hai %s!</string>
+    <string name="name_seems_very_unique">Kripya apne Aadhar ke hisaab se naam daalein</string>
+    <string name="enter_something_real">Kripya apne Aadhar ke hisaab se naam daalein</string>
+    <string name="feature_onboarding_enter_name_tittle">Apna naam dalein</string>
+    <string name="feature_onboarding_enter_name_description">Jaisa ki aadhar card mein hai</string>
+    <string name="feature_profile_name_cant_be_more_than_30">Naam mein 30 characters se zyada nahi ho sakte hain</string>
+    <string name="resend_otp"><u>Dobara OTP bhejein</u></string>
+    <string name="you_will_receive_call">Aapko _ par ek call aayega</string>
+    <string name="please_enter_a_valid_otp">Kripya sahi OTP dalein</string>
+    <string name="something_went_wrong">Kripya thodi der pratiksha karein</string>
+    <string name="feature_onboarding_otp_valid_till">Valid till</string>
+    <string name="continue_with_x_number">%s Isse login karein</string>
+    <string name="hey_user_saving_for_message">Namaste %s, %s</string>
+    <string name="start_now">Shuru karein</string>
+    <string name="feature_onboarding_enter_otp_tittle">OTP daalein</string>
+    <string name="feature_onboarding_enter_otp_description">Iss number pe OTP ayega</string>
+    <string name="call_to_verify"><u>Call to Verify</u></string>
+    <string name="please_allow_sms_permission">SMS anumati dein</string>
+    <string name="feature_onboarding_sms_permission_description">Behtar tarike se save karne ke liye humein SMS anumati dein</string>
+    <string name="yes_allow">Anumati Dein</string>
+    <string name="sms_permission_denied_error">Aaage badhne ke liye allow pe click karein</string>
+    <string name="apply">Apply Karein</string>
+    <string name="feature_onboarding_select_number_description">Aap Jar family ka hissa hain</string>
+    <string name="feature_onboarding_footer">Aapki jankari hamare paas surakshit hai</string>
+</resources>

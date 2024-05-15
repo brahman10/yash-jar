@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feature_promo_code_navigation"
+    app:startDestination="@id/promoCodeDialogFragment">
+
+    <dialog
+        android:id="@+id/promoCodeDialogFragment"
+        android:name="com.jar.app.feature_promo_code.impl.ui.promo_code_dialog.PromoCodeDialogFragment"
+        android:label="PromoCodeDialogFragment">
+        <deepLink app:uri="android-app://com.jar.app/submitPromoCode" />
+        <action
+            android:id="@+id/action_promoCodeDialogFragment_to_promoCodeStatusFragment"
+            app:destination="@id/promoCodeStatusFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/promoCodeStatusFragment"
+        android:name="com.jar.app.feature_promo_code.impl.ui.promo_transaction_status.PromoCodeStatusFragment"
+        android:label="PromoCodeStatusFragment">
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+</navigation>

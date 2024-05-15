@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">नाव</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="please_fill_all_the_details">कृपया सर्व डिटेल्स भरा</string>
+    <string name="email">ईमेल</string>
+    <string name="pincode">पिनकोड</string>
+    <string name="city">शहर</string>
+    <string name="enter_city">शहर एंटर करा</string>
+    <string name="state">राज्य</string>
+    <string name="enter_state">राज्य एंटर करा</string>
+    <string name="enter_pin_code">पिनकोड एंटर करा</string>
+    <string name="add_details">डिटेल्स ॲड करा</string>
+    <string name="your_full_address">तुमचा संपूर्ण पत्ता</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">डिटेल्स सबमिट करा</string>
+    <string name="details_added">डिटेल्स ॲड केले आहेत</string>
+    <string name="street_address_one">स्ट्रीट ॲड्रेस 1</string>
+    <string name="address_line_1">ॲड्रेस लाईन 1</string>
+    <string name="address_line_2">ॲड्रेस लाईन 2</string>
+    <string name="check">तपासा</string>
+    <string name="street_address_two">स्ट्रीट ॲड्रेस 2 (पर्यायी)</string>
+    <string name="please_enter_a_valid_pincode">कृपया वैध पिनकोड एंटर करा</string>
+    <string name="this_area_is_not_servicable_currently">सध्या आम्ही या भागात सर्व्हिस देत नाही</string>
+    <string name="edit_address">ॲड्रेस बदला</string>
+    <string name="add_new_address">नवीन ॲड्रेस ॲड करा</string>
+    <string name="save_new_address">नवीन ॲड्रेस सेव्ह करा</string>
+    <string name="update_address">ॲड्रेस अपडेट करा</string>
+    <string name="save_and_proceed">सेव्ह करा आणि पुढे जा</string>
+    <string name="select_an_address_for_delivery">डिलिव्हरीसाठी ॲड्रेस निवडा </string>
+    <string name="no_delivery_address_available">डिलिव्हरीसाठी ॲड्रेस उपलब्ध नाही</string>
+    <string name="saved_addresses">सेव्ह केलेले ॲड्रेस</string>
+    <string name="add_delivery_details">डिलिव्हरीसाठी डिटेल्स ॲड करा</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">तुमच्या आधार कार्डशी लिंक केले आहे</string>
+    <string name="feature_user_api_saved_address">सेव्ह केलेला पत्ता</string>
+    <string name="feature_lending_recently_saved">नुकतेच सेव्ह केलेले</string>
+</resources>

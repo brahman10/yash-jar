@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="invalid_promo_code_length_error" >Promo code must be at least 16 characters long. Please enter a valid promo code.</string>
+    <string name="empty_promo_code_error" >Promo code cannot be empty. Please enter a valid promo code</string>
+</resources>

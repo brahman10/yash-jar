@@ -1,0 +1,143 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/brandCouponSwipeToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/activeCouponCount"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inter"
+            android:gravity="start"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="21sp"
+            tools:text="3 Active Coupons" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/brandCouponRv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activeCouponCount"
+            app:spanCount="2"
+            tools:itemCount="10"
+            tools:listitem="@layout/feature_offers_cell_brand_coupon">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/couponGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:constraint_referenced_ids="activeCouponCount,brandCouponRv" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emptyCouponsState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="-54dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/brandCouponEmptyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="95dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="5sp"
+                android:textColor="#EEEAFF"
+                android:textSize="18sp"
+
+                android:translationY="-2.61sp"
+                app:layout_constraintBottom_toTopOf="@+id/brandCouponEmptyImage"
+                app:layout_constraintEnd_toEndOf="@+id/brandCouponEmptyImage"
+                app:layout_constraintStart_toStartOf="@+id/brandCouponEmptyImage"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/your_coupon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/brandCouponEmptyImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="104dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/brandCouponEmptyLabel"
+                tools:src="@drawable/empty_coupon_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSpinToWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="45dp"
+                android:gravity="center_horizontal|top"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="5sp"
+
+                android:textColor="#EEEAFF"
+                android:textSize="16sp"
+                android:translationY="-2.32sp"
+                app:layout_constraintEnd_toEndOf="@+id/brandCouponEmptyImage"
+                app:layout_constraintStart_toStartOf="@+id/brandCouponEmptyImage"
+                app:layout_constraintTop_toBottomOf="@+id/brandCouponEmptyImage"
+                app:lineHeight="24sp"
+                tools:text="@string/spin_to_win_rewards" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnSpinToWin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/inter"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSpinToWin"
+                app:layout_constraintVertical_bias="0.0"
+                app:textMarginBottom="15dp"
+                app:textMarginEnd="47dp"
+                app:textMarginStart="47dp"
+                app:textMarginTop="15dp"
+                tools:buttonText="@string/copy" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

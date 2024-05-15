@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLendingTitle"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                tools:text="@string/feature_lending_simple_steps_to_get_loan"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:gravity="center"
+                app:lineHeight="36dp"
+                android:drawablePadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLendingDesc"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="@string/feature_lending_check_your_readycash_eligiblity"
+                android:textColor="@color/smallTxtColor"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLendingTitle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLendingStepsHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                app:cardBackgroundColor="@color/lightBgColor"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="220dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvHundredPercentSecureKyc"
+                app:layout_constraintTop_toBottomOf="@id/tvLendingDesc">
+
+                <com.jar.app.feature_lending.impl.ui.step_view.LendingStepView
+                    android:id="@+id/stepView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHundredPercentSecureKyc"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/feature_lending_ic_100_secure"
+                android:gravity="center"
+                android:text="@string/feature_lending_100_secure_kyc"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@id/tvTermsForCreditReportMessage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTermsForCreditReportMessage"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/feature_lending_credit_report_consent"
+                android:textColor="@color/color_776E94"
+                android:textSize="10sp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/btnGetStarted" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnGetStarted"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:buttonText="@string/feature_lending_start"
+                app:buttonTextAllCaps="false"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@id/tvPoweredBy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="54dp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPoweredBy"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:alpha="0.3"
+                android:drawableEnd="@drawable/feature_lending_ic_experian_logo"
+                android:gravity="center"
+                android:text="@string/feature_lending_powered_by"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

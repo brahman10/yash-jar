@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/bgColor">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSavingSummaryTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/feature_post_setup_transaction_summary_s"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_auto_start="false"
+        app:shimmer_base_alpha="1"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_duration="2000"
+        android:background="@color/bgColor"
+        app:shimmer_highlight_alpha="0.3"
+        app:shimmer_highlight_color="@color/white_opacity_60"
+        app:shimmer_repeat_count="1"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear"
+        app:shimmer_tilt="30"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSuccessDetailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginVertical="@dimen/dimen_6dp"
+            android:background="@drawable/feature_post_setup_bg_filled_4dp_2e2942">
+
+            <View
+                android:id="@+id/successStartStrip"
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:background="@drawable/feature_post_setup_bg_start_rounded_4dp"
+                android:backgroundTint="@color/color_135360"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSuccessLabelStrip"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_12dp"
+                android:background="@drawable/round_black_bg_4dp"
+                android:backgroundTint="@color/color_273442"
+                android:paddingHorizontal="@dimen/dimen_8dp"
+                android:paddingVertical="@dimen/dimen_4dp"
+                android:text="@string/feature_post_setup_success"
+                android:textColor="@color/color_58DDC8"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSuccessTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_12dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/successStartStrip"
+                app:layout_constraintTop_toBottomOf="@id/tvSuccessLabelStrip"
+                tools:text="Successful for 10 days" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSuccessAmount"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvSuccessTitle"
+                tools:text="$423" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_auto_start="false"
+        android:background="@color/bgColor"
+        app:shimmer_base_alpha="1"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_duration="2000"
+        app:shimmer_highlight_alpha="0.3"
+        app:shimmer_highlight_color="@color/white_opacity_60"
+        app:shimmer_repeat_count="1"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear"
+        app:shimmer_tilt="30"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPendingDetailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/feature_post_setup_bg_filled_4dp_2e2942">
+
+            <View
+                android:id="@+id/pendingStartStrip"
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:background="@drawable/feature_post_setup_bg_start_rounded_4dp"
+                android:backgroundTint="@color/color_BA8844"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPendingLabelStrip"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_12dp"
+                android:background="@drawable/round_black_bg_4dp"
+                android:backgroundTint="@color/color_EBB46A_10"
+                android:paddingHorizontal="@dimen/dimen_8dp"
+                android:paddingVertical="@dimen/dimen_4dp"
+                android:text="@string/feature_post_setup_in_progress"
+                android:textColor="@color/color_EBB46A"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPendingTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_12dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/pendingStartStrip"
+                app:layout_constraintTop_toBottomOf="@id/tvPendingLabelStrip"
+                tools:text="In Progress for 2 days" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPendingAmount"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvPendingTitle"
+                tools:text="$73" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFailure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_auto_start="false"
+        android:background="@color/bgColor"
+        app:shimmer_base_alpha="1"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_duration="2000"
+        app:shimmer_highlight_alpha="0.3"
+        app:shimmer_clip_to_children="true"
+        app:shimmer_highlight_color="@color/white_opacity_60"
+        app:shimmer_repeat_count="1"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear"
+        app:shimmer_tilt="30"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFailureDetailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/feature_post_setup_bg_filled_4dp_2e2942">
+
+            <View
+                android:id="@+id/failureStartStrip"
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:background="@drawable/feature_post_setup_bg_start_rounded_4dp"
+                android:backgroundTint="@color/color_953D52"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFailureLabelStrip"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_12dp"
+                android:background="@drawable/round_black_bg_4dp"
+                android:backgroundTint="@color/color_3B2A3E"
+                android:paddingHorizontal="@dimen/dimen_8dp"
+                android:paddingVertical="@dimen/dimen_4dp"
+                android:text="@string/feature_post_setup_failure"
+                android:textColor="@color/color_EB6A6E"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFailureTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/failureStartStrip"
+                app:layout_constraintTop_toBottomOf="@id/tvFailureLabelStrip"
+                tools:text="Failed for 10 days" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFailureAmount"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvFailureTitle"
+                tools:text="$23" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnSaveNow"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginVertical="@dimen/dimen_20dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                app:buttonStrokeColor="@color/color_2e2942"
+                app:buttonText="@string/feature_post_setup_save_now"
+                app:buttonType="primaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/failureStartStrip"
+                app:layout_constraintTop_toBottomOf="@id/tvFailureAmount" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

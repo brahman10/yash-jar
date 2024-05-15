@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimplePullToRefreshLayout">
+        <attr name="max_offset_top" format="dimension" />
+        <attr name="trigger_offset_top" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyPullLayout_LayoutParams">
+        <attr name="layout_type" format="enum">
+            <enum name="topView" value="0" />
+            <enum name="content" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalDashedLine">
+        <attr name="color" format="color" />
+        <attr name="dashLength" format="dimension" />
+        <attr name="dashGap" format="dimension" />
+        <attr name="dashThickness" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomGridView">
+        <attr name="gridColor" format="color" />
+        <attr name="gridHeight" format="integer" />
+        <attr name="drawVertical" format="boolean" />
+        <attr name="drawHorizontal" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LottiePullToRefreshLayout">
+        <attr name="pull_to_refresh_lottieFile" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CreditCardView">
+
+        <!--- Card Background Color Attrs -->
+        <attr name="card_frontGradientStart" format="color" />
+        <attr name="card_frontGradientEnd" format="color" />
+        <attr name="card_backGradientStart" format="color" />
+        <attr name="card_backGradientEnd" format="color" />
+        <attr name="card_backStripColor" format="color" />
+        <attr name="card_backStrip2Color" format="color" />
+
+        <!-- Card CVV Attrs -->
+        <attr name="card_cvvBackgroundColor" format="color" />
+        <attr name="card_cvvHintColor" format="color" />
+        <attr name="card_cvvTextColor" format="color" />
+
+        <!--- Card Number Attrs -->
+        <attr name="card_cardNumberTextColor" format="color" />
+        <attr name="card_cardNumberHintColor" format="color" />
+
+        <!--- Card Name Attrs -->
+        <attr name="card_cardNameHeaderColor" format="color" />
+        <attr name="card_cardNameTextColor" format="color" />
+        <attr name="card_cardNameHintColor" format="color" />
+
+        <!--- Card Expiry Attrs -->
+        <attr name="card_cardExpiryHeaderColor" format="color" />
+        <attr name="card_cardExpiryTextColor" format="color" />
+        <attr name="card_cardExpiryHintColor" format="color" />
+
+        <attr name="card_autoFocusCardNumber" format="boolean" />
+        <attr name="card_outline_error_color" format="color" />
+        <attr name="card_outline_base_color" format="color" />
+
+        <attr name="card_separator" format="string" />
+
+        <attr name="card_isInEditMode" format="boolean" />
+
+        <attr name="card_tooltip_text" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0" />
+            <enum name="trimModeLength" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ZigzagView">
+        <attr name="zigzagHeight" format="dimension" />
+        <attr name="zigzagElevation" format="dimension" />
+        <attr name="zigzagBackgroundColor" format="color" />
+        <attr name="zigzagPaddingContent" format="dimension" />
+        <attr name="zigzagPadding" format="dimension" />
+        <attr name="zigzagPaddingLeft" format="dimension" />
+        <attr name="zigzagPaddingRight" format="dimension" />
+        <attr name="zigzagPaddingBottom" format="dimension" />
+        <attr name="zigzagPaddingTop" format="dimension" />
+        <attr name="zigzagSides">
+            <flag name="top" value="1" />
+            <flag name="bottom" value="2" />
+            <flag name="right" value="4" />
+            <flag name="left" value="8" />
+        </attr>
+        <attr name="zigzagShadowAlpha" format="float" />
+    </declare-styleable>
+
+    <attr name="buttonText" format="string" />
+    <attr name="buttonTextAllCaps" format="boolean" />
+    <attr name="buttonTextColor" format="color" />
+    <attr name="buttonBackgroundColor" format="color" />
+    <attr name="buttonStartColor" format="color" />
+    <attr name="buttonEndColor" format="color" />
+    <attr name="buttonStrokeColor" format="color" />
+    <attr name="buttonRadius" format="dimension" />
+    <attr name="buttonDrawablePadding" format="dimension" />
+    <attr name="buttonDimmed" format="boolean" />
+    <attr name="buttonDisabled" format="boolean" />
+    <attr name="buttonDrawableStart" format="reference" />
+    <attr name="buttonDrawableEnd" format="reference" />
+    <attr name="drawableStartCompat" format="reference" />
+    <attr name="buttonBorderWidth" format="dimension" />
+    <attr name="buttonDrawableTint" format="color" />
+    <attr name="buttonType" format="enum">
+        <enum name="primaryButton" value="0" />
+        <enum name="secondaryButton" value="1" />
+        <enum name="secondaryHollowButton" value="2"/>
+    </attr>
+    <attr name="buttonTextBold" format="boolean" />
+    <attr name="buttonElevation" format="dimension" />
+    <attr name="toolbarStartIcon" format="reference" />
+    <attr name="toolbarProgress" format="float" />
+
+
+    <declare-styleable name="CustomButton">
+        <attr name="buttonText" />
+        <attr name="buttonTextAllCaps" />
+        <attr name="buttonTextColor" />
+        <attr name="buttonStartColor" />
+        <attr name="buttonEndColor" />
+        <attr name="buttonStrokeColor" />
+        <attr name="buttonRadius" />
+        <attr name="buttonDrawablePadding" />
+        <attr name="buttonDimmed" />
+        <attr name="buttonDisabled" />
+        <attr name="buttonDrawableStart" />
+        <attr name="buttonDrawableEnd" />
+        <attr name="drawableStartCompat" />
+        <attr name="buttonBorderWidth" />
+        <attr name="buttonType" />
+        <attr name="buttonDrawableTint" />
+        <!--        <attr name="buttonTextSize" format="dimension" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CustomButtonV2">
+        <attr name="buttonText" />
+        <attr name="buttonTextAllCaps" />
+        <attr name="buttonTextColor" />
+        <attr name="buttonBackgroundColor" />
+        <attr name="buttonStrokeColor" />
+        <attr name="buttonRadius" />
+        <attr name="buttonDrawablePadding" />
+        <attr name="buttonDisabled" />
+        <attr name="buttonDrawableStart" />
+        <attr name="buttonDrawableEnd" />
+        <attr name="buttonBorderWidth" />
+        <attr name="textMarginStart" format="dimension" />
+        <attr name="textMarginEnd" format="dimension" />
+        <attr name="textMarginTop" format="dimension" />
+        <attr name="textMarginBottom" format="dimension" />
+        <attr name="buttonType" />
+        <attr name="buttonDrawableTint" />
+        <attr name="buttonTextBold" />
+        <attr name="buttonTextSize" format="dimension" />
+        <attr name="buttonElevation"/>
+    </declare-styleable>
+
+    <declare-styleable name="OverlappingProfileView">
+        <attr name="customStrokeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTimerView">
+        <attr name="timer_backgroundColor" format="color" />
+        <attr name="timer_cellHeight" format="dimension" />
+        <attr name="timer_cellWidth" format="dimension" />
+        <attr name="timer_textViewSize" format="dimension" />
+        <attr name="timer_textViewColor" format="color" />
+        <attr name="timer_shouldShowHeaders" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="JarProgressBarWithDrawable">
+        <attr name="progress_image" format="reference" />
+        <attr name="drawable_radius" format="integer" />
+        <attr name="drawable_border" format="integer" />
+        <attr name="user_initial" format="reference" />
+        <attr name="animate" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomOnboardingToolbar">
+        <attr name="toolbarStartIcon" />
+        <attr name="toolbarProgress" />
+    </declare-styleable>
+</resources>

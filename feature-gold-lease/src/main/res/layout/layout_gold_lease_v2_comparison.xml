@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llComparison"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:translationY="-15dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/llIndicatorChips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_bg_16dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUpperComparisonList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            tools:listitem="@layout/cell_gold_lease_comparison"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/core_ui_dotted_line_aca1d3_1dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLowerComparisonList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/cell_gold_lease_comparison"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llIndicatorChips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:weightSum="3">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/indicatorGoldX"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_weight="1"
+            style="@style/SmallBoldTextViewStyle"
+            android:textAllCaps="false"
+            android:background="@drawable/feature_gold_lease_bg_rounded_30_ebb46a"
+            android:textColor="@color/color_04044A"
+            android:text="@string/feature_gold_lease_goldx"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:paddingHorizontal="@dimen/dimen_10dp"
+            android:paddingVertical="@dimen/dimen_8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/indicatorGold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_weight="1"
+            style="@style/SmallBoldTextViewStyle"
+            android:textAllCaps="false"
+            android:background="@drawable/feature_gold_lease_bg_rounded_30_aca1d3"
+            android:textColor="@color/color_04044A"
+            android:text="@string/feature_gold_lease_gold"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:paddingHorizontal="@dimen/dimen_10dp"
+            android:paddingVertical="@dimen/dimen_8dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEarningsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        tools:text="*Estimated earnings per annum, based on past performance of gold prices"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llComparison"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="36dp"
+        android:layout_height="140dp"
+        android:src="@drawable/feature_gold_lease_ic_curved_arrow_down"
+        app:layout_constraintTop_toBottomOf="@id/llComparison"
+        app:layout_constraintBottom_toTopOf="@id/llEarnings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/color_ebb46a"
+        android:scaleType="fitXY"
+        android:translationX="40dp"
+        android:translationY="-65dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llEarnings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/feature_gold_lease_bg_circle"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:paddingVertical="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEarningsDescription">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/feature_gold_lease_ic_gold_bar"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEarningsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            style="@style/CommonBoldTextViewStyle"
+            tools:text="GoldX earnings\nworth ₹300"
+            android:textColor="@color/color_EBB46A"
+            android:gravity="center_vertical" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

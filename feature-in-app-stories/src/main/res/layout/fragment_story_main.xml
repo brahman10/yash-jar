@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draggable_container"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/redAlertText"
+            android:translationZ="@dimen/dimen_10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMessageIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_no_internet"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+                app:layout_constraintEnd_toStartOf="@+id/appCompatTextView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/appCompatTextView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="No internet available please try again"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivMessageIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/messageLoading"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/color_EBB46A"
+            android:translationZ="@dimen/dimen_10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/ivMessageIconLoading"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/black"
+                android:progressTint="@android:color/black"
+                android:src="@drawable/ic_no_internet"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatTextViewLoading"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextViewLoading"
+                app:layout_constraintEnd_toStartOf="@+id/appCompatTextViewLoading"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/appCompatTextViewLoading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextViewLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="This is taking longer than expected"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivMessageIconLoading"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivJarIcon"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginStart="@dimen/dimen_18dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:elevation="@dimen/dimen_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message"
+            app:srcCompat="@drawable/jar_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJarStories"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:elevation="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:lineHeight="@dimen/dimen_18sp"
+            android:text="Jar Stories"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivJarIcon"
+            app:layout_constraintStart_toEndOf="@id/ivJarIcon"
+            app:layout_constraintTop_toTopOf="@id/ivJarIcon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="25dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:tint="@color/white"
+            android:translationZ="@dimen/dimen_10dp"
+            android:elevation="@dimen/dimen_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivJarIcon"
+            app:srcCompat="@drawable/close_icon" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupStoryExpired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="ivJarIcon, tvJarStories, ivClose" />
+
+        <LinearLayout
+            android:id="@+id/llErrorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_60dp"
+            android:layout_marginEnd="@dimen/dimen_60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivJarIcon"
+            tools:visibility="invisible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/errorImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/be_back_soon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/color_EEEAFF"
+                android:textSize="@dimen/dimen_16sp"
+                app:lineHeight="24sp"
+                tools:text="@string/no_story_available" />
+
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clStories"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message">
+            <LinearLayout
+                android:id="@+id/llProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:translationZ="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpGuide"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+            </androidx.viewpager2.widget.ViewPager2>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <View
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="68dp"
+            android:elevation="4dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/btnPause"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="68dp"
+            android:elevation="4dp"
+            android:translationZ="14dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnNext"
+            app:layout_constraintStart_toEndOf="@+id/btnPrev"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/btnPrev"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="68dp"
+            android:elevation="4dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivJarErrorLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:alpha="0.5"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/jar_logo" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="#48FFFFFF"
+                    app:cardCornerRadius="@dimen/dimen_12dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:backgroundTint="#48FFFFFF"
+                    app:cardCornerRadius="@dimen/dimen_12dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#48FFFFFF"
+
+                    app:cardCornerRadius="@dimen/dimen_12dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_weight="8"
+                    android:backgroundTint="#48FFFFFF"
+                    app:cardCornerRadius="@dimen/dimen_12dp" />
+            </LinearLayout>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupStories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="clStories,btnNext,btnPrev" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/load_failed"
+            android:visibility="gone"
+            android:elevation="10dp"
+            android:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_settings_payment_settings">പേയ്‌മെന്റ് സെറ്റിംഗ്സ്</string>
+    <string name="feature_settings_app_settings">ആപ്പ് സെറ്റിംഗ്സ്</string>
+    <string name="feature_settings_privacy_and_permission">സ്വകാര്യതയും അനുമതികളും</string>
+
+    <string name="feature_settings_payment_methods">പേയ്‌മെന്റ് തരങ്ങൾ</string>
+    <string name="feature_settings_auto_invest">ഓട്ടോ നിക്ഷേപം</string>
+    <string name="feature_settings_daily_savings">പ്രതിദിന സമ്പാദ്യം</string>
+    <string name="feature_settings_round_off">റൌണ്ട് ഓഫ്</string>
+    <string name="feature_settings_notification_settings">അറിയിപ്പ് സെറ്റിംഗ്സ്</string>
+    <string name="feature_settings_language">ഭാഷ</string>
+    <string name="feature_settings_battery_optimizations">ബാറ്ററി ഒപ്ടിമൈസേഷൻ</string>
+    <string name="feature_settings_jar_security_shield">ജാർ സുരക്ഷാ ഷീൽഡ്</string>
+    <string name="feature_settings_terms_and_conditions">നിബന്ധനകളും വ്യവസ്ഥകളും</string>
+    <string name="feature_settings_privacy_policy">സ്വകാര്യത നയം</string>
+
+    <string name="feature_settings_saved_upi_ids">സേവ് ചെയ്ത UPI ഐഡികൾ</string>
+    <string name="feature_settings_add_a_new_upi_id">ഒരു പുതിയ UPI ഐഡി രേഖപ്പെടുത്തുക</string>
+    <string name="feature_settings_you_need_to_have_a_registered_upi_id">നിങ്ങൾക്ക് രജിസ്റ്റർ ചെയ്ത UPI ഐഡി വേണം.</string>
+    <string name="feature_settings_saved_cards">സേവ് ചെയ്ത കാർഡുകൾ</string>
+    <string name="feature_settings_add_a_new_card">ഒരു പുതിയ കാർഡ് ചേർക്കുക</string>
+    <string name="feature_settings_you_can_save_your_credit_debit_cards">നിങ്ങളുടെ ക്രെഡിറ്റ്/ഡെബിറ്റ് കാർഡുകൾ സേവ് ചെയ്യാം</string>
+    <string name="feature_settings_on">ഓൺ</string>
+    <string name="feature_settings_off">ഓഫ്</string>
+    <string name="feature_settings_enabled">എനേബിൾ ചെയ്തു</string>
+    <string name="feature_settings_disabled">ഡിസേബിൾ ചെയ്തു</string>
+    <string name="feature_settings_tap_to_edit">എഡിറ്റ് ചെയ്യാൻ അമർത്തുക</string>
+    <string name="feature_settings_invalid_card_number_please_try_agin">അസാധുവായി കാർഡ് നമ്പർ. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="feature_settings_invalid_expiry_date_please_try_agin">അസാധുവായി എക്സ്പയറി തീയതി. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="feature_settings_add_cvv">CVV ചേർക്കുക</string>
+
+    <string name="feature_settings_security_shield_des">നിങ്ങളുടെ അക്കൗണ്ടിന് അധിക സുരക്ഷ നൽകാനായി\nനിലവിലെ ഫോൺ ലോക്ക് ഉപയോഗിക്കുക.</string>
+    <string name="feature_settings_enable">എനേബിൾ ചെയ്യുക</string>
+    <string name="feature_settings_disable">ഡിസേബിൾ ചെയ്യുക</string>
+    <string name="feature_settings_i_ll_do_it_later">ഞാൻ ഇത് പിന്നീട് ചെയ്യാം</string>
+    <string name="feature_settings_confirm_your_password">നിങ്ങളുടെ പാസ്‍വേർഡ് സ്ഥിരീകരിക്കുക</string>
+    <string name="feature_settings_authentication_failed">സ്ഥിരീകരണം പരാജയപ്പെട്ടു</string>
+    <string name="feature_settings_why_do_we_need_this">ഞങ്ങൾക്ക് ഇത് എന്തിനാണ്?</string>
+    <string name="feature_settings_to_ensure_that_your_spends_are_detected_even_when_jar_app_is_not_open">ജാർ ആപ്പ് തുറന്നില്ലെങ്കിലും നിങ്ങളുടെ ചിലവുകൾ കണ്ടെത്തുന്നുണ്ട് എന്നുറപ്പാക്കാൻ.</string>
+    <string name="feature_settings_how_should_i_do_this">ഞാൻ ഇത് എങ്ങനെ ചെയ്യണം?</string>
+    <string name="feature_settings_please_change_your_jar_battery_settings">ദയവായി നിങ്ങളുടെ ജാർ ബാറ്ററി സെറ്റിംഗ്സ് ദയവായി മാറ്റുക അല്ലെങ്കിൽ താഴെയുള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്ത് ഓട്ടോസ്റ്റാർട്ട് എനേബിൾ ചെയ്യുക.</string>
+    <string name="feature_settings_optimize_now">ഇപ്പോൾ ഒപ്ടിമൈസ് ചെയ്യുക</string>
+    <string name="feature_settings_will_not_misuse_this_service">ജാർ ഈ സേവനം ദുരുപയോഗം ചെയ്യില്ലെന്ന് ദയവായി വിശ്വസിക്കുക.</string>
+    <string name="feature_settings_battery_optimization">ബാറ്ററി ഒപ്ടിമൈസേഷൻ</string>
+    <string name="feature_settings_language_settings">ഭാഷ സെറ്റിംഗ്സ്</string>
+    <string name="feature_settings_please_select_app_language">ദയവായി ആപ്പ് ഭാഷ തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_settings_okay2">ശരി</string>
+    <string name="feature_settings_apply">പ്രയോഗിക്കുക</string>
+    <string name="feature_settings_gold_price_alerts">സ്വർണ വില അറിയിപ്പുകൾ</string>
+    <string name="feature_settings_gold_price_alerts_description">വില കുറയുമ്പോൾ സമയസമയത്ത് അറിയിപ്പുകൾ നേടി മികച്ച വിലയിൽ നിക്ഷേപിക്കൂ.</string>
+    <string name="feature_settings_shubh_muhurat_alerts">ശുഭ മുഹൂർത്തം അറിയിപ്പുകൾ</string>
+    <string name="feature_settings_shubh_muhurat_alerts_description">ശുഭ മുഹൂർത്തങ്ങളിൽ സ്വർണം വാങ്ങാൻ സമയസമയത്ത് അറിയിപ്പുകൾ നേടൂ.</string>
+    <string name="feature_settings_round_off_enabled">റൌണ്ട് ഓഫ് എനേബിൾ ചെയ്തു</string>
+    <string name="feature_settings_round_off_disabled">റൌണ്ട് ഓഫ് ഡിസേബിൾ ചെയ്തു</string>
+    <string name="feature_settings_round_off_enabled_des">നിങ്ങളുടെ ചിലവുകൾ കണ്ടെത്തി അടുത്തതായി റൌണ്ട് ഓഫ് ചെയ്ത് ഞങ്ങൾ നിക്ഷേപിക്കാം.</string>
+    <string name="feature_settings_round_off_disabled_des">നിങ്ങളുടെ ചിലവുകൾ കണ്ടെത്തി അടുത്തതായി റൌണ്ട് ഓഫ് ചെയ്ത് ഞങ്ങൾ നിക്ഷേപിക്കില്ല.</string>
+    <string name="feature_settings_round_off_to_next">അടുത്തതിലേക്ക് റൌണ്ട് ഓഫ് ചെയ്യുക</string>
+    <string name="feature_settings_edit_u"><u>എഡിറ്റ് ചെയ്യുക</u></string>
+    <string name="feature_settings_pause_round_off">റൌണ്ട് ഓഫ് താത്കാലികമായി നിർത്തുക</string>
+    <string name="feature_settings_resume_now_u"><u>ഇപ്പോൾ പുനരാരംഭിക്കുക</u></string>
+    <string name="feature_settings_pause_u"><u>താത്കാലികമായി നിർത്തുക</u></string>
+    <string name="feature_settings_rs_value">₹%.2f</string>
+    <string name="feature_settings_rs_value_int">₹%d</string>
+    <string name="feature_settings_rs_value_string">₹%s</string>
+    <string name="feature_settings_enter_your_upi_id">നിങ്ങളുടെ UPI ഐഡി രേഖപ്പെടുത്തുക.</string>
+    <string name="feature_settings_verify">സ്ഥിരീകരിക്കുക</string>
+    <string name="feature_settings_cancel">റദ്ദാക്കുക</string>
+    <string name="feature_settings_upi_id">UPI ഐഡി</string>
+    <string name="feature_settings_upi_id_added_successfully">%s ഐഡി വിജയകരമായി ചേർത്തു</string>
+    <string name="feature_settings_invalid_upi">അസാധുവായ UPI ഐഡി. Please try again.</string>
+    <string name="feature_settings_round_off_nresumed">റൌണ്ട് ഓഫ്\nപുനരാരംഭിച്ചു</string>
+    <string name="feature_settings_round_off_resumed_des">ഞങ്ങൾ നിങ്ങളുടെ ചിലവുകൾ കണ്ടെത്തി അടുത്ത റൌണ്ട്-ഓഫ്\nഡിജിറ്റൽ സ്വർണത്തിൽ നിക്ഷേപിക്കും.</string>
+    <string name="feature_settings_its_good_to_see_you_save_again">നിങ്ങളെ വീണ്ടും കണ്ടതിൽ സന്തോഷം</string>
+    <string name="feature_settings_round_off_is_disabled">റൌണ്ട് ഓഫ് ഡിസേബിൾ ചെയ്തു</string>
+    <string name="feature_settings_round_off_set_successfully">റൌണ്ട് ഓഫ് വിജയകരമായി നിശ്ചയിച്ചു</string>
+    <string name="feature_settings_set">നിശ്ചയിക്കുക</string>
+    <string name="feature_settings_5">5</string>
+    <string name="feature_settings_10">10</string>
+    <string name="feature_settings_day">ദിവസം</string>
+    <string name="feature_settings_days">ദിവസങ്ങൾ</string>
+    <string name="feature_settings_pause_round_off_for">റൌണ്ട് ഓഫ് താത്കാലികമായി നിർത്തേണ്ടത്</string>
+    <string name="feature_settings_round_off_paused_for">റൌണ്ട് ഓഫ് താത്കാലികമായി നിർത്തിയിരിക്കുന്നത്</string>
+    <string name="feature_settings_round_off_to_des">നിങ്ങളുടെ പേയ്‌മെന്റുകൾ ഞങ്ങൾ അടുത്ത 10 ലേക്ക് റൌണ്ട് ഓഫ് ചെയ്ത്,\nചില്ലറ സ്വർണത്തിൽ നിക്ഷേപിക്കും.</string>
+    <string name="feature_settings_invest_10_if_no_spends_are_detected">ചിലവുകൾ ഒന്നും കണ്ടെത്തിയില്ലെങ്കിൽ ₹10 നിക്ഷേപിക്കുക</string>
+    <string name="feature_settings_in_progress">പുരോഗമിക്കുന്നു…</string>
+    <string name="feature_settings_failed">പരാജയപ്പെട്ടു</string>
+    <string name="feature_settings_setup_now">ഇപ്പോൾ ക്രമീകരിക്കുക</string>
+    <string name="feature_settings_delete_upi_des">ഈ UPI ഐഡി\nഡിലീറ്റ് ചെയ്യണം എന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?</string>
+    <string name="feature_settings_delete_card_des">ഈ കാർഡ്\nഡിലീറ്റ് ചെയ്യണം എന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?</string>
+    <string name="feature_settings_delete">ഡിലീറ്റ് ചെയ്യുക</string>
+    <string name="feature_settings_upi_associated_to_auto_save">ഈ UPI ഐഡി ഓട്ടോ സേവുമായും ബന്ധപ്പെട്ടിരിക്കുന്നു. ഓട്ടോ-സേവ് ഡിസേബിൾ ചെയ്യാൻ, സെറ്റിംഗ്സ് പേജിലെ ഓട്ടോ-സേവിലേക്ക് ദയവായി പോകുക.</string>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one">പുനരാരംഭിക്കുന്നത് : %d ദിവസം</item>
+        <item quantity="other">പുനരാരംഭിക്കുന്നത് : %d ദിവസങ്ങൾ</item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d ദിവസം</item>
+        <item quantity="other">%d ദിവസങ്ങൾ</item>
+    </plurals>
+    <string name="feature_settings_resuming_tomorrow">നാളെ പുനരാരംഭിക്കുന്നു</string>
+    <string name="feature_settings_update_auto_save">ഓട്ടോ-സേവ് അപ്‌ഡേറ്റ് ചെയ്യൂ</string>
+    <string name="feature_settings_to_save_roundoffs_automatically">റൌണ്ട് ഓഫുകൾ ഓട്ടോമാറ്റിക്കായി മിച്ചം പിടിക്കാൻ, നിങ്ങൾ വീണ്ടും ഓട്ടോ-സേവ് സജ്ജമാക്കണം.</string>
+    <string name="feature_settings_invalid_upi_id">അസാധുവായ UPI ID</string>
+    <string name="feature_settings_verify_and_add">സ്ഥിരീകരിച്ച് ചേർക്കൂ</string>
+    <string name="feature_settings_invalid_upi_enter_correct">അസാധുവായ UPI ഐഡി രേഖപ്പെടുത്തി. നിങ്ങളുടെ ശരിയായ UPI ഐഡി രേഖപ്പെടുത്തുക.</string>
+    <string name="feature_settings_savings_plan">സമ്പാദ്യ പദ്ധതി</string>
+
+
+    <string name="feature_settings_gold_price_alert_enabled">സ്വർണ വില അറിയിപ്പ് സജീവമാക്കി</string>
+    <string name="feature_settings_gold_price_alert_disabled">സ്വർണ വില അറിയിപ്പ് വേണ്ടെന്ന് വെച്ചു</string>
+    <string name="feature_settings_shubh_muhurat_alert_enabled">ശുഭ മുഹൂർത്തത്തിന്റെ അറിയിപ്പ് സജീവമാക്കി</string>
+    <string name="feature_settings_shubh_muhurat_alert_disabled">ശുഭ മുഹൂർത്തത്തിന്റെ അറിയിപ്പ് വേണ്ടെന്ന് വെച്ചു</string>
+
+    <string name="feature_buy_gold_currency_sign_x_int">\u20B9%d</string>
+
+</resources>

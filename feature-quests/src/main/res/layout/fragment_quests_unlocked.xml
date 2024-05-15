@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWinCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="@dimen/dimen_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCouponWinLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_431860"
+                android:outlineProvider="background"
+                android:paddingVertical="@dimen/dimen_20dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_marginEnd="30dp"
+                    android:elevation="@dimen/dimen_20dp"
+                    android:tint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/close_icon" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHeading"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineHeight="30sp"
+                    android:text="Congratulations!\nYou’ve unlocked!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivClose" />
+
+                <com.jar.app.core_ui.squared_card_view.SquareCardView
+                    android:id="@+id/couponLayout"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="36dp"
+                    app:cardCornerRadius="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHeading">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ivBrandIconCouponDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="#F2F2F2"
+                            android:scaleType="fitXY"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearance="@style/circleImageView"
+                            tools:src="@drawable/mystery_card" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCouponDetailsBrandTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/inter"
+                            android:textColor="@color/color_431860"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivBrandIconCouponDetails"
+                            app:layout_constraintStart_toEndOf="@+id/ivBrandIconCouponDetails"
+                            app:layout_constraintTop_toTopOf="@+id/ivBrandIconCouponDetails"
+                            tools:text="Myntra" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCouponDetailsHeading"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:paddingStart="@dimen/dimen_16dp"
+                            android:paddingEnd="@dimen/dimen_16dp"
+                            android:textColor="@color/color_431860"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toTopOf="@+id/tvCouponDetailsDescription"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ivBrandIconCouponDetails"
+                            app:layout_constraintVertical_chainStyle="packed"
+                            app:lineHeight="26sp"
+                            tools:text="Extra Flat 60%\ndiscount free doctors" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCouponDetailsDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:paddingStart="@dimen/dimen_16dp"
+                            android:paddingEnd="@dimen/dimen_16dp"
+                            android:textColor="#431860"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/tvCouponDetailsValidTill"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvCouponDetailsHeading"
+                            app:lineHeight="21sp"
+                            tools:text="upto ₹500 on a min buy of ₹999\non select styles on Myntra" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCouponDetailsValidTill"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/color_3EAC93"
+                            android:paddingHorizontal="@dimen/dimen_16dp"
+                            android:paddingVertical="@dimen/dimen_8dp"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:lineHeight="12sp"
+                            tools:text="Valid till 12 Aug 2019" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.jar.app.core_ui.squared_card_view.SquareCardView>
+
+                <View
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:background="@drawable/core_ui_bg_circle_white"
+                    android:backgroundTint="@color/bgColor"
+                    android:elevation="10dp"
+                    android:translationX="-10dp"
+                    android:translationZ="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/dottedLine"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/dottedLine" />
+
+                <View
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:background="@drawable/core_ui_bg_circle_white"
+                    android:backgroundTint="@color/bgColor"
+                    android:elevation="10dp"
+                    android:translationX="10dp"
+                    android:translationZ="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/dottedLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/dottedLine" />
+
+                <View
+                    android:id="@+id/dottedLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="@dimen/dimen_32dp"
+                    android:background="@drawable/feature_quests_dashed_line"
+                    android:backgroundTint="@color/color_ACA1D3"
+                    android:elevation="9dp"
+                    android:translationZ="9dp"
+                    app:layout_constraintTop_toBottomOf="@id/couponLayout" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:elevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dottedLine">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNavigationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="24dp"
+                        android:gravity="center"
+                        android:textColor="@color/color_ACA1D3"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:lineHeight="18sp"
+                        tools:text="To view your coupons, go to" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp"
+                        android:drawableStart="@drawable/hamburger_circular_border"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/menu_offers"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNavigationText"
+                        app:lineHeight="21sp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.jar.app.core_ui.widget.button.CustomButtonV2
+                    android:id="@+id/btnCta"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="@dimen/dimen_24dp"
+                    android:layout_marginEnd="32dp"
+                    app:buttonType="primaryButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                <com.jar.app.core_ui.widget.button.CustomButtonV2
+                    android:id="@+id/btnCta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="32dp"
+                    app:buttonBackgroundColor="@color/color_431860"
+                    app:buttonStrokeColor="@color/color_846FC0"
+                    app:buttonType="secondaryHollowButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnCta" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_3C3357">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_weekly_challenge_home" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_40"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_top_solid_372f55_radius_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gl_40" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrentWeekTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Week 1 Challenge Lost" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessageOne"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentWeekTitle"
+        tools:text="5,876 people participated" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_lottie_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_lottie_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/magicHatFabLottie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-15dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/gl_60"
+        app:layout_constraintEnd_toEndOf="@+id/gl_lottie_end"
+        app:layout_constraintStart_toStartOf="@+id/gl_lottie_start"
+        app:layout_constraintTop_toTopOf="@+id/tvMessageOne"
+        app:lottie_autoPlay="true"
+        app:lottie_imageAssetsFolder="resting_hat.lottie"
+        app:lottie_loop="true"
+        tools:background="@drawable/ic_magic_hat" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_60"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magicHatFabLottie"
+        tools:visibility="visible">
+
+        <include layout="@layout/layout_magic_card_set_8" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

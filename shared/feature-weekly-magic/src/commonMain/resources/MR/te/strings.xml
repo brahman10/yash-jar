@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_weekly_magic_to_win"> గెలవడానికి</string>
+    <string name="feature_weekly_magic_upto_s_in_gold">బంగారంలో ₹%s వరకు!</string>
+    <string name="feature_weekly_magic_s_mystery_cards">%s రహస్య కార్డ్‌లు</string>
+    <string name="feature_weekly_magic_s_mystery_card">%s రహస్య కార్డ్</string>
+</resources>

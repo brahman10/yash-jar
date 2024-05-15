@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/color_2E2942"
+    android:background="@drawable/core_ui_bg_top_rounded_corner">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivEmoji"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="54dp"
+        app:srcCompat="@drawable/feature_lending_kyc_emoji"
+        android:padding="24dp"
+        android:background="@drawable/core_ui_bg_circle_white"
+        android:backgroundTint="#252236"
+        app:layout_constraintBottom_toTopOf="@id/tvWelcomeBackTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="28dp"
+        android:background="?attr/actionBarItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_close"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWelcomeBackTitle"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/feature_lending_kyc_welcome_back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivEmoji" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRemainingSteps"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/feature_lending_kyc_remaining_steps"
+        android:textColor="@color/smallTxtColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeBackTitle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardKycStepsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/bgColor"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRemainingSteps">
+
+        <com.jar.app.feature_lending_kyc.impl.ui.step_view.KycStepView
+            android:id="@+id/stepView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHundredPercentSecureWelcomeKyc"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:drawableStart="@drawable/feature_lending_kyc_ic_green_secure"
+        android:gravity="center"
+        android:text="@string/feature_lending_kyc_100_secure_kyc"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/btnContinueKyc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardKycStepsHolder" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnContinueKyc"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="42dp"
+        app:buttonText="@string/feature_lending_kyc_continue_kyc"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHundredPercentSecureWelcomeKyc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

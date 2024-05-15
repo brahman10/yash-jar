@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry">Retry</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="try_again">Try Again</string>
+    <string name="feature_buy_gold_refresh">Refresh</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="copied">Copied</string>
+    <string name="dates">Dates</string>
+    <string name="time">Time</string>
+
+    <string name="show_less"> Show Less</string>
+    <string name="show_more"> Show More</string>
+    <string name="core_ui_share">Share</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="fetching_new_gold_prices">Fetching new gold prices. Please wait while we find it for you</string>
+    <string name="core_ui_name_on_card">Name on card</string>
+    <string name="core_ui_exp_date">Exp Date</string>
+    <string name="core_ui_name_surname">NAME SURNAME</string>
+    <string name="core_ui_mm_yy">MM/YY</string>
+    <string name="core_ui_card_number">Card Number</string>
+    <string name="core_ui_no_internet_available_please_try_again">No internet available please try again</string>
+    <string name="core_ui_we_are_back_online">We are back online</string>
+    <string name="core_ui_valid_for_s">Valid For: %s</string>
+    <string name="core_ui_empty" translatable="false" />
+    <string name="core_ui_pause">Pause</string>
+    <string name="core_ui_disable">Disable</string>
+    <string name="core_ui_dismiss"><u>Disable</u></string>
+    <string name="core_ui_cancel"><u>Cancel</u></string>
+    <string name="core_ui_i_ll_do_it_later"><u>I’ll do it later</u></string>
+    <string name="core_ui_next">Next</string>
+    <string name="pull_down_to_refresh">Pull down to refresh</string>
+    <string name="core_ui_skip"><u>Skip</u></string>
+    <string name="core_ui_click_here">click here</string>
+    <string name="core_ui_okay">Okay</string>
+    <string name="core_ui_terms_of_use"><u>Terms of use</u></string>
+    <string name="core_ui_privacy_policy"><u>Privacy Policy</u></string>
+    <string name="core_ui_confirm">Confirm</string>
+    <string name="core_ui_replay">replay</string>
+    <string name="buy_gold">Buy Gold</string>
+    <string name="jackpot">Jackpot</string>
+
+    <string name="feature_buy_gold_currency_sign_x_int">\u20B9%d</string>
+    <string name="feature_payment_please_enter_a_valid_upi_id">Please enter a valid UPI ID</string>
+    <string name="feature_payment_no_upi_apps_found">No UPI apps found on your device</string>
+
+    <string name="feature_vasooli_send_reminder">Send Reminder</string>
+    <string name="invested_value">Invested Value</string>
+    <string name="total_invested_value">Total Invested Value</string>
+    <string name="as_per_rbi_gold_purchase_gst">*As per Reserve Bank of India gold purchase is subject to GST</string>
+    <string name="filter">Filter</string>
+    <string name="core_ui_verify">Verify</string>
+    <string name="core_ui_proceed">Proceed</string>
+    <string name="core_ui_or">OR</string>
+    <string name="core_ui_email_hint">e.g. rahul@xyz.com</string>
+    <string name="expires_in">Expires in %1$s</string>
+    <string name="core_ui_pan_hint">XXXXX-0000-X</string>
+    <string name="core_ui_aadhaar_hint">0000–0000–0000</string>
+    <string name="core_ui_invalid_email_address">Invalid e-mail address</string>
+    <string name="core_ui_pan_number_should_be_10_char">PAN should be 10 characters long.</string>
+    <string name="core_ui_pan_cannot_have_special_character">PAN cannot have special characters.</string>
+    <string name="core_ui_incorrect_pan_format">Incorrect PAN format. Please enter a valid personal PAN.</string>
+    <string name="core_ui_incorrect_aadhaar_format">Incorrect AADHAAR format. Please enter a valid AADHAAR.</string>
+    <string name="core_ui_aadhar_number_should_be_12_char">Aadhaar number should be 12 characters long.</string>
+    <string name="core_ui_aadhar_cannot_have_char">Aadhaar cannot have characters like a-z.</string>
+    <string name="core_ui_you_must_be_above_18">You must be 18 years or above to use this app.</string>
+    <string name="core_ui_maximum_age_limit_reached">Maximum age limited reached. Please try a different age</string>
+    <string name="core_ui_name_label">Name</string>
+    <string name="core_ui_date_of_birth">Date Of Birth</string>
+    <string name="core_ui_take_photo">Take Photo</string>
+    <string name="core_ui_x_char_out_of_x" translatable="false">%d/%d</string>
+    <string name="core_ui_hour">Hour</string>
+    <string name="core_ui_minute">minute</string>
+    <string name="core_ui_second">second</string>
+    <string name="core_ui_download_invoice"><u>Download Invoice</u></string>
+    <string name="core_ui_go_to_home">Go To Home</string>
+    <string name="core_ui_go_to_settings">Go To Settings</string>
+    <string name="core_ui_go_back_to_settings">Go Back To Settings</string>
+    <string name="core_ui_go_to_homepage">Go To Homepage</string>
+    <string name="core_ui_bank_account">Bank Account</string>
+    <string name="core_ui_upi_app">UPI app</string>
+    <string name="core_ui_upi_id">UPI ID</string>
+    <string name="core_ui_subscription_id">Subscription ID</string>
+    <string name="core_ui_amount_slash_frequency">Amount/Frequency</string>
+    <string name="core_ui_per_day_limit">Per day limit</string>
+    <string name="core_ui_per_week_limit">Per week limit</string>
+    <string name="core_ui_per_month_limit">Per month limit</string>
+    <string name="core_ui_start_date">Start date</string>
+    <string name="core_ui_frequency">Frequency</string>
+    <string name="core_ui_rs_x_int">\u20B9%d</string>
+    <string name="core_ui_rs_symbol">\u20B9</string>
+    <string name="core_ui_rs_x_float">\u20B9%.2f</string>
+    <string name="core_ui_contact_support"><u>Contact Support</u></string>
+    <string name="core_ui_need_help_question_mark">Need help?</string>
+    <string name="core_ui_view_otp_on_whatsapp">Get OTP on WhatsApp</string>
+    <string name="core_ui_auto_save">Auto-save</string>
+    <string name="core_ui_amount">Amount</string>
+    <string name="core_ui_day">day</string>
+    <string name="core_ui_days">days</string>
+    <string name="core_ui_week">week</string>
+    <string name="core_ui_weeks">weeks</string>
+    <string name="core_ui_month">month</string>
+    <string name="core_ui_months">months</string>
+    <string name="core_ui_auto_reuming_on_s">Auto Resuming on: %s</string>
+    <string name="core_ui_active">Active</string>
+    <string name="core_ui_on">ON</string>
+    <string name="core_ui_off">OFF</string>
+    <string name="core_ui_pause_instead">Pause Instead</string>
+    <string name="core_ui_pause_now">Pause Now</string>
+
+    <string name="hour">hour</string>
+    <string name="full_colon">:</string>
+    <string name="minute">minute</string>
+    <string name="second">second</string>
+    <string name="core_ui_help">Help</string>
+    <string name="your_reward">Your Rewards</string>
+    <string name="banner_text">+%s</string>
+
+    <string name="core_ui_setup_complete">Setup Complete!</string>
+    <string name="core_ui_first_saving_in_gold_successful">1st saving in gold successful!</string>
+    <string name="core_ui_amount_line_quantity">₹%d | %.2f gm</string>
+    <string name="core_ui_to_make_any_changes_go_to">To make any changes, go to</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+    <string name="feature_core_ui_switch_compat_off">OFF</string>
+    <string name="feature_core_ui_switch_compat_on">ON</string>
+    <string name="core_ui_live">⬤ LIVE</string>
+    <string name="core_ui_fetching_new_gold_price">Fetching New Gold Price</string>
+    <string name="core_ui_new_gold_price_fetched">New Gold Price fetched!</string>
+
+    <string name="gold_value_with_unit" translatable="false">"%.4f %s"</string>
+    <string name="you_won">You Won!</string>
+    <string name="you">YOU</string>
+    <string name="won">WON!</string>
+    <string name="feature_buy_gold_use_winnings">Use Winnings</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="backend_color_handler"> %s</string>
+    <string name="core_ui_new">New</string>
+    <string name="core_ui_copied_to_clipboard">Copied to clipboard</string>
+    <string name="core_ui_congrats_s">Congrats, %s!</string>
+    <string name="core_ui_you_are_all_set_to_start_your_saving_journey">You’re all set to start your savings journey.</string>
+
+    <string name="feature_post_setup_monday">Monday</string>
+    <string name="feature_post_setup_tuesday">Tuesday</string>
+    <string name="feature_post_setup_wednesday">Wednesday</string>
+    <string name="feature_post_setup_thursday">Thursday</string>
+    <string name="feature_post_setup_friday">Friday</string>
+    <string name="feature_post_setup_saturday">Saturday</string>
+    <string name="feature_post_setup_sunday">Sunday</string>
+    <string name="feature_post_setup_mon">MON</string>
+    <string name="feature_post_setup_tue">TUE</string>
+    <string name="feature_post_setup_wed">WED</string>
+    <string name="feature_post_setup_thu">THU</string>
+    <string name="feature_post_setup_fri">FRI</string>
+    <string name="feature_post_setup_sat">SAT</string>
+    <string name="feature_post_setup_sun">SUN</string>
+
+    <string name="feature_post_setup_if_money_was_debited">If your money was debited, no worries. You will get it all back in your account within 24 hours.</string>
+    <string name="feature_post_setup_dont_worry_we_will_notify_you">Don\&apos;t worry, we\&apos;ll notify you as soon as we get an update..</string>
+    <string name="feature_post_setup_savings_successful_for">Savings successful for</string>
+    <string name="feature_post_setup_savings_pending_for">Savings pending for</string>
+    <string name="feature_post_setup_savings_failed_for">Savings failed for</string>
+    <string name="feature_post_setup_paused">Paused</string>
+</resources>

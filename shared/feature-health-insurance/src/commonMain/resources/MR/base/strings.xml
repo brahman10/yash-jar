@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_health_insurance_mandate_heading">Let\'s automate your premium</string>
+    <string name="feature_health_insurance_mandate_premium_amount">Premium Amount</string>
+    <string name="feature_health_insurance_mandate_select_payment_method">Select payment method</string>
+    <string name="feature_health_insurance_mandate_cta">Proceed</string>
+    <string name="feature_health_insurance_mandate_safe_and_secure">100% SAFE &#38; SECURE</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">பெயர்</string>
+    <string name="phone_number">தொலைபேசி எண்</string>
+    <string name="please_fill_all_the_details">தயவுசெய்து அனைத்து விவரங்களையும் நிரப்பவும்</string>
+    <string name="email">இமெயில்</string>
+    <string name="pincode">பின்கோடு</string>
+    <string name="city">நகரம்</string>
+    <string name="enter_city">நகரத்தின் பெயரை உள்ளிடவும்</string>
+    <string name="state">மாநிலம்</string>
+    <string name="enter_state">மாநிலத்தின் பெயரை உள்ளிடவும்</string>
+    <string name="enter_pin_code">பின் கோடை உள்ளிடவும்</string>
+    <string name="add_details">விவரங்களைச் சேர்க்கவும்</string>
+    <string name="your_full_address">உங்களின் முழு முகவரி</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">விவரங்களைச் சமர்ப்பிக்கவும்</string>
+    <string name="details_added">விவரங்கள் சேர்க்கப்பட்டன</string>
+    <string name="street_address_one">தெரு முகவரி 1</string>
+    <string name="address_line_1">முகவரி 1</string>
+    <string name="address_line_2">முகவரி வரி 2</string>
+    <string name="check">சரிபார்க்கவும்</string>
+    <string name="street_address_two">தெரு முகவரி 2 (விரும்பினால்)</string>
+    <string name="please_enter_a_valid_pincode">சரியான பின்கோடை உள்ளிடவும்</string>
+    <string name="this_area_is_not_servicable_currently">இந்தப் பகுதி தற்போது சேவையில் இல்லை</string>
+    <string name="edit_address">முகவரியைத் திருத்து</string>
+    <string name="add_new_address">புதிய முகவரியைச் சேர்க்கவும்</string>
+    <string name="save_new_address">புதிய முகவரியைச் சேமி</string>
+    <string name="update_address">முகவரியைப் புதுப்பிக்கவும்</string>
+    <string name="save_and_proceed">சேமித்தப்பின் தொடரவும்</string>
+    <string name="select_an_address_for_delivery">டெலிவரிக்கான முகவரியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="no_delivery_address_available">டெலிவரிக்கான முகவரி இல்லை</string>
+    <string name="saved_addresses">சேமிக்கப்பட்ட முகவரிகள்</string>
+    <string name="add_delivery_details">டெலிவரி விவரங்களைச் சேர்க்கவும்</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">உங்கள் ஆதார் கார்டுடன் இணைக்கப்பட்டுள்ளது</string>
+    <string name="feature_user_api_saved_address">சேமிக்கப்பட்ட முகவரி</string>
+    <string name="feature_lending_recently_saved">சமீபத்தில் சேமிக்கப்பட்டது</string>
+</resources>

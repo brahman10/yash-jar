@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/redirection_navigation">
+
+    <include app:graph="@navigation/redirection_navigation" />
+    <include app:graph="@navigation/graph_manual_buy_nav" />
+
+    <include app:graph="@navigation/feature_delivery_navigation" />
+
+    <include app:graph="@navigation/feature_redemption_navigation" />
+
+    <include app:graph="@navigation/feature_daily_investment_cancellation_v2_navigation" />
+
+    <include app:graph="@navigation/feature_exit_survey_nav" />
+
+    <include app:graph="@navigation/payment_navigation" />
+
+    <include app:graph="@navigation/navigation_daily_investment" />
+
+    <include app:graph="@navigation/navigation_core" />
+
+    <include app:graph="@navigation/navigation_home" />
+
+    <include app:graph="@navigation/profile_navigation" />
+
+    <include app:graph="@navigation/spin_navigation_v2" />
+
+    <include app:graph="@navigation/goal_settings_nav" />
+
+    <include app:graph="@navigation/goal_based_saving_nav" />
+
+    <include app:graph="@navigation/goal_based_saving_v2" />
+
+    <include app:graph="@navigation/navigation_weekly_challenge" />
+
+    <include app:graph="@navigation/navigation_weekly_challenge_common" />
+
+    <include app:graph="@navigation/address_nav_graph" />
+
+    <include app:graph="@navigation/settings_v2_navigation" />
+
+    <include app:graph="@navigation/sell_gold_navigation" />
+
+    <include app:graph="@navigation/kyc_v2_navigation" />
+
+    <include app:graph="@navigation/vasooli_navigation" />
+
+    <include app:graph="@navigation/transaction_navigation" />
+
+    <include app:graph="@navigation/navigation_gifting" />
+
+    <include app:graph="@navigation/navigation_contacts_sync" />
+
+    <include app:graph="@navigation/navigation_web_pdf_viewer" />
+
+    <include app:graph="@navigation/feature_lending_kyc_navigation" />
+
+    <include app:graph="@navigation/feature_lending_kyc_steps_navigation" />
+
+    <include app:graph="@navigation/navigation_duo" />
+
+    <include app:graph="@navigation/navigation_round_off" />
+
+    <include app:graph="@navigation/navigation_mandate_payment" />
+
+    <include app:graph="@navigation/navigation_gold_sip" />
+
+    <include app:graph="@navigation/lending_navigation" />
+
+    <include app:graph="@navigation/lending_steps_navigation" />
+
+    <include app:graph="@navigation/gold_lease_navigation" />
+
+    <include app:graph="@navigation/buy_gold_v2_navigation" />
+
+    <include app:graph="@navigation/feature_refer_earn_v2_navigation" />
+
+    <include app:graph="@navigation/navigation_post_setup" />
+
+    <include app:graph="@navigation/spends_tracker_navigation" />
+
+    <include app:graph="@navigation/health_insurance_navigation" />
+
+    <include app:graph="@navigation/navigation_feature_gold_price_alerts" />
+
+    <include app:graph="@navigation/in_app_stories_nav_graph"/>
+
+    <include app:graph="@navigation/navigation_promo_code"/>
+
+    <include app:graph="@navigation/navigation_feature_quests" />
+
+    <include app:graph="@navigation/navigation_calculator" />
+
+    <action
+        android:id="@+id/action_to_accountFragment"
+        app:destination="@id/accountFragment" />
+
+    <action
+        android:id="@+id/action_to_downtime_dialog"
+        app:destination="@id/downtimeDialog" />
+
+    <action
+        android:id="@+id/action_to_force_update_dialog"
+        app:destination="@id/forceUpdateDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_newGuideFragment"
+        app:destination="@id/newGuideFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_notificationListFragment"
+        app:destination="@id/notificationListFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_storyFragment"
+        app:destination="@id/storyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_paymentTransactionBreakupFragment"
+        app:destination="@id/paymentTransactionBreakupFragment"
+        app:launchSingleTop="true" />
+
+    <dialog
+        android:id="@+id/paymentTransactionBreakupFragment"
+        android:name="com.jar.app.feature.transaction.ui.transaction_breakup.PaymentTransactionBreakupFragment"
+        android:label="PaymentTransactionBreakupFragment"
+        tools:layout="@layout/fragment_payment_transaction_breakup">
+
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="false" />
+
+    </dialog>
+
+    <action
+        android:id="@+id/action_to_activeSessionDetectedFragment"
+        app:destination="@id/activeSessionDetectedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_unusualActivityDetectedFragment"
+        app:destination="@id/unusualActivityDetectedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_userGoldBreakdownFragment"
+        app:destination="@+id/userGoldBreakdownFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_referralListFragment"
+        app:destination="@+id/referralListFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_transactionFragment"
+        app:destination="@+id/transactionFragment" />
+
+    <action
+        android:id="@+id/action_to_sellGoldConfirmationFragment"
+        app:destination="@+id/sell_gold_navigation" />
+
+    <action
+        android:id="@+id/action_to_surveyFragment"
+        app:destination="@id/surveyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_rateUsDialog"
+        app:destination="@id/rateUsDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_webViewFragment"
+        app:destination="@id/webViewFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_chooseLanguageFragment"
+        app:destination="@id/chooseLanguageFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_fragmentPartnershipBonuses"
+        app:destination="@id/fragmentPartnershipBonuses"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_logoutConfirmation"
+        app:destination="@+id/logoutConfirmationFragment"
+        app:launchSingleTop="true" />
+    <fragment
+        android:id="@+id/promoCodeSuccessFragment"
+        android:name="com.jar.app.feature.promo_code.ui.success.PromoCodeSuccessFragment"
+        android:label="PromoCodeSuccessFragment"
+        tools:layout="@layout/fragment_promo_code_success">
+
+        <argument
+            android:name="applyPromoCodeResponse"
+            app:argType="com.jar.app.feature.home.domain.model.ApplyPromoResponse"
+            app:nullable="false" />
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_introScreenFragment"
+        app:destination="@+id/feature_redemption_navigation" />
+
+    <action
+        android:id="@+id/action_to_dailySavingTemperingScreen"
+        app:destination="@+id/feature_daily_investment_cancellation_v2_navigation" />
+
+    <action
+        android:id="@+id/action_to_storeItemDeliveryFragment"
+        app:destination="@+id/feature_delivery_navigation" />
+
+    <action
+        android:id="@+id/action_to_goldRedemption"
+        app:destination="@+id/feature_redemption_navigation" />
+
+    <fragment
+        android:id="@+id/composeFragment"
+        android:name="com.jar.app.feature.compose.ComposeFragment"
+        android:label="ComposeFragment">
+        <deepLink app:uri="android-app://com.jar.app/composeFragment/" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/claimPromoCodeFragment"
+        android:name="com.jar.app.feature.promo_code.ui.ClaimPromoCodeFragment"
+        android:label="ClaimPromoCodeFragment"
+        tools:layout="@layout/fragment_claim_promo_code">
+
+        <action
+            android:id="@+id/action_claimPromoCodeFragment_to_promoCodeSuccessFragment"
+            app:destination="@id/promoCodeSuccessFragment" />
+
+        <deepLink app:uri="android-app://com.jar.app/claimPromoCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.jar.app.feature.transaction_new.ui.NewTransactionFragment"
+        android:label="NewTransactionFragment"
+        tools:layout="@layout/fragment_new_transaction">
+
+        <deepLink app:uri="android-app://com.jar.app/transactions/{transactionType}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.jar.app.feature.web_view.WebViewFragment"
+        android:label="WebViewFragment"
+        tools:layout="@layout/fragment_web_view">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="shouldPostAnalyticsFromUrl"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="showToolbar"
+            android:defaultValue="true"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/webView/{flowType}/{isInAppHelp}/{url}/{title}/{showToolbar}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/rateUsDialog"
+        android:name="com.jar.app.feature.rate_us.ui.RateUsDialog"
+        android:label="@string/rate_our_app"
+        tools:layout="@layout/fragment_rate_us_dialog">
+        <argument
+            android:name="title"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="subtitle"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/newGuideFragment"
+        android:name="com.jar.app.feature.guide.NewGuideFragment"
+        android:label="NewGuideFragment"
+        tools:layout="@layout/fragment_new_guide">
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="storyUrls"
+            app:argType="string[]"
+            app:nullable="false" />
+
+        <argument
+            android:name="guideCta"
+            app:argType="com.jar.app.feature.guide.GuideCta"
+            app:nullable="true" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/notificationListFragment"
+        android:name="com.jar.app.feature.notification_list.ui.NotificationListFragment"
+        android:label="NotificationListFragment"
+        tools:layout="@layout/fragment_notification_list" />
+
+    <dialog
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.jar.app.feature.choose_language.ui.ChooseLanguageFragment"
+        android:label="ChooseLanguageFragment"
+        tools:layout="@layout/fragment_choose_language">
+
+        <argument
+            android:name="preSelectedLanguage"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/activeSessionDetectedFragment"
+        android:name="com.jar.app.feature.active_session_detected.ui.ActiveSessionDetectedFragment"
+        android:label="ActiveSessionDetectedFragment"
+        tools:layout="@layout/fragment_active_sessions_detected">
+
+        <argument
+            android:name="userResponse"
+            app:argType="com.jar.app.core_base.domain.model.UserResponseData"
+            app:nullable="true" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/downtimeDialog"
+        android:name="com.jar.app.feature.downtime.ui.DowntimeDialog"
+        android:label="DowntimeDialog"
+        tools:layout="@layout/fragment_dialog_downtime">
+        <argument
+            android:name="timeLeftTillDownTimeEndsInMillis"
+            app:argType="long"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/forceUpdateDialog"
+        android:name="com.jar.app.feature.force_update.ForceUpdateDialog"
+        android:label="ForceUpdateDialog"
+        tools:layout="@layout/dialog_force_update" />
+
+    <dialog
+        android:id="@+id/unusualActivityDetectedFragment"
+        android:name="com.jar.app.feature.unusual_activity_detected.UnusualActivityDetectedFragment"
+        android:label="UnusualActivityDetectedFragment"
+        tools:layout="@layout/fragment_unusual_activity_detected" />
+
+
+    <dialog
+        android:id="@+id/surveyFragment"
+        android:name="com.jar.app.feature.survey.ui.surveys.SurveyFragment"
+        android:label="SurveyFragment"
+        tools:layout="@layout/fragment_survey" />
+
+    <dialog
+        android:id="@+id/userGoldBreakdownFragment"
+        android:name="com.jar.app.feature.user_gold_breakdown.ui.UserGoldBreakdownFragment"
+        android:label="UserGoldBreakdownFragment"
+        tools:layout="@layout/fragment_user_gold_breakdown">
+
+        <argument
+            android:name="whichBalanceView"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+
+    <dialog
+        android:id="@+id/logoutConfirmationFragment"
+        android:name="com.jar.app.feature.logout.ui.LogoutConfirmationFragment"
+        android:label="LogoutConfirmationFragment"
+        tools:layout="@layout/fragment_logout_confirmation" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.jar.app.feature.account.AccountFragment"
+        android:label="AccountFragment"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/fragmentPartnershipBonuses"
+        android:name="com.jar.app.feature.partnership_bonus.ui.PartnerShipBonusListFragment"
+        android:label="PartnershipBonus"
+        tools:layout="@layout/fragment_partnership_bonuses" />
+
+    <fragment
+        android:id="@+id/homePagerFragment"
+        android:name="com.jar.app.feature.home.ui.fragment.HomePagerFragment"
+        android:label="HomePagerFragment"
+        app:launchSingleTop="true"
+        tools:layout="@layout/fragment_home_pager">
+
+        <deepLink app:uri="android-app://com.jar.app/homePagerFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/autoInvestmentDialog"
+        android:name="com.jar.app.feature.inform_dialog.AutoSaveNotificationFragment"
+        android:label="AutoSaveNotificationFragment">
+        <argument
+            android:name="autoGoldInvestedData"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink app:uri="android-app://com.jar.app/AutoSaveNotificationFragment/{autoGoldInvestedData}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/homeScreenPromptBottomSheetFragment"
+        android:name="com.jar.app.feature.bottom_sheet_prompt.HomeScreenPromptBottomSheetFragment"
+        android:label="HomeScreenPromptBottomSheetFragment"
+        tools:layout="@layout/fragment_home_screen_prompt_bottom_sheet">
+        <argument
+            android:name="homeScreenPromptDataStr"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/homeScreenPromptBottomSheetFragment/{homeScreenPromptDataStr}" />
+    </dialog>
+
+</navigation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/tvTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/BigTextViewStyle"
+       android:text="@string/feature_gold_lease_faqs"
+       android:layout_marginTop="20dp"
+       app:layout_constraintStart_toStartOf="@id/leftGuide"
+       app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/core_ui_ic_close"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFaqs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@id/ivClose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:itemCount="5"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/cell_gold_lease_faq" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

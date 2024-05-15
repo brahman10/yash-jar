@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">नाम</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="please_fill_all_the_details">कृपया सभी विवरण भरें</string>
+    <string name="email">ईमेल</string>
+    <string name="pincode">पिनकोड</string>
+    <string name="city">शहर</string>
+    <string name="enter_city">शहर डालें</string>
+    <string name="state">राज्य</string>
+    <string name="enter_state">राज्य डालें</string>
+    <string name="enter_pin_code">पिनकोड डालें</string>
+    <string name="add_details">विवरण जोड़ें</string>
+    <string name="your_full_address">आपका पूरा पता</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">विवरण सबमिट करें</string>
+    <string name="details_added">विवरण जोड़ दिए गए हैं</string>
+    <string name="street_address_one">गली का पता 1</string>
+    <string name="address_line_1">पते की लाइन1</string>
+    <string name="address_line_2">पते की लाइन 2</string>
+    <string name="check">चेक करें</string>
+    <string name="street_address_two">गली का पता 2 (वैकल्पिक)</string>
+    <string name="please_enter_a_valid_pincode">कृपया मान्य पिनकोड डालें</string>
+    <string name="this_area_is_not_servicable_currently">वर्तमान में इस एरिया में सर्विस नहीं दी जाती है</string>
+    <string name="edit_address">पता एडिट करें</string>
+    <string name="add_new_address">नया पता जोड़ें</string>
+    <string name="save_new_address">नया पता सेव करें</string>
+    <string name="update_address">पता अपडेट करें</string>
+    <string name="save_and_proceed">सेव करें और आगे बढ़ें</string>
+    <string name="select_an_address_for_delivery">डिलीवरी के लिए पता चुनें</string>
+    <string name="no_delivery_address_available">कोई डिलीवरी पता उपलब्ध नहीं है</string>
+    <string name="saved_addresses">सेव किए गए पते</string>
+    <string name="add_delivery_details">डिलीवरी का विवरण जोड़ें</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">आपके आधार कार्ड से लिंक</string>
+    <string name="feature_user_api_saved_address">सेव किया गया पता</string>
+    <string name="feature_lending_recently_saved">हाल ही में सेव किया हुआ</string>
+    <string name="feature_user_api_day">दिन</string>
+    <string name="feature_user_api_days">दिन</string>
+    <string name="feature_user_api_week">सप्ताह</string>
+    <string name="feature_user_api_weeks">सप्ताह</string>
+    <string name="feature_user_api_month">महीना</string>
+    <string name="feature_user_api_months">महीने</string>
+</resources>

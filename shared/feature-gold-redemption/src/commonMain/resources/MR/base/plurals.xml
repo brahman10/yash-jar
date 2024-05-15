@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_gold_redemption_items">
+        <item quantity="one"> Item</item>
+        <item quantity="other"> Items</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_my_orders_x">
+        <item quantity="one">My Order</item>
+        <item quantity="other">My Orders (%d)</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_items_available">
+        <item quantity="one">%d Weight available</item>
+        <item quantity="other">%d Weights available</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_showing_cities">
+        <item quantity="one">Showing %d city</item>
+        <item quantity="other">Showing %d cities</item>
+    </plurals>
+</resources>

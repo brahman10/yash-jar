@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="20dp"
+    tools:layout_marginHorizontal="16dp"
+    tools:layout_marginVertical="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvQuestion"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toStartOf="@id/ivExpand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="How is a milestone completed?" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivExpand"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="5dp"
+        android:src="@drawable/core_ui_ic_arrow_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/color_ACA1D3" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        app:el_duration="200"
+        app:el_expanded="false"
+        app:el_parallax="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        tools:el_expanded="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAnswer"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="start|center_vertical"
+            android:textSize="14sp"
+            app:lineHeight="21sp"
+            tools:text="A milestone is the progress between your current and the next milestone. " />
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

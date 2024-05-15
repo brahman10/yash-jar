@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gbs_remaining_steps">%d/%d</string>
+    <string name="gbs_remaining_of_chars">Characters: %d/%d</string>
+    <string name="gbs_duration">%d %s</string>
+    <string name="gbs_daily_amount">\u20B9%s %s</string>
+    <string name="feature_gbs_per_day_saving">\u20B9 %s/days</string>
+    <string name="feature_gbs_im_having_issues_buying_gold_for_x_orderId">\&quot;Hello, I\&apos;m having issues buying digital gold on Jar. My order id for the transaction is %s. Can you  help me out?\&quot;</string>
+    <string name="feature_gbs_im_having_issues_buying_gold_for_x_goalId">\&quot;Hello, I\&apos;m having issues buying digital gold on Jar. My goal id for the transaction is %s. Can you  help me out?\&quot;</string>
+
+</resources>

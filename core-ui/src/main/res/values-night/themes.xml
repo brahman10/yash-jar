@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SwitchStyle">
+        <item name="android:thumb">@drawable/core_ui_custom_switch_thumb</item>
+        <item name="track">@drawable/core_ui_custom_switch_track</item>
+    </style>
+
+    <style name="CommonTextViewStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight" tools:targetApi="p">23sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColorHint">@color/color_776e94</item>
+        <item name="android:textColor">@color/color_EEEAFF</item>
+    </style>
+
+    <style name="BigTextViewStyle" parent="CommonTextViewStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight" tools:targetApi="p">24sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="SmallTextViewStyle" parent="CommonTextViewStyle">
+        <item name="android:textColor">@color/color_ACA1D3</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineHeight" tools:targetApi="p">18sp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MarqueeTextViewStyle" parent="SmallTextViewStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColorHint">#15484d5c</item>
+        <item name="android:background">@drawable/bg_edit_text_rounded_corner_white</item>
+        <item name="android:textColor">@color/color_282e3d</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/selector_chip_background</item>
+        <item name="android:textColor">@color/text_color_chip_state_list</item>
+    </style>
+
+    <style name="BottomSheetDialogInput" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:statusBarColor">@color/bgColor</item>
+        <item name="android:navigationBarColor">@color/bgColor</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+    </style>
+
+    <style name="BlackTextStyle" parent="EditTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColorHint">@color/color_6e7ea7</item>
+        <item name="android:background">@drawable/black_edit_text_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="curvedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="ThemeOverlay.App.DatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/bgColor</item>  <!--Header background-->
+        <item name="colorOnPrimary">@color/white</item>  <!--Selected month date year -->
+        <item name="android:textColor">#B0000000</item>  <!--M T W T F S S-->
+        <item name="colorSurface">@color/white</item> <!--Calendar body color-->
+        <item name="android:textColorPrimary">@color/black</item><!-- Text input color. -->
+        <item name="colorOnSurface">@color/black
+        </item> <!--Used to set text color of the calendar body-->
+        <!--Top left body month year color eg:- Feb,2022-->
+        <item name="materialCalendarMonthNavigationButton">@color/black</item>
+        <item name="materialCalendarYearNavigationButton">@color/black</item>
+
+        <!-- Calender Action buttons style. -->
+        <item name="buttonBarPositiveButtonStyle">@style/CalederButton.Style</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CalederButton.Style</item>
+    </style>
+
+    <style name="CalederButton.Style" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/color_6200ee</item>
+    </style>
+
+    <style name="BottomSheetDialogThemeNoFloating" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+    </style>
+
+    <style name="tabLayoutBold" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

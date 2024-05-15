@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:layout_marginBottom="@dimen/dimen_8dp"
+    android:background="@drawable/bg_rounded_2e2942_10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/expand_faq_button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/dimen_20dp">
+
+        <TextView
+            android:id="@+id/question_tv"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            tools:text="Can I change my delivery address?" />
+
+        <ImageView
+            android:id="@+id/expandable_header_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/core_ui_ic_arrow_down"
+            app:tint="#ACA1D3" />
+
+    </LinearLayout>
+
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false">
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="@dimen/dimen_20dp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textColor="#D5CDF2"
+            tools:text="No. Delivery address cannot be changed once the order is placed. For more assistance. Please reach out to info@changejar.in" />
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

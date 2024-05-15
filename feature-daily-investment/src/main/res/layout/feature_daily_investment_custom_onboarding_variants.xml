@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/one" />
+
+
+            <View
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/two" />
+
+            <View
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/three" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ScrollView
+        android:id="@+id/svParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDailyInvestment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            tools:background="@color/bgColor">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivFestivalDSCampaign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/ds_diwali_banner"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="232dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivFestivalDSCampaign"
+                tools:src="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeaderTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/feature_daily_investment_setup_daily_savings_amount"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:fontFamily="@font/inter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivHeader" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAmount"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/feature_buy_gold_v2_bg_input"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHeaderTwo">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/rsSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="@string/feature_daily_investment_currency_sign"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etBuyAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="@dimen/dimen_6dp"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:gravity="start|center_vertical"
+                    android:hint="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/color_504968"
+                    android:textSize="32sp"
+                    app:fontFamily="@font/inter_bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rsSymbol"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText">
+
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvErrorMessage"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/color_EB6A6E"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clAmount"
+                tools:text="Please enter valid amount"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDummyProfileImgaes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tvXIndianSaves"
+                app:layout_constraintHeight_max="@dimen/dimen_32dp"
+                app:layout_constraintStart_toStartOf="@id/clAmount"
+                app:layout_constraintTop_toTopOf="@id/tvXIndianSaves"
+                app:layout_constraintWidth_max="@dimen/dp_70"
+                app:srcCompat="@drawable/feature_daily_investment_dummy_profile_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvXIndianSaves"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/clAmount"
+                app:layout_constraintStart_toEndOf="@id/ivDummyProfileImgaes"
+                app:layout_constraintTop_toBottomOf="@id/tvErrorMessage"
+                tools:text="7 Lakh Indians save ₹45 daily on Jar asjdnm sdj asn dhnas " />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSuggestedAmounts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingHorizontal="4dp"
+                app:layout_constraintEnd_toEndOf="@id/clAmount"
+                app:layout_constraintStart_toStartOf="@id/clAmount"
+                app:layout_constraintTop_toBottomOf="@+id/tvXIndianSaves"
+                tools:itemCount="6"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/feature_daily_investment_cell_suggested_gold_amount"
+                tools:orientation="horizontal" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="rvSuggestedAmounts" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDefaultPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintVertical_bias="1"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/barrier"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.jar.app.core_ui.widget.button.CustomButtonV2
+                    android:id="@+id/btnSetDailyInvestment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="@dimen/dimen_14dp"
+                    app:buttonText="@string/feature_daily_investment_next"
+                    app:buttonType="primaryButton"
+                    app:layout_constraintBottom_toTopOf="@id/ivFooter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_min="54dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFooter"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginBottom="33dp"
+                    android:drawableEnd="@drawable/core_upi_ic_upi"
+                    android:text="@string/feature_daily_investment_powered_by"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/btnSetDailyInvestment"
+                    app:layout_constraintStart_toStartOf="@id/btnSetDailyInvestment"
+                    tools:src="@tools:sample/avatars" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/oneStepPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

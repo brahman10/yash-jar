@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvReason"
+    style="@style/CommonTextViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feature_sell_gold_bg_rounded_2e2942_4dp"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="10dp"
+    android:layout_margin="4dp"
+    tools:text="Trust Issues" />

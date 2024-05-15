@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/bgColor"
+        android:clipChildren="false"
+        android:padding="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderEnterNewNumber"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_60dp"
+            android:text="@string/enter_your_new_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNumber"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:autofillHints="phoneNational"
+            android:digits="0123456789"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/enter_phone_number"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="yes"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingStart="90dp"
+            android:paddingEnd="0dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderEnterNewNumber" />
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/spinnerCountryCode"
+            style="@style/BigTextViewStyle"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            app:ccp_arrowSize="26sp"
+            app:ccp_backgroundColor="#F7F7F7"
+            app:ccp_clickable="false"
+            app:ccp_defaultNameCode="in"
+            app:ccp_hideNameCode="true"
+            app:ccp_showFlag="false"
+            app:ccp_textColor="@color/color_282e3d"
+            app:ccp_textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etNumber"
+            app:layout_constraintStart_toStartOf="@+id/etNumber"
+            app:layout_constraintTop_toTopOf="@+id/etNumber" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNumberAlreadyExists"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:textColor="@color/color_EB6A6E"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/etNumber"
+            tools:text="The number already exists, please try a\ndifferent phone number"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintBottom_toTopOf="@+id/tvDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumberAlreadyExists" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_8dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/round_black_bg_16dp"
+            android:drawableStart="@drawable/ic_bulb"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:gravity="start|center_vertical"
+            android:padding="@dimen/dimen_16dp"
+            android:text="@string/data_will_be_transferred_to_your_new_number"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintBottom_toTopOf="@+id/checkboxConsent" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxConsent"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:button="@drawable/checkbox_selector"
+            android:checked="false"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="12dp"
+            android:text="@string/i_consent_to_change_my_number"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmitNewNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSubmitNewNumber"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginVertical="@dimen/dimen_16dp"
+            app:buttonText="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

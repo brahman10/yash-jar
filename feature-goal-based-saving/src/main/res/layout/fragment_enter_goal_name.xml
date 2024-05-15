@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    style="@style/CommonStyle">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="32sp"
+        android:lineHeight="40sp"
+        android:textFontWeight="700"
+        app:fontFamily="@font/inter_bold"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:textColor="#EEEAFF"
+        android:ellipsize="end"
+        app:layout_constraintHeight_percent="0.20"
+        tools:text="What are you saving for?"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSaveFor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        tools:itemCount="6"
+        tools:listitem="@layout/layout_save_for" />
+
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        tools:buttonText="Next"
+        android:layout_height="56dp"
+        app:buttonDrawableEnd="@drawable/ic_arrow_right"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

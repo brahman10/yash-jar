@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_gold_sip_label">Savings Plan</string>
+    <string name="feature_gold_sip_setup_gold_sip">Setup Savings Plan</string>
+    <string name="feature_gold_sip_save_a_fixed_amount">Save a fixed amount weekly or monthly, and see your money grow.</string>
+    <string name="feature_gold_sip_save_smart_with_gold_sips">Save smart with Savings Plans</string>
+    <string name="feature_gold_sip_setup_now">Setup Now</string>
+    <string name="feature_gold_sip_powered_by">Powered by</string>
+    <string name="feature_gold_sip_weekly">Weekly</string>
+    <string name="feature_gold_sip_monthly">Monthly</string>
+    <string name="feature_gold_sip_weekly_saving_plan">Weekly Savings Plan</string>
+    <string name="feature_gold_sip_monthly_saving_plan">Monthly Savings Plan</string>
+    <string name="feature_gold_sip_how_would_you_like_to_save_weekly">How much would you like \nto save weekly?</string>
+    <string name="feature_gold_sip_how_would_you_like_to_save_monthly">How much would you like \nto save monthly?</string>
+    <string name="feature_gold_sip_select_a_day_for_payment">Select a day for \npayment</string>
+    <string name="feature_gold_sip_select_a_date_for_payment">Select a date for \npayment</string>
+    <string name="feature_gold_sip_you_will_save_x_on_every"><![CDATA[You will save <b><font color=\'#EBB46A\'>₹%d</font></b> on every …]]></string>
+    <string name="feature_gold_sip_you_will_save_x_every_month_on"><![CDATA[You will save <b><font color=\'#EBB46A\'>₹%d</font></b> every month on…]]></string>
+
+    <string name="feature_gold_sip_please_select_a_day_to_proceed">Please select a day to proceed</string>
+    <string name="feature_gold_sip_minimum_amount_required_to_setup_sip_is_x">Minimum amount required to setup Savings Plan is %d</string>
+    <string name="feature_gold_sip_gold_sip_settings">Savings Plan Settings</string>
+    <string name="feature_gold_sip_sip_details">Savings Plan Details</string>
+    <string name="feature_gold_sip_was_setup_on">Savings Plan was setup on %s</string>
+    <string name="feature_gold_sip_auto_save_details">Auto-save details</string>
+    <string name="feature_gold_sip_money_will_be_debited_automatically">Money will be debited automatically</string>
+    <string name="feature_gold_sip_update_gold_sip">Update Savings Plan</string>
+    <string name="feature_gold_sip_disable_gold_sip"><u>Disable Savings Plan</u></string>
+    <string name="feature_gold_sip_update_sip_details">Update Savings Plan details</string>
+    <string name="feature_gold_sip_are_you_sure_you_want_to_disable_gold_sip">Are you sure you want to disable Savings Plan?</string>
+    <string name="feature_gold_sip_you_will_miss_out_on_saving">You will miss out on saving in 24K gold!</string>
+    <string name="feature_gold_sip_disable_sip">Disable Savings Plan</string>
+    <string name="feature_gold_sip_no_i_will_continue_saving">No, i’ll continue saving</string>
+    <string name="feature_gold_sip_select_a_frequency">Select a frequency</string>
+    <string name="feature_gold_sip_how_much_would_you_like_to_save">How much would you like to save?</string>
+    <string name="feature_gold_sip_minimum_value_for_weekly_sip_is_x">Minimum value for weekly Savings Plan is ₹%d</string>
+    <string name="feature_gold_sip_you_will_save_every_week_on">You will save every week on …</string>
+    <string name="feature_gold_sip_you_will_save_every_month_on">You will save every month on …</string>
+    <string name="feature_gold_sip_go_ahead">Go Ahead</string>
+    <string name="feature_gold_sip_select_the_day_or_date">Select the day/ date</string>
+    <string name="feature_gold_sip_you_can_save_up_to_x_per_week">You can save up to ₹%d per week</string>
+    <string name="feature_gold_sip_you_can_save_up_to_x_per_month">You can save up to ₹%d per month</string>
+    <string name="feature_gold_sip_you_will_be_required_to_provide_auto_save_permission_again">You will be required to provide the auto-save permission again, based on your changes in Savings Plan</string>
+    <string name="feature_gold_sip_yay_gold_sip_updated_successfully">Yay… \nSavings Plan updated successfully!</string>
+    <string name="feature_gold_sip_yay_s_sip_setup_successfully">Yay, %s Savings Plan\n setup successfully!</string>
+    <string name="feature_gold_sip_yay_gold_sip_has_been_resumed_successfully">Yay… \nSavings Plan has been resumed successfully!</string>
+    <string name="feature_gold_sip_your_saving_will_continue_from_tomorrow">Your saving will continue from \ntomorrow</string>
+    <string name="feature_gold_sip_best">Best</string>
+    <string name="feature_gold_sip_you_are_just_a_step_away_from_setting_up_sip">You are just a step away from setting up Savings Plans</string>
+    <string name="feature_gold_sip_continue_setup">Continue Setup</string>
+    <string name="feature_gold_sip_cancel_setup">Cancel Setup</string>
+    <string name="feature_gold_sip_want_to_pause_instead">Want to pause instead</string>
+    <string name="feature_gold_sip_disabled">Savings Plan disabled</string>
+    <string name="feature_gold_sip_you_will_no_longer_be_saving_via_sip">You will no longer be saving via Savings Plan</string>
+    <string name="feature_gold_sip_paused">Savings Plan paused</string>
+    <string name="feature_gold_sip_we_will_not_debiting_your_s_sip_got_the_next_s">We will not be debiting your %s Savings Plan for the next %s</string>
+    <string name="feature_gold_sip_pause_gold_sip_for_next">Pause Savings Plan for next…</string>
+    <string name="feature_gold_sip_updated_amount_will_be_debited_from_date_s">Updated amount will be debited \nfrom %s</string>
+    <string name="feature_gold_sip_great_thanks">Great! Thanks</string>
+    <string name="feature_gold_sip_hmm_this_is_taking_a_bit_longer">Hmm…\nThis is taking a bit longer.</string>
+    <string name="feature_gold_sip_as_soon_we_have_an_update_we_will_let_you_know">As soon as we have an update, we will let\n you know. \n\nDon\'t worry, your money is completely safe.</string>
+    <string name="feature_gold_sip_uh_oh_gold_sip_not_updated">Uh-oh\nSavings Plan not updated!</string>
+    <string name="feature_gold_sip_as_soon_as_we_have_update">As soon as we have an update, we will let you know.\n\n
+Don\'t worry, your money is completely safe.</string>
+    <string name="feature_gold_sip_hi_i_am_facing_some_issue_in_setting_up_my_gold_sip">Hi, I am facing some issue in setting up my Savings Plan.</string>
+    <string name="feature_gold_sip_hi_i_am_facing_some_issue_in_updating_my_gold_sip_details">Hi, I am facing some issue in updating my Savings Plan details.</string>
+    <string name="feature_gold_sip_rs_1_will_be_debited_to_setup_auto_save">₹1 will be debited (refundable) from your bank account, to setup auto-save.</string>
+    <string name="feature_gold_sip_x_will_be_saved_every_s_day_of_week">₹%d will be saved every %s in 24k pure gold</string>
+    <string name="feature_gold_sip_x_will_be_saved_every_s_day_of_month">₹%d will be saved on %s of every month in 24k pure gold</string>
+    <string name="feature_gold_sip_amount">Amount</string>
+    <string name="feature_gold_sip_day">Day</string>
+    <string name="feature_gold_sip_next_installment">Next Installment</string>
+    <string name="feature_gold_sip_payment_from">Payment from</string>
+    <string name="feature_gold_sip_you_need_to_select_a_day_to_proceed">You need to select a day to proceed with the setup</string>
+    <string name="feature_gold_sip_uh_oh_gold_sip_setup_failed">Uh-oh\nSavings Plan setup failed!</string>
+    <string name="feature_gold_sip_your_attempt_to_setup_gold_sip_failed">Your attempt to set-up Savings Plan has failed. Please try again?</string>
+    <string name="feature_gold_sip_hold_up_gold_sip_setup_in_progress">Hold up…\nSavings Plan setup in progress</string>
+    <string name="feature_gold_sip_we_will_notify_you_as_soon_as_we_get_udpate">We will notify you as soon as we get an update.</string>
+    <string name="feature_gold_sip_pause_sip_for_next_1_month">Pause Savings Plan for next 1 month…</string>
+    <string name="feature_gold_sip_we_will_not_be_debiting_your_sip_for_next_month">We will not be debiting your Savings Plan value for next month</string>
+    <string name="feature_gold_sip_is_paused_for_next_s">Savings Plan is paused for next %s</string>
+    <string name="feature_gold_sip_auto_resuming_on_s">Auto Resuming on: %s</string>
+    <string name="feature_gold_sip_resume_now">Resume Now</string>
+    <string name="feature_gold_sip_minimum_value_for_sip_is_x">Minimum value should be ₹%d</string>
+    <string name="feature_gold_sip_maximum_value_for_sip_is_x">Maximum value should be ₹%d</string>
+    <string name="feature_gold_sip_this_field_cannot_be_left_empty">This field cannot be left empty</string>
+    <string name="feature_gold_sip_rs_x_will_be_auto_saved_every_week_on_s">₹%d will be auto saved every week on %s</string>
+    <string name="feature_gold_sip_rs_x_will_be_auto_saved_on_s_of_every_month">₹%d will be auto saved on %s of every month</string>
+    <string name="feature_gold_sip_uh_ho_s_gold_sip_setup_failed">Uh-oh! %s Savings Plan setup failed!</string>
+    <string name="feature_gold_sip_if_your_money_was_debited">If your money was debited, no worries. You will get it all back in your account within 24 hours.</string>
+    <string name="feature_gold_sip_payment_still_in_progress">Payment still in progress,please try later</string>
+    <string name="feature_gold_sip_by_saving_x_s_you_will_have">By saving ₹%d %s you will have</string>
+    <string name="feature_gold_sip_xf_gm_gold_in_x_year">%.1f gm Gold in %d year</string>
+    <string name="feature_gold_sip_worth_x">worth ₹%s</string>
+    <string name="feature_gold_sip_x_will_be_debited_from_you_bank">₹%d will be debited from your bank account to setup savings plan.</string>
+    <string name="feature_gold_sip_profile_to_setting_to_saving_plan">Profile -> Settings -> Savings plan</string>
+    <string name="feature_gold_sip_setup_complete">Setup Complete</string>
+    <string name="feature_gold_sip_s_saving_active">✔ %s Saving Active</string>
+    <string name="feature_gold_sip_s_savings_will_be_debited_on_every">%s savings will be debited on every…</string>
+    <string name="feature_gold_sip_change"><u>Change</u></string>
+    <string name="feature_gold_sip_your_s_saving_of_x">Your %s saving of ₹%d</string>
+    <string name="feature_gold_sip_will_be_automatically_saved_on_every">will be automatically saved on every…</string>
+    <string name="feature_gold_sip_day_successfully_updated">Day successfully updated</string>
+    <string name="feature_gold_sip_date_successfully_updated">Date successfully updated</string>
+    <string name="feature_gold_sip_weekly_savings_will_be_debited_on_every_s">Weekly savings will be debited on \nevery %s</string>
+    <string name="feature_gold_sip_monthly_savings_will_be_debited_on_every_s">Monthly savings will be debited on every \n%s of the month</string>
+    <string name="feature_gold_sip_next_gold_saving_details">Next gold saving details</string>
+    <string name="feature_gold_sip_next_payment_date">Next payment date</string>
+    <string name="feature_gold_sip_"></string>
+
+    <!--Weekdays-->
+    <string name="feature_gold_sip_monday">Monday</string>
+    <string name="feature_gold_sip_tuesday">Tuesday</string>
+    <string name="feature_gold_sip_wednesday">Wednesday</string>
+    <string name="feature_gold_sip_thursday">Thursday</string>
+    <string name="feature_gold_sip_friday">Friday</string>
+    <string name="feature_gold_sip_saturday">Saturday</string>
+    <string name="feature_gold_sip_sunday">Sunday</string>
+
+    <string name="feature_gold_sip_lets_automate_your_s_savings_of_x">Let’s automate your %s\nsavings of ₹%d</string>
+
+</resources>

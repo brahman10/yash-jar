@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_weekly_magic_common_weekly_magic">వీక్లీ మ్యాజిక్</string>
+    <string name="feature_weekly_magic_common_get_mystery_card">రహస్య కార్డ్ పొందండి</string>
+    <string name="feature_weekly_magic_common_save_s_or_more_to_get_a_card">కార్డ్ పొందడానికి ₹%s లేదా అంతకంటే ఎక్కువ ఆదా చేసుకోండి</string>
+    <string name="feature_weekly_magic_common_lets_go">పదండి ప్రారంభిద్దాం!</string>
+    <string name="feature_weekly_magic_common_one_day_left">1 రోజు మిగిలి ఉంది</string>
+    <string name="feature_weekly_magic_common_s_days_left">%s రోజులు మిగిలి ఉన్నాయి</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in_s">తదుపరి ఛాలెంజ్ %sలో ప్రారంభమవుతుంది...</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in">లో తదుపరి ఛాలెంజ్ ప్రారంభమవుతుంది</string>
+    <string name="feature_weekly_magic_common_next_challenge_starts_in">లో తదుపరి ఛాలెంజ్ ప్రారంభమవుతుంది</string>
+    <string name="feature_weekly_magic_common_magic_hat">మ్యాజిక్ టోపీ</string>
+    <string name="feature_weekly_magic_common_is_here">ఇక్కడ ఉంది!</string>
+    <string name="feature_weekly_magic_common_you_won_gold_worth">విలువుగల బంగారామమి మీరు  గెలుపొందారు</string>
+    <string name="feature_weekly_magic_common_added_to_your_locker">మీ లాకర్‌కి జోడించబడింది!</string>
+    <string name="feature_weekly_magic_common_days">రోజులు</string>
+    <string name="feature_weekly_magic_common_day">రోజు</string>
+    <string name="feature_weekly_magic_common_show_me">నన్ను చూపించండి!</string>
+    <string name="feature_weekly_magic_common_i_ll_check_later">నేను తర్వాత తనిఖీ చేస్తాను</string>
+    <string name="feature_weekly_magic_common_omg_you_won_a_mystery_card">OMG, మీరు రహస్య కార్డ్‌ని గెలుచుకున్నారు!</string>
+    <string name="feature_weekly_magic_common_on_your_transaction_of">మీ ₹%d ట్రాన్సాక్షన్ పై</string>
+    <string name="feature_weekly_magic_common_gold_purchase_n_successful">బంగారం కొనుగోలు\nవిజయవంతమైంది!</string>
+    <string name="feature_weekly_magic_common_you_got">మీకు వచ్చింది</string>
+    <string name="feature_weekly_magic_common_n_n_">%d/%d</string>
+    <string name="feature_weekly_magic_common_cards">కార్డులు</string>
+    <string name="feature_weekly_magic_common_you_won">మీరు గెలిచింది!</string>
+    <string name="feature_weekly_magic_common_in_">in</string>
+    <string name="feature_weekly_magic_common_your_collection_is_complete">మీ సేకరణ పూర్తయింది!</string>
+    <string name="feature_weekly_magic_common_collect_all_cards_and_win_up_in_gold">అన్ని కార్డ్‌లను సేకరించి, బంగారంలో ₹%s వరకు గెలుపొందండి!</string>
+    <string name="feature_weekly_magic_common_you_won_a_mystery_card_on_this_transaction">మీరు ఈ ట్రాన్సాక్షన్ పై రహస్య కార్డ్‌ని గెలుచుకున్నారు!</string>
+    <string name="feature_weekly_magic_common_current_challenge">ప్రస్తుత ఛాలెంజ్</string>
+
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_one">హలో, నేను మ్యాజిక్ టోపీని!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_two">…మరియు నేను \n సేవింగ్స్ ను ఫన్ చేయడానికి ఇక్కడకు వచ్చాను!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_three">మీరు ఎలా అడుగుతారు? \n నా మ్యాజిక్ ని ఉపయోగించడం ద్వారానే!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_one">సేవ్ లేదా ఆటో-సేవ్, \n మరియు నా రహస్య కార్డ్‌లను పొందండి!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_two">ఈ వారపు అన్ని కార్డ్‌లను సేకరించండి \n &amp; నేను మీకు అద్భుతమైన రివార్డ్‌ను బహుమతిగా ఇస్తాను!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_one">మీ సేవింగ్స్ ఎంత అధికమైతే, \n నేను మీకు అంత అధిక రివార్డులను అందిస్తాను!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_two">కాబట్టి మీరు దేని కోసం ఎదురు చూస్తున్నారు? \n ప్రారంభిద్దాం!</string>
+    <string name="feature_weekly_magic_common_hooray">హుర్రే!</string>
+    <string name="feature_weekly_magic_common_click_any_where_to_continue">కొనసాగించడానికి ఎక్కడైనా క్లిక్ చేయండి...</string>
+    <string name="feature_weekly_magic_common_congratulations">అభినందనలు!</string>
+    <string name="feature_weekly_magic_common_challenge_not_found">ఛాలెంజ్ కనుగొనబడలేదు</string>
+    <string name="feature_weekly_magic_common_week_n">వారం %s</string>
+    <string name="feature_weekly_magic_common_click_left">ఎడమవైపు నొక్కండి</string>
+    <string name="feature_weekly_magic_common_click_right">కుడివైపు నొక్కండి</string>
+    <string name="feature_weekly_magic_common_feature_description">వారపు ఫీచర్ వివరణ</string>
+    <string name="feature_weekly_magic_common_next">తదుపరి</string>
+    <string name="feature_weekly_magic_common_close">మూసివేయండి</string>
+    <string name="feature_weekly_magic_common_details_not_found">వివరాలు కనుగొనబడలేదు</string>
+    <string name="feature_weekly_magic_common_people_participated">ప్రజలు పాల్గొన్నారు</string>
+    <string name="feature_weekly_magic_common_worth_of_gold_was_won">విలువైన బంగారం గెలుచుకున్నారు</string>
+    <string name="feature_weekly_magic_common_collect">సేకరించండి</string>
+    <string name="feature_weekly_magic_common_weekly_magic_currency_in_s">\u20B9%s</string>
+</resources>

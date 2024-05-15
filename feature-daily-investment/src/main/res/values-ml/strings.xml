@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_daily_investment_best">മികച്ച</string>
+    <string name="feature_daily_investment_daily_amount">പ്രതിദിന തുക</string>
+    <string name="feature_daily_investment_max_amount_cannot_be_more_than_rs_2000">പരമാവധി തുക \u20B92000 ലും കൂടരുത്</string>
+    <string name="feature_daily_investment_you_can_invest_up_to_n_per_day">നിങ്ങൾക്ക് ദിവസേന \u20B9%s വരെ നിക്ഷേപിക്കാം</string>
+    <string name="feature_daily_investment_save_n_daily_and_watch_it_grow_to_m_in_next_10_years">ദിവസേന \u20B9%s സമ്പാദിച്ച് 10 വർഷത്തിൽ അത് \u20B9%s ആകുന്നത് കാണുക.</string>
+    <string name="feature_daily_investment_start_investing_daily">ദിവസേന നിക്ഷേപം തുടങ്ങൂ</string>
+    <string name="feature_daily_investment_perc_100_safe_and_secure">100% സുരക്ഷിതവും സുദൃഢവും</string>
+    <string name="feature_daily_investment_set_daily_amount">പ്രതിദിന തുക നിശ്ചയിക്കൂ</string>
+    <string name="feature_daily_investment_currency_sign">₹</string>
+    <string name="feature_daily_investment_your_saving_are_invested_gold">നിങ്ങളുടെ സമ്പാദ്യം 24K സ്വർണത്തിൽ നിക്ഷേപിച്ചിരിക്കുന്നു</string>
+    <string name="feature_daily_investment_how_much_to_invest_daily">ദിവസവും എത്ര നിക്ഷേപിക്കണം?</string>
+    <string name="feature_daily_investment_rupee_x_in_int">\u20B9%d</string>
+    <string name="feature_daily_investment_you_can_edit_this_amount_later_from_settings">*പിന്നീട് സെറ്റിങ്സിൽ നിന്ന് നിങ്ങൾക്ക് ഈ തുക എഡിറ്റ് ചെയ്യാം</string>
+    <string name="feature_daily_investment_set">നിശ്ചയിക്കുക</string>
+    <string name="feature_daily_investment_update">അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="feature_daily_investment_set_daily_saving_amount">പ്രതിദിന സമ്പാദ്യ തുക നിശ്ചയിക്കുക</string>
+    <string name="feature_daily_investment_setup_daily_savings_amount">പ്രതിദിന സമ്പാദ്യം നിശ്ചയിക്കുക</string>
+    <string name="feature_daily_savings_setup_now">ഇപ്പോൾ നിശ്ചയിക്കുക</string>
+    <string name="feature_daily_savings">പ്രതിദിന സമ്പാദ്യം</string>
+    <string name="feature_daily_investment_setup_description">പ്രതിദിന ഒരു നിശ്ചിത തുക മിച്ചം പിടിച്ച് ഭാവിയിലേക്ക് സമ്പാദ്യം വളർത്തുക.</string>
+    <string name="feature_daily_investment_are_you_sure_you_want_to_disable_you_can_pause">നിങ്ങൾക്ക് ഡിസേബിൾ ചെയ്യണമെന്ന് ഉറപ്പാണോ?\nപകരം നിങ്ങൾക്ക് താത്കാലികമായി നിർത്താം.</string>
+    <string name="feature_daily_investment_pause_daily_investment_for">പ്രതിദിന സമ്പാദ്യം താത്കാലികമായി നിർത്തേണ്ടത്</string>
+    <string name="feature_daily_investment_daily_investment_paused_for">പ്രതിദിന സമ്പാദ്യം താത്കാലികമായി നിർത്തിയിരിക്കുന്നത്</string>
+    <string name="feature_daily_investment_daily_investment_is_paused">പ്രതിദിന സമ്പാദ്യം താത്കാലികമായി നിർത്തിയിരിക്കുന്നു</string>
+    <string name="feature_daily_investment_daily_investment_is_disabled">പ്രതിദിന സമ്പാദ്യം ഡിസേബിൾ ചെയ്തിരിക്കുന്നു</string>
+    <string name="feature_daily_investment_jar_won_t_debit_your_account_for_daily_savings_in_this_time">ജാർ ഈ സമയത്ത് നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്ന്\nപ്രതിദിന സമ്പാദ്യം ഈടാക്കില്ല.</string>
+    <string name="feature_daily_investment_daily_investment_resumed_description">നിങ്ങളുടെ സമ്പാദ്യ\nമുൻഗണനകൾക്ക് അനുസരിച്ച് ഞങ്ങൾ ചില്ലറയും\nപ്രതിദിന സമ്പാദ്യവും ഓട്ടോമാറ്റിക്കായി നിക്ഷേപിക്കാം.</string>
+    <string name="feature_daily_investment_its_good_to_see_you_save_again">നിങ്ങൾ വീണ്ടും സമ്പാദിക്കാൻ തുടങ്ങിയതിൽ സന്തോഷം</string>
+    <string name="feature_daily_investment_daily_investment_resumed">സമ്പാദ്യം\n പുനരാരംഭിച്ചു</string>
+    <plurals name="days">
+        <item quantity="one">ദിവസം</item>
+        <item quantity="other">ദിവസങ്ങൾ</item>
+    </plurals>
+    <plurals name="feature_daily_investment_in_n_days">
+        <item quantity="one">പുനരാരംഭിക്കുന്നത് : %d ദിവസം</item>
+        <item quantity="other">പുനരാരംഭിക്കുന്നത് : %d ദിവസങ്ങൾ</item>
+    </plurals>
+    <plurals name="feature_daily_investment_n_days">
+        <item quantity="one">%d ദിവസം</item>
+        <item quantity="other">%d ദിവസങ്ങൾ</item>
+    </plurals>
+    <string name="feature_daily_investment_daily_savings_enabled">പ്രതിദിന സമ്പാദ്യം എനേബിൾ ചെയ്തു</string>
+    <string name="feature_daily_investment_amount">പ്രതിദിന സമ്പാദ്യ തുക</string>
+    <string name="feature_daily_investment_edit"><u>എഡിറ്റ് ചെയ്യുക</u></string>
+    <string name="feature_daily_investment_pause_u"><u>താത്കാലികമായി നിർത്തുക</u></string>
+    <string name="feature_daily_investment_resume_u"><u>ഇപ്പോൾ പുനരാരംഭിക്കുക</u></string>
+    <string name="feature_daily_investment_pause_daily_savings">പ്രതിദിന സമ്പാദ്യം താത്കാലികമായി നിർത്തുക</string>
+    <string name="feature_daily_investment_resuming_in">പുനരാരംഭിക്കുന്നത് : %d ദിവസങ്ങൾ</string>
+    <string name="feature_daily_investment_rs_value_int">₹%d</string>
+    <string name="feature_daily_investment_set_successfully">പ്രതിദിന സമ്പാദ്യം വിജയകരമായി നിശ്ചയിച്ചു</string>
+    <string name="feature_daily_investment_updated_successfully">പ്രതിദിന സമ്പാദ്യം വിജയകരമായി അപ്‌ഡേറ്റ് ചെയ്തു</string>
+    <string name="feature_daily_investment_authorise_payment">പേയ്‌മെന്റ് അംഗീകരിക്കുക</string>
+    <string name="feature_daily_investment_please_note_change_daily_savings_authorise_autopay">നിങ്ങൾ പ്രതിദിന സമ്പാദ്യ തുക മാറ്റിയാൽ, ഓട്ടോ-സേവ് വീണ്ടും അംഗീകരിക്കണം എന്ന് ദയവായി ശ്രദ്ധിക്കുക.</string>
+    <string name="feature_daily_investment_nice_youre_almost_there">നന്നായി! നിങ്ങൾ ഏതാണ്ട് അവിടെ എത്താറായി!</string>
+    <string name="feature_daily_investment_if_you_save_x_youll_earn_xgm">നിങ്ങൾ എന്നും രൂ. %d മിച്ചം പിടിച്ചാൽ, ഒരു വർഷത്തിൽ %.2f ഗ്രാം സ്വർണം സ്വന്തമാക്കാം!</string>
+    <string name="feature_daily_investment_so_link_your_account_and_save_every_day">അതിനാൽ നിങ്ങളുടെ അക്കൗണ്ട് ബന്ധിപ്പിച്ച് എന്നും ഓട്ടോമാറ്റിക്കായി സമ്പാദിക്കൂ!</string>
+    <string name="feature_daily_investment_auto_save_has_been_setup">ഓട്ടോ സേവ് സെറ്റപ്പ് ചെയ്തിരിക്കുന്നു.</string>
+    <string name="feature_daily_investment_congrats_s">അഭിനന്ദനങ്ങൾ, %s!</string>
+    <string name="feature_daily_investment_slash_day">/ ദിവസം</string>
+    <string name="feature_daily_investment_upto_x_float">\u20B9%.2f വരെ</string>
+    <string name="feature_daily_investment_max_saving_limit">പരമാവധി സമ്പാദ്യ പരിധി</string>
+    <string name="feature_daily_investment_frequency">തവണ</string>
+    <string name="feature_daily_investment_start_date">തുടങ്ങുന്ന തീയതി</string>
+    <string name="feature_daily_investment_message_auto_invest_success">ഹായ്! ജാറിൽ ഞാൻ പണം മിച്ചം പിടിക്കുന്ന വഴി ഓട്ടോമേറ്റ് ചെയ്തിട്ടുണ്ട്, ഭാവിയിലേക്ക് സമ്പാദ്യം വളർത്താൻ നിങ്ങളുടേത് സെറ്റപ്പ് ചെയ്യുക.</string>
+    <string name="feature_daily_investment_this_is_taking_a_bit_longer">അയ്യോ....\nഇത് കൂടുതൽ സമയം എടുക്കുന്നല്ലോ</string>
+    <string name="feature_daily_investment_you_will_be_notified">ഒരു അപ്‌ഡേറ്റ് വന്നാൽ ഉടനെ, ഞങ്ങൾ നിങ്ങളെ അറിയിക്കാം.പേടിക്കേണ്ട, നിങ്ങളുടെ പണം പൂർണമായും സുരക്ഷിതമാണ്.</string>
+    <string name="feature_daily_investment_message_auto_invest_pending">ഹായ്! എനിക്ക് ഓട്ടോ-സേവ് സെറ്റപ്പിന് സഹായം വേണം</string>
+    <string name="feature_daily_investment_oops_something_isnt_right_daily_saving_failed">അയ്യോ! എന്തോ പ്രശ്നമുണ്ടല്ലോ! നിങ്ങളുടെ പ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് ഇത്തവണ വിജയകരമല്ല എന്ന് തോന്നുന്നു.</string>
+    <string name="feature_daily_investment_dont_worry_money_will_be_credited_back">പണം പോയിട്ടുണ്ടെങ്കിൽ, പേടിക്കേണ്ട. 24 മണിക്കൂറിനുള്ളിൽ നിങ്ങൾക്ക് അത് അക്കൗണ്ടിൽ തിരികെ കിട്ടും.</string>
+    <string name="feature_daily_investment_how_would_you_like_to_pay">നിങ്ങൾ എങ്ങനെ പണം അടയ്ക്കാൻ ആഗ്രഹിക്കുന്നു?</string>
+    <string name="feature_daily_investment_pay_x_to_automate_daily_saving">🏦 നിങ്ങളുടെ പ്രതിദിന സമ്പാദ്യം ഓട്ടോമേറ്റ് ചെയ്യാൻ  \u20B9%d അടയ്ക്കുക\n✅ അതെ തുകയ്ക്കുള്ള സ്വർണം നിങ്ങളുടെ ജാർ സമ്പാദ്യത്തിലേക്ക് എന്നും പോകും.</string>
+    <string name="feature_daily_investment_start_daily_saving">പ്രതിദിന സമ്പാദ്യം തുടങ്ങൂ</string>
+    <string name="feature_daily_investment_automate_your_saving">നിങ്ങളുടെ സമ്പാദ്യം ഓട്ടോമേറ്റ് ചെയ്ത് എന്നും ഡിജിറ്റൽ സ്വർണത്തിൽ നിക്ഷേപിക്കൂ</string>
+    <string name="feature_buy_gold_go_to_home">ഹോമിലേക്ക് പോകുക</string>
+    <string name="feature_daily_investment_start_saving_every_day">എന്നും സമ്പാദ്യം തുടങ്ങുക</string>
+    <string name="feature_daily_investment_set_savings_on_autopilot">നിങ്ങളുടെ സമ്പാദ്യം ഓട്ടോ പൈലറ്റിൽ സെറ്റപ്പ് ചെയ്യൂ! \nഏത് സമയത്തും താത്കാലികമായി നിർത്തൂ അല്ലെങ്കിൽ വേണ്ടെന്ന് വയ്ക്കൂ &#128578;</string>
+    <string name="feature_daily_investment_message_auto_invest_failure">നമസ്‌കാരം! എന്റെ ഓട്ടോ-സെറ്റപ്പ് പരാജയപ്പെട്ടു, എനിക്കിതിന് സഹായം വേണം.</string>
+    <string name="feature_daily_investment_the_same_amount_of_gold_will_go_to_your_jar">എന്നും അതെ തുകയ്ക്കുള്ള സ്വർണം നിങ്ങളുടെ ജാർ സവിങ്സിലേക്ക് പോകും.</string>
+    <string name="feature_daily_investment_sure_you_want_to_cancel_daily_saving">നിങ്ങൾക്ക് പ്രതിദിന സമ്പാദ്യം റദ്ദാക്കണമെന്ന് ഉറപ്പാണോ?</string>
+    <string name="feature_daily_pause_instead">പകരം താത്കാലികമായി നിർത്തുക</string>
+    <string name="feature_daily_cancel_daily_saving">പ്രതിദിന സമ്പാദ്യം റദ്ദാക്കുക</string>
+    <string name="feature_daily_set_your_saving_on_autopilot">നിങ്ങളുടെ സമ്പാദ്യം തടസമില്ലാതെ സജ്ജമാക്കൂ!\nതാത്കാലികമായി നിർത്തൂ അല്ലെങ്കിൽ റദ്ദാക്കൂ, ഏത് സമയത്തും :)</string>
+
+    <string name="feature_daily_investment_x_will_be_auto_saved_starting_tomorrow">₹%d ഓട്ടോ സേവ് ചെയ്യും എന്നും \nനാളെ തുടങ്ങുന്നു</string>
+    <string name="feature_daily_investment_daily_investment_setup_successfully">പ്രതിദിന സമ്പാദ്യം വിജയകരമായി \nസെറ്റപ്പ് ചെയ്തു</string>
+
+    <string name="feature_daily_investment_allow_jar_to_save">ജാറിനെ സമ്പാദിക്കാൻ അനുവദിക്കുക</string>
+    <string name="feature_daily_investment_upto_x_per_day">പരമാവധി \u20B9%d/ ദിവസം</string>
+
+    <string name="feature_daily_investment_save">മിച്ചം പിടിക്കുക</string>
+    <string name="feature_daily_investment_daily_your_gold_will_be_worth">ദിവസവും &amp; നിങ്ങളുടെ സ്വർണ മൂല്യമാകും</string>
+    <string name="feature_daily_investment_you_can_save_upto_x_per_day">നിങ്ങൾക്ക് \u20B9%d വരെ പ്രതിദിനം മിച്ചം പിടിക്കാം.</string>
+    <string name="feature_daily_investment_start_saving_daily">എന്നും സമ്പാദിക്കാൻ തുടങ്ങുക</string>
+    <string name="feature_daily_investment_the_value_is_subject_to_historical_performance_of_gold">*ഈ മൂല്യം സ്വർണത്തിന്റെ കഴിഞ്ഞ കാല പ്രകടനത്തിന് വിധേയമാണ്</string>
+    <string name="feature_daily_investment_minimum_value_should_be_x">കുറഞ്ഞ മൂല്യം \u20B9%d ആയിരിക്കണം</string>
+    <string name="feature_daily_investment_congrats">അഭിനന്ദനങ്ങൾ</string>
+    <string name="feature_daily_investment_powered_by">പ്രായോജകർ</string>
+    <string name="feature_daily_investment_next">അടുത്തത്</string>
+    <string name="feature_daily_you_are_all_set_to_start_your_saving_journey">നിങ്ങളുടെ സമ്പാദ്യ യാത്ര തുടങ്ങാൻ നിങ്ങൾ തയ്യാറായിക്കഴിഞ്ഞു.</string>
+    <string name="feature_daily_investment_auto_save">ഓട്ടോ-സേവ് ചെയ്യുക</string>
+    <string name="feature_daily_investment_desc_one">ഓട്ടോ-സേവ് സജ്ജമാക്കാൻ \u20B9%d നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ടിൽ നിന്ന് കുറയ്ക്കും</string>
+    <string name="feature_daily_investment_desc_two">അത് സ്വർണമായി സമ്പാദിക്കും കൂടാതെ സ്വർണ ലോക്കറിൽ കാണാം</string>
+    <string name="feature_daily_investment_you_will_be_notified_as_soon_as_we_get_an_update">ഞങ്ങൾക്ക് അപ്‌ഡേറ്റ് കിട്ടിയ ഉടനെ നിങ്ങളെ അറിയിക്കും. നിങ്ങളുടെ പണം പൂർണമായും സുരക്ഷിതമാണെന്ന് ഉറപ്പാണ്. </string>
+    <string name="feature_daily_investment_uh_oh_daily_saving_pending">അയ്യോ!\nപ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് ബാക്കിയാണ്</string>
+    <string name="feature_daily_investment_setup_has_failed">പ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് \nപരാജയപ്പെട്ടു!</string>
+    <string name="feature_daily_investment_dont_worry_if_any_money_debited_will_be_credited"> പേടിക്കേണ്ട! എന്തെങ്കിലും പണം കുറഞ്ഞിട്ടുണ്ടെങ്കിൽ, 24 മണിക്കൂറിനുള്ളിൽ അത് നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ടിൽ തിരികെ ക്രെഡിറ്റ് ചെയ്യും.</string>
+    <string name="feature_daily_investment_please_enter_the_valid_amount">ദയവായി സാധുവായ തുക രേഖപ്പെടുത്തുക</string>
+    <string name="feature_daily_investment_save_a_fixed_amount_and_grow_message">ഒരു നിശ്ചിത തുക മിച്ചം പിടിച്ച്\nഎന്നും സമ്പാദ്യം വളർത്തൂ.</string>
+    <string name="feature_daily_investment_save_daily_on_jar_and_watch">എന്നും ജാറിൽ സമ്പാദിച്ച്\nസമ്പത്ത് വളരുന്നത് കാണൂ </string>
+    <string name="feature_daily_investment_your_money_is_invested_in_24_k_gold">നിങ്ങളുടെ പണം 24K സ്വർണത്തിൽ നിക്ഷേപിക്കും</string>
+    <string name="feature_daily_investment_enter_amount">തുക നൽകുക</string>
+    <string name="feature_daily_investment_refresh">റിഫ്രഷ് ചെയ്യുക</string>
+    <string name="feature_daily_investment_retry">വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="feature_daily_investment_setup_ds_setup_in_progress">നിൽക്കൂ..\nപ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് നടക്കുന്നു..</string>
+    <string name="feature_daily_investment_setup_dont_worry_will_update_soon">പേടിക്കേണ്ട, ഞങ്ങൾക്ക് അപ്‌ഡേറ്റ് കിട്ടിയ\nഉടനെ നിങ്ങളെ അറിയിക്കാം.</string>
+    <string name="feature_daily_investment_setup_ds_setup_failed">അയ്യോ..\nപ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് പരാജയപ്പെട്ടു!</string>
+    <string name="feature_daily_investment_setup_ds_setup_failed_try_agian">പ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് ശ്രമം\nപരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുന്നോ?</string>
+    <string name="feature_daily_investment_contact_support"><u>സപ്പോർട്ടുമായി ബന്ധപ്പെടുക</u></string>
+    <string name="feature_daily_investment_need_help">സഹായം വേണോ?</string>
+    <string name="feature_daily_investment_daily_saving_paused_for_n_days">പ്രതിദിന സമ്പാദ്യം %d ദിവസങ്ങൾക്ക് താത്കാലികമായി നിർത്തി</string>
+    <string name="feature_daily_investment_auto_resuming_on_n">വീണ്ടും ഓട്ടോമാറ്റിക്കായി തുടങ്ങുന്നത്: %s</string>
+    <string name="feature_daily_investment_daily_saving_was_setup_on_n">പ്രതിദിന സമ്പാദ്യ സെറ്റപ്പ് %s ന് സെറ്റപ്പ് ചെയ്തു</string>
+    <string name="feature_daily_investment_setup_detail">സെറ്റപ്പ് വിവരങ്ങൾ</string>
+    <string name="feature_daily_investment_active">ആക്റ്റീവ്</string>
+    <string name="feature_daily_investment_change_amount">തുക മാറ്റുക</string>
+    <string name="update_daily_saving_amount">പ്രതിദിന സമ്പാദ്യ തുക അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="feature_daily_investment_daily">എന്നും</string>
+    <string name="feature_daily_investment_stop_daily_saving">നിർത്തൂ പ്രതിദിന സമ്പാദ്യം</string>
+    <string name="feature_daily_investment_auto_save_detail">ഒരോ-സേവ് വിവരങ്ങൾ</string>
+    <string name="feature_daily_investment_money_will_be_debited_automatically">പണം ഓട്ടോമാറ്റിയ്ക്കായി കുറയ്ക്കും</string>
+    <string name="feature_daily_investment_resume_now">ഇപ്പോൾ വീണ്ടും തുടങ്ങുക</string>
+    <string name="feature_daily_investment_resume">വീണ്ടും തുടങ്ങുക</string>
+    <string name="feature_daily_investment_based_on_the_changes_you_might_be_required">മാറ്റങ്ങൾക്ക് അനുസരിച്ച്, നിങ്ങൾ വീണ്ടും പേയ്‌മെന്റ് അനുവാദം നൽകേണ്ടി വരും</string>
+    <string name="feature_daily_investment_enter_the_amount_you_want_to_save">നിങ്ങൾക്ക് സമ്പാദിക്കേണ്ട തുക നൽകുക</string>
+    <string name="feature_daily_investment_you_will_miss_out_on_saving_in_24k_gold">24K സ്വർണത്തിൽ നിങ്ങൾക്ക് സമ്പാദിക്കാൻ കഴിയില്ല!</string>
+    <string name="feature_daily_investment_hi_i_am_facing_some_issue_in_setting_up_my_daily_savings">ഹായ്, പ്രതിദിന സമ്പാദ്യം സെറ്റപ്പ് ചെയ്യുന്നതിൽ എന്തോ പ്രശ്നം വരുന്നു.</string>
+    <string name="feature_daily_investment_max_amount_cannot_be_more_than_rs_x">\u20B9%d ആണ് നിങ്ങൾക്ക് സമ്പാദിക്കാവുന്ന പരമാവധി തുക</string>
+    <string name="feature_daily_investment_min_amount_cannot_be_less_than_rs_x">\u20B9%d ആണ് നിങ്ങൾക്ക് സമ്പാദിക്കാവുന്ന കുറഞ്ഞ തുക </string>
+    <string name="feature_daily_investment_amount_should_be_more_than_x">തുക \u20B9%d നേക്കാൾ കൂടുതൽ ആയിരിക്കണം</string>
+    <string name="feature_daily_investment_yay_daily_investment_resumed">അടിപൊളി.. \nപ്രതിദിന സമ്പാദ്യം വിജയകരമായി തുടങ്ങി!</string>
+    <string name="feature_daily_investment_your_saving_will_continue_from_tomorrow">നിങ്ങളുടെ സമ്പാദ്യം നാളെ മുതൽ തുടരും!</string>
+    <string name="feature_daily_investment_go_ahead">തുടരൂ</string>
+    <string name="feature_daily_investment_update_amount">തുക അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="feature_daily_investment_you_will_be_saving_x">നിങ്ങൾ നാളെ മുതൽ എന്നും ₹%d സമ്പാദിക്കും</string>
+    <string name="feature_daily_investment_we_will_not_save_next_s">അടുത്ത %s ന് ഞങ്ങൾ എന്നും സമ്പാദിക്കില്ല.</string>
+    <string name="feature_daily_investment_daily_saving_paused">പ്രതിദിന  സമ്പാദ്യം താത്കാലികമായി നിർത്തി</string>
+    <string name="feature_daily_investment_daily_saving_disabled">പ്രതിദിന  സമ്പാദ്യം ഡിസേബിൾ ചെയ്തു 😔</string>
+    <string name="feature_daily_investment_daily_saving_we_re_sorry_to_disable_daily_saving">നിങ്ങൾ പോകുന്നതിൽ ഞങ്ങൾക്ക് വിഷമം ഉണ്ട്, നിങ്ങൾ പ്രതിദിന സമ്പാദ്യത്തിലൂടെ ഇനി മിച്ചം പിടിക്കില്ല</string>
+    <string name="feature_daily_investment_autosave_setup_amount">ഓട്ടോ-സേവ് സെറ്റപ്പ് തുക</string>
+    <string name="feature_daily_investment_currency_float_x">\u20B9%.2f</string>
+    <string name="feature_daily_investment_setting_up_now">ഇപ്പോൾ സെറ്റ് അപ്പ് ചെയ്യുന്നു</string>
+    <string name="feature_daily_investment_paused">താത്കാലികമായി നിർത്തി</string>
+    <string name="feature_daily_investment_setting_yay_daily_saving_updated_successfully">അടിപൊളി,\nപ്രതിദിന സമ്പാദ്യം വിജയകരമായി അപ്‌ഡേറ്റ് ചെയ്തു!</string>
+    <string name="feature_daily_investment_amount_updated_successfully">തുക വിജയകരമായി അപ്‌ഡേറ്റ് ചെയ്തു</string>
+    <string name="feature_daily_investment_sure_you_want_to_disable_daily_saving">പ്രതിദിന സമ്പാദ്യം\n ഡിസേബിൾ ചെയ്യണം എന്ന് നിങ്ങൾക്കുറപ്പാണോ ? 🤔</string>
+    <string name="feature_daily_investment_daily_saving_active">✔ പ്രതിദിന സമ്പാദ്യം ആക്റ്റീവ്</string>
+    <string name="feature_daily_investment_to_setting_to_saving_plan">പ്രൊഫൈൽ -> സെറ്റിംഗ്സ് -> പ്രതിദിന സമ്പാദ്യം</string>
+    <string name="feature_daily_investment_how_daily_saving_works">പ്രതിദിന സമ്പാദ്യം എങ്ങനെ പ്രവർത്തിക്കുന്നു?</string>
+    <string name="feature_daily_investment_rewards">റിവാർഡ്‌സ്</string>
+    <string name="feature_daily_investment_you_have_earned_rewards_on_your_recent_transaction">നിങ്ങളുടെ സമീപകാല ഇടപാടിൽ റിവാർഡ്‌സ് നേടി!</string>
+    <string name="feature_daily_investment_wondering">ചിന്തിക്കുന്നോ…</string>
+    <string name="feature_daily_investment_what_will_happen_next">അടുത്തത് എന്ത് നടക്കും എന്ന്? 🤔</string>
+    <string name="feature_daily_investment_tap_below_to_learn_how_ds_works">പ്രതിദിന സമ്പാദ്യം എങ്ങനെ പ്രവർത്തിക്കുന്നു എന്നറിയാൻ താഴെ അമർത്തുക.</string>
+    <string name="feature_daily_investment_learn_more">കൂടുതൽ അറിയുക</string>
+    <string name="feature_daily_investment_rsx_per_day">\u20B9%d/ദിവസം</string>
+    <string name="feature_daily_investment_active_savings_plan">ആക്റ്റീവ് സമ്പാദ്യ പ്ലാൻ</string>
+    <string name="feature_daily_investment_activated_on_s_date">സെറ്റപ്പ് ചെയ്യുന്നത്%s</string>
+    <string name="feature_daily_investment_currency_int_x">\u20B9%d</string>
+    <string name="feature_daily_investment_round_off">റൌണ്ട് ഓഫ്</string>
+    <string name="feature_daily_investment_note">ശ്രദ്ധിക്കുക</string>
+    <string name="feature_daily_investment_jar_will_never_debit_more_than_xf">₹%d/ദിവസം എണ്ണത്തിലും കൂടുതൽ ജാർ കുറയ്ക്കില്ല.</string>
+    <string name="daily_investment_amount_selection_jar1_label">3 മാസം</string>
+    <string name="daily_investment_amount_selection_jar2_label">6 മാസം</string>
+    <string name="daily_investment_amount_selection_jar3_label">9 മാസം</string>
+    <string name="daily_investment_amount_selection_view_details_tag">വിവരങ്ങൾ</string>
+    <string name="daily_investment_Breakdown_heading">നിങ്ങൾ എന്നും ₹%d സമ്പാദിക്കുന്ന കാലയളവ്..</string>
+    <string name="daily_investment_Breakdown_subHeading1">എങ്കിൽ നിങ്ങൾക്കുണ്ടാകും</string>
+    <string name="daily_investment_Breakdown_subHeading2">വിവരങ്ങൾ</string>
+    <string name="daily_investment_breakdown_appreciation_label">സ്വരണത്തിൽ പ്രതീക്ഷിക്കുന്ന റിട്ടേൺ</string>
+    <string name="daily_investment_breakdown_gst_label">*GST സർക്കാർ നിയമങ്ങൾ പ്രകാരം</string>
+    <string name="daily_investment_breakdown_warning_label">📈 റിട്ടേൺ സ്വർണത്തിൽ കഴിഞ്ഞ കാല വിലയെ അനുസരിച്ച് ആണ്.</string>
+    <string name="daily_investment_breakdown_gst_details_label">GST* (3%)</string>
+    <string name="daily_investment_breakdown_worth_label">തുക</string>
+    <string name="daily_investment_breakdown_gold_saved_label">സ്വർണം ഗ്രാമിൽ</string>
+
+    <string name="daily_investment_breakdown_gold_saved_value">%.2f ഗ്രാം</string>
+    <plurals name="daily_investment_breakdown_total_investment_label">
+        <item quantity="one">സമ്പാദ്യം (₹%d x %d മാസം)</item>
+        <item quantity="other">Savings (₹%d x %d മാസങ്ങൾ)</item>
+    </plurals>
+    <string name="daily_investment_edit_daily_saving_amount_header">തുക നൽകുക</string>
+    <string name="daily_investment_edit_daily_saving_amount_footer">നിങ്ങൾക്ക് എന്നും ₹10 നും ₹%d ക്കും ഇടയിൽ സമ്പാദിക്കാം.</string>
+    <string name="daily_investment_faq_header">എപ്പോഴും ചോദിക്കുന്ന ചോദ്യങ്ങൾ</string>
+    <string name="daily_investment_amount_selection_heading1">നിങ്ങൾ സമ്പാദിച്ചാൽ</string>
+    <string name="daily_investment_lets_automate_your_rs_d">നിങ്ങളുടെ പ്രതിദിന\nസമ്പാദ്യം ഓട്ടോമേറ്റ് ചെയ്യാം ₹%d</string>
+    <string name="feature_daily_investment_maximum_value_you_can_save_is_x">₹%d ആണ് സമ്പാദിക്കാവുന്ന പരമാവധി തുക</string>
+    <string name="feature_daily_investment_minimum_value_you_can_save_is_x">₹%d is the minimum amount you can save</string>
+    <string name="feature_daily_investment_this_field_cannot_be_left_empty">This field cannot be left empty</string>
+    <string name="feature_first_coin_delivery_failed">The phone number associated with my Jar account is %1s and my orderId is %2s, my gold delivery has failed, please guide me as to what I should do next.</string>
+    <string name="feature_first_coin_delivery_pending">The phone number associated with my Jar account is %1s and my orderId is %2s, my gold delivery is progress, please tell me how much longer it will take.</string>
+    <string name="feature_daily_investment_gm">gm</string>
+    <string name="feature_daily_investment_select_amount">Enter Amount</string>
+    <plurals name="feature_daily_investment_n_months">
+        <item quantity="one"><b>%d Months</b></item>
+        <item quantity="other"><b>%d Months</b></item>
+    </plurals>
+    <string name="feature_daily_investment_okay_got_it">Okay! Got it</string>
+    <string name="feature_daily_investment_track_my_savings">Track my savings</string>
+    <string name="feature_daily_investment_you_will_save">You will save</string>
+    <string name="feature_daily_investment_daily_bold"><b>daily</b></string>
+    <string name="feature_daily_investment_everyday">everyday</string>
+    <string name="feature_daily_investment_less">less</string>
+    <string name="feature_daily_investment_more">more</string>
+    <string name="feature_daily_investment_in_x_months">In %d months️ by saving</string>
+    <string name="feature_daily_investment_safe_and_secure">100%  Safe &amp; Secure</string>
+    <string name="feature_daily_investment_current_daily_saving_amount">Active Daily saving amount:</string>
+    <string name="feature_daily_investment_active_20lakh_jar_user">20+ Lakh Jar users save in Gold everyday</string>
+    <string name="feature_daily_investment_before_we_automate_payment">Before we automate payment,</string>
+    <string name="feature_daily_investment_lets_merge_you_saving_plan">Let’s merge your saving plans..</string>
+    <string name="feature_daily_investment_total_amount">Total amount</string>
+    <string name="feature_daily_investment_disable_daily_saving"><u>Disable Daily Saving</u></string>
+    <string name="feature_daily_investment_it_is_taking_little_longer">It is taking a little longer to update your daily saving for you due to server error.</string>
+    <string name="feature_daily_investment_updating_ds_in_progress">Updating Daily saving in progress</string>
+    <string name="feature_daily_investment_updating_ds_failed">Updating Daily saving failed</string>
+    <string name="feature_daily_investment_any_amount_debited_will_be_credited">Any amount debited, will be credited back to the source account in 48 hrs.</string>
+    <string name="feature_daily_investment_add_rupee_symbol">₹%s</string>
+    <string name="feature_daily_investment_setup_now">Setup Now</string>
+    <string name="feature_daily_investment_description">Based on the changes, you might be required to give payment permission again</string>
+    <string name="feature_daily_investment_description_for_cancellation_flow">Based on your changes, you will be required to provide permission again.</string>
+    <string name="feature_daily_investment_skip">Skip</string>
+    <string name="feature_daily_investment_100_safe_and_secure">100%  safe &amp; Secure</string>
+    <string name="let_s_automate_your_saving">Let’s automate your daily savings of ₹%d</string>
+    <string name="proceed">Proceed</string>
+    <string name="enter_daily_saving_amount">Enter Daily Saving Amount</string>
+    <string name="your_money_will_be_debited_everyday_and_saved_nin_24k_99_9_pure_gold">Your money will be debited everyday and saved\nin 24k 99.9% pure gold</string>
+    <string name="feature_daily_investment_one_crore_indians_save">1 Crore Indians save</string>
+    <string name="feature_daily_investment_daily_on_jar">daily on Jar</string>
+</resources>

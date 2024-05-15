@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarThumbHorizontal="@null"
+    android:scrollbarThumbVertical="@null">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRootContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/lpiProgress"
+            style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:indeterminate="false"
+            app:indicatorColor="@color/color_FFB400"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_min="64dp"
+            app:trackColor="@color/color_7356A4"
+            app:trackCornerRadius="10dp"
+            app:trackThickness="6dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animConfetti"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/clSuccessContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieCelebration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/clSuccessContainer"
+            app:layout_constraintEnd_toEndOf="@id/clSuccessContainer"
+            app:layout_constraintStart_toStartOf="@id/clSuccessContainer"
+            app:layout_constraintTop_toTopOf="@id/clSuccessContainer"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/successLottie"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="8dp"
+            android:translationZ="8dp"
+            app:layout_constraintBottom_toTopOf="@id/clSuccessContainer"
+            app:layout_constraintEnd_toEndOf="@id/clSuccessContainer"
+            app:layout_constraintStart_toStartOf="@id/clSuccessContainer"
+            app:layout_constraintTop_toTopOf="@id/clSuccessContainer"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <View
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/bgColor"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toTopOf="@id/clSuccessContainer"
+            app:layout_constraintEnd_toEndOf="@id/clSuccessContainer"
+            app:layout_constraintStart_toStartOf="@id/clSuccessContainer"
+            app:layout_constraintTop_toTopOf="@id/clSuccessContainer" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSuccessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="90dp"
+            android:background="@drawable/rounded_black_bg_10dp"
+            android:backgroundTint="@color/color_3c3357"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="46dp"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/feature_post_setup_gold_purchase_successful" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/kGoldBought"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:gravity="center"
+                android:text="@string/feature_post_setup_24k_gold_bought"
+                android:textColor="@color/color_EBB46A"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRsXAndXGm"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/kGoldBought"
+                app:layout_constraintStart_toStartOf="@id/kGoldBought"
+                app:layout_constraintTop_toBottomOf="@+id/kGoldBought"
+                tools:text="₹1010 | 11.2 gm" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDownloadInvoice"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/core_ui_download_invoice"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRsXAndXGm" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRightChevron"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:src="@drawable/ic_right_chevron"
+                app:layout_constraintBottom_toBottomOf="@id/tvDownloadInvoice"
+                app:layout_constraintStart_toEndOf="@id/tvDownloadInvoice"
+                app:layout_constraintTop_toTopOf="@id/tvDownloadInvoice" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/invoiceGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="tvDownloadInvoice,ivRightChevron" />
+
+            <View
+                android:id="@+id/lineSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:alpha="0.15"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/tvDownloadInvoice"
+                app:layout_constraintStart_toStartOf="@id/tvDownloadInvoice"
+                app:layout_constraintTop_toBottomOf="@+id/tvDownloadInvoice" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvYourReward"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/your_reward"
+                android:textAppearance="@style/your_reward"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/rewardLL"
+                app:layout_constraintEnd_toEndOf="@id/lineSeparator"
+                app:layout_constraintStart_toStartOf="@id/lineSeparator"
+                app:layout_constraintTop_toBottomOf="@+id/lineSeparator" />
+
+            <LinearLayout
+                android:id="@+id/rewardLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvYourReward" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

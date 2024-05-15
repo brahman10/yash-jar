@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTxnDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTxnTitle"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="start"
+        android:text="@string/feature_transaction_transaction_id"
+        app:layout_constraintEnd_toStartOf="@id/ivExpand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTxnId"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_copy_small"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTxnTitle"
+        tools:text="1993939394940404004400404" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivExpand"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="2dp"
+        android:visibility="gone"
+        android:src="@drawable/core_ui_ic_arrow_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/color_ACA1D3" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        app:el_duration="200"
+        app:el_expanded="false"
+        app:el_parallax="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tvTxnId"
+        tools:el_expanded="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTransactionDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/feature_transaction_cell_transaction_details" />
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/feature_mandate_bg_rounded_2f4751_4dp"
+    android:layout_marginHorizontal="@dimen/dimen_12dp"
+    android:paddingHorizontal="@dimen/dimen_12dp"
+    android:paddingVertical="@dimen/dimen_8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPreferredBankTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Recommended bank for you"
+        android:textColor="@color/color_58DDC8"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPreferredBankLogo"
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_16dp"
+        app:srcCompat="@drawable/feature_mandate_payment_ic_bank"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPreferredBankTitle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPreferredBankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallBoldTextViewStyle"
+        app:textAllCaps="false"
+        tools:text="HDFC Bank"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        app:layout_constraintTop_toTopOf="@id/ivPreferredBankLogo"
+        app:layout_constraintBottom_toBottomOf="@id/ivPreferredBankLogo"
+        app:layout_constraintStart_toEndOf="@id/ivPreferredBankLogo"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

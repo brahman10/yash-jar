@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clHeaderHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHeaderTitle"
+                    style="@style/BigTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="38dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_get_cash_instantly_in_your_bank_account"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clHeaderHolder"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lineHeight="36dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lavHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="stage_money.lottie"
+                    app:lottie_loop="false" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGetApprovedLoanUpto"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/feature_lending_bg_green_rounded_corner_6dp"
+                    android:backgroundTint="@color/color_1B886F"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/feature_lending_get_pre_approved_loan_upto_5l"
+                    app:layout_constraintBottom_toBottomOf="@id/clHeaderHolder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle"
+                    app:layout_constraintVertical_bias="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDirectMoneyTransfer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/feature_lending_bg_3c3357_rounded_corner_16dp"
+                app:layout_constraintEnd_toStartOf="@id/clFastKyc"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clHeaderHolder">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivMoneyTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/core_ui_ic_bank"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_min="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDirectMoneyTransfer"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/feature_lending_direct_money_transfer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivMoneyTransfer" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFastKyc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/feature_lending_bg_3c3357_rounded_corner_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/clDirectMoneyTransfer"
+                app:layout_constraintTop_toTopOf="@id/clDirectMoneyTransfer">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFastKyc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/core_ui_ic_shield_lending"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_min="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_min="50dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSeamless"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/feature_lending_seamless_and_fast_kyc"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivFastKyc" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFlexibleEmi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/feature_lending_bg_3c3357_rounded_corner_16dp"
+                app:layout_constraintEnd_toStartOf="@id/clLowWithdraw"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clDirectMoneyTransfer">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFlexibleEmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/core_ui_ic_calendar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_min="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmi"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/feature_lending_flexible_emi_n_options"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivFlexibleEmi" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clLowWithdraw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/feature_lending_bg_3c3357_rounded_corner_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/clFlexibleEmi"
+                app:layout_constraintTop_toTopOf="@id/clFlexibleEmi">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivLowWithdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/core_ui_ic_money"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_min="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_min="50dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvWithdraw"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/feature_lending_withdraw_as_low_as_1000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivLowWithdraw" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnCheckCreditLimit"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="20dp"
+                app:buttonText="@string/feature_lending_check_credit_limit"
+                app:buttonTextAllCaps="false"
+                app:layout_constraintBottom_toTopOf="@id/btnSellGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="54dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clFlexibleEmi" />
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnSellGold"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="20dp"
+                app:buttonText="@string/feature_lending_sell_gold"
+                app:buttonTextAllCaps="false"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:buttonType="secondaryHollowButton"
+                app:layout_constraintBottom_toTopOf="@id/clSocialPresenceHolder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="54dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnCheckCreditLimit" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSocialPresenceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.jar.app.core_ui.widget.OverlappingProfileView
+                    android:id="@+id/profileView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_min="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTrustedBy"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/feature_lending_trusted_by_s_plus_users"
+                    app:layout_constraintBottom_toBottomOf="@id/profileView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/profileView"
+                    app:layout_constraintTop_toTopOf="@id/profileView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_black_bg_16dp"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivTransactionType"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/feature_transaction_ic_winning_gold_on_hand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivClose"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="start"
+            android:text="@string/feature_transaction_winnings_debited"
+            app:layout_constraintStart_toEndOf="@id/ivTransactionType"
+            app:layout_constraintTop_toTopOf="@id/ivTransactionType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVolume"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="@id/ivTransactionType"
+            app:layout_constraintStart_toEndOf="@id/ivTransactionType"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:text="Invested" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintTop_toBottomOf="@id/ivTransactionType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTapToView"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="@string/feature_transaction_tap_to_view_transaction_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_black_bg_16dp"
+            android:backgroundTint="@color/color_272239"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTapToView">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPartner"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/tvAmount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="24K Gold - SafeGold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAmount"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="18sp"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintEnd_toStartOf="@+id/btnShowDetails"
+                app:layout_constraintStart_toEndOf="@id/tvPartner"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="₹1673" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvVolumeBuying"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:visibility="gone"
+                android:text="@string/feature_transaction_tap_to_view_transaction_details"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPartner" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnShowDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvVolumeBuying"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvVolumeBuying"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatus"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                app:layout_constraintEnd_toStartOf="@id/tvDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvVolumeBuying"
+                tools:text="Invested" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="end"
+                app:layout_constraintEnd_toStartOf="@+id/btnShowDetails"
+                app:layout_constraintStart_toEndOf="@id/tvStatus"
+                app:layout_constraintTop_toBottomOf="@id/tvVolumeBuying"
+                tools:text="12 March’21, 12:35am" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">ಹೆಸರು</string>
+    <string name="phone_number">ಫೋನ್ ನಂಬರ್</string>
+    <string name="please_fill_all_the_details">ದಯವಿಟ್ಟು ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡಿ</string>
+    <string name="email">ಇಮೇಲ್</string>
+    <string name="pincode">ಪಿನ್‌ಕೋಡ್</string>
+    <string name="city">ನಗರ</string>
+    <string name="enter_city">ನಗರವನ್ನು ಎಂಟರ್ ಮಾಡಿ</string>
+    <string name="state">ರಾಜ್ಯ</string>
+    <string name="enter_state">ರಾಜ್ಯವನ್ನು ಎಂಟರ್ ಮಾಡಿ</string>
+    <string name="enter_pin_code">ಪಿನ್ ಕೋಡ್ ಎಂಟರ್ ಮಾಡಿ</string>
+    <string name="add_details">ವಿವರಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="your_full_address">ನಿಮ್ಮ ಪೂರ್ಣ ವಿಳಾಸ</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">ವಿವರಗಳನ್ನು ಸಬ್ಮಿಟ್ ಮಾಡಿ</string>
+    <string name="details_added">ವಿವರಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="street_address_one">ಬೀದಿ ವಿಳಾಸ 1</string>
+    <string name="address_line_1">ವಿಳಾಸ ಸಾಲು 1</string>
+    <string name="address_line_2">ವಿಳಾಸ ಸಾಲು 2</string>
+    <string name="check">ಚೆಕ್ ಮಾಡಿ</string>
+    <string name="street_address_two">ಬೀದಿ ವಿಳಾಸ 2(Optional)</string>
+    <string name="please_enter_a_valid_pincode">ದಯವಿಟ್ಟು ಸರಿಯಾದ ಪಿನ್‌ಕೋಡ್ ಅನ್ನು ಎಂಟರ್ ಮಾಡಿ</string>
+    <string name="this_area_is_not_servicable_currently">ಪ್ರಸ್ತುತ ಈ ಪ್ರದೇಶದಲ್ಲಿ ಸರ್ವಿಸ್ ನೀಡಲಾಗುವುದಿಲ್ಲ</string>
+    <string name="edit_address">ವಿಳಾಸವನ್ನು ಎಡಿಟ್ ಮಾಡಿ</string>
+    <string name="add_new_address">ಹೊಸ ವಿಳಾಸವನ್ನು ಸೇರಿಸಿ</string>
+    <string name="save_new_address">ಹೊಸ ವಿಳಾಸವನ್ನು ಸೇವ್ ಮಾಡಿ</string>
+    <string name="update_address">ವಿಳಾಸವನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ</string>
+    <string name="save_and_proceed">ಸೇವ್ ಮಾಡಿ ಮತ್ತು ಮುಂದುವರೆಯಿರಿ</string>
+    <string name="select_an_address_for_delivery">ಡೆಲಿವರಿ ವಿಳಾಸವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="no_delivery_address_available">ಯಾವುದೇ ಡೆಲಿವರಿ ವಿಳಾಸ ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="saved_addresses">ಸೇವ್ ಮಾಡಿದ ವಿಳಾಸಗಳು</string>
+    <string name="add_delivery_details">ಡೆಲಿವರಿ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">ನಿಮ್ಮ ಆಧಾರ್ ಕಾರ್ಡ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="feature_user_api_saved_address">ಸೇವ್ ಮಾಡಿದ ವಿಳಾಸ</string>
+    <string name="feature_lending_recently_saved">ಇತ್ತೀಚೆಗೆ ಸೇವ್ ಮಾಡಲಾಗಿದೆ</string>
+</resources>

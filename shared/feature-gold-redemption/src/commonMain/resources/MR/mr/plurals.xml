@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_gold_redemption_items">
+        <item quantity="one">आयटम</item>
+        <item quantity="other">आयटम्स</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_my_orders_x">
+        <item quantity="one">माझी ऑर्डर</item>
+        <item quantity="other">माझ्या ऑर्डर्स (%d)</item>
+    </plurals>
+
+    <plurals name="feature_gold_redemption_items_available">
+        <item quantity="one">%d वजन उपलब्ध</item>
+        <item quantity="other">%d वजनं उपलब्ध</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_showing_cities">
+        <item quantity="one">%d शहर दाखवत आहे</item>
+        <item quantity="other">%d शहरे दाखवत आहे</item>
+    </plurals>
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="@dimen/dimen_0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:elevation="@dimen/dimen_0dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_gold_lease_bg_gradient_lease_plans"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_16dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clGoldBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/feature_gold_lease_bg_rounded_272239_opacity30_40dp"
+                        android:paddingHorizontal="@dimen/dimen_16dp"
+                        android:paddingVertical="@dimen/dimen_12dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/SmallTextViewStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dimen_10dp"
+                            android:drawableStart="@drawable/feature_gold_lease_ic_locker"
+                            android:drawablePadding="@dimen/dimen_8dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@string/feature_gold_lease_gold_in_your_locker"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/barrier"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.Barrier
+                            android:id="@+id/barrier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:barrierDirection="start"
+                            app:constraint_referenced_ids="tvLockerGoldGm, tvLockerGoldRs"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvLockerGoldGm"
+                            style="@style/SmallBoldTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_ebb46a"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:textAllCaps="false"
+                            android:visibility="invisible"
+                            tools:text="@string/feature_buy_gold_v2_x_gm" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvLockerGoldRs"
+                            style="@style/SmallBoldTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_ebb46a"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:textAllCaps="false"
+                            android:visibility="invisible"
+                            tools:text="@string/feature_buy_gold_v2_x_gm" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvJewellerListingsTitle"
+                        style="@style/BigTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:textSize="20sp"
+                        tools:text="Our trusted partners" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvJewellerIcons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:background="@drawable/feature_gold_lease_bg_rounded_121127_opacity30_40dp"
+                        android:paddingHorizontal="@dimen/dimen_16dp"
+                        android:paddingVertical="@dimen/dimen_12dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivSocialProofLogo"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvSocialProofText"
+                            style="@style/SmallBoldTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/ivSocialProofLogo"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:textAllCaps="false" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                tools:listitem="@layout/cell_gold_lease_filter"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llNoLease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_80"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNoLeaseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BigTextViewStyle"
+                android:textSize="24sp"
+                android:textColor="@color/color_D5CDF2"
+                android:text="@string/feature_gold_lease_no_leases_available"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNoLeaseDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/color_D5CDF2"
+                android:text="@string/feature_gold_lease_come_back_later"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPlans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            tools:listitem="@layout/cell_gold_lease_plan"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

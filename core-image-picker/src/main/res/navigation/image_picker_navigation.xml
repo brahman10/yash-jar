@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image_picker_navigation"
+    app:startDestination="@+id/cameraFragment">
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.jar.app.core_image_picker.impl.ui.camera.CameraFragment"
+        android:label="Camera Fragment"
+        tools:layout="@layout/core_image_picker_fragment_camera">
+        <deepLink app:uri="android-app://com.jar.app/camera/{cameraArgs}" />
+        <argument
+            android:name="cameraArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_cameraFragment_to_previewFragment"
+            app:destination="@id/previewFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_cameraFragment_to_previewV2Fragment"
+            app:destination="@id/previewV2Fragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.jar.app.core_image_picker.impl.ui.preview.PreviewFragment"
+        android:label="Preview Fragment"
+        tools:layout="@layout/core_image_picker_fragment_preview">
+        <deepLink app:uri="android-app://com.jar.app/preview/{previewPath}/{isSelfie}" />
+        <argument
+            android:name="previewPath"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+        <argument
+            android:name="isSelfie"
+            app:argType="boolean"
+            app:defaultValue="false"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewV2Fragment"
+        android:name="com.jar.app.core_image_picker.impl.ui.preview_v2.PreviewV2Fragment"
+        android:label="Preview V2 Fragment"
+        tools:layout="@layout/core_image_picker_fragment_preview_v2">
+        <deepLink app:uri="android-app://com.jar.app/previewV2/{previewArgs}" />
+        <argument
+            android:name="previewArgs"
+            app:argType="com.jar.app.core_image_picker.impl.data.PreviewV2Arguments"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_previewV2Fragment_to_cropV2Fragment"
+            app:destination="@id/cropV2Fragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cropFragment"
+        android:name="com.jar.app.core_image_picker.impl.ui.crop.CropFragment"
+        android:label="Crop Fragment"
+        tools:layout="@layout/core_image_picker_fragment_crop">
+        <deepLink app:uri="android-app://com.jar.app/gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/cropV2Fragment"
+        android:name="com.jar.app.core_image_picker.impl.ui.crop_v2.CropV2Fragment"
+        android:label="Crop Fragment"
+        tools:layout="@layout/core_image_picker_fragment_crop_v2">
+        <argument
+            android:name="photoPath"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+        <argument
+            android:name="isGalleryFlow"
+            app:argType="boolean"
+            app:defaultValue="false"
+            app:nullable="false" />
+        <argument
+            android:name="kycFeatureFlowType"
+            app:argType="string"
+            app:defaultValue="UNKNOWN"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>

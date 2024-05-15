@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        tools:text="Duration question"
+        android:padding="@dimen/dimen_16dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:lineHeight="40sp"
+        android:textColor="#EEEAFF"
+        app:fontFamily="@font/inter_bold"
+        android:textFontWeight="700"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDuration"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/duration_layout"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toTopOf="@id/detailsBottomSheet"
+            app:layout_constraintTop_toBottomOf="@id/tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/detailsBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/duration_confirm_bottom_sheet"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:layout_marginTop="100dp"
+        android:paddingEnd="@dimen/dimen_24dp"
+        android:paddingBottom="@dimen/dimen_24dp"
+        android:paddingStart="@dimen/dimen_24dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/rvDuration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
+            android:textFontWeight="600"
+            android:textSize="14sp"
+            app:fontFamily="@font/inter_semi_bold"
+            android:lineHeight="21sp"
+            android:text="To reach your goal, start saving"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/innerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:lineSpacingExtra="4sp"
+                app:fontFamily="@font/inter_bold"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="\u20B95000"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text3"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1sp"
+                android:text="Daily in Gold"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/default_goal_gbs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text2"
+                app:layout_constraintBottom_toBottomOf="@id/text3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnConfirmGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/innerLayout"
+            android:layout_marginTop="21dp"
+            app:buttonText="Confirm Goal"
+            app:textMarginBottom="21dp"
+            app:buttonTextBold="true"
+            app:textMarginTop="21dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

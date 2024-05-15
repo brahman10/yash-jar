@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_image_picker_use_photo">फोटो वापरा</string>
+    <string name="core_image_picker_retake">पुन्हा घ्या</string>
+    <string name="core_image_picker_choose_different">वेगळे निवडा</string>
+    <string name="core_image_picker_upload_photo">फोटो अपलोड करा</string>
+    <string name="core_image_picker_rotate">फिरवा</string>
+    <string name="core_image_picker_provide_camera_permissions">कृपया कॅमेरासाठी परवानग्या द्या!!</string>
+    <string name="core_image_picker_take_photo">फोटो घ्या</string>
+    <string name="core_image_picker_take_selfie">सेल्फी घ्या</string>
+    <string name="core_image_picker_make_sure_photo_is_visible">तुमचा फोटो दिसत असल्याची खात्री करा.</string>
+    <string name="core_image_picker_place_your_document_inside_the_frame">तुमचे %s फ्रेममध्ये ठेवा.</string>
+    <string name="core_image_picker_pan_card">PAN कार्ड</string>
+    <string name="core_image_picker_aadhar_card">आधार कार्ड</string>
+    <string name="core_image_picker_driving_license">ड्रायव्हिंग लायसन्स</string>
+    <string name="core_image_picker_passport">पासपोर्ट</string>
+    <string name="core_image_picker_voters_id">मतदार ID</string>
+    <string name="core_image_picker_make_sure_your_face_is_in_the_frame">तुमचा चेहरा फ्रेममध्ये असल्याची खात्री करा.</string>
+    <string name="core_image_picker_please_make_sure_the_photo_is_clear">कृपया फोटो स्पष्ट असल्याची खात्री करा.</string>
+    <string name="core_image_picker_front_side">समोरची बाजू</string>
+    <string name="core_image_picker_provide_gallery_permissions">कृपया फाईल्स आणि मिडीया बघण्यास परमिशन द्या!</string>
+    <string name="core_image_picker_document">डॉक्युमेंट</string>
+    <string name="core_image_picker_powered_by_hyperverge">पॉवर्ड बाय हायपरव्हर्ज</string>
+    <string name="core_image_picker_something_went_wrong">काहीतरी चूक झाली आहे! कृपया पुन्हा प्रयत्न करा.</string>
+    <string name="core_image_picker_preview">प्रिव्ह्यू करा</string>
+    <string name="core_image_picker_document_easy_to_read">तुमचे डॉक्युमेंट वाचायला सुलभ आहे का?</string>
+    <string name="core_image_picker_please_make_sure_document_is_clear_and_visible">कृपया तुमचा संपूर्ण डॉक्युमेंट स्पष्ट आणि व्यवस्थित दिसत असल्याचे सुनिश्चित करा.</string>"
+    <string name="core_image_picker_crop_and_rotate">क्रॉप करा &amp; रोटेट करा</string>
+    <string name="core_image_picker_crop_image">इमेज क्रॉप करा</string>
+    <string name="core_image_picker_confirm">कन्फर्म करा</string>
+    <string name="core_image_picker_done">पूर्ण झाले</string>
+    <string name="core_image_picker_cancel">कॅन्सल  करा</string>
+    <string name="core_image_picker_retake_photo"><u>फोटो पुन्हा घ्या</u></string>
+    <string name="core_image_picker_retake_selfie"><u>सेल्फी पुन्हा घ्या</u></string>
+    <string name="core_image_picker_choose_a_different_photo"><u>दुसरा फोटो निवडा</u></string>
+    <string name="core_image_picker_drag_the_handles_to_crop_the_photo">फोटो क्रॉप करण्यासाठी हँडल ड्रॅग करा.</string>
+    <string name="core_image_picker_preview_your_selfie">तुमची सेल्फी प्रिव्ह्यू करा</string>
+    <string name="core_image_picker_please_check_selfie_is_clear">कृपया तुमचा सेल्फी स्पष्ट आहे का ते तपासा.</string>
+    <string name="core_image_picker_awesome_click_the_selfie_now">अप्रतिम. आता सेल्फीवर क्लिक करा.</string>
+    <string name="core_image_picker_provide_permission">परमिशन द्या</string>
+    <string name="core_image_picker_access_to_your_camera_has_been_prohibited_message"><b>तुमच्या कॅमेरामध्ये ॲक्सेस प्रतिबंधित केलेला आहे.</b> \n\nकृपया तुमची व्हेरिफिकेशन  प्रक्रिया सुरू ठेवण्यासाठी तुमच्या फोनचा कॅमेरा Jar ॲपसाठी ॲक्सेस इनेबल करा. </string>
+</resources>

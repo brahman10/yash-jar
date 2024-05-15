@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_weekly_challenge_common"
+    app:startDestination="@id/onBoardingFragment">
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.jar.app.weekly_magic_common.impl.ui.onboarding.OnBoardingWeeklyChallengeFragment"
+        android:label="OnBoardingParentFragment"
+        app:launchSingleTop="true"
+        tools:layout="@layout/fragment_onboarding_weekly_challenge">
+
+        <deepLink app:uri="android-app://com.jar.app/weeklyChallenge/onBoarding/{triggerReturnResult}/{fromScreen}" />
+
+        <argument
+            android:name="triggerReturnResult"
+            android:defaultValue="true"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/mysteryCardWonDialogFragment"
+        android:name="com.jar.app.weekly_magic_common.impl.ui.mystery_card_notification.MysteryCardWonDialogFragment"
+        android:label="MysteryCardWonDialogFragment"
+        app:launchSingleTop="true"
+        tools:layout="@layout/dialog_mystery_card_won">
+
+        <deepLink app:uri="android-app://com.jar.app/weeklyChallenge/mysteryCardWonDialogFragment/{challengeId}/{amount}/{transactionType}" />
+
+        <argument
+            android:name="challengeId"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="transactionType"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="amount"
+            app:argType="float"
+            app:nullable="false" />
+
+    </dialog>
+
+
+    <fragment
+        android:id="@+id/weeklyChallengeDetailFragment"
+        android:name="com.jar.app.weekly_magic_common.impl.ui.detail.WeeklyChallengeStoryFragment"
+        android:label="WeeklyChallengeDetailFragment"
+        tools:layout="@layout/fragment_weekly_challenge_detail">
+
+        <deepLink app:uri="android-app://com.jar.app/weeklyChallenge/weeklyChallengeDetailFragment/{challengeId}" />
+
+        <argument
+            android:name="challengeId"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/cardOrChallengeWinFragment"
+        android:name="com.jar.app.weekly_magic_common.impl.ui.win_card_or_challenge.WinCardOrChallengeParentFragment"
+        android:label="WinCardOrChallengeParentFragment"
+        app:launchSingleTop="true"
+        tools:layout="@layout/fragment_win_card_or_challenge_parent">
+
+        <deepLink app:uri="android-app://com.jar.app/weeklyChallenge/cardOrChallengeWin/{challengeId}/{showPurchaseTextAnimation}/{fromScreen}/{launchWeeklyHome}" />
+
+        <argument
+            android:name="challengeId"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="showPurchaseTextAnimation"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <argument
+            android:name="launchWeeklyHome"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+
+    </fragment>
+
+
+</navigation>

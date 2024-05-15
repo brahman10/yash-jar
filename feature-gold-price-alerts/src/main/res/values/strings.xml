@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gold_buy_price">Gold Buy Price</string>
+    <string name="feature_home_page_average_buy_price">Your Average buy price</string>
+    <string name="min_amount">Min Amount</string>
+    <string name="karat">Karat</string>
+    <string name="purity">Purity</string>
+    <string name="best_time_to_buy_gold">Best time to buy Gold!</string>
+
+    <string name="feature_homepage_save_manually">Save Manually</string>
+    <string name="feature_settings_gold_price_alert_enabled">Gold price alert enabled</string>
+    <string name="n_change_percent">%s Change(%%)</string>
+    <string name="rupee_x_in_double">\u20B9%.2f</string>
+    <string name="n_karat">%sK</string>
+
+    <string name="current_buy_price_is_n_per_gm">Current buy price is ₹%.2f/gm</string>
+    <string name="dont_miss_the_opportunity_of_buying_gold_at_the_low_price">Don’t miss the opportunity of buying gold at the low price</string>
+    <string name="feature_settings_gold_price_alerts_description">Get timely alerts when prices drop so you can invest at the best price</string>
+    <string name="feature_settings_gold_price_alerts">Gold Price Alerts</string>
+    <string name="feature_gold_price_alerts_rupee_prefix_string">₹%s/gm</string>
+    <string name="feature_gold_buy_price_live_gold_price">Live Gold Price</string>
+    <string name="feature_gold_price_alert_x_in_int">\u20B9%d</string>
+</resources>

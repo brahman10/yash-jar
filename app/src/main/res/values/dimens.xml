@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="design_bottom_navigation_height">64dp</dimen>
+    <dimen name="toolbar_min_height" >70dp</dimen>
+
+    <dimen name="age_item_height">60dp</dimen>
+    <dimen name="age_item_spacing">8dp</dimen>
+<!--    (60x3)-->
+    <dimen name="age_rv_height">180dp</dimen>
+    <dimen name="profile_pic_w_h">118dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+</resources>

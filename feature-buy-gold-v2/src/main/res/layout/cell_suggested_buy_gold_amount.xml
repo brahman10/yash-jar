@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSuggestedAmount"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_buy_gold_v2_bg_suggested_amount"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_7dp"
+        android:textColor="@color/color_EEEAFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPopularTag"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_buy_gold_v2_bg_bottom_rounded_7745ff_8dp"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dimen_3dp"
+        android:text="@string/feature_buy_gold_v2_popular"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/tvSuggestedAmount"
+        app:layout_constraintStart_toStartOf="@id/tvSuggestedAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvSuggestedAmount"
+        tools:ignore="SmallSp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

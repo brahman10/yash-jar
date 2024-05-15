@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/lpiProgress"
+        style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:indeterminate="false"
+        app:indicatorColor="@color/color_7745FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="64dp"
+        app:trackColor="@color/color_3c3357"
+        app:trackCornerRadius="10dp"
+        app:trackThickness="6dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lpiProgress"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivIllustration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="80dp"
+            app:srcCompat="@drawable/core_ui_ic_disabled" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeader"
+            style="@style/BigTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="28dp"
+            android:gravity="center"
+            android:text="@string/feature_round_off_auto_save_disabled"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/ivIllustration"
+            app:lineHeight="34sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/feature_round_off_your_round_off_will_be_calculated"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="42dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/color_3c3357"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYouCanSaveWithThisCard"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="@string/feature_round_off_you_can_save_with_this_card"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivArc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@id/clRoundOffContainer"
+            app:layout_constraintStart_toEndOf="@id/tvYouCanSaveWithThisCard"
+            app:srcCompat="@drawable/feature_round_off_ic_arc" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRoundOffContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/round_black_bg_16dp"
+            android:backgroundTint="@color/color_352F4F"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvYouCanSaveWithThisCard">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRsValue"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="₹32" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivExpand"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="6dp"
+                android:background="?attr/actionBarItemBackground"
+                android:clickable="false"
+                android:elevation="1dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/core_ui_ic_arrow_down"
+                android:translationZ="1dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvRsValue"
+                app:layout_constraintStart_toEndOf="@id/tvRsValue"
+                app:layout_constraintTop_toTopOf="@id/tvRsValue"
+                app:tint="@color/color_ACA1D3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDetectRoundUps"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_round_off_detected_roundups"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRsValue" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnSaveNow"
+                android:layout_width="108dp"
+                android:layout_height="36dp"
+                app:buttonRadius="4dp"
+                android:clickable="false"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="11dp"
+                app:buttonDisabled="true"
+                app:buttonText="@string/feature_round_off_save_now"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

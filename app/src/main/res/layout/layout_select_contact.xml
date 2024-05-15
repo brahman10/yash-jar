@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_20dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSendGiftSecurely"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:drawableStart="@drawable/ic_trusted_small"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:text="@string/send_a_gift_securely"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/selectFromContacts"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textSelectContact"
+        app:layout_constraintEnd_toEndOf="@+id/textSelectContact"
+        app:layout_constraintStart_toStartOf="@+id/textSelectContact"
+        app:layout_constraintTop_toTopOf="@+id/textSelectContact" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textSelectContact"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="46dp"
+        android:drawableStart="@drawable/ic_contact"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:elevation="@dimen/dimen_4dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="28dp"
+        android:text="@string/select_a_contact"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSendGiftSecurely" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/enterMobileNumber"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="0dp"
+        app:buttonType="secondaryHollowButton"
+        app:layout_constraintBottom_toBottomOf="@+id/textEnterMobile"
+        app:layout_constraintEnd_toEndOf="@+id/textEnterMobile"
+        app:layout_constraintStart_toStartOf="@+id/textEnterMobile"
+        app:layout_constraintTop_toTopOf="@+id/textEnterMobile" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textEnterMobile"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:elevation="@dimen/dimen_4dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="28dp"
+        android:text="@string/enter_mobile_number"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectFromContacts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

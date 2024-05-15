@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graph_manual_buy_nav"
+    app:startDestination="@id/manualBuyGraph">
+
+    <fragment
+        android:id="@+id/manualBuyGraph"
+        android:label="ManualBuyGraph"
+        android:name="com.myjar.app.feature_graph_manual_buy.impl.ui.GraphManualBuyFragment">
+        <deepLink app:uri="android-app://com.jar.app/manualSavingsTracker" />
+    </fragment>
+
+</navigation>

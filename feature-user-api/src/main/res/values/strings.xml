@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="please_fill_all_the_details">Please fill all the details</string>
+    <string name="email">Email</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="enter_city">Enter City</string>
+    <string name="state">State</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
+    <string name="add_details">Add Details</string>
+    <string name="your_full_address">Your full address</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="details_added">Details added</string>
+    <string name="street_address_one">Street address 1</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="check">Check</string>
+    <string name="street_address_two">Street address 2 (Optional)</string>
+    <string name="please_enter_a_valid_pincode">Please enter a valid pincode</string>
+    <string name="this_area_is_not_servicable_currently">This area is not serviceable currently</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="add_new_address">Add new Address</string>
+    <string name="save_new_address">Save new Address</string>
+    <string name="update_address">Update Address</string>
+    <string name="save_and_proceed">Save And Proceed</string>
+    <string name="select_an_address_for_delivery">Select an address for delivery</string>
+    <string name="no_delivery_address_available">No delivery address available</string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="add_delivery_details">Add Delivery details</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">Linked to your Aadhaar card</string>
+    <string name="feature_user_api_saved_address">Saved Address</string>
+    <string name="feature_lending_recently_saved">Recently saved</string>
+</resources>

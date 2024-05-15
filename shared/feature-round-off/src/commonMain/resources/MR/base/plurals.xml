@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plural name="feature_round_off_resuming_in">
+        <item quantity="one">Resuming in : %d day</item>
+        <item quantity="other">Resuming in : %d days</item>
+    </plural>
+
+    <plural name="feature_round_off_n_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plural>
+
+    <plural name="feature_round_off_transactions">
+        <item quantity="zero">%d Transaction</item>
+        <item quantity="one">%d Transaction</item>
+        <item quantity="other">%d Transactions</item>
+    </plural>
+</resources>

@@ -1,0 +1,39 @@
+CREATE TABLE UserMetaDataEntity(
+id INTEGER NOT NULL PRIMARY KEY,
+referAndEarnDescription TEXT,
+referralEarnings REAL,
+notificationCount INTEGER,
+popupType TEXT,
+pendingGoldGift INTEGER CHECK (pendingGoldGift IN (0, 1)),
+creditCardShow INTEGER CHECK (creditCardShow IN (0, 1)),
+shouldShowLoanCard INTEGER CHECK (shouldShowLoanCard IN (0, 1)),
+showVasooliCard  INTEGER CHECK (showVasooliCard IN (0, 1)),
+showDuoCard  INTEGER CHECK (showDuoCard IN (0, 1))
+);
+
+insertUserMetaData:
+INSERT OR REPLACE INTO UserMetaDataEntity(
+id,
+referAndEarnDescription,
+referralEarnings,
+notificationCount,
+popupType,
+pendingGoldGift,
+creditCardShow,
+shouldShowLoanCard,
+showVasooliCard,
+showDuoCard
+)
+VALUES(?,?,?,?,?,?,?,?,?,?);
+
+deleteUserMetaData:
+DELETE FROM UserMetaDataEntity;
+
+fetchUserMetaDataRowCount:
+SELECT COUNT(*) FROM UserMetaDataEntity;
+
+fetchUserMetaData:
+SELECT * FROM UserMetaDataEntity;
+
+updateNotificationMetaData:
+UPDATE UserMetaDataEntity SET notificationCount = ?;

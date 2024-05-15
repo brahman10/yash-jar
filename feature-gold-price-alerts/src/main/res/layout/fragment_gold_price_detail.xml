@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jar.app.core_ui.widget.LockableNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lockableScrollView"
+    android:background="@color/bgColor"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_toolbar_default_revamped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTopRibbon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:background="#2C915B"
+            android:padding="5dp"
+            android:visibility="visible"
+            app:layout_constraintWidth_max="200dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/elRibbonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/dimen_7dp"
+                android:orientation="horizontal"
+                app:el_duration="700"
+                app:el_expanded="false">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTopRibbonText"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:gravity="start|center_vertical"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    tools:text="Lowest price in last 6 months"
+                    tools:ignore="SmallSp" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTopRibbonIcon"
+                android:layout_width="@dimen/dimen_16dp"
+                android:layout_height="@dimen/dimen_18dp"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                app:layout_constraintStart_toEndOf="@id/elRibbonText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:src="@drawable/ic_gold_brick"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/cardGraphContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clTopRibbon">
+
+            <include
+                android:id="@+id/cardGraph"
+                layout="@layout/layout_graph" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardAlertContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardGraphContainer">
+
+            <include
+                android:id="@+id/cardContainer"
+                layout="@layout/layout_card" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.jar.app.core_ui.widget.LockableNestedScrollView>

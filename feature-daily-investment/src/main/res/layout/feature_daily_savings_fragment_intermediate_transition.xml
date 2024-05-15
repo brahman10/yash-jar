@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressHorizontal"
+        style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:indeterminate="false"
+        app:indicatorColor="@color/color_7745FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="64dp"
+        app:trackColor="@color/color_3c3357"
+        app:trackCornerRadius="10dp"
+        app:trackThickness="6dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIllustration"
+        app:srcCompat="@drawable/core_ui_ic_green_tick"
+        app:layout_constraintBottom_toTopOf="@id/tvHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/dimen_16sp"
+        android:layout_width="58dp"
+        android:layout_height="58dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        style="@style/BigTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_daily_investment_yay_daily_investment_resumed"
+        android:textSize="20sp"
+        android:textColor="@color/color_58DDC8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lineHeight="34sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDesc"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/color_ACA1D3"
+        android:text="@string/feature_daily_investment_its_good_to_see_you_save_again"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/feature_daily_investment_your_saving_will_continue_from_tomorrow"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintTop_toBottomOf="@id/tvDesc" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_loop="true"
+        app:lottie_repeatCount="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

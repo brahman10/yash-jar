@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_black_bg_16dp"
+    android:backgroundTint="@color/color_352F4F"
+    android:paddingVertical="24dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDailySavingIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feature_homepage_ic_daily_saving" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUpdateDailySaving"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="@string/feature_home_page_update_daily_amount"
+        android:textAllCaps="true"
+        android:textColor="@color/color_EBB46A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSaveMoreWorryLess"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/feature_home_page_save_more_worry_less"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUpdateDailySaving" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.2"
+        android:background="@color/color_776E94"
+        app:layout_constraintTop_toBottomOf="@id/tvSaveMoreWorryLess" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGoldCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        app:srcCompat="@drawable/feature_homepage_ic_gold_coins" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSaveXRs"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/feature_home_page_save_rs_x"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvIn6Months"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="@string/feature_home_page_in_6_months"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSaveXRs" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBySavingXDaily"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/feature_home_page_daily"
+        app:layout_constraintEnd_toStartOf="@id/ivGoldCoins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIn6Months" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRsX"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@id/seekBarDailySaving"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="$50" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarDailySaving"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="56dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/core_ui_seekbar_progress"
+        android:thumb="@drawable/core_ui_custom_switch_thumb_seekbar"
+        app:layout_constraintTop_toBottomOf="@id/tvBySavingXDaily"
+        tools:progress="10" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRecommendedContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tvRsX"
+        app:layout_constraintStart_toEndOf="@id/tvRsX"
+        app:layout_constraintTop_toTopOf="@id/tvRsX"
+        tools:visibility="visible">
+
+        <View
+            android:id="@+id/triangle"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:rotation="-90"
+            android:layout_marginEnd="-5dp"
+            android:background="@drawable/feature_homepage_curved_edge_triangle"
+            android:backgroundTint="@color/color_7745FF"
+            app:layout_constraintTop_toTopOf="@id/tvRecommended"
+            app:layout_constraintBottom_toBottomOf="@id/tvRecommended"
+            app:layout_constraintEnd_toStartOf="@id/tvRecommended"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRecommended"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_black_bg_4dp"
+            android:backgroundTint="@color/color_7745FF"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:text="@string/feature_home_page_recommended"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLowestValue"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="@id/seekBarDailySaving"
+        app:layout_constraintTop_toBottomOf="@id/seekBarDailySaving"
+        tools:text="$20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHighestValue"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="@id/seekBarDailySaving"
+        app:layout_constraintTop_toBottomOf="@id/seekBarDailySaving"
+        tools:text="$200" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMoveTheSlider"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/feature_home_page_move_the_slider_to_choose_an_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarDailySaving" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnSaveXDaily"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        app:buttonText="@string/feature_home_page_save_rs_x_daily"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMoveTheSlider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feature_lending_kyc_navigation"
+    app:startDestination="@+id/lendingKycOnboardingFragment">
+
+    <action
+        android:id="@+id/action_to_lendingKycOnboardingFragment"
+        app:destination="@id/lendingKycOnboardingFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_lendingKycStepsFragment"
+        app:destination="@id/lendingKycStepsFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_exitLendingFlowBottomSheet"
+        app:destination="@id/exitLendingFlowBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingKycVerifiedFragment"
+        app:destination="@id/lendingKycVerifiedFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/lendingKycOnboardingFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.onboarding.LendingKycOnboardingFragment"
+        android:label="Lending Kyc Fragment"
+        tools:layout="@layout/feature_lending_kyc_onboarding_fragment">
+
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <deepLink app:uri="android-app://com.jar.app/lending-kyc-onboarding/{flowType}" />
+    </fragment>
+    <fragment
+        android:id="@+id/lendingKycStepsFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.steps.LendingKycStepsFragment"
+        android:label="KycStepsFragment"
+        app:navGraph="@navigation/feature_lending_kyc_steps_navigation"
+        tools:layout="@layout/feature_lending_kyc_steps_fragment">
+
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <action
+            android:id="@+id/action_lendingKycStepsFragment_to_exitLendingFlowBottomSheet"
+            app:destination="@id/exitLendingFlowBottomSheet" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/exitLendingFlowBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.exit_bottomsheet.ExitLendingFlowBottomSheet"
+        android:label="ExitConfirmationBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_exit_lending_flow">
+
+        <argument
+            android:name="stepRemainingNumber"
+            android:defaultValue="4"
+            app:argType="integer"
+            app:nullable="false" />
+    </dialog>
+    <dialog
+        android:id="@+id/welcomeBackBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.onboarding.welcome_back.WelcomeBackBottomSheet"
+        android:label="WelcomeBackBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_welcome_back_bottomsheet">
+
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <deepLink app:uri="android-app://com.jar.app/lending-kyc-resume/{flowType}" />
+    </dialog>
+    <fragment
+        android:id="@+id/lendingKycVerifiedFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.kyc_verified.LendingKycVerifiedFragment"
+        android:label="Lending Kyc Verified Fragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_all_verified">
+        <deepLink app:uri="android-app://com.jar.app/lending-kyc-verified" />
+    </fragment>
+</navigation>

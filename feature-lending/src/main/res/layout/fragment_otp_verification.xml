@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:backgroundTint="@color/bgColor"
+    android:background="@drawable/bottom_sheet_background_rounded"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_close"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="?attr/actionBarItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feature_lending_ic_otp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderEnterOtp"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/feature_lending_enter_otp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIllustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumber"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:gravity="start"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/feature_lending_sent_to_your_registered_mobile_number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderEnterOtp" />
+
+
+    <com.mukesh.OtpView
+        android:id="@+id/otpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:fontFamily="@font/inter_bold"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSelectHandle="@drawable/feature_lending_ic_empty_handle"
+        android:textSize="20sp"
+        app:OtpItemCount="6"
+        app:OtpLineColor="@color/white"
+        app:OtpViewType="line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumber">
+
+        <requestFocus />
+    </com.mukesh.OtpView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOtpError"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:textColor="@color/color_EB6A6E"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/otpView"
+        app:layout_constraintStart_toStartOf="@id/otpView"
+        app:layout_constraintTop_toBottomOf="@id/otpView"
+        tools:text="Some error occureed" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvOtpError,otpView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExpire"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toStartOf="@id/tvResendOtp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrierOtp"
+        tools:text="Otp expires in" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvResendOtp"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvExpire"
+        app:layout_constraintTop_toBottomOf="@id/barrierOtp"
+        tools:text="Resend otp" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="32dp"
+        app:buttonText="@string/feature_lending_verify"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="50dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonBarrier"
+        app:layout_goneMarginBottom="0dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/successGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="ivIllustration,tvHeaderEnterOtp,tvNumber,otpView,tvExpire,tvResendOtp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/buttonBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvResendOtp,tvLimitExhaustedSubTitle" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatMode="restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLimitExhaustedTitle"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/feature_lending_otp_attempt_limit_exceeded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottieView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLimitExhaustedSubTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/feature_lending_please_try_again_after_24_hours"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLimitExhaustedTitle" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/limitExhaustedGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="lottieView,tvLimitExhaustedSubTitle,tvLimitExhaustedTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

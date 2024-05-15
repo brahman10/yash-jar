@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvWeekDay"
+    style="@style/CommonBoldTextViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feature_gold_sip_bg_rounded_selector_10dp_7745ff_3c3357"
+    android:gravity="center"
+    android:minWidth="100dp"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="12dp"
+    tools:text="Monday"
+    tools:layout_margin="2dp"/>

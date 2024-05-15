@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/dimen_10dp"
+    tools:cardBackgroundColor="@color/color_D5CDF2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lottieCrossBanner, ivCrossBannerIcon, tvCrossBannerTitle, tvCrossBannerDescription, btnCta"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFullImageBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCrossBannerIcon"
+            android:layout_width="102dp"
+            android:layout_height="97dp"
+            android:visibility="gone"
+            android:layout_marginStart="24dp"
+            android:layout_marginVertical="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:srcCompat="@drawable/ic_gold_brick"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieCrossBanner"
+            android:layout_width="102dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="24dp"
+            android:visibility="gone"
+            android:layout_marginVertical="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/infographicBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="ivCrossBannerIcon, lottieCrossBanner"
+            app:barrierDirection="end"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/ctaBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tvCrossBannerDescription, tvCrossBannerTitle"
+            app:barrierDirection="bottom"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCrossBannerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/CommonBoldTextViewStyle"
+            android:textColor="@color/color_272239"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/infographicBarrier"
+            android:textStyle="bold"
+            tools:text="Buy Gold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCrossBannerDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/SmallTextViewStyle"
+            android:textColor="@color/color_272239"
+            android:gravity="start"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvCrossBannerTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvCrossBannerTitle"
+            app:layout_constraintStart_toStartOf="@id/tvCrossBannerTitle"
+            tools:text="Buy Gold"/>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnCta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_16dp"
+            app:layout_constraintHeight_min="36dp"
+            app:layout_constraintWidth_min="108dp"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/infographicBarrier"
+            app:layout_constraintTop_toBottomOf="@id/ctaBarrier"
+            tools:buttonBackgroundColor="@color/color_272239"
+            tools:buttonText="Invite"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

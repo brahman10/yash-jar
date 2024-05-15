@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/background_nav_drawer_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:background="@drawable/core_ui_bg_notification_bell"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dimen_14dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_notification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNotificationDot"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="@dimen/dimen_14dp"
+            android:layout_height="@dimen/dimen_14dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_circle_red"
+            android:elevation="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:translationZ="@dimen/dimen_8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivNotification"
+            app:layout_constraintEnd_toEndOf="@+id/ivNotification"
+            app:layout_constraintStart_toStartOf="@+id/ivNotification"
+            app:layout_constraintTop_toTopOf="@+id/ivNotification"
+            tools:text="1"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/notificationItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="ivNotification, tvNotificationDot" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            app:layout_constraintBottom_toTopOf="@+id/viewProfile"
+            app:layout_constraintEnd_toStartOf="@id/profileImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Mohammed Sulaimaan khan " />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/viewProfile"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:gravity="start"
+            android:text="@string/view_profile"
+            android:textColor="@color/color_B1A7CE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <com.jar.app.core_ui.widget.AvatarImageView
+            android:id="@+id/profileImage"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_marginEnd="@dimen/dimen_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="profileImage, viewProfile"
+            app:barrierDirection="bottom"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvHamburgerHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24dp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llHamburgerHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dimen_4dp"
+                android:paddingVertical="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivHamburgerHeader"
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHamburgerHeader"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:gravity="start"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/navDrawerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/dimen_18dp"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/dimen_12dp"
+        android:paddingEnd="@dimen/dimen_12dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintTop_toBottomOf="@+id/nav_header"
+        app:layout_constraintVertical_bias="0.0"
+        app:spanCount="3"
+        tools:itemCount="10"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:listitem="@layout/item_hamburger_menu" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/logout"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        app:buttonRadius="4dp"
+        app:buttonBorderWidth="0dp"
+        app:buttonBackgroundColor="@color/color_3c3357"
+        android:layout_marginStart="@dimen/dimen_18dp"
+        android:layout_marginBottom="@dimen/dimen_14dp"
+        app:buttonDrawableStart="@drawable/ic_nav_logout"
+        app:buttonDrawablePadding="@dimen/dimen_7dp"
+        app:buttonText="@string/logout"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_divider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dimen_18dp"
+        android:layout_marginEnd="@dimen/dimen_18dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@color/color_3C3357"
+        app:layout_constraintBottom_toTopOf="@+id/tvMadeInLoveWithIndia" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMadeInLoveWithIndia"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:alpha="0.3"
+        android:text="@string/made_in_love_with_india"
+        android:textColor="@color/color_EEEAFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appVersion"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_18dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.3"
+        android:textColor="@color/color_EEEAFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateAvailable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logout"
+        tools:text="App version" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/updateAvailable"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_18dp"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:text="@string/update_available"
+        android:textColor="@color/color_EEEAFF"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_update_download"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_divider"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

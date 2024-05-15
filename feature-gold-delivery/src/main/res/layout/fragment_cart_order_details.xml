@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272239"
+        android:paddingBottom="@dimen/dimen_16dp">
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/trackerBarGRoup"
+            app:constraint_referenced_ids="trackerBar, trackerBarTV, trackerBarButton" />
+        <View
+            android:id="@+id/trackerBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="#EB6A6E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/trackerBarTV"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:text="@string/order_failed"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/trackerBar"
+            app:layout_constraintStart_toStartOf="@id/trackerBar"
+            app:layout_constraintTop_toTopOf="@id/trackerBar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/trackerBarButton"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_14dp"
+            android:background="@drawable/feature_gold_delivery_round_black_25_bg_4dp"
+            android:paddingHorizontal="@dimen/dimen_12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/order_failed"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/trackerBar"
+            app:layout_constraintEnd_toEndOf="@id/trackerBar"
+            app:layout_constraintTop_toTopOf="@id/trackerBar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImages"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:paddingBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/trackerBar"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/cell_store_item_image"
+            tools:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:textSize="@dimen/dimen_22sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:gravity="start|center_vertical"
+            app:layout_constraintEnd_toStartOf="@id/shareIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvImages"
+            tools:text="0.5 Gram SafeGold Coin (99.5%)" />
+
+        <ImageView
+            android:id="@+id/heartIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:src="@drawable/ic_heart_red"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvName" />
+
+        <ImageView
+            android:id="@+id/shareIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:src="@drawable/feature_gold_delivery_ic_share_purple"
+            app:layout_constraintBottom_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="12dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/_24k_99_9_pure_gold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+
+        <View
+            android:id="@+id/separatorOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#3C3357"
+            app:layout_constraintTop_toBottomOf="@id/desc" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/separatorOne">
+
+            <include
+                android:id="@+id/cart_my_detail_container"
+                layout="@layout/cart_my_order_detail_container" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

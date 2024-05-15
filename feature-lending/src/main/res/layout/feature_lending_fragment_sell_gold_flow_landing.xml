@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/feature_lending_bg_flow_sell_gold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvProtectYourGold"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:lineHeight="36dp"
+                android:text="@string/feature_lending_protect_your_gold_nsavings_and"
+                android:textColor="@color/color_ebb46a"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvGetReadyCash"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:lineHeight="36dp"
+                android:text="@string/feature_lending_get_ready_cash"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProtectYourGold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivIllustration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="190dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvGetReadyCash"
+                app:srcCompat="@drawable/rounded_bg_3c3357_8dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvYayYouHaveCreditLine"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_12dp"
+                android:background="@drawable/feature_lending_bg_rounded_corner_green"
+                android:backgroundTint="@color/color_1EA787"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivIllustration"
+                tools:text="@string/feature_lending_yay_you_have_credit_line" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCheckList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvYayYouHaveCreditLine">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNoCollateral"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/core_ui_ic_tick_plain"
+                    android:drawablePadding="@dimen/dimen_8dp"
+                    android:text="@string/feature_lending_no_collateral_required_new"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGetMoney"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_12dp"
+                    android:drawableStart="@drawable/core_ui_ic_tick_plain"
+                    android:drawablePadding="@dimen/dimen_8dp"
+                    android:text="@string/feature_lending_get_money_anytime"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/tvNoCollateral"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFlexibleEmi"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:drawableStart="@drawable/core_ui_ic_tick_plain"
+                    android:drawablePadding="@dimen/dimen_8dp"
+                    android:text="@string/feature_lending_flexible_emi_options_new"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNoCollateral" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/core_ui_ic_tick_plain"
+                    android:drawablePadding="@dimen/dimen_8dp"
+                    android:text="@string/feature_lending_no_need_to_sell_savings"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="@id/tvGetMoney"
+                    app:layout_constraintTop_toTopOf="@id/tvFlexibleEmi" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:id="@+id/spacer"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/btnGetReadyCash"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clCheckList"
+                app:layout_constraintVertical_weight="1" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnGetReadyCash"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="30dp"
+                app:buttonText="@string/feature_lending_get_ready_cash"
+                app:buttonTextAllCaps="false"
+                app:buttonType="primaryButton"
+                app:layout_constraintBottom_toTopOf="@id/btnSellGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="56dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spacer"
+                app:layout_constraintVertical_bias="1" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnSellGold"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:layout_marginBottom="30dp"
+                app:buttonText="@string/feature_lending_i_want_to_sell_gold"
+                app:buttonTextAllCaps="false"
+                app:buttonType="secondaryHollowButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="56dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnGetReadyCash" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

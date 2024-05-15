@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_dialog_background"
+    style="@style/CommonStyle">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        app:srcCompat="@drawable/close_icon"
+        android:tint="@color/white"
+        android:layout_marginEnd="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You’re almost there!"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="24sp"
+        android:lineSpacingExtra="7sp"
+        android:lineHeight="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivClose"
+      />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="24sp"
+        android:text="The first step to your savings journey."
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintEnd_toEndOf="@id/tvHeading"
+        app:layout_constraintStart_toStartOf="@id/tvHeading"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubHeading"
+        app:layout_constraintStart_toStartOf="@+id/tvSubHeading"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubHeading"
+        app:srcCompat="@drawable/abandon_illustration" />
+
+    <com.jar.app.core_ui.widget.OverlappingProfileView
+        android:id="@+id/trustedBy"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        app:layout_constraintEnd_toStartOf="@id/tvTrustByText"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTrustByText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20L+ Jar users save in Gold everyday"
+        android:textColor="#D5CDF2"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+        app:layout_constraintStart_toEndOf="@id/trustedBy"
+        app:layout_constraintTop_toTopOf="@id/trustedBy" />
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnContinue"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        app:buttonText="Continue"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trustedBy" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnSkip"
+        android:layout_height="56dp"
+        app:buttonType="secondaryButton"
+        app:buttonBorderWidth="@dimen/dimen_1dp"
+        app:buttonStrokeColor="#846FC0"
+        app:buttonBackgroundColor="#282339"
+        android:layout_width="match_parent"
+        app:buttonText="I’ll do it later"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

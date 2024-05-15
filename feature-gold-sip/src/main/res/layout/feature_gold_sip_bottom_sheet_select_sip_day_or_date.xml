@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDaySelectionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCross"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:padding="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/core_ui_ic_close"
+                app:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSelectDayForPayment"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="start"
+                android:text="@string/feature_gold_sip_your_s_saving_of_x"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@id/ivCross"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCross" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWillBeAutomaticallySaved"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="start"
+                android:text="@string/feature_gold_sip_will_be_automatically_saved_on_every"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSelectDayForPayment" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDaySelector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="16dp"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintBottom_toTopOf="@id/clBottomViewContainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvWillBeAutomaticallySaved"
+                tools:itemCount="7"
+                app:layout_constraintHeight_min="400dp"
+                tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/feature_gold_sip_cell_week_day"
+                tools:spanCount="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBottomViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="@color/color_2E2942"
+                android:paddingVertical="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.jar.app.core_ui.widget.button.CustomButtonV2
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_margin="16dp"
+                    app:buttonDisabled="true"
+                    app:buttonText="@string/core_ui_confirm"
+                    app:buttonTextAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_min="56dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSuccessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCrossForSuccess"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:padding="2dp"
+                android:translationZ="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/core_ui_ic_close"
+                app:tint="@color/white" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieCelebration"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/successLottie"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/core_ui_bg_circle_white"
+                android:backgroundTint="@color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCrossForSuccess"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDaySuccessfullyUpdated"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/feature_gold_sip_day_successfully_updated"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/successLottie" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSSavingWillBeDebitedOnS"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                tools:text="@string/feature_gold_sip_monthly_savings_will_be_debited_on_every_s"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDaySuccessfullyUpdated" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="40dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintTop_toBottomOf="@id/tvSSavingWillBeDebitedOnS" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNextGoldSavingDetails"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/feature_gold_sip_next_gold_saving_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separator" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clNextSavingDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/feature_gold_sip_bg_outline_rounded_3c3357_8dp"
+                app:layout_constraintTop_toBottomOf="@id/tvNextGoldSavingDetails">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmountLabel"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/feature_gold_sip_amount"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSipAmount"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="$1000" />
+
+                <View
+                    android:id="@+id/detailsSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/color_3c3357"
+                    app:layout_constraintTop_toBottomOf="@id/tvSipAmount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNextPaymentDateLabel"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/feature_gold_sip_next_payment_date"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/detailsSeparator" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNextPaymentDate"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/detailsSeparator"
+                    tools:text="22 Oct’22" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

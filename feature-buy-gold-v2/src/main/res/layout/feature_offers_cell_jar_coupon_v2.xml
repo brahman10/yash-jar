@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_16dp"
+    android:layout_marginEnd="@dimen/dimen_16dp"
+    android:layout_marginTop="@dimen/dimen_12dp"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCouponCodeHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivArrowForward"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCouponCode"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:textSize="12sp"
+            app:lineHeight="12sp"
+            app:drawableStartCompat="@drawable/feature_buy_v2_gold_ic_coupon_tag"
+            app:layout_constraintEnd_toStartOf="@id/ivArrowForward"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="JAR57622323"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCouponCodeTitle"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            app:lineHeight="21sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/ivArrowForward"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCouponCode"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Get extra 2% Gold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCouponCodeDescription"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:lineHeight="@dimen/dimen_18sp"
+            android:maxLines="3"
+            android:textColor="@color/white_opacity_80"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivArrowForward"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpiryDate"
+            app:lineHeight="18sp"
+            tools:text="On purchase of ₹1000 and more gold will be free for you" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExpiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+           android:background="@drawable/feature_buy_gold_v2_bg_rounded_stroke_33ffffff_4dp"
+            android:paddingStart="@dimen/dimen_8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:paddingBottom="2dp"
+            android:text="Expires in 00:00:00"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:lineHeight="14sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/tvCouponCodeDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvCouponCode" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBackgroundOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        tools:srcCompat="@drawable/core_ui_bg_backward_incline_overlay_single_cc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

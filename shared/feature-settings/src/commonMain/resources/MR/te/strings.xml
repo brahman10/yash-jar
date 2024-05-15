@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_settings_payment_settings">చెల్లింపు సెట్టింగ్‌లు</string>
+    <string name="feature_settings_app_settings">యాప్ సెట్టింగులు</string>
+    <string name="feature_settings_privacy_and_permission">ప్రైవసీ మరియు పర్మిషన్లు</string>
+
+    <string name="feature_settings_payment_methods">చెల్లింపు విధానాలు</string>
+    <string name="feature_settings_auto_invest">ఆటో ఇన్వెస్ట్</string>
+    <string name="feature_settings_daily_savings">రోజువారీ సేవింగ్స్</string>
+    <string name="feature_settings_round_off">రౌండ్ ఆఫ్</string>
+    <string name="feature_settings_notification_settings">నోటిఫికేషన్ సెట్టింగ్‌లు</string>
+    <string name="feature_settings_language">భాష</string>
+    <string name="feature_settings_battery_optimizations">బ్యాటరీ ఆప్టిమైజేషన్</string>
+    <string name="feature_settings_jar_security_shield">జార్ సెక్యూరిటీ షీల్డ్</string>
+    <string name="feature_settings_terms_and_conditions">నిబంధనలు మరియు షరతులు</string>
+    <string name="feature_settings_privacy_policy">ప్రైవసీ పాలసీ</string>
+
+    <string name="feature_settings_saved_upi_ids">సేవ్ చేయబడిన UPI IDలు</string>
+    <string name="feature_settings_add_a_new_upi_id">కొత్త UPI IDని జోడించండి</string>
+    <string name="feature_settings_you_need_to_have_a_registered_upi_id">మీరు రిజిస్టర్డ్ UPI IDని కలిగి ఉండాలి.</string>
+    <string name="feature_settings_saved_cards">సేవ్ చేసిన కార్డ్‌లు</string>
+    <string name="feature_settings_add_a_new_card">కొత్త కార్డ్‌ని జోడించండి</string>
+    <string name="feature_settings_you_can_save_your_credit_debit_cards">మీరు మీ క్రెడిట్/డెబిట్ కార్డ్‌లను సేవ్ చేసుకోవచ్చు</string>
+    <string name="feature_settings_on">ఆన్</string>
+    <string name="feature_settings_off">ఆఫ్</string>
+    <string name="feature_settings_enabled">ఎనేబుల్ చేయబడింది</string>
+    <string name="feature_settings_disabled">డిజేబుల్ చేయబడింది</string>
+    <string name="feature_settings_tap_to_edit">ఎడిట్ చేయడానికి ట్యాప్ చేయండి</string>
+    <string name="feature_settings_invalid_card_number_please_try_agin">చెల్లని కార్డ్ నంబర్. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="feature_settings_invalid_expiry_date_please_try_agin">చెల్లని గడువు తేదీ. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="feature_settings_add_cvv">CVVని జోడించండి</string>
+
+    <string name="feature_settings_security_shield_des">మీ ఖాతాకు\nఅదనపు భద్రతను జోడించడానికి మీ ప్రస్తుత ఫోన్ లాక్‌ని ఉపయోగించండి.</string>
+    <string name="feature_settings_enable">ఎనేబుల్ చేయండి</string>
+    <string name="feature_settings_disable">డిసేబుల్ చేయండి</string>
+    <string name="feature_settings_i_ll_do_it_later">నేను దీన్ని తర్వాత చేస్తాను</string>
+    <string name="feature_settings_confirm_your_password">మీ పాస్‌వర్డ్‌ని నిర్ధారించండి</string>
+    <string name="feature_settings_authentication_failed">ప్రామాణీకరణ విఫలమైంది</string>
+    <string name="feature_settings_why_do_we_need_this">మాకు ఇది ఏవిధంగా ఉపయోగాపడుతుంది?</string>
+    <string name="feature_settings_to_ensure_that_your_spends_are_detected_even_when_jar_app_is_not_open">జార్ యాప్ తెరవబడనప్పుడు కూడా మీ ఖర్చులు గుర్తించబడుతున్నాయని నిర్ధారించుకోవడానికి.</string>
+    <string name="feature_settings_how_should_i_do_this">నేను దీన్ని ఎలా చేయాలి?</string>
+    <string name="feature_settings_please_change_your_jar_battery_settings">దయచేసి మీ జార్ బ్యాటరీ సెట్టింగ్‌లను మార్చండి లేదా దిగువ బటన్‌పై క్లిక్ చేయడం ద్వారా ఆటో స్టార్ట్ ని ఎనేబుల్ చేయండి.</string>
+    <string name="feature_settings_optimize_now">ఇప్పుడే ఆప్టిమైజ్ చేయండి</string>
+    <string name="feature_settings_will_not_misuse_this_service">దయచేసి గమనించండి, జార్ ఈ సేవను దుర్వినియోగం చేయదని హామీ ఇస్తుంది.</string>
+    <string name="feature_settings_battery_optimization">బ్యాటరీ ఆప్టిమైజేషన్</string>
+    <string name="feature_settings_language_settings">భాష సెట్టింగ్‌లు</string>
+    <string name="feature_settings_please_select_app_language">దయచేసి యాప్ భాషను ఎంచుకోండి</string>
+    <string name="feature_settings_okay2">సరే</string>
+    <string name="feature_settings_apply">అప్లై చేయండి</string>
+    <string name="feature_settings_gold_price_alerts">బంగారం ధరపై అలర్ట్స్</string>
+    <string name="feature_settings_gold_price_alerts_description">ధరలు తగ్గినప్పుడు సకాలంలో అలర్ట్ ని పొందండి, తద్వారా మీరు ఉత్తమ ధరకు పెట్టుబడి పెట్టవచ్చు.</string>
+    <string name="feature_settings_shubh_muhurat_alerts">శుభ ముహూర్త అలర్ట్</string>
+    <string name="feature_settings_shubh_muhurat_alerts_description">శుభ ముహూర్తాల సమయంలో బంగారాన్ని కొనుగోలు చేయడానికి సకాలంలో అలెర్ట్ ని పొందండి.</string>
+    <string name="feature_settings_round_off_enabled">రౌండ్ ఆఫ్ ఎనేబుల్ చేయబడింది</string>
+    <string name="feature_settings_round_off_disabled">రౌండ్ ఆఫ్ డిజేబుల్ చేయబడింది</string>
+    <string name="feature_settings_round_off_enabled_des">మేము మీ ఖర్చులను గుర్తించి, తదుపరి సమీప రౌండ్ ఆఫ్‌లలో పెట్టుబడి పెడతాము.</string>
+    <string name="feature_settings_round_off_disabled_des">మేము మీ ఖర్చులను గుర్తించము మరియు తదుపరి సమీప రౌండ్ ఆఫ్‌లను బంగారంలో పెట్టుబడి పెట్టము.</string>
+    <string name="feature_settings_round_off_to_next">తదుపరి రౌండ్ ఆఫ్</string>
+    <string name="feature_settings_edit_u"><u>ఎడిట్ చేయండి</u></string>
+    <string name="feature_settings_pause_round_off">రౌండ్ ఆఫ్ ని పాజ్  చేయండి</string>
+    <string name="feature_settings_resume_now_u"><u>ఇప్పుడే తిరిగి ప్రారంభించండి</u></string>
+    <string name="feature_settings_pause_u"><u>పాజ్ చేయండి</u></string>
+    <string name="feature_settings_rs_value">₹%.2f</string>
+    <string name="feature_settings_rs_value_int">₹%d</string>
+    <string name="feature_settings_rs_value_string">₹%s</string>
+    <string name="feature_settings_enter_your_upi_id">మీ UPI IDని ఎంటర్ చేయండి.</string>
+    <string name="feature_settings_verify">వెరిఫై చేయండి</string>
+    <string name="feature_settings_cancel">క్యాన్సిల్ చేయి</string>
+    <string name="feature_settings_upi_id">UPI ID</string>
+    <string name="feature_settings_upi_id_added_successfully">%s విజయవంతంగా ఎంటర్ చేయబడింది</string>
+    <string name="feature_settings_invalid_upi">చెల్లని UPI ID. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="feature_settings_round_off_nresumed">రౌండ్ ఆఫ్\nతిరిగి ప్రారంభించబడింది</string>
+    <string name="feature_settings_round_off_resumed_des">మేము మీ ఖర్చులను గుర్తించి, తదుపరి\nసమీప రౌండ్-ఆఫ్‌ను డిజిటల్ గోల్డ్ లో పెట్టుబడి పెడతాము.</string>
+    <string name="feature_settings_its_good_to_see_you_save_again">చాల మంచిది మీరు మళ్లీ సేవ్ చేస్తున్నారు</string>
+    <string name="feature_settings_round_off_is_disabled">రౌండ్ ఆఫ్ డిజేబుల్ చేయబడింది</string>
+    <string name="feature_settings_round_off_set_successfully">రౌండ్ ఆఫ్ విజయవంతంగా సెట్ చేయబడింది</string>
+    <string name="feature_settings_set">సెట్ చేయండి</string>
+    <string name="feature_settings_5">5</string>
+    <string name="feature_settings_10">10</string>
+    <string name="feature_settings_day">రోజు</string>
+    <string name="feature_settings_days">రోజులు</string>
+    <string name="feature_settings_pause_round_off_for">కోసం రౌండ్ ఆఫ్ ను పాజ్ చేయండి</string>
+    <string name="feature_settings_round_off_paused_for">రౌండ్ ఆఫ్ పాజ్ చేయబడింది</string>
+    <string name="feature_settings_round_off_to_des">మేము మీ చెల్లింపును సమీప 10 కి రౌండ్ ఆఫ్ చేసి,\n మీ మిగులు చిల్లరను బంగారంలో పెట్టుబడి పెట్టాము.</string>
+    <string name="feature_settings_invest_10_if_no_spends_are_detected">ఎటువంటి ఖర్చు గుర్తించబడకపోతే ₹10 పెట్టుబడి పెట్టండి</string>
+    <string name="feature_settings_in_progress">ప్రోగ్రెస్‌లో ఉంది…</string>
+    <string name="feature_settings_failed">విఫలమైంది</string>
+    <string name="feature_settings_setup_now">ఇప్పుడే సెటప్ చేయండి</string>
+    <string name="feature_settings_delete_upi_des">మీరు ఖచ్చితంగా\nఈ UPI IDని డిలీట్ చేయాలనుకుంటున్నారా?</string>
+    <string name="feature_settings_delete_card_des">మీరు ఖచ్చితంగా ఈ కార్డ్‌ని డిలీట్ చేయాలనుకుంటున్నారా?</string>
+    <string name="feature_settings_delete">డిలీట్ చేయండి</string>
+    <string name="feature_settings_upi_associated_to_auto_save">ఈ UPI ID ఆటో-సేవ్‌తో కూడా అనుబంధించబడింది. ఆటో-సేవ్‌ని డిజేబుల్ చేయడానికి, దయచేసి సెట్టింగ్‌ల పేజీలో ఆటో-సేవ్‌కి వెళ్లండి.</string>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one">తిరిగి ప్రారంభించబడుతుంది: %d రోజు</item>
+        <item quantity="other">తిరిగి ప్రారంభించబడుతుంది: %d రోజులలో</item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d రోజు</item>
+        <item quantity="other">%d రోజులు</item>
+    </plurals>
+    <string name="feature_settings_resuming_tomorrow">రేపు తిరిగి ప్రారంభించబడుతుంది</string>
+    <string name="feature_settings_update_auto_save">ఆటో-సేవ్‌ని అప్డేట్ చేయండి</string>
+    <string name="feature_settings_to_save_roundoffs_automatically">రౌండ్‌ఆఫ్‌లను స్వయంచాలకంగా సేవ్ చేయడానికి, మీరు మళ్లీ ఆటో-సేవ్‌ని సెట్ చేయాలి.</string>
+    <string name="feature_settings_invalid_upi_id">చెల్లని UPI ID</string>
+    <string name="feature_settings_invalid_upi_enter_correct">చెల్లని UPI ID నమోదు చేయబడింది. దయచేసి మీ సరైన UPI IDని నమోదు చేయండి.</string>
+    <string name="feature_settings_verify_and_add">ధృవీకరించి జోడించు</string>
+    <string name="feature_settings_savings_plan">సేవింగ్స్ ప్లాన్</string>
+
+
+    <string name="feature_settings_gold_price_alert_enabled">గోల్డ్ ధర హెచ్చరిక ప్రారంభించబడింది</string>
+    <string name="feature_settings_gold_price_alert_disabled">బంగారం ధర హెచ్చరిక నిలిపివేయబడింది</string>
+    <string name="feature_settings_shubh_muhurat_alert_enabled">శుభ ముహూర్త హెచ్చరిక ప్రారంభించబడింది</string>
+    <string name="feature_settings_shubh_muhurat_alert_disabled">శుభ ముహూర్త హెచ్చరిక నిలిపివేయబడింది</string>
+
+    <string name="feature_buy_gold_currency_sign_x_int">\u20B9%d</string>
+
+</resources>

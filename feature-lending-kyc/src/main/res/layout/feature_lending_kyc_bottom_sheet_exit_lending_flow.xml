@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/core_ui_bg_top_rounded_corner"
+    android:backgroundTint="@color/color_2E2942">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThinkingEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        app:layout_constraintBottom_toTopOf="@id/tvWantToLeave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_confirmation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWantToLeave"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/feature_lending_kyc_are_you_sure_you_want_to_leave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivThinkingEmoji" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvJustnStepsRemaining"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWantToLeave" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDoLater"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        app:buttonText="@string/feature_lending_kyc_i_ll_do_it_later"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/tvCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvJustnStepsRemaining" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCancel"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="8dp"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:text="@string/feature_lending_kyc_i_ll_do_it_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDoLater" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

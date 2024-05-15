@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2E2942"
+    android:theme="@style/PaymentSuccessTheme"
+    android:padding="@dimen/dimen_16dp">
+
+    <LinearLayout
+        android:id="@+id/topMain"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/feature_buy_gold_v2_bg_rounded_3c3457_10dp"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/dottedBorder"
+        app:layout_constraintEnd_toEndOf="@+id/vector_509"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/vector_509"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/we_are_tryi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/feature_buy_gold_v2_we_are_trying_message"
+            android:textAppearance="@style/we_are_trying" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dottedBorder"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:src="@drawable/dotted_line"
+        android:background="@color/color_3c3457"
+        app:layout_constraintBottom_toTopOf="@+id/bottomMain"
+        app:layout_constraintEnd_toEndOf="@id/topMain"
+        app:layout_constraintStart_toStartOf="@id/topMain"
+        app:layout_constraintTop_toBottomOf="@+id/topMain" />
+
+    <LinearLayout
+        android:id="@+id/bottomMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_buy_gold_v2_bg_rounded_3c3457_10dp"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintEnd_toEndOf="@id/topMain"
+        app:layout_constraintLeft_toLeftOf="@id/topMain"
+        app:layout_constraintTop_toBottomOf="@+id/dottedBorder">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/it_is_takin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/feature_buy_gold_v2_failure_reason_sub_message"
+            android:textAppearance="@style/it_is_taking" />
+
+    </LinearLayout>
+    <!-- Button -->
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/buttonRefreshOrTryAgain"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        app:buttonText="@string/feature_buy_gold_refresh"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomMain" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnGoToHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:elevation="12dp"
+        app:buttonText="@string/core_ui_go_to_homepage"
+        app:buttonTextAllCaps="false"
+        app:buttonType="secondaryHollowButton"
+        app:layout_constraintBottom_toTopOf="@+id/vector_509"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRefreshOrTryAgain" />
+
+    <View
+        android:id="@+id/vector_509"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0.2"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tvNeedHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToHome" />
+
+    <!-- Need help? -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNeedHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/feature_buy_gold_v2_need_help"
+        android:textAppearance="@style/need_help_"
+        app:layout_constraintBottom_toTopOf="@id/contact_sup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vector_509" />
+
+
+    <LinearLayout
+        android:id="@+id/contact_sup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNeedHelp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivWhatsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/core_ui_ic_whatsapp"
+            app:layout_constraintBottom_toBottomOf="@id/contact_sup"
+            app:layout_constraintEnd_toStartOf="@id/contact_sup"
+            app:layout_constraintTop_toTopOf="@id/contact_sup" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/feature_buy_gold_v2_contact_support"
+            android:textAlignment="center"
+            android:textAppearance="@style/contact_sup" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:src="@drawable/ic_right_chevron"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/successLottieBackground"
+        android:layout_width="310dp"
+        android:layout_height="105dp"
+        android:backgroundTint="#303F9F"
+        android:src="@drawable/feature_buy_gold_v2_ic_primary_dark_circle"
+        android:translationY="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/topMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/successLottie"
+        android:layout_width="310dp"
+        android:layout_height="105dp"
+        android:padding="1dp"
+        android:translationY="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/successLottieBackground"
+        app:layout_constraintEnd_toEndOf="@id/successLottieBackground"
+        app:layout_constraintStart_toStartOf="@id/successLottieBackground"
+        app:layout_constraintTop_toTopOf="@id/successLottieBackground" />
+
+    <View
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:background="@drawable/core_ui_bg_circle_white"
+        android:backgroundTint="@color/color_2E2942"
+        android:translationZ="2dp"
+        android:translationY="@dimen/dimen_10dp"
+        android:translationX="-10dp"
+        app:layout_constraintStart_toStartOf="@id/topMain"
+        app:layout_constraintBottom_toBottomOf="@id/topMain"/>
+
+
+    <View
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:background="@drawable/core_ui_bg_circle_white"
+        android:backgroundTint="@color/color_2E2942"
+        android:translationZ="2dp"
+        android:translationY="@dimen/dimen_10dp"
+        android:translationX="10dp"
+        app:layout_constraintEnd_toEndOf="@id/topMain"
+        app:layout_constraintBottom_toBottomOf="@id/topMain"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

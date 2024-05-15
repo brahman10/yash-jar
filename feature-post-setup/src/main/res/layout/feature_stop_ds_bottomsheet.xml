@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/core_ui_bg_top_rounded_corner"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dimen_8dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18sp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textFontWeight="700"
+        android:fontFamily="@font/inter_bold"
+        android:textStyle="bold"
+        android:text="@string/stop_your_daily_savings"
+        app:layout_constraintEnd_toStartOf="@+id/rvBottomSheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvBottomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+        tools:itemCount="4"
+        android:layout_marginBottom="@dimen/dimen_32dp"
+        tools:listitem="@layout/ds_bottomsheet_single_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvBottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:lineHeight="@dimen/dimen_18sp"
+        android:text="@string/your_savings_will_automatically_nresume_on_25_may_23"
+        android:textColor="@color/color_EBB46A"
+        app:layout_constraintBottom_toTopOf="@+id/cbStopNow"
+        android:textFontWeight="400"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/cbStopNow"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="40dp"
+        app:buttonText="Stop Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

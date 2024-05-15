@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shimmerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shimmer_auto_start="false"
+    app:shimmer_base_alpha="0.6"
+    app:shimmer_duration="2000"
+    app:shimmer_highlight_alpha="0.3">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/core_ui_bg_rounded_10dp_3c3357" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/core_ui_bg_rounded_10dp_3c3357" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/core_ui_bg_rounded_10dp_3c3357" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/core_ui_bg_rounded_10dp_3c3357" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/core_ui_bg_rounded_10dp_3c3357" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.facebook.shimmer.ShimmerFrameLayout>

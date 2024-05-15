@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_contacts_sync_common_friend_on_jar">FRIENDS ON JAR</string>
+    <string name="feature_contacts_sync_common_your_contacts">CONTACTS NOT ON JAR</string>
+
+</resources>

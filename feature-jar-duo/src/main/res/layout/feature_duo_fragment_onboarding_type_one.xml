@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/userImage"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userInitials"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Introducing Jar Duo"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:fontFamily="@font/inter_bold"
+        app:lineHeight="36sp"
+        app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDetail"
+        android:layout_marginTop="16dp"
+        tools:text="Learn and build habit of saving with a buddy"
+        android:textSize="16sp"
+        android:textColor="#D5CDF2"
+        app:lineHeight="24sp"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntro"
+        android:fontFamily="@font/inter"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

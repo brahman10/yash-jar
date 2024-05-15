@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="22dp"
+            android:layout_marginStart="56dp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="14sp"
+            tools:text="Jar DUO" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="62dp"
+            android:background="#1AACA1D3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/couponTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:background="@drawable/jar_coupon_radio_group_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clToolBar"
+        tools:layout_editor_absoluteY="64dp">
+
+        <RadioButton
+            android:id="@+id/couponsJar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/jar_coupon_radio_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingStart="45dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="45dp"
+            android:paddingBottom="8dp"
+            android:text="@string/jar"
+            android:textColor="@drawable/jar_coupon_radiobutton_text_selector"
+            android:textSize="14sp"
+            app:lineHeight="21sp" />
+
+        <RadioButton
+            android:id="@+id/couponsOtherBrands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/jar_coupon_radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:text="@string/other_brands"
+            android:textColor="@drawable/jar_coupon_radiobutton_text_selector"
+            android:textSize="14sp"
+            app:lineHeight="21sp" />
+    </RadioGroup>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/couponsViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/couponTypeRadioGroup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/couponTypeRadioGroup"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

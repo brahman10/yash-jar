@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spends_tracker_navigation"
+    app:startDestination="@id/spendsTrackerEducationFragment">
+
+    <fragment
+        android:id="@+id/spendsTrackerEducationFragment"
+        android:name="com.jar.app.feature_spends_tracker.impl.ui.education_page.SpendsTrackerEducationFragment"
+        android:label="SpendsTrackerEducationFragment"
+        tools:layout="@layout/fragment_spends_tracker_education_screen">
+        <deepLink app:uri="android-app://com.jar.app/spendsEducationScreen"/>
+        <action
+            android:id="@+id/action_spendsTrackerEducationFragment_to_spendsTrackerMainPage"
+            app:destination="@id/spendsTrackerMainPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/spendsTrackerMainPage"
+        android:name="com.jar.app.feature_spends_tracker.impl.ui.main_page.SpendsTrackerMainPage"
+        android:label="SpendsTrackerMainPage"
+        tools:layout="@layout/fragment_spends_tracker_main_page">
+        <action
+            android:id="@+id/action_spendsTrackerMainPage_to_reportTransactionBottomSheet"
+            app:destination="@id/reportTransactionBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/reportTransactionBottomSheet"
+        android:name="com.jar.app.feature_spends_tracker.impl.ui.report_transaction_bs.ReportTransactionBottomSheet"
+        android:label="ReportTransactionBottomSheet"
+        tools:layout="@layout/feature_transaction_report_bottomsheet">
+        <argument
+            android:name="transactionDetails"
+            app:argType="com.jar.app.feature_spends_tracker.shared.domain.model.spends_transaction_data.SpendsTransactionData" />
+    </dialog>
+
+</navigation>

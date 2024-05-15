@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kyc_v2_navigation"
+    app:startDestination="@id/completeKycInfoFragmentV2">
+
+    <action
+        android:id="@+id/action_to_uploadOptionsBottomSheetFragment"
+        app:destination="@id/uploadOptionsBottomSheetFragment" />
+
+    <action
+        android:id="@+id/action_to_uploadKycDoc"
+        app:destination="@+id/uploadKycDocFragment"/>
+
+    <action
+        android:id="@+id/action_to_uploadKycDocFailedFragment"
+        app:destination="@id/uploadKycDocFailedFragment" />
+
+    <action
+        android:id="@+id/action_to_uploadSelfieFragment"
+        app:destination="@id/uploadSelfieFragment" />
+
+    <action
+        android:id="@+id/action_to_uploadSelfieFailedFragment"
+        app:destination="@id/uploadSelfieFailedFragment" />
+
+    <fragment
+        android:id="@+id/completeKycInfoFragmentV2"
+        android:name="com.jar.app.feature_kyc.impl.ui.complete_kyc.CompleteKycInfoFragmentV2"
+        android:label="CompleteKycInfoFragmentV2"
+        tools:layout="@layout/fragment_complete_kyc_info_v2">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/kycVerification/{fromScreen}" />
+        <action
+            android:id="@+id/action_completeKycInfoFragmentV2_to_enterPanDetailsManuallyFragment3"
+            app:destination="@id/enterPanDetailsManuallyFragment" />
+        <action
+            android:id="@+id/action_completeKycInfoFragmentV2_to_chooseKycDocFragment"
+            app:destination="@id/chooseKycDocFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterPanDetailsManuallyFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.enter_pan_manually.EnterPanDetailsManuallyFragment"
+        android:label="EnterPanDetailsManuallyFragment"
+        tools:layout="@layout/fragment_enter_pan_details_manually" >
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/kycVerificationStatusFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.verification_status.KycVerificationStatusFragment"
+        android:label="KYCVerificationStatusFragment"
+        tools:layout="@layout/fragment_kyc_verification_status" >
+
+        <argument
+            android:name="kycStatus"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/kycVerificationStatusFragment/{kycStatus}/{fromScreen}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/kycDetailsFragmentV2"
+        android:name="com.jar.app.feature_kyc.impl.ui.kyc_details.KycDetailsFragmentV2"
+        android:label="KycDetailsFragmentV2"
+        tools:layout="@layout/fragment_kyc_details_v2">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/kycDetails/{fromScreen}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chooseKycDocFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.alternate_doc.choose_doc.ChooseKycDocFragment"
+        android:label="ChooseKycDocFragment"
+        tools:layout="@layout/fragment_choose_kyc_doc" >
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/uploadKycDocFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.alternate_doc.upload_doc.UploadKycDocFragment"
+        android:label="UploadKycDocFragment"
+        tools:layout="@layout/fragment_upload_kyc_doc" >
+
+        <argument
+            android:name="kycDoc"
+            app:argType="com.jar.app.feature_kyc.shared.domain.model.KycDoc"
+            app:nullable="false"/>
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/uploadSelfieFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.upload_selfie.UploadSelfieFragment"
+        android:label="UploadSelfieFragment"
+        tools:layout="@layout/fragment_upload_selfie" >
+
+        <argument
+            android:name="docType"
+            app:argType="com.jar.app.feature_kyc.shared.domain.model.DocType"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/kycFaqFragmentV2"
+        android:name="com.jar.app.feature_kyc.impl.ui.kyc_faq.KycFaqFragmentV2"
+        android:label="KycFaqFragmentV2"
+        tools:layout="@layout/fragment_kyc_faq_v2" >
+
+        <deepLink app:uri="android-app://com.jar.app/kycFaqFragmentV2" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/uploadOptionsBottomSheetFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.upload_options.UploadOptionsBottomSheetFragment"
+        android:label="UploadOptionsBottomSheetFragment"
+        tools:layout="@layout/fragment_bottom_sheet_upload_options" >
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue=""/>
+    </dialog>
+
+    <fragment
+        android:id="@+id/uploadKycDocFailedFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.upload_doc_failed.UploadKycDocFailedFragment"
+        android:label="UploadKycDocFailedFragment"
+        tools:layout="@layout/fragment_upload_kyc_doc_failed" >
+
+        <argument
+            android:name="kycOcrResponse"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/uploadSelfieFailedFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.upload_selfie_failed.UploadSelfieFailedFragment"
+        android:label="UploadSelfieFailedFragment"
+        tools:layout="@layout/fragment_upload_selfie_failed" >
+
+        <argument
+            android:name="docType"
+            app:argType="com.jar.app.feature_kyc.shared.domain.model.DocType"
+            app:nullable="false"/>
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/kycPromptDialogFragment"
+        android:name="com.jar.app.feature_kyc.impl.ui.kyc_prompt.KycPromptDialogFragment"
+        android:label="KycPromptDialogFragment"
+        tools:layout="@layout/fragment_dialog_kyc_prompt" >
+
+        <argument
+            android:name="userKycStatus"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:defaultValue=""
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/kycPromptDialogFragment/{userKycStatus}/{fromScreen}" />
+    </dialog>
+</navigation>

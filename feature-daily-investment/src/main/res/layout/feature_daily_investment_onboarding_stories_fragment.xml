@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:animateLayoutChanges="true"
+    android:background="@color/color_141021">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@color/bgColor"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgColor">
+
+            <View
+                android:id="@+id/one"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/two"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/one" />
+
+            <View
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/two" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clOnBoardingStories"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/bgColor"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1"
+        tools:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvStory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/bgColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@drawable/bg_black_indiacator"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/rvStory"
+            app:layout_constraintEnd_toEndOf="@+id/rvStory"
+            tools:itemCount="3"
+            tools:listitem="@layout/cell_indicator_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginBottom="32dp"
+        android:elevation="@dimen/dimen_4dp"
+        android:fontFamily="@font/inter"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:buttonDrawablePadding="8dp"
+        app:buttonText="@string/feature_daily_investment_setup_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

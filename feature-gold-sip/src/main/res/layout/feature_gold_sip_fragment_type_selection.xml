@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnSkip"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:elevation="8dp"
+        android:text="@string/core_ui_skip"
+        android:translationZ="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSipTypeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/feature_gold_sip_bg_rounded_3c3357_40dp"
+        android:backgroundTint="@color/color_3c3357"
+        android:elevation="1dp"
+        android:padding="4dp"
+        android:translationZ="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWeekly"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:text="@string/feature_gold_sip_weekly"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvMonthly"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/feature_gold_sip_bg_rounded_60dp_7745ff" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMonthly"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="12dp"
+            android:text="@string/feature_gold_sip_monthly"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvWeekly"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/clBottomViewContainer"
+        app:layout_constraintTop_toBottomOf="@id/clSipTypeContainer">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHowMuchYouLikeToSave"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="68dp"
+                android:layout_marginVertical="16dp"
+                android:lineHeight="27dp"
+                android:text="@string/feature_gold_sip_how_would_you_like_to_save_weekly"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/noteStackLottie"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginBottom="36dp"
+                android:elevation="1dp"
+                android:translationZ="1dp"
+                app:layout_constraintBottom_toTopOf="@id/amountEditBoxHolder"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icPlatform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:alpha="0.8"
+                app:layout_constraintBottom_toBottomOf="@id/seekBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHowMuchYouLikeToSave"
+                app:srcCompat="@drawable/core_ui_note_stack_platform"
+                tools:layout_marginTop="25dp" />
+
+            <FrameLayout
+                android:id="@+id/amountEditBoxHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/feature_gold_sip_bg_amount_edit_box"
+                android:translationZ="1dp"
+                app:layout_constraintBottom_toBottomOf="@id/icPlatform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/core_ui_ic_rs_sign_bold"
+                    android:gravity="start"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:minWidth="80dp"
+                    android:paddingHorizontal="30dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/core_ui_ic_edit"
+                    app:tint="@color/color_776E94" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAmountError"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/color_FF8D91"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amountEditBoxHolder"
+                tools:text="@string/feature_gold_sip_minimum_value_for_sip_is_x" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginTop="16dp"
+                android:max="200"
+                android:splitTrack="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/core_ui_seekbar_progress"
+                android:thumb="@drawable/core_ui_custom_switch_thumb_seekbar"
+                app:layout_constraintTop_toBottomOf="@id/tvAmountError" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMinValue"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="26dp"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintStart_toStartOf="@id/seekBar"
+                app:layout_constraintTop_toBottomOf="@id/seekBar"
+                tools:text="₹100" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMaxValue"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="26dp"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintEnd_toEndOf="@id/seekBar"
+                app:layout_constraintTop_toBottomOf="@id/seekBar"
+                tools:text="₹1000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottomViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_2E2942"
+        android:paddingVertical="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            app:buttonText="@string/core_ui_proceed"
+            app:buttonTextAllCaps="false"
+            app:buttonDisabled="true"
+            app:layout_constraintBottom_toTopOf="@id/tvPoweredBy"
+            app:layout_constraintHeight_min="56dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPoweredBy"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feature_gold_sip_powered_by"
+            android:textColor="@color/color_776E94"
+            app:drawableEndCompat="@drawable/core_upi_ic_upi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

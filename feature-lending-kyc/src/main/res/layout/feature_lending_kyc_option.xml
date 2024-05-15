@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:id="@+id/clLayout"
+    android:visibility="invisible"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvScreenTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:gravity="start"
+        tools:text="@string/feature_lending_kyc_link_aadar_with_below_options"
+        android:textAlignment="gravity"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="visible"
+        android:id="@+id/digiLockerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_bg_with_stroke"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvScreenTitle">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/feature_lending_kyc_bg_solid_d5cdf2_mark"
+                android:id="@+id/digiLockerImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/digiLockerTitle"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/commonTxtColor"
+            android:gravity="start"
+            tools:text="@string/feature_lending_kyc_link_with_digilocker"
+            android:textAlignment="gravity"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/digiLockerImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/digiLockerSubTitle"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start"
+            tools:text="@string/feature_lending_kyc_will_be_redirected_to_digilocker"
+            android:textAlignment="gravity"
+            android:textSize="11sp"
+            android:textColor="@color/color_D5CDF2"
+            app:layout_constraintEnd_toStartOf="@+id/arrowForwardDigiLocker"
+            app:layout_constraintStart_toEndOf="@+id/digiLockerImage"
+            app:layout_constraintTop_toBottomOf="@+id/digiLockerTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrowForwardDigiLocker"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/feature_lending_kyc_arrow_forward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/digiLockerQuickerApproval"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@drawable/feature_lending_quicker_approval_background"
+        android:text="@string/feature_lending_kyc_quicker_approval"
+        app:layout_constraintBottom_toTopOf="@id/digiLockerLayout"
+        app:layout_constraintEnd_toEndOf="@id/digiLockerLayout"
+        app:layout_constraintTop_toTopOf="@id/digiLockerLayout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/digiLockerErrorMessage"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/feature_lending_kyc_alert"
+        android:drawablePadding="4dp"
+        android:gravity="start"
+        tools:text="@string/feature_lending_kyc_digilocker_severs_at_down_at_the_moment"
+        android:textAlignment="gravity"
+        android:textColor="@color/color_C5B0FF"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/digiLockerLayout"
+        app:layout_constraintStart_toStartOf="@id/digiLockerLayout"
+        app:layout_constraintTop_toBottomOf="@+id/digiLockerLayout"
+        tools:visibility="visible" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOR"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:text="@string/feature_lending_kyc_or"
+        android:textAlignment="gravity"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digiLockerErrorMessage" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="visible"
+        android:id="@+id/aadharLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner_bg_with_stroke"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvOR">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/feature_lending_kyc_bg_solid_d5cdf2_mark"
+            android:id="@+id/aadharImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/aadharTitle"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start"
+            android:textColor="@color/commonTxtColor"
+            tools:text="@string/feature_lending_kyc_enter_aadhar_details"
+            android:textAlignment="gravity"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/aadharImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/aadharSubTitle"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start"
+            tools:text="@string/feature_lending_kyc_manually_enter_your_details"
+            android:textAlignment="gravity"
+            android:textSize="11sp"
+            android:textColor="@color/color_D5CDF2"
+            app:layout_constraintEnd_toStartOf="@+id/arrowForward"
+            app:layout_constraintStart_toEndOf="@+id/aadharImage"
+            app:layout_constraintTop_toBottomOf="@+id/aadharTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrowForward"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/feature_lending_kyc_arrow_forward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/aadharQuickerApproval"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_lending_quicker_approval_background"
+        android:text="@string/feature_lending_kyc_quicker_approval"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/aadharLayout"
+        app:layout_constraintEnd_toEndOf="@id/aadharLayout"
+        app:layout_constraintTop_toTopOf="@id/aadharLayout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/aadharErrorMessage"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/feature_lending_kyc_alert"
+        android:drawablePadding="4dp"
+        android:gravity="start"
+        tools:text="@string/feature_lending_kyc_aadhar_severs_at_down_at_the_moment"
+        android:textAlignment="gravity"
+        android:textColor="@color/color_C5B0FF"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/aadharLayout"
+        app:layout_constraintStart_toStartOf="@id/aadharLayout"
+        app:layout_constraintTop_toBottomOf="@id/aadharLayout"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consentCl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="14dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxConsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:button="@drawable/custom_checkbox"
+            android:checked="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvUserConsent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserConsent"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:gravity="start"
+            tools:text="@string/feature_lending_kyc_consent_for_aadhar_details_and_ksf"
+            android:textAlignment="gravity"
+            android:textColor="@color/color_D5CDF2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/checkboxConsent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

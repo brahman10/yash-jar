@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clParent"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbTnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/core_ui_custom_checkbox"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:layout_constraintEnd_toStartOf="@id/tvTnc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTnc"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cbTnC"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Terms ands conditions mddjjdjjd djdjdjdjd jjdjd jdjdd jdjdjjdjdjdjd djdjjdjd djdjjdjd jdjdjjddj ekekdkdk dkdkdkdkd dkdkddk djdjjdjdjdj djjdjdjd djdjjdjd ddjjdj djdjdjd jdjdjjd djdjdj" />
+</androidx.constraintlayout.widget.ConstraintLayout>

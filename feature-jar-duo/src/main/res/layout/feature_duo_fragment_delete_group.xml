@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightBgColor">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/feature_duo_delete_emoji"
+        android:layout_marginTop="55dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeleteGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Sure you want to \n delete this duo?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        app:fontFamily="@font/inter_bold"
+        android:layout_marginTop="181dp"
+        android:gravity="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeleteGroupDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeleteGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Saving together and competing \n will keep you motivated"
+        android:textColor="@color/color_ACA1D3"
+        android:textSize="14sp"
+        app:lineHeight="21sp"
+        app:fontFamily="@font/inter"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeleteGroupDetail"
+        android:layout_marginTop="51dp"
+        app:buttonStrokeColor="#4DFFFFFF"
+        app:buttonText="@string/feature_duo_delete"
+        app:buttonStartColor="@color/lightBgColor"
+        app:buttonEndColor="@color/lightBgColor"/>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDontDelete"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="21dp"
+        app:buttonText="@string/feature_duo_do_not_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="37dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

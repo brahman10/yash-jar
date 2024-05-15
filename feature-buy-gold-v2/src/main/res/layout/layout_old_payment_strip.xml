@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_16dp"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="tvExtraAmount, tvViewBreakdown"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBuyNow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_buy_gold_v2_bg_rounded_6038ce_12dp"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintWidth_min="120dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBuyNow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/dimen_4dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBuyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_marginStart="@dimen/dimen_4dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBuyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BigTextViewStyle"
+        android:textSize="20sp"
+        tools:text="₹100"
+        android:gravity="start"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExtraAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallBoldTextViewStyle"
+        app:textAllCaps="false"
+        android:textSize="10sp"
+        android:textColor="@color/color_EBB46A"
+        android:background="@drawable/feature_buy_gold_v2_bg_rounded_43353b_4dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:paddingHorizontal="@dimen/dimen_6dp"
+        app:layout_constraintTop_toTopOf="@id/tvBuyAmount"
+        app:layout_constraintStart_toEndOf="@id/tvBuyAmount"
+        app:layout_constraintBottom_toBottomOf="@id/tvBuyAmount"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        tools:text="@string/feature_buy_gold_v2_extra_x_rupees"
+        tools:ignore="SmallSp" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerExtraAmount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="@id/tvExtraAmount"
+        app:layout_constraintEnd_toEndOf="@id/tvExtraAmount"
+        app:layout_constraintStart_toStartOf="@id/tvExtraAmount"
+        app:layout_constraintTop_toTopOf="@id/tvExtraAmount"
+        app:shimmer_auto_start="true"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear"
+        app:shimmer_highlight_color="@color/white_opacity_60"
+        app:shimmer_tilt="30">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/core_ui_bg_shine" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupExtraAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="shimmerExtraAmount, tvExtraAmount"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvInclGstLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        android:textSize="10sp"
+        android:text="@string/feature_buy_gold_v2_incl_gst"
+        app:layout_constraintStart_toStartOf="@id/tvBuyAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvBuyAmount"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvViewBreakdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        android:textColor="@drawable/feature_buy_gold_v2_view_breakdown_selector_v2"
+        android:drawableEnd="@drawable/core_ui_ic_arrow_down"
+        app:drawableTint="@drawable/feature_buy_gold_v2_view_breakdown_selector_v2"
+        android:drawablePadding="@dimen/dimen_6dp"
+        android:paddingEnd="@dimen/dimen_12dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="@id/tvBuyAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvInclGstLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

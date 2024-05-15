@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2E2942">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btnGoToHome"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/PaymentSuccessTheme"
+            tools:ignore="MissingDefaultResource">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animConfetti"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@id/detailsCard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/successLottieLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:elevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/successLottieBackground"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#303F9F"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/feature_buy_gold_v2_ic_primary_dark_circle" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/successLottie"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="13dp"
+                        android:scaleType="centerCrop"
+
+                        android:src="@drawable/feature_buy_gold_v2_ic_green_circle"
+                        android:translationY="8dp"
+
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/detailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/feature_buy_gold_v2_bg_rounded_3c3457_10dp"
+                    android:padding="36dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/gold_purcha"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/dimen_50dp"
+                        android:gravity="center_horizontal|top"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/feature_buy_gold_v2_gold_purchase_successful"
+                        android:textAppearance="@style/gold_purcha"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/k_gold_boug"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/dimen_32dp"
+                        android:gravity="center_horizontal|top"
+                        android:lineSpacingExtra="5sp"
+                        android:text="@string/feature_buy_gold_v2_k_gold_bought"
+                        android:textAppearance="@style/k_gold_boug"
+                        android:translationY="-2.32sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gold_purcha" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/gm"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal|top"
+                        android:lineSpacingExtra="6sp"
+                        android:textAppearance="@style/goldPurchase"
+                        app:layout_constraintEnd_toEndOf="@id/k_gold_boug"
+                        app:layout_constraintStart_toStartOf="@id/k_gold_boug"
+                        app:layout_constraintTop_toBottomOf="@+id/k_gold_boug"
+                        tools:text="2gm" />
+                    <LinearLayout
+                        android:id="@+id/download_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gm" >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/download_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:gravity="center_horizontal|top"
+                            android:lineSpacingExtra="7sp"
+                            android:text="@string/feature_buy_gold_v2_download_in"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/gm" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/dowload_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_right_chevron"
+                            app:layout_constraintBottom_toBottomOf="@id/download_in"
+                            app:layout_constraintStart_toEndOf="@id/download_in"
+                            app:layout_constraintTop_toTopOf="@id/download_in" />
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:id="@+id/line_seprator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:alpha="0.15"
+                        android:background="@color/white"
+                        app:layout_constraintEnd_toEndOf="@id/download_view"
+                        app:layout_constraintStart_toStartOf="@id/download_view"
+                        app:layout_constraintTop_toBottomOf="@+id/download_view" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/your_reward"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:gravity="center_horizontal|top"
+                        android:lineSpacingExtra="5sp"
+                        android:text="@string/your_reward"
+                        android:textAppearance="@style/your_reward"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/rewardLL"
+                        app:layout_constraintEnd_toEndOf="@id/line_seprator"
+                        app:layout_constraintStart_toStartOf="@id/line_seprator"
+                        app:layout_constraintTop_toBottomOf="@+id/line_seprator" />
+
+                    <LinearLayout
+                        android:id="@+id/rewardLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/your_reward" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <include
+                    android:id="@+id/layoutCrossPromotionBanner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    layout="@layout/layout_cross_promotion_banner"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/detailsCard"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnGoToHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:buttonText="@string/core_ui_go_to_homepage"
+        app:buttonTextAllCaps="false"
+        app:buttonTextColor="@color/white"
+        app:buttonType="secondaryHollowButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

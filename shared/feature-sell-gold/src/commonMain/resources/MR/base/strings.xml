@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_sell_gold_sell_in_rupees">Sell in Rupees</string>
+    <string name="feature_sell_gold_sell_in_grams">Sell in Grams</string>
+    <string name="feature_sell_gold_currency_sign">₹</string>
+    <string name="feature_sell_gold_currency_sign_x">\u20B9%.2f</string>
+    <string name="feature_sell_gold_currency_sign_x_int">\u20B9%d</string>
+    <string name="feature_sell_gold_x_gm">%.4fgm</string>
+    <string name="feature_sell_gold_gm_label">gm</string>
+    <string name="feature_sell_gold_best">Best</string>
+    <string name="feature_sell_gold_amount_payable_colon">Amount Payable:</string>
+    <string name="feature_sell_gold_amount_payable">Amount Payable</string>
+    <string name="feature_sell_gold_x_amount_incl_gst">\u20B9%.2f (incl. GST)</string>
+    <string name="feature_sell_gold_show_breakdown">Show breakdown</string>
+    <string name="feature_sell_gold_please_enter_a_amount_thats_more_than_x_rs">Please enter a value
+        that is more than \u20B9%.2f
+    </string>
+    <string name="feature_sell_gold_please_enter_a_amount_thats_more_than_x_gm">Please enter a value
+        that is more than %.4fgm
+    </string>
+    <string name="feature_sell_gold_please_enter_a_amount_thats_less_than_x_rs">Please enter a value
+        that is less than \u20B9%.2f
+    </string>
+    <string name="feature_sell_gold_please_enter_a_amount_thats_less_than_x_gm">Please enter a value
+        that is less than %.4fgm
+    </string>
+    <string name="feature_sell_gold_start_time_s_end_time_s">%s - %s</string>
+    <string name="feature_sell_gold_sell_now">Sell Now</string>
+    <string name="feature_sell_gold_pay_now">Pay Now</string>
+    <string name="feature_sell_gold_terms_of_use">
+        <u>Terms of use</u>
+    </string>
+    <string name="feature_sell_gold_privacy_policy">
+        <u>Privacy Policy</u>
+    </string>
+    <string name="feature_sell_gold_payment_breakdown">Payment Summary</string>
+    <string name="feature_sell_gold_total_amount_payable">Total Amount Payable</string>
+    <string name="feature_sell_gold_withdraw_cash">Withdraw Savings</string>
+    <string name="feature_sell_gold_gold_available_to_sell">Gold available to sell:</string>
+    <string name="feature_sell_gold_sell_as_percentage_of_holdings">Sell as percentage of gold
+        holdings
+    </string>
+    <string name="feature_sell_gold_no_i_changed_my_mind">NO, I CHANGED MY MIND</string>
+    <string name="feature_sell_gold_sell_anyway">Withdraw Anyway</string>
+    <string name="feature_sell_gold_market_terms_and_conditions">The calculations are subject to
+        current performance of gold and can be different. Read the
+        <a href="https://www.myjar.app/terms-and-conditions">terms and conditions</a>
+    </string>
+    <string name="feature_sell_gold_your_savings_have_the_potential_to_grow">Your savings have the
+        potential to grow by almost 9% every year!
+    </string>
+    <string name="feature_sell_gold_rupee_prefix_float">₹%.2f</string>
+    <string name="feature_sell_gold_no_gold_amount_for_withdrawl">No gold available for
+        withdrawal.
+    </string>
+    <string name="feature_sell_gold_value_of_gold_in_future">Value of gold if you sell today is
+        ₹%.2f
+    </string>
+    <string name="feature_sell_gold_sell_gold">Sell Gold</string>
+    <string name="feature_sell_gold_gold_in_locker">Gold in locker:</string>
+    <string name="feature_sell_gold_withdraw_summary">Withdraw Summary</string>
+    <string name="feature_sell_gold_amount_to_be_credited">Amount to be credited</string>
+    <string name="feature_sell_gold_account_details">Account details</string>
+    <string name="feature_sell_gold_confirm_amp_withdraw">Confirm &amp; Withdraw</string>
+    <string name="feature_sell_gold_view_invoice">
+        <u>View Invoice</u>
+    </string>
+    <string name="feature_sell_gold_withdrawal_success">Withdrawal Successful</string>
+    <string name="feature_sell_gold_withdrawal_failed">Withdrawal Failed</string>
+    <string name="feature_sell_gold_withdrawal_progress">Withdrawal in Progress</string>
+    <string name="feature_sell_gold_sold_x_balance_x">Gold Sold %.4fgms | Balance %.4fgms</string>
+    <string name="feature_sell_gold_money_credited">Money has been credited to your UPI ID</string>
+    <string name="feature_sell_gold_select_reason">Could you tell us why you withdrew Gold?</string>
+    <string name="feature_sell_gold_contact_us">Contact Us</string>
+    <string name="feature_sell_gold_try_again">Try Again</string>
+    <string name="feature_sell_gold_check_status">Check Status</string>
+    <string name="feature_sell_gold_failed_desc">Gold from your locker was not debited\nPlease try
+        again.
+    </string>
+    <string name="feature_sell_gold_progress_desc">Rest assured money will be credited to\nyour
+        account within 2-4 days
+    </string>
+    <string name="feature_sell_gold_quantity_x_gm">Quantity %.4fgm</string>
+    <string name="feature_sell_gold_order_status">Order Status</string>
+    <string name="feature_sell_gold_thank_you_for_your_feedback">Thanks, your feedback is
+        priceless!
+    </string>
+    <string name="feature_sell_gold_done">Done</string>
+
+    <string name="feature_sell_gold_your_saved_upi_id">Your saved UPI IDs</string>
+    <string name="feature_sell_gold_select_account">Select Account</string>
+    <string name="feature_sell_gold_add_new_upi_id">Add New UPI ID</string>
+    <string name="feature_sell_gold_please_enter_valid_upi">Please enter a valid UPI</string>
+    <string name="feature_sell_gold_order_preview">Order Preview</string>
+    <string name="feature_sell_gold_upi">UPI</string>
+    <string name="feature_sell_gold_current_sell_price">Current Sell Price</string>
+    <string name="feature_sell_gold_gold_quantity">Gold quantity</string>
+    <string name="feature_sell_gold_sell_price">\u20B9%.2f/gm</string>
+    <string name="feature_sell_gold_authentication_failed">Authentication Failed</string>
+    <string name="feature_sell_gold_confirm_your_password">Confirm your password</string>
+    <string name="feature_sell_gold_failed_to_fetch_balance">Failed to fetch your gold balance
+    </string>
+    <string name="feature_sell_gold_x_percent">%d%%</string>
+    <string name="feature_sell_gold_x_volume_y_amount">%1$.4f gm | ₹%2$.2f</string>
+    <string name="feature_sell_gold_amount_can_not_be_zero">Amount cannot be 0</string>
+    <string name="feature_sell_gold_volume_can_not_be_zero">Volume cannot be 0</string>
+    <string name="feature_sell_gold_amount_can_not_be_more_than_total">Amount can not be more than
+        what you have in total : %.2f
+    </string>
+    <string name="feature_sell_gold_volume_can_not_be_more_than_total">Volume can not be more than
+        what you have in total : %.4f
+    </string>
+    <string name="feature_sell_gold_not_allowed">Not allowed!</string>
+    <string name="feature_sell_gold_gold_price_not_available">Current Gold price not available.
+        Please retry.
+    </string>
+    <string name="feature_sell_gold_user_gold_balance_not_available">Unable to fetch your gold
+        balance.
+    </string>
+    <string name="feature_sell_gold_gold_amount_cannot_be_blank">Gold or Amount can\'t be blank!
+    </string>
+    <string name="feature_sell_gold_live_buy_price">Current Sell Price:
+        <b>₹%.2f/gm</b>
+    </string>
+    <string name="feature_sell_gold_amount_can_not_be_less_than">Please enter an amount greater than
+        %s
+    </string>
+    <string name="feature_sell_gold_gold_values_in_rupees">Value in rupees</string>
+    <string name="feature_sell_gold_why_i_am_not_able_to_sell_all_my_gold">Why I am not able to sell
+        all my gold?
+    </string>
+    <string name="feature_sell_gold_are_you_sure_you_want_to_sell">Are you sure you want to sell?
+    </string>
+    <string name="feature_sell_gold_processing_your_order">Processing your order</string>
+    <string name="feature_sell_gold_gold_sale_initiated">Gold sale initiated...</string>
+    <string name="feature_sell_gold_download_invoice">
+        <u>Download Invoice</u>
+    </string>
+    <string name="feature_sell_gold_wa_description">Hello, I am having trouble selling my gold.
+        Please help me with the Order ID: %s
+    </string>
+    <string name="feature_sell_gold_wa_description_without_id">Hello, I am having trouble selling my
+        gold. Please help me with the same.
+    </string>
+    <string name="feature_sell_gold_wait_your_savings_can_grow">Wait! Your savings can grow by
+        almost 9% every year!
+    </string>
+    <string name="feature_sell_gold_still_sure_you_want_to_sell">Still sure you want to sell?
+    </string>
+    <string name="feature_sell_gold_yes_sell_anyway">Yes, sell anyway</string>
+    <string name="feature_sell_gold_do_not_press_back_until_transaction_is_completed">Do not press
+        back or close the screen\nuntil the transaction is completed
+    </string>
+    <string name="feature_sell_gold_please_wait_until_transaction_goes_through">Please wait until
+        the transaction goes\nthrough, don’t close this screen.
+    </string>
+    <string name="withdraw">Withdraw</string>
+    <string name="proceed">Proceed</string>
+    <string name="select_upi_id">Select UPI ID</string>
+    <string name="upi_id_verified_successfully">UPI ID Verified Successfully!</string>
+    <string name="amount_to_be_received">Amount to be received</string>
+    <string name="view_price_breakdown">View Price Breakdown</string>
+    <string name="view_breakdown">View Breakdown</string>
+    <string name="breakdown_gold_sell_price">Gold sell price</string>
+    <string name="okay_ack">Okay</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_new_upi_id">Enter New UPI ID</string>
+    <string name="add_new_upi_id">Add New UPI ID</string>
+    <string name="verification_failed">Verification failed. Please try with another ID.</string>
+    <string name="please_add_registered_upi">Please add UPI ID which is registered with your name</string>
+    <string name="upi_cant_have_special_chars">UPI cannot start with special characters.</string>
+    <string name="incorrect_upi_format">Incorrect format. Please enter a valid UPI ID.</string>
+    <string name="verify_and_add">Verify &amp; Add</string>
+    <string name="suggested">Suggested</string>
+    <string name="upi_deletion_message">To add a new UPI ID, please delete one from settings. You can only have 5 UPIs on Jar.</string>
+</resources>

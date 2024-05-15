@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgColor">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPaymentMethods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="2"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:listitem="@layout/cell_saved_cards_view" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="12dp"
+        android:visibility="visible"
+        tools:visibility="gone"
+        app:shimmer_auto_start="true"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+
+            <include layout="@layout/cell_settings_placeholder" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

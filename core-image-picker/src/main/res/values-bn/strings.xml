@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_image_picker_use_photo">ফটো ব্যবহার করুন</string>
+    <string name="core_image_picker_retake">আবার তুলুন</string>
+    <string name="core_image_picker_choose_different">অন্য আরেকটা বেছে নিন</string>
+    <string name="core_image_picker_upload_photo">ফটো আপলোড করুন</string>
+    <string name="core_image_picker_rotate">ঘোরান</string>
+    <string name="core_image_picker_provide_camera_permissions">অনুগ্রহ করে ক্যামেরার অনুমতি দিন!!</string>
+    <string name="core_image_picker_take_photo">ফটো তুলুন</string>
+    <string name="core_image_picker_take_selfie">সেল্ফি তুলুন</string>
+    <string name="core_image_picker_make_sure_photo_is_visible">আপনার ফটো যেন স্পষ্ট দেখা যায় তা নিশ্চিত করুন</string>
+    <string name="core_image_picker_place_your_document_inside_the_frame">আপনার %s-কে ফ্রেমের ভিতরে রাখুন।</string>
+    <string name="core_image_picker_pan_card">PAN কার্ড</string>
+    <string name="core_image_picker_aadhar_card">আধার কার্ড</string>
+    <string name="core_image_picker_driving_license">ড্রাইভিং লাইসেন্স</string>
+    <string name="core_image_picker_passport">পাসপোর্ট</string>
+    <string name="core_image_picker_voters_id">ভোটার আইডি</string>
+    <string name="core_image_picker_make_sure_your_face_is_in_the_frame">আপনার মুখ ফ্রেমের ভিতর আছে কিনা তা নিশ্চিত করুন।</string>
+    <string name="core_image_picker_please_make_sure_the_photo_is_clear">ফটোটা পরিস্কার কিনা অনুগ্রহ করে তা নিশ্চিত করুন।</string>
+    <string name="core_image_picker_front_side">সামনের দিক</string>
+    <string name="core_image_picker_provide_gallery_permissions">অনুগ্রহ করে ফাইল এবং মিডিয়া ব্যবহার করার অনুমতি দিন!</string>
+    <string name="core_image_picker_document">ডকুমেন্ট</string>
+    <string name="core_image_picker_powered_by_hyperverge">হাইপারভার্জের দ্বারা পরিচালিত</string>
+    <string name="core_image_picker_something_went_wrong">কিছু একটা সমস্যা হয়েছে! অনুগ্রহ করে আবার চেষ্টা করুন।</string>
+    <string name="core_image_picker_preview">প্রিভিউ করুন</string>
+    <string name="core_image_picker_document_easy_to_read">আপনার ডকুমেন্টটা কি সহজে পড়া যায়?</string>
+    <string name="core_image_picker_please_make_sure_document_is_clear_and_visible"> অনুগ্রহ করে এটা নিশ্চিত করুন যে আপনার সম্পূর্ণ ডকুমেন্টটা যেন পরিষ্কার হয় এবং স্পষ্টভাবে দেখা যায় হয়।</string>
+    <string name="core_image_picker_crop_and_rotate">ক্রপ করুন ওamp; ঘোরান</string>
+    <string name="core_image_picker_crop_image">ছবি ক্রপ করুন</string>
+    <string name="core_image_picker_confirm">কনফার্ম করুন</string>
+    <string name="core_image_picker_done">হয়ে গেছে</string>
+    <string name="core_image_picker_cancel">ক্যান্সেল করুন</string>
+    <string name="core_image_picker_retake_photo"><u>আবার ফটো তুলুন</u></string>
+    <string name="core_image_picker_retake_selfie"><u>আবার সেলফি তুলুন</u></string>
+    <string name="core_image_picker_choose_a_different_photo"><u>অন্য একটা ফটো বেছে নিন</u></string>
+    <string name="core_image_picker_drag_the_handles_to_crop_the_photo">ফটোটা ক্রপ করার জন্য হ্যান্ডেলগুলো টানুন</string>
+    <string name="core_image_picker_preview_your_selfie">আপনার সেলফি প্রিভিউ করুন</string>
+    <string name="core_image_picker_please_check_selfie_is_clear">অনুগ্রহ করে দেখুন যে আপনার সেলফিটা পরিষ্কার কিনা</string>
+    <string name="core_image_picker_awesome_click_the_selfie_now">দুর্দান্ত। এখনই সেলফিটা ক্লিক করুন।</string>
+    <string name="core_image_picker_provide_permission">অনুমতি দিন</string>
+    <string name="core_image_picker_access_to_your_camera_has_been_prohibited_message"><b>আপনার ক্যামেরাকে ব্যবহার করতে দেওয়া হচ্ছে না</b> \n\nআপনার যাচাইকরণের প্রক্রিয়া চালিয়ে যেতে আপনার ফোনের ক্যামেরাকে ব্যবহার করার জন্য জার অ্যাপকে সক্রিয় করুন।</string>
+</resources>

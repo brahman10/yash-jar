@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_navigation"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfilePicDialogFragment"
+            app:destination="@id/editProfilePicDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileVerifyOtp"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.number.EditProfileVerifyOtpFragment"
+        android:label="EditProfileVerifyOtpFragment"
+        tools:layout="@layout/fragment_edit_profile_verify_otp">
+
+        <argument
+            android:name="phoneNumber"
+            app:argType="com.jar.app.feature_user_api.domain.model.PhoneNumberWithCountryCode"
+            app:nullable="false" />
+
+        <argument
+            android:name="requestOtpData"
+            app:argType="com.jar.app.feature_user_api.domain.model.RequestOtpData"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_editProfileVerifyOtpFragment_to_editProfileNumberSuccessFragment"
+            app:destination="@id/celebrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/celebrationFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.number.EditProfileCelebrationFragment"
+        android:label="CelebrationFragment"
+        tools:layout="@layout/fragment_edit_profile_celebration">
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="subTitle"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/editProfilePicDialogFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.pic.EditProfilePicDialogFragment"
+        android:label="EditProfilePicDialogFragment"
+        tools:layout="@layout/fragment_dialog_edit_profile_pic">
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string"/>
+
+        <deepLink app:uri="android-app://com.jar.app/editProfilePic/{fromScreen}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/editProfileNameDialogFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.name.EditProfileNameDialogFragment"
+        android:label="EditProfileNameDialogFragment"
+        tools:layout="@layout/fragment_dialog_edit_profile_name" >
+
+        <deepLink app:uri="android-app://com.jar.app/editProfileName" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/editEmailDialogFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.email.EditEmailDialogFragment"
+        android:label="EditEmailDialogFragment"
+        tools:layout="@layout/fragment_dialog_edit_email" >
+
+        <deepLink app:uri="android-app://com.jar.app/editProfileEmail" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/editProfileAgeDialogFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.age.EditProfileAgeDialogFragment"
+        android:label="EditProfileAgeDialogFragment"
+        tools:layout="@layout/fragment_dialog_edit_profile_age" >
+
+        <deepLink app:uri="android-app://com.jar.app/editProfileAge" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/editProfileGenderDialogFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.gender.EditProfileGenderDialogFragment"
+        android:label="EditProfileGenderDialogFragment"
+        tools:layout="@layout/fragment_dialog_edit_profile_gender" >
+
+        <deepLink app:uri="android-app://com.jar.app/editProfileGender" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/editProfileNumberDialogFragment"
+        android:name="com.jar.app.feature_profile.impl.ui.profile.number.EditProfileNumberDialogFragment"
+        android:label="EditProfileNumberDialogFragment"
+        tools:layout="@layout/fragment_dialog_edit_profile_number">
+
+        <action
+            android:id="@+id/action_editProfileNumberDialogFragment_to_editProfileVerifyOtpFragment"
+            app:destination="@id/editProfileVerifyOtp" />
+
+        <deepLink app:uri="android-app://com.jar.app/editProfileNumber" />
+    </dialog>
+</navigation>

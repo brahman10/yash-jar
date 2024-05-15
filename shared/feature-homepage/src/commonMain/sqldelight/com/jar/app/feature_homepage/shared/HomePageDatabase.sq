@@ -1,0 +1,14 @@
+CREATE TABLE HomeFeed(
+key TEXT NOT NULL PRIMARY KEY,
+value TEXT
+);
+
+insertHomeFeed:
+INSERT OR REPLACE INTO HomeFeed(key, value)
+VALUES (?, ?);
+
+fetchHomeFeedData:
+SELECT * FROM HomeFeed WHERE key = ?;
+
+removeAllHomeFeed:
+DELETE FROM HomeFeed;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allChip"
+    style="@style/CustomChipChoice"
+    app:chipBackgroundColor="@color/feature_gold_delivery_background_color_chip_state_list"
+    app:chipCornerRadius="@dimen/dimen_8dp"
+    app:chipMinHeight="40dp"
+    app:chipStrokeColor="#3C3357"
+    app:chipStrokeWidth="2dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="true"
+    android:textAppearance="@style/boldChipText"
+    android:text="All"
+    android:textColor="@color/white"
+    android:textSize="@dimen/dimen_16sp"
+    android:textStyle="bold" />
+

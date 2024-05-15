@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnContactUs"
+        android:layout_gravity="end"
+        app:buttonBorderWidth="@dimen/dimen_0dp"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        app:buttonDrawablePadding="8dp"
+        app:buttonText="@string/contact_us"
+        app:buttonBackgroundColor="@color/color_3c3357"
+        app:buttonRadius="4dp"
+        app:buttonDrawableStart="@drawable/ic_whatsapp_help_support_20dp"/>
+</FrameLayout>

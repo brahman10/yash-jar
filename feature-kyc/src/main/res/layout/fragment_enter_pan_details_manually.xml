@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pan_heading"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/feature_kyc_pan_number"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPan"
+        style="@style/EditTextKycStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_black_bg_12dp"
+        android:gravity="start|center_vertical"
+        android:hint="@string/feature_kyc_pan_hint"
+        android:maxLength="10"
+        android:inputType="textCapCharacters"
+        android:minHeight="60dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="80dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/pan_heading" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/full_name_heading"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textCapCharacters"
+        android:text="@string/feature_kyc_name"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/etPan" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        style="@style/EditTextKycStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_black_bg_12dp"
+        android:gravity="start|center_vertical"
+        android:hint="@string/feature_kyc_name_as_per_pan"
+        android:minHeight="60dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="80dp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_heading" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dob_heading"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/feature_kyc_date_of_birth"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etDob"
+        style="@style/EditTextKycStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_black_bg_12dp"
+        android:drawableEnd="@drawable/feature_kyc_ic_calender"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="start|center_vertical"
+        android:hint="@string/feature_kyc_select_a_date"
+        android:minHeight="60dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/dob_heading" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_consent"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/feature_kyc_ic_green_tick"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/feature_kyc_consent"
+        android:textColor="@color/color_EEEAFF"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verify"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="16dp"
+        app:textMarginTop="@dimen/dimen_20dp"
+        app:textMarginBottom="@dimen/dimen_20dp"
+        app:textMarginStart="66dp"
+        app:textMarginEnd="66dp"
+        app:buttonText="@string/feature_kyc_verify_pan_details"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintStart_toStartOf="@id/leftGuide" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

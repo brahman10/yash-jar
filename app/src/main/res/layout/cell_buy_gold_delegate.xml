@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_black_bg_16dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="22dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHandGold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_hand_gold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBuyDigitalGold"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="28sp"
+        android:text="@string/buy_new_line_digital_gold"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/ivHelp"
+        app:layout_constraintStart_toEndOf="@id/ivHandGold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="28sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_info" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBuyGoldLocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBuyDigitalGold"
+        app:srcCompat="@drawable/ic_buy_gold_locker" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumberOfPeopleBoughtGold"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBuyGoldLocker"
+        tools:text="1024 people bought gold in last 1 hour" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnBuyNow"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="22dp"
+        android:textAllCaps="true"
+        app:buttonText="@string/feature_buy_gold_v2_buy_now"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberOfPeopleBoughtGold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSafeGold"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/ivNpci"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBuyNow"
+        app:srcCompat="@drawable/ic_safe_gold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivNpci"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/iv100PercentSecure"
+        app:layout_constraintStart_toEndOf="@id/ivSafeGold"
+        app:layout_constraintTop_toBottomOf="@id/btnBuyNow"
+        app:srcCompat="@drawable/ic_npci" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv100PercentSecure"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivNpci"
+        app:layout_constraintTop_toBottomOf="@id/btnBuyNow"
+        app:srcCompat="@drawable/ic_100_secure" />
+</androidx.constraintlayout.widget.ConstraintLayout>

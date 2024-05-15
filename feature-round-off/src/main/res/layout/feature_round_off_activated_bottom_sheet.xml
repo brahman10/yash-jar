@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:paddingHorizontal="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="22dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_close"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHeaderIllustration"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:textColor="@color/color_EEEAFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnClose"
+        tools:src="@drawable/ic_gold_coin_bubble" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="@string/feature_round_off_yay_manual_round_off_activated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHeaderIllustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubtitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/feature_round_off_your_round_off_will_be_calculated_and_displayed"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThisIsHowRoundOffCardLooks"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="74dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:text="@string/feature_round_off_this_is_what_a_detected_round_off_card_looks"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivArc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/clRoundOffContainer"
+        app:layout_constraintStart_toEndOf="@id/tvThisIsHowRoundOffCardLooks"
+        app:srcCompat="@drawable/feature_round_off_ic_arc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoundOffContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_black_bg_16dp"
+        android:backgroundTint="@color/color_352F4F"
+        android:layout_marginTop="4dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvThisIsHowRoundOffCardLooks">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRsValue"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="₹32" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="false"
+            android:elevation="1dp"
+            android:focusable="false"
+            android:padding="4dp"
+            android:src="@drawable/core_ui_ic_arrow_down"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvRsValue"
+            app:layout_constraintStart_toEndOf="@id/tvRsValue"
+            app:layout_constraintTop_toTopOf="@id/tvRsValue"
+            app:tint="@color/color_ACA1D3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetectRoundUps"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feature_round_off_detected_roundups"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRsValue" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSaveNow"
+            android:layout_width="108dp"
+            android:layout_height="36dp"
+            app:buttonRadius="4dp"
+            android:clickable="false"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="11dp"
+            app:buttonDisabled="true"
+            app:buttonText="@string/feature_round_off_save_now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvYouCanStartForTomorrow"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/feature_round_off_you_can_start_saving_from_tomorrow"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clRoundOffContainer" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnOkayGotIt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        app:buttonText="@string/feature_round_off_okay_got_it"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvYouCanStartForTomorrow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

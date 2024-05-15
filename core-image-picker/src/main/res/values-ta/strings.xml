@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_image_picker_use_photo">ఫోటోను ఉపయోగించండి</string>
+    <string name="core_image_picker_retake">మళ్ళీ ఫోటో తీయండి </string>
+    <string name="core_image_picker_choose_different">వేరే దాన్ని ఎంచుకోండి</string>
+    <string name="core_image_picker_upload_photo">ఫోటోను అప్‌లోడ్ చేయండి</string>
+    <string name="core_image_picker_rotate">తిప్పండి</string>
+    <string name="core_image_picker_provide_camera_permissions">దయచేసి కెమెరా అనుమతులను అందించండి!!</string>
+    <string name="core_image_picker_take_photo">ఫోటో తీయండి</string>
+    <string name="core_image_picker_take_selfie">సెల్ఫీ తీయండి</string>
+    <string name="core_image_picker_make_sure_photo_is_visible">మీ ఫోటో కనిపించేలా చూసుకోండి.</string>
+    <string name="core_image_picker_place_your_document_inside_the_frame">మీ %sని ఫ్రేమ్ లోపల ఉంచండి.</string>
+    <string name="core_image_picker_pan_card">PAN కార్డ్</string>
+    <string name="core_image_picker_aadhar_card">ఆధార్ కార్డ్</string>
+    <string name="core_image_picker_driving_license">డ్రైవింగ్ లైసెన్స్</string>
+    <string name="core_image_picker_passport">పాస్‌పోర్ట్</string>
+    <string name="core_image_picker_voters_id">ఓటర్ ID</string>
+    <string name="core_image_picker_make_sure_your_face_is_in_the_frame">మీ ముఖం ఫ్రేమ్‌లో ఉందని నిర్ధారించుకోండి.</string>
+    <string name="core_image_picker_please_make_sure_the_photo_is_clear">దయచేసి ఫోటో స్పష్టంగా ఉందని నిర్ధారించుకోండి.</string>
+    <string name="core_image_picker_front_side">ముందు వైపు</string>
+    <string name="core_image_picker_provide_gallery_permissions">தயவுசெய்து ஃபைல் மற்றும் மீடியா வாசிப்பு அனுமதிகளை வழங்கவும்!</string>
+    <string name="core_image_picker_document">ஆவணம் </string>
+    <string name="core_image_picker_powered_by_hyperverge">ஹைப்பர்வெர்ஜ் மூலம் இயக்கப்படுகிறது </string>
+    <string name="core_image_picker_something_went_wrong">ஏதோ தவறு நடந்தது!தயவுசெய்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="core_image_picker_preview">ப்ரிவ்யூ</string>
+    <string name="core_image_picker_document_easy_to_read">உங்கள் ஆவணம் படிக்க எளிதானதா?</string>
+    <string name="core_image_picker_please_make_sure_document_is_clear_and_visible">உங்கள் முழு ஆவணமும் தெளிவாகவும், தெரியும்படியும் இருப்பதை உறுதிப்படுத்தவும்</string>
+    <string name="core_image_picker_crop_and_rotate">கிராப் &amp; ரொட்டேட்</string>
+    <string name="core_image_picker_crop_image">கிராப் இமேஜ்</string>
+    <string name="core_image_picker_confirm">உறுதி செய்க</string>
+    <string name="core_image_picker_done">முடிந்தது</string>
+    <string name="core_image_picker_cancel">இரத்து செய்க</string>
+    <string name="core_image_picker_retake_photo">போட்டோவை மீண்டும் எடுக்கவும்</string>
+    <string name="core_image_picker_retake_selfie">செல்பியை மீண்டும் எடுக்கவும்</string>
+    <string name="core_image_picker_choose_a_different_photo">வேறு ஃபோட்டோவை தேர்வு செய்க</string>
+    <string name="core_image_picker_drag_the_handles_to_crop_the_photo">ஃபோட்டோவை வெட்ட ஹாண்டில்களை இழுக்கவும்.</string>
+    <string name="core_image_picker_preview_your_selfie">உங்கள் செல்ஃபியை ப்ரிவியூ செய்க</string>
+    <string name="core_image_picker_please_check_selfie_is_clear">உங்கள் செல்ஃபி தெளிவாக இருக்கிறதா என்று சரிபார்க்கவும்</string>
+    <string name="core_image_picker_awesome_click_the_selfie_now">அருமை.இப்போது செல்ஃபியை கிளிக் செய்க.</string>
+    <string name="core_image_picker_provide_permission">அனுமதியை வழங்கவும்</string>
+    <string name="core_image_picker_access_to_your_camera_has_been_prohibited_message">உங்கள் கேமராவின் அணுகல் தடைசெய்யப்பட்டுள்ளது.</string>
+</resources>

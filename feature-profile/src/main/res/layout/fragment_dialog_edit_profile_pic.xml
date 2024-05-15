@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feature_profile_dialog_background"
+    android:maxWidth="500dp"
+    android:paddingVertical="20dp"
+    tools:context="com.jar.app.feature_profile.impl.ui.profile.pic.EditProfilePicDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvProfilePicContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEditProfilePic"
+            style="@style/BigTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/feature_profile_edit_profile_picture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/flList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditProfilePic">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fadingEdgeLength="100dp"
+                android:orientation="horizontal"
+                android:requiresFadingEdge="horizontal"
+                tools:itemCount="5"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/cell_profile_pic_item" />
+
+        </FrameLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/tvChooseFromGallery"
+            style="@style/BigTextViewStyle"
+            app:buttonBackgroundColor="@color/color_3c3357"
+            app:buttonBorderWidth="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/feature_profile_ripple_rounded_light_bg_20dp"
+            android:gravity="center"
+            android:padding="15dp"
+            app:buttonText="@string/feature_profile_choose_from_gallery"
+            android:visibility="gone"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/flList" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/tvTakeSelfie"
+            style="@style/BigTextViewStyle"
+            app:buttonBackgroundColor="@color/color_3c3357"
+            app:buttonBorderWidth="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feature_profile_ripple_rounded_light_bg_20dp"
+            android:gravity="center"
+            android:padding="15dp"
+            app:buttonText="@string/feature_profile_take_selfie"
+            android:visibility="gone"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvChooseFromGallery" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="16dp"
+            app:buttonText="@string/feature_profile_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/flList" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="btnSave,tvTakeSelfie" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCancel"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textFontWeight="600"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:text="@string/core_ui_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/editProfileSuccessLayout"
+        layout="@layout/layout_profile_edit_success"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

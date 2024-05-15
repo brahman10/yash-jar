@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="feature_gold_price_alerts_bg_color">#480B10</color>
+    <color name="color_1A1EA787">#1A1EA787</color>
+    <color name="color_00000040">#40000000</color>
+    <color name="color_26C4C4C4">#26C4C4C4</color>
+    <color name="color_1AEB6A6E">#1AEB6A6E</color>
+    <color name="color_1AEBB46A">#1AEBB46A</color>
+    <color name="color_1AD5CDF2">#1AD5CDF2</color>
+    <color name="color_484D5C14">#484D5C</color>
+    <color name="color_EB6A6E_20">#33EB6A6E</color>
+    <color name="color_491F20">#491F20</color>
+    <color name="color_1EA787_20">#331EA787</color>
+    <color name="color_273442">#273442</color>
+    <color name="color_7745FF_30">#4D7745FF</color>
+    <color name="color_6038CE">#6038CE</color>
+    <color name="color_4220A1">#4220A1</color>
+    <color name="color_FFFAF2">#FFFAF2</color>
+    <color name="color_33FFFAF2">#33FFFAF2</color>
+    <color name="color_F92424">#F92424</color>
+
+</resources>

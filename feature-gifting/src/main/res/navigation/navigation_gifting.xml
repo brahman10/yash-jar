@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_gifting"
+    app:startDestination="@id/sendGiftFragment">
+
+    <action
+        android:id="@+id/action_to_add_message_dialog"
+        app:destination="@id/addMessageBottomSheet" />
+
+    <fragment
+        android:id="@+id/sendGiftFragment"
+        android:name="com.jar.app.feature_gifting.impl.ui.send_gift.SendGiftFragment"
+        android:label="SendGiftFragment"
+        tools:layout="@layout/feature_gifting_fragment_send_gift">
+
+        <argument
+            android:name="sendGiftRequest"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/sendGiftFragment/{sendGiftRequest}/{fromScreen}" />
+
+        <action
+            android:id="@+id/action_sendGiftFragment_to_giftSummaryFragment"
+            app:destination="@id/giftSummaryFragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/addMessageBottomSheet"
+        android:name="com.jar.app.feature_gifting.impl.ui.add_message.AddMessageBottomSheet"
+        android:label="AddMessageBottomSheet"
+        tools:layout="@layout/feature_gifting_fragment_add_message">
+
+        <argument
+            android:name="message"
+            app:argType="string"
+            app:nullable="true" />
+
+    </dialog>
+
+    <fragment
+        android:id="@+id/giftSummaryFragment"
+        android:name="com.jar.app.feature_gifting.impl.ui.gift_summary.GiftSummaryFragment"
+        android:label="GiftSummaryFragment"
+        tools:layout="@layout/feature_gifting_fragment_gift_summary">
+
+        <argument
+            android:name="sendGiftRequest"
+            app:argType="com.jar.app.feature_gifting.shared.domain.model.SendGiftGoldRequest"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/giftGoldSuccessFragment"
+        android:name="com.jar.app.feature_gifting.impl.ui.gifting_success.GiftGoldSuccessFragment"
+        android:label="GiftGoldSuccessBottomSheet"
+        tools:layout="@layout/feature_gifting_fragment_gift_gold_success">
+
+        <argument
+            android:name="fetchManualPaymentStatusResponse"
+            app:argType="string" />
+
+        <deepLink app:uri="android-app://com.jar.app/giftGoldSuccessFragment/{fetchManualPaymentStatusResponse}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/giftGoldPendingFragment"
+        android:name="com.jar.app.feature_gifting.impl.ui.gifting_pending.GiftGoldPendingFragment"
+        android:label="GiftGoldPendingFragment"
+        tools:layout="@layout/feature_gifting_fragment_gift_pending">
+
+        <argument
+            android:name="fetchManualPaymentStatusResponse"
+            app:argType="string" />
+
+        <deepLink app:uri="android-app://com.jar.app/giftGoldPendingFragment/{fetchManualPaymentStatusResponse}" />
+
+        <action
+            android:id="@+id/action_giftGoldPendingFragment_to_giftGoldFailureFragment"
+            app:destination="@id/giftGoldFailureFragment" />
+        <action
+            android:id="@+id/action_giftGoldPendingFragment_to_giftGoldSuccessFragment"
+            app:destination="@id/giftGoldSuccessFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/giftGoldFailureFragment"
+        android:name="com.jar.app.feature_gifting.impl.ui.gifting_failure.GiftGoldFailureFragment"
+        android:label="GiftGoldFailureFragment"
+        tools:layout="@layout/feature_gifting_fragment_gift_failure">
+
+        <argument
+            android:name="fetchManualPaymentStatusResponse"
+            app:argType="string" />
+
+        <deepLink app:uri="android-app://com.jar.app/giftGoldFailureFragment/{fetchManualPaymentStatusResponse}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewReceivedGiftFragment"
+        android:name="com.jar.app.feature_gifting.impl.ui.view_received_gift.ViewReceivedGiftFragment"
+        android:label="ViewReceivedGiftFragment"
+        tools:layout="@layout/feature_gifting_fragment_view_received_gift">
+
+        <argument
+            android:name="goldGiftReceivedResponse"
+            app:argType="string" />
+
+        <deepLink app:uri="android-app://com.jar.app/viewReceivedGiftFragment/{goldGiftReceivedResponse}" />
+    </fragment>
+</navigation>

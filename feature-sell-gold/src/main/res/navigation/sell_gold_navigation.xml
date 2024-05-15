@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sell_gold_navigation"
+    app:startDestination="@id/amountEntryFragment">
+
+    <fragment
+        android:id="@+id/withdrawStatusFragment"
+        android:name="com.jar.app.feature_sell_gold.impl.ui.withdrawal_status.WithdrawalStatusFragment"
+        android:label="WithdrawalStatusFragment"
+        tools:layout="@layout/feature_sell_gold_withdrawal_status_fragment">
+
+        <!--        Null in case of retry flow-->
+        <argument
+            android:name="withdrawRequest"
+            app:argType="com.jar.app.feature_sell_gold.shared.domain.models.WithdrawRequest"
+            app:nullable="true" />
+        <argument
+            android:name="isRetryFlow"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+        <!--        Not Null in case of retry flow-->
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="vpa"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/withdrawBottomSheet"
+        android:name="com.jar.app.feature_sell_gold.impl.ui.bottomsheet.WithdrawBottomSheet"
+        android:label="WithdrawBottomSheet"
+        tools:layout="@layout/feature_sell_gold_bottomsheet">
+        <deepLink app:uri="android-app://com.jar.app/withdrawalHelpBottomSheet" />
+    </dialog>
+    <fragment
+        android:id="@+id/amountEntryFragment"
+        android:name="com.jar.app.feature_sell_gold.impl.ui.amount.AmountEntryFragment"
+        android:label="AmountEntryFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="android-app://com.jar.app/sellGoldRevamp" />
+        <action
+            android:id="@+id/action_sellGoldFragment_to_upiSelectionFragment"
+            app:destination="@id/vpaSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vpaSelectionFragment"
+        android:name="com.jar.app.feature_sell_gold.impl.ui.vpa.VpaSelectionFragment"
+        android:label="VpaSelectionFragment">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="android-app://com.jar.app/sellGoldRevamp/upiSelectionFragment/{vpaSelectionArgs}" />
+        <argument
+            android:name="vpaSelectionArgs"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_upiSelectionFragment_to_withdrawStatusFragment"
+            app:destination="@id/withdrawStatusFragment" />
+    </fragment>
+</navigation>

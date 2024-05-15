@@ -1,0 +1,3 @@
+package com.jar.app.feature_daily_investment.impl.ui.disable_savings
+
+class DisableDailySavingEvent

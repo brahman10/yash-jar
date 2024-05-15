@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_lending_kyc_you_can_finish_kyc_in_just_d_steps">
+        <item quantity="one">আপনি শুধুমাত্র %d ধাপে KYC সম্পূর্ণ করতে পারবেন।</item>
+        <item quantity="other">আপনি শুধুমাত্র %d ধাপে KYC সম্পূর্ণ করতে পারবেন।</item>
+    </plurals>
+</resources>

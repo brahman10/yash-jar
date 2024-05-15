@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quests">Quests</string>
+    <string name="quest">Quest</string>
+    <string name="feature_quests_header">Quest</string>
+    <string name="feature_quests_coupon_validity">Valid till %1$s</string>
+    <string name="feature_quests_coupon_copied">%1$s Copied</string>
+    <string name="feature_quests_internet_not_working">Internet is not working currently</string>
+    <string name="feature_quests_quest">Quest</string>
+    <string name="feature_quests_view_all_rewards">View All Rewards</string>
+    <string name="feature_quests_quest_unlocked">Quest Unlocked</string>
+    <string name="feature_quests_congratulations">Congratulations!</string>
+    <string name="feature_quests_unlocked_welcome_bonus">You’ve unlocked a welcome bonus</string>
+    <string name="feature_quests_play_quest">Play Quest</string>
+    <string name="feature_quests_view_in_offer_section">View in Offers section</string>
+</resources>

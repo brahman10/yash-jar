@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/core_ui_bg_top_rounded_corner">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/actionBarItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_close"
+        app:tint="@color/color_EEEAFF" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_18dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/one" />
+
+            <View
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/two" />
+
+            <View
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/three" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:paddingBottom="@dimen/dimen_12dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-48dp"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:lineHeight="26dp"
+            android:text="@string/enter_daily_saving_amount"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="@dimen/dimen_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/inter"
+            android:lineHeight="20dp"
+            android:text="@string/your_money_will_be_debited_everyday_and_saved_nin_24k_99_9_pure_gold"
+            android:textColor="@color/smallTxtColor"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/amountEditBoxHolder"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/feature_daily_investment_edit_amount_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeading">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:background="@null"
+                android:drawableStart="@drawable/feature_daily_investment_ic_rs_sign"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:hint="0"
+                android:maxLength="8"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:minWidth="80dp"
+                android:paddingHorizontal="30dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_504968"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSuggestedAmounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountEditBoxHolder"
+            tools:itemCount="5"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/feature_daily_investment_cell_suggested_gold_amount"
+            tools:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/enteredAmountError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:fontFamily="@font/inter"
+            android:lineHeight="@dimen/dimen_24dp"
+            android:text="Amount should be more than ₹10"
+            android:textColor="@color/color_EB6A6E"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvSuggestedAmounts" />
+
+        <FrameLayout
+            android:id="@+id/couponLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enteredAmountError">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCouponContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feature_daily_saving_coupon_code_selector"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.jar.app.core_ui.widget.VerticalTextView
+                    android:id="@+id/tvCouponType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="@drawable/feature_buy_gold_v2_bg_left_rounded_443278_8dp"
+                    android:fontFamily="@font/inter"
+                    android:lineHeight="12sp"
+                    android:paddingHorizontal="@dimen/dimen_8dp"
+                    android:paddingVertical="@dimen/dimen_4dp"
+                    android:textColor="@color/color_D5CDF2"
+                    android:textFontWeight="700"
+                    android:textSize="8sp"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llHeaderHolder"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_12dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvCouponType"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCouponHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_semi_bold"
+                        android:lineHeight="@dimen/dimen_18dp"
+                        android:textColor="@color/white"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_12dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvCouponType"
+                    app:layout_constraintTop_toBottomOf="@+id/llHeaderHolder">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCouponSubHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:lineHeight="@dimen/dimen_18dp"
+                        android:textColor="@color/white"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCouponLogo"
+                    android:layout_width="@dimen/dimen_14dp"
+                    android:layout_height="@dimen/dimen_14dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:src="@drawable/feature_buy_gold_v2_ic_coupon"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/tvCouponType"
+                    app:layout_constraintStart_toStartOf="@id/tvCouponType"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            app:buttonText="@string/proceed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/couponLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one">पुन्हा सुरु होत आहे :  %d दिवस</item>
+        <item quantity="other">पुन्हा सुरु होत आहे :  %d दिवस</item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d दिवस</item>
+        <item quantity="other">%d दिवस</item>
+    </plurals>
+</resources>

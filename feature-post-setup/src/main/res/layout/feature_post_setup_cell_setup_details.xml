@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feature_post_setup_bg_header_gradient">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/clUserData"
+        app:layout_constraintHeight_min="180dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUserData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clUserDsDataContainer"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clOldUserContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="88dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOldTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_24dp"
+                android:text="@string/feature_post_setup_total_gold_purchase"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvActiveDays"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/feature_post_setup_total_gold_purchase"
+                android:textColor="@color/color_ebb46a"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOldTitle"
+                tools:text="@string/feature_post_setup_x_days_capital" />
+
+            <View
+                android:id="@+id/horizontalSeparatorTop"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintTop_toBottomOf="@id/tvActiveDays" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llPauseContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/verticalSeparator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSeparatorTop">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotalSavings"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="$1212" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/feature_post_setup_total_savings"
+                    android:textColor="@color/color_F2D3FF" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:id="@+id/verticalSeparator"
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintBottom_toBottomOf="@id/llUpdateContainer"
+                app:layout_constraintEnd_toStartOf="@id/llUpdateContainer"
+                app:layout_constraintStart_toEndOf="@id/llPauseContainer"
+                app:layout_constraintTop_toBottomOf="@id/horizontalSeparatorTop" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llUpdateContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/verticalSeparator"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSeparatorTop">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotalSpins"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/feature_post_setup_spins_earned"
+                    android:textColor="@color/color_F2D3FF" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:id="@+id/horizontalSeparatorBottom"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintBottom_toBottomOf="@+id/llUpdateContainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewUserContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="88dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNewHeader"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_35dp"
+                android:layout_marginVertical="@dimen/dimen_24dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Congratulations" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNewTitle"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_35dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNewHeader"
+                tools:text="Now watch your savings grow" />
+
+            <View
+                android:id="@+id/horizontalSeparatorBottomForNewUser"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_60dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNewTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUserDsDataContainer"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/core_ui_bg_rounded_2e2942_12dp"
+        android:padding="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clUserData">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDsDataTitle"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/tvDsDataDesc"
+            app:layout_constraintEnd_toStartOf="@id/ivDsIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="You are saving" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDsDataDesc"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:gravity="start"
+            android:textColor="@color/color_EBB46A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivDsIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDsDataTitle"
+            tools:text="$20 daily" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDsIcon"
+            android:layout_width="66dp"
+            android:layout_height="54dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

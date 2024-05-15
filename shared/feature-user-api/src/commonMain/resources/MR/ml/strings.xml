@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">പേര്</string>
+    <string name="phone_number">ഫോൺ നമ്പർ</string>
+    <string name="please_fill_all_the_details">ദയവായി എല്ലാ വിശദാംശങ്ങളും പൂരിപ്പിക്കുക</string>
+    <string name="email">ഇമെയിൽ</string>
+    <string name="pincode">പിൻകോഡ്</string>
+    <string name="city">നഗരം</string>
+    <string name="enter_city">നഗരം രേഖപ്പെടുത്തുക</string>
+    <string name="state">സംസ്ഥാനം</string>
+    <string name="enter_state">സംസ്ഥാനം രേഖപ്പെടുത്തുക</string>
+    <string name="enter_pin_code">പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="add_details">വിശദാംശങ്ങൾ ചേർക്കുക</string>
+    <string name="your_full_address">നിങ്ങളുടെ പൂർണ വിലാസം</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">വിശദാംശങ്ങൾ സമർപ്പിക്കുക</string>
+    <string name="details_added">വിശദാംശങ്ങൾ ചേർക്കുക</string>
+    <string name="street_address_one">സ്ട്രീറ്റ് വിലാസം 1</string>
+    <string name="address_line_1">വിലാസം ലൈൻ 1</string>
+    <string name="address_line_2">വിലാസം ലൈൻ 2</string>
+    <string name="check">പരിശോധിക്കുക</string>
+    <string name="street_address_two">സ്ട്രീറ്റ് വിലാസം 2 (നിർബന്ധമില്ല)</string>
+    <string name="please_enter_a_valid_pincode">ദയവായി സാധുവായ ഒരു പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="this_area_is_not_servicable_currently">ഈ പ്രദേശം നിലവിൽ സേവനയോഗ്യമല്ല</string>
+    <string name="edit_address">വിലാസം എഡിറ്റ് ചെയ്യുക</string>
+    <string name="add_new_address">പുതിയ വിലാസം ചേർക്കുക</string>
+    <string name="save_new_address">പുതിയ വിലാസം സേവ് ചെയ്യുക</string>
+    <string name="update_address">വിലാസം അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="save_and_proceed">സേവ് ചെയ്ത് തുടരുക</string>
+    <string name="select_an_address_for_delivery">ഡെലിവറിക്ക് വിലാസം തിരഞ്ഞെടുക്കുക</string>
+    <string name="no_delivery_address_available">ഡെലിവറി വിലാസം ലഭ്യമല്ല</string>
+    <string name="saved_addresses">സേവ് ചെയ്ത വിലാസങ്ങൾ</string>
+    <string name="add_delivery_details">ഡെലിവറി വിശദാംശങ്ങൾ ചേർക്കുക</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">നിങ്ങളുടെ ആധാർ കാർഡുമായി ബന്ധപ്പിച്ചു</string>
+    <string name="feature_user_api_saved_address">സേവ് ചെയ്ത വിലാസം</string>
+    <string name="feature_lending_recently_saved">സമീപ കാലത്ത് സമ്പാദിച്ചത്</string>
+    <string name="feature_user_api_day">ദിവസം</string>
+    <string name="feature_user_api_days">ദിവസങ്ങൾ</string>
+    <string name="feature_user_api_week">ആഴ്ച</string>
+    <string name="feature_user_api_weeks">ആഴ്ചകൾ</string>
+    <string name="feature_user_api_month">മാസം</string>
+    <string name="feature_user_api_months">മാസങ്ങൾ</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/exitSurveyFragment"
+    android:id="@+id/feature_exit_survey_nav">
+    <dialog
+        android:id="@+id/exitSurveyFragment"
+        android:name="com.myjar.app.feature_exit_survey.impl.ui.ExitSurveyFragment"
+        android:label="ExitSurveyFragment"
+        tools:layout="@layout/exit_survey_fragment_layout">
+        <deepLink app:uri="android-app://com.jar.app/featureExitSurvey/{surveyFor}" />
+        <argument
+            android:name="surveyFor"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+</navigation>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@drawable/bg_rounded_2e2942_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/expand_faq_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/expandable_faq_tv_1"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="Can I change my delivery address?"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/expandable_faq_iv_1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/down_arrow_hide"
+                app:tint="#ACA1D3" />
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_faq_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:text="No. Delivery address cannot be changed once the order is placed. For more assistance. Please reach out to info@changejar.in"
+                android:textAlignment="textStart"
+                android:textColor="#D5CDF2" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@drawable/bg_rounded_2e2942_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/expand_faq_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/expandable_faq_tv_2"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="Are there any charges for delivery of gold?"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/expandable_faq_iv_2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/down_arrow_hide"
+                app:tint="#ACA1D3" />
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_faq_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:text="Yes. The delivery and making charges will be applied based on the weight of the coin you order."
+                android:textAlignment="textStart"
+                android:textColor="#D5CDF2" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@drawable/bg_rounded_2e2942_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/expand_faq_button_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/expandable_faq_tv_3"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="What is the minimum amount of gold required to place an order?"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/expandable_faq_iv_3"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/down_arrow_hide"
+                app:tint="#ACA1D3" />
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_faq_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:text="0.5gms is the minimum amount of gold required to place a physical delivery order."
+                android:textAlignment="textStart"
+                android:textColor="#D5CDF2" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@drawable/bg_rounded_2e2942_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/expand_faq_button_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/expandable_faq_tv_4"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="What is the delivery time of the gold coin?"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/expandable_faq_iv_4"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/down_arrow_hide"
+                app:tint="#ACA1D3" />
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_faq_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:text="Once an order for gold delivery is placed, it generally takes 7-10 days for the coin to be delivered."
+                android:textAlignment="textStart"
+                android:textColor="#D5CDF2" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+</LinearLayout>

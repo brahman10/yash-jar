@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PolicyDeclarationTextStyle">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/color_D5CDF2</item>
+        <item name="android:fontFamily">@font/inter</item>
+
+    </style>
+</resources>

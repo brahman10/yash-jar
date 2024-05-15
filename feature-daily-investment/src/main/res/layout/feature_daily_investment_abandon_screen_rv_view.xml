@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/feature_daily_investment_12dp_rounded_corner_bg">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imIcon"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginVertical="@dimen/dimen_12dp"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="left"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/imIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Start with as little as ₹10." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

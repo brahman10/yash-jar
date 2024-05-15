@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/in_app_stories_nav_graph"
+    app:startDestination="@id/storyFragment">
+
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.jar.app.feature_in_app_stories.impl.ui.story.StoryFragment"
+        android:label="StoryFragment"
+        tools:layout="@layout/fragment_story_main">
+
+        <deepLink app:uri="android-app://com.jar.app/stories/main/{storyId}" />
+        <deepLink app:uri="android-app://com.jar.app/stories" />
+        <argument
+            android:name="storyId"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSelectedIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:elevation="@dimen/dimen_10dp"
+        android:src="@drawable/ic_tick_green"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/ivGoalIcon"
+        app:layout_constraintTop_toTopOf="@id/ivGoalIcon"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGoalIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvGoalName"
+        android:background="@drawable/rounded_black_grey_border_12dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGoalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/dimen_12dp"
+        android:textColor="@color/color_ACA1D3"
+        android:lineHeight="@dimen/dimen_12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivGoalIcon"
+        app:layout_constraintEnd_toEndOf="@+id/ivGoalIcon"
+        app:layout_constraintTop_toBottomOf="@+id/ivGoalIcon"
+        tools:text="Laptop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clStartContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/feature_lending_bg_start_rounded_3c3357_10_dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLoanName"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            android:gravity="start"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:layout_constraintBottom_toTopOf="@id/clEmiAndClosedBarrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="IphoneIphoneIphoneIphoneIphoneIphoneIphoneIphoneIphone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clEmiAndClosedBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLoanName">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmiPaid"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feature_lending_bg_rounded_corner_yellow"
+                android:drawableStart="@drawable/core_ui_ic_calender_yellow"
+                android:drawablePadding="@dimen/dimen_6dp"
+                android:paddingHorizontal="@dimen/dimen_10dp"
+                android:paddingVertical="@dimen/dimen_6dp"
+                app:layout_constraintHorizontal_bias="0"
+                android:textColor="@color/color_EBB46A"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="1/6 EMI Paid" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvClosed"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color_273442"
+                android:background="@drawable/feature_lending_bg_green_rounded_corner_6dp"
+                android:drawableStart="@drawable/ic_tick_green"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:paddingHorizontal="@dimen/dimen_10dp"
+                android:paddingVertical="@dimen/dimen_4dp"
+                android:text="@string/feature_lending_closed"
+                android:textColor="@color/greenTxtColor"
+                app:layout_constraintHorizontal_bias="0"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEndContainer"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_lending_bg_end_rounded_2e2942_10_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clStartContainer"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountPaid"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="₹5,000000" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPaid"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:text="@string/feature_lending_paid"
+            app:layout_constraintBottom_toBottomOf="@id/tvAmountPaid"
+            app:layout_constraintStart_toEndOf="@id/tvAmountPaid"
+            app:layout_constraintTop_toTopOf="@id/tvAmountPaid" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYetToStart"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/feature_lending_bg_rounded_corner_yellow"
+            android:paddingHorizontal="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_4dp"
+            android:text="@string/feature_lending_emi_yet_to_start"
+            android:textColor="@color/yellowTxtColor"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMoneyTransferInProgress"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/feature_lending_bg_green_rounded_corner_6dp"
+            android:backgroundTint="@color/color_273442"
+            android:paddingHorizontal="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_4dp"
+            android:text="@string/feature_lending_money_transfer_in_progress"
+            android:textColor="@color/color_58DDC8"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/amountPaidAndYetToStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvAmountPaid,tvYetToStart,tvMoneyTransferInProgress" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupAmountPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="tvPaid,tvAmountPaid"
+            app:layout_constraintBottom_toTopOf="@id/progressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_6dp"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/feature_lending_progress_track_your_ready_cash"
+            app:layout_constraintBottom_toTopOf="@id/dividerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amountPaidAndYetToStart" />
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#776E94"
+            app:layout_constraintBottom_toTopOf="@id/tvDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetails"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_12dp"
+            android:paddingEnd="@dimen/dimen_16dp"
+            android:drawableEnd="@drawable/feature_lending_ic_right_chevron"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_12dp"
+            android:text="@string/feature_lending_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dividerView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

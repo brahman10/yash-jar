@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_web_pdf_viewer"
+    app:startDestination="@id/webPdfViewerFragment">
+
+    <fragment
+        android:id="@+id/webPdfViewerFragment"
+        android:name="com.jar.app.core_web_pdf_viewer.impl.ui.WebPdfViewerFragment"
+        android:label="WebPdfViewerFragment"
+        tools:layout="@layout/fragment_web_pdf_viewer">
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="false" />
+
+        <!--url for WEB_TYPE_URL, loanId for WEB_TYPE_BASE64-->
+        <argument
+            android:name="data"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/webPdfViewerFragment/{data}/{type}" />
+    </fragment>
+</navigation>

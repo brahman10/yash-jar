@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_homepage_invest_now">এখনই বিনিয়োগ করুন</string>
+    <string name="feature_homepage_don_t_want_to_invest_full_amount">সম্পূর্ণ টাকা বিনিয়োগ করতে চান না?</string>
+    <string name="feature_homepage_tap_here"><u>এখানে টিপুন</u></string>
+    <string name="feature_homepage_rupee_x_in_double">\u20B9%.2f</string>
+    <string name="feature_homepage_rupee_x_in_int">\u20B9%d</string>
+    <string name="feature_homepage_invest_with_upi">UPI দিয়ে বিনিয়োগ করুন</string>
+    <string name="feature_homepage_start_your_investment_journey">আপনার বিনিয়োগের যাত্রা শুরু করুন</string>
+    <string name="feature_homepage_rs_n_double_will_be_deducted_from_your_account">আপনার অ্যাকাউন্টের থেকে \u20B9%.2f কেটে নেওয়া হবে</string>
+    <string name="feature_homepage_saved_to_your_own_savings_jar">আপনার নিজের সঞ্চয়ের জারে জমানো হয়েছে</string>
+    <string name="feature_homepage_invested_in_100_perc_pure_gold">100% খাঁটি সোনাতে বিনিয়োগ করা হয়েছে</string>
+    <string name="feature_homepage_what_happens_next">এরপরে কি হবে?</string>
+    <string name="feature_homepage_invest_n_percent">বিনিয়োগ করুন %d%%</string>
+    <string name="feature_homepage_rupee_x_in_double_strike" translatable="false"><strike>\u20B9%.2f</strike></string>
+    <string name="feature_homepage_skip_this_investment">এই বিনিয়োগটিকে এড়িয়ে যান</string>
+    <string name="feature_homepage_or">অথবা</string>
+    <string name="feature_homepage_invest_partial_amount">কিছু পরিমাণ টাকা বিনিয়োগ করুন</string>
+    <string name="feature_homepage_turn_your_saving_into_gold">শুধুমাত্র একটা ক্লিকে<b><font color="#FFFFFF">আপনার</font></b>সঞ্চয়কে<b><font color="#FFEEC979">সোনাতে</font></b>পরিবর্তন করুন</string>
+    <string name="feature_homepage_keep_investing">বিনিয়োগ করতে থাকুন</string>
+    <string name="feature_homepage_unlock_reward">পুরস্কার আনলক করুন</string>
+    <string name="feature_homepage_you_reached_a_milestone">আপনি একটি মাইলস্টোনে পৌঁছে গেছেন!</string>
+    <string name="feature_homepage_learn_more">আরো জানুন</string>
+    <string name="feature_homepage_get_exciting_rewards">আকর্ষণীয় পুরস্কার পান</string>
+    <string name="feature_homepage_gold_in_locker">যে পরিমাণ সোনা লকারে আছে</string>
+    <string name="feature_homepage_24_karat_gold_99_5_purity">24k | 99.5% খাঁটি সোনা</string>
+    <string name="feature_homepage_your_saving_are_invested_gold">আপনার সঞ্চয়কে 24K সোনাতে বিনিয়োগ করা হয়</string>
+    <string name="feature_homepage_updated_s">আপডেট করা হয়েছে %s</string>
+    <string name="feature_homepage_keep_investing_x_gms_to_go">বিনিয়োগ করতে থাকুন | আর %.4fগ্রাম বাকি আছে</string>
+    <string name="feature_homepage_you_in_top_5_percent_x_gms_to_go">আপনি সেরা 5%%-এর মধ্যে আছেন | আপনি দারুণ কাজ করছেন | আর %.4fগ্রাম বাকি আছে</string>
+    <string name="feature_homepage_you_in_top_1_percent_x_gms_to_go">আপনি সেরা 1%%-এর মধ্যে আছেন | আপনি দারুণ কাজ করছেন | আর %.4fগ্রাম বাকি আছে</string>
+    <string name="feature_homepage_claim_now">এখনই ক্লেইম করুন</string>
+    <string name="feature_homepage_show_all"><u>সবগুলো দেখান</u></string>
+    <plurals name="feature_homepage_bonus_available">
+        <item quantity="one">আরো %d বোনাস উপলব্ধ রয়েছে</item>
+        <item quantity="other">আরো %d-গুলো বোনাস উপলব্ধ রয়েছে</item>
+    </plurals>
+    <string name="feature_homapage_claimed">ক্লেইম করা হয়েছে</string>
+    <string name="feature_homepage_invest_more">আরো বেশি বিনিয়োগ করুন</string>
+    <string name="feature_homepage_start_saving">সঞ্চয় করতে শুরু করুন</string>
+    <string name="feature_homepage_save_now">এখনই সঞ্চয় করুন</string>
+    <string name="feature_homepage_start_saving_with_x">\u20B9%d দিয়ে সঞ্চয় করতে শুরু করুন</string>
+    <string name="feature_homepage_watch_your_savings_grow_daily">আপনার সঞ্চয়কে প্রতিদিন বাড়তে দেখুন</string>
+    <string name="feature_homepage_start">শুরু করুন</string>
+    <string name="feature_homepage_loan_card_title">আপনি 5 লাখ* পর্যন্ত<font color='#ebb46a'>একটি পূর্ব-অনুমোদিত লোন পেতে পারেন</font></string>
+    <string name="feature_homepage_loan_card_description">আপনার KYC শুরু করতে এখানে ক্লিক করুন</string>
+    <string name="feature_home_page_start_your_saving_journey">আপনার সঞ্চয়ের যাত্রা শুরু করুন</string>
+    <string name="feature_home_page_congratulations_on_signing_up">সাইন-আপ করার জন্য অভিনন্দন!</string>
+    <string name="feature_home_page_start_your_saving_journey_today_with_x">আজই ₹%d দিয়ে \n আপনার সঞ্চয়ের যাত্রা শুরু করুন</string>
+    <string name="feature_home_page_save_x">₹%d জমান</string>
+    <string name="feature_home_page_save_in_gold">সোনাতে জমান</string>
+    <string name="feature_home_page_congrats_on_saving_x">₹%d সঞ্চয় করার জন্য অভিনন্দন</string>
+    <string name="feature_home_page_automate_your_saving_and_see_it_grow">আপনার সঞ্চয়কে অটোমেট করুন এবং এটিকে বাড়তে দেখুন! 🌱</string>
+    <string name="feature_home_page_setup_auto_save">অটো-সেভ সেট করুন</string>
+    <string name="feature_homepage_your_savings">মোট সঞ্চয়</string>
+    <string name="feature_homepage_vasooli_card_title">নিজের\nটাকা ফেরত চাওয়া\nঅস্বস্তিকর হতে পারে।</string>
+    <string name="feature_homepage_vasooli_card_desc">আসুন আমরা এটাকে আদায় করি।</string>
+    <string name="replay_video">আবার চালান</string>
+    <string name="feature_home_page_setup_now">এখনই সেটআপ করুন</string>
+    <string name="feature_homepage_vasooli_diwali_card_title">আপনার টাকা \nফেরত চাওয়াটা খারাপ দেখাতে পারে।</string>
+    <string name="feature_homepage_vasooli_diwali_card_vasool_it"> ওটা উসুল করে নিন </string>
+    <string name="feature_homepage_gold_delivery_diwali_card_get_delivery">ডেলিভারী পান</string>
+    <string name="feature_homepage_gift_gold_diwali_card_start_gifting">উপহার দিতে শুরু করুন</string>
+    <string name="feature_homepage_refer_and_earn_diwali_card_refer_now">এখনই রেফার করুন</string>
+    <string name="feature_home_page_round_off_card_title">এখন আপনার\n<font fgcolor='#FFCD5A'>খুচরো পয়সাকে সোনাতে</font>রূপান্তরিত করুন</string>
+    <string name="feature_home_page_round_off_card_desc">আপনার প্রতিদিনের বিনিয়োগকে রাউন্ড অফ করুন</string>
+    <string name="feature_home_page_activate_round_ups">রাউন্ডঅফগুলোকে সক্রিয় করুন</string>
+
+    <string name="feature_home_page_step_two_roundoff_processing">খরচগুলোকে সনাক্ত করুন</string>
+    <string name="feature_home_page_step_three_roundoff_processing">রাউন্ডঅফ তৈরি করা হচ্ছে</string>
+    <string name="feature_home_page_step_four_roundoff_processing">আপনার জার অ্যাকাউন্টে সেভ করার জন্য রাউন্ডঅফ তৈরি করা আছে</string>
+
+    <plurals name="feature_home_page_roundoffs_in_last_x_days">
+        <item quantity="one">গত %d দিনের রাউন্ডঅফ</item>
+        <item quantity="other">গত %d দিনের রাউন্ডঅফ</item>
+    </plurals>
+
+    <string name="feature_home_page_start_now">এখনই শুরু করুন</string>
+    <string name="feature_home_page_gold_sip">সেভিংস প্ল্যান</string>
+    <string name="feature_home_page_auto_save_failed">অটো-সেভ সফল হয়নি</string>
+    <string name="feature_home_page_payment_failed_due_to_low_bank_balance">কম ব্যাংক ব্যালেন্সের জন্য পেমেন্ট সফল হয়নি।</string>
+    <string name="feature_home_page_save_wisely_with_gold_sip">\nসেভিংস প্ল্যানের সাথে বুদ্ধি করে সঞ্চয় করুন</string>
+    <string name="feature_home_page_pending_amount">বকেয়া টাকার পরিমাণ</string>
+    <string name="feature_home_page_save_weekly">প্রতি সপ্তাহে সঞ্চয় করুন</string>
+    <string name="feature_home_page_save_monthly">প্রতি মাসে সঞ্চয় করুন</string>
+    <string name="feature_home_page_know_more">বিশদে জানুন</string>
+    <string name="feature_homepage_completed">সম্পূর্ণ হয়ে গেছে</string>
+    <string name="feature_homepage_jar_ready_cash">জার রেডি ক্যাশ</string>
+
+    <string name="feature_home_page_update_daily_amount">দৈনিক টাকার পরিমাণ আপডেট করুন</string>
+    <string name="feature_home_page_save_more_worry_less">বেশি সঞ্চয় করুন \nকম দুশ্চিন্তা করুন!</string>
+    <string name="feature_home_page_save_rs_x">₹%d সঞ্চয় করুন</string>
+    <string name="feature_home_page_in_6_months">6 মাসের মধ্যে</string>
+    <string name="feature_home_page_by_saving">সঞ্চয় করে</string>
+    <string name="feature_home_page_daily">প্রতিদিন</string>
+    <string name="feature_home_page_move_the_slider_to_choose_an_amount">টাকার পরিমাণ বেছে নিতে স্লাইডারটা সরান</string>
+    <string name="feature_home_page_save_rs_x_daily"> প্রতিদিন ₹%d সঞ্চয় করুন</string>
+    <string name="feature_home_page_recommended">পরামর্শ দেওয়া হচ্ছে</string>
+    <string name="feature_home_page_buy_now">এখনই কিনুন</string>
+    <string name="videos_to_help_you_understand">আপনি যাতে বুঝতে পারেন তার জন্য \nভিডিও</string>
+    <string name="know_more_about_jar">জারের ব্যাপারে বিশদে জানুন</string>
+    <string name="help_and_support">সাহায্য এবং সহায়তা</string>
+    <string name="view_all">সব দেখুন</string>
+</resources>

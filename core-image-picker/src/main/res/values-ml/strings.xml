@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_image_picker_use_photo">ഫോട്ടോ ഉപയോഗിക്കൂ</string>
+    <string name="core_image_picker_retake">വീണ്ടും എടുക്കുക</string>
+    <string name="core_image_picker_choose_different">മറ്റൊന്ന് തിരഞ്ഞെടുക്കുക</string>
+    <string name="core_image_picker_upload_photo">ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുക</string>
+    <string name="core_image_picker_rotate">തിരിക്കുക</string>
+    <string name="core_image_picker_provide_camera_permissions">ദയവായി ക്യാമറ അനുവാദം നൽകുക!!</string>
+    <string name="core_image_picker_take_photo">ഫോട്ടോ എടുക്കുക</string>
+    <string name="core_image_picker_take_selfie">സെൽഫി എടുക്കുക</string>
+    <string name="core_image_picker_make_sure_photo_is_visible">നിങ്ങളുടെ ഫോട്ടോ കാണുന്നുണ്ടെന്ന് ഉറപ്പാക്കുക.</string>
+    <string name="core_image_picker_place_your_document_inside_the_frame">നിങ്ങളുടെ %s ഫ്രെയിമിനുള്ളിൽ വയ്ക്കുക.</string>
+    <string name="core_image_picker_pan_card">PAN കാർഡ്</string>
+    <string name="core_image_picker_aadhar_card">ആധാർ കാർഡ്</string>
+    <string name="core_image_picker_driving_license">ഡ്രൈവിങ് ലൈസൻസ്</string>
+    <string name="core_image_picker_passport">പാസ്പോർട്ട്</string>
+    <string name="core_image_picker_voters_id">വോട്ടർ ഐഡി</string>
+    <string name="core_image_picker_make_sure_your_face_is_in_the_frame">നിങ്ങളുടെ മുഖം ഫ്രെയിമിനുള്ളിൽ ആണെന്ന് ഉറപ്പാക്കുക.</string>
+    <string name="core_image_picker_please_make_sure_the_photo_is_clear">ദയവായി ഫോട്ടോ വ്യക്തമാണെന്ന് ഉറപ്പാക്കുക.</string>
+    <string name="core_image_picker_front_side">മുൻ വശം</string>
+    <string name="core_image_picker_provide_gallery_permissions">ദയവായി ഫയലുകൾക്കും മീഡിയക്കും റീഡ് അനുവാദം നൽകുക!</string>
+    <string name="core_image_picker_document">ഡോക്യുമെന്റ്</string>
+    <string name="core_image_picker_powered_by_hyperverge">പ്രായോജകർ ഹൈപ്പർവെർജ്</string>
+    <string name="core_image_picker_something_went_wrong">എന്തോ പിശക് പറ്റി! ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="core_image_picker_preview">പ്രിവ്യൂ ചെയ്യുക</string>
+    <string name="core_image_picker_document_easy_to_read">നിങ്ങളുടെ ഡോക്യുമെന്റ് വായിക്കാൻ എളുപ്പമാണോ?</string>
+    <string name="core_image_picker_please_make_sure_document_is_clear_and_visible">നിങ്ങളുടെ ഡോക്യുമെന്റ് മുഴുവനും വ്യക്തവും കാണാവുന്നതുമാണെന്ന് ദയവായി ഉറപ്പാക്കുക.</string>
+    <string name="core_image_picker_crop_and_rotate">മുറിക്കുക &amp; തിരിക്കുക</string>
+    <string name="core_image_picker_crop_image">ചിത്രം മുറിക്കുക</string>
+    <string name="core_image_picker_confirm">സ്ഥിരീകരിക്കുക</string>
+    <string name="core_image_picker_done">ചെയ്തു</string>
+    <string name="core_image_picker_cancel">റദ്ദാക്കുക</string>
+    <string name="core_image_picker_retake_photo"><u>ഫോട്ടോ വീണ്ടും എടുക്കുക</u></string>
+    <string name="core_image_picker_retake_selfie"><u>സെൽഫി വീണ്ടും എടുക്കുക</u></string>
+    <string name="core_image_picker_choose_a_different_photo"><u>മറ്റൊരു ഫോട്ടോ തിരഞ്ഞെടുക്കുക</u></string>
+    <string name="core_image_picker_drag_the_handles_to_crop_the_photo">ചിത്രം മുറിക്കാൻ ഹാൻഡിലുകൾ വലിക്കുക.</string>
+    <string name="core_image_picker_preview_your_selfie">നിങ്ങളുടെ സെൽഫിയുടെ പ്രിവ്യൂ കാണുക</string>
+    <string name="core_image_picker_please_check_selfie_is_clear">നിങ്ങളുടെ സെൽഫി വ്യക്തമാണോ എന്ന് പരിശോധിക്കുക.</string>
+    <string name="core_image_picker_awesome_click_the_selfie_now">അടിപൊളി. ഇപ്പോൾ സെൽഫി ക്ലിക്ക് ചെയ്യുക.</string>
+    <string name="core_image_picker_provide_permission">അനുവാദം നൽകുക</string>
+    <string name="core_image_picker_access_to_your_camera_has_been_prohibited_message"><b>നിങ്ങളുടെ ക്യാമറ ഉപയോഗിക്കാനുള്ള അനുവാദം നിരോധിച്ചിരിക്കുന്നു.</b> \n\nനിങ്ങളുടെ സ്ഥിരീകരണ പ്രക്രിയ തുടരാൻ ജാർ ആപ്പ് ദയവായി എനേബിൾ ചെയ്ത ഫോൺ ക്യാമറ ആക്സസ് ചെയ്യുക. </string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDarkColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/feature_lending_toolbar_with_help" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="32dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCaution"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:srcCompat="@drawable/feature_lending_ic_warning" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/something_went_wrong"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/feature_lending_sorry_error_we_couldnt_catch"
+            android:textColor="@color/color_D5CDF2"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="32dp" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            app:buttonDrawablePadding="8dp"
+            app:buttonDrawableStart="@drawable/ic_whatsapp_help_support_20dp"
+            app:buttonDrawableTint="@color/white"
+            app:buttonText="@string/feature_lending_contact_support_non_underline"
+            app:buttonType="secondaryHollowButton" />
+
+    </LinearLayout>
+</ScrollView>

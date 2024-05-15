@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-cache-path
+        name="public"
+        path="/shared" />
+    <external-files-path
+        name="external_files"
+        path="/shared" />
+    <cache-path
+        name="cache"
+        path="/shared" />
+    <external-cache-path
+        name="external_cache"
+        path="/shared" />
+    <files-path
+        name="files"
+        path="/shared" />
+    <external-cache-path
+        name="public"
+        path="/images" />
+    <external-files-path
+        name="external_files"
+        path="/images" />
+    <cache-path
+        name="cache"
+        path="/images" />
+    <external-cache-path
+        name="external_cache"
+        path="/images" />
+    <files-path
+        name="files"
+        path="/images" />
+</paths>

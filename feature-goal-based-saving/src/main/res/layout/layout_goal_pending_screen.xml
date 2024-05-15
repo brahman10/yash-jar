@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272239"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlPendingHeading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="#D3A25F"
+        android:padding="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/leftImageView"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/pending_cup" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pendingBarHeadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_toRightOf="@id/leftImageView"
+            android:lineHeight="20sp"
+            android:text="Goal setup is in progress..."
+            android:textColor="#282E3D"
+            android:textFontWeight="600"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rightImageView"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_forward"
+            android:tint="#282E3D" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/InfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/goal_pending_screen_top_bg"
+        app:layout_constraintTop_toBottomOf="@id/rlPendingHeading">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:textFontWeight="600"
+            android:textSize="@dimen/dimen_16sp"
+            android:lineHeight="24sp"
+            android:textColor="#EEEAFF"
+            android:text="You Goal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/secondTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstTextView"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="“I want to save ₹5,00,000 for Asli Behan ki Shaadi in 12 months”"
+            android:textColor="#EEEAFF"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_20dp"
+            android:background="@drawable/goal_pending_screen_bottom_bg"
+            android:layout_below="@id/secondTextView">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/thirdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageView"
+                android:textFontWeight="600"
+                android:textSize="@dimen/dimen_16sp"
+                android:lineHeight="24sp"
+                android:textColor="#282E3D"
+                android:text="You will be saving" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fourthTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thirdTextView"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textStyle="bold"
+                android:textFontWeight="700"
+                android:lineHeight="24sp"
+                android:textColor="@color/black"
+                android:text="₹5,000 " />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fifthTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fourthTextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                android:textFontWeight="500"
+                android:lineHeight="24sp"
+                android:text="Daily in Gold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jewel_shadow" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

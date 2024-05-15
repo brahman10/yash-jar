@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_114447"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="22dp"
+            android:layout_marginStart="56dp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="14sp"
+            tools:text="Spends Tracker" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="62dp"
+            android:background="#1AACA1D3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@+id/clToolBar"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:src="@drawable/bg_education_header" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvIntoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="2sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:translationY="-1.06sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntoText"
+        app:lineHeight="36sp"
+        tools:text="Spends Tracker" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvIntoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="3sp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:translationY="-1.53sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clToolBar"
+        tools:text="Introducing" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/privacyInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="#114447"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgImage">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvdisclaimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="@dimen/dimen_18sp"
+            tools:drawableStart="@drawable/verified"
+            tools:text="Your data is safe and not shared with anybody" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.jar.app.core_ui.widget.grid_recycler_view.GridRecyclerView
+        android:id="@+id/rvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewReport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacyInfoLayout"
+        app:spanCount="2"
+        tools:itemCount="4"
+        tools:listitem="@layout/feature_education_cell_spends_tracker" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnViewReport"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:buttonText="View Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textMarginBottom="21dp"
+        app:textMarginTop="21dp"
+        app:cardCornerRadius="@dimen/dimen_12dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

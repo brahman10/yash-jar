@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <include
+        android:id="@+id/aadharToolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aadharToolbar"
+        app:layout_constraintVertical_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAadharCardImage"
+                android:layout_width="84dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAadhaarManually"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/feature_lending_kyc_enter_aadhaar_manually"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivAadharCardImage" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEnsureMessageHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_bg_3c3357_12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAadhaarManually">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivGreenTick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvEnsureMobileIsLinked"
+                    app:srcCompat="@drawable/core_ui_ic_tick_plain" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEnsureMobileIsLinked"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/feature_lending_kyc_please_ensure_that_aadhar_is_linked_with_mobile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivGreenTick"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/lendingFeatureGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="ivAadharCardImage,tvAadhaarManually,clEnsureMessageHolder" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEnterAadhaarNumber"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/feature_lending_kyc_enter_aadhaar_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clEnsureMessageHolder" />
+
+            <com.jar.app.core_ui.widget.CustomEditTextWithErrorHandling
+                android:id="@+id/customEditTextAadhaar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEnterAadhaarNumber" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEnterCaptcha"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/feature_lending_kyc_enter_captcha_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/customEditTextAadhaar" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etCaptcha"
+                style="@style/BigTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/core_ui_bg_rounded_2e2942_10dp"
+                android:gravity="start"
+                android:hint="@string/feature_lending_kyc_captcha"
+                android:tag="com.userexperior.dontmask"
+                android:imeOptions="actionDone"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_3E3A4E"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEnterCaptcha" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCaptchaClear"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/etCaptcha"
+                app:layout_constraintEnd_toEndOf="@id/etCaptcha"
+                app:layout_constraintTop_toTopOf="@id/etCaptcha"
+                app:srcCompat="@drawable/ic_close_filled"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCaptchaError"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:textColor="@color/color_EB6A6E"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/core_ui_ic_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etCaptcha"
+                tools:text="Some error"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCaptcha"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintHeight_min="72dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCaptchaError"
+                app:layout_constraintWidth_min="100dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRefreshCaptcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/feature_lending_kyc_ic_white_refresh"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/ivCaptcha"
+                app:layout_constraintStart_toEndOf="@id/ivCaptcha"
+                app:layout_constraintTop_toTopOf="@id/ivCaptcha" />
+
+            <ProgressBar
+                android:id="@+id/pbCaptcha"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/white"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/ivRefreshCaptcha"
+                app:layout_constraintEnd_toEndOf="@id/ivRefreshCaptcha"
+                app:layout_constraintStart_toStartOf="@id/ivRefreshCaptcha"
+                app:layout_constraintTop_toTopOf="@id/ivRefreshCaptcha" />
+
+
+<!--            <Space-->
+<!--                android:id="@+id/spaceView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="0dp"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/btnConfirm"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHeight_min="16dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/ivCaptcha"-->
+<!--                app:layout_constraintVertical_weight="1" />-->
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                app:buttonElevation="0dp"
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="58dp"
+                android:layout_marginTop="34dp"
+                app:buttonText="@string/feature_lending_kyc_confirm"
+                app:buttonTextAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="54dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCaptcha" />
+
+            <View
+                android:id="@+id/separatorLeft"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+                app:layout_constraintEnd_toStartOf="@id/tvDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDivider"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="31dp"
+                android:text="@string/core_ui_or"
+                app:layout_constraintEnd_toStartOf="@id/separatorRight"
+                app:layout_constraintStart_toEndOf="@id/separatorLeft"
+                app:layout_constraintTop_toBottomOf="@id/btnConfirm" />
+
+            <View
+                android:id="@+id/separatorRight"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDivider"
+                app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="31dp"
+                android:background="@drawable/feature_lending_kyc_bg_transparent_rounded_outline_3c3357_27dp"
+                app:layout_constraintBottom_toTopOf="@id/bottomPaddingView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="54dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDivider">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnTakePhoto"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16dp"
+                    android:text="@string/core_ui_take_photo"
+                    android:textColor="@color/white"
+                    app:drawableStartCompat="@drawable/core_ui_ic_camera_outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:id="@+id/bottomPaddingView"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clTakePhoto"
+                android:layout_height="100dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

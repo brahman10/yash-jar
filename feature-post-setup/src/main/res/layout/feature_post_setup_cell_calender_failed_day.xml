@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="44dp"
+    android:minHeight="58dp"
+    android:background="@drawable/round_black_bg_4dp"
+    tools:backgroundTint="@color/bgColor"
+    tools:layout_margin="1dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDay"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tvSelectionCircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDay"
+        tools:text="$22"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSelectionCircle"
+        android:layout_width="@dimen/dimen_12dp"
+        android:layout_height="@dimen/dimen_12dp"
+        android:layout_margin="@dimen/dimen_4dp"
+        android:background="@drawable/feature_post_setup_bg_selector_failed_state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDay"
+        app:layout_constraintBottom_toBottomOf="@id/tvDay"/>
+
+    <View
+        android:id="@+id/disabledStateOverlayBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/feature_post_setup_bg_disabled_state"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPauseState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_EBB46A"
+        android:padding="4dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/feature_post_setup_ic_pause" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

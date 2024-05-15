@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plurals name="feature_round_off_resuming_in">
+        <item quantity="one">Resuming in : %d দিন</item>
+        <item quantity="other">Resuming in : %d দিন</item>
+    </plurals>
+    <plurals name="feature_round_off_n_days">
+        <item quantity="one">%d দিন</item>
+        <item quantity="other">%d দিন</item>
+    </plurals>
+
+    <plurals name="feature_round_off_transactions">
+        <item quantity="zero">%d লেনদেন</item>
+        <item quantity="one">%d লেনদেন</item>
+        <item quantity="other">%d লেনদেন</item>
+    </plurals>
+</resources>

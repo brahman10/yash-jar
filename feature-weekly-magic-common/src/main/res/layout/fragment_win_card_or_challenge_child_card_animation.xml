@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/weekly_magic_bg_card_won" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_divider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animViewMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_mystery_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_magic_card_5_base"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_magic_card_5_design_1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/gl_horizontal_divider"
+        app:layout_constraintEnd_toEndOf="@+id/animViewMain"
+        app:layout_constraintStart_toStartOf="@+id/animViewMain"
+        app:layout_constraintTop_toTopOf="@+id/animViewMain"
+        tools:visibility="visible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gl_horizontal_divider"
+        app:lottie_loop="false" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCongratsMessage"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/feature_weekly_magic_common_gold_purchase_n_successful"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_horizontal_divider" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHoorayMessage"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/feature_weekly_magic_common_hooray"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

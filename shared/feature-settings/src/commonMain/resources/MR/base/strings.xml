@@ -1,0 +1,124 @@
+<resources>
+    <string name="feature_settings_payment_settings">PAYMENT SETTINGS</string>
+    <string name="feature_settings_app_settings">APP SETTINGS</string>
+    <string name="feature_settings_privacy_and_permission">PRIVACY AND PERMISSIONS</string>
+    <string name="feature_settings_testing">Testing</string>
+
+    <string name="feature_settings_payment_methods">Payment Methods</string>
+    <string name="feature_settings_auto_invest">Auto Invest</string>
+    <string name="feature_settings_daily_savings">Daily Savings</string>
+    <string name="feature_settings_round_off">Round Off</string>
+    <string name="feature_settings_notification_settings">Notification Settings</string>
+    <string name="feature_settings_language">Language</string>
+    <string name="feature_settings_battery_optimizations">Battery Optimization</string>
+    <string name="feature_settings_jar_security_shield">Jar Security Shield</string>
+    <string name="feature_settings_terms_and_conditions">Terms and Conditions</string>
+    <string name="feature_settings_privacy_policy">Privacy Policy</string>
+    <string name="feature_settings_testing_activity">Testing Activity</string>
+    <string name="feature_settings_base_api_url">API Base URL</string>
+
+    <string name="feature_settings_saved_upi_ids">Saved UPI ID’s</string>
+    <string name="feature_settings_add_a_new_upi_id">Add a new UPI ID</string>
+    <string name="feature_settings_you_need_to_have_a_registered_upi_id">You need to have a registered UPI ID.</string>
+    <string name="feature_settings_saved_cards">Saved Cards</string>
+    <string name="feature_settings_add_a_new_card">Add a new Card</string>
+    <string name="feature_settings_you_can_save_your_credit_debit_cards">You can save your Credit/Debit cards</string>
+    <string name="feature_settings_on">On</string>
+    <string name="feature_settings_off">Off</string>
+    <string name="feature_settings_enabled">Enabled</string>
+    <string name="feature_settings_disabled">Disabled</string>
+    <string name="feature_settings_tap_to_edit">Tap to edit</string>
+    <string name="feature_settings_invalid_card_number_please_try_agin">Invalid card number. Please try again.</string>
+    <string name="feature_settings_invalid_expiry_date_please_try_agin">Invalid Expiry date. Please try again.</string>
+    <string name="feature_settings_add_cvv">Add CVV</string>
+
+    <string name="feature_settings_security_shield_des">Use your existing phone lock to add\nextra security to your account.</string>
+    <string name="feature_settings_enable">Enable</string>
+    <string name="feature_settings_active">Active</string>
+    <string name="feature_settings_paused">Paused</string>
+    <string name="feature_settings_stopped">Stopped</string>
+    <string name="feature_settings_disable">Disable</string>
+    <string name="feature_settings_i_ll_do_it_later">I’ll do it later</string>
+    <string name="feature_settings_confirm_your_password">Confirm your password</string>
+    <string name="feature_settings_authentication_failed">Authentication failed</string>
+    <string name="feature_settings_why_do_we_need_this">Why do we need this?</string>
+    <string name="feature_settings_to_ensure_that_your_spends_are_detected_even_when_jar_app_is_not_open">To ensure that your spends are detected even when Jar App is not open.</string>
+    <string name="feature_settings_how_should_i_do_this">How should I do this?</string>
+    <string name="feature_settings_please_change_your_jar_battery_settings">Please change your Jar battery settings or enable AutoStart by clicking on the button below.</string>
+    <string name="feature_settings_optimize_now">Optimize Now</string>
+    <string name="feature_settings_will_not_misuse_this_service">Please be assured that Jar will not misuse this service.</string>
+    <string name="feature_settings_battery_optimization">Battery Optimization</string>
+    <string name="feature_settings_language_settings">Language Settings</string>
+    <string name="feature_settings_please_select_app_language">Please select app language</string>
+    <string name="feature_settings_okay2">Okay</string>
+    <string name="feature_settings_apply">Apply</string>
+    <string name="feature_settings_gold_price_alerts">Gold Price Alerts</string>
+    <string name="feature_settings_gold_price_alerts_description">Get timely alerts when prices drop so you can invest at the best price.</string>
+    <string name="feature_settings_shubh_muhurat_alerts">Shubh Muhurat Alerts</string>
+    <string name="feature_settings_shubh_muhurat_alerts_description">Get timely alerts to buy gold during Shubh Muhurats.</string>
+    <string name="feature_settings_round_off_enabled">Round Off is enabled</string>
+    <string name="feature_settings_round_off_disabled">Round Off is disabled</string>
+    <string name="feature_settings_round_off_enabled_des">We’ll detect your spends, round them off to next ten, and save them in digital gold.</string>
+    <string name="feature_settings_round_off_disabled_des">Round offs disabled: We won’t round off your spends and save them in digital gold.</string>
+    <string name="feature_settings_round_off_to_next">Round Off to next</string>
+    <string name="feature_settings_edit_u"><u>Edit</u></string>
+    <string name="feature_settings_pause_round_off">Pause Round Off</string>
+    <string name="feature_settings_resume_now_u"><u>Resume now</u></string>
+    <string name="feature_settings_pause_u"><u>Pause</u></string>
+    <string name="feature_settings_rs_value">₹%.2f</string>
+    <string name="feature_settings_rs_value_int">₹%d</string>
+    <string name="feature_settings_rs_value_string">₹%s</string>
+    <string name="feature_settings_enter_your_upi_id">Enter your UPI ID</string>
+    <string name="feature_settings_verify">Verify</string>
+    <string name="feature_settings_cancel">Cancel</string>
+    <string name="feature_settings_upi_id">UPI ID</string>
+    <string name="feature_settings_upi_id_added_successfully">%s added successfully</string>
+    <string name="feature_settings_invalid_upi">Invalid UPI ID. Please try again.</string>
+    <string name="feature_settings_invalid_upi_enter_correct">Invalid UPI ID entered. Please enter your correct UPI ID.</string>
+    <string name="feature_settings_round_off_nresumed">Yay! Round Offs Resumed</string>
+    <string name="feature_settings_round_off_resumed_des">We will round off your spends and save them\nautomatically.</string>
+    <string name="feature_settings_its_good_to_see_you_save_again">It\'s good to see you save again</string>
+    <string name="feature_settings_round_off_is_disabled">Round Off is disabled</string>
+    <string name="feature_settings_round_off_set_successfully">Round Off set successfully</string>
+    <string name="feature_settings_set">Set</string>
+    <string name="feature_settings_5">5</string>
+    <string name="feature_settings_10">10</string>
+    <string name="feature_settings_day">Day</string>
+    <string name="feature_settings_days">Days</string>
+    <string name="feature_settings_pause_round_off_for">Pause Round Off for</string>
+    <string name="feature_settings_round_off_paused_for">Round Off paused for</string>
+    <string name="feature_settings_round_off_to_des">We’ll round off your payments to the nearest 10,\nand invest your spare change in gold.</string>
+    <string name="feature_settings_invest_10_if_no_spends_are_detected">Invest ₹10 if no spends are detected</string>
+    <string name="feature_settings_in_progress">In Progress…</string>
+    <string name="feature_settings_failed">Failed</string>
+    <string name="feature_settings_setup_now">Setup Now</string>
+    <string name="feature_settings_delete_upi_des">Are you sure you want to delete\nthis UPI ID?</string>
+    <string name="feature_settings_delete_card_des">Are you sure you want to delete\nthis card?</string>
+    <string name="feature_settings_delete">Delete</string>
+    <string name="feature_settings_upi_associated_to_auto_save">This UPI ID is associated with Auto-Save as well. To disable Auto-Save, please go to Auto-Save in the Settings page.</string>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one">Resuming in : %d day</item>
+        <item quantity="other">Resuming in : %d days</item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="feature_settings_resuming_tomorrow">Resuming Tomorrow</string>
+    <string name="feature_settings_update_auto_save">Update Auto-Save</string>
+    <string name="feature_settings_to_save_roundoffs_automatically">To save roundoffs automatically, You will have to set auto-save again.</string>
+    <string name="feature_settings_invalid_upi_id">Invalid UPI ID</string>
+    <string name="feature_settings_verify_and_add">Verify And Add</string>
+    <string name="example_xyz" translatable="false">example@xyz</string>
+
+    <string name="feature_settings_savings_plan">Savings Plan</string>
+    <string name="feature_settings_upto_x">Upto ₹%d</string>
+
+    <string name="feature_settings_gold_price_alert_enabled">Gold price alert enabled</string>
+    <string name="feature_settings_gold_price_alert_disabled">Gold price alert disabled</string>
+    <string name="feature_settings_shubh_muhurat_alert_enabled">Shubh Muhurat alert enabled</string>
+    <string name="feature_settings_shubh_muhurat_alert_disabled">Shubh Muhurat alert disabled</string>
+
+    <string name="core_ui_empty" translatable="false" />
+    <string name="feature_buy_gold_currency_sign_x_int">\u20B9%d</string>
+</resources>

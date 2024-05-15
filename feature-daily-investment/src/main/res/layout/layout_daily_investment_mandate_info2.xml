@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubscriptionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter"
+        android:lineHeight="@dimen/dimen_22dp"
+        android:textColor="@color/color_D5CDF2"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="@dimen/dimen_22dp"
+        tools:text="Daily Savings" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubscriptionStaus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="@dimen/dimen_14dp"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:fontFamily="@font/inter"
+        android:lineHeight="@dimen/dimen_22dp"
+        android:textColor="@color/smallTxtColor"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:drawableStartCompat="@drawable/ic_tick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubscriptionName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lineHeight="@dimen/dimen_18dp"
+        tools:text="Active" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMandateAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/inter"
+        android:lineHeight="@dimen/dimen_22dp"
+        android:textColor="@color/color_D5CDF2"
+        android:textFontWeight="700"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₹30/day" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

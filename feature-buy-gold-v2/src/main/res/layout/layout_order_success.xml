@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDownloadInvoice"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_buy_gold_v2_download_invoice"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/tvDownloadInvoice">
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnShare"
+
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="0dp"
+            android:translationZ="0dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvShare"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="@string/core_ui_share"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            app:drawableStartCompat="@drawable/ic_whatsapp"
+            app:layout_constraintBottom_toBottomOf="@id/btnShare"
+            app:layout_constraintEnd_toEndOf="@id/btnShare"
+            app:layout_constraintStart_toStartOf="@id/btnShare"
+            app:layout_constraintTop_toTopOf="@id/btnShare" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tvShare,btnShare" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGoldCreditMessage"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/feature_buy_gold_v2_gold_will_be_credited"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnGotIt"
+
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            app:buttonText="@string/feature_buy_gold_v2_got_it"
+            app:buttonTextAllCaps="false"
+            android:translationZ="0dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/tvGoldCreditMessage" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupGoldCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tvGoldCreditMessage,btnGotIt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/feature_buy_gold_v2_bg_gold_price_alert"
+        android:clickable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clButtonsLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderSetAlert"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="start"
+            android:text="@string/feature_buy_gold_v2_set_price_alert"
+            app:layout_constraintBottom_toTopOf="@+id/tvHeaderSetAlertDesc"
+            app:layout_constraintEnd_toStartOf="@id/btnSetAlert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderSetAlertDesc"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/inter"
+            android:gravity="start|center_vertical"
+            android:text="@string/feature_buy_gold_v2_youll_get_price_alerts"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSetAlert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderSetAlert"
+            app:lineHeight="24sp" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSetAlert"
+
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="30dp"
+            app:buttonText="@string/feature_buy_gold_v2_set_alert"
+            app:buttonTextAllCaps="false"
+            app:textMarginStart="30dp"
+            app:textMarginEnd="30dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/dynamicRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+        android:requiresFadingEdge="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clButtonsLayout"
+        tools:itemCount="2"
+        tools:layout_marginTop="10dp"
+        tools:listitem="@layout/dynamic_cards_cell_strip_two"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

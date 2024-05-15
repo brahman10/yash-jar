@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBgColor"
+    tools:context=".impl.ui.daily_saving_setup_v2.DailySavingsV2Fragment">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_18dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/one" />
+
+            <View
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/two" />
+
+            <View
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/three" />
+
+            <View
+                android:id="@+id/five"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/four" />
+
+            <View
+                android:id="@+id/six"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/five" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/color_272239"
+        android:minHeight="57dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="18dp"
+            android:background="?attr/actionBarItemBackground"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_small" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/feature_daily_savings"
+            android:textSize="@dimen/dimen_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="@dimen/dimen_22dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clJarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-16dp"
+        android:background="@drawable/feature_daily_investment_setup_gradient"
+        app:layout_constraintBottom_toTopOf="@id/cvSelectAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:textColor="@color/smallTxtColor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="28dp"
+            tools:text="If you save ₹15,000 \n
+daily, you will have..." />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/jarGroup"
+                    app:constraint_referenced_ids="jar1,jar2,jar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/jar1"
+                    layout="@layout/layout_daily_investment_setup_cell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/jar2"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <include
+                    android:id="@+id/jar2"
+                    layout="@layout/layout_daily_investment_setup_cell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/jar3"
+                    app:layout_constraintStart_toEndOf="@+id/jar1" />
+
+                <include
+                    android:id="@+id/jar3"
+                    layout="@layout/layout_daily_investment_setup_cell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jar2" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cv24kGoldFact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/jar1">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivGoldBrick"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/gold_brick_with_stars_36x36"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv24KGold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-16dp"
+                        android:gravity="start"
+                        android:paddingVertical="6dp"
+                        android:paddingStart="@dimen/dimen_20dp"
+                        android:paddingEnd="@dimen/dimen_15dp"
+                        android:textColor="@color/color_FFDA2D"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:layout_constraintBottom_toBottomOf="@id/ivGoldBrick"
+                        app:layout_constraintStart_toEndOf="@id/ivGoldBrick"
+                        app:layout_constraintTop_toTopOf="@id/ivGoldBrick"
+                        tools:text="Your money is saved in 24K gold daily" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvSelectAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/core_ui_bg_top_rounded_corner"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSeekbarHeading"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:gravity="start"
+            android:text="@string/feature_daily_investment_select_amount"
+            android:textColor="@color/color_D2C7F6"
+            app:layout_constraintEnd_toStartOf="@id/cvSeekbarAmount"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvSeekbarAmount"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/feature_daily_investment_edit_amount_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSeekbarHeading">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSeekbarAmount"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="20dp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivEditIcon"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="₹30" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEditIcon"
+                android:layout_width="@dimen/dimen_12dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:layout_marginEnd="18dp"
+                android:src="@drawable/ic_ds_edit_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSuggestedAmount"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="-6dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/cvSeekbarAmount"
+            app:layout_constraintTop_toBottomOf="@id/cvSeekbarAmount"
+            tools:itemCount="3"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/feature_daily_investment_cell_suggested_gold_amount"
+            tools:orientation="horizontal" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnProceed"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="12dp"
+            app:buttonText="Proceed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvSuggestedAmount" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnProceed">
+
+            <com.jar.app.core_ui.widget.OverlappingProfileView
+                android:id="@+id/overlappingView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvFooter"
+                app:layout_constraintHeight_min="18dp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFooter"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                android:gravity="left"
+                android:text="Trusted by 2L+ Jar users"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintBottom_toBottomOf="@id/overlappingView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/overlappingView"
+                app:layout_constraintTop_toTopOf="@id/overlappingView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/oneStepPayment"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

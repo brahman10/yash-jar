@@ -1,0 +1,10 @@
+<resources>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one">പുനരാരംഭിക്കുന്നത് : %d ദിവസം</item>
+        <item quantity="other">പുനരാരംഭിക്കുന്നത് : %d ദിവസങ്ങൾ</item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d ദിവസം</item>
+        <item quantity="other">%d ദിവസങ്ങൾ</item>
+    </plurals>
+</resources>

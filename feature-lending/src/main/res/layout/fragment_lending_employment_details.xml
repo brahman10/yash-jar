@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="16dp"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvIntroWithName"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/feature_lending_enter_your_employment_details"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineHeight="33sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                android:background="@drawable/core_ui_bg_rounded_2e2942_18dp"
+                app:layout_constraintTop_toBottomOf="@id/tvIntroWithName">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_max="136dp"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="stage_money.lottie"
+                    app:lottie_loop="false" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPreApprovedTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_get_preapproved_loan_upto"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tvOfferAmount"
+                    app:layout_constraintEnd_toEndOf="@id/guideline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOfferAmount"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="start"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/guideline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvPreApprovedTitle"
+                    tools:text="50000" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/headingEmploymentType"
+                style="@style/CommonBoldTextViewStyle"
+                android:textColor="@color/color_EEEAFF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/feature_lending_employment_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clCardView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSalaried"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/feature_lending_ic_radio_selected"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/feature_lending_salaried"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headingEmploymentType" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSelfEmployed"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:drawableStart="@drawable/feature_lending_ic_radio_unselected"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/feature_lending_self_employed"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintBottom_toBottomOf="@id/tvSalaried"
+                app:layout_constraintStart_toEndOf="@id/tvSalaried"
+                app:layout_constraintTop_toTopOf="@id/tvSalaried" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/headingCompanyName"-->
+            <!--                style="@style/CommonBoldTextViewStyle"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="24dp"-->
+            <!--                android:gravity="start|center_vertical"-->
+            <!--                android:text="@string/fetaure_lending_company_name"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tvSalaried" />-->
+
+            <!--            <androidx.appcompat.widget.AppCompatEditText-->
+            <!--                android:id="@+id/etCompanyName"-->
+            <!--                style="@style/CommonTextViewStyle"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/rounded_black_bg_16dp"-->
+            <!--                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "-->
+            <!--                android:gravity="start|center_vertical"-->
+            <!--                android:hint="@string/feature_lending_eg_your_company_pvt_ltd"-->
+            <!--                android:imeOptions="actionDone"-->
+            <!--                android:inputType="textVisiblePassword"-->
+            <!--                android:maxLength="50"-->
+            <!--                android:maxLines="1"-->
+            <!--                android:paddingHorizontal="10dp"-->
+            <!--                android:paddingVertical="18dp"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:textColorHint="@color/color_776E94"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/headingCompanyName" />-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/headingIncome"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/color_EEEAFF"
+                android:gravity="start|center_vertical"
+                android:text="@string/feature_lending_monthly_income"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSalaried" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableStart="@drawable/feature_lending_ic_rupee_purple"
+                app:drawableTint="@color/color_EEEAFF"
+                android:id="@+id/etIncome"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:digits="0123456789"
+                android:gravity="start|center_vertical"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:paddingHorizontal="26dp"
+                android:paddingVertical="18dp"
+                android:singleLine="true"
+                android:tag="com.userexperior.dontmask"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headingIncome" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivIncomeClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                app:srcCompat="@drawable/feature_lending_ic_cross_circle_filled"
+               app:layout_constraintTop_toTopOf="@id/etIncome"
+                app:layout_constraintBottom_toBottomOf="@id/etIncome"
+                app:layout_constraintEnd_toEndOf="@id/etIncome"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/headingIncomeError"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/feature_lending_ic_error"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/feature_lending_monthly_income_cannot_be_0"
+                android:textColor="@color/redAlertText"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etIncome" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/headingEmail"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_EEEAFF"
+                android:layout_marginTop="24dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headingIncomeError" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etEmail"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingHorizontal="26dp"
+                android:paddingVertical="18dp"
+                android:singleLine="true"
+                android:autofillHints="emailAddress"
+                android:textColorHint="@color/color_776E94"
+                android:tag="com.userexperior.dontmask"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headingEmail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/headingEmailError"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/feature_lending_ic_error"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/feature_lending_email_error"
+                android:textColor="@color/redAlertText"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWarning"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:text="@string/feature_lending_once_submitted_can_not_be_edited"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headingEmailError" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/headingPinCode"-->
+            <!--                style="@style/CommonBoldTextViewStyle"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="24dp"-->
+            <!--                android:gravity="start|center_vertical"-->
+            <!--                android:text="@string/pincode"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/headingEmailError" />-->
+
+            <!--            <androidx.appcompat.widget.AppCompatEditText-->
+            <!--                android:id="@+id/etPinCode"-->
+            <!--                style="@style/CommonTextViewStyle"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/rounded_black_bg_16dp"-->
+            <!--                android:gravity="start|center_vertical"-->
+            <!--                android:hint="123456"-->
+            <!--                android:inputType="number"-->
+            <!--                android:maxLength="6"-->
+            <!--                android:maxLines="1"-->
+            <!--                android:paddingHorizontal="10dp"-->
+            <!--                android:paddingVertical="18dp"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:textColorHint="@color/color_776E94"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/headingPinCode" />-->
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/headingPinCodeError"-->
+            <!--                style="@style/SmallTextViewStyle"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:drawableStart="@drawable/feature_lending_ic_error"-->
+            <!--                android:drawablePadding="8dp"-->
+            <!--                android:gravity="start|center_vertical"-->
+            <!--                android:text="@string/feature_lending_pincode_error"-->
+            <!--                android:textColor="@color/redAlertText"-->
+            <!--                android:visibility="gone"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/etPinCode" />-->
+
+            <!--            <androidx.constraintlayout.widget.Group-->
+            <!--                android:id="@+id/groupCompanyName"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:visibility="visible"-->
+            <!--                app:constraint_referenced_ids="headingCompanyName,etCompanyName" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:buttonElevation="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        app:buttonText="@string/feature_lending_continue"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaidAmount"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:text="@string/feature_round_off_paid_x"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRoundOffAmount"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:text="@string/core_ui_rs_x_int"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaidAmount"
+        tools:text="3 Mar’22 | 3:43pm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRoundedOffToo"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/feature_round_off_rounded_off_to_x"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaidAmount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaidTo"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/clCategoryContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        tools:text="Paid to: Manjunath singh to axis bank" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCategoryContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:background="@drawable/bg_rounded_corner_solid_white_radius_5"
+        app:layout_constraintBottom_toBottomOf="@id/tvPaidTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPaidTo"
+        tools:backgroundTint="@color/color_EB6A6E_10">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCategoryIcon"
+            android:layout_width="@dimen/dimen_14dp"
+            android:layout_height="@dimen/dimen_14dp"
+            tools:srcCompat="@drawable/ic_gold_brick"
+            android:layout_marginEnd="@dimen/dimen_4dp"
+            app:layout_constraintEnd_toStartOf="@id/tvCategory"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCategory"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/inter_bold"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivCategoryIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dominos"
+            tools:textColor="@color/color_EB6A6E" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

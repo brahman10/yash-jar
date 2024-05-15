@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/bgColor"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingTop="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="24dp"
+        app:fontFamily="@font/inter_bold"
+        android:text="@string/feature_daily_investment_set_daily_saving_amount"
+        app:layout_constraintBottom_toTopOf="@id/clAmount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="4dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/tvHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvHeader"
+        app:srcCompat="@drawable/core_ui_ic_close"
+        app:tint="@color/color_ACA1D3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_black_bg_16dp"
+        app:layout_constraintBottom_toTopOf="@id/tvDesc">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rsSymbol"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/feature_daily_investment_currency_sign"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/separatorVertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/color_707070_opacity_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/separatorVertical"
+            app:layout_constraintStart_toEndOf="@+id/rsSymbol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etBuyAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789"
+            android:gravity="start|center_vertical"
+            android:hint="0"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:textColor="@color/color_EEEAFF"
+            android:textColorHint="@color/color_ACA1D3"
+            android:textSize="20sp"
+            app:fontFamily="@font/inter_bold"
+            app:layout_constraintBottom_toTopOf="@id/separatorVertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/line1"
+            tools:ignore="HardcodedText">
+
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <View
+            android:id="@+id/separatorVertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="13dp"
+            android:background="@color/color_707070_opacity_10"
+            app:layout_constraintBottom_toTopOf="@id/rvSuggestedAmounts" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSuggestedAmounts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingHorizontal="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:itemCount="6"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/feature_daily_investment_cell_suggested_gold_amount"
+            tools:orientation="horizontal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDesc"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/feature_daily_investment_you_can_edit_this_amount_later_from_settings"
+        app:layout_constraintBottom_toTopOf="@id/btnSet" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="25dp"
+        app:buttonText="@string/feature_daily_investment_set"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardGraph"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bottom_d5cdf2_stroke_8dp"
+    android:paddingBottom="30dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrentByPrice"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:text="@string/feature_gold_buy_price_live_gold_price"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceToday"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCurrentByPrice"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrentByPrice"
+        tools:text="4,770.04/gm" />
+
+    <View
+        android:id="@+id/livePriceSeperator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:background="@drawable/feature_gold_price_alert_bg_live_price_separator"
+        app:layout_constraintEnd_toEndOf="@id/tvPriceToday"
+        app:layout_constraintStart_toStartOf="@id/tvPriceToday"
+        app:layout_constraintTop_toBottomOf="@id/tvPriceToday" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llFiveYChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        app:layout_constraintStart_toStartOf="@id/tvPriceToday"
+        app:layout_constraintTop_toBottomOf="@id/livePriceSeperator"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fiveYLabelIv"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            tools:src="@drawable/ic_arrow_back" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fiveYChange"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/dimen_4dp"
+            android:textColor="@color/color_ACA1D3"
+            tools:text="+1.74%" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fiveYValueTv"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="1.43%"
+            android:layout_marginStart="4dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textColor="@color/color_EEEAFF" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/alertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_12dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_846fc0_stroke_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPriceToday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrentByPrice">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/setAlertBtnIv"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            tools:src="@drawable/core_ui_notification_bell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/alertBtnLabelExpanded"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semi_bold"
+            tools:text="Set Alert"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setAlertBtnIv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/alertBtnLabelCollapsed"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semi_bold"
+            tools:text="Set Alert"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="invisible"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setAlertBtnIv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:minHeight="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llFiveYChange" />
+
+    <com.jar.app.core_ui.widget.CustomGridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:drawHorizontal="true"
+        app:drawVertical="false"
+        app:gridColor="#08FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/lineChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lineChart"
+        app:gridHeight="75" />
+
+    <com.jar.app.core_ui.widget.VerticalDashedLine
+        android:id="@+id/dashedLine"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_4dp"
+        android:layerType="software"
+        android:paddingEnd="2dp"
+        app:color="@color/white_30"
+        app:dashGap="5dp"
+        app:dashLength="5dp"
+        app:dashThickness="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/lineChart"
+        app:layout_constraintEnd_toEndOf="@id/rippleBackgroundContainer"
+        app:layout_constraintStart_toStartOf="@id/rippleBackgroundContainer"
+        app:layout_constraintTop_toTopOf="@id/lineChart"
+        app:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rippleBackgroundContainer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/lineChart"
+        app:layout_constraintTop_toTopOf="@id/lineChart">
+
+        <com.skyfishjy.library.RippleBackground
+            android:id="@+id/storyRippleLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rb_color="#fff"
+            app:rb_duration="3000"
+            app:rb_radius="10dp"
+            app:rb_rippleAmount="2"
+            app:rb_scale="2"
+            app:rb_strokeWidth="2dp"
+            app:rb_type="strokeRipple">
+
+        </com.skyfishjy.library.RippleBackground>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blurredMoon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/feature_gold_price_alert_graph_moon_glow_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/feature_gold_price_alert_graph_moon_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/graphDottedAxes"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#4DFFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/lineChart" />
+
+
+    <TextView
+        android:id="@+id/x_start_label_tv"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textColor="@color/color_D5CDF2"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/graphDottedAxes"
+        tools:text="Jun ‘19" />
+
+    <TextView
+        android:id="@+id/goldTvPrice"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_D5CDF2"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:textSize="@dimen/dimen_12sp"
+        android:paddingHorizontal="@dimen/dimen_4dp"
+        android:paddingVertical="2dp"
+        android:background="@drawable/feature_gold_price_alert_bg_rounded_4f4470_4dp"
+        app:layout_constraintBottom_toTopOf="@id/dashedLine"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="₹4,000 on 11th Aug" />
+
+    <TextView
+        android:id="@+id/x_end_label_tv"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textColor="@color/color_D5CDF2"
+        android:textSize="10sp"
+        android:paddingEnd="@dimen/dimen_14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/graphDottedAxes"
+        tools:text="Jun ‘19" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#776e94"
+        app:layout_constraintTop_toBottomOf="@id/lineChart" />
+    <FrameLayout
+        android:id="@+id/tabLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/rounded_aca1d3_stroke_8dp"
+        android:foregroundGravity="center"
+        android:paddingHorizontal="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/x_start_label_tv">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gold_graph_tab_height"
+            android:background="@color/transparent"
+            app:tabGravity="fill"
+            app:tabIconTint="@color/transparent"
+            app:tabIndicator="@drawable/gradient_yellow_transparent"
+            app:tabIndicatorColor="#D5CDF2"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="40dp"
+            app:tabMinWidth="@dimen/dimen_60dp"
+            app:tabMode="fixed"
+            app:tabPadding="@dimen/dimen_4dp"
+            app:tabRippleColor="@color/white"
+            app:tabSelectedTextColor="@color/color_282E3D"
+            app:tabTextAppearance="@style/tabLayoutSemiBold"
+            app:tabTextColor="@color/white" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

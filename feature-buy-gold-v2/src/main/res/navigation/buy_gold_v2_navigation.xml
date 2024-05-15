@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buy_gold_v2_navigation"
+    app:startDestination="@id/buyGoldV2Fragment">
+
+    <fragment
+        android:id="@+id/buyGoldV2Fragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.buy_gold.BuyGoldV2Fragment"
+        android:label="BuyGoldV2Fragment"
+        tools:layout="@layout/fragment_new_buy_gold_v2">
+        <deepLink app:uri="android-app://com.jar.app/buyGoldV2/{data}/{buyGoldFlowContext}/{clickTime}" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_auspiciousDatesBottomSheet"
+            app:destination="@id/auspiciousDatesBottomSheet" />
+        <argument
+            android:defaultValue="NO_CODE"
+            android:name="data"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:defaultValue="0"
+            android:name="clickTime"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="buyGoldFlowContext"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_couponCodeAppliedDialogFragment"
+            app:destination="@id/couponCodeAppliedDialogFragment" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_enterCouponCodeDialog"
+            app:destination="@id/enterCouponCodeDialog" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_buyGoldV2BreakdownBottomSheetFragment"
+            app:destination="@id/buyGoldV2BreakdownBottomSheetFragment" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_offerListPageFragment"
+            app:destination="@id/offerListPageFragment" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_couponListPageFragment"
+            app:destination="@id/couponListPageFragment" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_buyGoldV2BottomSheet"
+            app:destination="@id/buyGoldV2BottomSheet" />
+        <action
+            android:id="@+id/action_buyGoldV2Fragment_to_buyGoldV2BreakdownBottomSheetFragmentV2"
+            app:destination="@id/buyGoldV2BreakdownBottomSheetFragmentV2" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/auspiciousDatesBottomSheet"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.auspicious_sheet.AuspiciousDatesBottomSheet"
+        android:label="AuspiciousDatesBottomSheet"
+        tools:layout="@layout/bottom_sheet_auspicious_dates" />
+
+    <dialog
+        android:id="@+id/couponCodeAppliedDialogFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.coupon_code.CouponCodeAppliedDialogFragment"
+        android:label="CouponCodeAppliedDialogFragment"
+        tools:layout="@layout/fragment_coupon_code_applied_dialog" >
+        <argument
+            android:name="couponApplied"
+            app:argType="com.jar.app.feature_coupon_api.domain.model.CouponApplied"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/enterCouponCodeDialog"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.coupon_code.EnterCouponCodeDialog"
+        android:label="EnterCouponCodeDialog"
+        tools:layout="@layout/dialog_enter_coupon_code"/>
+
+    <dialog
+        android:id="@+id/buyGoldV2BreakdownBottomSheetFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.breakdown.BuyGoldV2BreakdownBottomSheetFragment"
+        android:label="BuyGoldV2BreakdownBottomSheetFragment"
+        tools:layout="@layout/fragment_buy_gold_v2_breakdown_bottom_sheet">
+        <argument
+            android:name="breakDownData"
+            app:argType="com.jar.app.feature_buy_gold_v2.shared.domain.model.BuyGoldV2BreakdownData"
+            app:nullable="false" />
+    </dialog>
+
+
+    <dialog
+        android:id="@+id/buyGoldV2BreakdownBottomSheetFragmentV2"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.breakdown.BuyGoldV2BreakdownBottomSheetFragmentV2"
+        android:label="BuyGoldV2BreakdownBottomSheetFragment"
+        tools:layout="@layout/fragment_buy_gold_v2_breakdown_bottom_sheet_v2">
+        <argument
+            android:name="breakDownData"
+            app:argType="com.jar.app.feature_buy_gold_v2.shared.domain.model.BuyGoldV2BreakdownData"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/orderStatusFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.order_status.OrderStatusFragment"
+        android:label="OrderStatusFragment"
+        tools:layout="@layout/fragment_order_status">
+        <argument
+            android:name="transactionId"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="paymentProvider"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="paymentFlowSource"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="isOneTimeInvestment"
+            app:argType="boolean"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/orderStatus/{transactionId}/{paymentProvider}/{paymentFlowSource}/{isOneTimeInvestment}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderStatusFragmentV2"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.order_status.OrderStatusFragmentV2"
+        android:label="OrderStatusFragmentV2"
+        tools:layout="@layout/fragment_order_status_v2">
+        <argument
+            android:name="orderStatusModelString"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/orderStatusV2/{orderStatusModelString}" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerListPageFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.offers_list.OfferListPageFragment"
+        tools:layout="@layout/fragment_offer_list_page"
+        android:label="OfferListPageFragment">
+        <deepLink app:uri="android-app://com.jar.app/offerListPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/couponDetailsFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.offers_list.coupon_details_page.CouponDetailsFragment"
+        android:label="CouponDetailsFragment">
+        <argument
+            android:name="brandCouponId"
+            app:argType="string"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/couponDetailsPage/{brandCouponId}" />
+    </fragment>
+    <fragment
+        android:id="@+id/jarCouponsFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.offers_list.jar_coupons.JarCouponsFragment"
+        android:label="JarCouponsFragment" />
+    <fragment
+        android:id="@+id/brandCouponsFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.offers_list.brand_coupons.BrandCouponsFragment"
+        android:label="BrandCouponsFragment" />
+    <dialog
+        android:id="@+id/buyGoldV2BottomSheet"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.buy_gold_bottomsheet.BuyGoldV2BottomSheet"
+        tools:layout="@layout/feature_buy_gold_v2_bottomsheet"
+        android:label="BuyGoldV2BottomSheet">
+
+        <deepLink app:uri="android-app://com.jar.app/buyGoldV2BottomSheet" />
+
+    </dialog>
+    <dialog
+        android:id="@+id/couponListPageFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.coupon_code.CouponListPageFragment"
+        android:label="CouponListPageFragment"
+        tools:layout="@layout/fragment_coupon_list_page">
+        <action
+            android:id="@+id/action_couponListPageFragment_to_buyGoldV2Fragment"
+            app:destination="@id/buyGoldV2Fragment" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/buyGoldPaymentOptionBottomSheetFragment"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.payment_option_bottom_sheet.BuyGoldPaymentOptionBottomSheetFragment"
+        android:label="BuyGoldPaymentOptionBottomSheetFragment">
+        <argument
+            android:name="buyGoldPaymentOptionsDataEncoded"
+            app:argType="string"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/buyGoldPaymentOption/{buyGoldPaymentOptionsDataEncoded}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/buyGoldAbandonBottomSheet"
+        android:name="com.jar.app.feature_buy_gold_v2.impl.ui.abandon.BuyGoldAbandonBottomSheet"
+        android:label="AbandonScreenBottomSheet"
+        tools:layout="@layout/feature_buy_gold_bottom_sheet_abandon">
+
+        <argument
+            android:name="buyGoldFlowContext"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/buyGoldAbandonScreenBottomSheet/{buyGoldFlowContext}" />
+    </dialog>
+
+</navigation>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/bgDarkColor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lendingToolbar"
+            layout="@layout/feature_lending_toolbar_with_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llNotified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_6dp"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:background="@color/color_1ea787">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNotified"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/core_ui_ic_green_tick_unfilled"
+                app:tint="@color/white"
+                android:layout_marginEnd="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNotified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:drawableTint="@color/white"
+                android:textSize="@dimen/dimen_12sp"
+                tools:text="We will notify you when we serviceable again." />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivIllustration"
+            android:layout_width="185dp"
+            android:layout_height="163dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="32dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScreenTitle"
+            style="@style/BigTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="16dp"
+            tools:text="@string/feature_lending_please_try_again"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimer"
+            style="@style/BigTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#AB8CFF"
+            android:textSize="20sp"
+            tools:text="00:00:40" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            tools:text="@string/feature_lending_we_couldnt_proceed_because_of_some_technical_problems"
+            android:textColor="@color/color_D5CDF2"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnAction"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="8dp"
+            app:buttonText="@string/feature_lending_notify_me"
+            app:buttonTextAllCaps="false"
+            app:buttonType="primaryButton" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            app:buttonDrawablePadding="@dimen/dimen_10dp"
+            app:buttonDrawableStart="@drawable/ic_whatsapp_help_support_20dp"
+            app:buttonDrawableTint="@color/white"
+            app:buttonText="@string/feature_lending_contact_support_non_underline"
+            app:buttonType="secondaryHollowButton" />
+    </LinearLayout>
+</ScrollView>

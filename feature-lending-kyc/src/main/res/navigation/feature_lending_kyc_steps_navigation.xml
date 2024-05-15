@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feature_lending_kyc_steps_navigation"
+    app:startDestination="@id/dummyScreenFragment">
+
+    <include app:graph="@navigation/image_picker_navigation" />
+
+    <!--Email Actions-->
+    <action
+        android:id="@+id/action_to_emailVerificationFragment"
+        app:destination="@id/emailVerificationFragment"
+        app:launchSingleTop="true" />
+
+    <!--PAN Actions-->
+    <action
+        android:id="@+id/action_to_creditReportOtpVerificationLoadingDialog"
+        app:destination="@id/creditReportOtpVerificationLoadingDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_creditReportFetchedStep"
+        app:destination="@id/creditReportFetchedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_creditReportFetchSuccessDialog"
+        app:destination="@id/creditReportFetchSuccessDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_creditReportNotAvailableFragment"
+        app:destination="@id/creditReportNotAvailableFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_panVerificationFragment"
+        app:destination="@id/panVerificationFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_enterPanManuallyStep"
+        app:destination="@id/enterPanManuallyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_verifyPanDetailsDialog"
+        app:destination="@id/verifyPanDetailsDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_otpVerificationFragment"
+        app:destination="@id/otpVerificationFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_creditReportOtpResendLimitExceededBottomSheet"
+        app:destination="@id/creditReportOtpResendLimitExceededBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_panFromJarLoadingDialog"
+        app:destination="@id/panFromJarLoadingDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_panErrorStatesFragment"
+        app:destination="@id/panErrorStatesFragment"
+        app:launchSingleTop="true" />
+
+    <!--AADHAAR Actions-->
+    <action
+        android:id="@+id/action_to_aadhaarCkycfetchFragment"
+        app:destination="@id/aadhaarCkycfetchFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_aadhaarConfirmationFragment"
+        app:destination="@id/aadhaarConfirmationFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_aadhaarManualEntryFragment"
+        app:destination="@id/aadhaarManualEntryFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_aadhaarManualEntryConsentPromptFragment"
+        app:destination="@id/aadhaarConsentPromptFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_successStepDialog"
+        app:destination="@id/successStepDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_otpLimitExceededBottomSheet"
+        app:destination="@id/otpLimitExceededBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_capturePanPhotoFragment"
+        app:destination="@id/panCapturePhotoFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_captureAadhaarPhotoFragment"
+        app:destination="@id/aadhaarCapturePhotoFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_aadhaarActionPromptFragment"
+        app:destination="@id/aadhaarActionPromptFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_genericLoadingDialog"
+        app:destination="@id/genericLoadingDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_aadhaarUploadFailedFragment"
+        app:destination="@id/aadhaarUploadFailedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_aadhaarEnterCaptchaBottomSheet"
+        app:destination="@id/aadhaarCaptchaBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingKycFaqBottomSheet"
+        app:destination="@id/lendingKycFaqBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_selfieCheckFragment"
+        app:destination="@id/selfieCheckFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_verifiedAadhaarFragment"
+        app:destination="@id/verifiedAadhaarFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_editPanAadhaarDetailsFragment"
+        app:destination="@id/editPanAadhaarDetailsFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_selfieEdgeCaseFragment"
+        app:destination="@id/selfieEdgeCaseFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/dummyScreenFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.DummyScreenFragment"
+        android:label="DummyScreenFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_dummy_screen" />
+
+    <!--Email Flow-->
+    <fragment
+        android:id="@+id/emailVerificationFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.email.EmailVerificationFragment"
+        android:label="EmailVerificationFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_email_verification">
+
+        <argument
+            android:name="email"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="isBackNavOrViewOnlyFlow"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/emailDeliveryStatusDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.email.email_delivery.EmailDeliveryStatusDialog"
+        android:label="EmailDeliveryStatusDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_email_delivery_status">
+
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="messageId"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <!--OTP Flow-->
+    <dialog
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.otp.OtpVerificationFragment"
+        android:label="OtpVerificationFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_otp_verification">
+        <argument
+            android:name="otpArgumentsAsString"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_kycTermsAndConditionBottomSheet"
+            app:destination="@id/kycTermsAndConditionBottomSheet" />
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_emailDeliveryStatusDialog"
+            app:destination="@id/emailDeliveryStatusDialog" />
+        <deepLink app:uri="android-app://com.jar.app/otp-verification/{otpArgumentsAsString}" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/kycTermsAndConditionBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.otp.KycTermsAndConditionBottomSheet"
+        android:label="KycTermsAndConditionBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_terms_and_condition">
+
+        <argument
+            android:name="experianTermsAndCondition"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.ExperianTermsAndCondition"
+            app:nullable="false" />
+
+    </dialog>
+
+    <!--PAN Flow-->
+    <fragment
+        android:id="@+id/panVerificationFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.base_pan_verification.PanVerificationFragment"
+        android:label="PanVerificationFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_pan_verification">
+
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="expiresInTime"
+            app:argType="long" />
+
+        <argument
+            android:name="resendTime"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_panVerificationFragment_to_creditReportOtpVerificationLoadingDialog"
+            app:destination="@id/creditReportOtpVerificationLoadingDialog" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/creditReportFetchedFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.report_fetched.CreditReportFetchedFragment"
+        android:label="CreditReportFetchedFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_credit_report_fetched">
+        <argument
+            android:name="creditReportArguments"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/pan-fetched/{creditReportArguments}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/creditReportFetchSuccessDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.report_fetched.loading.CreditReportFetchSuccessDialog"
+        android:label="CreditReportFetchSuccessDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_credit_report_fetch_success">
+
+        <argument
+            android:name="creditReportPan"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.CreditReportPAN"
+            app:nullable="true" />
+
+        <argument
+            android:name="jarVerifiedPAN"
+            app:argType="boolean"
+            app:nullable="false" />
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/verifyPanDetailsDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.loading_screen.VerifyPanDetailsDialog"
+        android:label="VerifyPanDetailsDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_verify_pan_details">
+
+        <argument
+            android:name="creditReportPan"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.CreditReportPAN"
+            app:nullable="false" />
+
+        <argument
+            android:name="jarVerifiedPAN"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+
+    </dialog>
+    <fragment
+        android:id="@+id/creditReportNotAvailableFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.report_not_fetched.CreditReportNotAvailableFragment"
+        android:label="CreditReportNotAvailableFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_credit_report_not_available">
+
+        <argument
+            android:name="creditReportNotFetchedArguments"
+            app:argType="com.jar.app.feature_lending_kyc.impl.ui.pan.report_not_fetched.CreditReportNotFetchedArguments"
+            app:nullable="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterPanManuallyFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.manual.EnterPanManuallyFragment"
+        android:label="EnterPanManuallyFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_enter_pan_manually">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/manual-pan/{screenArgs}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/creditReportOtpVerificationLoadingDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.report_fetched.loading.CreditReportOtpVerificationLoadingDialog"
+        android:label="CreditReportOtpVerificationLoadingDialog"
+        tools:layout="@layout/feature_lending_kyc_fragment_credit_report_otp_verification_loading" />
+
+    <dialog
+        android:id="@+id/panFromJarLoadingDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.loading_screen.PanFromJarLoadingDialog"
+        android:label="PanFromJarDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_pan_from_jar_loading">
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/enterPanManuallyLoadingDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.manual.loading.EnterPanManuallyLoadingDialog"
+        android:label="EnterPanManuallyLoadingDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_enter_pan_manually_loading" />
+
+    <fragment
+        android:id="@+id/panCapturePhotoFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.capture_photo.CapturePanPhotoFragment"
+        android:label="CapturePanPhotoFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_capture_pan_photo">
+        <argument
+            android:name="shouldInitiateCameraDirectly"
+            app:argType="boolean"
+            app:nullable="false" />
+    </fragment>
+
+    <!--AADHAAR Flow-->
+    <fragment
+        android:id="@+id/aadhaarCkycfetchFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.ckyc.CKycFetchFragment"
+        android:label="CKycFetchFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_fetch_ckyc">
+        <deepLink app:uri="android-app://com.jar.app/aadhaarCKycFetch" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aadhaarManualEntryFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.manual_entry.AadhaarManualEntryFragment"
+        android:label="AadhaarManualEntryFragment"
+        tools:layout="@layout/feature_lending_kyc_aadhar_manual_entry_fragment">
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="lenderName"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true" />
+        <deepLink app:uri="android-app://com.jar.app/manual_aadhar_entry/{kycFeatureFlowType}/{lenderName}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aadhaarConfirmationFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.confirmation.AadhaarConfirmationFragment"
+        android:label="AadhaarConfirmationFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_aadhaar_confirmation">
+        <argument
+            android:name="aadhaarDetail"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.KycAadhaar"
+            app:nullable="false" />
+        <argument
+            android:name="flowType"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="lenderName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aadhaarActionPromptFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.action_prompt.ActionPromptFragment"
+        android:label="AadhaarActionPromptFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_action_prompt">
+        <argument
+            android:name="screenArgs"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.AadhaarActionPromptArgs"
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/successStepDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.success_screens.SuccessStepDialog"
+        android:label="SuccessStepDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_step_success">
+
+        <argument
+            android:name="flowType"
+            app:argType="com.jar.app.feature_lending_kyc.shared.util.LendingKycFlowType"
+            app:nullable="false" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="lenderName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/aadhaarConsentPromptFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.consent.AadhaarManualEntryConsentPromptFragment"
+        android:label="AadhaarConsentPromptFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_aadhaar_manual_entry_consent_prompt">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aadhaarCapturePhotoFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.capture_photo.CaptureAadhaarPhotoFragment"
+        android:label="CaptureAadhaarPhotoFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_capture_aadhaar_photo" >
+        <argument
+            android:name="lenderName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selfieCheckFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.selfie.SelfieCheckFragment"
+        android:label="SelfieCheckFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_selfie_check">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/selfieCheck/{screenArgs}" />
+    </fragment>
+
+    <!--Error Screens For all Flows-->
+    <fragment
+        android:id="@+id/panErrorStatesFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.error_screens.PanErrorStatesFragment"
+        android:label="PanErrorStatesFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_pan_error_states">
+
+        <argument
+            android:name="panErrorStatesArguments"
+            app:argType="com.jar.app.feature_lending_kyc.impl.ui.pan.error_screens.PanErrorStatesArguments"
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/otpLimitExceededBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.otp.error_screens.OtpLimitExceededBottomSheet"
+        android:label="OtpLimitExceededBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_otp_limit_exceeded">
+
+        <argument
+            android:name="flowType"
+            app:argType="com.jar.app.feature_lending_kyc.shared.util.LendingKycFlowType"
+            app:nullable="false" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/creditReportOtpResendLimitExceededBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.pan.error_screens.CreditReportOtpResendLimitExceededBottomSheet"
+        android:label="CreditReportOtpResendLimitExceededBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_credit_report_otp_resend_limit_exceeded">
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="desc"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="jarVerifiedPAN"
+            app:argType="boolean"
+            app:nullable="false" />
+        <argument
+            android:name="isComeBackLaterFlow"
+            app:argType="boolean"
+            app:nullable="false" />
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/genericLoadingDialog"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.loading.GenericLendingKycLoadingDialog"
+        android:label="GenericLendingKycLoadingDialog"
+        tools:layout="@layout/feature_lending_kyc_dialog_generic_loading">
+
+        <argument
+            android:name="genericLoadingArguments"
+            app:argType="com.jar.app.feature_lending_kyc.impl.ui.loading.GenericLoadingArguments"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/aadhaarUploadFailedFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.upload_failed.AadhaarUploadFailedFragment"
+        android:label="AadhaarUploadFailedFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_aadhaar_upload_failed">
+
+        <argument
+            android:name="kycOcrResponse"
+            app:argType="com.jar.app.feature_kyc.shared.domain.model.KycOcrResponse"
+            app:nullable="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/aadhaarCaptchaBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.captcha_bottomsheet.AadhaarCaptchaBottomSheet"
+        android:label="AadhaarCaptchaBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_aadhaar_captcha">
+        <argument
+            android:name="aadhaarNumber"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="lenderName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="kycFeatureFlowType"
+            android:defaultValue="UNKNOWN"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <!-- FAQ Bottom Sheet -->
+    <dialog
+        android:id="@+id/lendingKycFaqBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.faq.LendingKycFaqBottomSheet"
+        android:label="LendingKycFaqBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_faq">
+        <deepLink app:uri="android-app://com.jar.app/lending-kyc-faq" />
+        <action
+            android:id="@+id/action_lendingKycFaqBottomSheet_to_lendingFaqDetailsBottomSheet"
+            app:destination="@id/lendingFaqDetailsBottomSheet" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/lendingFaqDetailsBottomSheet"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.faq.details.LendingFaqDetailsBottomSheet"
+        android:label="LendingFaqDetailsBottomSheet"
+        tools:layout="@layout/feature_lending_kyc_bottom_sheet_faq_details">
+
+        <argument
+            android:name="faqType"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/verifiedAadhaarFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.verified.VerifiedAadhaarFragment"
+        android:label="VerifiedAadhaarFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_verified_aadhaar">
+        <argument
+            android:name="aadhaarDetail"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.KycAadhaar"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editPanAadhaarDetailsFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.aadhaar.edit_detail.EditPanAadhaarDetailFragment"
+        android:label="EditPanAadhaarDetailFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_edit_pan_aadhaar_detail">
+        <argument
+            android:name="detail"
+            app:argType="com.jar.app.feature_lending_kyc.shared.domain.model.KycAadhaar"
+            app:nullable="false" />
+        <argument
+            android:name="documentType"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfieEdgeCaseFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.selfie.SelfieEdgeCaseFragment"
+        android:label="SelfieEdgeCaseFragment"
+        tools:layout="@layout/feature_lending_kyc_fragment_selfie_edge_case">
+        <argument
+            android:name="edgeCaseUrl"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/digiLockerWebViewFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.digilocker.DigiLockerWebViewFragment"
+        android:label="DigiLockerWebViewFragment" >
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/DigiLockerWebViewFragment/{screenArgs}"/>
+    </fragment>
+    <fragment
+        android:id="@+id/KYCOptionFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.choose_kyc_method.KYCOptionFragment"
+        android:label="KYCOptionFragment" >
+
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/kycOptionsFragment/{screenArgs}"/>
+    </fragment>
+    <fragment
+        android:id="@+id/digiLockerErrorFragment"
+        android:name="com.jar.app.feature_lending_kyc.impl.ui.digilocker.DigiLockerErrorFragment"
+        android:label="DigiLockerErrorFragment" >
+        <argument
+            android:name="errorType"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/digiLockerErrorFragment/{errorType}"/>
+
+
+    </fragment>
+
+
+</navigation>

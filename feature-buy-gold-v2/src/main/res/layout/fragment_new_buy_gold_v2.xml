@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bgAuspiciousLottie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_auspicious_bg" />
+
+    <include
+        android:id="@+id/layoutPriceDropOrAuspiciousDate"
+        layout="@layout/layout_price_drop_or_auspicious_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFestivalCampaignBuyGold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPriceDropOrAuspiciousDate"
+        tools:visibility="visible"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        app:layout_constraintBottom_toTopOf="@id/goldPriceProgressLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutPriceDropOrAuspiciousDate">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@drawable/core_ui_round_black_bg_16dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTabInRupees"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg_3c3357_12dp"
+                    android:paddingHorizontal="@dimen/dimen_12dp"
+                    android:paddingVertical="@dimen/dimen_8dp"
+                    android:text="@string/feature_bug_gold_v2_in_rupees"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTabInGrams"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:paddingHorizontal="@dimen/dimen_12dp"
+                    android:paddingVertical="@dimen/dimen_8dp"
+                    android:text="@string/feature_buy_gold_v2_in_grams"
+                    android:textColor="@color/color_ACA1D3" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBuyGoldInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:background="@drawable/core_ui_round_black_bg_16dp"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                android:paddingVertical="@dimen/dimen_18dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRupeeSymbol"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature_buy_gold_v2_rupees_symbol"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etBuyGoldInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/BigTextViewStyle"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:gravity="start|center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    android:paddingHorizontal="@dimen/dimen_12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/color_ACA1D3"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvGramSymbol"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/tvRupeeSymbol"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGramSymbol"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature_buy_gold_v2_gm_label"
+                    android:textColor="@color/color_ACA1D3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvErrorMessage"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:textColor="@color/color_eb6a6e"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llWeeklyChallengeComponent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivWeeklyChallangeLogo"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvWeeklyChallengeMessage"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_4dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSuggestedGoldAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                tools:itemCount="5"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/cell_suggested_buy_gold_amount"
+                tools:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@color/color_ACA1D3_opacity_10" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSocialText"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/dimen_10dp"
+                tools:drawableStart="@drawable/core_ui_ic_shield_filled"
+                android:drawablePadding="@dimen/dimen_6dp"
+                android:paddingHorizontal="@dimen/dimen_10dp"
+                tools:text="Your gold will be stored in 100% safe &amp; secure locker"
+                android:textColor="@color/color_EBB46A"
+                app:drawableTint="@color/color_EBB46A" />
+
+            <View
+                android:id="@+id/separatorNormal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ACA1D3_opacity_10" />
+
+            <View
+                android:id="@+id/separatorShubhMuhrat"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ACA1D3_opacity_10"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExtraGoldLabel"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/feature_buy_gold_v2_get_extra_gold"
+                android:textColor="@color/white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CouponVariantContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_16dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:itemCount="5"
+                    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/cell_coupon_code_buy_gold_v2"
+                    tools:orientation="horizontal" />
+
+                <include
+                    android:id="@+id/couponVariant2View"
+                    layout="@layout/cell_coupon_code_variant2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="18dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:visibility="visible" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llViewDetailsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:clickable="true"
+                    android:elevation="@dimen/dimen_16dp"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dimen_20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/couponVariant2View">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvBgViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ACA1D3"
+                        android:textSize="11sp"
+                        app:lineHeight="@dimen/dimen_18sp"
+                        tools:text="View Details" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_14dp"
+                        android:layout_height="@dimen/dimen_14dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/color_ACA1D3"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/ic_arrow_forward" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llFetchingCoupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_buy_gold_v2_bg_rounded_000000_50_opacity_18dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_8dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ProgressBar
+                        android:id="@+id/progressLending"
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:background="@color/transparent"
+                        android:progressTint="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/SmallTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_6dp"
+                        android:text="@string/feature_buy_gold_v2_fetching_the_best_coupons_for_you"
+                        android:textColor="@color/white" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/groupFetchingCoupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids= "llFetchingCoupons" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvManualCoupon"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_24dp"
+                android:text="@string/feature_buy_gold_v2_click_here_to_apply_different_code"
+                tools:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.jar.app.core_ui.widget.PriceValidityTimer
+        android:id="@+id/goldPriceProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barrierPaymentStrip" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierPaymentStrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="layoutNewPaymentStrip, layoutOldPaymentStrip"
+        app:barrierDirection="top"/>
+
+    <include
+        android:id="@+id/layoutOldPaymentStrip"
+        layout="@layout/layout_old_payment_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <include
+        android:id="@+id/layoutNewPaymentStrip"
+        layout="@layout/layout_new_payment_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animSuccessConfetti"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/confetti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

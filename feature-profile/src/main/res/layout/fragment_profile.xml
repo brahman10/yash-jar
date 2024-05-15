@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp">
+
+        <com.jar.app.core_ui.widget.AvatarImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEditProfilePic"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/feature_profile_bg_circle_color_7745ff"
+            android:elevation="6dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfilePicture"
+            app:layout_constraintEnd_toEndOf="@+id/ivProfilePicture"
+            app:srcCompat="@drawable/feature_profile_ic_edit_pencil" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="tvName,tvPhone,tvAge,tvGender,tvSavedAddresses,tvKycVerification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/feature_profile_name"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivProfilePicture" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvName"
+            tools:text="Pushpa" />
+
+        <View
+            android:id="@+id/dividerName"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPhone"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/feature_profile_phone"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserPhone"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvPhone"
+            tools:text="+919876543210" />
+
+        <View
+            android:id="@+id/dividerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAge"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/feature_profile_age"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerPhone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserAge"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvAge"
+            tools:text="69" />
+
+        <View
+            android:id="@+id/dividerAge"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGender"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/feature_profile_gender"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerAge" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserGender"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvGender"
+            tools:text="Male" />
+
+        <View
+            android:id="@+id/dividerGender"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmailLabel"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:paddingTop="24dp"
+            android:text="@string/feature_profile_email"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerGender" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmail"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEmailLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            tools:text="aditya@changejar.in" />
+
+        <View
+            android:id="@+id/dividerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrimaryUpiIdLabel"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:paddingTop="24dp"
+            android:text="@string/feature_profile_primary_upi_id"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerEmail" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrimaryUpiId"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:alpha="0.7"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPrimaryUpiIdLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            tools:text="aditya@paytm" />
+
+        <View
+            android:id="@+id/dividerPrimaryUpiId"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrimaryUpiIdLabel" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/primaryUpiIdGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tvPrimaryUpiIdLabel,tvPrimaryUpiId,dividerPrimaryUpiId"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSavedAddresses"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/feature_profile_saved_addresses"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerPrimaryUpiId" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserSavedAddresses"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="24dp"
+            android:drawableEnd="@drawable/feature_profile_ic_chevron_right"
+            android:drawablePadding="12dp"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textColor="@color/color_776e94"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSavedAddresses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvSavedAddresses"
+            tools:text="2" />
+
+        <View
+            android:id="@+id/dividerSavedAddresses"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvSavedAddresses" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvKycVerification"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/feature_kyc_identity_verification"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerSavedAddresses"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserKycVerification"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="24dp"
+            android:drawableEnd="@drawable/feature_profile_ic_chevron_right"
+            android:drawablePadding="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_776e94"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tvKycVerification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvKycVerification"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivKycVerified"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvUserKycVerification"
+            app:layout_constraintEnd_toStartOf="@id/tvUserKycVerification"
+            app:layout_constraintTop_toTopOf="@id/tvUserKycVerification"
+            app:srcCompat="@drawable/feature_profile_ic_verified" />
+
+        <View
+            android:id="@+id/dividerKycVerification"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/color_776E94"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvLendingKyc"
+            app:layout_constraintTop_toBottomOf="@+id/tvKycVerification"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLendingKyc"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:paddingTop="24dp"
+            android:visibility="gone"
+            android:text="@string/feature_lending_kyc_verification"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerKycVerification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserLendingKyc"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:drawableEnd="@drawable/feature_profile_ic_chevron_right"
+            android:drawablePadding="12dp"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:textColor="@color/color_776e94"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLendingKyc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tvLendingKyc" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLendingKycVerified"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvUserLendingKyc"
+            app:layout_constraintEnd_toStartOf="@id/tvUserLendingKyc"
+            app:layout_constraintTop_toTopOf="@id/tvUserLendingKyc"
+            app:srcCompat="@drawable/feature_profile_ic_verified" />
+
+        <View
+            android:id="@+id/dividerLendingKyc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_776E94"
+            app:layout_constraintTop_toBottomOf="@+id/tvLendingKyc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

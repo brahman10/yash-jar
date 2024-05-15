@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home"
+    app:startDestination="@id/newHomeFragment">
+
+    <fragment
+        android:id="@+id/newHomeFragment"
+        android:name="com.jar.app.feature_homepage.impl.ui.homepage.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/feature_homepage_fragment_home">
+
+        <deepLink app:uri="android-app://com.jar.app/fragmentHomePage" />
+        <action
+            android:id="@+id/action_to_helpVideosListingFragment"
+            app:destination="@+id/helpVideosListingFragment"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_newHomeFragment_to_firstGoldCoinProgressScreen"
+            app:destination="@id/firstGoldCoinProgressScreen" />
+        <action
+            android:id="@+id/action_newHomeFragment_to_firstCoinTransitionFragment"
+            app:destination="@id/firstCoinTransitionFragment" />
+        <action
+            android:id="@+id/action_newHomeFragment_to_firstCoinDeliveryFragment"
+            app:destination="@id/firstCoinDeliveryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpVideosListingFragment"
+        android:name="com.jar.app.feature_homepage.impl.ui.help_videos.HelpVideosViewAllListingFragment"
+        android:label="HelpVideosViewAllListingFragment"
+        tools:layout="@layout/feature_homepage_fragment_help_videos_view_all">
+
+        <deepLink app:uri="android-app://com.jar.app/helpVideosListing" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/detectedSpendStepsFragment"
+        android:name="com.jar.app.feature_homepage.impl.ui.detected_spends_info.steps.DetectedSpendStepsFragment"
+        android:label="DetectedSpendStepsFragment"
+        tools:layout="@layout/feature_homepage_fragment_detected_spends_payment_info_step">
+
+        <argument
+            android:name="initiateManualPaymentRequest"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/detectedSpendStepsFragment/{initiateManualPaymentRequest}" />
+
+    </dialog>
+
+    <fragment
+        android:id="@+id/partialPaymentFragment"
+        android:name="com.jar.app.feature_homepage.impl.ui.detected_spends_info.partial_payment.PartialPaymentFragment"
+        android:label="PartialPaymentFragment"
+        tools:layout="@layout/feature_homepage_fragment_partial_payment">
+
+        <argument
+            android:name="detectedSpendsData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/partialPaymentFragment/{detectedSpendsData}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/firstGoldCoinProgressScreen"
+        android:name="com.jar.app.feature_homepage.impl.ui.first_gold_coin.FirstCoinProgressFragment"
+        android:label="FirstGoldCoinProgressScreen"
+        tools:layout="@layout/feature_homepage_first_coin_progress">
+        <deepLink
+            app:uri="android-app://com.jar.app/firstCoin/progress/{clickTime}" />
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_firstGoldCoinProgressScreen_to_firstCoinTransitionFragment"
+            app:destination="@id/firstCoinTransitionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstCoinTransitionFragment"
+        android:name="com.jar.app.feature_homepage.impl.ui.first_gold_coin.FirstCoinTransitionFragment"
+        android:label="FirstCoinTransitionFragment"
+        tools:layout="@layout/feature_homepage_first_coin_transition">
+        <action
+            android:id="@+id/action_firstCoinTransitionFragment_to_firstGoldCoinProgressScreen"
+            app:destination="@id/firstGoldCoinProgressScreen" />
+        <deepLink
+            app:uri="android-app://com.jar.app/firstCoin/transition" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstCoinDeliveryFragment"
+        android:name="com.jar.app.feature_homepage.impl.ui.first_gold_coin.FirstCoinDeliveryFragment"
+        android:label="FirstCoinDeliveryFragment"
+        tools:layout="@layout/feature_homepage_first_coin_delivery">
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink
+            android:id="@+id/deepLink3"
+            app:uri="android-app://com.jar.app/firstCoin/delivery/{orderId}" />
+    </fragment>
+</navigation>

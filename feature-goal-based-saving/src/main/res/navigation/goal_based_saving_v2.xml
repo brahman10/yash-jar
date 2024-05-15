@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_page_nav"
+    app:startDestination="@id/defaultLoadingFragment">
+    <fragment
+        android:id="@+id/defaultLoadingFragment"
+        android:label="DefaultLoadingScreen"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.defaultLoadingScreen.DefaultLoadingScreen">
+        <action
+            android:id="@+id/action_goalBasedSavingFragment_to_manageGoalFragment"
+            app:destination="@id/manageGoalFragment"
+            app:popUpTo="@id/defaultLoadingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_introFragment_to_goalPendingFragment"
+            app:destination="@id/goalPendingFragment"
+            app:popUpTo="@id/defaultLoadingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_introFragment_to_goalSuccessFragment"
+            app:destination="@id/goalSuccessFragment"
+            app:popUpTo="@id/defaultLoadingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_introFragment_to_goalTransactionScreen2"
+            app:destination="@id/goalTransactionScreen2"
+            app:popUpTo="@id/defaultLoadingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_introFragment_to_introFragment"
+            app:destination="@id/introFragment"
+            app:popUpTo="@id/defaultLoadingFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:label="IntroductionFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.introduction.IntroductionFragment">
+        <action
+            android:id="@+id/action_firstFragment_to_userEntryFragment"
+            app:destination="@id/userEntryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userEntryFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.userEntry.UserEntryFragment"
+        android:label="UserEntryFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_confirmGoalBasedSavingFragment"
+            app:destination="@id/confirmGoalBasedSavingFragment" />
+        <action
+            android:id="@+id/action_userEntryFragment_to_goalTransactionScreen2"
+            app:destination="@id/goalTransactionScreen2"
+            app:popUpTo="@id/introFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmGoalBasedSavingFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.confirmScreen.ConfirmGoalBasedSavingFragment"
+        android:label="ConfirmGoalBasedSavingFragment" >
+        <argument
+            android:name="goalName"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="goalAmount"
+            app:argType="long"
+            app:nullable="false" />
+        <argument
+            android:name="duration"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="goalImage"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="savingGoalAmount"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="roundOffAmount"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="totalAmount"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="date"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_confirmGoalBasedSavingFragment_to_goalTransactionScreen2"
+            app:destination="@id/goalTransactionScreen2"
+            app:popUpTo="@id/introFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageGoalFragment"
+        android:label="ManageGoalFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.manage.ManageGoalFragment">
+        <argument
+            android:name="activeStateData"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_manageGoalFragment_to_goalSuccessFragment"
+            app:destination="@id/goalSuccessFragment"
+            app:popUpTo="@id/manageGoalFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/goalPendingFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.goalPending.GoalPendingFragment"
+        android:label="GoalPendingFragment">
+        <argument
+            android:name="data"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/goalSuccessFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.goalSuccess.GoalSetupSuccessFragment"
+        android:label="GoalSetupSuccessFragment">
+        <argument
+            android:name="data"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="isShowAppBar"
+            app:argType="boolean"
+            app:nullable="false"
+            android:defaultValue="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/goalTransactionScreen2"
+        android:label="TransactionFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.transaction.TransactionFragment">
+        <deepLink app:uri="android-app://com.jar.app/goalPaymentStatus/{goalId}" />
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>

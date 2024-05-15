@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_black_bg_16dp"
+    android:backgroundTint="@color/color_EB6A6E"
+    android:padding="13dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCustom"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_rounded_corner_20dp"
+        android:backgroundTint="#1F000000"
+        android:clickable="true"
+        android:focusable="true"
+        app:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/resume_now" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDesc"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/btnCustom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        tools:text='Resuming in 1 day' />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnCustom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/savings_paused" />
+</androidx.constraintlayout.widget.ConstraintLayout>

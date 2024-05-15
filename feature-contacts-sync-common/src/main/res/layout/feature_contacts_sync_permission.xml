@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactAccessLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="22dp"
+                android:layout_marginStart="56dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineHeight="14sp"
+                tools:text="Header" />
+
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="57dp"
+                android:background="#1AACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:background="?attr/actionBarItemBackground"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icOpenBookContactAccess"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="185dp"
+            android:src="@drawable/feature_contacts_sync_common_open_book"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btnAllowAccess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clToolBar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContactAccessHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/feature_contacts_sync_common_more_friends"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icOpenBookContactAccess"
+            app:lineHeight="27dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContactAccessDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/feature_contacts_sync_common_jar_require"
+            android:textAlignment="center"
+            android:textColor="@color/color_ACA1D3"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btnAllowAccess"
+            app:layout_constraintEnd_toEndOf="@+id/tvContactAccessHeader"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvContactAccessHeader"
+            app:layout_constraintTop_toBottomOf="@+id/tvContactAccessHeader"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnAllowAccess"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            app:buttonText="@string/feature_contacts_sync_common_allow_access"
+            app:buttonTextAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactSyncProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/contactSyncProgressHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/feature_contacts_sync_common_contacts_syncing"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/syncProgressIndicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30sp" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/syncProgressIndicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:visibility="visible"
+            app:cpb_background_progressbar_color="#1A7745FF"
+            app:cpb_background_progressbar_width="12dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progress_max="100"
+            app:cpb_progressbar_color="#7745FF"
+            app:cpb_progressbar_color_direction="right_to_left"
+            app:cpb_progressbar_width="12dp"
+            app:cpb_round_border="true"
+            app:cpb_start_angle="0"
+            app:layout_constraintBottom_toTopOf="@+id/contactSyncFooterText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactSyncProgressHeader" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icOpenBook"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="62dp"
+            android:src="@drawable/feature_contacts_sync_common_open_book"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/syncProgressIndicator"
+            app:layout_constraintStart_toStartOf="@+id/syncProgressIndicator"
+            app:layout_constraintTop_toTopOf="@+id/syncProgressIndicator"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/syncContactProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="@string/feature_contacts_sync_common_contacts_syncing"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/syncProgressIndicator"
+            app:layout_constraintEnd_toEndOf="@+id/syncProgressIndicator"
+            app:layout_constraintStart_toStartOf="@+id/syncProgressIndicator"
+            app:layout_constraintTop_toBottomOf="@+id/icOpenBook"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/contactSyncFooterText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="45dp"
+            android:gravity="center"
+            android:text="@string/you_seem_to_be_very_popular_the_process_is_taking_longer_than_expected"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/syncProgressIndicator"
+            app:lineHeight="21sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contactSyncSuccessHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/feature_contacts_sync_common_contacts_synced"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/contactSyncedLottie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30sp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/contactSyncedLottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MandateModeSetupButtonView">
+        <attr name="modeButton_type" format="enum">
+            <enum name="next" value="0" />
+            <enum name="selection" value="1" />
+        </attr>
+        <attr name="modeButton_startIcon" format="reference" />
+        <attr name="modeButton_title" format="string" />
+        <attr name="modeButton_isSelected" format="boolean" />
+        <attr name="modeButton_isQuickerApproval" format="boolean" />
+    </declare-styleable>
+</resources>

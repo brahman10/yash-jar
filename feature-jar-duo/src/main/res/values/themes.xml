@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SwitchStyleDuo">
+        <item name="android:thumb">@drawable/feature_duo_custom_switch_thumb</item>
+        <item name="track">@drawable/feature_duo_custom_switch_track</item>
+    </style>
+    <style name="DuoCardItemTextViewStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="DuoScoreLabelTextStyle">
+        <item name="fontFamily">@font/pixellari</item>
+        <item name="android:gravity">center</item>
+        <item name="lineHeight">10dp</item>
+        <item name="lineSpacing">1sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:transformPivotY">0.66sp</item>
+    </style>
+    <style name="DuoScoreTextStyle">
+        <item name="fontFamily">@font/press_start_2p</item>
+        <item name="android:gravity">right|top</item>
+        <item name="lineHeight">28dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="DuoUserNameTextStyle">
+        <item name="fontFamily">@font/pixellari</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="lineHeight">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

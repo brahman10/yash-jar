@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_black_bg_10dp"
+    android:padding="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTransactionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SmallBoldTextViewStyle"
+        android:textColor="@color/color_D5CDF2"
+        app:textAllCaps="false"
+        tools:text="Gold Lease"
+        android:gravity="start"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactionRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDownloadInvoice"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        app:buttonRadius="4dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:buttonType="secondaryHollowButton"
+        app:buttonStrokeColor="@color/color_584295"
+        app:buttonBackgroundColor="@color/color_2E2942"
+        android:layout_gravity="center"
+        app:buttonDrawablePadding="@dimen/dimen_12dp"
+        app:buttonDrawableStart="@drawable/feature_transaction_ic_new_download"
+        app:buttonText="@string/core_ui_download_invoice" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

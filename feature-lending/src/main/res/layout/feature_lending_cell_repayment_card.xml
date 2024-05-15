@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg_3c3357_8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmi"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/llStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1st EMI" />
+
+    <LinearLayout
+        android:id="@+id/llStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/core_ui_round_1aebb46a_bg_4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvEmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/tvEmi"
+        app:layout_constraintTop_toTopOf="@id/tvEmi">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            tools:src="@drawable/core_ui_ic_calender" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatus"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:includeFontPadding="false"
+            android:textSize="12sp"
+            tools:text="1st EMI" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_776E94_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmi" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKeyValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        tools:itemCount="3"
+        tools:listitem="@layout/cell_key_value" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        app:buttonText="@string/feature_lending_make_payment"
+        app:layout_constraintTop_toBottomOf="@id/rvKeyValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAutoDebitTitle"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="start"
+        android:text="@string/feature_lending_auto_debit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/llAutoDebit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAction"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <LinearLayout
+        android:id="@+id/llAutoDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:drawableStartCompat="@drawable/ic_tick_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAutoDebitTitle"
+        app:layout_constraintTop_toBottomOf="@id/btnAction">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDebitEnabled"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/ic_tick_green" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDebitEnabled"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:includeFontPadding="false"
+            android:text="@string/feature_lending_enabled"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMsg"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAutoDebit"
+        tools:text="TO avoid penal charges" />
+
+    <View
+        android:id="@+id/disableMaskView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_bg_3c3357_8dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/referIntroScreenFragment"
+    android:id="@+id/feature_refer_earn_v2_navigation">
+
+    <fragment
+        android:id="@+id/referIntroScreenFragment"
+        android:name="com.jar.refer_earn_v2.impl.ui.refer_earn_intro.ReferEarnIntroFragment" >
+        <deepLink app:uri="android-app://com.jar.app/referAndEarn/" />
+    </fragment>
+</navigation>

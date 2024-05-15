@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp"
+    app:layout_constraintBottom_toTopOf="@+id/goldPriceLayout">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gmSymbol"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:text="@string/gm"
+        android:textSize="20sp"
+        app:drawableEndCompat="@drawable/ic_arrows_up_down"
+        app:layout_constraintBottom_toTopOf="@+id/lineGold3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/lineGold1"
+        android:layout_width="@dimen/dimen_1dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:layout_marginStart="@dimen/dimen_24dp"
+        android:background="@color/lightBgColor2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lineGold3"
+        app:layout_constraintStart_toEndOf="@+id/gmSymbol"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGoldAmount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="start|center_vertical"
+        android:hint="@string/_0"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:longClickable="false"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/commonTxtColor"
+        android:textColorHint="@color/smallTxtColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lineGold3"
+        app:layout_constraintEnd_toStartOf="@+id/lineGold2"
+        app:layout_constraintStart_toEndOf="@+id/lineGold1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/lineGold2"
+        android:layout_width="@dimen/dimen_1dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@color/lightBgColor2"
+        app:layout_constraintBottom_toTopOf="@+id/lineGold3"
+        app:layout_constraintEnd_toStartOf="@id/txtYouPay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtYouPay"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:text="@string/you_pay"
+        android:textColor="@color/smallTxtColor"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/rsAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rsAmount"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:text="@string/rs_0"
+        android:textColor="@color/commonTxtColor"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/lineGold3"
+        app:layout_constraintStart_toStartOf="@+id/txtYouPay"
+        app:layout_constraintTop_toBottomOf="@id/txtYouPay"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/lineGold3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/dimen_4dp"
+        android:background="@color/lightBgColor2"
+        app:layout_constraintTop_toBottomOf="@+id/etGoldAmount" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/lineGold3">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGmHalf"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_rounded_bg_color_8dp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dimen_6dp"
+            android:text="@string/_0_5gm"
+            android:textColor="@color/smallTxtColor"
+            app:layout_constraintEnd_toStartOf="@+id/txtGmOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGmOne"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_rounded_bg_color_8dp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dimen_6dp"
+            android:text="@string/_1gm"
+            android:textColor="@color/smallTxtColor"
+            app:layout_constraintEnd_toStartOf="@+id/txtGmTwo"
+            app:layout_constraintStart_toEndOf="@+id/txtGmHalf"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGmTwo"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_rounded_bg_color_8dp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dimen_6dp"
+            android:text="@string/_2gm"
+            android:textColor="@color/smallTxtColor"
+            app:layout_constraintEnd_toStartOf="@+id/txtGmFive"
+            app:layout_constraintStart_toEndOf="@+id/txtGmOne"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMostGifted"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rectangle_blue_bg"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="@string/most_gifted"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtGmTwo"
+            app:layout_constraintEnd_toEndOf="@+id/txtGmTwo"
+            app:layout_constraintStart_toStartOf="@+id/txtGmTwo"
+            app:layout_constraintTop_toBottomOf="@+id/txtGmTwo"
+            tools:ignore="SmallSp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGmFive"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_rounded_bg_color_8dp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dimen_6dp"
+            android:text="@string/_5gm"
+            android:textColor="@color/smallTxtColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtGmTwo"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

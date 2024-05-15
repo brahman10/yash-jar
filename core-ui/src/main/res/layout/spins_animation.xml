@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="220dp"
+    android:layout_marginStart="@dimen/dimen_10dp"
+    tools:background="@color/blueBgColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="false">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationBg"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:background="@drawable/winnings_background_7745ff_v2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        app:lottie_loop="true"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountSpins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:background="@drawable/bg_background_7745ff"
+        tools:text="+80"
+        style="@style/CommonBoldTextViewStyle"
+        android:textAlignment="center"
+        android:paddingHorizontal="@dimen/dimen_10dp"
+        android:textColor="@color/white"
+        android:paddingVertical="2dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/animationBg"
+        app:layout_constraintEnd_toEndOf="@id/animationBg"
+        app:layout_constraintTop_toTopOf="@id/animationBg"
+        android:layout_marginTop="-5dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountSuccess2Spins"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:paddingHorizontal="@dimen/dimen_10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/winning_count_label"
+        android:visibility="gone"
+        tools:visibility = "visible"
+        style="@style/CommonBoldTextViewStyle"
+        android:text="+80"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/animationBg"
+        app:layout_constraintEnd_toEndOf="@id/animationBg"
+        app:layout_constraintTop_toTopOf="@id/animationBg"
+        android:layout_marginTop="-5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backgroundRotating"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:src="@drawable/new_spin_wheel"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="@id/animationBg"
+        app:layout_constraintLeft_toLeftOf="@id/animationBg"
+        app:layout_constraintRight_toRightOf="@id/animationBg"
+        app:layout_constraintTop_toTopOf="@id/animationBg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:text="Spins"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@id/animationBg"
+        app:layout_constraintStart_toStartOf="@id/animationBg"
+        app:layout_constraintEnd_toEndOf="@id/animationBg" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBottle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_wheel_center"
+        android:padding="3dp"
+        app:layout_constraintTop_toTopOf="@id/backgroundRotating"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundRotating"
+        app:layout_constraintStart_toStartOf="@id/backgroundRotating"
+        app:layout_constraintEnd_toEndOf="@id/backgroundRotating"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/awardText"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:text="4 cards remaining"
+        android:alpha="0.5"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

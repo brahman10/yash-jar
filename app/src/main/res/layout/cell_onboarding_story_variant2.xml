@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/clBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="40sp"
+        android:lineHeight="44dp"
+        android:textFontWeight="900"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="96dp"
+        android:layout_marginStart="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text ="HAVE \nTROUBLE \nSAVING?"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textSize="16sp"
+        android:lineHeight="22dp"
+        android:textFontWeight="400"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintStart_toStartOf="@id/tvHeading"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading"
+        tools:text="We are here to make saving \nsimple for you"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/color_2E2942">
+
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="@dimen/dimen_1dp"
+        android:layout_height="@dimen/dimen_12dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/dotted_line"
+        app:layout_constraintBottom_toTopOf="@id/ivIcon"
+        app:layout_constraintEnd_toEndOf="@id/ivIcon"
+        app:layout_constraintStart_toStartOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/dimen_22dp"
+        android:layout_height="@dimen/dimen_22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_gold_brick" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bottomLine"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dimen_12dp"
+        android:background="@drawable/dotted_line"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ivIcon"
+        app:layout_constraintStart_toStartOf="@id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@id/ivIcon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:gravity="start"
+        android:textColor="@color/color_EEEAFF"
+        app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="@id/ivIcon"
+        tools:text="You give permission to save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

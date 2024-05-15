@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipChildren="false">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderDetailsAdded"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/round_black_bg_16dp"
+        android:backgroundTint="@color/color_273442"
+        android:drawableStart="@drawable/feature_duo_ic_check"
+        android:drawablePadding="12dp"
+        android:elevation="2dp"
+        android:gravity="start|center_vertical"
+        android:minHeight="68dp"
+        android:padding="16dp"
+        android:text="@string/details_added"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintHeight_min="68dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/btnClose" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="@drawable/white_dotted_line"
+        app:layout_constraintBottom_toTopOf="@id/rvSteps"
+        app:layout_constraintEnd_toEndOf="@id/tvHeaderDetailsAdded"
+        app:layout_constraintStart_toStartOf="@id/tvHeaderDetailsAdded"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderDetailsAdded" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSteps"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bgColor"
+        app:layout_constraintBottom_toTopOf="@id/btnOkay"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        tools:itemCount="3"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_step" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/bgColor"
+        android:minWidth="228dp"
+        android:minHeight="56dp"
+        android:paddingHorizontal="38dp"
+        app:buttonText="@string/okay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_min="228dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

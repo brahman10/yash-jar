@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightBgColor"
+    android:paddingStart="@dimen/dimen_4dp"
+    android:paddingEnd="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_12dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/unreadDotView"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="@id/clImageContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/clImageContainer"
+        app:shapeAppearance="@style/circleImageView"
+        tools:background="@color/color_789BDE" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_ACA1D3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clImageContainer"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:background="@drawable/bg_outline_circle_selector_789bde_3c3357"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/unreadDotView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sivNotification"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_gift_large" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toStartOf="@id/rightArrow"
+        app:layout_constraintStart_toEndOf="@id/clImageContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="One Time Purchase" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/selector_notification_desc"
+        app:layout_constraintEnd_toStartOf="@id/rightArrow"
+        app:layout_constraintStart_toEndOf="@id/clImageContainer"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="Invested" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintStart_toEndOf="@id/clImageContainer"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:text="12 March’21, 12:35am" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

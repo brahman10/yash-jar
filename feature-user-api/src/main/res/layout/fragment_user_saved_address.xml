@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="12dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/clAddNewAddress"
+            app:shimmer_auto_start="true"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/core_ui_cell_notification" />
+
+                <include layout="@layout/core_ui_cell_notification" />
+
+                <include layout="@layout/core_ui_cell_notification" />
+
+                <include layout="@layout/core_ui_cell_notification" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/clAddNewAddress"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/cell_user_saved_address" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="rvAddress,shimmerPlaceholder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoAddress"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawablePadding="16dp"
+            android:text="@string/no_delivery_address_available"
+            android:visibility="gone"
+            app:drawableTopCompat="@drawable/ic_no_transaction_placeholder"
+            app:layout_constraintBottom_toTopOf="@+id/clAddNewAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rvAddress" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAddNewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingVertical="32dp"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnAddNewAddress"
+                app:buttonType="secondaryHollowButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:buttonDrawableStart="@drawable/ic_add"
+                app:buttonDrawablePadding="8dp"
+                app:buttonText="@string/add_new_address"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

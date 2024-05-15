@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feature_gold_price_alerts_navigation"
+    app:startDestination="@+id/goldPriceDetailFragment">
+
+    <fragment
+        android:id="@+id/goldPriceDetailFragment"
+        android:name="com.jar.gold_price_alerts.impl.ui.gold_price_detail.GoldPriceDetailFragment">
+
+        <argument
+            android:name="context"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink app:uri="android-app://com.jar.app/goldPriceDetail/{context}" />
+        <action
+            android:id="@+id/action_goldPriceDetailFragment_to_goldPriceAlertsBottomSheet"
+            app:destination="@id/goldPriceAlertsBottomSheet" />
+        <action
+            android:id="@+id/action_goldPriceDetailFragment_to_enabledGoldPriceAlertsBottomSheet"
+            app:destination="@id/enabledGoldPriceAlertsBottomSheet" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/goldPriceAlertsBottomSheet"
+        android:name="com.jar.gold_price_alerts.impl.ui.alert_bottomsheet.SetGoldPriceAlertsBottomSheetFragment" />
+    <dialog
+        android:id="@+id/enabledGoldPriceAlertsBottomSheet"
+        android:name="com.jar.gold_price_alerts.impl.ui.enabled_alert_bottomsheet.EnabledGoldPriceAlertsBottomSheetFragment" />
+</navigation>

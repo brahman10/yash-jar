@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_bottom_white_border_16dp"
+    android:backgroundTint="@color/color_2E2942"
+    android:padding="@dimen/dimen_16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/color_D5CDF2"
+        app:layout_constraintEnd_toStartOf="@id/ivExpand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="HOW DOES THIS WORK?" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivExpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:srcCompat="@drawable/core_ui_ic_arrow_down" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/elMandateDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:el_expanded="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="4"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/feature_mandate_payment_cell_mandate_education_item" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWatchAVideoInstead"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/feature_mandate_payment_watch_a_video_instead"
+                android:textAllCaps="true"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintBottom_toBottomOf="@id/btnWatchVideo"
+                app:layout_constraintEnd_toStartOf="@id/btnWatchVideo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btnWatchVideo" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnWatchVideo"
+                android:layout_width="108dp"
+                android:layout_height="36dp"
+                app:buttonRadius="4dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:buttonDrawablePadding="@dimen/dimen_4dp"
+                app:buttonEndColor="@color/color_D5CDF2"
+                app:buttonStartColor="@color/color_D5CDF2"
+                app:buttonText="@string/feature_mandate_payment_watch_video"
+                app:buttonTextColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="@dimen/dimen_32dp"
+                app:layout_constraintTop_toBottomOf="@id/rvEducation"
+                app:layout_constraintWidth_min="120dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

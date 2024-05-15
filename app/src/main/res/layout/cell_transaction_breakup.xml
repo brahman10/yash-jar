@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_green_ticker_12dp"
+    android:backgroundTint="@color/color_2E2942"
+    android:padding="16dp"
+    tools:layout_marginHorizontal="15dp"
+    tools:layout_marginVertical="4dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCoin"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTransactionTitle"
+        tools:src="@drawable/ic_daily_saving" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTransactionTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/tvTransactionAmount"
+        app:layout_constraintStart_toEndOf="@id/ivCoin"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="First Investment Via Jar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTransactionAmount"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvTransactionTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTransactionTitle"
+        tools:text="₹147" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderSpareChange"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/spare_change"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="@id/tvTransactionTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSpareChange"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintBottom_toBottomOf="@id/tvHeaderSpareChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvHeaderSpareChange"
+        tools:text="₹3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStatus"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/tvTransactionTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderSpareChange"
+        tools:text="Detected" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimeStamp"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvStatus"
+        tools:text="02:26pm, 12 Mar’20" />
+</androidx.constraintlayout.widget.ConstraintLayout>

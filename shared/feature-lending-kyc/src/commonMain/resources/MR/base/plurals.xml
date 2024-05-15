@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_lending_kyc_you_can_finish_kyc_in_just_d_steps">
+        <item quantity="one">You can finish KYC in just %d step.</item>
+        <item quantity="other">You can finish KYC in just %d steps.</item>
+    </plurals>
+
+</resources>

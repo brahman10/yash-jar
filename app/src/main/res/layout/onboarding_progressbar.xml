@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:translationZ="4dp"
+    android:visibility="gone"
+    tools:background="@color/bgColor"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOnBoardingTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/inter_bold"
+        android:text="@string/login_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/login_progress_indicator"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorDirectionLinear="startToEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGoldIcon"
+        app:layout_constraintEnd_toStartOf="@+id/ivGoldIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivGoldIcon"
+        app:trackColor="@color/white"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="6dp"
+        tools:progress="40" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGoldIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/bg_circle_white"
+        android:elevation="2dp"
+        android:padding="4dp"
+        android:src="@drawable/feature_transaction_ic_gold_brick"
+        android:translationX="-2dp"
+        android:translationZ="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOnBoardingTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="18dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/lightBgColor"
+    android:background="@drawable/rounded_black_bg_12dp"
+    android:layout_marginVertical="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContactImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="7dp"
+        android:clickable="false"
+        android:focusable="false"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clUser1"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:background="@drawable/feature_duo_rounded_text_view_with_border"
+            android:elevation="5dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/clUser2">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUser1Initials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:textColor="#2E2942"
+                android:textSize="25sp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:lineHeight="25sp"
+                tools:text="KT" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUser1Thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clUser2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/feature_duo_rounded_text_view"
+            android:translationX="-12dp"
+            app:layout_constraintStart_toEndOf="@+id/clUser1"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUser2Initials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/feature_duo_rounded_text_view"
+                app:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:textColor="#2E2942"
+                android:textSize="25sp"
+                app:lineHeight="25sp"
+                tools:text="VJ" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUser2Thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/clContactImages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="20dp"
+        tools:text="Krishnakant Vikas"
+        android:textColor="@color/white"
+        app:fontFamily="@font/inter_bold"
+        android:textSize="16sp"
+        app:lineHeight="24sp"
+        android:clickable="false"
+        android:focusable="false"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivInfo"
+        android:paddingHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/clContactImages"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/feature_duo_ic_baseline_more_horiz_24"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/actionBarItemBackground"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

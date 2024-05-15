@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_navigation"
+    app:startDestination="@id/paymentOptionPageFragment">
+
+    <action
+        android:id="@+id/action_to_goldPriceChangedDialog"
+        app:destination="@id/goldPriceChangedDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_transactionFailedBottomSheet"
+        app:destination="@id/transactionFailedBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_cancelTransactionDialog"
+        app:destination="@id/cancelTransactionDialog"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_verifyPaymentStatusFragment"
+        app:destination="@id/verifyPaymentStatusFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/paymentOptionPageFragment"
+        android:name="com.jar.app.feature_payment.impl.ui.payment_option.PaymentOptionPageFragment"
+        android:label="PaymentOptionPageFragment"
+        tools:layout="@layout/fragment_payment_option_page">
+
+        <argument
+            android:name="initiatePaymentResponse"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/paymentPage/{initiatePaymentResponse}" />
+
+        <action
+            android:id="@+id/action_paymentOptionPageFragment_to_upiCollectTimerFragment"
+            app:destination="@id/upiCollectTimerFragment" />
+        <action
+            android:id="@+id/action_paymentOptionPageFragment_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+        <action
+            android:id="@+id/action_paymentOptionPageFragment_to_savedCardFragment"
+            app:destination="@id/savedCardFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/verifyPaymentStatusFragment"
+        android:name="com.jar.app.feature_payment.impl.ui.verify_status.VerifyPaymentStatusFragment"
+        android:label="VerifyPaymentStatusFragment"
+        tools:layout="@layout/fragment_verify_payment_status">
+
+        <argument
+            android:name="oneTimePaymentResult"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="paymentPageFragmentId"
+            app:argType="integer"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/verifyPaymentStatusFragment/{oneTimePaymentResult}/{paymentPageFragmentId}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/transactionFailedBottomSheet"
+        android:name="com.jar.app.feature_payment.impl.ui.transaction_failed.TransactionFailedFragmentBottomSheet"
+        android:label="TransactionFailedBottomSheet"
+        tools:layout="@layout/fragment_transaction_failed">
+
+        <argument
+            android:name="oneTimePaymentResult"
+            app:argType="com.jar.app.feature_one_time_payments.shared.data.model.base.OneTimePaymentResult"
+            app:nullable="false" />
+
+        <argument
+            android:name="fetchManualPaymentStatusResponse"
+            app:argType="com.jar.app.feature_one_time_payments_common.shared.FetchManualPaymentStatusResponse"
+            app:nullable="false" />
+
+        <argument
+            android:name="paymentPageFragmentId"
+            app:argType="integer"
+            app:nullable="false" />
+
+    </dialog>
+    <fragment
+        android:id="@+id/upiCollectTimerFragment"
+        android:name="com.jar.app.feature_payment.impl.ui.upi_collect_timer.UpiCollectTimerFragment"
+        android:label="UpiCollectTimerFragment"
+        tools:layout="@layout/fragment_upi_collect_timer">
+
+        <argument
+            android:name="oneTimePaymentResult"
+            app:argType="com.jar.app.feature_one_time_payments.shared.data.model.base.OneTimePaymentResult"
+            app:nullable="false" />
+
+        <argument
+            android:name="paymentPageFragmentId"
+            app:argType="integer"
+            app:nullable="false" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/cancelTransactionDialog"
+        android:name="com.jar.app.feature_payment.impl.ui.cancel_transction.CancelTransactionDialog"
+        android:label="CancelTransactionDialog"
+        tools:layout="@layout/dialog_cancel_transaction">
+
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/goldPriceChangedDialog"
+        android:name="com.jar.app.feature_payment.impl.ui.GoldPriceChangedDialog"
+        android:label="GoldPriceChangedDialog"
+        tools:layout="@layout/fragment_gold_price_changed">
+
+        <argument
+            android:name="amount"
+            app:argType="float"
+            app:nullable="false" />
+
+        <argument
+            android:name="oldPriceResponse"
+            app:argType="com.jar.app.feature_gold_price.shared.data.model.FetchCurrentGoldPriceResponse"
+            app:nullable="false" />
+
+        <argument
+            android:name="newPriceResponse"
+            app:argType="com.jar.app.feature_gold_price.shared.data.model.FetchCurrentGoldPriceResponse"
+            app:nullable="false" />
+
+    </dialog>
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="com.jar.app.feature_payment.impl.ui.add_card.AddCardFragment"
+        android:label="AddCardFragment"
+        tools:layout="@layout/fragment_add_card">
+
+        <argument
+            android:name="requestId"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="initiatePaymentPayload"
+            app:argType="com.jar.app.feature_one_time_payments.shared.data.model.base.InitiatePaymentPayload"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedCardFragment"
+        android:name="com.jar.app.feature_payment.impl.ui.saved_card.SavedCardFragment"
+        android:label="SavedCardFragment"
+        tools:layout="@layout/fragment_saved_card">
+
+        <argument
+            android:name="requestId"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="amount"
+            app:argType="float"
+            app:nullable="false" />
+
+        <argument
+            android:name="initiatePaymentPayload"
+            app:argType="com.jar.app.feature_one_time_payments.shared.data.model.base.InitiatePaymentPayload"
+            app:nullable="false" />
+
+        <argument
+            android:name="savedCard"
+            app:argType="com.jar.app.feature_one_time_payments.shared.domain.model.juspay.SavedCard"
+            app:nullable="false" />
+
+    </fragment>
+</navigation>

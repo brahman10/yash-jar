@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="product_removed_from_wishlist">Product removed from wishlist</string>
+    <string name="product_added_to_wishlist">Product added to wishlist</string>
+    <string name="something_went_wrong">Something went wrong</string>
+</resources>

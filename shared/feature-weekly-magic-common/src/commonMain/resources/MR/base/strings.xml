@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_weekly_magic_common_weekly_magic">Weekly Magic</string>
+    <string name="feature_weekly_magic_common_get_mystery_card">Get Mystery Card</string>
+    <string name="feature_weekly_magic_common_save_s_or_more_to_get_a_card">Save ₹%s or more to get a card</string>
+    <string name="feature_weekly_magic_common_lets_go">Let\'s Go!</string>
+    <string name="feature_weekly_magic_common_one_day_left">1 day left</string>
+    <string name="feature_weekly_magic_common_s_days_left">%s days left</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in_s">Next challenge begins in %s...</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in">Next challenge begins in</string>
+    <string name="feature_weekly_magic_common_next_challenge_starts_in">Next challenge starts in</string>
+    <string name="feature_weekly_magic_common_magic_hat">Magic hat</string>
+    <string name="feature_weekly_magic_common_is_here">is here!</string>
+    <string name="feature_weekly_magic_common_you_won_gold_worth">YOU WON GOLD WORTH</string>
+    <string name="added_to_your_locker">Added to your locker!</string>
+    <string name="feature_weekly_magic_common_days">Days</string>
+    <string name="feature_weekly_magic_common_day">Day</string>
+    <string name="feature_weekly_magic_common_show_me">SHOW ME!</string>
+    <string name="feature_weekly_magic_common_i_ll_check_later">I’ll check later</string>
+    <string name="feature_weekly_magic_common_omg_you_won_a_mystery_card">OMG, you won a mystery card!</string>
+    <string name="feature_weekly_magic_common_on_your_transaction_of">On your transaction of ₹%d</string>
+    <string name="feature_weekly_magic_common_gold_purchase_n_successful">Gold Purchase\nsuccessful!</string>
+    <string name="feature_weekly_magic_common_you_got">You got</string>
+    <string name="feature_weekly_magic_common_n_n_">%d/%d</string>
+    <string name="feature_weekly_magic_common_cards">cards</string>
+    <string name="feature_weekly_magic_common_you_won">You won!</string>
+    <string name="feature_weekly_magic_common_in_">in</string>
+    <string name="feature_weekly_magic_common_your_collection_is_complete">Your collection is complete!</string>
+    <string name="feature_weekly_magic_common_collect_all_cards_and_win_up_in_gold">Collect all cards and win upto ₹%s in gold!</string>
+    <string name="feature_weekly_magic_common_you_won_a_mystery_card_on_this_transaction">You won a mystery card on this transaction!</string>
+    <string name="feature_weekly_magic_common_current_challenge">Current Challenge</string>
+
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_one">Hello, I’m Magic hat!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_two">…and I’m here \n to make savings fun!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_three">How you ask? \n Using my magic of course!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_one">Save or Auto-save, \n and get my mystery cards!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_two">Collect all the cards of the week \n &amp; I’ll gift you an exciting reward!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_one">The bigger your savings, \n the bigger my rewards for you!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_two">So what are you waiting for? \n Let’s begin!</string>
+    <string name="feature_weekly_magic_common_hooray">Hooray!</string>
+    <string name="feature_weekly_magic_common_click_any_where_to_continue">Click any where to continue...</string>
+    <string name="feature_weekly_magic_common_congratulations">Congratulations!</string>
+    <string name="feature_weekly_magic_common_challenge_not_found">Challenge Not found</string>
+    <string name="feature_weekly_magic_common_week_n">Week %s</string>
+    <string name="feature_weekly_magic_common_click_left">Press Left</string>
+    <string name="feature_weekly_magic_common_click_right">Press Right</string>
+    <string name="feature_weekly_magic_common_feature_description">Weekly Feature Description</string>
+    <string name="feature_weekly_magic_common_next">Next</string>
+    <string name="feature_weekly_magic_common_close">Close</string>
+    <string name="feature_weekly_magic_common_details_not_found">Details not found</string>
+    <string name="feature_weekly_magic_common_people_participated">people participated</string>
+    <string name="feature_weekly_magic_common_worth_of_gold_was_won">worth of gold was won</string>
+    <string name="feature_weekly_magic_common_collect">Collect </string>
+    <string name="feature_weekly_magic_common_weekly_magic_currency_in_s">\u20B9%s</string>
+</resources>

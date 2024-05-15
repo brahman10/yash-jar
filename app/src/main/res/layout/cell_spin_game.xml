@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/bgColor">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderPlayGames"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:clickable="false"
+        android:drawablePadding="8dp"
+        android:focusable="false"
+        app:fontFamily="@font/inter_bold"
+        android:text="@string/play_games"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toStartOf="@id/txtSpinCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderDoubleYourSaving"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:text="@string/double_your_savings"
+        app:layout_constraintEnd_toStartOf="@id/txtSpinCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaderPlayGames" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSpinCount"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_black_bg_16dp"
+        android:clickable="false"
+        android:drawableStart="@drawable/core_ui_ic_spinner_new"
+        android:drawablePadding="12dp"
+        android:focusable="false"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/color_EEEAFF"
+        app:layout_constraintBottom_toBottomOf="@id/tvHeaderDoubleYourSaving"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvHeaderPlayGames"
+        tools:text="Spins: 12" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_gradient"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderDoubleYourSaving">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="125dp"
+            android:layout_height="120dp"
+            android:clickable="false"
+            android:focusable="false"
+            tools:src="@drawable/ic_coin_01_gm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/spin_the_bottle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderDoubleYourSavingInner"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/double_your_savings"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintBottom_toTopOf="@+id/tvHeaderSpinDesc"
+            app:layout_constraintStart_toEndOf="@+id/lottie"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderSpinDesc"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/inter"
+            android:gravity="start|center_vertical"
+            android:text="@string/spin_the_bottle_and_2x_your_savings"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lottie"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderDoubleYourSavingInner"
+            app:lineHeight="24sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_arrow_forward"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvHeaderSpinDesc"
+            app:layout_constraintTop_toTopOf="@+id/tvHeaderSpinDesc"
+            app:tint="@color/color_ACA1D3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

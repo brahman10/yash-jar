@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_entry_nav"
+    app:startDestination="@id/savingForTitleFragment">
+
+    <fragment
+        android:id="@+id/savingForTitleFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.userEntry.userEntries.goalName.EnterTitleFragment"
+        android:label="SavingForTitleFragment" >
+        <action
+            android:id="@+id/action_savingForTitleFragment_to_enterAmountFragment"
+            app:destination="@id/enterAmountFragment" />
+        <action
+            android:id="@+id/action_savingForTitleFragment_to_abandonDailog"
+            app:destination="@id/abandonDailog" />
+        <action
+            android:id="@+id/action_savingForTitleFragment_to_enterUserGoalDialog"
+            app:destination="@id/enterUserGoalDialog" />
+        <action
+            android:id="@+id/action_savingForTitleFragment_to_userAmountAndDuration"
+            app:destination="@id/enterUserAmountAndDuration" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterAmountFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.userEntry.userEntries.goalAmount.EnterAmountFragment"
+        android:label="EnterAmountFragment" >
+        <argument
+            android:name="savingForTitle"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_enterAmountFragment_to_enterDurationFragment"
+            app:destination="@id/enterDurationFragment" />
+        <action
+            android:id="@+id/action_enterAmountFragment_to_abandonDailog"
+            app:destination="@id/abandonDailog" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterUserAmountAndDuration"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.userEntry.userEntries.enter_amount_duration.UserAmountAndDuration"
+        android:label="UserAmountAndDuration" >
+        <argument
+            android:name="savingForTitle"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_enterAmountFragment_to_enterDurationFragment"
+            app:destination="@id/enterDurationFragment" />
+        <action
+            android:id="@+id/action_enterAmountFragment_to_abandonDailog"
+            app:destination="@id/abandonDailog" />
+        <action
+            android:id="@+id/enterUserAmountAndDuration_to_goalSuccessFragment"
+            app:destination="@id/goalSuccessFragment"
+            app:popUpTo="@id/defaultLoadingFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/enterDurationFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.userEntry.userEntries.goalDuration.EnterDurationFragment"
+        android:label="EnterDurationFragment">
+        <action
+            android:id="@+id/action_enterAmountFragment_to_abandonFragment"
+            app:destination="@id/abandonDailog" />
+    </fragment>
+    <dialog
+        android:id="@+id/enterUserGoalDialog"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.userEntry.userEntries.goalName.GoalNameBottomSheet"
+        android:label="EnterUserGoalDialogFragment"
+        tools:layout="@layout/fragment_goal_name_bottom_sheet">
+        <argument
+            android:name="questionName"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="nameInputText"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="goalMinLength"
+            app:argType="integer"
+            app:nullable="false"/>
+        <argument
+            android:name="goalMaxLength"
+            app:argType="integer"
+            app:nullable="false"/>
+        <argument
+            android:name="goalIconUrl"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/abandonDailog"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.abandonSheet.AbandonScreenFragment"
+        android:label="BackAlertBottomSheetFragment"
+        tools:layout="@layout/layout_back_alert_bottom_sheet_fragment">
+    </dialog>
+
+</navigation>

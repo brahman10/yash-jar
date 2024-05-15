@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintBottom_toTopOf="@id/btnNext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                style="@style/BigTextViewStyle"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+                android:drawableEnd="@drawable/feature_lending_ic_100_secure"
+                android:drawablePadding="10dp"
+                android:textSize="20sp"
+                app:lineHeight="30sp"
+                android:gravity="start|center_vertical"
+                android:text="@string/feature_lending_your_kyc_is_verified"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardKycDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/feature_lending_double_border_bg"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toBottomOf="@id/cardEmiDetails">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNameTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_name"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@id/tvDobTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toStartOf="@id/tvDobTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNameTitle"
+                    tools:text="@tools:sample/lorem" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDobTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    android:text="@string/feature_lending_date_of_birth"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDob"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDobTitle"
+                    tools:text="28/06/1999" />
+
+                <View
+                    android:id="@+id/separatorKycDetails1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmailTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_e_mail"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separatorKycDetails1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmail"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailTitle"
+                    tools:text="@tools:sample/lorem" />
+
+                <View
+                    android:id="@+id/separatorKycDetails2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPanTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_permanent_account_number"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separatorKycDetails2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPan"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvPanTitle"
+                    tools:text="@tools:sample/lorem" />
+
+                <View
+                    android:id="@+id/separatorKycDetails3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvPan" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAadhaarTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_aadhar_number"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separatorKycDetails3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAadhaar"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvAadhaarTitle"
+                    tools:text="@tools:sample/lorem" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnNext"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        app:buttonTextAllCaps="false"
+        app:buttonText="@string/feature_lending_next"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintHeight_min="54dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menuGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menuEditDetails"
+            android:title="@string/feature_vasooli_edit_details" />
+        <item
+            android:id="@+id/menuMarkPaid"
+            android:title="@string/feature_vasooli_mark_as_fully_paid" />
+        <item
+            android:id="@+id/menuMarkDefault"
+            android:title="@string/feature_vasooli_mark_as_default" />
+        <item
+            android:id="@+id/menuDeleteRecord"
+            android:title="@string/feature_vasooli_delete_record" />
+
+    </group>
+
+</menu>

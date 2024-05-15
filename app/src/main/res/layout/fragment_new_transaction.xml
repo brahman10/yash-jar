@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transaction_gradient">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/BigTextViewStyle"
+        app:tabTextColor="@color/white" />
+
+    <com.jar.app.core_ui.widget.NetworkStripView
+        android:id="@+id/networkView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    <com.jar.app.core_ui.widget.NestedScrollableHost
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/networkView">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/transactionViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jar.app.core_ui.widget.NestedScrollableHost>
+
+    <com.jar.app.core_ui.pull_to_refresh_overlay.PullToRefreshOverlayView
+        android:id="@+id/pullToRefreshOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

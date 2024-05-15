@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="16dp"
+    android:id="@+id/clRoot"
+    android:background="@drawable/feature_vasooli_bg_rounded_1ea787_10dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="12dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="12dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTick"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/feature_vasooli_ic_green_tick"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFullyRepaid"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="15dp"
+        android:text="@string/feature_vasooli_fully_repaid"
+        app:layout_constraintTop_toTopOf="@id/ivTick"
+        app:layout_constraintStart_toEndOf="@id/ivTick" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRepaymentDate"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="15dp"
+        android:text="@string/feature_vasooli_fully_repaid"
+        app:layout_constraintBottom_toBottomOf="@id/ivTick"
+        app:layout_constraintStart_toEndOf="@id/ivTick"
+        tools:text="12 June 2022"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRepaymentAmount"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/feature_vasooli_fully_repaid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        tools:text="₹12000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+package com.jar.app.feature_daily_investment_cancellation.shared.domain.use_case.impl
+
+import com.jar.app.feature_daily_investment_cancellation.shared.data.repository.DailyInvestmentCancellationRepository
+import com.jar.app.feature_daily_investment_cancellation.shared.domain.use_case.FetchDailyInvestmentConfirmActionDataUseCase
+
+internal class FetchDailyInvestmentConfirmActionDataUseCaseImpl constructor(
+    private val dailyInvestmentCancellationRepository: DailyInvestmentCancellationRepository
+) : FetchDailyInvestmentConfirmActionDataUseCase {
+
+    override suspend fun fetchDailyInvestmentConfirmActionData(type: String) = dailyInvestmentCancellationRepository.fetchDailyInvestmentConfirmActionDetails(type)
+}

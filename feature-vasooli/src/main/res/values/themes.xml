@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupStyle" parent="@android:style/Widget.PopupMenu">
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.App.BodyLarge</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.App.BodyLarge</item>
+        <item name="popupMenuBackground">@drawable/feature_vasooli_bg_popup_menu</item>
+        <item name="android:popupElevation">12dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.App.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+</resources>

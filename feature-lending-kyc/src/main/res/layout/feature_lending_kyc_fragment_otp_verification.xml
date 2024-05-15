@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/core_ui_bg_top_rounded_corner">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCross"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="28dp"
+            android:padding="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/core_ui_ic_close"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivTopIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCross"
+            app:srcCompat="@drawable/feature_lending_kyc_ic_email" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEnterOtp"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/feature_lending_kyc_enter_otp"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivTopIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEnterOtp"
+            tools:text="@string/feature_lending_kyc_sent_to_s_email_check_spam_as_well" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="24dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:fontFamily="@font/inter_bold"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSelectHandle="@drawable/ic_empty_handle"
+            android:textSize="20sp"
+            app:OtpItemCount="6"
+            app:OtpItemSpacing="10dp"
+            app:OtpLineColor="@color/white"
+            app:OtpViewType="line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+            <requestFocus />
+        </com.mukesh.OtpView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOtpError"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/core_ui_ic_error"
+            android:drawablePadding="4dp"
+            android:gravity="start"
+            android:textColor="@color/color_EB6A6E"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/otpView"
+            app:layout_constraintStart_toStartOf="@id/otpView"
+            app:layout_constraintTop_toBottomOf="@id/otpView"
+            tools:text="@string/something_went_wrong"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvOtpError,otpView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAadhaarOtpExpiry"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_rounded_corner_white"
+            android:backgroundTint="@color/color_2E2843"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/color_ACA1D3"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/barrierOtp"
+            tools:text="@string/feature_lending_kyc_it_usually_takes_s_time_to_get_aadhaar_otp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAadhaarResendContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="24dp"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_rounded_corner_white"
+            android:backgroundTint="@color/color_2E2843"
+            app:layout_constraintTop_toBottomOf="@id/barrierOtp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNeedToSendOtp"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/feature_lending_kyc_need_to_resend_otp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvReenterCaptcha"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/feature_lending_kyc_reenter_captcha" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clExpiryTimerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="24dp"
+            app:layout_constraintTop_toBottomOf="@id/barrierOtp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOtpExpiresIn"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvResendOtp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/feature_lending_kyc_otp_expires_in_s" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvResendOtp"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvOtpExpiresIn"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/feature_lending_kyc_resent_otp_in_s" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxConsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:button="@drawable/core_ui_custom_checkbox"
+            android:checked="false"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvIHereByConsent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIHereByConsent"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="start"
+            tools:text="@string/feature_lending_kyc_i_hereby_consent_jar"
+            app:layout_constraintBottom_toTopOf="@id/btnVerify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/checkboxConsent"
+            app:layout_constraintTop_toBottomOf="@id/tvOtpError" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="45dp"
+            app:buttonText="@string/core_ui_verify"
+            app:buttonDisabled="true"
+            app:buttonTextAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_min="46dp"
+            app:layout_goneMarginBottom="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

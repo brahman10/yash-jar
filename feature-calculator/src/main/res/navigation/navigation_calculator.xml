@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calculator_navigation"
+    app:startDestination="@id/calculatorFragment">
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.jar.app.feature_calculator.impl.ui.CalculatorFragment"
+        android:label="CalculatorFragment">
+        <deepLink app:uri="android-app://com.jar.app/calculatorFragment/{calculatorType}" />
+        <argument
+            android:name="calculatorType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+</navigation>

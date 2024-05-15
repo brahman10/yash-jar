@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/color_2E2942">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvQuestion"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Why do I need to enter Aadhaar card details?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAnswer"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel auctor ante. Etiam faucibus vestibulum nibh, non aliquet nunc imperdiet quis. Curabitur id tortor ut augue viverra ultricies. Donec accumsan ante ac ipsum congue posuere. " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDisclaimer"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="start"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@id/tvAnswer"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel auctor ante. Etiam faucibus vestibulum nibh, non aliquet nunc imperdiet quis. Curabitur id tortor ut augue viverra ultricies. Donec accumsan ante ac ipsum congue posuere. " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

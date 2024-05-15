@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:background="@drawable/rounded_black_bg_12dp"
+    android:backgroundTint="@color/color_3C3357">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvPaymentOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_black_bg_12dp"
+        android:backgroundTint="@color/color_3C3357"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTopView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAppIcon"
+                android:layout_width="51dp"
+                android:layout_height="44dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:backgroundTint="@color/white"
+                android:clickable="false"
+                android:focusable="false"
+                android:padding="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_gold_brick" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAppName"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivAppIcon"
+                app:layout_constraintStart_toEndOf="@id/ivAppIcon"
+                app:layout_constraintTop_toTopOf="@id/ivAppIcon"
+                tools:text="PhonePe" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSelectedState"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/feature_mandate_payment_ic_radio_button_unselected"
+                app:layout_constraintBottom_toBottomOf="@id/ivAppIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivAppIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="16dp"
+            app:el_duration="300"
+            app:el_expanded="false"
+            tools:el_expanded="true"
+            app:layout_constraintTop_toBottomOf="@id/clTopView">
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:buttonText="@string/feature_mandate_payment_proceed" />
+        </net.cachapa.expandablelayout.ExpandableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

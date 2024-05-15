@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_navigation"
+    app:startDestination="@id/winningWithdrawalStatusDialog">
+
+    <action
+        android:id="@+id/action_winningWithdrawalStatusDialog"
+        app:destination="@id/winningWithdrawalStatusDialog"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/transactionFilterFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.filter.TransactionFilterFragment"
+        android:label="TransactionFilterFragment"
+        tools:layout="@layout/feature_transaction_fragment_transaction_filter">
+        <deepLink app:uri="android-app://com.jar.app/transactionFilterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.details.TransactionDetailFragment"
+        android:label="TransactionDetailFragment"
+        tools:layout="@layout/feature_transaction_fragment_transaction_details">
+
+        <deepLink app:uri="android-app://com.jar.app/transactionDetail/{orderId}/{txnId}/{sourceType}" />
+
+        <!--        Careful while renaming. Used in savedStateHandle-->
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="txnId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="sourceType"
+            app:argType="string"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_transactionDetailFragment_to_withdrawRetryFragment"
+            app:destination="@id/withdrawRetryFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/transactionDetailsBottomSheet"
+        android:name="com.jar.app.feature_transaction.impl.ui.details_bottom_sheet.TransactionDetailsBottomSheet"
+        android:label="TransactionDetailsBottomSheet"
+        tools:layout="@layout/feature_transaction_detail_bottom_sheet">
+
+        <deepLink app:uri="android-app://com.jar.app/transactionDetailBottomSheet/{id}" />
+
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false" />
+
+    </dialog>
+
+    <fragment
+        android:id="@+id/withdrawWinningFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.winning.ui.WithdrawWinningFragment"
+        android:label="WithdrawWinningFragment"
+        tools:layout="@layout/feature_transaction_fragment_withdraw_winnings">
+        <deepLink app:uri="android-app://com.jar.app/withdrawWinningFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/withdrawRetryFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.retry.RetryGoldWithdrawalFragment"
+        android:label="WithdrawRetryFragment"
+        tools:layout="@layout/feature_transaction_fragment_retry_gold_withdrawal">
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/winningAmountBreakDown"
+        android:name="com.jar.app.feature_transaction.impl.ui.winning.ui.WinningAmountBreakDown"
+        android:label="UserWinningBreakdownFragment"
+        tools:layout="@layout/fragment_user_amount_breakdown">
+        <argument
+            android:name="breakdownType"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink app:uri="android-app://com.jar.app/userWinningAmountBreakDown/{breakdownType}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/winningsDebitedDialogFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.winning.WinningsDebitedDialogFragment"
+        android:label="WinningsDebitedDialogFragment"
+        tools:layout="@layout/feature_transaction_fragment_winnigs_debited_dialog">
+        <argument
+            android:name="winningData"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/winningsDebitedDialog/{winningData}" />
+    </dialog>
+    <dialog
+        android:id="@+id/winningsCreditedDialogFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.winning.WinningsCreditedDialogFragment"
+        android:label="WinningsCreditedDialogFragment"
+        tools:layout="@layout/feature_transaction_fragment_winnings_credited">
+        <argument
+            android:name="winningData"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/winningsCreditedDialog/{winningData}" />
+    </dialog>
+    <dialog
+        android:id="@+id/winningWithdrawalStatusDialog"
+        android:name="com.jar.app.feature_transaction.impl.ui.winning.ui.WinningWithdrawalStatusDialog"
+        android:label="WinningWithdrawalStatusDialog"
+        tools:layout="@layout/feature_transaction_fragment_winning_withdrawal_status_dialog" />
+
+    <!--New Transaction Details will be only opened from Transactions Tab and Gold Lease Flow as of now,
+    we will implement at other places once design for other flows is finalised.-->
+    <fragment
+        android:id="@+id/newTransactionDetailsFragment"
+        android:name="com.jar.app.feature_transaction.impl.ui.new_details.NewTransactionDetailsFragment"
+        android:label="NewTransactionDetailsFragment"
+        tools:layout="@layout/feature_transaction_fragment_new_transaction_details">
+        <deepLink app:uri="android-app://com.jar.app/newTransactionDetail/{orderId}/{txnId}/{sourceType}" />
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="txnId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="sourceType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+</navigation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_8dp"
+    android:background="@drawable/feature_gold_delivery_bg_rounded_3c3357_8dp"
+    android:layout_marginVertical="@dimen/dimen_8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:textColor="#58DDC8"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Lakshmi Gold Coin (0.5gm | 1 item)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subtitle"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#58DDC8"
+        android:paddingStart="@dimen/dimen_8dp"
+        tools:text="₹1,420" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="daily_investment_lets_automate_your_rs_d">Aap ki roz ki savings \nitni hogi - ₹%d</string>
+    <string name="feature_daily_investment_daily_on_jar">save karte hain</string>
+    <string name="feature_daily_investment_one_crore_indians_save">Jar par 7 lakh Indians har roz</string>
+    <string name="feature_daily_investment_next">Aage Badhein</string>
+    <string name="feature_daily_savings">Roz Ki Savings</string>
+</resources>

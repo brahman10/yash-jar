@@ -1,0 +1,5 @@
+package com.jar.app.feature_one_time_payments.shared.domain.event
+
+import com.jar.app.feature_one_time_payments.shared.domain.model.juspay.InitiateNewCardPaymentPayload
+
+data class InitiateNewCardPaymentWithJuspay(val initiateNewCardPaymentPayload: InitiateNewCardPaymentPayload)

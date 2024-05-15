@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAutoSaveSetupAmount"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginTop="25dp"
+        android:gravity="start"
+        android:text="@string/feature_round_off_autosave_setup_amount"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/tvXTotalAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvXTotalAmount"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:textColor="@color/color_EEEAFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvAutoSaveSetupAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvAutoSaveSetupAmount"
+        tools:text="@string/feature_round_off_currency_float_x" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clROContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/color_EBB46A_10"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAutoSaveSetupAmount">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSettingUpNow"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/feature_round_off_currently_setting_up"
+            android:textAllCaps="true"
+            android:textColor="@color/color_EBB46A"
+            app:layout_constraintBottom_toTopOf="@id/tvRoundOff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRoundOff"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/feature_round_off_label"
+            android:textColor="@color/color_EEEAFF"
+            android:textSize="16sp"
+            app:fontFamily="@font/inter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSettingUpNow" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUptoRORsX"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/tvRoundOff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvRoundOff"
+            tools:text="@string/feature_round_off_upto_x" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActiveSavingsPlan"
+        style="@style/SmallBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/feature_round_off_active_savings_plan"
+        android:textColor="@color/color_776E94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clROContainer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDailySaving"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/feature_daily_savings"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="@id/tvActiveSavingsPlan"
+        app:layout_constraintTop_toBottomOf="@id/tvActiveSavingsPlan" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActivatedOn"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="@id/tvActiveSavingsPlan"
+        app:layout_constraintTop_toBottomOf="@id/tvDailySaving"
+        tools:text="@string/feature_round_off_activated_on_s_date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDSRsX"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintBottom_toBottomOf="@id/tvDailySaving"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDailySaving"
+        tools:text="@string/feature_round_off_currency_int_x" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupDSDisabledROActivating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvActiveSavingsPlan,tvDSRsX,tvActivatedOn,tvDailySaving"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clNoteContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/feature_round_off_bg_rounded_outline_3c3357_12dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnProceed">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNote"
+            style="@style/SmallBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feature_round_off_note"
+            app:layout_constraintBottom_toTopOf="@id/tvJarWillNeverDebitX"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJarWillNeverDebitX"
+            style="@style/CommonTextViewStyle"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feature_round_off_jar_will_never_debit_more_than_xf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNote" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:translationZ="4dp"
+        app:buttonText="@string/core_ui_proceed"
+        app:layout_constraintBottom_toTopOf="@id/ivNpci" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivNpci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="16dp"
+        android:translationX="10dp"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivSecure"
+        app:layout_constraintHeight_max="24dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_npci" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSecure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:translationX="10dp"
+        android:translationY="-2dp"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivNpci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="24dp"
+        app:layout_constraintStart_toEndOf="@id/ivNpci"
+        app:layout_constraintTop_toTopOf="@id/ivNpci"
+        app:srcCompat="@drawable/core_ui_ic_secure_with_shield" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

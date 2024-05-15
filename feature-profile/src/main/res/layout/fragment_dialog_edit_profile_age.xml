@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feature_profile_dialog_background"
+    android:maxWidth="500dp"
+    android:paddingVertical="20dp"
+    tools:context="com.jar.app.feature_profile.impl.ui.profile.age.EditProfileAgeDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvProfileAgeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEditProfileAge"
+            style="@style/BigTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/feature_profile_what_s_your_age"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/feature_profile_round_dark_bg_16dp"
+            android:padding="16dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEditProfileAge">
+
+            <!--      Added singleLine=true, otherwise DONE button doesn't appear in Keyboard -->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etAge"
+                style="@style/BigTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@android:color/transparent"
+                android:digits="0123456789"
+                android:gravity="start"
+                android:maxLength="2"
+                android:hint="@string/feature_profile_enter_your_age"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_776e94"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivStatus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close_filled" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvError"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/color_EB6A6E"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clAge" />
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/feature_profile_round_dark_bg_50dp"-->
+        <!--            android:clipChildren="false"-->
+        <!--            android:clipToPadding="false"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/flList"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/flList"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/flList"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/flList">-->
+
+        <!--            <club.cred.synth.views.PitView-->
+        <!--                android:layout_width="168dp"-->
+        <!--                android:layout_height="64dp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:neuCornerRadius="50dp"-->
+        <!--                app:pitDepth="6dp"-->
+        <!--                app:pitColor="@color/bgColor"/>-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <FrameLayout-->
+        <!--            android:id="@+id/flList"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:clipChildren="true"-->
+        <!--            android:clipToPadding="true"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tvEditProfileAge">-->
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/rvAge"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="180dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:fadingEdgeLength="70dp"-->
+        <!--            android:minWidth="200dp"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:requiresFadingEdge="vertical"-->
+        <!--            tools:itemCount="3"-->
+        <!--            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+        <!--            tools:listitem="@layout/cell_profile_age_item" />-->
+
+        <!--        </FrameLayout>-->
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            app:buttonText="@string/feature_profile_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvError" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCancel"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="12dp"
+            android:textFontWeight="600"
+            android:textSize="14sp"
+            android:text="@string/core_ui_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSave" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/editProfileSuccessLayout"
+        layout="@layout/layout_profile_edit_success"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

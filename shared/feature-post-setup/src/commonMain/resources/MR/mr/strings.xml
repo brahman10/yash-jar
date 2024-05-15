@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_buy_gold_refresh">रिफ्रेश करा</string>
+    <string name="core_ui_rs_x_int">\u20B9%d</string>
+    <string name="retry">पुन्हा प्रयत्न करा</string>
+</resources>

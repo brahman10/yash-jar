@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_mandate_payment_proceed">Proceed</string>
+    <string name="feature_mandate_payment_invalid_upi_id">Invalid Upi Id</string>
+    <string name="feature_mandate_payment_upi_id_doesnt_support_mandate">Upi Id doesn\'t support mandate</string>
+    <string name="feature_mandate_payment_transaction_cancelled">Transaction cancelled</string>
+    <string name="feature_mandate_payment_something_went_wrong">Something went wrong</string>
+    <string name="feature_mandate_payment_we_are_verifying_your_payment_status">We are verifying your payment status.</string>
+    <string name="feature_mandate_rs_x_int_will_be_debited_from_your_bank_account">₹%d will be debited from your bank account, to setup auto-save</string>
+    <string name="feature_mandate_it_will_be_saved_in_gold_and_can_be_found_in_gold_locker">It will be saved in gold and can be found in gold locker</string>
+    <string name="feature_mandate_payment_select_preferred_way_to_autosave">Select preferred way to auto-save</string>
+    <string name="feature_mandate_payment_using_upi_app">Using UPI app</string>
+    <string name="feature_mandate_payment_skip">Skip</string>
+    <string name="feature_mandate_payment_it_will_be_saved_in_gold">It will be saved in gold and can be found in your gold locker.</string>
+    <string name="feature_mandate_payment_watch_a_video_instead">Watch a video instead.</string>
+    <string name="feature_mandate_payment_watch_video">Watch Video</string>
+    <string name="feature_mandate_payment_choose_payment_method">Choose payment method</string>
+    <string name="feature_mandate_payment_how_does_this_work">How does this work?</string>
+    <string name="feature_mandate_payment_saved_upi_id">Saved UPI IDs</string>
+
+    <string name="feature_mandate_payment_per_day_limit">Per day limit</string>
+    <string name="feature_mandate_payment_per_week_limit">Per week limit</string>
+    <string name="feature_mandate_payment_per_month_limit">Per month limit</string>
+    <string name="feature_mandate_payment_day">Day</string>
+</resources>

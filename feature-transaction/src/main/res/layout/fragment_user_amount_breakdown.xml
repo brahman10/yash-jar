@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvAmountHeader"
+        app:srcCompat="@drawable/ic_close"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmountHeader"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:gravity="center"
+        android:text="@string/invested_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAmountHeader"
+        tools:text="1282383" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_black_bg_16dp"
+        android:paddingVertical="24dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_auto_start="true"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYouInvested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_invested"
+            android:paddingStart="@dimen/dimen_24dp"
+            android:paddingBottom="@dimen/dimen_24dp"
+            app:fontFamily="@font/inter_bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYouInvestedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dimen_24dp"
+            android:paddingBottom="@dimen/dimen_24dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExtraGold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="EXTRA GOLD earned"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_12sp"
+            android:paddingStart="@dimen/dimen_24dp"
+            android:paddingBottom="10dp"
+            app:fontFamily="@font/inter_bold"
+            android:paddingTop="@dimen/dimen_24dp"
+            android:textColor="#FFCD5A"
+            android:background="@color/bgColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvYouInvested"
+            />
+
+        <FrameLayout
+            android:id="@+id/flData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#272239"
+            app:layout_constraintTop_toBottomOf="@+id/tvExtraGold">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_24dp"
+                android:paddingEnd="@dimen/dimen_24dp"
+                android:paddingBottom="@dimen/dimen_24dp"
+                android:visibility="gone"
+                tools:itemCount="4"
+                tools:listitem="@layout/core_ui_cell_gold_breakdown" />
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="shimmerPlaceholder,flData" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderTotalGoldPurchased"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/gold_withdrawn"
+            app:fontFamily="@font/inter_bold"
+            android:paddingStart="@dimen/dimen_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTotalAmount"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/inter_bold"
+            android:paddingEnd="@dimen/dimen_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvHeaderTotalGoldPurchased"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvHeaderTotalGoldPurchased"
+            tools:text="1.2343 gm" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

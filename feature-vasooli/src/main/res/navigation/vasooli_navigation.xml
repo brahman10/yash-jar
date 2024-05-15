@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vasooli_navigation"
+    app:startDestination="@id/vasooliIntroFragment">
+
+    <action
+        android:id="@+id/action_to_PromptBottomSheetFragment"
+        app:destination="@id/promptBottomSheetFragment"/>
+
+    <fragment
+        android:id="@+id/vasooliIntroFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.intro.VasooliIntroFragment"
+        android:label="VasooliIntroFragment"
+        tools:layout="@layout/fragment_vasooli_intro">
+
+        <deepLink app:uri="android-app://com.jar.app/vasooliIntroFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/vasooliHomeFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.home.VasooliHomeFragment"
+        android:label="VasooliHomeFragment"
+        tools:layout="@layout/fragment_vasooli_home">
+        <action
+            android:id="@+id/action_vasooliHomeFragment_to_vasooliEntryFragment"
+            app:destination="@id/vasooliEntryFragment" />
+        <action
+            android:id="@+id/action_vasooliHomeFragment_to_vasooliDetailsFragment"
+            app:destination="@id/vasooliDetailsFragment" />
+
+        <deepLink app:uri="android-app://com.jar.app/vasooliHomeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/vasooliEntryFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.entry.VasooliEntryFragment"
+        android:label="VasooliEntryFragment"
+        tools:layout="@layout/fragment_vasooli_entry">
+
+        <argument
+            android:name="vasooliEntryRequest"
+            app:argType="com.jar.app.feature_vasooli.impl.domain.model.VasooliEntryRequest"
+            app:nullable="true"/>
+
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/vasooliDetailsFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.details.VasooliDetailsFragment"
+        tools:layout="@layout/fragment_vasooli_details"
+        android:label="VasooliDetailsFragment" >
+
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_vasooliDetailsFragment_to_addRepaymentFragment"
+            app:destination="@id/addRepaymentFragment" />
+        <action
+            android:id="@+id/action_vasooliDetailsFragment_to_vasooliConfirmationFragment"
+            app:destination="@id/vasooliConfirmationFragment" />
+        <action
+            android:id="@+id/action_vasooliDetailsFragment_to_vasooliEntryFragment"
+            app:destination="@id/vasooliEntryFragment" />
+        <action
+            android:id="@+id/action_vasooliDetailsFragment_to_sendReminderFragment"
+            app:destination="@id/sendReminderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addRepaymentFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.add_repayment.AddRepaymentFragment"
+        android:label="AddRepaymentFragment"
+        tools:layout="@layout/fragment_add_repayment">
+
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <argument
+            android:name="dueAmount"
+            app:argType="integer"
+            app:nullable="false"/>
+
+        <argument
+            android:name="takenOnDate"
+            app:argType="long"
+            app:nullable="false"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/vasooliConfirmationFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.confirmation.VasooliConfirmationFragment"
+        android:label="VasooliConfirmationFragment"
+        tools:layout="@layout/fragment_vasooli_confirmation">
+
+        <argument
+            android:name="vasooliConfirmation"
+            app:argType="com.jar.app.feature_vasooli.impl.domain.model.VasooliConfirmation"
+            app:nullable="false"/>
+
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false"/>
+
+        <argument
+            android:name="dueAmount"
+            app:argType="integer"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/sendReminderFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.send_reminder.SendReminderFragment"
+        android:label="SendReminderDragment"
+        tools:layout="@layout/fragment_send_reminder">
+
+        <argument
+            android:name="reminder"
+            app:argType="com.jar.app.feature_vasooli.impl.domain.model.Reminder"
+            app:nullable="false"/>
+
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/promptBottomSheetFragment"
+        android:name="com.jar.app.feature_vasooli.impl.ui.entry.PromptBottomSheetFragment"
+        android:label="PromptBottomSheetFragment"
+        tools:layout="@layout/fragment_prompt_bottom_sheet"/>
+</navigation>

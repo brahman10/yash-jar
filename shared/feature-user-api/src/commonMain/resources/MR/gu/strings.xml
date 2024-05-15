@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">નામ</string>
+    <string name="phone_number">ફોન નંબર</string>
+    <string name="please_fill_all_the_details">કૃપા કરી બધી વિગતો ભરો</string>
+    <string name="email">ઈ-મેલ</string>
+    <string name="pincode">પીનકોડ</string>
+    <string name="city">શહેર</string>
+    <string name="enter_city">શહેર દાખલ કરો</string>
+    <string name="state">રાજ્ય</string>
+    <string name="enter_state">રાજ્ય દાખલ કરો</string>
+    <string name="enter_pin_code">પીનકોડ દાખલ કરો</string>
+    <string name="add_details">વિગતો ઉમેરો</string>
+    <string name="your_full_address">તમારું પૂરું સરનામું</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">વિગતો સબમિટ કરો</string>
+    <string name="details_added">વિગતો ઉમેરાઈ ગઈ છે</string>
+    <string name="street_address_one">ગલીનું સરનામું 1</string>
+    <string name="address_line_1">એડ્રેસ લાઈન 1</string>
+    <string name="address_line_2">એડ્રેસ લાઈન 2</string>
+    <string name="check">ચેક કરો</string>
+    <string name="street_address_two">ગલીનું સરનામું 2 (વૈકલ્પિક)</string>
+    <string name="please_enter_a_valid_pincode">કૃપા કરી માન્ય પીનકોડ દાખલ કરો</string>
+    <string name="this_area_is_not_servicable_currently">આ વિસ્તારમાં તાજેતરમાં સુવિધા ઉપલબ્ધ નથી</string>
+    <string name="edit_address">એડ્રેસ બદલો</string>
+    <string name="add_new_address">નવું એડ્રેસ ઉમેરો</string>
+    <string name="save_new_address">નવું એડ્રેસ સેવ કરો</string>
+    <string name="update_address">એડ્રેસ અપડેટ કરો</string>
+    <string name="save_and_proceed">સેવ કરો અને આગળ વધો</string>
+    <string name="select_an_address_for_delivery">ડિલિવરી માટે એડ્રેસ પસંદ કરો</string>
+    <string name="no_delivery_address_available">કોઈ ડિલિવરી એડ્રેસ ઉપલબ્ધ નથી</string>
+    <string name="saved_addresses">સેવ કરેલ સરનામાં</string>
+    <string name="add_delivery_details">ડીલીવરીની વિગતો દાખલ કરો</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">તમારા આધાર કાર્ડ સાથે લિંક કરવામાં આવેલ છે</string>
+    <string name="feature_user_api_saved_address">સેવ કરેલ સરનામું</string>
+    <string name="feature_lending_recently_saved">તાજેતરમાં સેવ કરેલ</string>
+    <string name="feature_user_api_day">દિવસ</string>
+    <string name="feature_user_api_days">દિવસો</string>
+    <string name="feature_user_api_week">સપ્તાહ</string>
+    <string name="feature_user_api_weeks">સપ્તાહો</string>
+    <string name="feature_user_api_month">મહિનો</string>
+    <string name="feature_user_api_months">મહિના</string>
+</resources>

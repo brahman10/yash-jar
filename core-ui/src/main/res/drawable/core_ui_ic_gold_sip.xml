@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="24dp"
+    android:height="25dp"
+    android:viewportWidth="24"
+    android:viewportHeight="25">
+    <path
+        android:pathData="M3 10.5H18"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF" />
+    <path
+        android:pathData="M7 2.5V6.5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M13 2.5V6.5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6 15.5C6.55228 15.5 7 15.0523 7 14.5C7 13.9477 6.55228 13.5 6 13.5C5.44772 13.5 5 13.9477 5 14.5C5 15.0523 5.44772 15.5 6 15.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10 15.5C10.5523 15.5 11 15.0523 11 14.5C11 13.9477 10.5523 13.5 10 13.5C9.44772 13.5 9 13.9477 9 14.5C9 15.0523 9.44772 15.5 10 15.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6 19.5C6.55228 19.5 7 19.0523 7 18.5C7 17.9477 6.55228 17.5 6 17.5C5.44772 17.5 5 17.9477 5 18.5C5 19.0523 5.44772 19.5 6 19.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10 19.5C10.5523 19.5 11 19.0523 11 18.5C11 17.9477 10.5523 17.5 10 17.5C9.44772 17.5 9 17.9477 9 18.5C9 19.0523 9.44772 19.5 10 19.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M6 5.5H14C15.6569 5.5 17 6.84315 17 8.5V10.5H19V8.5C19 5.73858 16.7614 3.5 14 3.5H6C3.23858 3.5 1 5.73858 1 8.5V18.5C1 21.2614 3.23858 23.5 6 23.5H10V21.5H6C4.34315 21.5 3 20.1569 3 18.5V8.5C3 6.84315 4.34315 5.5 6 5.5Z" />
+    <path
+        android:pathData="M15.7543 17.5H20.2457L21.6743 22.5H14.3257L15.7543 17.5Z"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18 11.5C18.5523 11.5 19 11.0523 19 10.5C19 9.94772 18.5523 9.5 18 9.5C17.4477 9.5 17 9.94772 17 10.5C17 11.0523 17.4477 11.5 18 11.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10 23.5C10.5523 23.5 11 23.0523 11 22.5C11 21.9477 10.5523 21.5 10 21.5C9.44772 21.5 9 21.9477 9 22.5C9 23.0523 9.44772 23.5 10 23.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21.9355 14.7393C21.9532 14.6735 22.0466 14.6735 22.0643 14.7393L22.212 15.2881L22.7608 15.4358C22.8266 15.4535 22.8266 15.5469 22.7608 15.5646L22.212 15.7123L22.0643 16.2611C22.0466 16.3269 21.9532 16.3269 21.9355 16.2611L21.7878 15.7123L21.239 15.5646C21.1732 15.5469 21.1732 15.4535 21.239 15.4358L21.7878 15.2881L21.9355 14.7393Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21.9355 14.7393C21.9532 14.6735 22.0466 14.6735 22.0643 14.7393L22.212 15.2881L22.7608 15.4358C22.8266 15.4535 22.8266 15.5469 22.7608 15.5646L22.212 15.7123L22.0643 16.2611C22.0466 16.3269 21.9532 16.3269 21.9355 16.2611L21.7878 15.7123L21.239 15.5646C21.1732 15.5469 21.1732 15.4535 21.239 15.4358L21.7878 15.2881L21.9355 14.7393Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20.2475 12.8187C20.2711 12.731 20.3956 12.731 20.4192 12.8187L20.6162 13.5504L21.3479 13.7474C21.4356 13.771 21.4356 13.8955 21.3479 13.9191L20.6162 14.1161L20.4192 14.8478C20.3956 14.9355 20.2711 14.9355 20.2475 14.8478L20.0505 14.1161L19.3188 13.9191C19.2311 13.8955 19.2311 13.771 19.3188 13.7474L20.0505 13.5504L20.2475 12.8187Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20.2475 12.8187C20.2711 12.731 20.3956 12.731 20.4192 12.8187L20.6162 13.5504L21.3479 13.7474C21.4356 13.771 21.4356 13.8955 21.3479 13.9191L20.6162 14.1161L20.4192 14.8478C20.3956 14.9355 20.2711 14.9355 20.2475 14.8478L20.0505 14.1161L19.3188 13.9191C19.2311 13.8955 19.2311 13.771 19.3188 13.7474L20.0505 13.5504L20.2475 12.8187Z" />
+</vector>

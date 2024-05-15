@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:paddingBottom="54dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="34dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_ic_close"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAreYouSure"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="58dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/feature_gold_sip_are_you_sure_you_want_to_disable_gold_sip"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCross" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvYouWillMissSaving"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="58dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/feature_gold_sip_you_will_miss_out_on_saving"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAreYouSure" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnWantToPauseInstead"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="44dp"
+        app:buttonText="@string/feature_gold_sip_want_to_pause_instead"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintHeight_min="56dp"
+        app:layout_constraintTop_toBottomOf="@id/tvYouWillMissSaving" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDisableSip"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        app:buttonEndColor="@color/lightBgColor"
+        app:buttonStartColor="@color/lightBgColor"
+        app:buttonText="@string/feature_gold_sip_disable_sip"
+        app:buttonType="secondaryHollowButton"
+        app:buttonStrokeColor="@color/white_opacity_50"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnWantToPauseInstead" />
+</androidx.constraintlayout.widget.ConstraintLayout>

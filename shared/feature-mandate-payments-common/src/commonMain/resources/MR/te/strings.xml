@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_mandate_payment_proceed">కొనసాగించండి </string>
+    <string name="feature_mandate_payment_invalid_upi_id">చెల్లని Upi ID</string>
+    <string name="feature_mandate_payment_upi_id_doesnt_support_mandate">Upi ID ఆదేశానికి మద్దతు ఇవ్వదు</string>
+    <string name="feature_mandate_payment_transaction_cancelled">ట్రాన్సాక్షన్ రద్దు చేయబడింది</string>
+    <string name="feature_mandate_payment_something_went_wrong">ఏదో తప్పు జరిగింది</string>
+    <string name="feature_mandate_payment_we_are_verifying_your_payment_status">మేము మీ చెల్లింపు స్థితిని ధృవీకరిస్తున్నాము.</string>
+    <string name="feature_mandate_rs_x_int_will_be_debited_from_your_bank_account">ఆటో-సేవ్‌ని సెట్అప్ చేయడానికి మీ బ్యాంక్ అకౌంట్ నుండి ₹%d డెబిట్ చేయబడుతుంది</string>
+    <string name="feature_mandate_it_will_be_saved_in_gold_and_can_be_found_in_gold_locker">ఇది బంగారంలో పొదుపు చేయబడుతుంది మరియు బంగారు లాకర్‌లో కనుగొనబడుతుంది</string>
+    <string name="feature_mandate_payment_select_preferred_way_to_autosave">ఆటో-సేవ్ చేయడానికి ప్రాధాన్య మార్గాన్ని ఎంచుకోండి</string>
+    <string name="feature_mandate_payment_using_upi_app">UPI యాప్‌ని ఉపయోగిస్తోంది</string>
+</resources>

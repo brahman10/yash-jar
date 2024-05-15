@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_home"
+    android:background="@color/color_272239">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_weekly_challenge_home" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_3D2B6F_50"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/container_two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDayOne"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="Mon"
+                tools:textColor="@color/color_ACA1D3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateOne"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="1"
+                tools:textColor="@color/color_ACA1D3" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/container_three"
+            app:layout_constraintStart_toEndOf="@+id/container_one"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDayTwo"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/tvDayThree"
+                app:layout_constraintStart_toEndOf="@+id/tvDayOne"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Tue"
+                tools:textColor="@color/color_ACA1D3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateTwo"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvDayTwo"
+                app:layout_constraintStart_toStartOf="@+id/tvDayTwo"
+                app:layout_constraintTop_toBottomOf="@+id/tvDayTwo"
+                tools:text="2"
+                tools:textColor="@color/color_ACA1D3" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/container_two"
+            app:layout_constraintStart_toEndOf="@+id/container_four"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDayThree"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/tvDayFour"
+                app:layout_constraintStart_toEndOf="@+id/tvDayTwo"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Wed"
+                tools:textColor="@color/color_ACA1D3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateThree"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvDayThree"
+                app:layout_constraintStart_toStartOf="@+id/tvDayThree"
+                app:layout_constraintTop_toBottomOf="@+id/tvDayThree"
+                tools:text="3"
+                tools:textColor="@color/color_ACA1D3" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_corner_5636af_20_radius_8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/container_five"
+            app:layout_constraintStart_toEndOf="@+id/container_three"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDayFour"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/tvDayFive"
+                app:layout_constraintStart_toEndOf="@+id/tvDayThree"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Thu" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateFour"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvDayFour"
+                app:layout_constraintStart_toStartOf="@+id/tvDayFour"
+                app:layout_constraintTop_toBottomOf="@+id/tvDayFour"
+                tools:text="4" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/container_six"
+            app:layout_constraintStart_toEndOf="@+id/container_four"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDayFive"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/tvDaySix"
+                app:layout_constraintStart_toEndOf="@+id/tvDayFour"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Fri" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateFive"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvDayFive"
+                app:layout_constraintStart_toStartOf="@+id/tvDayFive"
+                app:layout_constraintTop_toBottomOf="@+id/tvDayFive"
+                tools:text="5" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/container_seven"
+            app:layout_constraintStart_toEndOf="@+id/container_five"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDaySix"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/tvDaySeven"
+                app:layout_constraintStart_toEndOf="@+id/tvDayFive"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Sat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateSix"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvDaySix"
+                app:layout_constraintStart_toStartOf="@+id/tvDaySix"
+                app:layout_constraintTop_toBottomOf="@+id/tvDaySix"
+                tools:text="6" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/container_six"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDaySeven"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDaySix"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Sun" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateSeven"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvDaySeven"
+                app:layout_constraintStart_toStartOf="@+id/tvDaySeven"
+                app:layout_constraintTop_toBottomOf="@+id/tvDaySeven"
+                tools:text="7" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:max="100"
+        app:indicatorColor="@color/color_7745FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_calender"
+        app:trackColor="@color/color_3C3357"
+        app:trackThickness="3dp"
+        tools:progress="47" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="26dp"
+        android:layout_height="21dp"
+        android:background="?attr/actionBarItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/container_calender"
+        app:layout_constraintEnd_toStartOf="@+id/container_calender"
+        app:layout_constraintStart_toStartOf="@+id/container_calender"
+        app:layout_constraintTop_toTopOf="@+id/container_calender"
+        app:srcCompat="@drawable/core_ui_bg_circle_white"
+        app:tint="@color/color_7745FF_50" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/actionBarItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/container_calender"
+        app:layout_constraintEnd_toEndOf="@+id/container_calender"
+        app:layout_constraintStart_toEndOf="@+id/container_calender"
+        app:layout_constraintTop_toTopOf="@+id/container_calender"
+        app:srcCompat="@drawable/core_ui_bg_circle_white"
+        app:tint="@color/color_7745FF_50" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrentMonth"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        tools:text="Sept" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRemainingDays"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        tools:text="4 Days Remaining" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_timings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvCurrentMonth,tvRemainingDays" />
+
+    <com.jar.app.core_ui.widget.LockableNestedScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/tvBottomMessage"
+        app:layout_constraintTop_toBottomOf="@+id/barrier_timings">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_40"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintGuide_percent="0.40" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_rounded_top_solid_372f55_radius_40"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gl_40" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/magicHatFabLottie"
+                android:layout_width="@dimen/dimen_weekly_home_main_lottie_width"
+                android:layout_height="@dimen/dimen_weekly_home_main_lottie_height"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBubbleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:gravity="center"
+                android:translationY="165dp"
+                android:layout_marginHorizontal="55dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/magicHatFabLottie"
+                tools:text="Text bubble text\nshown here hello world"
+                android:visibility="gone"
+                android:maxWidth="192dp"
+                android:background="@drawable/feature_weekly_challenge_bg_chat_bubble"
+                android:paddingHorizontal="@dimen/dimen_14dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingBottom="28dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCurrentWeekTitle"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Week 1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPrimaryDescription"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="@string/feature_weekly_magic_common_collect"
+                android:gravity="center"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/magicHatFabLottie"
+                android:layout_marginHorizontal="55dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/container_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrimaryDescription">
+
+                <include layout="@layout/layout_magic_card_set_12" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.jar.app.core_ui.widget.LockableNestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnLeftChevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_circular_left_chevron"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_372F55"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBottomMessage"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_15dp"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintBottom_toTopOf="@+id/btnAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Save ₹20 or more to get a card" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:buttonTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

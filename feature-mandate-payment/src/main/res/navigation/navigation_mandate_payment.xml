@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mandate_payment"
+    app:startDestination="@id/paymentPageFragment">
+
+    <action
+        android:id="@+id/action_to_mandateVideoBottomSheet"
+        app:destination="@id/mandateVideoBottomSheet" />
+
+    <fragment
+        android:id="@+id/paymentPageFragment"
+        android:name="com.jar.app.feature_mandate_payment.impl.ui.payment_page.PaymentPageFragment"
+        android:label="PaymentPageFragment"
+        tools:layout="@layout/feature_mandate_payment_fragment_payment_page">
+
+        <deepLink app:uri="android-app://com.jar.app/mandatePaymentPage/{paymentPageHeaderDetails}/{initiateMandatePaymentRequest}" />
+
+        <argument
+            android:name="paymentPageHeaderDetails"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="initiateMandatePaymentRequest"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyMandatePaymentStatusFragment"
+        android:name="com.jar.app.feature_mandate_payment.impl.ui.verify_status.VerifyMandatePaymentStatusFragment"
+        android:label="VerifyMandatePaymentStatusFragment"
+        tools:layout="@layout/feature_mandate_payment_fragment_verify_status">
+
+        <argument
+            android:name="appSelectionFragmentId"
+            app:argType="integer" />
+
+        <argument
+            android:name="paymentPageHeaderDetails"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="mandatePaymentResultFromSDK"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/verifyMandatePaymentStatusFragment/{appSelectionFragmentId}/{paymentPageHeaderDetails}/{mandatePaymentResultFromSDK}" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/mandateVideoBottomSheet"
+        android:name="com.jar.app.feature_mandate_payment.impl.ui.mandate_video.MandateVideoBottomSheet"
+        android:label="MandateVideoBottomSheet"
+        tools:layout="@layout/feature_mandate_payment_mandate_video_bottom_sheet">
+        <argument
+            android:name="videoUrl"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+</navigation>

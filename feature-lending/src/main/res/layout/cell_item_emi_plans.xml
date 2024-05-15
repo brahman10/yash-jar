@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/feature_lending_bg_select_emi_card">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRecommended"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/feature_lending_bg_recommended"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="@string/feature_lending_recommended"
+        android:textAllCaps="true"
+        style="@style/SmallBoldTextViewStyle"
+        android:textColor="@color/color_3c3357"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMonth"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/feature_lending_ic_radio_selected"
+        app:layout_constraintBottom_toBottomOf="@id/tvPerMonth"
+        app:layout_constraintStart_toEndOf="@id/viewSelectedLine"
+        app:layout_constraintTop_toTopOf="@id/tvAmount"
+        tools:text="3 months" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecommended"
+        tools:text="934994" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPerMonth"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_lending_per_month"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/tvAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#3C3357"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/tvPerMonth"
+        tools:visibility="visible" />
+
+    <!--    1 dp margin to show the parent outline border which is of 1dp-->
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginBottom="1dp"
+        android:clickable="false"
+        android:focusable="false"
+        app:el_duration="200"
+        app:el_expanded="false"
+        app:el_parallax="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewSelectedLine"
+        app:layout_constraintTop_toBottomOf="@id/seperator"
+        tools:el_expanded="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/firstDateTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_lending_first_emi_date_new"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toStartOf="@id/firstDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/firstDate"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/firstDateTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="27 June 2012" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lastDateTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/feature_lending_last_emi_date_new"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toStartOf="@id/lastDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstDateTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lastDate"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lastDateTitle"
+                app:layout_constraintTop_toTopOf="@id/lastDateTitle"
+                tools:text="27 June 2012" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/repaymentAmountTitle"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/feature_lending_total_repayment_amount"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toStartOf="@id/repaymentAmount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastDateTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/repaymentAmount"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/repaymentAmountTitle"
+                app:layout_constraintTop_toTopOf="@id/repaymentAmountTitle"
+                tools:text="27 June 2012" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <View
+        android:id="@+id/viewSelectedLine"
+        android:layout_width="8dp"
+        android:layout_height="0dp"
+        android:background="@drawable/feature_lending_bg_selected_start_line"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_margin="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

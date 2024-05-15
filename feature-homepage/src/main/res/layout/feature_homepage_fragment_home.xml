@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="400dp"
+        tools:background="@color/bgColor">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivTopLeft"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBottomRight"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitEnd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--
+        Replace with following after IPL images are removed
+        android:fadingEdgeLength="10dp"
+
+        -->
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingBottom="120dp"
+            app:layout_constraintBottom_toTopOf="@id/clBottomNavStickyCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/feature_homepage_cell_medium_card" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/feature_homepage_gradient_alert_purple_32dp"
+            android:padding="14dp"
+            android:translationZ="@dimen/dimen_1dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/clBottomNavStickyCard"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/buyGoldFabLottie"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_gold_brick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/auspicious" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/buyGoldFabText"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:text="@string/feature_homepage_save_manually"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/buyGoldFabLottie"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBottomNavStickyCard"
+            android:background="@drawable/bg_bottom_nav_sticky_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivJarShield"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivJarShield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvSubHeader"
+                app:layout_constraintTop_toBottomOf="@id/tvHeading"
+                app:layout_constraintStart_toEndOf="@id/ivJarShield"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="tvHeading,tvSubHeader" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCta"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivCross"
+                app:layout_constraintStart_toEndOf="@id/barrier"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_sticky_card_cta"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCtaHeading"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    tools:text="$1000 $900\n Resume"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/ivCross"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollMoreContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/feature_homepage_bg_gradient"
+            android:clickable="true"
+            android:focusable="true"
+            android:translationZ="@dimen/dimen_8dp"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/pullToScrollLottie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/tvScrollToExplore"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/swipe_up"
+                app:lottie_repeatMode="restart" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvScrollToExplore"
+                style="@style/BigTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/feature_homepage_scroll_to_explore_more"
+                android:textSize="@dimen/dimen_18sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

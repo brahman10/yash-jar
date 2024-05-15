@@ -1,0 +1,1105 @@
+<resources>
+
+    <string name="app_name" translatable="false">Jar</string>
+
+    <string name="default_notification_channel_id" translatable="false">CHANGE_JAR_FCM</string>
+    <string name="clevertap_notification_channel_name" translatable="false">Change Jar Clevertap Channel</string>
+
+    <string name="facebook_app_id" translatable="false">134931178603805</string>
+    <string name="facebook_client_token" translatable="false">cef89d746dfc9f47ddef496368bc2d5b</string>
+
+    <!-- Navigation Strings -->
+    <string name="home">Home</string>
+    <string name="discover">Discover</string>
+    <string name="wallet">Wallet</string>
+    <string name="locker">Locker</string>
+    <string name="transactions">Transactions</string>
+    <string name="account">Account</string>
+
+    <string name="invest_your_spare_change">Invest your spare change</string>
+    <string name="in_24k_gold">in 24K Gold</string>
+    <string name="please_enter_age">Please enter age</string>
+    <string name="please_select_gender">Please select gender</string>
+    <string name="login_signup">Create an account</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="perc_100_safe_and_secure">100% safe and secure</string>
+    <string name="next">Next </string>
+    <string name="or">OR</string>
+    <string name="login_with_truecaller">Login With Truecaller</string>
+    <string name="please_enter_a_valid_number">Please enter a valid number</string>
+    <string name="please_enter_a_valid_otp">Please enter a valid OTP</string>
+    <string name="please_enter_a_valid_name">Please enter a valid name</string>
+    <string name="did_not_receive_otp_resend_n_sec">Didn\'t receive OTP? <u>Resend %ds</u></string>
+    <string name="did_not_receive_otp_resend">Didn\'t receive OTP? <u>Resend</u></string>
+    <string name="submit">Submit</string>
+    <string name="we_just_sent_an_otp_to_x_number">We just sent an OTP\n to %s</string>
+    <string name="i_don_t_have_a_promo_code">I don\'t have a promo code</string>
+    <string name="enter_your_code_here">Enter your code here</string>
+    <string name="do_you_have_a_promo_code">Do you have a promo code?</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="your_name_here">Your name here</string>
+    <string name="continue_text">Continue</string>
+    <string name="select_your_gender">Select your gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="age">Age</string>
+    <string name="you_should_know_this_emoji">You should know this 👇🏻</string>
+    <string name="your_spare_change_is_invested_in_pure_gold">Your spare change is invested in 24k, 99.5% pure gold</string>
+    <string name="permissions_required">Permissions required</string>
+    <string name="allow_now">Allow now</string>
+    <string name="jar_needs_to_access_sms_permission">Jar needs access to SMS</string>
+    <string name="we_need_permission_to_read_your_sms_and_enable_savings">Jar calculates your spare change by reading your transaction SMS\n\n*No personal SMS are read.</string>
+    <string name="auto_invest_10_rupees_when_no_spends_are_detected">Auto invest ₹10 when no spends are detected</string>
+    <string name="open_permission_settings">Open permission settings</string>
+
+    <string name="app_under_maintenance">App is under maintenance</string>
+
+    <string name="leaving_already">Leaving Already?</string>
+    <string name="finish_signing_up_and_win_multiple_rewards">Finish signing up and win\nmultiple rewards</string>
+    <string name="maybe_later"><u>Maybe later</u></string>
+    <string name="signup_now">Sign up now</string>
+
+    <string name="play_games">Play games</string>
+    <string name="double_your_savings">Double your savings</string>
+    <string name="spin_the_bottle">Spin the bottle</string>
+    <string name="spin_the_bottle_and_2x_your_savings">Spin to double your most recent saving</string>
+
+    <string name="autopay_failed">Autopay Failed</string>
+    <string name="autopay_setup">Autopay Setup</string>
+    <string name="processing">Processing…</string>
+    <string name="setup_in_progress">Setup in progress</string>
+    <string name="how_it_works">How it works</string>
+
+    <string name="keep_investing">Keep investing</string>
+    <string name="unlock_reward">Unlock reward</string>
+    <string name="you_reached_a_milestone">You reached a milestone!</string>
+    <string name="learn_more">Learn more</string>
+    <string name="get_exciting_rewards">Get exciting rewards</string>
+    <string name="you_own">You Own</string>
+    <string name="_24_karat_gold_99_5_purity">24k | 99.5% Pure Gold</string>
+
+    <string name="hello">Hello!</string>
+    <string name="hello_comma">Hello,</string>
+    <string name="updated_s">Updated %s</string>
+    <string name="n_gm">%sgm</string>
+    <string name="n_n_gm">%s\ngm</string>
+    <string name="start_daily_investing_subheading">Grow your wealth with daily investments</string>
+    <string name="daily_amount">Daily amount</string>
+    <string name="set_amount">Set amount</string>
+    <string name="active_investing">Actively investing \u20B9%s daily</string>
+    <string name="invest_with_upi">Invest with UPI</string>
+    <string name="don_t_want_to_invest_full_amount">Don\'t want to invest full amount?</string>
+    <string name="tap_here"><u>Tap here</u></string>
+    <string name="invest_now">Invest now</string>
+    <string name="start_your_investment_journey">Start your investment journey</string>
+    <string name="rupee_x_in_double">\u20B9%.2f</string>
+    <string name="rupee_x_in_double_strike"><strike>\u20B9%.2f</strike></string>
+    <string name="rupee_x_in_string">\u20B9%s</string>
+    <string name="rupee_x_in_minus_double_strike">- <strike>\u20B9%.2f</strike></string>
+    <string name="rupee_x_in_plus_double_strike">+ <strike>\u20B9%.2f</strike></string>
+    <string name="gift_gold_to_someone_special">Gift gold to someone special</string>
+    <string name="view_gifting_history">View Gifting History</string>
+    <string name="send_a_gift">Send a Gift</string>
+    <string name="buy_x">Buy \u20B9%.1f</string>
+    <string name="sell_x">Sell \u20B9%.1f</string>
+    <string name="delivery_x">Sell \u20B9%.1f</string>
+    <string name="transaction_type_amount">%s ₹%.1f</string>
+
+
+    <string name="view_referrals">View referrals</string>
+    <string name="send_invite">Send invite</string>
+    <string name="invite_a_friend_and_earn_on_jar">Invite a friend and earn on Jar</string>
+
+    <string name="resume_now">Resume Now</string>
+    <string name="setup">Setup</string>
+    <string name="savings_paused">Savings Paused</string>
+    <string name="setup_again_to_start_savings">Turn it back on to start automatic \ninvestments</string>
+    <string name="autopay_disabled">Auto-invest is off</string>
+
+    <plurals name="resuming_in_n">
+        <item quantity="one">Resuming in %d day</item>
+        <item quantity="other">Resuming in %d days</item>
+    </plurals>
+
+    <string name="game_will_be_unlocked">The game will be unlocked on your next transaction!</string>
+    <string name="used_spins_x">You\'ve used %d daily spins</string>
+
+    <string name="leak_canary_test_class_name" translatable="false">assertk.Assert</string>
+
+    <string name="permission_needed">Permission needed</string>
+    <string name="permission_needed_desc">We need permission to proceed further on the app</string>
+
+    <string name="quick_guides">Quick guides</string>
+    <string name="try_withdraw_money">Try “Setup Auto-Invest”</string>
+    <string name="have_some_other_query_or_issue_talk_to_us_on_whatsapp">Have some other query or issue\nTalk to us on WhatsApp</string>
+    <string name="chat_now">Chat now</string>
+    <string name="loading">Loading…</string>
+
+    <string name="updated">Updated %s</string>
+    <string name="min_gold_req_for_delivery_is_n_gm">Minimum gold required for gold delivery is %sgm</string>
+    <string name="enter_pincode_to_check_availability">Enter Pincode to check availability</string>
+    <string name="available_options">Available Options</string>
+    <string name="product_details">Product Details</string>
+    <string name="cart">Cart</string>
+    <string name="based_on_latest_gold_price">Based on latest gold price</string>
+    <string name="material">Material</string>
+    <string name="gold_purity">Gold Purity</string>
+    <string name="weight">Weight</string>
+    <string name="quality">Quality</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="get_delivery">Get Delivery</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="gold_price">Gold price</string>
+    <string name="making_and_delivery_charges">Making &amp; Delivery charges</string>
+    <string name="your_jar_savings_used">Your Jar savings used</string>
+    <string name="to_pay">To pay</string>
+    <string name="add_delivery_details">Add Delivery details</string>
+    <string name="add_new_address">Add new Address</string>
+    <string name="save_new_address">Save new Address</string>
+    <string name="update_address">Update Address</string>
+    <string name="save_and_proceed">Save And Proceed</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="select_an_address_for_delivery">Select an address for delivery</string>
+    <string name="delivery_in_n">Delivery in %s</string>
+    <string name="order_tracking_and_support">Order tracking and support</string>
+    <string name="secure_packaging">Secure packaging</string>
+    <string name="no_return_allowed_after_order_is_placed">No returns allowed after order is placed</string>
+    <string name="order_summary">Order summary</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="this_area_is_not_servicable_currently">This area is not serviceable currently</string>
+    <string name="check">Check</string>
+    <string name="please_enter_a_valid_pincode">Please enter a valid pincode</string>
+    <string name="please_enter_a_valid_email">Please enter a valid email</string>
+    <string name="free">Free</string>
+    <string name="tracking_id">Tracking ID</string>
+    <string name="tracking_id_will_be_generated_after_gold_shipped">Tracking link will be generated after the gold is shipped.</string>
+    <string name="great_decision">Great Decision!</string>
+    <string name="creating_your_order_x">Creating your order for: ₹%s</string>
+    <string name="you_own_n_gm">You Own : %sgm</string>
+    <string name="oops">Oops!</string>
+    <string name="our_delivery_partners_do_not_deliver_here_yet">Our delivery partners do not deliver here yet.</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="street_address_two">Street address 2 (Optional)</string>
+    <string name="perc_99_99_pure_gold" translatable="false">24k | 99.99% Pure Gold</string>
+    <string name="perc_99_pure_gold" translatable="false">24k | 99.5% Pure Gold</string>
+    <string name="fine_gold" translatable="false">Fine Gold</string>
+    <string name="zero_negative_weight_tolerance" translatable="false">Zero Negative | Weight Tolerance</string>
+    <string name="okay">Okay!</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="please_fill_all_the_details">Please fill all the details</string>
+    <string name="details_for_gold_delivery">Details for gold delivery</string>
+    <string name="email">Email</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="enter_city">Enter City</string>
+    <string name="state">State</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
+    <string name="add_details">Add Details</string>
+    <string name="address_for_delivery">Address for delivery</string>
+    <string name="your_full_address">Your full address</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="details_added">Details added</string>
+    <string name="street_address_one">Street address 1</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="what_happens_next">What happens next?</string>
+
+    <string name="our_team_will_get_in_touch_with_you">Our team will get in touch with you</string>
+    <string name="your_gold_will_be_packed_by_our_partner">Your gold will be packed by our partner</string>
+    <string name="gold_will_be_delivered_to_you">Gold will be delivered to you</string>
+
+    <string name="earn_spin_for_every_n_gm_of_gold">Earn spins for every 0.1gm gold you buy</string>
+    <string name="get_extra_2_per_when_we_reach_05_gm">Get 2% extra gold when you reach 0.5 gm</string>
+    <string name="get_gold_coin_and_biscuit_delivered_to_your_doorstep">Get gold coins and biscuits delivered at your doorstep</string>
+
+    <string name="you_bought_n_gm_gold">You bought %sgm gold</string>
+    <string name="youve_won_n_percent_extra_gold">You\'ve won %s%% extra gold</string>
+    <string name="get_gold_delivery">Get gold delivery</string>
+    <string name="youve_earned_n_spins">You\'ve earned %d Spins🚀</string>
+    <string name="youve_won_n_spins">You\'ve won %d Spins</string>
+    <string name="extra_gold_of_rs_n_is_added_to_your_locker">Extra gold of ₹%s is added to your Locker</string>
+    <string name="spin_now">Spin now</string>
+    <string name="share_using">Share using</string>
+    <string name="share_with_friends_text">I just collected %son Jar app. I am saving for my future. So should you. Download through my unique referral link: %s</string>
+    <string name="faqs">FAQs</string>
+    <string name="youve_hit_a_few_milestones">You\'ve hit a few milestones</string>
+    <string name="share_milestone_text_with_link">Hey!👋\nI got 2%% extra gold on Jar app by achieving a new milestone🤩. Grow your wealth too! %s</string>
+    <string name="milestones_terms_and_conditions">Gold delivery and rewards are subject to terms and conditions. <u>Learn More</u></string>
+    <string name="current_milestone">Current Milestone</string>
+    <string name="buy_01_gm_gold">Buy 0.1gm gold</string>
+    <string name="going_great">Going Great!</string>
+    <string name="get_exciting_rewards_on_reaching_milestones">Get exciting rewards on reaching milestones</string>
+    <string name="extra_2_percent_gold_for_certain_milestones">Earn 2% extra gold for certain milestones</string>
+    <string name="extra_gold">extra gold</string>
+    <string name="extra_spins">extra spins</string>
+    <string name="doorstep_delivery_of_gold_coins_and_biscuits">Doorstep delivery of gold coins and biscuits</string>
+    <string name="get_free_spins_for_every_milestone">Get free spins for every milestone</string>
+    <string name="your_journey">Your journey</string>
+    <string name="buy_n_gm_gold">Buy %s gm gold</string>
+    <string name="bought_n_gm_gold">Bought %s gm gold</string>
+    <string name="achieved_n_gm_milestone">Achieved %s gm milestone</string>
+    <string name="n_milestones_reached">%d milestones reached</string>
+    <string name="reward">Reward</string>
+    <string name="reward_claimed">Reward Claimed</string>
+    <string name="n_spins">%d\nSpins</string>
+    <string name="n_percent_gold">+%s%%\nGold</string>
+    <string name="no_milestones_reached">No milestones reached</string>
+    <string name="keep_investing_and_get_2_percent_extra_gold">Keep investing and get 2% extra gold when you reach 0.5 gm</string>
+    <string name="you_are_just_n_gms_away_from_getting_m">You are just %s gm away from getting %s</string>
+    <string name="start_now_by_investing_10_rs">Start now by investing ₹10</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="start_investing">Start Investing</string>
+
+    <string name="my_jar_winnings">My Jar Winnings</string>
+    <string name="view_your_winning_subheading">View your referral bonus and game winnings</string>
+    <string name="gold_is_the_best_option_for_gifting">Gold is the best option for gifting\nMake someone happy today</string>
+    <string name="sell_options">Sell options</string>
+    <string name="sell_history">Sell history</string>
+
+    <string name="search_results">Search Results</string>
+    <string name="share">Share</string>
+    <string name="please_login_again">Please login again</string>
+
+    <string name="please_select_app_language">Please select the language you prefer</string>
+    <string name="done">Done</string>
+
+    <string name="buy_digital_gold">Buy Digital Gold</string>
+    <string name="perc_100_secure_24k_pure_gold">100% Secure | 24K | 99.5% Pure Gold</string>
+    <string name="get_extra_2_perc_gold_on_minimum_purchase_of">Get extra 2% gold on minimum purchase of</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="enter_coupon_code">Enter coupon code</string>
+
+    <string name="currency_sign">₹</string>
+    <string name="you_buy">You buy</string>
+    <string name="best">best</string>
+    <string name="apply_coupon_code">Apply coupon code</string>
+    <string name="coupon_code_applied">Coupon code applied</string>
+    <string name="apply">Apply</string>
+    <string name="by_clicking_on_pay_agree_to_our_terms_of_use_and_privacy_policy">By clicking on pay, you accept the <b><a href="https://www.myjar.app/terms-and-conditions">terms of use</a></b> and <b><a href="https://www.myjar.app/privacy-policy">privacy policy</a></b></string>
+    <string name="pay">Pay</string>
+    <string name="price_valid_for_n_min">Price valid for %s min</string>
+    <string name="current_buy_price_is_n_per_gm">Current buy price is ₹%.2f/gm</string>
+    <string name="n_per_gm">₹%.2f/gm</string>
+    <string name="current_buy_price">Current buy price is</string>
+    <string name="n_double_gm">₹%.2f/gm</string>
+    <string name="price_valid_for">Price valid for</string>
+
+    <string name="some_error_occurred">Some error occurred</string>
+    <string name="internet_not_working_properly">Internet not working properly</string>
+    <string name="transaction_cancelled">Transaction cancelled</string>
+    <string name="feature_buy_gold_expires_in_n">Expires in %s</string>
+    <string name="active_coupon_codes">Active coupon codes</string>
+    <string name="invalid_coupon_code">Invalid Coupon Code</string>
+    <string name="coupon_code_hint" translatable="false">JARXXXXXXX8989</string>
+    <string name="please_enter_the_valid_amount">Please enter the valid amount</string>
+
+    <string name="investments">Investments</string>
+    <string name="gold_gift_status">Gift Gold Status</string>
+    <string name="my_winnings">My winnings</string>
+    <string name="sell_gold_history">Sell Gold History</string>
+    <string name="spare_change_from">Spare change from</string>
+    <string name="manual_investment">Manual Investment</string>
+    <string name="auto_investment">Auto Investment</string>
+    <string name="partnership">Partnership</string>
+    <string name="partnership_history">Partnership History</string>
+
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+
+    <string name="your_current_winnings">Your current winnings</string>
+    <string name="transaction_history">Transaction history</string>
+    <string name="invest_in_gold">Invest in gold</string>
+    <string name="winnings_history">Winnings history</string>
+    <string name="referral_bonus">Referral Bonus</string>
+    <string name="invest_more">Invest more</string>
+
+    <string name="transaction_status">Transactions status</string>
+
+    <string name="no_manual_investments_found">No manual investments found</string>
+    <string name="no_auto_investments_found">No auto investments found</string>
+    <string name="no_partner_investments_found">No partner investments found</string>
+    <string name="no_gifts_sent">No gifts sent</string>
+    <string name="no_gifts_received">No gifts received</string>
+    <string name="no_winnings_found">No winnings found</string>
+    <string name="no_withdrawals_found">No withdrawals found</string>
+    <string name="no_invoice_found">No Invoices found</string>
+
+
+    <string name="select_month">Select month</string>
+    <string name="clear">Clear</string>
+    <string name="select_year">Select year</string>
+    <string name="month">Month</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="end_date">End date</string>
+    <string name="start_date">Start date</string>
+    <string name="select_dates">Select dates</string>
+    <string name="select_both_dates">Select both start and end dates</string>
+    <string name="please_select_start_date_first">Please select start date first</string>
+
+    <string name="notifications">Notifications</string>
+
+    <string name="min_amount">Min Amount</string>
+    <string name="karat">Karat</string>
+    <string name="purity">Purity</string>
+    <string name="n_karat">%sK</string>
+    <string name="n_change_percent">%s Change(%%)</string>
+    <string name="gold">Gold</string>
+    <string name="gold_buy_price">Gold Buy Price</string>
+
+    <string name="settings">Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="kyc">KYC</string>
+    <string name="verified">Verified</string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="refer_and_earn">Refer and Earn</string>
+    <string name="jar_security_shield">Jar Security Shield</string>
+    <string name="transactions_and_withdrawals">Transactions and withdrawals</string>
+    <string name="auto_invest_10_rupees">Auto invest ₹10</string>
+    <string name="when_no_spends_detected">When no spends detected</string>
+    <string name="invoices">Invoices</string>
+    <string name="pause_saving">Pause Saving</string>
+    <string name="round_off">Round-off</string>
+    <string name="round_off_amount">Round-off amount</string>
+    <string name="autopay">Autopay</string>
+    <string name="auto_invest">Auto-invest</string>
+    <string name="saved_upi_addresses">Saved UPI addresses</string>
+    <string name="saved_upi_ids">Saved UPI IDs</string>
+    <string name="manage_notifications">Manage Notifications</string>
+    <string name="support">Support</string>
+    <string name="app_language">App Language</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="off">Off</string>
+    <string name="auto_invest_is_off">Auto-invest is off</string>
+    <string name="turn_it_back_on_to_start_automatic_investment">Turn it back on to start automatic\ninvestments</string>
+
+    <string name="empty" translatable="false"></string>
+    <string name="help_and_support">Help and support</string>
+    <string name="login_and_security">Login and security</string>
+
+    <string name="change">Change</string>
+    <string name="change_number"><u>Change Number</u></string>
+    <string name="save_changes">Save Changes</string>
+    <string name="change_profile_picture"><u>Change profile picture</u></string>
+    <string name="details">Details</string>
+    <string name="powered_by">Powered by</string>
+    <string name="view_invoice">View Invoice</string>
+    <string name="feature_buy_gold_refresh">Refresh</string>
+    <string name="refreshing_dot">Refreshing…</string>
+    <string name="paid_for">Paid for</string>
+    <string name="need_help_chat_with_us">Need help? <u><b>Chat with us</b></u></string>
+
+    <string name="whatsapp_not_installed">Whatsapp not installed.</string>
+    <string name="transaction_support_message">Title : %1$s \nI have a query with my transaction %2$s of amount %3$s on %4$s. Could you please help?</string>
+
+    <string name="enter_your_new_number">Enter your new number</string>
+    <string name="please_enter_a_valid_mobile">Please enter a valid mobile number</string>
+    <string name="please_check_the_consent_box">Please check the consent box</string>
+    <string name="data_will_be_transferred_to_your_new_number">Once you change the number your gold and data will be transferred to your new number.</string>
+    <string name="i_consent_to_change_my_number">I consent to change my number</string>
+
+    <string name="invite_tab">Invite</string>
+    <string name="referrals_tab">Referrals</string>
+    <string name="faqs_tab">FAQs</string>
+    <string name="invite_and_earn">Invite a friend and both can earn up to ₹500</string>
+    <string name="we_noticed_some_unusual_activity">We noticed some unusual activity</string>
+    <string name="referral_account_locked_message">To keep your account safe, you will not receive some earnings. If you want to restore, Contact support for more information.</string>
+    <string name="your_unique_referral_link">Your unique referral link</string>
+    <string name="copy_link">Copy\nLink</string>
+    <string name="share_link">Share Link</string>
+    <string name="referral_share_message_url">%s\n%s</string>
+    <string name="copied">Copied!</string>
+    <string name="earn_upto_10k">Earn upto ₹10,000 by referring your friends</string>
+    <string name="no_earnings_yet">No earnings yet!</string>
+    <string name="earning_history">Earning History</string>
+    <string name="earnings">Earnings</string>
+    <string name="total_earned">Total earned</string>
+    <string name="commission">Commission</string>
+    <string name="total_commission_earned">Total commission earned</string>
+    <string name="referrals">Referrals</string>
+    <string name="rupee_prefix_float">₹%.2f</string>
+    <string name="commission_deposited_in_locker">₹%.2f of ₹%.2f deposited in locker</string>
+    <string name="total_x">Total: %d</string>
+
+
+    <plurals name="round_off_transactions">
+        <item quantity="zero">%d Transaction</item>
+        <item quantity="one">%d Transaction</item>
+        <item quantity="other">%d Transactions</item>
+    </plurals>
+
+    <string name="earning">Earning</string>
+
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="authentication_failed">Authentication failed</string>
+
+    <string name="your_account_already_has_an_active_session">Your account already has an active session</string>
+    <string name="please_logout_from_other_devices_to_access_this_account">Please log out from the other device to access your account on this device</string>
+    <string name="logout_from_other_devices">Logout from other device</string>
+    <string name="login_with_a_new_number"><u>Login with a new number</u></string>
+    <string name="we_limit_to_a_maximum_of_n_unique_mobile_numbers_on_one_device">We limit to maximum %d unique mobile numbers on one device</string>
+    <string name="contact_support">Contact support</string>
+    <string name="login_with_previous_number"><u>Log in with a previous number</u></string>
+
+    <string name="start_investing_daily">Start Investing daily</string>
+    <string name="save_n_daily_and_watch_it_grow_to_m_in_next_10_years">Save \u20B9%s daily and watch it grow to \u20B9%s in 10 years.</string>
+    <string name="your_saving_are_invested_gold">Your savings are invested in 24K gold</string>
+    <string name="how_much_to_invest_daily">How much to invest daily?</string>
+    <string name="you_can_invest_up_to_n_per_day">You can invest up to \u20B9%s per day</string>
+    <string name="set_daily_amount">Set daily amount</string>
+    <string name="how_would_you_like_to_sell">How would you like to sell?</string>
+    <string name="cash_in_bank">Cash in bank</string>
+    <string name="cash_in_bank_message">Sell gold at the current sell price and get cash deposited in your bank account instantly</string>
+    <string name="gold_delivery">Gold delivery</string>
+    <string name="get_gold_delivered_at_your_doorstep_through_our_partners">Get gold delivered at your doorstep through our partners</string>
+    <string name="daily_savings_paused">Daily savings paused</string>
+
+    <string name="invest_rs_n_double">Invest ₹%.2f</string>
+    <string name="autopay_setup_successfully">Autopay Setup Successful</string>
+    <string name="setup_auto_invest">Setup auto-invest</string>
+    <string name="autopay_account">Autopay Account</string>
+    <string name="primary_upi">Primary UPI</string>
+    <string name="subscription_id">Subscription Id</string>
+    <string name="supported_banks_for_autopay">Supported banks for AutoPay</string>
+    <string name="view_all_banks"><u>View All Banks</u></string>
+    <string name="enabled">Enabled</string>
+
+    <string name="view">View</string>
+    <string name="save">Save</string>
+    <string name="round_off_to_nearest_10">Round-off\n to nearest 10</string>
+    <string name="round_off_to_nearest_5">Round-off\n to nearest 5</string>
+    <string name="recommended">Recommended</string>
+    <string name="round_off_amount_nearest_x">We’ll round off your online payments to the nearest %d, and invest your spare change in gold.</string>
+    <string name="add_new_upi">ADD NEW UPI</string>
+    <string name="add_upi_id">Add UPI ID</string>
+    <string name="primary">Primary</string>
+    <string name="all_upi_ids">All UPI IDs</string>
+    <string name="make_primary">Make Primary</string>
+    <string name="remove">Remove</string>
+    <string name="enter_new_upi_id">Enter New UPI ID</string>
+    <string name="your_upi_id">Your UPI ID</string>
+    <string name="save_upi">Save UPI</string>
+    <string name="buy_price">Buy Price</string>
+    <string name="sell_price">Sell Price</string>
+    <string name="questions_you_may_have">Questions you may have</string>
+
+    <string name="you_paused_saving">You paused saving </string>
+    <string name="pause_for">Pause for</string>
+    <string name="rs_n_double_will_be_deducted_from_your_account">\u20B9%.2f will be deducted from your account</string>
+    <string name="saved_to_your_own_savings_jar">Saved to your own savings Jar</string>
+    <string name="invested_in_100_perc_pure_gold">Invested in 100% pure gold</string>
+
+    <string name="push_notifications">Push Notifications</string>
+    <string name="push_notification_description">Receive updates for new detected \nroundoff and special offers</string>
+    <string name="payment_reminders">Payment Reminders</string>
+    <string name="payment_reminders_description">Payment reminders for your daily \ninvestments and manual investments</string>
+    <string name="whatsapp_updates">Whatsapp Updates</string>
+    <string name="whatsapp_updates_description">Whatsapp updates for investments \nand special offers</string>
+    <string name="gold_price_alerts">Gold Price Alerts</string>
+    <string name="gold_price_alerts_description">Get timely alerts whenever gold prices drop so you can invest at best prices.</string>
+    <string name="shubh_muhurat_alerts">Shubh Muhurat Alerts</string>
+    <string name="shubh_muhurat_alerts_description">Get alerts whenever its a shubh muhurat to buy gold</string>
+    <string name="you_have_opened_in_a_shubh_muhurat">You have opened in a Shubh Muhurat</string>
+    <string name="buy_extra_gold_before_ends_in">Buy extra gold before it ends in</string>
+
+    <string name="upcoming_shubh_muhurats">Upcoming Shubh Muhurats</string>
+    <string name="shubh_muhurat">Shubh Muhurat</string>
+    <string name="dates">Dates</string>
+    <string name="time">Time</string>
+    <string name="spare_change">Spare change</string>
+    <string name="start_time_s_end_time_s">%s - %s</string>
+    <string name="gold_percent_d_buying_price">\u20B9%.2f per gram on buying price</string>
+    <string name="total_amount_rs_n_double">Total Amount \u20B9%.2f</string>
+    <string name="tell_your_friends_about_this">Tell your friends about this 👇🏻</string>
+    <string name="hey_theres_shubh_muhurat_buy_and_grow_your_wealth">Hey! 👋 There’s a Shubh Muhurat between %1$s to %2$s. Buy 24K gold on the Jar app and grow your wealth!</string>
+    <string name="hey_theres_shubh_muhurat_today">Hey! 👋 There’s a Shubh Muhurat today. Buy 24K gold on the Jar app and grow your wealth!</string>
+    <string name="shubh_muhurat_payment_success_share">Hey! 👋 It\'s Shubh Muhurat to Buy Gold between %1$s and %2$s. I just purchased some gold through the Jar app. You should too! Buy Now! %3$s</string>
+    <string name="shubh_muhurat_now_share">Hey! 👋 It\'s Shubh Muhurat to Buy Gold between %1$s and %2$s. Buy now on the Jar app and grow your wealth! %3$s</string>
+    <string name="dates_start_end">%s - %s</string>
+    <string name="default_auspicious_time">08:00 PM - 11:00 PM</string>
+    <string name="order_details">Order Details</string>
+    <string name="we_declare_that_the_above_quantity_of_goods_are_kept_by_the_seller_in_a_safe_vault_on_behalf_of_the_buyer_it_can_be_delivered_in_minted_product_as_per_terms_and_conditions">We declare that the above quantity of goods are kept by the seller in a safe vault on behalf of the buyer. It can be delivered in minted product as per Terms and Conditions</string>
+    <string name="declaration">Declaration</string>
+    <string name="total_purchase_amount">Total Purchase Amount</string>
+    <string name="gold_received">Gold Received</string>
+    <string name="rate_per_gram">Rate per gram</string>
+    <string name="gst_3">GST 3%</string>
+    <string name="total_gold_purchase">Total Gold Purchased</string>
+    <string name="bill_to">Bill to</string>
+    <string name="name_n">Name: %s</string>
+    <string name="phone_number_n">Phone Number: %s</string>
+    <string name="okay_2">Okay</string>
+    <string name="survey">Survey</string>
+    <string name="thank_you_for_participating">Thank you for participating</string>
+    <string name="we_use_this_to_make_jar_better">We use this to make jar better.</string>
+    <string name="survey_pop_loader">Loading survey, Your response is helpful to improve our product</string>
+    <string name="question_d_by_d">Question %d/%d</string>
+    <string name="please_enter_valid_promo_code">Please enter valid promo code</string>
+    <string name="n_string_gm_gold">%s gm Gold</string>
+    <string name="n_string_mg_gold">%s mg Gold</string>
+    <string name="value_in_grams">Value in grams</string>
+    <string name="value_in_rupees">Value in Rupees</string>
+    <string name="aggregate_buying_price_n_per_gm">Aggregate buying price: \u20B9%.2f/gm</string>
+    <string name="automate_your_investment_through_autopay">Automate your investments and save time</string>
+    <string name="setup_autopay">Setup Autopay</string>
+    <string name="invest_partial_amount">Invest Partial amount</string>
+    <string name="total_amount_pending_investment">Total amount pending investment</string>
+    <string name="skip_this_investment">Skip this investment</string>
+    <string name="invest_n_percent">Invest %d%%</string>
+    <string name="know_more">Know more</string>
+
+    <string name="your_money_can_grow_if_you_continue_investing">Your money can grow\nif you continue investing</string>
+    <string name="gold_market_terms_and_conditions">The calculations are subject to current performance of gold and can be different. Read the <a href="https://www.myjar.app/terms-and-conditions">terms and conditions</a></string>
+    <string name="value_of_gold_if_you_sell_today_is_rs_">Value of gold if you sell today is ₹%.2f</string>
+    <string name="don_t_sell">Don\'t sell</string>
+    <string name="sell_anyway">Sell anyway</string>
+    <string name="type_here">Type here</string>
+    <string name="some_other_reason">Some other reason</string>
+    <string name="why_are_you_withdrawing">Why are you withdrawing</string>
+    <string name="please_select_reason">Please select a reason</string>
+    <string name="sell_in_grams">Sell in grams</string>
+    <string name="gm">gm</string>
+    <string name="available_to_sell">Available to sell</string>
+    <string name="no_amount">No amount present</string>
+    <string name="aggregate_buying_price">Aggregate buying price ₹%.2f</string>
+    <string name="_0">0</string>
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="sell">Sell</string>
+    <string name="sell_gold">Sell Gold</string>
+    <string name="apprx_value_x">Approximate value available: \u20B9%.2f</string>
+    <string name="amount_can_not_be_zero">Amount can not be 0</string>
+    <string name="amount_can_not_be_more_than_total">Amount can not be more than what you have in total : %.2f</string>
+    <string name="gold_price_not_available_please_retry">Current Gold price not available. Please retry.</string>
+    <string name="select_wthdraw_method">Select Withdraw method</string>
+    <string name="enter_upi_id">Enter UPI id</string>
+    <string name="your_upi_id_here">Your upi id here</string>
+    <string name="save_for_later">Save for later</string>
+    <string name="withdraw_now">Withdraw now</string>
+    <string name="please_enter_valid_upi">Please enter a valid UPI</string>
+    <string name="withdraw_savings">Withdraw savings</string>
+    <string name="if_keep_the_money">If you keep the money \nand continue investing,</string>
+    <string name="dont_withdraw">Don’t withdraw</string>
+    <string name="withdraw_anyways">Withdraw anyway</string>
+    <string name="current_sell_price">Current sell price</string>
+    <string name="gold_amount_cannot_be_blank">Gold or Amount can\'t be blank!</string>
+    <string name="failed_to_fetch_sell_options">Failed to fetch selling options</string>
+    <string name="user_gold_balance_not_available">Unable to fetch your gold balance.</string>
+    <string name="no_gold_amount_for_withdrawl">No gold available for withdrawal.</string>
+    <string name="money_will_grow_to">Your money will grow to</string>
+    <string name="next_10_years">in next 10 years</string>
+    <string name="gift_gold">Gift gold</string>
+    <string name="_100_secure_24k_99_95_pure_gold">100% Secure | 24K | 99.5% Pure Gold</string>
+    <string name="tap_to_enter_value_in_grams">Tap to enter value in grams</string>
+    <string name="price_valid_for_min">Price valid for —:— min</string>
+    <string name="pay_and_send">Pay and send</string>
+    <string name="insufficient_balance_in_you_jar_locker">Insufficient balance in your Jar Locker</string>
+    <string name="send_gift">Send gift</string>
+    <string name="amount_will_be_deducted_from_you_jar_locker">💡Amount will be deducted from your jar locker</string>
+    <string name="enter_your_phone_number">Enter phone number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="send_a_gift_securely">Send a gift securely</string>
+    <string name="select_a_contact">Select a contact</string>
+    <string name="you_pay">You pay</string>
+    <string name="rs_0">₹0.0</string>
+    <string name="_0_5gm">0.5gm</string>
+    <string name="_1gm">1gm</string>
+    <string name="_2gm">2gm</string>
+    <string name="_5gm">5gm</string>
+    <string name="most_gifted">Most gifted</string>
+    <string name="rs_sign">₹</string>
+    <string name="_0_0000gm">0.0000gm</string>
+    <string name="text_101">₹101</string>
+    <string name="text_201">₹201</string>
+    <string name="text_501">₹501</string>
+    <string name="text_1001">₹1001</string>
+    <string name="text_5001">₹5001</string>
+    <string name="please_try_again_with_different_amount">Please try again with a different amount</string>
+    <string name="who_do_you_want_to_gift_the_gold">Who do you want to gift the gold?</string>
+    <string name="sending_to">Sending to</string>
+    <string name="how_much_gold_you_want_to_gift">How much gold you want to gift?</string>
+    <string name="i_want_to_gift_gold">I want to gift %sgm gold</string>
+    <string name="add_a_message_to_make_your_gift_special">Add a message to\nmake your gift special</string>
+    <string name="they_ll_get_a_message_soon">They\'ll get a message soon</string>
+    <string name="current_gold_balance_">Current gold balance: %.4f</string>
+    <string name="pay_remaining_rs">Pay remaining: ₹%.2f</string>
+    <string name="add_a_special_message">Add a special message</string>
+    <string name="mobile_number_can_not_be_empty">Mobile number can not be empty</string>
+    <string name="invalid_number">Invalid number</string>
+    <string name="you_gift">You gift</string>
+    <string name="special_message">Special message</string>
+    <string name="rs_value_strike"><strike>₹%.2f</strike></string>
+    <string name="rs_value">₹%.2f</string>
+    <string name="rs_value_int">₹%d</string>
+    <string name="rs_value_string">₹%s</string>
+    <string name="invest_percent"><strike>Invest %d%%</strike></string>
+    <string name="failed_to_get_contact">Failed to get contact. Please try again.</string>
+    <string name="current_buy_price_rs">Current buy price ₹%.2f</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="gift_summary">Gift Summary</string>
+    <string name="you_are_gifting">You are gifting</string>
+    <string name="to_your_contact">To your contact</string>
+    <string name="i_confirm">I confirm</string>
+    <string name="gm_gold">%s gm Gold</string>
+    <string name="value_in_rupee_x">Value in rupees: ₹%s</string>
+    <string name="_0_140">0/140</string>
+    <string name="char_count_140">%d/140</string>
+    <string name="start_typing">Start typing…</string>
+    <string name="gift_share_msg">Hey, I\'m sending a gold gift to you because you\'re special. 🎁\nClaim it on the Jar app now! %s</string>
+    <string name="not_allowed">Not allowed!</string>
+
+    <string name="free_gold_delivery">Free Gold Delivery</string>
+    <string name="free_gold_delivery_description">Get 24K 99.5% pure gold coins delivered at your home</string>
+
+    <string name="invest_winnings">Invest winnings</string>
+    <string name="how_much_to_invest">How much to invest?</string>
+    <string name="invest_all_winnings">Invest all winnings</string>
+    <string name="jar">Jar</string>
+    <string name="our_servers_are_taking_a_short_maintenance_break">Our servers are taking a short maintenance break.</string>
+    <string name="it_will_be_back_in">It will be back in %s</string>
+    <string name="savings_resumed">Savings Resumed</string>
+    <string name="saving_paused_for">Saving Paused For</string>
+    <string name="jar_wont_track_your_sms">Jar won\'t track and save your spare change or your daily amount in this time.</string>
+    <string name="its_good_to_see_you_save_again">It\'s good to see you save again</string>
+    <string name="started_tracking_your_spare_change">We’ve started tracking your spare change. If you’ve set a daily amount, we’ll add that to today’s savings too.</string>
+    <string name="your_referrals">Your referrals</string>
+    <string name="no_referrals_found">No referrals found</string>
+    <string name="keep_investing_x_gms_to_go">Keep investing | %.4fgm to go</string>
+    <string name="you_in_top_5_percent_x_gms_to_go">You\'re in the top 5%% | You\'re doing great | %.4fgm to go</string>
+    <string name="you_in_top_1_percent_x_gms_to_go">You\'re in the top 1%% | You\'re doing great | %.4fgm to go</string>
+
+    <string name="version_name_number">%s(%d)</string>
+    <string name="you_have_successfully_changed_you_number">You have successfully changed your number</string>
+    <string name="please_login_with_the_new_number">Please login with the new number</string>
+    <string name="saving_simplified">Savings simplified.</string>
+    <string name="lets_finish_your_sign_up_and_help_you_save_money">Let\'s finish your sign up and help you save money! </string>
+    <string name="we_missed_you">We Missed You</string>
+    <string name="start_now">Start Now</string>
+    <string name="by_proceeding_you_accept_the_terms_and_conditions_read_the_privacy_policy_here">By proceeding, you accept the terms and conditions.\nRead the privacy policy here.</string>
+    <string name="enter_your_ten_digit_phone_number"><font size="14">Enter your phone number</font></string>
+    <string name="enter_your_phone_number_to_start_saving">Enter your phone number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="here">Here</string>
+    <string name="india_country_code">+91</string>
+
+    <string name="age_not_valid">Age cannot be less than 18</string>
+    <string name="amount_can_not_be_less_than">Amount cannot be less than %s</string>
+    <string name="have_a_promo_code">Have a promo code?</string>
+    <string name="gold_price_pure_99">Gold Price(99.99% Pure)</string>
+    <string name="free_limited_time_offer">Free (Limited Time Offer)</string>
+    <string name="no_delivery_address_available">No delivery address available</string>
+
+    <string name="continue_with_truecaller"><u>Continue with Truecaller</u></string>
+    <string name="mobile_number_is_not_valid">Please enter a valid phone number.</string>
+    <string name="mobile_number_should_be_of_10_digits">Mobile number should be of 10 digits.</string>
+
+    <string name="tap_to_reveal">Tap to reveal</string>
+    <string name="someone_has_sent_a_gift_for_you">Someone has sent a gift for you</string>
+    <string name="x_has_sent_a_gift_for_you">%s has sent a gift for you</string>
+    <string name="_99_percent_24k_pure_gold">99.5% | 24k | Pure Gold</string>
+    <string name="okay2">Okay</string>
+    <string name="go_ahead">GO AHEAD</string>
+    <string name="doubled_saving_share_msg">I just doubled my savings on Jar! The safest way to save your money in gold. You too can start saving instantly! Download the app now. </string>
+    <string name="just_saved">I just saved Rs. </string>
+    <string name="the_safest_way_to_save_your_money_in_gold">I earned \u20B9%d today by saving my spare change with Jar App! It’s a simple and secure app to save money daily and invest in gold. Use Jar App with me and get rewarded.</string>
+    <string name="sure_to_logout">Are you sure you want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes_logout"><u>Yes, logout</u></string>
+
+    <string name="complete_your_kyc">Complete your KYC</string>
+    <string name="gold_investment_paused">Gold investment paused</string>
+    <string name="setup_kyc">Setup KYC</string>
+    <string name="we_need_your_pan_details">We need your PAN details to proceed with your eKYC</string>
+    <string name="we_need_kyc_details_subheading">As per government regulations KYC is mandatory to store gold above 30gm which is approximately ₹1.5 Lakh</string>
+    <string name="upload_pan_card">Upload PAN card</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="enter_pan_manually">Enter PAN card details manually</string>
+    <string name="verify_pan">Verify PAN</string>
+    <string name="i_consent_jar_ekyc">I consent to allow JAR to proceed for eKYC on my behalf</string>
+    <string name="complete_kyc">Complete KYC</string>
+    <string name="enter_your_pan_details">Enter your PAN details</string>
+    <string name="verify_pan_details">Verify PAN Details</string>
+    <string name="kyc_verified_successfully">KYC verified successfully</string>
+    <string name="kyc_verified_successfully_subheading">Your KYC has been successfully verified. You can start investing again.</string>
+    <string name="kyc_verification_failed">KYC verification failed</string>
+    <string name="kyc_verification_failed_subheading">There was a problem while verifying your KYC. Kindly try again in sometime.</string>
+    <string name="kyc_details">KYC Details</string>
+    <string name="verified_on">Verified on %s</string>
+    <string name="kyc_limit_reached_message">Non KYC gold buying limit reached. Please complete your KYC.</string>
+    <string name="why_is_this_showing"><u>Why is this showing?</u></string>
+    <string name="gifted_you_gold">%s gifted you gold</string>
+    <string name="complete_the_kyc_to_claim_gold">Complete the KYC to claim your gold</string>
+    <string name="set_up_kyc">Set-up KYC</string>
+
+    <string name="pan_card_verification">Pan Card Verification</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="full_name_as_per_pan">Full Name (as per PAN card)</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="abcde_pan_hint">ABCDE****A</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="yyyy_mm_dd">YYYY-MM-DD</string>
+    <string name="kyc_verified">KYC verified</string>
+    <string name="please_try">Please try</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="image_recognition_failed">Image Recognition failed</string>
+    <string name="pan_card">pan card</string>
+    <string name="frequently_asked_questions">Frequently asked questions</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="you_must_be_above_18">You must be 18 years or above to use this app.</string>
+    <string name="maximum_age_limit_reached">Maximum age limited reached. Please try a different age</string>
+    <string name="age_not_a_number">Age should be a valid number.</string>
+
+
+    <string name="max_amount_cannot_be_more_than_rs_2000">Maximum amount cannot be more than \u20B92000</string>
+    <string name="enter_the_otp">Enter the OTP</string>
+    <string name="we_ve_sent_to">We\'ve sent the OTP to</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="call_to_verify"><u>Call to Verify</u></string>
+    <string name="_in">in</string>
+    <string name="verify">Verify</string>
+    <string name="verifying_phone_number">Verifying phone number</string>
+    <string name="by_calling_you_on_n">By calling you on %s</string>
+
+    <string name="get_started">Get Started.</string>
+    <string name="x_y_steps_to_complete">%1$d/%2$d steps to complete</string>
+    <string name="whats_your_name">What\'s your name?</string>
+    <string name="name_seems_very_unique">That seems very unique! Please enter something real.</string>
+    <string name="enter_something_real">Please enter something real.</string>
+    <string name="about_you">Tell us about you</string>
+    <string name="whats_your_age">How old are you?</string>
+    <string name="prefer_not_to_say">I prefer not to say</string>
+    <string name="whats_your_gender">What’s your gender?</string>
+
+    <string name="please_select_profile_pic">Please select your profile picture.</string>
+    <string name="can_be_changed_anytime">Can be changed anytime in the settings.</string>
+    <string name="select_age">Please select age.</string>
+    <string name="allow_sms_permission">Allow SMS permissions</string>
+    <string name="sms_permission">SMS Permission</string>
+    <string name="we_need_sms_permission_to_calculate">We need SMS permissions to calculate the  roundoffs. No personal SMS are read.</string>
+    <string name="have_question_click_here">Have Questions? Click <b><u>here</u></b></string>
+    <string name="permission">Give Permission</string>
+    <string name="last_step_to_complete">Last step to complete</string>
+    <string name="sms_permission_faq">SMS Permission FAQ</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="sms_permission_denied_error">"Please click on \'Allow' to proceed"</string>
+
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
+    <string name="dubled">Doubled</string>
+    <string name="okay_got_it">Okay, got it!</string>
+    <string name="get_timely_alerts_whenever_gold_prices_drop_so_you_can_invest_at_best_prices">Get timely alerts whenever gold prices drop so you can invest at best prices.</string>
+    <string name="get_price_alerts">Get price alerts</string>
+    <string name="rate_our_app">Rate our app</string>
+    <string name="rate_our_app_subheading">Let us know what you think, your feedback matters to us. Thanks!</string>
+    <string name="very_good">Very Good</string>
+    <string name="what_went_wrong">What went wrong?</string>
+    <string name="tel_us_what_you_think">Tell us what you think</string>
+    <string name="thank_you_for_feedback">Thank you for your feedback!</string>
+    <string name="your_last_savings_has_been_doubled">Your last savings has been doubled</string>
+    <string name="please_upload_a_clear_image">Please upload a clear image</string>
+    <string name="more">More</string>
+    <string name="gold_stored_in_safe_and_secure_lockers">Gold stored in safe &amp; secure lockers</string>
+    <string name="insured_for_free_of_cost_by_our_partners">Insured for free of cost by our partners</string>
+    <string name="upi_verified">UPI verified</string>
+    <string name="sell_history_underline"><u>Sell history</u></string>
+    <string name="resuming_in_d_days">Resuming in %d day(s)</string>
+
+    <string name="could_not_connect_to_the_internet_please_try_again">Could not connect to the internet.\nPlease try again. </string>
+    <string name="gst_n_perc_m_rupee_per_gm_on_buying_price">GST (%.1f%%) \u20B9%.2f per gram on buying price</string>
+    <string name="looks_like_no_otp_enterd">Looks like you did not enter the  OTP. Please press resend to proceed.</string>
+    <string name="redeem_to_get_free_gold">Redeem to get free\ngold</string>
+    <string name="claim_promo_code">Claim Promo Code</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="available_promo_codes">Available promo codes</string>
+    <string name="invalid_promo_code">Invalid Promo Code</string>
+    <string name="share_invite_link">Share invite link</string>
+    <string name="how_refer_and_earn_works"><u>How refer and earn works?</u></string>
+    <string name="your_referral_code">Your Referral Code</string>
+    <string name="get_free_gold">Refer and get free gold</string>
+    <string name="invite_your_friend_and_earn">Invite your friends to Jar and win free gold every week when they continue to make their investments.</string>
+
+    <string name="whatsapp">Whatsapp</string>
+    <string name="sms">SMS</string>
+    <string name="start_earning">Start Earning</string>
+    <string name="copy_link_label">Copy Link</string>
+    <string name="messaging_app_not_installed">Messaging App not installed</string>
+    <string name="email_app_not_installed">Email App not installed</string>
+    <string name="you_can_request_otp_after">You can request for OTP after</string>
+    <string name="you_can_verify_via_call_after">You can verify via call after</string>
+    <string name="having_trouble_reach_out_to_us">Having Trouble? Reach out to us <b><u>here</u></b></string>
+    <string name="otp_incorrect_try_again">The OTP entered is incorrect. Please try again.</string>
+    <string name="otp_limit_exhausted">OTP limit is exhausted. Please try again after 10 min.</string>
+    <string name="come_back_start_journey">Please come back and resume your sign up!</string>
+    <string name="dont_forget_to_grow_savings">Don’t forget to grow your savings.</string>
+    <string name="would_you_like_us_to_auto_invest">Would you like us to Auto invest Rs 10 whenever no spends are detected?</string>
+    <string name="how_auto_invest_work"><u>How Auto invest works?</u></string>
+    <string name="yes_save">Yes, Save!</string>
+    <string name="click_button_to_get_started">Click on this button to get started.</string>
+    <string name="you_will_receive_call">You will receive a call at</string>
+    <string name="my_number_is_x_otp">Hi, my number is %s , please help me get OTP.</string>
+    <string name="login">Login</string>
+    <string name="you_have_account_with_us">You already have a account with us.</string>
+    <string name="login_with_different_number"><u>Login/Signup with a different number</u></string>
+    <string name="continue_with_x_number">Login with %s</string>
+    <string name="my_earnings_with_dot">My Earnings <font color='#EB6A6E'>\u25CF</font></string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="dot" translatable="false">\u25CF</string>
+
+    <string name="request">Request</string>
+    <string name="multiple_round_offs">Multiple round-offs</string>
+    <string name="request_full_breakdown">Request Full Breakdown</string>
+    <string name="breakdown_requested">Breakdown Requested</string>
+    <string name="breakdown_available">Breakdown Available</string>
+    <string name="breakdown_requested_msg">Breakdown requested, please comeback after sometime to check your status.</string>
+    <string name="auto_investment_details">Auto Investment Details</string>
+    <string name="manual_investment_details">Manual Investment Details</string>
+    <string name="limited_time_offer">Limited Time Offer</string>
+
+    <string name="nearest_five">Nearest Five</string>
+    <string name="nearest_ten">Nearest Ten</string>
+    <string name="the_link_is_copied">The link is copied</string>
+    <string name="copy_code">Copy Code</string>
+
+    <string name="mandatory_update_required">Mandatory update required</string>
+    <string name="update_now">Update Now</string>
+    <string name="mandatory_update_required_description">Due to some important improvements, you are requested to update the app.</string>
+    <string name="no_app_found_enter_manually">No app found to handle the request. Please enter the phone number manually.</string>
+    <string name="read_now">Read Now</string>
+    <string name="check_out_help">Facing any issues?\nCheckout our help articles</string>
+    <string name="cannot_find_connect_on_whatsapp">Not able to find what you are looking for?\nConnect with us on Whatsapp</string>
+    <string name="no_results_found_for">No results found for \"%s\"</string>
+    <string name="autopay_reconfiguration_failed">AutoPay Reconfiguration Failed</string>
+    <string name="kindly_reconfigure_autopay_to_set_your_new_daily_savings_amount">Kindly reconfigure Autopay to set your new daily savings amount.</string>
+    <string name="re_configure_autopay">Re-Configure Autopay</string>
+    <string name="you_are_all_set_to_invest_n_everyday">You\'re all set to invest \u20B9%.2f everyday</string>
+    <string name="request_placed">Request placed</string>
+
+    <string name="buy_new_line_digital_gold">Buy\nDigital Gold</string>
+    <string name="upload_pan_details">Upload PAN details</string>
+    <string name="upload_pan_details_sub_heading">Please add your PAN details to access all features on the app. We need this to authorize your identity.</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="i_don_t_have_a_pan_card">I don\'t have a PAN Card</string>
+    <string name="no_pan_msg">Hey! I don’t have a PAN card. Please help me finish my KYC verification.</string>
+    <string name="upload_pan_msg">Please make sure the photo is clear and horizontally aligned.</string>
+    <string name="continue_str">Continue</string>
+    <string name="retake">Retake</string>
+    <string name="please_upload_a_clear_image_or_upload_manually">Please retake image or enter details manually</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="pan_10_digit_msg">Pan number must be 10 digit</string>
+    <string name="pan_no_space_msg">Pan number should not contain space</string>
+    <string name="pan_failure_wa_msg">Hey! My PAN card verification failed. Please help me finish KYC verification.</string>
+    <string name="driving_license">Driving License</string>
+    <string name="aadhaar_number">Aadhaar Number</string>
+    <string name="voter_id">Voter’s ID</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="document_id">Document Id</string>
+    <string name="rotate">Rotate</string>
+    <string name="show_pan_number">Show PAN number</string>
+    <string name="hide_pan_number">Hide PAN number</string>
+    <string name="show_driving_license">Show Driving License</string>
+    <string name="hide_driving_license">Hide Driving License</string>
+    <string name="show_voter_id">Show Voter’s ID</string>
+    <string name="hide_voter_id">Hide Voter’s ID</string>
+    <string name="show_aadhaar_number">Show Aadhaar Number</string>
+    <string name="hide_aadhaar_number">Hide Aadhaar Number</string>
+    <string name="show_passport_number">Show Passport Number</string>
+    <string name="hide_passport_number">Hide Passport Number</string>
+    <string name="show_document_id">Show Document Id</string>
+    <string name="hide_document_id">Hide Document Id</string>
+
+    <string name="get_your_gold_backed_credit_card">Get your gold backed credit card.</string>
+    <string name="earn_rewards_upto_5000_per_month">Earn rewards upto <b>₹5000 per month</b></string>
+    <string name="claim_early_access">CLAIM EARLY ACCESS</string>
+    <string name="limited_entries_only">Limited entries only <b>%s</b></string>
+    <string name="invite_your_friends_v2">Invite your friends to Jar and\nearn upto ₹500</string>
+    <string name="you_earned">You Earned</string>
+    <string name="the_referral_is_copied">The invite is copied</string>
+    <string name="start">Start</string>
+    <string name="referral_share_message">Hey,👋\nI’ve been using the Jar app to save and invest my spare change in Digital Gold and here is why you should too:\n✅ Auto-save with as low as ₹10🪙\n✅ Save &amp; Invest in 24k Gold🤩\nDownload Jar App using my Referral link below to win rewards worth upto ₹500 now:%s</string>
+
+    <string name="claim_now">Claim Now</string>
+    <string name="bonuses_available">%d More Bonuses Available</string>
+    <string name="bonus_available">%d More Bonus Available</string>
+    <string name="show_all"><u>Show All</u></string>
+    <string name="partnership_bonus">Partnership Bonus</string>
+    <string name="claimed">Claimed</string>
+    <string name="turn_your_saving_into_gold">Turn your <b><font color="#FFFFFF">savings</font></b> into <b><font color="#FFEEC979">gold</font></b> in just one click</string>
+    <string name="delete">Delete</string>
+    <string name="notification_deleted">Notification Deleted</string>
+    <string name="no_new_notifications">No new notifications</string>
+    <string name="all_caught_up">All caught up</string>
+    <string name="x_new">%d new</string>
+    <string name="x_plus_new">%d+ new</string>
+    <string name="view_profile"><u>View Profile</u></string>
+    <string name="made_in_love_with_india">Made with ❤️ in india</string>
+    <string name="update_available"><u>Update Available</u></string>
+    <string name="update_failed">Update failed, Please try again.</string>
+    <string name="profile">Profile</string>
+    <string name="copy_invite">Copy Invite</string>
+    <string name="share_invite">Share Invite</string>
+    <string name="need_help">Need help?</string>
+    <string name="download_invoice">Download Invoice</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="bank_level_security_by_jar">Bank level security by Jar</string>
+    <string name="gold_in_locker">Gold in Locker</string>
+    <string name="current_value">Current Value</string>
+    <string name="history">History</string>
+    <string name="convert_to_gold">Convert to gold</string>
+    <string name="spin_winnings">Spin Winnings</string>
+    <string name="referral_winnings">Referral Winnings</string>
+    <string name="partner_bonus">Partner Bonus</string>
+    <string name="winnings">Winnings</string>
+    <string name="convert_to_gold_option_will_be_enabled_after_your_winnings_are_more_than_100">Convert to gold option will be enabled after your winnings are more than ₹100</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="winnings_debited">Winnings Debited</string>
+    <string name="tap_to_view_transaction_details">Tap to view transaction details</string>
+    <string name="you_can_see_all_your_transactions_here">You can see all your transactions here</string>
+    <string name="no_winning_yet">No Winnings Yet</string>
+    <string name="you_can_see_all_winnings_here">You can see all your winnings here</string>
+    <string name="start_saving_earn_winnings">Start your savings journey and earn winnings.</string>
+    <string name="no_transaction_yet">No Transactions Yet</string>
+    <string name="start_saving_journey">Start your savings journey</string>
+    <string name="pull_down_to_refresh">Pull down to refresh</string>
+    <string name="sent_to">Sent to</string>
+    <string name="view_message">View Message</string>
+    <string name="tracking_link">Tracking Link</string>
+    <string name="tracking_link_will_be_generated_after_the_gold_is_dispatched">Tracking link will be generated after the gold is dispatched.</string>
+    <string name="track_now"><u>Track Now</u></string>
+    <string name="x_roundoff">%d roundoffs</string>
+    <string name="try_again">Try again</string>
+    <string name="others">Others</string>
+    <plurals name="x_filters_applied">
+        <item quantity="one">(%d) Filter Applied</item>
+        <item quantity="other">(%d) Filters Applied</item>
+    </plurals>
+    <string name="all">All</string>
+    <string name="received_from">Received from</string>
+    <string name="hey_need_help_with_transactions">Hey! I need some help with my transactions.</string>
+    <string name="winnings_converted_to_gold_successfully">Winnings Converted to gold successfully</string>
+    <string name="tracking_link_available">Tracking Link Available</string>
+
+    <string name="gold_in_locker_n_gm">Gold in Locker : %sgm</string>
+    <string name="setup_daily_savings">Setup Daily Savings</string>
+    <string name="save_daily_on_jar">Save daily on Jar and watch your money grow</string>
+    <string name="name_cant_be_more_than_30">Name can\'t be more than 30 characters</string>
+    <string name="start_your_journey_with_us">Start your journey with us</string>
+    <string name="are_you_ready_to_save_rs_x_daily_on_jar">Are you ready to save ₹%d daily on Jar?</string>
+    <string name="start_saving_rs_x">Start Saving ₹%d </string>
+    <string name="start_saving">Start Saving</string>
+    <string name="easiest_way_to_start_saving">Easiest way to start savings </string>
+
+    <string name="free_gold_delivery_at_your_doorstep">Free gold delivery at your doorstep</string>
+    <string name="withdraw_cash">Withdraw Savings</string>
+    <string name="instantly_credited_to_your_bank_account">Instantly credited to your bank account</string>
+
+    <string name="the_value_is_subject_to_historical_performance_of_gold">*The value is subject to historical performance of Gold</string>
+    <string name="feature_onboarding_save">Save</string>
+    <string name="feature_onboarding_daily_your_gold_will_be_worth">daily &amp; Your Gold will be worth</string>
+    <string name="you_can_save_upto_x_per_day">You can save up to \u20B9%d per day.</string>
+    <string name="start_saving_daily">Start Saving Daily</string>
+
+    <string name="you_are_all_set_to_start_your_saving_journey">You’re all set to start your savings journey.</string>
+    <string name="automate_daily_saving">Automate Daily Savings</string>
+    <string name="congrats">Congrats</string>
+
+    <string name="minimum_value_should_be_x">Minimum value should be \u20B9%d</string>
+    <string name="setup_auto_save">Setup Auto-Save</string>
+
+    <string name="enter_your_phone_no_and_lets_get_saving">Enter phone number, start saving. Simple!</string>
+    <string name="otp_please">OTP, please?</string>
+    <string name="lets_get_to_know_you">Let’s get to know you. Shall we?</string>
+    <string name="what_gender_do_you_identify_with">What gender do you identify with?</string>
+    <string name="phew_just_one_last_step">Phew, just one last step!</string>
+    <string name="please_allow_sms_permission">SMS Permission</string>
+    <string name="why_it_helps_us_detect_you_spends">Why? It helps us detect your spends, round them off, and invest in 24K Gold.</string>
+    <string name="yes_allow">Allow</string>
+    <string name="build_your_jar_of_savings">Build your Jar of Savings</string>
+    <string name="auto_save_rs_10_everyday_even_when_no_spends_detected">Auto-save Rs 10 everyday even when there are no spends detected. Yes?</string>
+
+    <string name="transaction_summary">Transaction Summary</string>
+    <string name="feature_refer_and_earn_how_does_it_work">How does it work?</string>
+    <string name="feature_onboarding_say_hello_to_savings">Say Hello to Savings</string>
+    <string name="feature_onboarding_name_as_per_aadhar">Name (as per Aadhaar)</string>
+    <string name="best_time_to_buy_gold">Best time to buy Gold!</string>
+    <string name="dont_miss_the_opportunity_of_buying_gold_at_the_low_price">Don’t miss the opportunity of buying gold at the low price</string>
+    <string name="buy_gold_at">Buy Gold at</string>
+    <string name="you_will_be_alerted_everytime_gold_price_drops">You will be alerted every time gold price drops</string>
+    <string name="jackpot">Jackpot</string>
+    <string name="we_will_remind_you_once_gold_price_drops">We will remind you once gold prices significantly drop</string>
+    <string name="made_with_love_in_india" translatable="false"><b>Made in India</b></string>
+    <string name="our_partners" translatable="false">Our Partners</string>
+    <string name="hundred_percent_safe_and_secure" translatable="false">100% safe and secure payments</string>
+    <string name="savings_simplified" translatable="false">Savings Simplified.</string>
+    <string name="select_what_you_are_saving_for">Select what you are saving for</string>
+    <string name="how_frequently_would_you_like_to_save">How frequently would you like to save?</string>
+    <string name="hey_user_saving_for_message">Hey %s, %s</string>
+    <string name="user_you_are_saving_for">%s, you are saving for\n%s</string>
+    <string name="select_from_above_saving_options">Select from above saving options</string>
+    <string name="feature_home_page_total_value">Total Value</string>
+    <string name="notification_permissions">Please provide Notification permissions!</string>
+    <string name="minus_x_gm_round_to_4">-%s</string>
+    <string name="minus_rupee_x_round_to_2">-\u20B9%.2f</string>
+    <string name="feature_onboarding_flow_verify">Verify</string>
+    <string name="feature_onboarding_by_proceeding">By proceeding, you accept Jar’s</string>
+    <string name="feature_onboarding_t_and_c">T&amp;C</string>
+    <string name="feature_onboarding_and">and</string>
+    <string name="feature_onboarding_privacy_policy">Privacy policy</string>
+    <string name="feature_onboarding_flow_tc_text">I accept the <u><b>T&amp;C</b></u> and <u><b>Privacy Policy</b></u></string>
+    <string name="feature_onbaording_flow_experian_tc_button"><u>Experian’s T&amp;C.</u></string>
+    <string name="feature_onbaoring_flow_name_screen_header"><b><font color="#EEEAFF">Enter your Name</font></b> <font color="#ACA1D3">(as per Aadhar)</font></string>
+    <string name="feature_onboarding_first_name">Name</string>
+    <string name="feature_onboarding_last_name">Last Name</string>
+    <string name="feature_onboarding_age_header">Your age?</string>
+    <string name="feature_onboarding_permission">Permissions</string>
+    <string name="feature_onboarding_divider_text">Login/Signup using an app</string>
+    <string name="feature_onboarding_truecaller_btn_text">Login using Truecaller</string>
+    <string name="feature_onboarding_terms_and_conditions">Jar’s T&amp;C</string>
+    <string name="feature_onboarding_otp_header">OTP has been sent to</string>
+    <string name="feature_onboarding_sms_permission_body">We need SMS permissions to calculate the roundoffs. No personal SMS are read.</string>
+    <string name="feature_onboarding_experian_warning">Please select this to proceed further</string>
+    <string name="feature_onboarding_otp_valid_till">Valid till</string>
+    <string name="feature_onboarding_select_number_welcome_back">Welcome Back %s!</string>
+    <string name="feature_autoinvest_welcome_back">Welcome back!</string>
+    <string name="feature_autoinvest_you_saved">YOU SAVED</string>
+    <string name="feature_autoinvest_24k_gold">24K GOLD</string>
+    <string name="feature_autoinvest_since_your_last_visit">Since your last visit...</string>
+    <string name="feature_experian_bottom_sheet_header">Help us understand \nyou better.</string>
+    <string name="feature_experian_bottom_sheet_description">Allow Jar to fetch credit report from Experian for best loan offers. I agree to <u>Experian T&amp;C.</u> </string>
+    <string name="no_i_dont_want_to_continue"><u>No, I don’t want to continue</u></string>
+    <string name="feature_experian_bottom_sheet_cta_text">Yes, personalise my experience</string>
+    <string name="feature_experian_bottom_sheet_footer"><b><u>No, I don’t want to continue</u></b></string>
+    <string name="feature_onboarding_stories_footer">Gold saved in safe and secure lockers </string>
+    <string name="feature_onboarding_stories_header">Made with ❤️ \nin India</string>
+    <string name="feature_onboarding_i_allow_to_fetch_credit_report">I allow Jar to fetch my credit report from Experian to advise me on the best loan offers. I agree to </string>
+    <string name="feature_onboarding_we_are_verifying_your_number">We are verifying your phone number</string>
+    <string name="feature_onboarding_please_verify_your_number">Please verify your phone number</string>
+    <string name="feature_onboarding_your_account_has_been_verified">Your account has been verified</string>
+    <string name="feature_onboarding_we_have_sent_otp_at">We have sent OTP at +%s-%s</string>
+    <string name="feature_onboarding_sms_permission_description">We\'ll need SMS permission to help you save in the best way possible.</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_header">Rewards are waiting for you!</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_description">You’ll receive welcome rewards from Jar</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_button_text">Continue Creating Account</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_footer_text"><u>I’ll come back later</u></string>
+    <string name="feature_onboarding_select_number_cta_2"><u>Use another number</u></string>
+    <string name="feature_onboarding_enter_number_checkbox_text">Allow Jar to access my credit report from <b>RBI approved</b> companies to give me the best loan offers. I agree to <u><b>T&amp;C.</b></u></string>
+    <string name="feature_onboarding_select_number_description">You are part of the Jar family</string>
+    <string name="feature_onboarding_enter_name_tittle">Enter your Name</string>
+    <string name="feature_onboarding_enter_name_description">As per your Aadhar card</string>
+    <string name="feature_onboarding_enter_otp_tittle">Enter OTP</string>
+    <string name="feature_onboarding_enter_otp_description">Sent to </string>
+    <string name="feature_onboarding_enter_otp_divider_text">OR</string>
+    <string name="feature_onboarding_TC">T&amp;C</string>
+    <string name="feature_onboarding_footer">Your information is safe with us</string>
+</resources>

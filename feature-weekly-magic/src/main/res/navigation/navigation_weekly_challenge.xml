@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_weekly_challenge"
+    app:startDestination="@id/weeklyChallengeHomeFragment">
+
+    <fragment
+        android:id="@+id/weeklyChallengeHomeFragment"
+        android:name="com.jar.app.feature_weekly_magic.impl.ui.home.WeeklyChallengeHomeFragment"
+        android:label="WeeklyChallengeHomeFragment"
+        app:launchSingleTop="true"
+        tools:layout="@layout/fragment_weekly_challenge_home">
+
+        <deepLink app:uri="android-app://com.jar.app/weeklyChallenge/weeklyChallengeHomeFragment/{fromScreen}/{clickTime}" />
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            android:defaultValue="no_screen"
+            app:nullable="false"/>
+        <argument
+            android:name="clickTime"
+            app:argType="string"
+            android:defaultValue="0"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_weeklyChallengeHome_to_weeklyChallengeInfoBottomSheet"
+            app:destination="@id/weeklyChallengeInfoDialogFragment" />
+
+        <action
+            android:id="@+id/action_weeklyChallengeHome_to_weeklyChallengeDetail"
+            app:destination="@id/weeklyChallengeDetailFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/weeklyChallengeInfoDialogFragment"
+        android:name="com.jar.app.feature_weekly_magic.impl.ui.info_bottom_sheet.WeeklyChallengeInfoBottomSheetFragment"
+        android:label="weeklyChallengeInfoDialogFragment"
+        app:launchSingleTop="true"
+        tools:layout="@layout/fragment_weekly_challenge_info" />
+
+
+</navigation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goal_settings_nav"
+    app:startDestination="@id/goalSetting">
+    <fragment
+        android:id="@+id/goalSetting"
+        android:label="GoalSettingFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.goalSetting.GoalSettingFragment">
+        <deepLink app:uri="android-app://com.jar.app/savingsGoalSettings" />
+
+        <argument
+            android:name="goalSettingUpValue"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_goalSetting_to_EndGoal"
+            app:destination="@id/EndGoal" />
+        <action
+            android:id="@+id/action_goalSetting_to_goalSuccessFragment"
+            app:destination="@id/goalSuccessFragment"
+            app:popUpTo="@id/goalSetting"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/EndGoal"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.endGoal.EndGoalFragment"
+        android:label="BackAlertBottomSheetFragment"
+        tools:layout="@layout/end_goal_fragment_layout">
+        <action
+            android:id="@+id/action_EndGoal_to_qnaScreen"
+            app:destination="@id/QnaFragment" />
+        <argument
+            android:name="endStateResponse"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/QnaFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.qna.QnAFragment"
+        android:label="QnaFragment">
+        <action
+            android:id="@+id/action_qnaScreen_to_goalSuccessFragment"
+            app:destination="@id/goalSuccessFragment"
+            app:popUpTo="@id/goalSetting"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="goalEndResponse"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+
+    <fragment
+        android:id="@+id/goalSuccessFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.goalSuccess.GoalSetupSuccessFragment"
+        android:label="GoalSetupSuccessFragment">
+        <argument
+            android:name="data"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="isShowAppBar"
+            app:argType="boolean"
+            app:nullable="false"
+            android:defaultValue="true"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/purple400"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    tools:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/likeIV"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:layout_marginEnd="@dimen/dimen_6dp"
+            android:src="@drawable/ic_heart_red" />
+
+        <View
+            android:id="@+id/outOfStockBanner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/black_opacity_63"
+            app:layout_constraintBottom_toBottomOf="@id/ivImage"
+            app:layout_constraintEnd_toEndOf="@id/ivImage"
+            app:layout_constraintStart_toStartOf="@id/ivImage"
+            app:layout_constraintTop_toTopOf="@id/ivImage" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/outOfStockGroup"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="outOfStockBanner, outOfStockTv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/outOfStockTv"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/out_of_stock"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/ivImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/alertStrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="product_label_bg, product_label_tv, product_label_iv, product_label_bg_shadow" />
+
+        <View
+            android:id="@+id/product_label_bg_shadow"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="@id/product_label_bg"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="-4dp"
+            android:background="@drawable/rounded_bg_color_12dp"
+            android:backgroundTint="#4D1EA787"
+            app:layout_constraintStart_toStartOf="@id/product_label_bg"
+            app:layout_constraintTop_toTopOf="@id/product_label_bg" />
+
+        <View
+            android:id="@+id/product_label_bg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:paddingEnd="@dimen/dimen_10dp"
+            app:layout_constraintEnd_toEndOf="@id/product_label_tv"
+            android:background="@drawable/core_ui_bg_rounded_1ea787_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/product_label_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="@dimen/dimen_4dp"
+            android:src="@drawable/ic_fire"
+            app:layout_constraintBottom_toBottomOf="@id/product_label_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/product_label_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_label_tv"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="SELLING FAST"
+            android:paddingEnd="20dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            app:layout_constraintBottom_toBottomOf="@id/product_label_bg"
+            app:layout_constraintStart_toEndOf="@+id/product_label_iv"
+            app:layout_constraintTop_toTopOf="@id/product_label_bg" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivImage"
+            tools:text="0.5 Gram SafeGold Coin (99.5%)" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#ACA1D3"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            tools:text="₹ 2,904.95" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWeights"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/feature_gold_delivery_ui_bg_rounded_2e2942_4dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:text="@string/_2_weights_available"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvPriceDiscount" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPriceDiscount"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/tvPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvPrice"
+            tools:text="₹ 2,904.95" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

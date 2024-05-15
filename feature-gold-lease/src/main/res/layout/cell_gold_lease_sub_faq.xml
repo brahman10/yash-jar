@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CommonBoldTextViewStyle"
+        android:textColor="@color/white"
+        tools:text="Why is it beneficial to the parties involved? - especially Jewellers"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        android:textColor="@color/color_EEEAFF"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        tools:text="The reason why a jeweller would want to do this is o They don’t have any risk of gold prices fluctuating with a product like this. They borrow gold, turn it into an ornament and then sell that ornament."/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

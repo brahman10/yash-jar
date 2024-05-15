@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/allChip"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_3c3357_stroke"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:paddingHorizontal="@dimen/dimen_12dp"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:textAppearance="@style/chipText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        tools:text="0.5 gm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/outOfStockBanner"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingHorizontal="@dimen/dimen_6dp"
+        android:background="@drawable/bottom_round_orange"
+        android:gravity="center"
+        android:text="@string/out_of_stock"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

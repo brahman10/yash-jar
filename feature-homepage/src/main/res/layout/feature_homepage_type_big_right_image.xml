@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLabelTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_homepage_bg_label_top"
+        android:backgroundTint="@color/color_7745FF"
+        android:clickable="false"
+        android:drawablePadding="4dp"
+        android:elevation="4dp"
+        android:focusable="false"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="2dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:drawableStart="@drawable/feature_homepage_ic_label_tick"
+        tools:text="New"
+        tools:textColor="@color/white"
+        tools:visibility="visible" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_black_bg_12dp"
+        android:backgroundTint="@color/color_352F4F"
+        android:elevation="@dimen/dimen_3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfoGraphic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSubDescriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTitleTop"
+            tools:src="@drawable/spends_home" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter"
+            android:gravity="top"
+            android:lineSpacingExtra="-3sp"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivInfoGraphic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="12sp"
+            tools:text="TRACK YOUR SPENDS" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="top"
+            android:textColor="@color/color_EEEAFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivInfoGraphic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleTop"
+            app:lineHeight="28sp"
+            tools:text="Get insights on your spending habits!" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubDescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/inter"
+            android:gravity="top"
+            android:textColor="@color/color_D5CDF2"
+            android:textSize="12sp"
+            tools:text="Get insights on your spending habits!"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/ivInfoGraphic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescriptionText" />
+
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnAction"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubDescriptionText"
+            app:layout_constraintVertical_bias="0.0"
+            app:textMarginBottom="21dp"
+            app:textMarginTop="21dp"
+            tools:buttonText="View Report" />
+
+        <LinearLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/core_ui_bg_bottom_rounded_corner_10dp"
+            android:backgroundTint= "#453E61"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/parentCard"
+            app:layout_constraintEnd_toEndOf="@id/parentCard"
+            app:layout_constraintStart_toStartOf="@id/parentCard"
+            app:layout_constraintTop_toBottomOf="@+id/btnAction">
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

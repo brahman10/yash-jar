@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_homepage_invest_now">Invest now</string>
+    <string name="feature_homepage_don_t_want_to_invest_full_amount">Don\'t want to invest full amount?</string>
+    <string name="feature_homepage_tap_here"><u>Tap here</u></string>
+    <string name="feature_homepage_rupee_x_in_double">\u20B9%.2f</string>
+    <string name="feature_homepage_rupee_x_in_int">\u20B9%d</string>
+    <string name="feature_homepage_rupee_x_in_string">\u20B9%s</string>
+    <string name="feature_homepage_invest_with_upi">Invest with UPI</string>
+    <string name="feature_homepage_start_your_investment_journey">Start your investment journey</string>
+
+    <string name="feature_homepage_rs_n_double_will_be_deducted_from_your_account">\u20B9%.2f will be deducted from your account</string>
+    <string name="feature_homepage_saved_to_your_own_savings_jar">Saved to your own savings Jar</string>
+    <string name="feature_homepage_invested_in_100_perc_pure_gold">Invested in 100% pure gold</string>
+    <string name="feature_homepage_what_happens_next">What happens next?</string>
+
+    <string name="feature_homepage_invest_n_percent">Invest %d%%</string>
+    <string name="feature_homepage_rupee_x_in_double_strike" translatable="false"><strike>\u20B9%.2f</strike></string>
+    <string name="feature_homepage_skip_this_investment">Skip this investment</string>
+    <string name="feature_homepage_or">or</string>
+    <string name="feature_homepage_invest_partial_amount">Invest Partial amount</string>
+
+    <string name="feature_homepage_turn_your_saving_into_gold">Turn your <b><font color="#FFFFFF">savings</font></b> into <b><font color="#FFEEC979">gold</font></b> in just one click</string>
+
+    <string name="feature_homepage_keep_investing">Keep investing</string>
+    <string name="feature_homepage_unlock_reward">Unlock reward</string>
+    <string name="feature_homepage_you_reached_a_milestone">You reached a milestone!</string>
+    <string name="feature_homepage_learn_more">Learn more</string>
+    <string name="feature_homepage_get_exciting_rewards">Get exciting rewards</string>
+    <string name="feature_homepage_gold_in_locker">Gold in Locker</string>
+    <string name="feature_homepage_24_karat_gold_99_5_purity">24k | 99.5% Pure Gold</string>
+    <string name="feature_homepage_your_saving_are_invested_gold">Your savings are invested in 24K gold</string>
+    <string name="feature_homepage_updated_s">Updated %s</string>
+
+    <string name="feature_homepage_keep_investing_x_gms_to_go">Keep investing | %.4fgm to go</string>
+    <string name="feature_homepage_you_in_top_5_percent_x_gms_to_go">You\'re in the top 5%% | You\'re doing great | %.4fgm to go</string>
+    <string name="feature_homepage_you_in_top_1_percent_x_gms_to_go">You\'re in the top 1%% | You\'re doing great | %.4fgm to go</string>
+
+    <string name="feature_homepage_claim_now">Claim now</string>
+    <string name="feature_homepage_show_all"><u>Show All</u></string>
+
+    <plurals name="feature_homepage_bonus_available">
+        <item quantity="one">%d More Bonus Available</item>
+        <item quantity="other">%d More Bonuses Available</item>
+    </plurals>
+
+    <string name="feature_homapage_claimed">Claimed</string>
+    <string name="feature_homepage_invest_more">Invest more</string>
+    <string name="feature_homepage_start_saving">Start Saving</string>
+    <string name="feature_homepage_save_now">SAVE NOW</string>
+    <string name="feature_homepage_start_saving_with_x">Start saving with \u20B9%d</string>
+    <string name="feature_homepage_watch_your_savings_grow_daily">Watch your savings grow daily</string>
+    <string name="replay_video">replay</string>
+
+    <string name="feature_homepage_start">Start</string>
+    <string name="feature_homepage_loan_card_title">You have a pre-approved loan of upto <font color='#ebb46a'>5 lakh*</font></string>
+    <string name="feature_homepage_loan_card_description">Click here to get started with your KYC</string>
+
+    <string name="feature_home_page_start_your_saving_journey">Start your saving journey</string>
+    <string name="feature_home_page_congratulations_on_signing_up">Congratulation on Signing up!</string>
+    <string name="feature_home_page_start_your_saving_journey_today_with_x">Start your saving journey \n today with ₹%d</string>
+    <string name="feature_home_page_save_x">Save ₹%d</string>
+
+
+    <string name="feature_home_page_save_in_gold">Save in Gold</string>
+    <string name="feature_home_page_congrats_on_saving_x">Congrats on saving ₹%d</string>
+    <string name="feature_home_page_automate_your_saving_and_see_it_grow">Automate your savings and see it grow! 🌱</string>
+    <string name="feature_home_page_setup_auto_save">Setup Auto-Save</string>
+    <string name="feature_homepage_your_savings">Your savings</string>
+    <string name="feature_home_page_setup_now">SETUP NOW</string>
+    <string name="feature_homepage_vasooli_card_title">Asking for your\nmoney back can be\nawkward.</string>
+    <string name="feature_homepage_vasooli_diwali_card_title">Asking for your money\nback can be awkward.</string>
+    <string name="feature_homepage_vasooli_diwali_card_vasool_it">vasool it</string>
+    <string name="feature_homepage_gold_delivery_diwali_card_get_delivery">Get Delivery</string>
+    <string name="feature_homepage_gift_gold_diwali_card_start_gifting">Start Gifting</string>
+    <string name="feature_homepage_refer_and_earn_diwali_card_refer_now">REFER NOW</string>
+    <string name="feature_homepage_vasooli_card_desc">Let us Vasool it.</string>
+    <string name="feature_home_page_round_off_card_title">Now convert your\n<font fgcolor='#FFCD5A'>Chillar into Gold</font></string>
+    <string name="feature_home_page_round_off_card_desc">Roundoff your daily invest</string>
+    <string name="feature_home_page_activate_round_ups">Activate Roundoffs</string>
+
+    <string name="feature_home_page_step_two_roundoff_processing"> Detecting spends</string>
+    <string name="feature_home_page_step_three_roundoff_processing">Creating Roundoffs</string>
+    <string name="feature_home_page_step_four_roundoff_processing"> Roundoffs ready to Save in your Jar account</string>
+
+    <plurals name="feature_home_page_roundoffs_in_last_x_days">
+        <item quantity="one">Roundoffs in last %d day</item>
+        <item quantity="other">Roundoffs in last %d days</item>
+    </plurals>
+
+    <string name="feature_home_page_start_now">Start Now</string>
+    <string name="feature_home_page_live">Live</string>
+    <string name="feature_home_page_earn_rewards">Earn Rewards</string>
+    <string name="feature_home_page_offers">Offers</string>
+    <string name="feature_home_page_quick_actions">Quick Actions</string>
+    <string name="feature_home_page_gold_sip">Savings Plan</string>
+    <string name="feature_home_page_auto_save_failed">Auto-save failed</string>
+    <string name="feature_home_page_payment_failed_due_to_low_bank_balance">Payment failed due to low bank balance.</string>
+    <string name="feature_home_page_save_wisely_with_gold_sip">Save wisely with \nSavings Plan</string>
+    <string name="feature_home_page_pending_amount">Pending Amount</string>
+    <string name="feature_home_page_save_weekly">Save Weekly</string>
+    <string name="feature_home_page_save_monthly">Save Monthly</string>
+    <string name="feature_home_page_know_more">Know More</string>
+    <string name="feature_homepage_completed">Completed</string>
+    <string name="feature_homepage_jar_ready_cash">Jar Ready Cash</string>
+
+    <string name="feature_home_page_update_daily_amount">Update Daily Amount</string>
+    <string name="feature_home_page_save_more_worry_less">Save more \nworry less!</string>
+    <string name="feature_home_page_save_rs_x">Save ₹%d</string>
+    <string name="feature_home_page_in_6_months">in 6 months</string>
+    <string name="feature_home_page_by_saving">By saving </string>
+    <string name="feature_home_page_daily"> daily</string>
+    <string name="feature_home_page_move_the_slider_to_choose_an_amount">Move the slider to choose an amount</string>
+    <string name="feature_home_page_save_rs_x_daily">Save ₹%d daily</string>
+    <string name="feature_home_page_recommended">Recommended</string>
+    <string name="feature_home_page_buy_now">Buy Now</string>
+    <string name="videos_to_help_you_understand">Videos to help you\nunderstand</string>
+    <string name="know_more_about_jar">Know more about Jar</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="feature_homepage_total_savings">Total Savings</string>
+    <string name="feature_homepage_your_savings_in_24k_gold">Your Savings\nin 24K Gold</string>
+    <string name="feature_homepage_manage">Manage</string>
+    <string name="feature_homepage_save_more">Save More</string>
+    <string name="feature_homepage_withdraw">Withdraw</string>
+    <string name="feature_homepage_start_saving_in_gold_with_10">Start saving in Gold \nwith ₹10.</string>
+    <string name="feature_homepage_sell_your_gold_and_withdraw_savings">Sell your gold and withdraw savings.</string>
+    <string name="feature_homepage_ready_cash_balance">Ready Cash Balance</string>
+    <string name="feature_homepage_ready_cash_upto_x">Congratulations! You are eligible for\nready cash of upto ₹%s</string>
+    <string name="here_is_your_2022_recap">Here\’s your 2022 recap…</string>
+    <string name="hi_s_">Hi %s</string>
+    <string name="you_saved">You saved</string>
+    <string name="you_won">You won</string>
+    <string name="x_days">%s days</string>
+    <string name="_thats">, that\'s</string>
+    <string name="on_jar">on Jar!</string>
+    <string name="in_total">in total!</string>
+    <string name="your_own_amount_of_gold">You own %s of gold</string>
+    <string name="share_your_recap">Share Your Recap</string>
+    <string name="update_daily_savings">Update Daily Savings</string>
+    <string name="start_daily_savings">Start Daily Savings</string>
+    <string name="my_jar_recap">My Jar Recap</string>
+    <string name="and_you_did_it_in">…&amp; you did it in</string>
+    <string name="you_used">You used</string>
+    <string name="spins_">spins!</string>
+    <string name="tip_for">tip for</string>
+    <string name="free_tip_for_2023">Free tip for 2023</string>
+    <string name="in_free_gold">in free gold!</string>
+    <string name="you_are_one_of_the_top_10_savers_on_jar">You are one of the top 10% savers on Jar.</string>
+    <string name="by_using_your_winnings_referrals_and_weekly_magic">You used Winnings, Referrals and Weekly Magic like a boss!</string>
+    <string name="people_save_2x_more_with_daily_savings">People save 2X more with Daily Savings, grow your savings in 2023!</string>
+    <string name="_2023">2023</string>
+    <string name="spends_ke_pehle_save_hai">Spends ke pehle save hai!</string>
+    <string name="x_gm_in_gold">%s gm in gold</string>
+    <string name="keep_spinning_keep_smiling">Keep Saving, Keep Spinning</string>
+    <string name="your_golden_journey">Your golden journey!</string>
+    <string name="see_your_recap">See Your Recap</string>
+    <string name="me_and_who">Me and who? 2022!\n\nHere\’s a glimpse of my savings journey so far. Create your story on Jar!</string>
+    <string name="you_still_have_">You still have </string>
+    <string name="_spins_left_you_can_earn_upto_"> spins left! And you can win upto </string>
+    <string name="_by_using_them"> by using them.</string>
+    <string name="rupee_x_in_string">₹%s</string>
+
+    <string name="update_your_current_Daily_savings_from">Update your current Daily Savings from</string>
+    <string name="to">to</string>
+    <string name="to_grow_your_savings_by">to grow your savings by</string>
+    <string name="in_2023_">in 2023!</string>
+    <string name="_exclamation">!</string>
+    <string name="feature_homepage_congratulations_eligible_for">Congratulations! You are eligible for ready cash of upto ₹ %s</string>
+    <string name="feature_homepage_rupee_prefix_string">₹ %s</string>
+    <string name="feature_home_page_get_started">Get Started</string>
+
+    <string name="feature_first_coin_delivery_screen_primary_btn">Track My Order</string>
+    <string name="feature_first_coin_support_button_text"><u>Contact Support</u></string>
+    <string name="never_show_again"><u>Never Show Again</u></string>
+    <string name="feature_first_coin_progress_target_label">You need</string>
+    <string name="feature_first_coin_progress_value_label">Your savings</string>
+    <string name="gm"> gm</string>
+    <string name="feature_homepage_gold_redemption_title">jewellery vouchers</string>
+    <string name="feature_homepage_gr_card_desc">Gold and\ndiamond\nvouchers</string>
+    <string name="feature_homepage_gr_card_subtitle">Earn upto 10%\nextra gold!</string>
+    <string name="feature_homepage_scroll_to_explore_more">Scroll to explore more</string>
+    <string name="feature_homepage_save_manually">Save Manually</string>
+    <string name="feature_homepage_track_your_savings">Track your savings</string>
+    <string name="feature_gold_redemption_buy_voucher">Buy voucher</string>
+    <string name="feature_homepage_on_making_your_first_investment">On making your first investment!</string>
+    <string name="feature_homepage_congratulation">Congratulation!</string>
+    <string name="feature_homepage_tap_to_proceed">Tap to proceed</string>
+    <string name="save_now">Save Now</string>
+    <string name="save_daily">Save Daily</string>
+    <string name="save_10_in_gold_instead_nof_spending_on_snacks">Save ₹10 in gold instead\nof spending on snacks</string>
+    <string name="start_saving_in_gold_right_now">Start saving in gold right now</string>
+    <string name="trusted_by">Trusted By</string>
+    <string name="your_money_is_saved_in_24k_digital_gold">Your money is saved in 24k digital gold</string>
+    <string name="offer_expires">Offer Expires</string>
+    <string name="_3_off_on_gold_price_offer_nonly_for_our_users">3% off on gold price. Offer\nonly for our users</string>
+</resources>

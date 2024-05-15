@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spin_to_save">Spin to save</string>
+    <string name="spin_to_win">Spin to win</string>
+    <string name="spins_remaining_n">Spins remaining : %d</string>
+    <string name="spin_the_jar_and_get_a_chance_to_double_your_existing_savings">Spin the bottle and get a chance to double your existing savings</string>
+    <string name="spin_the_wheel_to_claim_your_welcome_bonus">Spin the wheel to claim your welcome bonus</string>
+    <string name="savings_double">Double\nsaving</string>
+    <string name="win_x">Win \n\u20B9%d</string>
+    <string name="win_2">Win \n\u20B92</string>
+    <string name="win_5">Win \n\u20B95</string>
+    <string name="win_1">Win \n\u20B91</string>
+    <string name="win_3">Win \n\u20B93</string>
+    <string name="win_0">Win \n\u20B90</string>
+    <string name="your_jar_account_is_ready_name">Your Jar account is ready, %s</string>
+    <string name="feature_homepage_the_game_will_be_unlocked_on_your_next_transaction">The game will be unlocked on your next transaction!</string>
+    <string name="feature_homepage_you_ve_used_spins_x_daily_spins">You\'ve used %d daily spins</string>
+    <string name="you_won_n">Wohoo🥳! You won ₹%d</string>
+    <string name="your_winnings_of_n_is_added_to_your_jar_winnings">Your winnings of ₹%d is added to\nyour jar winnings</string>
+    <string name="try_your_luck_again">Try your luck again</string>
+    <string name="oops_even_x_wasnt_lucky_all_times">Oops, even Alexander wasn’t lucky all the times</string>
+    <string name="last_savings_doubled">Whoa! You’ve doubled your savings</string>
+    <string name="feature_spin_this_amount_is_added_to_jar_winnings">This amount will be added to your Jar winnings.</string>
+    <string name="youve_won">You\'ve won</string>
+    <string name="rupee_x_in_int">\u20B9%d</string>
+    <string name="play_again">Play again</string>
+    <string name="go_to_home_page">Go to home page</string>
+    <string name="failed_to_get_referral_link">Failed to get referral link. Please try later.</string>
+    <string name="doubled">Doubled</string>
+    <string name="better_luck">Better Luck Next Time</string>
+    <string name="share_spin_text_with_link">I just won exciting rewards by spinning the wheel in Jar App. 🎁
+
+\n\nYou can also get some free Gold &amp; start your Savings journey. Sounds Exciting? 🤩
+
+\n\nClick on the link below to sign up and get up to Rs.500 worth of free GOLD: %s
+
+\n\nIntroducing Jar, an app that lets you;
+
+\n\n✅Auto-save with as low as ₹10🪙
+\n✅Save &amp; Invest in 24k Gold🤩
+
+\n\nHappy saving!
+ </string>
+    <string name="redeem_winnings">Redeem Winnings</string>
+    <string name="yay_you_won_a_gold_coupon">Yay! You won a Gold Coupon</string>
+    <string name="valid_for">Valid For</string>
+    <string name="full_colon">:</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="second">second</string>
+    <string name="redeem_coupon">Redeem Coupon</string>
+    <string name="spin_again">Spin Again</string>
+    <string name="spins_left_n_you_can_use_spins_per_day">Spins Left : %d | You can use %d spins per day</string>
+    <string name="spins_left_today_n_total_spins">Spins Left today : %d | Total spins : %d</string>
+    <string name="coupon_code_name_not_found">Coupon Code name not found</string>
+    <string name="your_last_savings_has_been_doubled">Your last savings has been doubled</string>
+
+    <string name="total_spins">Total spins</string>
+    <string name="total_winnings">Total Winnings</string>
+    <string name="remaining_spins">%d/%d</string>
+    <string name="daily_spins_left">Daily spins left</string>
+    <string name="menu_offers">Menu ➔ Offers</string>
+
+    <string name="coupon_validity">Valid till %1$s</string>
+    <string name="feature_spin_complete_all_3_spins">Complete all 3 spins to advance</string>
+    <string name="feature_spin_you_still_have_x_spins_remaining">You still have %d spins remaining</string>
+    <string name="feature_spin_play_more">Play more</string>
+    <string name="feature_spin_go_back_to_quest">Go Back to Quest</string>
+    <string name="feature_spin_sorry_no_winnings_try_again">Sorry, you didn\'t get any winnings, please try again</string>
+
+</resources>

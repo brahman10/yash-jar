@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="@dimen/dimen_16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="@string/enter_mobile_number"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBack"
+        app:layout_constraintStart_toEndOf="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMobile"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autofillHints="phoneNational"
+        android:digits="0123456789"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="@string/enter_your_phone_number"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="yes"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingStart="90dp"
+        android:paddingEnd="0dp"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack"
+        app:layout_constraintVertical_bias="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAlert"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/please_enter_a_valid_mobile"
+        android:textColor="@color/redAlertText"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMobile" />
+
+    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+        android:id="@+id/spinner"
+        style="@style/BigTextViewStyle"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_16sp"
+        app:ccp_arrowSize="26sp"
+        app:ccp_backgroundColor="#F7F7F7"
+        app:ccp_clickable="false"
+        app:ccp_defaultNameCode="in"
+        app:ccp_hideNameCode="true"
+        app:ccp_showFlag="false"
+        app:ccp_textColor="@color/blackTxtColor"
+        app:layout_constraintBottom_toBottomOf="@+id/etMobile"
+        app:layout_constraintStart_toStartOf="@+id/etMobile"
+        app:layout_constraintTop_toTopOf="@+id/etMobile" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDone"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        app:buttonText="@string/done"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAlert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

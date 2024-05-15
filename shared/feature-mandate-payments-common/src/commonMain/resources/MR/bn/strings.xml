@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_mandate_payment_proceed">এগিয়ে যান</string>
+    <string name="feature_mandate_payment_invalid_upi_id">ভুল Upi আইডি</string>
+    <string name="feature_mandate_payment_upi_id_doesnt_support_mandate">Upi আইডি ম্যান্ডেটকে সাপোর্ট করে না</string>
+    <string name="feature_mandate_payment_transaction_cancelled">লেনদেন ক্যান্সেল করা হয়েছে</string>
+    <string name="feature_mandate_payment_something_went_wrong">কিছু একটা সমস্যা হয়েছে</string>
+    <string name="feature_mandate_payment_we_are_verifying_your_payment_status">আমরা আপনার পেমেন্টের স্ট্যাটাসকে যাচাই করছি।</string>
+    <string name="feature_mandate_rs_x_int_will_be_debited_from_your_bank_account">অটো-সেভ সেটআপ করতে ₹%d আপনার ব্যাংক অ্যাকাউন্ট থেকে কেটে নেওয়া হবে</string>
+    <string name="feature_mandate_it_will_be_saved_in_gold_and_can_be_found_in_gold_locker">এটাকে সোনাতে সঞ্চয় করা হবে আর গোল্ড লকারে পাওয়া যাবে</string>
+    <string name="feature_mandate_payment_select_preferred_way_to_autosave">অটো-সেভ করার জন্য পছন্দসই উপায় বেছে নিন</string>
+    <string name="feature_mandate_payment_using_upi_app">UPI অ্যাপ ব্যবহার করে</string>
+</resources>

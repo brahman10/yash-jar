@@ -1,0 +1,48 @@
+<vector android:height="24dp"
+    android:viewportHeight="82.5"
+    android:viewportWidth="82.5"
+    android:width="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="#d8923e"
+        android:pathData="M0,0L77,0L77,16.5L0,16.5Z" />
+    <path
+        android:fillColor="#e0a865"
+        android:pathData="M67.262,0L0,0L0,16.5L63.775,16.5A56.611,56.611 0,0 0,67.262 0Z" />
+    <path
+        android:fillColor="#bc7f35"
+        android:pathData="M2.75,16.5L74.25,16.5L74.25,63.25L2.75,63.25Z" />
+    <path
+        android:fillColor="#d8923e"
+        android:pathData="M2.75,16.5L2.75,51.235A53.353,53.353 0,0 0,13.063 52.25C36.204,52.25 55.95,37.4 63.775,16.5Z" />
+    <path
+        android:fillColor="#ddd9d1"
+        android:pathData="M48.125,33L28.875,33a4.125,4.125 0,0 1,0 -8.25h19.25a4.125,4.125 0,0 1,0 8.25Z" />
+    <path
+        android:fillColor="#dd602a"
+        android:pathData="M55,35.75L68.75,35.75L68.75,55L55,55Z" />
+    <path
+        android:fillColor="#545722"
+        android:pathData="M60.5,55 L77,38.5 82.5,44l-11,11Z" />
+    <path
+        android:fillColor="#a9ddf3"
+        android:pathData="M72.875,53.625v1.375h6.875L79.75,50.875L75.625,50.875Z" />
+    <path
+        android:fillColor="#a9ddf3"
+        android:pathData="M41.25,41.25L60.5,41.25L60.5,55L41.25,55Z" />
+    <path
+        android:fillColor="#a9ddf3"
+        android:pathData="M41.25,41.25L60.5,41.25L60.5,55L41.25,55Z" />
+    <path
+        android:fillColor="#d4eef9"
+        android:pathData="M41.25,50.841A17.163,17.163 0,0 0,55.979 41.25L41.25,41.25Z" />
+    <path
+        android:fillColor="#bc7f35"
+        android:pathData="M38.5,55L82.5,55L82.5,82.5L38.5,82.5Z" />
+    <path
+        android:fillColor="#d8923e"
+        android:pathData="M38.5,55L38.5,78.092a41.638,41.638 0,0 0,4.813 0.283C60.2,78.375 74.184,68.23 76.622,55Z" />
+    <path
+        android:fillColor="#ddd9d1"
+        android:pathData="M66,66h-11a2.75,2.75 0,1 1,0 -5.5h11a2.75,2.75 0,0 1,0 5.5Z" />
+</vector>

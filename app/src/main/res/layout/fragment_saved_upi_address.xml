@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:padding="16dp">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="12dp"
+                android:visibility="visible"
+                tools:visibility="visible"
+                app:shimmer_auto_start="true"
+                app:shimmer_direction="left_to_right"
+                app:shimmer_repeat_mode="restart"
+                app:shimmer_shape="linear">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/primaryUPIPlaceholder"
+                        android:layout_width="54dp"
+                        android:layout_height="18dp"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <include layout="@layout/cell_investment_history_transaction" />
+
+                    <View
+                        android:id="@+id/allUPIPlaceholder"
+                        android:layout_width="54dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_rounded_corner_20dp"
+                        android:backgroundTint="@color/color_3D3755"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <include layout="@layout/cell_investment_history_transaction" />
+
+                    <include layout="@layout/cell_investment_history_transaction" />
+
+                    <include layout="@layout/cell_investment_history_transaction" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPrimary"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/primary"
+                android:visibility="gone"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/primaryContainer"
+                layout="@layout/cell_saved_upi_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tvPrimary" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAllUPIs"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="@string/all_upi_ids"
+                android:visibility="gone"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/primaryContainer" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUpiAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                tools:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvAllUPIs"
+                tools:itemCount="3"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/cell_saved_upi_address" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUpiPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/btnAddNew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAllUPIs"
+                app:srcCompat="@drawable/ic_upi_placeholder" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnAddNew"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:buttonText="@string/add_new_upi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvUpiAddress"
+                app:layout_constraintVertical_bias="1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

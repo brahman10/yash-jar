@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transaction_cancelled">ഇടപാട് റദ്ദാക്കി</string>
+    <string name="some_error_occurred">എന്തോ പിശക് പറ്റി</string>
+    <string name="internet_not_working_properly">ഇന്റർനെറ്റ് ശരിയായി പ്രവർത്തിക്കുന്നില്ല</string>
+    <string name="feature_payment_payment">പേയ്‌മെന്റ്</string>
+    <string name="feature_payment_to_pay_n">അടയ്‌ക്കേണ്ടത് : \u20B9%.2f</string>
+    <string name="feature_payment_upi">Upi</string>
+    <string name="feature_payment_upi_apps">Upi ആപ്പുകൾ</string>
+    <string name="feature_payment_add_a_new_upi_id">പുതിയ UPI ഐഡി ചേർക്കുക</string>
+    <string name="feature_payment_add_upi_id">UPI ഐഡി ചേർക്കുക</string>
+    <string name="feature_payment_you_need_to_have_a_registered_upi_id">നിങ്ങൾക്ക് രജിസ്റ്റർ ചെയ്ത UPI ഐഡി വേണം.</string>
+    <string name="feature_payment_enter_your_upi_id">നിങ്ങളുടെ UPI ഐഡി രേഖപ്പെടുത്തുക</string>
+    <string name="feature_payment_verify_and_pay">സ്ഥിരീകരിച്ച് പണമടയ്ക്കുക</string>
+    <string name="feature_payment_incorrect_upi_id">തെറ്റായ UPI ഐഡി</string>
+    <string name="feature_payment_processing_payment">പേയ്‌മെന്റ് പ്രക്രിയ നടക്കുന്നു</string>
+    <string name="feature_payment_we_are_verifying_your_payment_status">നിങ്ങളുടെ പേയ്‌മെന്റ് നില ഞങ്ങൾ സ്ഥിരീകരിക്കുന്നു.</string>
+    <string name="feature_payment_transaction_failed">ഇടപാട് പരാജയപ്പെട്ടു</string>
+    <string name="feature_payment_amount_n">തുക : \u20B9%.2f</string>
+    <string name="feature_payment_any_amount_deducted_will_be_refunded_within_n_days">എന്തെങ്കിലും തുക കുറച്ചിട്ടുണ്ടെങ്കിൽ 2–4 ദിവസത്തിനുള്ളിൽ റീഫണ്ട് ചെയ്യും.</string>
+    <string name="feature_payment_try_other_payment_method">മറ്റ് പേയ്‌മെന്റ് മാർഗം ശ്രമിക്കുക</string>
+    <string name="feature_payment_cancel">റദ്ദാക്കുക</string>
+    <string name="feature_payment_not_now">ഇപ്പോൾ അല്ല</string>
+    <string name="feature_payment_yes_cancel">അതെ, റദ്ദാക്കുക</string>
+    <string name="feature_payment_cancel_payment">പേയ്‌മെന്റ് റദ്ദാക്കുക</string>
+    <string name="feature_payment_open_your_upi_and_complete_the_payment_request_from_jar">നിങ്ങളുടെ UPI ആപ്പ് തുറന്നു ജാറിൽ നിന്നുള്ള\nപേയ്‌മെന്റ് അപേക്ഷ പൂർത്തിയാക്കുക</string>
+    <string name="feature_payment_approve_payment_within">പേയ്‌മെന്റ് അംഗീകരിക്കേണ്ട സമയ പരിധി</string>
+    <string name="feature_payment_note_please_dont_hit_back_until_the_transaction_is_complete">ശ്രദ്ധിക്കുക: ഇടപാട് പൂർത്തിയാകുന്നത് വരെ\nതിരികെ എന്നതിൽ ദയവായി അമർത്തരുത്.</string>
+    <string name="feature_payment_perc_100_safe_and_secure_payments">100% സുരക്ഷിതവും സുദൃഢവും ആയ പേയ്‌മെന്റുകൾ</string>
+    <string name="feature_payment_are_you_sure_you_want_to_cancel_payment">നിങ്ങൾക്ക് പേയ്‌മെന്റ്\nറദ്ദാക്കണമെന്ന് ഉറപ്പാണോ?</string>
+    <string name="feature_payment_the_payment_request_will_get_cancelled">UPI ബാങ്ക് ആപ്പിൽ പേയ്‌മെന്റ്\nപൂർത്തിയാക്കിയില്ലെങ്കിൽ മാത്രമേ\nപേയ്‌മെന്റ് അപേക്ഷ റദ്ദാവൂ.</string>
+    <string name="feature_payment_you_are_buying_n_gm_of_24k_pure_gold">നിങ്ങൾ %sഗ്രാം 24k ശുദ്ധ സ്വർണം വാങ്ങുന്നു</string>
+    <string name="feature_payment_minutes">മിനിട്ട്</string>
+    <string name="feature_payment_continue_payment">പേയ്‌മെന്റ് തുടരൂ</string>
+    <string name="feature_payment_maybe_later">ഒരു പക്ഷെ പിന്നീട്</string>
+    <string name="feature_payment_for_amount_n_you_will_get_m_gm_of_gold">\u20B9%.2f എന്ന തുകയ്ക്ക് നിങ്ങൾക്ക് %.4f ഗ്രാം\nസ്വർണം ലഭിക്കും.</string>
+    <string name="feature_payment_gold_price_has_increased">സ്വർണ വില കൂടി.</string>
+    <string name="feature_payment_gold_price_has_decreased">സ്വർണ വില കുറഞ്ഞു.</string>
+    <string name="feature_payment_updated_buy_price_n_per_gm">പുതുക്കിയ വാങ്ങൽ വില : \u20B9%.2f/ഗ്രാം.</string>
+    <string name="feature_payment_recently_used">സമീപകാലത്ത് ഉപയോഗിച്ചത്</string>
+    <string name="feature_payment_pay">പണമടയ്ക്കൂ</string>
+    <string name="feature_payment_add_a_new_card">പുതിയ കാർഡ് ചേർക്കൂ</string>
+    <string name="feature_payment_pay_using_your_debit_or_credit_card">നിങ്ങളുടെ ക്രെഡിറ്റ്, ഡെബിറ്റ് കാർഡുകൾ ഉപയോഗിച്ച് പണമടയ്ക്കൂ.</string>
+    <string name="feature_payment_next">അടുത്തത്</string>
+    <string name="feature_payment_proceed_to_pay">പണമടയ്ക്കലിലേക്ക് തുടരൂ</string>
+    <string name="feature_payment_invalid_card_number_please_try_agin">അസാധുവായ കാർഡ് നമ്പർ. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="feature_payment_invalid_expiry_date_please_try_agin">അസാധുവായ എക്സ്പയറി തീയതി. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="feature_payment_cards">കാർഡുകൾ</string>
+    <string name="feature_payment_enter_your_cvv">നിങ്ങളുടെ CVV രേഖപ്പെടുത്തുക.</string>
+    <string name="feature_payment_saved_upi_ids">സേവ് ചെയ്ത UPI ഐഡികൾ</string>
+    <string name="feature_payment_edit_previous_details"><u>മുൻപത്തെ വിശദാംശങ്ങൾ എഡിറ്റ് ചെയ്യൂ</u></string>
+    <string name="feature_payment_tap_to_edit">എഡിറ്റ് ചെയ്യാൻ അമർത്തൂ</string>
+    <string name="feature_payment_incorrect_card_details">തെറ്റായ കാർഡ് വിശദാംശങ്ങൾ.</string>
+    <string name="feature_payment_gold_price_gone_down">നിങ്ങൾക്ക് ഭാഗ്യമുണല്ലോ!\nസ്വർണ വില കുറഞ്ഞിട്ടുണ്ട്📉</string>
+    <string name="feature_payment_gold_price_on_rise">വേഗമാകട്ടെ!\nസ്വർണ വില കൂടുന്നു📈</string>
+</resources>

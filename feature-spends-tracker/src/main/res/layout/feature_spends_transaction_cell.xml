@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/core_ui_bg_rounded_2e2942_12dp"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:layout_marginStart="@dimen/dimen_16dp"
+    android:layout_marginEnd="@dimen/dimen_16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivTransactionIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3C3357"
+        android:scaleType="fitCenter"
+        app:contentPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/circleImageView"
+        tools:src="@drawable/ic_spends" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSpendsTodayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter"
+        android:gravity="top"
+        android:lineSpacingExtra="3sp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:translationY="-1.53sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/tvAmountSpent"
+        app:layout_constraintStart_toEndOf="@+id/ivTransactionIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="20sp"
+        tools:text="Spent today" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmountSpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="top"
+        android:lineSpacingExtra="3sp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:translationY="-1.53sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSpendsTodayLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSpendsTodayLabel"
+        app:lineHeight="21sp"
+        tools:text="-100" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTransactionDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter"
+        android:gravity="top"
+        android:lineSpacingExtra="3sp"
+        android:textColor="@color/color_ACA1D3"
+        android:textSize="12sp"
+        android:translationY="-1.74sp"
+        app:layout_constraintEnd_toStartOf="@+id/ivReportFlag"
+        app:layout_constraintStart_toEndOf="@+id/ivTransactionIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpendsTodayLabel"
+        app:lineHeight="@dimen/dimen_18sp"
+        tools:text="3 Mar’22 | 3:43pm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTransactionBeneficiary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="12dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter"
+        android:gravity="top"
+        android:lineSpacingExtra="3sp"
+        android:maxLines="1"
+        android:textColor="@color/color_ACA1D3"
+        android:textSize="12sp"
+        android:translationY="-1.74sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivReportFlag"
+        app:layout_constraintStart_toEndOf="@+id/ivTransactionIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransactionDateTime"
+        app:lineHeight="@dimen/dimen_18sp"
+        tools:text="Paid to: 9049999254@payt..." />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivReportFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmountSpent"
+        tools:src="@drawable/ic_report_flag" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

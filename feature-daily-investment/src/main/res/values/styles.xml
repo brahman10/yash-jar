@@ -1,0 +1,8 @@
+<resources>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/feature_daily_investment_chip_text_color</item>
+        <item name="chipBackgroundColor">@color/feature_daily_investment_chip_color</item>
+    </style>
+</resources>

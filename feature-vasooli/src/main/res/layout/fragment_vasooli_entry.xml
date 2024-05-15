@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:fillViewport="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/leftGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rightGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/phone_number_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/feature_vasooli_phone_number"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/dimmerPhone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:clickable="false"
+                android:elevation="12dp"
+                android:focusable="false"
+                android:outlineProvider="none"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPhoneNumber"
+                app:layout_constraintEnd_toEndOf="@+id/tvPhoneNumber"
+                app:layout_constraintStart_toStartOf="@+id/tvPhoneNumber"
+                app:layout_constraintTop_toTopOf="@+id/tvPhoneNumber" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPhoneNumber"
+                style="@style/EditTextKycStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:drawableEnd="@drawable/feature_vasooli_ic_contacts"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start|center_vertical"
+                android:hint="@string/feature_vasooli_select_a_contact"
+                android:minHeight="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/phone_number_heading" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/phone_number_sub_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/feature_vasooli_ic_bulb"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/feature_vasooli_reminder_on_your_behalf"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/color_3c3357"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone_number_sub_heading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/full_name_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textCapCharacters"
+                android:text="@string/feature_vasooli_name"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName"
+                style="@style/EditTextKycStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/feature_vasooli_enter_name"
+                android:minHeight="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="80dp"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/full_name_heading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/enter_amount_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textCapCharacters"
+                android:text="@string/fetaure_vasooli_enter_amount"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+            <View
+                android:id="@+id/dimmerAmount"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:clickable="false"
+                android:elevation="12dp"
+                android:focusable="false"
+                android:outlineProvider="none"
+                app:layout_constraintBottom_toBottomOf="@+id/etAmount"
+                app:layout_constraintEnd_toEndOf="@+id/etAmount"
+                app:layout_constraintStart_toStartOf="@+id/etAmount"
+                app:layout_constraintTop_toTopOf="@+id/etAmount" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etAmount"
+                style="@style/EditTextKycStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:drawableStart="@drawable/feature_vasooli_ic_rupee_circle"
+                android:gravity="start|center_vertical"
+                android:hint="@string/feature_vasooli_amt_hint"
+                android:inputType="number"
+                android:minHeight="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="80dp"
+                android:maxLength="7"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/enter_amount_heading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amount_sub_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/feature_vasooli_ic_bulb"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/feature_vasooli_enter_amount_will_not_send_money"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@id/etAmount" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/taken_on_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/feature_vasooli_loan_taken_on"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@id/amount_sub_heading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTakenOn"
+                style="@style/EditTextKycStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:drawableEnd="@drawable/core_ui_ic_calender"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start|center_vertical"
+                android:hint="@string/feature_vasooli_select_a_date"
+                android:minHeight="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/taken_on_heading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/due_on_heading"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/feature_vasooli_due_date"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@id/tvTakenOn" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDueOn"
+                style="@style/EditTextKycStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_black_bg_12dp"
+                android:drawableEnd="@drawable/core_ui_ic_calender"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start|center_vertical"
+                android:hint="@string/feature_vasooli_select_a_date"
+                android:minHeight="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/leftGuide"
+                app:layout_constraintTop_toBottomOf="@+id/due_on_heading" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                app:buttonText="@string/feature_vasooli_save"
+                app:buttonTextAllCaps="false"
+                android:translationZ="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tvDueOn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/rightGuide"
+                app:layout_constraintStart_toStartOf="@id/leftGuide" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

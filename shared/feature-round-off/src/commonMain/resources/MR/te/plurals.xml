@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plurals name="feature_round_off_resuming_in">
+        <item quantity="one">తిరిగి ప్రారంభించబడుతుంది: %d రోజు</item>
+        <item quantity="other">తిరిగి ప్రారంభించబడుతుంది: %d రోజులలో</item>
+    </plurals>
+    <plurals name="feature_round_off_n_days">
+        <item quantity="one">%d రోజు</item>
+        <item quantity="other">%d రోజులు</item>
+    </plurals>
+    <plurals name="feature_round_off_transactions">
+        <item quantity="zero">%d ట్రాన్సాక్షన్</item>
+        <item quantity="one">%d  ట్రాన్సాక్షన్</item>
+        <item quantity="other">%d  ట్రాన్సాక్షన్ లు</item>
+    </plurals>
+</resources>

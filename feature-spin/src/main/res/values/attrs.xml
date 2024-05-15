@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoScalingTextView">
+        <attr name="maxLines" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextImageButton">
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+
+</resources>

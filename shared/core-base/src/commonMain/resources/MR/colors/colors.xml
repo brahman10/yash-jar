@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_272239">#272239</color>
+    <color name="color_27223900">#27223900</color>
+    <color name="color_3C3357">#3c3357</color>
+    <color name="color_6637E4">#6637E4</color>
+    <color name="color_FFFFFF">#ffffff</color>
+    <color name="color_EEEAFF">#EEEAFF</color>
+    <color name="color_776E94">#776E94</color>
+    <color name="color_776E9433">#776E9433</color>
+    <color name="color_776E944D">#776E944D</color>
+    <color name="color_141021">#141021</color>
+    <color name="color_EBB46A">#EBB46A</color>
+    <color name="color_EBB46A33">#EBB46A33</color>
+    <color name="color_2E2942">#2E2942</color>
+    <color name="color_20_776E94">#776E9433</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="transparent_moko">#ffffff00</color> // Moko supports alpha at the end [RR-GG-BB-AA]
+    <color name="commonTxtColor">#EEEAFF</color>
+    <color name="color_FFACA1D3">#FFACA1D3</color>
+    <color name="color_ACA1D31A">#ACA1D31A</color>
+    <color name="color_ACA1D3FF">#ACA1D3FF</color>
+    <color name="color_000000B2">#000000B2</color>
+    <color name="color_EB6A6E">#EB6A6E</color>
+    <color name="color_7745FF">#7745FF</color>
+    <color name="color_4B4366">#4B4366</color>
+    <color name="color_789BDE">#789BDE</color>
+    <color name="color_37314B">#37314B</color>
+    <color name="color_1F1B2E">#1F1B2E</color>
+    <color name="color_534A71">#534A71</color>
+    <color name="color_AB8CFF">#AB8CFF</color>
+    <color name="color_AB8CFF1A">#58DDC81A</color>
+    <color name="color_58DDC8">#58DDC8</color>
+    <color name="color_58DDC81A">#58DDC81A</color>
+    <color name="color_D5CDF2">#D5CDF2</color>
+    <color name="color_1C192A">#1C192A</color>
+    <color name="color_FF4D52">#FF4D52</color>
+    <color name="color_4D436A">#4D436A</color>
+</resources>

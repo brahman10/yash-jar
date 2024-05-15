@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/llRoot"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_12dp"
+    android:orientation="vertical"
+    android:background="@drawable/feature_gold_lease_bg_rounded_7745ff_6dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="All (15)"
+        style="@style/SmallTextViewStyle"
+        android:textColor="@color/white"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

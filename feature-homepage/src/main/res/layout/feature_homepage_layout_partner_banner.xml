@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/feature_homepage_background_banner"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintStart_toStartOf="@+id/include" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/feature_homepage_cell_partner_banner" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDesc"
+        style="@style/SmallTextViewStyle"
+        android:textColor="@color/commonTxtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="2 More Bonuses Available"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        tools:targetApi="p" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnShowAll"
+        android:drawablePadding="9dp"
+        app:drawableEndCompat="@drawable/ic_arrow_forward"
+        style="@style/SmallTextViewStyle"
+        android:padding="4dp"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/commonTxtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/feature_homepage_show_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        tools:targetApi="p" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

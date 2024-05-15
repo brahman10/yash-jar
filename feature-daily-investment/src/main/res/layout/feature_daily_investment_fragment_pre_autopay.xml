@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBeforeWeAutomate"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/feature_daily_investment_before_we_automate_payment"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLetsMerge"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:text="@string/feature_daily_investment_lets_merge_you_saving_plan"
+        android:textColor="@color/color_EEEAFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBeforeWeAutomate" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSavingsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/rounded_black_bg_12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLetsMerge">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clROContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_12dp"
+            android:background="@drawable/rounded_black_bg_8dp"
+            android:backgroundTint="@color/bgColor"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSettingUpNow"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/feature_daily_investment_setting_up_now"
+                android:textColor="@color/color_58DDC8"
+                app:layout_constraintBottom_toTopOf="@id/tvDailySavingLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDailySavingLabel"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/feature_daily_savings"
+                android:textColor="@color/color_EEEAFF"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSettingUpNow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDSRsXPerDay"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/tvDailySavingLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvDailySavingLabel"
+                tools:text="@string/feature_daily_investment_rsx_per_day" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActivatedOn"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/clROContainer"
+            app:layout_constraintTop_toBottomOf="@id/clROContainer"
+            tools:text="@string/feature_daily_investment_activated_on_s_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRoundOff"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/feature_daily_investment_round_off"
+            android:textColor="@color/color_D5CDF2"
+            app:layout_constraintStart_toStartOf="@id/clROContainer"
+            app:layout_constraintTop_toBottomOf="@id/tvActivatedOn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUptoRORsX"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_ACA1D3"
+            app:layout_constraintBottom_toBottomOf="@id/tvRoundOff"
+            app:layout_constraintEnd_toEndOf="@id/clROContainer"
+            app:layout_constraintTop_toTopOf="@id/tvRoundOff"
+            tools:text="@string/feature_daily_investment_upto_x_per_day" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/bg_rounded_bottom_12dp"
+            android:backgroundTint="@color/color_3c3357"
+            android:paddingHorizontal="@dimen/dimen_12dp"
+            android:paddingVertical="@dimen/dimen_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUptoRORsX">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTotalAmountLabel"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_daily_investment_total_amount"
+                android:textColor="@color/color_EEEAFF"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvXTotalAmount"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_EEEAFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/tvTotalAmountLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvTotalAmountLabel"
+                tools:text="@string/feature_daily_investment_rsx_per_day" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvJarWillNeverDebitX"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:gravity="center"
+        android:text="@string/feature_daily_investment_jar_will_never_debit_more_than_xf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clSavingsContainer" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/core_ui_bg_top_rounded_corner"
+        android:backgroundTint="@color/lightBgColor"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.jar.app.core_ui.widget.OverlappingProfileView
+            android:id="@+id/opvUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:paddingVertical="@dimen/dimen_12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnProceed"
+            app:layout_constraintEnd_toStartOf="@id/tvOPVUsersText"
+            app:layout_constraintStart_toStartOf="@id/btnProceed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOPVUsersText"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/dimen_12dp"
+            android:text="@string/feature_daily_investment_active_20lakh_jar_user"
+            android:textColor="@color/color_D5CDF2"
+            app:layout_constraintTop_toTopOf="@id/opvUsers"
+            app:layout_constraintBottom_toBottomOf="@id/opvUsers"
+            app:layout_constraintEnd_toEndOf="@id/btnProceed"
+            app:layout_constraintStart_toEndOf="@id/opvUsers" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:translationZ="4dp"
+            app:buttonText="@string/core_ui_proceed"
+            app:layout_constraintBottom_toTopOf="@id/ivNpci" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNpci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:translationX="10dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivSecure"
+            app:layout_constraintHeight_max="24dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/core_ui_ic_npci" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSecure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:translationX="10dp"
+            android:translationY="-2dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivNpci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="24dp"
+            app:layout_constraintStart_toEndOf="@id/ivNpci"
+            app:layout_constraintTop_toTopOf="@id/ivNpci"
+            app:srcCompat="@drawable/core_ui_ic_secure_with_shield_green" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

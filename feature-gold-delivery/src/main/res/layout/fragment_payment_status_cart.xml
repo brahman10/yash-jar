@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/success_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/firstIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@drawable/feature_gold_delivery_white_dashed_circle_stroke"
+            android:padding="2dp"
+            android:src="@drawable/feature_gold_delivery_rotate_refresh_loading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstText"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:text="@string/payment_processing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+            app:layout_constraintStart_toEndOf="@id/firstIcon"
+            app:layout_constraintTop_toTopOf="@id/firstIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstPill"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/round_1aebb46a_bg_8dp"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingVertical="@dimen/dimen_6dp"
+            android:text="@string/in_progress"
+            android:textColor="#EBB46A1A"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/firstIcon" />
+
+        <LinearLayout
+            android:id="@+id/firstContainer"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/firstText"
+            app:layout_constraintTop_toBottomOf="@id/firstText">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/firstContainterFirstText"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placing_order_is_taking_a_little_longer_wait_for_few_seconds_for_the_status_to_get_updated"
+                android:textColor="#ACA1D3"
+                app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                app:layout_constraintStart_toEndOf="@id/firstIcon"
+                app:layout_constraintTop_toTopOf="@id/firstIcon" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/firstContainerFirstBtn"
+                android:layout_width="164dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:elevation="@dimen/dimen_20dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:buttonText="REFRESH"
+                app:buttonTextAllCaps="false" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/firstContainerSecondBtn"
+                android:layout_width="164dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:elevation="@dimen/dimen_20dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:buttonText="GO back"
+                app:buttonTextAllCaps="false"
+                app:buttonType="secondaryHollowButton" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/firstBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="firstContainer,firstText" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginVertical="@dimen/dimen_4dp"
+            android:background="#ACA1D3"
+            app:layout_constraintBottom_toTopOf="@id/secondIcon"
+            app:layout_constraintEnd_toEndOf="@id/firstIcon"
+            app:layout_constraintStart_toStartOf="@id/firstIcon"
+            app:layout_constraintTop_toBottomOf="@id/firstIcon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/secondIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/feature_gold_delivery_white_dashed_circle_stroke"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstBarrier" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/secondText"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:text="@string/order_placed"
+            android:textColor="#ACA1D3"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toBottomOf="@id/secondIcon"
+            app:layout_constraintStart_toEndOf="@id/secondIcon"
+            app:layout_constraintTop_toTopOf="@id/secondIcon" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/secondPill"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/round_1aebb46a_bg_8dp"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingVertical="@dimen/dimen_6dp"
+            android:text="@string/in_progress"
+            android:textColor="#EBB46A1A"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/secondIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/secondIcon" />
+
+
+        <LinearLayout
+            android:id="@+id/secondContainer"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/secondText"
+            app:layout_constraintTop_toBottomOf="@id/secondText">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/secondContainerFirstText"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="@string/placing_order_is_taking_a_little_longer_wait_for_few_seconds_for_the_status_to_get_updated"
+                android:textColor="#ACA1D3"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                app:layout_constraintStart_toEndOf="@id/firstIcon"
+                app:layout_constraintTop_toTopOf="@id/firstIcon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18dp"
+                android:text="@string/order_id"
+                android:textColor="#ACA1D3"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                app:layout_constraintStart_toEndOf="@id/firstIcon"
+                app:layout_constraintTop_toTopOf="@id/firstIcon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="visible"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                    app:layout_constraintStart_toEndOf="@id/firstIcon"
+                    app:layout_constraintTop_toTopOf="@id/firstIcon"
+                    tools:text="i128371283jk" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:src="@drawable/ic_copy" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/bg_rounded_2e2942_10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_16dp"
+                tools:visibility="visible"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_cart_value"
+                    android:textColor="#ACA1D3"
+                    app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                    app:layout_constraintStart_toEndOf="@id/firstIcon"
+                    app:layout_constraintTop_toTopOf="@id/firstIcon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonBoldTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_18sp"
+                        app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                        app:layout_constraintStart_toEndOf="@id/firstIcon"
+                        app:layout_constraintTop_toTopOf="@id/firstIcon"
+                        tools:text="₹7653.43" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:text="@string/new_cart_value"
+                        android:textColor="#ACA1D3"
+                        app:layout_constraintBottom_toBottomOf="@id/firstIcon"
+                        app:layout_constraintStart_toEndOf="@id/firstIcon"
+                        app:layout_constraintTop_toTopOf="@id/firstIcon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/refundText"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:visibility="visible"
+                android:text="@string/refund_in_progress_will_be_credited_to_source_account_in_2_4_working_days"
+                android:textColor="#ACA1D3"
+                android:visibility="gone" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/btnGoToCart"
+                android:layout_width="164dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:elevation="@dimen/dimen_20dp"
+                android:visibility="gone"
+                app:buttonText="RETRY"
+                tools:visibility="visible"
+                app:buttonTextAllCaps="false" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/goToCartBtn"
+                android:layout_width="164dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:elevation="@dimen/dimen_20dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:buttonText="GO TO CART"
+                app:buttonTextAllCaps="false"
+                app:buttonType="secondaryHollowButton" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/goToMyOrders"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:elevation="@dimen/dimen_20dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:buttonText="GO TO MY ORDERS"
+                app:buttonTextAllCaps="false"
+                app:buttonType="secondaryHollowButton" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/core_ui_ic_green_tick"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

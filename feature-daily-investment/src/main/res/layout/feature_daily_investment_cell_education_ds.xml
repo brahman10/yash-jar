@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_10dp"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    tools:background="@color/bgColor">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dashedCircleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/feature_daily_investment_dotted_circle_14ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumber"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/dashedCircleView"
+        app:layout_constraintEnd_toEndOf="@id/dashedCircleView"
+        app:layout_constraintStart_toStartOf="@id/dashedCircleView"
+        app:layout_constraintTop_toTopOf="@id/dashedCircleView"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:gravity="start"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/dashedCircleView"
+        app:layout_constraintEnd_toStartOf="@id/ivDropDown"
+        app:layout_constraintStart_toEndOf="@id/dashedCircleView"
+        app:layout_constraintTop_toTopOf="@id/dashedCircleView"
+        tools:text="You give permission to save" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/dashedCircleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dashedCircleView"
+        app:srcCompat="@drawable/core_ui_ic_arrow_down" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/elImageContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:el_expanded="true"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/dashedCircleView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="We will send you a notification 24 hours before the money is debited."
+                tools:textColor="@color/color_ACA1D3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDetail"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription"
+                tools:src="@drawable/ct_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

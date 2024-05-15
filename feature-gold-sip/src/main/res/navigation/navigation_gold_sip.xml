@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_gold_sip"
+    app:startDestination="@id/setupGoldSipFragment">
+
+    <action
+        android:id="@+id/action_to_goldSipAutoPayPendingOrFailureFragment"
+        app:destination="@id/goldSipAutoPayPendingOrFailureFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_goldSipAutoPaySuccessFragment"
+        app:destination="@id/goldSipAutoPaySuccessFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_sipMandateRedirectionFragment"
+        app:destination="@id/sipMandateRedirectionFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_goldSipSetupAutopaySuccessFragment"
+        app:destination="@id/goldSipSetupAutopaySuccessFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_selectSipDayOrDateBottomSheet"
+        app:destination="@id/selectSipDayOrDateBottomSheet"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/setupGoldSipFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.setup.SetupGoldSipFragment"
+        android:label="SetupGoldSipFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_setup">
+
+        <deepLink app:uri="android-app://com.jar.app/setupGoldSip/{mandatePaymentProgressStatus}" />
+
+        <argument
+            android:name="mandatePaymentProgressStatus"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldSipIntroFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.intro.GoldSipIntroFragment"
+        android:label="GoldSipIntroFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_intro">
+
+        <deepLink app:uri="android-app://com.jar.app/goldSipIntro" />
+        <action
+            android:id="@+id/action_goldSipIntroFragment_to_goldSipTypeSelectionFragment"
+            app:destination="@id/goldSipTypeSelectionFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldSipTypeSelectionFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.gold_sip_type_selection.GoldSipTypeSelectionFragment"
+        android:label="GoldSipTypeSelectionFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_type_selection">
+
+        <deepLink app:uri="android-app://com.jar.app/goldSipTypeSelection/{sipTypeSelectionScreenData}" />
+
+        <action
+            android:id="@+id/action_goldSipTypeSelectionFragment_to_continueSipSetupBottomSheet"
+            app:destination="@id/continueSipSetupBottomSheet" />
+
+        <argument
+            android:name="sipTypeSelectionScreenData"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sipMandateRedirectionFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.mandate_redirection.SipMandateRedirectionFragment"
+        android:label="SipMandateRedirectionFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_mandate_redirection">
+
+        <argument
+            android:name="goldSipUpdateEvent"
+            app:argType="com.jar.app.feature_gold_sip.shared.domain.event.GoldSipUpdateEvent"
+            app:nullable="false" />
+
+        <argument
+            android:name="isOnboardingFlow"
+            app:argType="boolean"
+            android:defaultValue="false"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldSipSetupAutopaySuccessFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.post_autopay_setup.success.GoldSipSetupAutopaySuccessFragment"
+        android:label="GoldSipSetupAutopaySuccessFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_sip_setup_autopay_success">
+
+        <argument
+            android:name="goldSipUpdateEvent"
+            app:argType="com.jar.app.feature_gold_sip.shared.domain.event.GoldSipUpdateEvent"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/goldSipSetupAutoPaySuccess/{goldSipUpdateEvent}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldSipDetailsFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.sip_details.GoldSipDetailsFragment"
+        android:label="GoldSipDetailsFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_sip_details">
+
+        <deepLink app:uri="android-app://com.jar.app/goldSipDetails" />
+        <action
+            android:id="@+id/action_goldSipDetailsFragment_to_updateSipBottomSheet"
+            app:destination="@id/updateSipBottomSheet" />
+        <action
+            android:id="@+id/action_goldSipDetailsFragment_to_disableSipBottomSheet"
+            app:destination="@id/disableSipBottomSheet" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldSipAutoPaySuccessFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.post_autopay_setup.success.GoldSipAutoPaySuccessFragment"
+        android:label="GoldSipAutoPaySuccessFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_autopay_success">
+
+        <deepLink app:uri="android-app://com.jar.app/goldSipAutoPaySuccess/{fetchMandatePaymentStatusResponse}/{postSetupSipData}" />
+
+        <argument
+            android:name="fetchMandatePaymentStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="postSetupSipData"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldSipAutoPayPendingOrFailureFragment"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.post_autopay_setup.pending_or_failure.GoldSipAutoPayPendingOrFailureFragment"
+        android:label="GoldSipAutoPayPendingOrFailureFragment"
+        tools:layout="@layout/feature_gold_sip_fragment_autopay_pending_or_failure">
+
+        <deepLink app:uri="android-app://com.jar.app/goldSipAutoPayPendingOrFailure/{mandatePaymentResultFromSDK}/{fetchMandatePaymentStatusResponse}/{postSetupSipData}" />
+
+        <argument
+            android:name="mandatePaymentResultFromSDK"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="fetchMandatePaymentStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="postSetupSipData"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_goldSipAutoPayPendingOrFailureFragment_to_goldSipAutoPaySuccessFragment"
+            app:destination="@id/goldSipAutoPaySuccessFragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/selectSipDayOrDateBottomSheet"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.sip_day_or_date.SelectSipDayOrDateBottomSheet"
+        android:label="SelectSipDayOrDateBottomSheet"
+        tools:layout="@layout/feature_gold_sip_bottom_sheet_select_sip_day_or_date">
+
+        <argument
+            android:name="amount"
+            app:argType="float"
+            app:nullable="false" />
+        <argument
+            android:name="sipSubscriptionType"
+            app:argType="com.jar.app.feature_gold_sip.shared.domain.model.SipSubscriptionType"
+            app:nullable="false" />
+        <argument
+            android:name="recommendedDay"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="isSetupFlow"
+            app:argType="boolean"
+            app:nullable="false" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/continueSipSetupBottomSheet"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.continue_sip_setup.ContinueSipSetupBottomSheet"
+        android:label="ContinueSipSetupBottomSheet"
+        tools:layout="@layout/feature_gold_sip_bottom_sheet_continue_sip_setup">
+        <argument
+            android:name="isOnboardingFlow"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/updateSipBottomSheet"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.update_sip.UpdateSipBottomSheet"
+        android:label="UpdateSipBottomSheet"
+        tools:layout="@layout/feature_gold_sip_bottom_sheet_update_sip">
+
+        <argument
+            android:name="sipSubscriptionType"
+            app:argType="com.jar.app.feature_gold_sip.shared.domain.model.SipSubscriptionType"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/pauseSipBottomSheet"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.pause_sip.PauseSipBottomSheet"
+        android:label="PauseSipBottomSheet"
+        tools:layout="@layout/feature_gold_sip_bottom_sheet_pause_sip">
+
+        <argument
+            android:name="sipSubscriptionType"
+            app:argType="com.jar.app.feature_gold_sip.shared.domain.model.SipSubscriptionType"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/disableSipBottomSheet"
+        android:name="com.jar.app.feature_gold_sip.impl.ui.disable_sip.DisableSipBottomSheet"
+        android:label="DisableSipBottomSheet"
+        tools:layout="@layout/feature_gold_sip_bottom_sheet_disable_sip">
+
+        <argument
+            android:name="sipSubscriptionType"
+            app:argType="com.jar.app.feature_gold_sip.shared.domain.model.SipSubscriptionType"
+            app:nullable="false" />
+
+        <argument
+            android:name="isAlreadyPaused"
+            app:argType="boolean"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_disableSipBottomSheet_to_pauseSipBottomSheet"
+            app:destination="@id/pauseSipBottomSheet" />
+    </dialog>
+
+</navigation>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clRoot"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@drawable/feature_buy_gold_v2_bg_price_drop"
+    android:paddingHorizontal="@dimen/dimen_12dp"
+    android:paddingVertical="@dimen/dimen_8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivStripIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        tools:src="@drawable/feature_buy_gold_v2_ic_price_drop"
+        android:background="#F2F2F2"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:1"
+        app:shapeAppearance="@style/circleImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightSection"
+        app:layout_constraintStart_toEndOf="@+id/ivStripIcon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStripTitle"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/color_272239"
+            app:layout_constraintEnd_toStartOf="@id/llRightView"
+            app:layout_constraintStart_toEndOf="@id/ivStripIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/feature_buy_gold_v2_gold_s_price_just_dropped" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStripDescription"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:gravity="start"
+            android:text="@string/feature_buy_gold_v2_buy_extra_gold_before_it_ends"
+            android:textColor="@color/color_272239"
+            app:layout_constraintEnd_toEndOf="@id/tvStripTitle"
+            app:layout_constraintStart_toStartOf="@id/tvStripTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvStripTitle" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rightSection"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llRightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/tvTimerDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimerDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="1 day left" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

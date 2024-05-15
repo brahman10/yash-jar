@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"  tools:ignore="MissingTranslation">
+    <string name="feature_refer_refer_earn_title">Invite friends\n&amp; win free gold.></string>
+    <string name="feature_refer_invite_via_whatsapp">Invite via Whatsapp</string>
+    <string name="feature_refer_contact_support">Contact support</string>
+    <string name="feature_refer_invite_contacts">Invite contacts</string>
+    <string name="feature_refer_share_via">Share via...</string>
+    <string name="feature_refer_your_rewards">Your rewards</string>
+    <string name="feature_refer_view_referrals">View referrals -></string>
+    <string name="feature_refer_new_rewards_unlocked">New rewards unlocked!</string>
+    <string name="feature_refer_invite_friends">Invite friends\n&amp; win free gold.</string>
+    <string name="feature_refer_earn_v2_title">Refer &amp; Earn</string>
+    <string name="feature_refer_earn_v2_contact_support">Title\n</string>
+    <string name="feature_refer_earn_gold_will_be_added_in">Gold will be\nadded in %dH</string>
+    <string name="feature_refer_earn_hey_i_m_having_trouble_in_refer_earn">Hey, I\'m having trouble in Refer &amp; Earn</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transaction_cancelled">ट्रँजॅक्शन कॅन्सल केले आहे</string>
+    <string name="some_error_occurred">काही त्रुटी आली आहे</string>
+    <string name="internet_not_working_properly">इंटरनेट सुरळीत नाही</string>
+    <string name="feature_payment_payment">पेमेंट करा</string>
+    <string name="feature_payment_to_pay_n">पेमेंट करण्यासाठी : \u20B9%.2f</string>
+    <string name="feature_payment_upi">UPI</string>
+    <string name="feature_payment_upi_apps">UPI ॲप्स</string>
+    <string name="feature_payment_add_a_new_upi_id">नवीन UPI आयडी ॲड करा</string>
+    <string name="feature_payment_add_upi_id">UPI आयडी ॲड करा</string>
+    <string name="feature_payment_you_need_to_have_a_registered_upi_id">तुम्ही नवीन UPI आयडी रजिस्टर केला आहे</string>
+    <string name="feature_payment_enter_your_upi_id">तुमचा UPI आयडी</string>
+    <string name="feature_payment_verify_and_pay">व्हेरिफाय करा आणि पेमेंट करा</string>
+    <string name="feature_payment_incorrect_upi_id">चुकीचा UPI आयडी</string>
+    <string name="feature_payment_processing_payment">पेमेंट केले जात आहे</string>
+    <string name="feature_payment_we_are_verifying_your_payment_status">आम्ही तुमच्या पेमेंटचे स्टेटस चेक करत आहोत</string>
+    <string name="feature_payment_transaction_failed">पेमेंट अयशस्वी झाले आहे</string>
+    <string name="feature_payment_amount_n">रक्कम : \u20B9%.2f</string>
+    <string name="feature_payment_any_amount_deducted_will_be_refunded_within_n_days"> काही रक्कम वजा झाली असल्यास ती 2–4 दिवसात रिफंड होईल</string>
+    <string name="feature_payment_try_other_payment_method">दुसऱ्या पद्धतीने पेमेंट करून बघा</string>
+    <string name="feature_payment_cancel">कॅन्सल करा</string>
+    <string name="feature_payment_not_now">लगेच नाही</string>
+    <string name="feature_payment_yes_cancel">हो, कॅन्सल करा</string>
+    <string name="feature_payment_cancel_payment">पेमेंट कॅन्सल करा</string>
+    <string name="feature_payment_open_your_upi_and_complete_the_payment_request_from_jar">UPI ॲप उघडा आणि पेमेंट पूर्ण करा</string>
+    <string name="feature_payment_approve_payment_within">... मध्ये पेमेंट अप्रूव्ह करा</string>
+    <string name="feature_payment_note_please_dont_hit_back_until_the_transaction_is_complete">टीप: ट्रँजॅक्शन पूर्ण होण्याआधी बॅक करू नका</string>
+    <string name="feature_payment_perc_100_safe_and_secure_payments">100% खात्रीशीर आणि सुरक्षित पेमेंट व्यवस्था</string>
+    <string name="feature_payment_are_you_sure_you_want_to_cancel_payment">तुम्हाला पेमेंट कॅन्सल करायचे आहे का?</string>
+    <string name="feature_payment_the_payment_request_will_get_cancelled">तुमच्या UPI बँक ॲपवर पेमेंट पूर्ण झाले नसेल तरच पेमेंट रिक्वेस्ट कॅन्सल करता येईल</string>
+    <string name="feature_payment_you_are_buying_n_gm_of_24k_pure_gold">तुम्ही %sग्रॅम्स 24 कॅरेट शुद्ध सोने खरेदी करत आहात</string>
+    <string name="feature_payment_minutes">मिनिट</string>
+    <string name="feature_payment_continue_payment">पेमेंट सुरु ठेवा</string>
+    <string name="feature_payment_maybe_later">कदाचित नंतर</string>
+    <string name="feature_payment_for_amount_n_you_will_get_m_gm_of_gold">\u20B9%.2f रकमेत तुम्हाला %.4f ग्रॅम सोने मिळेल</string>
+    <string name="feature_payment_gold_price_has_increased">सोन्याचे भाव वाढले आहेत</string>
+    <string name="feature_payment_gold_price_has_decreased">सोन्याचे भाव कमी झाले आहेत.</string>
+    <string name="feature_payment_updated_buy_price_n_per_gm">अपडेट झालेली किंमत = \u20B9%.2f/ग्रॅम.</string>
+    <string name="feature_payment_recently_used">नुकतेच वापरलेले</string>
+    <string name="feature_payment_pay">पेमेंट करा</string>
+    <string name="feature_payment_add_a_new_card">नवीन कार्ड ॲड करा</string>
+    <string name="feature_payment_pay_using_your_debit_or_credit_card">तुमचे डेबिट किंवा क्रेडिट कार्ड वापरून पेमेंट करा.</string>
+    <string name="feature_payment_next">पुढे</string>
+    <string name="feature_payment_proceed_to_pay">पेमेंट करण्यासाठी पुढे जा</string>
+    <string name="feature_payment_invalid_card_number_please_try_agin">अवैध कार्ड नंबर. पुन्हा प्रयत्न करा.</string>
+    <string name="feature_payment_invalid_expiry_date_please_try_agin">अवैध एक्सपायरी डेट. पुन्हा प्रयत्न करा.</string>
+    <string name="feature_payment_cards">कार्ड्स</string>
+    <string name="feature_payment_enter_your_cvv">तुमचा CVV नंबर एंटर करा.</string>
+    <string name="feature_payment_saved_upi_ids">सेव्ह केलेले UPI आयडी</string>
+    <string name="feature_payment_edit_previous_details"><u>पूर्वीचे डिटेल्स एंटर करा</u></string>
+    <string name="feature_payment_tap_to_edit">एडिट करण्यासाठी क्लिक करा</string>
+    <string name="feature_payment_incorrect_card_details">चुकीचे कार्ड डिटेल्स.</string>
+    <string name="feature_payment_gold_price_gone_down">तुम्ही भाग्यवान!\nसोन्याच्या किमती कमी झाल्या📉</string>
+    <string name="feature_payment_gold_price_on_rise">त्वरा करा!\nसोन्याच्या किमती वाढत आहेत📈</string>
+</resources>

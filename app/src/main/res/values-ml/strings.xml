@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">ഹോം</string>
+    <string name="discover">കണ്ടെത്തൂ</string>
+    <string name="wallet">വാലറ്റ്</string>
+    <string name="locker">ലോക്കർ</string>
+    <string name="transactions">ഇടപാടുകൾ</string>
+
+    <string name="invest_your_spare_change">നിങ്ങളുടെ ചില്ലറ നിക്ഷേപിക്കൂ</string>
+    <string name="in_24k_gold">24K സ്വർണത്തിൽ</string>
+
+    <string name="please_enter_age">ദയവായി പ്രായം രേഖപ്പെടുത്തുക</string>
+    <string name="please_select_gender">ദയവായി ജെണ്ടർ തിരഞ്ഞെടുക്കുക</string>
+    <string name="login_signup">ലോഗിൻ/സൈൻ അപ്പ് ചെയ്യുക</string>
+    <string name="enter_otp">OTP രേഖപ്പെടുത്തുക</string>
+    <string name="enter_phone_number">ഫോൺ നമ്പർ രേഖപ്പെടുത്തുക</string>
+    <string name="perc_100_safe_and_secure">100% സുരക്ഷിതവും സുദൃഢവും</string>
+    <string name="next">അടുത്തത്</string>
+    <string name="or">അല്ലെങ്കിൽ</string>
+    <string name="login_with_truecaller">ട്രൂ കോളർ വെച്ച് ലോഗിൻ ചെയ്യുക</string>
+    <string name="please_enter_a_valid_number">ദയവായി സാധുവായ നമ്പർ രേഖപ്പെടുത്തുക</string>
+    <string name="please_enter_a_valid_otp">ദയവായി സാധുവായ OTP രേഖപ്പെടുത്തുക</string>
+    <string name="please_enter_a_valid_name">ദയവായി സാധുവായ പേര് രേഖപ്പെടുത്തുക</string>
+    <string name="did_not_receive_otp_resend_n_sec">OTP കിട്ടിയില്ലേ? <u>%ds ൽ വീണ്ടും അയക്കൂ</u></string>
+    <string name="did_not_receive_otp_resend">OTP കിട്ടിയില്ലേ? <u>വീണ്ടും അയക്കൂ</u></string>
+    <string name="submit">സബ്മിറ്റ് ചെയ്യൂ</string>
+    <string name="we_just_sent_an_otp_to_x_number">ഞങ്ങൾ %s\n ലേക്ക് ഇപ്പോൾ ഒരു OTP അയച്ചിട്ടുണ്ട്</string>
+    <string name="i_don_t_have_a_promo_code">എനിക്ക് പ്രോമോ കോഡ് ഇല്ല</string>
+    <string name="enter_your_code_here">നിങ്ങളുടെ കോഡ് ഇവിടെ രേഖപ്പെടുത്തുക</string>
+    <string name="do_you_have_a_promo_code">നിങ്ങളുടെ പക്കൽ പ്രോമോ കോഡ് ഉണ്ടോ?</string>
+    <string name="enter_your_name">പേര് രേഖപ്പെടുത്തുക</string>
+    <string name="your_name_here">നിങ്ങളുടെ പേര് ഇവിടെ</string>
+    <string name="continue_text">തുടരുക</string>
+    <string name="select_your_gender">നിങ്ങളുടെ ജെണ്ടർ തിരഞ്ഞെടുക്കുക</string>
+    <string name="male">പുരുഷൻ</string>
+    <string name="female">സ്ത്രീ</string>
+    <string name="other">മറ്റുള്ളവർ</string>
+    <string name="age">പ്രായം</string>
+    <string name="you_should_know_this_emoji">നിങ്ങൾ ഇത് അറിയണം 👇🏻</string>
+    <string name="your_spare_change_is_invested_in_pure_gold">നിങ്ങളുടെ ചില്ലറ 24k, 99.5% ശുദ്ധ സ്വര്ണത്തിലാണ് നിക്ഷേപിച്ചിരിക്കുന്നത്</string>
+    <string name="permissions_required">അനുവാദം ആവശ്യമാണ്</string>
+    <string name="allow_now">ഇപ്പോൾ അനുവദിക്കൂ</string>
+    <string name="jar_needs_to_access_sms_permission">ജാറിന് SMS ആക്സസ് വേണം</string>
+    <string name="we_need_permission_to_read_your_sms_and_enable_savings">നിങ്ങളുടെ ഇടപാട് SMS നോക്കിയാണ് ജാർ ചില്ലറ കണക്കാക്കുന്നത്\n\n*വ്യക്തിപരമായ SMS ഒന്നും നോക്കില്ല.</string>
+    <string name="auto_invest_10_rupees_when_no_spends_are_detected">ചിലവുകൾ ഒന്നും കണ്ടെത്താത്തപ്പോൾ ₹10 സ്വമേധയാ നിക്ഷേപിക്കൂ</string>
+    <string name="open_permission_settings">അനുവാദത്തിനുള്ള സെറ്റിംഗ്സ് തുറക്കൂ</string>
+
+
+    <string name="leaving_already">ഇപ്പോഴേ പോകുകയാണോ?</string>
+    <string name="finish_signing_up_and_win_multiple_rewards">സൈൻ അപ്പ് പൂർത്തിയാക്കി\nകുറെ റിവാർഡുകൾ നേടൂ</string>
+    <string name="maybe_later">ഒരു പക്ഷെ പിന്നീട്</string>
+    <string name="signup_now">ഇപ്പോൾ സൈൻ അപ്പ് ചെയ്യൂ</string>
+
+    <string name="play_games">ഗെയിമുകൾ കളിക്കൂ</string>
+    <string name="double_your_savings">നിങ്ങളുടെ സമ്പാദ്യം ഇരട്ടിയാക്കൂ</string>
+    <string name="spin_the_bottle">ബോട്ടിൽ കറക്കൂ</string>
+    <string name="spin_the_bottle_and_2x_your_savings">നിങ്ങളുടെ ഏറ്റവും അടുത്ത കാലത്തെ സമ്പാദ്യം ഇരട്ടിപ്പിക്കാൻ കറക്കൂ</string>
+
+    <string name="autopay_failed">ഓട്ടോ പേ പരാജയപ്പെട്ടു</string>
+    <string name="autopay_setup">ഓട്ടോ പേ സെറ്റപ്പ്</string>
+    <string name="processing">പ്രോസസ്സ് ചെയ്യുന്നു..</string>
+    <string name="setup_in_progress">സെറ്റപ്പ് പുരോഗമിക്കുന്നു</string>
+    <string name="how_it_works">ഇതെങ്ങനെ പ്രവർത്തിക്കുന്നു</string>
+
+    <string name="keep_investing">നിക്ഷേപിച്ച് കൊണ്ടിരിക്കൂ</string>
+    <string name="unlock_reward">റിവാർഡ് അൺലോക്ക് ചെയ്യൂ</string>
+    <string name="you_reached_a_milestone">നിങ്ങളൊരു പ്രധാന ഘട്ടത്തിൽ എത്തി!</string>
+    <string name="learn_more">കൂടുതൽ പഠിക്കൂ</string>
+    <string name="get_exciting_rewards">ആവേശകരമായ റിവാർഡുകൾ നേടൂ</string>
+    <string name="you_own">നിങ്ങൾക്ക് സ്വന്തം</string>
+    <string name="_24_karat_gold_99_5_purity">24k | 99.5% ശുദ്ധ സ്വർണം</string>
+
+    <string name="hello">ഹലോ!</string>
+    <string name="hello_comma">ഹലോ,</string>
+    <string name="congrats">അഭിനന്ദനങ്ങൾ!</string>
+    <string name="updated_s">%s അപ്‌ഡേറ്റ് ചെയ്തു</string>
+    <string name="n_gm">%sഗ്രാം</string>
+    <string name="n_n_gm">%s\nഗ്രാം</string>
+    <string name="start_daily_investing_subheading">ദിവസേനയുള്ള നിക്ഷേപങ്ങൾ കൊണ്ട് നിങ്ങളുടെ സമ്പത്ത്‌ വർധിപ്പിക്കൂ</string>
+    <string name="daily_amount">ദിവസേനയുള്ള തുക</string>
+    <string name="set_amount">തുക നിശ്ചയിക്കുക</string>
+    <string name="active_investing">ദിവസേന \u20B9%s സജീവമായി നിക്ഷേപിക്കുന്നു</string>
+    <string name="invest_with_upi">UPI വഴി നിക്ഷേപിക്കൂ</string>
+    <string name="don_t_want_to_invest_full_amount">മുഴുവൻ തുകയും നിക്ഷേപിക്കണ്ടേ?</string>
+    <string name="tap_here"><u>ഇവിടെ അമർത്തൂ</u></string>
+    <string name="invest_now">ഇപ്പോൾ നിക്ഷേപിക്കൂ</string>
+    <string name="start_your_investment_journey">നിങ്ങളുടെ നിക്ഷേപ യാത്ര തുടങ്ങൂ</string>
+    <string name="rupee_x_in_double">\u20B9%.2f</string>
+    <string name="rupee_x_in_double_strike"><strike>\u20B9%.2f</strike></string>
+    <string name="rupee_x_in_string">\u20B9%s</string>
+    <string name="gift_gold_to_someone_special">വേണ്ടപ്പെട്ട ഒരാൾക്ക് സ്വർണം സമ്മാനിക്കൂ</string>
+    <string name="view_gifting_history">സമ്മാനം നൽകൽ ചരിത്രം കാണൂ</string>
+    <string name="send_a_gift">സമ്മാനം അയയ്ക്കൂ</string>
+    <string name="buy_x">u20B9%.1f വാങ്ങൂ</string>
+    <string name="sell_x">u20B9%.1f വിൽക്കൂ</string>
+    <string name="delivery_x">u20B9%.1f വിൽക്കൂ</string>
+    <string name="transaction_type_amount">%s ₹%.1f</string>
+
+
+    <string name="view_referrals">റെഫറലുകൾ കാണൂ</string>
+    <string name="send_invite">ക്ഷണം അയക്കൂ</string>
+    <string name="invite_a_friend_and_earn_on_jar">ഒരു സുഹൃത്തിനെ ക്ഷണിച്ച് ജാറിൽ സമ്പാദിക്കൂ</string>
+
+    <string name="resume_now">ഇപ്പോൾ പുനരാരംഭിക്കൂ</string>
+    <string name="setup">സെറ്റപ്പ് ചെയ്യൂ</string>
+    <string name="savings_paused">സമ്പാദ്യം തത്കാലത്തേക്ക് നിർത്തിയിരിക്കുന്നു</string>
+    <string name="setup_again_to_start_savings">ഓട്ടോമാറ്റിക് \nനിക്ഷേപങ്ങൾ തുടങ്ങാൻ അത് വീണ്ടും ഓൺ ആക്കൂ</string>
+    <string name="autopay_disabled">ഓട്ടോ-നിക്ഷേപം ഓഫ് ആണ്</string>
+
+    <plurals name="resuming_in_n">
+        <item quantity="one">%d ദിവസത്തിൽ വീണ്ടും തുടങ്ങുന്നു</item>
+        <item quantity="other">%d ദിവസങ്ങളിൽ വീണ്ടും തുടങ്ങുന്നു</item>
+    </plurals>
+
+    <string name="game_will_be_unlocked">നിങ്ങളുടെ അടുത്ത ഇടപാടിൽ ഗെയിം അൺലോക്ക് ചെയ്യും!</string>
+    <string name="used_spins_x">നിങ്ങൾ %d ദിവസേന കറക്കങ്ങൾ ഉപയോഗിച്ചിട്ടുണ്ട്</string>
+
+    <string name="leak_canary_test_class_name">assertk.Assert</string>
+
+    <string name="permission_needed">അനുവാദം ആവശ്യമാണ്</string>
+    <string name="permission_needed_desc">ആപ്പിൽ തുടരാൻ ഞങ്ങൾക്ക് അനുവാദം ആവശ്യമാണ്</string>
+
+    <string name="quick_guides">ദ്രുത മാർഗനിർദേശങ്ങൾ</string>
+    <string name="try_withdraw_money">"ഓട്ടോ-നിക്ഷേപം സെറ്റപ്പ് ചെയ്യുക" ശ്രമിക്കുക</string>
+    <string name="have_some_other_query_or_issue_talk_to_us_on_whatsapp">വേറെ ഏതെങ്കിലും ചോദ്യമോ പ്രശ്നമോ ഉണ്ടോ\nഞങ്ങളോട് വാട്സാപ്പിൽ സംസാരിക്കൂ</string>
+    <string name="chat_now">ഇപ്പോൾ ചാറ്റ് ചെയ്യൂ</string>
+    <string name="loading">ലോഡ് ചെയ്യുന്നു…</string>
+
+    <string name="updated">അപ്‌ഡേറ്റ് ചെയ്തു %s</string>
+    <string name="min_gold_req_for_delivery_is_n_gm">സ്വർണ ഡെലിവറിക്ക് വേണ്ട കുറഞ്ഞ സ്വർണം %sഗ്രാം ആണ്</string>
+    <string name="enter_pincode_to_check_availability">ലഭ്യത പരിശോധിക്കാൻ പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="available_options">ലഭ്യമായ ഓപ്‌ഷനുകൾ</string>
+    <string name="product_details">ഉത്പന്ന വിശദാംശങ്ങൾ</string>
+    <string name="based_on_latest_gold_price">ഏറ്റവും പുതിയ സ്വർണ വില അടിസ്ഥാനമാക്കി</string>
+    <string name="material">മെറ്റീരിയൽ</string>
+    <string name="gold_purity">സ്വർണ ശുദ്ധത</string>
+    <string name="weight">ഭാരം</string>
+    <string name="quality">ഗുണമേന്മ</string>
+    <string name="delivery_details">ഡെലിവറി വിശദാംശങ്ങൾ</string>
+    <string name="get_delivery">ഡെലിവറി നേടുക</string>
+    <string name="payment_summary">പേയ്‌മെന്റ് ചുരുക്കം</string>
+    <string name="gold_price">സ്വർണ വില</string>
+    <string name="making_and_delivery_charges">മേക്കിങ് &amp; ഡെലിവറി നിരക്കുകൾ</string>
+    <string name="your_jar_savings_used">ഉപയോഗിച്ച നിങ്ങളുടെ ജാർ സമ്പാദ്യം</string>
+    <string name="to_pay">അടയ്‌ക്കേണ്ടത്</string>
+    <string name="add_delivery_details">ഡെലിവറി വിശദാംശങ്ങൾ ചേർക്കുക</string>
+    <string name="add_new_address">പുതിയ വിലാസം ചേർക്കുക</string>
+    <string name="save_new_address">പുതിയ വിലാസം സേവ് ചെയ്യുക</string>
+    <string name="update_address">വിലാസം അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="save_and_proceed">സേവ് ചെയ്ത് തുടരുക</string>
+    <string name="edit_address">വിലാസം എഡിറ്റ് ചെയ്യുക</string>
+    <string name="select_an_address_for_delivery">ഡെലിവറിക്ക് വിലാസം തിരഞ്ഞെടുക്കുക</string>
+    <string name="delivery_in_n">%s ൽ ഡെലിവറി</string>
+    <string name="order_tracking_and_support">ഓർഡർ ട്രെക്കിങ്ങും പിന്തുണയും</string>
+    <string name="secure_packaging">സുരക്ഷിതമായ പാക്കിങ്</string>
+    <string name="no_return_allowed_after_order_is_placed">ഓർഡർ നൽകിയ ശേഷം റിട്ടേണുകൾ അനുവദിക്കില്ല</string>
+    <string name="order_summary">ഓർഡർ ചുരുക്കം</string>
+    <string name="shipping_address">ഷിപ്പിംഗ് വിലാസം</string>
+    <string name="pay_now">ഇപ്പോൾ പണമടയ്ക്കൂ</string>
+    <string name="this_area_is_not_servicable_currently">ഈ പ്രദേശം നിലവിൽ സേവനയോഗ്യമല്ല</string>
+    <string name="check">പരിശോധിക്കൂ</string>
+    <string name="please_enter_a_valid_pincode">ദയവായി സാധുവായ പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="please_enter_a_valid_email">ദയവായി സാധുവായ ഇമെയിൽ രേഖപ്പെടുത്തുക</string>
+    <string name="free">സൗജന്യം</string>
+    <string name="tracking_id">ട്രാക്കിങ് ഐഡി</string>
+    <string name="tracking_id_will_be_generated_after_gold_shipped">സ്വർണം ഷിപ്പ് ചെയ്തതിന് ശേഷം ട്രാക്കിങ് ലിങ്ക് ജനറേറ്റ് ചെയ്യും.</string>
+    <string name="great_decision">നല്ല തീരുമാനം!</string>
+    <string name="creating_your_order_x">നിങ്ങളുടെ ഓർഡർ ഉണ്ടാക്കുന്നത്: ₹%s</string>
+    <string name="you_own_n_gm">നിങ്ങൾക്ക് സ്വന്തം : %sഗ്രാം</string>
+    <string name="oops">അയ്യോ!</string>
+    <string name="our_delivery_partners_do_not_deliver_here_yet">ഞങ്ങളുടെ ഡെലിവറി പങ്കാളികൾ ഇവിടെ ഇത് വരെ ഡെലിവർ ചെയ്യുന്നില്ല.</string>
+    <string name="order_placed">ഓർഡർ നൽകി</string>
+    <string name="street_address_two">സ്ട്രീറ്റ് വിലാസം 2 (നിർബന്ധമല്ല)</string>
+    <string name="perc_99_99_pure_gold" translatable="false">24k | 99.99% ശുദ്ധ സ്വർണം</string>
+    <string name="perc_99_pure_gold" translatable="false">24k | 99.5% ശുദ്ധ സ്വർണം</string>
+    <string name="fine_gold" translatable="false">മികച്ചസ്വർണം</string>
+    <string name="zero_negative_weight_tolerance" translatable="false">നെഗറ്റീവ് ഇല്ല | ഭാര സഹിഷ്ണുത</string>
+    <string name="okay">ശരി!</string>
+    <string name="name">പേര്</string>
+    <string name="phone_number">ഫോൺ നമ്പർ</string>
+    <string name="please_fill_all_the_details">ദയവായി എല്ലാ വിശദാംശങ്ങളും പൂരിപ്പിക്കുക</string>
+    <string name="details_for_gold_delivery">സ്വർണ ഡെലിവറിക്കുള്ള വിശദാംശങ്ങൾ</string>
+    <string name="email">ഇമെയിൽ</string>
+    <string name="pincode">പിൻകോഡ്</string>
+    <string name="city">നഗരം</string>
+    <string name="enter_city">നഗരം രേഖപ്പെടുത്തുക</string>
+    <string name="state">സംസ്ഥാനം</string>
+    <string name="enter_state">സംസ്ഥാനം രേഖപ്പെടുത്തുക</string>
+    <string name="enter_pin_code">പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="add_details">വിശദാംശങ്ങൾ ചേർക്കുക</string>
+    <string name="address_for_delivery">ഡെലിവറിക്കുള്ള വിലാസം</string>
+    <string name="your_full_address">നിങ്ങളുടെ മുഴുവൻ വിലാസം</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">വിശദാംശങ്ങൾ സബ്മിറ്റ് ചെയ്യുക</string>
+    <string name="details_added">വിശദാംശങ്ങൾ ചേർത്തു</string>
+    <string name="street_address_one">സ്ട്രീറ്റ് വിലാസം 1</string>
+    <string name="address_line_1">വിലാസം ലൈൻ 1</string>
+    <string name="address_line_2">വിലാസം ലൈൻ 2</string>
+    <string name="what_happens_next">ഇനി എന്ത് സംഭവിക്കുന്നു?</string>
+
+    <string name="our_team_will_get_in_touch_with_you">ഞങ്ങളുടെ തീം നിങ്ങളുമായി ബന്ധപ്പെടും</string>
+    <string name="your_gold_will_be_packed_by_our_partner">ഞങ്ങളുടെ പങ്കാളി നിങ്ങളുടെ സ്വർണം പാക്ക് ചെയ്യും</string>
+    <string name="gold_will_be_delivered_to_you">സ്വർണം നിങ്ങൾക്ക് ഡെലിവർ ചെയ്യും</string>
+
+    <string name="earn_spin_for_every_n_gm_of_gold">നിങ്ങൾ വാങ്ങുന്ന ഓരോ 0.1 ഗ്രാം സ്വർണത്തിനും കറക്കങ്ങൾ നേടൂ</string>
+    <string name="get_extra_2_per_when_we_reach_05_gm">0.5 ഗ്രാം എത്തുമ്പോൾ 2% അധിക സ്വർണം നേടൂ</string>
+    <string name="get_gold_coin_and_biscuit_delivered_to_your_doorstep">നിങ്ങളുടെ വീട്ടുപടിക്കൽ സ്വർണ നാണയങ്ങളും ബിസ്‌ക്കറ്റുകളും നേടൂ</string>
+
+    <string name="you_bought_n_gm_gold">നിങ്ങൾ %sഗ്രാം സ്വർണം വാങ്ങി</string>
+    <string name="youve_won_n_percent_extra_gold">നിങ്ങൾ %s%% അധിക സ്വർണം നേടി</string>
+    <string name="get_gold_delivery">സ്വർണ ഡെലിവറി നേടൂ</string>
+    <string name="youve_earned_n_spins">നിങ്ങൾ %d കറക്കങ്ങൾ നേടിയിട്ടുണ്ട്🚀</string>
+    <string name="youve_won_n_spins">നിങ്ങൾ %d കറക്കങ്ങൾ നേടി</string>
+    <string name="extra_gold_of_rs_n_is_added_to_your_locker">₹%s നല്ല അധിക സ്വർണം നിങ്ങളുടെ ലോക്കറിൽ ചേർത്തിട്ടുണ്ട്</string>
+    <string name="spin_now">ഇപ്പോൾ കറക്കൂ</string>
+    <string name="share_using">ഇതിലൂടെ ഷെയർ ചെയ്യൂ</string>
+    <string name="share_with_friends_text">ഞാൻ ജാർ ആപ്പിൽ %s നേടി. ഞാൻ ഭാവിക്കായി സൂക്ഷിക്കുന്നു. നിങ്ങളും അത് ചെയ്യണം. എന്റെ പ്രത്യേക റെഫറൽ ലിങ്ക് വഴി ഡൌൺലോഡ് ചെയ്യൂ: %s</string>
+    <string name="faqs">എപ്പോഴും ചോദിക്കുന്ന ചോദ്യങ്ങൾ</string>
+    <string name="youve_hit_a_few_milestones">നിങ്ങൾ ചില പ്രധാന ഘട്ടങ്ങളിൽ എത്തിയിട്ടുണ്ട്</string>
+    <string name="share_milestone_text_with_link">ഹായ്!👋\nഒരു പുതിയ ഘട്ടം എത്തിയതിനാൽ എനിക്ക് ജാർ ആപ്പിൽ 2%% അധിക സ്വർണം കിട്ടി🤩. നിങ്ങളുടെ സമ്പത്തും വർധിപ്പിക്കൂ! %s</string>
+    <string name="milestones_terms_and_conditions">സ്വർണ ഡെലിവറിയും റിവാർഡുകളും നിബന്ധനകൾക്കും വ്യവസ്ഥകൾക്കും വിധേയമാണ്.</string>
+    <string name="current_milestone">നിലവിലെ പ്രധാന ഘട്ടം</string>
+    <string name="buy_01_gm_gold">0.1ഗ്രാം സ്വർണം വാങ്ങുക</string>
+    <string name="going_great">ഗംഭീരം!</string>
+    <string name="get_exciting_rewards_on_reaching_milestones">പ്രധാന ഘട്ടങ്ങൾ എത്തുമ്പോൾ മികച്ച സമ്മാനങ്ങൾ നേടൂ</string>
+    <string name="extra_2_percent_gold_for_certain_milestones">ചില പ്രധാന ഘട്ടങ്ങൾ എത്തുമ്പോൾ 2% അധിക സ്വർണം നേടൂ</string>
+    <string name="extra_gold">അധിക സ്വർണം</string>
+    <string name="extra_spins">അധികം കറക്കങ്ങൾ</string>
+    <string name="doorstep_delivery_of_gold_coins_and_biscuits">സ്വർണ നാണയങ്ങളുടെയും ബിസ്‌ക്കറ്റുകളുടെയും ഡെലിവറി വീട്ടുപടിക്കൽ</string>
+    <string name="get_free_spins_for_every_milestone">ഓരോ പ്രധാന ഘട്ടത്തിനും സൗജന്യ കറക്കങ്ങൾ നേടൂ</string>
+    <string name="your_journey">നിങ്ങളുടെ യാത്ര</string>
+    <string name="buy_n_gm_gold">%s ഗ്രാം സ്വർണം വാങ്ങൂ</string>
+    <string name="bought_n_gm_gold">%s ഗ്രാം സ്വർണം വാങ്ങി</string>
+    <string name="achieved_n_gm_milestone">%s ഗ്രാം എന്ന പ്രധാന ഘട്ടം എത്തി</string>
+    <string name="n_milestones_reached">%d പ്രധാന ഘട്ടങ്ങൾ എത്തി</string>
+    <string name="reward">റിവാർഡ്</string>
+    <string name="reward_claimed">റിവാർഡ് നേടി</string>
+    <string name="n_spins">%d\nകറക്കങ്ങൾ</string>
+    <string name="n_percent_gold"> +%s%%\nസ്വർണം</string>
+    <string name="no_milestones_reached">പ്രധാന ഘട്ടങ്ങൾ ഒന്നും എത്തിയില്ല</string>
+    <string name="keep_investing_and_get_2_percent_extra_gold">നിക്ഷേപം തുടർന്ന് 0.5 ഗ്രാം എത്തുമ്പോൾ 2% അധിക സ്വർണം നേടൂ</string>
+    <string name="you_are_just_n_gms_away_from_getting_m">%s നേടുന്നതിൽ നിന്ന് നിങ്ങൾ വെറും %s ഗ്രാം അകലെയാണ്</string>
+    <string name="start_now_by_investing_10_rs">₹10 നിക്ഷേപിച്ച് ഇപ്പോൾ തുടങ്ങൂ</string>
+    <string name="i_ll_do_it_later">ഞാൻ അത് പിന്നീട് ചെയ്യാം</string>
+    <string name="share_with_friends">സുഹൃത്തുക്കളുമായി ഷെയർ ചെയ്യൂ</string>
+    <string name="start_investing">നിക്ഷേപിക്കാൻ തുടങ്ങൂ</string>
+
+    <string name="my_jar_winnings">എന്റെ ജാർ വിജയങ്ങൾ</string>
+    <string name="view_your_winning_subheading">നിങ്ങളുടെ റെഫറൽ ബോണസും ഗെയിം വിജയങ്ങളും കാണൂ</string>
+    <string name="gold_is_the_best_option_for_gifting">സമ്മാനം നൽകാൻ ഏറ്റവും മികച്ച ഓപ്‌ഷൻ സ്വർണമാണ്\nഇന്ന് ആരെയെങ്കിലും സന്തോഷിപ്പിക്കൂ</string>
+    <string name="sell_options">വിൽപന ഓപ്‌ഷനുകൾ</string>
+    <string name="sell_history">വിൽപന ചരിത്രം</string>
+
+    <string name="search_results">തിരയൽ ഫലങ്ങൾ</string>
+    <string name="share">ഷെയർ ചെയ്യുക</string>
+
+    <string name="please_select_app_language">ദയവായി ആപ്പ് ഭാഷ തിരഞ്ഞെടുക്കുക</string>
+    <string name="done">കഴിഞ്ഞു</string>
+
+    <string name="buy_digital_gold">ഡിജിറ്റൽ സ്വർണം വാങ്ങൂ</string>
+    <string name="perc_100_secure_24k_pure_gold">100% സുരക്ഷിതം | 24K | 99.5% ശുദ്ധ സ്വർണം</string>
+    <string name="get_extra_2_perc_gold_on_minimum_purchase_of">2% അധിക സ്വർണം നേടാൻ ഏറ്റവും കുറവ് വാങ്ങേണ്ടത്</string>
+    <string name="apply_coupon">കൂപ്പൺ പ്രയോഗിക്കുക</string>
+    <string name="enter_the_amount">തുക രേഖപ്പെടുത്തുക</string>
+    <string name="enter_coupon_code">കൂപ്പൺ കോഡ് രേഖപ്പെടുത്തുക</string>
+
+    <string name="currency_sign">₹</string>
+    <string name="you_buy">നിങ്ങൾ വാങ്ങിക്കുന്നു</string>
+    <string name="best">മികച്ചത്</string>
+    <string name="apply_coupon_code">കൂപ്പൺ കോഡ് പ്രയോഗിക്കുക</string>
+    <string name="coupon_code_applied">കൂപ്പൺ കോഡ് പ്രയോഗിച്ചു</string>
+    <string name="apply">പ്രയോഗിക്കുക</string>
+    <string name="by_clicking_on_pay_agree_to_our_terms_of_use_and_privacy_policy">പണമടക്കുക എന്നതിൽ ക്ലിക്ക് ചെയ്യുന്നതിലൂടെ, നിങ്ങൾ <b><a href="https://www.myjar.app/terms-and-conditions">ഉപയോഗ നിബന്ധനകളും</a></b> <b><a href="https://www.myjar.app/privacy-policy"> സ്വകാര്യത നയവും അംഗീകരിക്കുന്നു</a></b></string>
+    <string name="pay">പണമടക്കുക</string>
+    <string name="price_valid_for_n_min">%s മിനിട്ടുകൾക്ക് വില ബാധകം</string>
+    <string name="current_buy_price_is_n_per_gm">നിലവിലെ വാങ്ങൽ വില ₹%.2f/ഗ്രാം ആണ്</string>
+    <string name="n_per_gm">₹%.2f/ഗ്രാം</string>
+    <string name="current_buy_price">നിലവിലെ വാങ്ങൽ വില ആണ്</string>
+    <string name="n_double_gm">₹%.2f/ഗ്രാം</string>
+    <string name="price_valid_for">വില ബാധകമായിരിക്കുന്നത്</string>
+
+    <string name="some_error_occurred">എന്തോ പിശക് പറ്റി</string>
+    <string name="internet_not_working_properly">ഇന്റർനെറ്റ് ശരിയായി പ്രവർത്തിക്കുന്നില്ല</string>
+    <string name="transaction_cancelled">ഇടപാട് റദ്ദാക്കി</string>
+    <string name="feature_buy_gold_expires_in_n">%s ൽ കാലഹരണപ്പെടും</string>
+    <string name="active_coupon_codes">സജീവമായ കൂപ്പൺ കോഡുകൾ</string>
+    <string name="invalid_coupon_code">അസാധുവായ കൂപ്പൺ കോഡ്</string>
+    <string name="coupon_code_hint" translatable="false">JARXXXXXXX8989</string>
+    <string name="please_enter_the_valid_amount">ദയവായി സാധുവായ തുക രേഖപ്പെടുത്തുക</string>
+
+    <string name="investments">നിക്ഷേപങ്ങൾ</string>
+    <string name="gold_gift_status">സ്വർണ സമ്മാന നില</string>
+    <string name="my_winnings">എന്റെ വിജയങ്ങൾ</string>
+    <string name="sell_gold_history">സ്വർണ വിൽപന ചരിത്രം</string>
+    <string name="spare_change_from">ചില്ലറ വന്നിരിക്കുന്നത്</string>
+    <string name="manual_investment">മാന്വൽ നിക്ഷേപം</string>
+    <string name="auto_investment">ഓട്ടോ നിക്ഷേപം</string>
+    <string name="partnership">പങ്കാളിത്തം</string>
+
+    <string name="sent">അയച്ചു</string>
+    <string name="received">ലഭിച്ചു</string>
+
+    <string name="your_current_winnings">നിങ്ങളുടെ നിലവിലെ വിജയങ്ങൾ</string>
+    <string name="transaction_history">ഇടപാട് ചരിത്രം</string>
+    <string name="invest_in_gold">സ്വർണത്തിൽ നിക്ഷേപിക്കൂ</string>
+    <string name="winnings_history">വിജയങ്ങളുടെ ചരിത്രം</string>
+    <string name="referral_bonus">റെഫറൽ ബോണസ് </string>
+    <string name="invest_more">കൂടുതൽ നിക്ഷേപിക്കൂ</string>
+
+    <string name="transaction_status">ഇടപാട് നില</string>
+
+    <string name="no_manual_investments_found">മാന്വൽ നിക്ഷേപങ്ങൾ ഒന്നും കണ്ടില്ല</string>
+    <string name="no_auto_investments_found">ഓട്ടോ നിക്ഷേപങ്ങൾ ഒന്നും കണ്ടില്ല</string>
+    <string name="no_partner_investments_found">പങ്കാളിത്ത നിക്ഷേപങ്ങൾ ഒന്നും കണ്ടില്ല</string>
+    <string name="no_gifts_sent">സമ്മാനങ്ങൾ ഒന്നും അയച്ചിട്ടില്ല</string>
+    <string name="no_gifts_received">സമ്മാനങ്ങൾ ഒന്നും ലഭിച്ചിട്ടില്ല</string>
+    <string name="no_winnings_found">വിജയങ്ങൾ ഒന്നും കണ്ടില്ല</string>
+    <string name="no_withdrawals_found">പിൻവലിക്കൽ ഒന്നും കണ്ടില്ല</string>
+    <string name="no_invoice_found">ഇൻവോയ്‌സുകൾ ഒന്നും കണ്ടില്ല</string>
+
+
+    <string name="select_month">മാസം തിരഞ്ഞെടുക്കൂ</string>
+    <string name="clear">മായ്ക്കൂ</string>
+    <string name="select_year">വർഷം തിരഞ്ഞെടുക്കൂ</string>
+    <string name="month">മാസം</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="end_date">അവസാന തീയതി</string>
+    <string name="start_date">തുടങ്ങുന്ന തീയതി</string>
+    <string name="select_dates">തീയതികൾ തിരഞ്ഞെടുക്കൂ</string>
+    <string name="select_both_dates">തുടങ്ങുന്ന തീയതിയും അവസാന തീയതിയും തിരഞ്ഞെടുക്കൂ</string>
+    <string name="please_select_start_date_first">ദയവായി ആദ്യം തുടങ്ങുന്ന തീയതി തിരഞ്ഞെടുക്കൂ</string>
+
+    <string name="notifications">അറിയിപ്പുകൾ</string>
+
+    <string name="min_amount">കുറഞ്ഞ തുക</string>
+    <string name="karat">കാരറ്റ്</string>
+    <string name="purity">ശുദ്ധത</string>
+    <string name="n_karat">%sK</string>
+    <string name="n_change_percent">%s ചില്ലറ(%%)</string>
+    <string name="gold">സ്വർണം</string>
+    <string name="gold_buy_price">സ്വർണം വാങ്ങുന്ന വില</string>
+
+    <string name="settings">സെറ്റിംഗ്സ്</string>
+    <string name="edit_profile">പ്രൊഫൈൽ എഡിറ്റ് ചെയ്യൂ</string>
+    <string name="kyc">KYC</string>
+    <string name="verified">സ്ഥിരീകരിച്ചു</string>
+    <string name="saved_addresses">സേവ് ചെയ്ത വിലാസങ്ങൾ</string>
+    <string name="refer_and_earn">റെഫർ ചെയ്ത് സമ്പാദിക്കൂ</string>
+    <string name="jar_security_shield">ജാർ സുരക്ഷാ കവചം</string>
+    <string name="transactions_and_withdrawals">ഇടപാടുകളും പിൻവലിക്കലുകളും</string>
+    <string name="auto_invest_10_rupees">₹10 ഓട്ടോ നിക്ഷേപം നടത്തൂ</string>
+    <string name="when_no_spends_detected">ചിലവുകൾ ഒന്നും കണ്ടെത്തിയില്ലെങ്കിൽ</string>
+    <string name="invoices">ഇൻവോയ്‌സുകൾ</string>
+    <string name="pause_saving">മിച്ചം പിടിക്കൽ തത്കാലത്തേക്ക് നിർത്തൂ</string>
+    <string name="round_off">റൗണ്ട്-ഓഫ്</string>
+    <string name="round_off_amount">റൗണ്ട് ഓഫ് തുക</string>
+    <string name="autopay">ഓട്ടോപേ</string>
+    <string name="auto_invest">ഓട്ടോ-നിക്ഷേപം</string>
+    <string name="saved_upi_addresses">സേവ് ചെയ്ത UPI വിലാസങ്ങൾ</string>
+    <string name="saved_upi_ids">സേവ് ചെയ്ത UPI ഐഡികൾ</string>
+    <string name="manage_notifications">അറിയിപ്പുകൾ മാനേജ് ചെയ്യുക</string>
+    <string name="support">സപ്പോർട്ട്</string>
+    <string name="app_language">ആപ്പ് ഭാഷ</string>
+    <string name="terms_and_conditions">നിബന്ധനകളും വ്യവസ്ഥകളും</string>
+    <string name="privacy_policy">സ്വകാര്യതാ നയം</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">ലോഗൗട്ട് ചെയ്യുക</string>
+    <string name="off">ഓഫ്</string>
+    <string name="auto_invest_is_off">ഓട്ടോ നിക്ഷേപം ഓഫാണ്</string>
+    <string name="turn_it_back_on_to_start_automatic_investment">ഓട്ടോമാറ്റിക്\nനിക്ഷേപങ്ങൾ തുടങ്ങാൻ അത് വീണ്ടും ഓണാക്കുക</string>
+
+    <string name="help_and_support">സഹായവും പിന്തുണയും</string>
+    <string name="login_and_security">ലോഗിനും സുരക്ഷയും</string>
+
+    <string name="change">മാറ്റുക</string>
+    <string name="change_number"><u>നമ്പർ മാറ്റുക</u></string>
+    <string name="save_changes">മാറ്റങ്ങൾ സേവ് ചെയ്യുക</string>
+    <string name="change_profile_picture"><u>പ്രൊഫൈൽ ചിത്രം മാറ്റുക</u></string>
+    <string name="details">വിശദാംശങ്ങൾ</string>
+    <string name="powered_by">പവർ ചെയ്യുന്നത്:</string>
+    <string name="view_invoice">ഇൻവോയ്സ് കാണുക</string>
+    <string name="feature_buy_gold_refresh">റിഫ്രഷ് ചെയ്യുക</string>
+    <string name="refreshing_dot">റിഫ്രഷ് ചെയ്യുന്നു…</string>
+    <string name="paid_for">പണം നൽകിയത്</string>
+    <string name="need_help_chat_with_us">സഹായം ആവശ്യമുണ്ടോ? <u><b>ഞങ്ങളുമായി ചാറ്റ് ചെയ്യുക</b></u></string>
+
+    <string name="whatsapp_not_installed">വാട്സാപ്പ്  ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല.</string>
+    <string name="transaction_support_message">തലക്കെട്ട് : %1$s \n%2$s ലെ %3$s തുകയുടെ ഇടപാടുമായി ബന്ധപ്പെട്ട് എനിക്ക് ഒരു ചോദ്യമുണ്ട് %4$s. ദയവായി സഹായിക്കാമോ?</string>
+
+    <string name="enter_your_new_number">നിങ്ങളുടെ പുതിയ നമ്പർ രേഖപ്പെടുത്തുക</string>
+    <string name="please_enter_a_valid_mobile">ദയവായി ഒരു സാധുവായ മൊബൈൽ നമ്പർ രേഖപ്പെടുത്തുക</string>
+    <string name="please_check_the_consent_box">സമ്മത ബോക്സ് ടിക്ക് ചെയ്യുക</string>
+    <string name="data_will_be_transferred_to_your_new_number">ഒരിക്കൽ നിങ്ങൾ നമ്പർ മാറ്റിയാൽ നിങ്ങളുടെ സ്വർണ്ണവും ഡാറ്റയും പുതിയ നമ്പറിലേക്ക് മാറ്റപ്പെടും.</string>
+    <string name="i_consent_to_change_my_number">എന്റെ നമ്പർ മാറ്റാൻ ഞാൻ സമ്മതിക്കുന്നു</string>
+
+    <string name="invite_tab">ക്ഷണിക്കുക</string>
+    <string name="referrals_tab">റഫറലുകൾ</string>
+    <string name="faqs_tab">FAQs</string>
+    <string name="invite_and_earn">ഒരു സുഹൃത്തിനെ ക്ഷണിക്കൂ ഇരുവർക്കും കൂടി ₹500 വരെ സമ്പാദിക്കാം</string>
+    <string name="we_noticed_some_unusual_activity">അസാധാരണമായ ചില പ്രവർത്തനങ്ങൾ ഞങ്ങൾ ശ്രദ്ധിച്ചു</string>
+    <string name="referral_account_locked_message">നിങ്ങളുടെ അക്കൗണ്ട് സുരക്ഷിതമായി സൂക്ഷിക്കാൻ, നിങ്ങൾക്ക് കുറച്ച് വരുമാനം ലഭിക്കില്ല. നിങ്ങൾക്ക് പുനഃസ്ഥാപിക്കണമെങ്കിൽ, കൂടുതൽ വിവരങ്ങൾക്ക് സപ്പോർട്ടുമായി ബന്ധപ്പെടുക.</string>
+    <string name="your_unique_referral_link">നിങ്ങളുടെ പ്രത്യേക റഫറൽ ലിങ്ക്</string>
+    <string name="copy_link">ലിങ്ക്\nകോപ്പി ചെയ്യുക</string>
+    <string name="share_link">ലിങ്ക് ഷെയർ ചെയ്യുക</string>
+    <string name="referral_share_message">ഹായ്, ഞാൻ ജാർ ആപ്പ് ഉപയോഗിച്ച് 24K സ്വർണ്ണത്തിൽ എന്റെ ചില്ലറ നിക്ഷേപിക്കാൻ തുടങ്ങി. എന്റെ ക്ഷണം ഉപയോഗിച്ച് സൈൻ അപ്പ് ചെയ്യുക, നമ്മൾ ഇരുവർക്കും ജാറിൽ ₹500 വരെ സമ്പാദിക്കാം. \n%s</string>
+    <string name="referral_share_message_url">%s\n%s</string>
+    <string name="copied">കോപ്പി ചെയ്തു!</string>
+    <string name="earn_upto_10k">നിങ്ങളുടെ സുഹൃത്തുക്കളെ റഫർ ചെയ്ത് ₹10,000 വരെ സമ്പാദിക്കുക</string>
+    <string name="no_earnings_yet">ഇതുവരെ സമ്പാദ്യമൊന്നുമില്ല!</string>
+    <string name="earning_history">സമ്പാദ്യ ചരിത്രം</string>
+    <string name="earnings">സമ്പാദ്യം</string>
+    <string name="total_earned">ആകെ നേടിയത്</string>
+    <string name="commission">കമ്മീഷൻ</string>
+    <string name="total_commission_earned">മൊത്തം നേടിയ കമ്മീഷൻ</string>
+    <string name="referrals">റഫറലുകൾ</string>
+    <string name="rupee_prefix_float">₹%.2f</string>
+    <string name="commission_deposited_in_locker">₹%.2f ന്റെ ₹%.2f ലോക്കറിൽ നിക്ഷേപിച്ചു</string>
+    <string name="total_x">മൊത്തം : %d</string>
+
+
+    <plurals name="round_off_transactions">
+        <item quantity="one">%d ഇടപാട്</item>
+        <item quantity="other">%d ഇടപാടുകൾ</item>
+    </plurals>
+
+    <string name="earning">സമ്പാദ്യം </string>
+
+    <string name="confirm_your_password">നിങ്ങളുടെ പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക</string>
+    <string name="authentication_failed">ആധികാരികത സ്ഥിരീകരിക്കൽ പരാജയപ്പെട്ടു </string>
+
+    <string name="please_logout_from_other_devices_to_access_this_account">ഈ ഡിവൈസിൽ നിങ്ങളുടെ അക്കൗണ്ട് ആക്‌സസ് ചെയ്യാൻ മറ്റേ ഡിവൈസിൽ നിന്ന് ലോഗ് ഔട്ട് ചെയ്യുക</string>
+    <string name="logout_from_other_devices">മറ്റേ ഡിവൈസിൽ നിന്ന് ലോഗ് ഔട്ട് ചെയ്യുക</string>
+    <string name="login_with_a_new_number">ഒരു പുതിയ നമ്പർ വെച്ച് ലോഗിൻ ചെയ്യുക</string>
+    <string name="we_limit_to_a_maximum_of_n_unique_mobile_numbers_on_one_device">ഒരു ഡിവൈസിൽ പരമാവധി %d പ്രത്യേക മൊബൈൽ നമ്പറുകളായി  ഞങ്ങൾ പരിമിതപ്പെടുത്തുന്നു</string>
+    <string name="contact_support">സപ്പോർട്ടുമായി ബന്ധപ്പെടുക</string>
+    <string name="login_with_previous_number"><u>മുമ്പത്തെ നമ്പർ വെച്ച് ലോഗിൻ ചെയ്യുക</u></string>
+
+    <string name="start_investing_daily">ദിവസവും നിക്ഷേപം തുടങ്ങുക</string>
+    <string name="save_n_daily_and_watch_it_grow_to_m_in_next_10_years">ദിവസേന \u20B9%s മിച്ചം പിടിച്ച്, 10 വർഷത്തിനുള്ളിൽ അത് \u20B9%s ആയി വളരുന്നത് കാണുക.</string>
+    <string name="your_saving_are_invested_gold">നിങ്ങളുടെ സമ്പാദ്യം 24K സ്വർണ്ണത്തിലാണ് നിക്ഷേപിച്ചിരിക്കുന്നത്</string>
+    <string name="how_much_to_invest_daily">പ്രതിദിനം എത്ര നിക്ഷേപിക്കണം?</string>
+    <string name="you_can_invest_up_to_n_per_day">നിങ്ങൾക്ക് പ്രതിദിനം \u20B9%s വരെ നിക്ഷേപിക്കാം</string>
+    <string name="set_daily_amount">പ്രതിദിന തുക നിശ്ചയിക്കുക</string>
+    <string name="how_would_you_like_to_sell">നിങ്ങൾ എങ്ങനെ വിൽക്കാൻ ആഗ്രഹിക്കുന്നു?</string>
+    <string name="cash_in_bank">ബാങ്കിലെ പണം</string>
+    <string name="cash_in_bank_message">നിലവിലെ വിൽപന വിലയ്ക്ക് സ്വർണം വിറ്റ് നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ടിൽ തൽക്ഷണം പണം നേടൂ</string>
+    <string name="gold_delivery">സ്വർണ്ണ ഡെലിവറി</string>
+    <string name="get_gold_delivered_at_your_doorstep_through_our_partners">ഞങ്ങളുടെ പങ്കാളികൾ മുഖേന സ്വർണം നിങ്ങളുടെ വീട്ടുപടിക്കൽ നേടൂ</string>
+    <string name="daily_savings_paused">പ്രതിദിന മിച്ചം പിടിക്കൽ താൽക്കാലികമായി നിർത്തി</string>
+
+    <string name="invest_rs_n_double">₹%.2f നിക്ഷേപിക്കുക</string>
+    <string name="autopay_setup_successfully">ഓട്ടോപേ സെറ്റപ്പ് വിജയകരമാണ്</string>
+    <string name="setup_auto_invest">ഓട്ടോ-നിക്ഷേപം സെറ്റപ്പ് ചെയ്യുക</string>
+    <string name="autopay_account">ഓട്ടോപേ അക്കൗണ്ട്</string>
+    <string name="primary_upi">പ്രാഥമിക UPI</string>
+    <string name="subscription_id">സബ്‌സ്‌ക്രിപ്‌ഷൻ ഐഡി</string>
+    <string name="supported_banks_for_autopay">ഓട്ടോപേ പിന്തുണയ്ക്കുന്ന ബാങ്കുകൾ</string>
+    <string name="view_all_banks"><u>എല്ലാ ബാങ്കുകളും കാണുക</u></string>
+    <string name="enabled">പ്രവർത്തനക്ഷമമാക്കി</string>
+
+    <string name="view">കാണുക</string>
+    <string name="save">സേവ് ചെയ്യുക</string>
+    <string name="round_off_to_nearest_10">അടുത്ത 10 ലേക്ക്\nറൗണ്ട് ഓഫ് ചെയ്യുക</string>
+    <string name="round_off_to_nearest_5">അടുത്ത 5 ലേക്ക്\nറൗണ്ട് ഓഫ് ചെയ്യുക</string>
+    <string name="recommended">ശുപാർശ ചെയ്തു </string>
+    <string name="round_off_amount_nearest_x">നിങ്ങളുടെ ഓൺലൈൻ പേയ്‌മെന്റുകൾ ഞങ്ങൾ അടുത്ത %d ലേക്ക് റൗണ്ട് ഓഫ് ചെയ്ത് ചില്ലറ സ്വർണ്ണത്തിൽ നിക്ഷേപിക്കും.</string>
+    <string name="add_new_upi">പുതിയ UPI ചേർക്കുക</string>
+    <string name="add_upi_id">UPI ഐഡി ചേർക്കുക</string>
+    <string name="primary">പ്രാഥമികം</string>
+    <string name="all_upi_ids">എല്ലാ UPI ഐഡികളും</string>
+    <string name="make_primary">പ്രാഥമികമാക്കുക</string>
+    <string name="remove">നീക്കം ചെയ്യുക</string>
+    <string name="enter_new_upi_id">പുതിയ UPI ഐഡി രേഖപ്പെടുത്തുക</string>
+    <string name="your_upi_id">നിങ്ങളുടെ UPI ഐഡി</string>
+    <string name="save_upi">UPI സേവ് ചെയ്യുക</string>
+    <string name="buy_price">വാങ്ങുന്ന വില</string>
+    <string name="sell_price">വിൽക്കുന്ന വില</string>
+    <string name="questions_you_may_have">നിങ്ങൾക്ക് ഉണ്ടായേക്കാവുന്ന ചോദ്യങ്ങൾ</string>
+
+    <string name="you_paused_saving">നിങ്ങൾ മിച്ചം പിടിക്കൽ താൽക്കാലികമായി നിർത്തി</string>
+    <string name="pause_for">താൽക്കാലികമായി നിർത്തേണ്ടത്</string>
+    <string name="rs_n_double_will_be_deducted_from_your_account">\u20B9%.2f നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്ന് കുറയ്ക്കും</string>
+    <string name="saved_to_your_own_savings_jar">നിങ്ങളുടെ സ്വന്തം സേവിംഗ്സ് ജാറിൽ സേവ് ചെയ്തു</string>
+    <string name="invested_in_100_perc_pure_gold">100% ശുദ്ധമായ സ്വർണ്ണത്തിൽ നിക്ഷേപിച്ചു</string>
+
+    <string name="push_notifications">പുഷ് അറിയിപ്പുകൾ</string>
+    <string name="push_notification_description">പുതിയതായി കണ്ടെത്തിയ \nറൗണ്ട്ഓഫിനും പ്രത്യേക ഓഫറുകൾക്കും അപ്ഡേറ്റുകൾ നേടുക</string>
+    <string name="payment_reminders">പേയ്‌മെന്റ് ഓർമ്മപ്പെടുത്തലുകൾ</string>
+    <string name="payment_reminders_description">നിങ്ങളുടെ ദൈനംദിന \nനിക്ഷേപങ്ങൾക്കും മാന്വൽ നിക്ഷേപങ്ങൾക്കുമുള്ള പേയ്‌മെന്റ് ഓർമ്മപ്പെടുത്തലുകൾ</string>
+    <string name="whatsapp_updates">വാട്സാപ്പ്  അപ്ഡേറ്റുകൾ</string>
+    <string name="whatsapp_updates_description">നിക്ഷേപങ്ങൾക്കും \nപ്രത്യേക ഓഫറുകൾക്കുമുള്ള വാട്സാപ്പ് അപ്‌ഡേറ്റുകൾ</string>
+    <string name="gold_price_alerts">സ്വർണ്ണ വില അറിയിപ്പുകൾ</string>
+    <string name="gold_price_alerts_description">നിങ്ങൾക്ക് മികച്ച വിലയിൽ നിക്ഷേപിക്കാൻ സ്വർണ്ണ വില കുറയുമ്പോഴെല്ലാം തക്കസമയത്ത് അറിയിപ്പുകൾ നേടുക.</string>
+    <string name="shubh_muhurat_alerts">ശുഭ മുഹൂർത്ത അറിയിപ്പുകൾ</string>
+    <string name="shubh_muhurat_alerts_description">സ്വർണ്ണം വാങ്ങാനുള്ള ശുഭ മുഹൂർത്തമാകുമ്പോഴെല്ലാം അറിയിപ്പുകൾ നേടൂ</string>
+    <string name="you_have_opened_in_a_shubh_muhurat">നിങ്ങൾ ഒരു ശുഭ മുഹൂർത്തത്തിലാണ് തുറന്നത്</string>
+    <string name="buy_extra_gold_before_ends_in">അധിക സ്വർണം വാങ്ങൂ, ഇത് തീരാൻ</string>
+
+    <string name="upcoming_shubh_muhurats">വരാനിരിക്കുന്ന ശുഭ മുഹൂർത്തങ്ങൾ</string>
+    <string name="shubh_muhurat">ശുഭ മുഹൂർത്തം</string>
+    <string name="dates">തീയതികൾ</string>
+    <string name="time">സമയം</string>
+    <string name="spare_change">ചില്ലറ</string>
+    <string name="start_time_s_end_time_s">%s - %s</string>
+    <string name="gold_percent_d_buying_price">വാങ്ങുന്ന വിലയിൽ ഗ്രാമിന് \u20B9%.2f</string>
+    <string name="total_amount_rs_n_double">ആകെ തുക \u20B9%.2f</string>
+    <string name="tell_your_friends_about_this">ഇതിനെക്കുറിച്ച് നിങ്ങളുടെ സുഹൃത്തുക്കളോട് പറയുക 👇🏻</string>
+    <string name="hey_theres_shubh_muhurat_buy_and_grow_your_wealth">ഹായ്! 👋 %1$s നും %2$s നും ഇടയിൽ ഒരു ശുഭ മുഹൂർത്തമുണ്ട്. ജാർ ആപ്പിൽ 24K സ്വർണം വാങ്ങി നിങ്ങളുടെ സമ്പത്ത് വർദ്ധിപ്പിക്കൂ!</string>
+    <string name="hey_theres_shubh_muhurat_today">ഹായ്! 👋 ഇന്ന് ഒരു ശുഭ മുഹൂർത്തമുണ്ട്. ജാർ ആപ്പിൽ 24K സ്വർണം വാങ്ങി നിങ്ങളുടെ സമ്പത്ത് വർദ്ധിപ്പിക്കൂ!</string>
+    <string name="shubh_muhurat_payment_success_share">ഹായ്! 👋 %1$s നും %2$s നും ഇടയിൽ സ്വർണം വാങ്ങാനുള്ള ശുഭ മുഹൂർത്തമാണ്. ജാർ ആപ്പ് വഴി ഇപ്പോൾ ഞാൻ കുറച്ച് സ്വർണം വാങ്ങി. നിങ്ങളും വാങ്ങണം! ഇപ്പോൾ വാങ്ങുക! %3$s</string>
+    <string name="shubh_muhurat_now_share">ഹായ്! 👋 %1$s നും %2$s നും ഇടയിൽ സ്വർണം വാങ്ങാനുള്ള ശുഭ മുഹൂർത്തമാണ്. ജാർ ആപ്പിൽ ഇപ്പോൾ വാങ്ങൂ, നിങ്ങളുടെ സമ്പത്ത് വർദ്ധിപ്പിക്കൂ! %3$s</string>
+    <string name="dates_start_end">%s - %s</string>
+    <string name="default_auspicious_time">രാത്രി 08:00 മണി - രാത്രി 11:00 മണി</string>
+    <string name="order_details">ഓർഡർ വിശദാംശങ്ങൾ</string>
+    <string name="we_declare_that_the_above_quantity_of_goods_are_kept_by_the_seller_in_a_safe_vault_on_behalf_of_the_buyer_it_can_be_delivered_in_minted_product_as_per_terms_and_conditions">മേൽപ്പറഞ്ഞ അളവിലുള്ള സാധനങ്ങൾ വാങ്ങുന്നയാൾക്ക് വേണ്ടി വിൽപ്പനക്കാരൻ ഒരു സുരക്ഷിത നിലവറയിൽ സൂക്ഷിച്ചിട്ടുണ്ടെന്ന് ഞങ്ങൾ പ്രഖ്യാപിക്കുന്നു. നിബന്ധനകളും വ്യവസ്ഥകളും അനുസരിച്ച് ഇത് പുതുമ നഷ്ടപ്പെടാതെ ഡെലിവർ ചെയ്യാവുന്നതാണ്</string>
+    <string name="declaration">പ്രഖ്യാപനം</string>
+    <string name="total_purchase_amount">മൊത്തം വാങ്ങിയ തുക</string>
+    <string name="gold_received">ലഭിച്ച സ്വർണം</string>
+    <string name="rate_per_gram">ഗ്രാമിന്റെ  നിരക്ക്</string>
+    <string name="gst_3">GST 3%</string>
+    <string name="total_gold_purchase">ആകെ വാങ്ങിയ സ്വർണം</string>
+    <string name="bill_to">ബിൽ ചെയ്യേണ്ടത്</string>
+    <string name="name_n">പേര്: %s</string>
+    <string name="phone_number_n">ഫോൺ നമ്പർ :%s</string>
+    <string name="okay_2">ശരി</string>
+    <string name="survey">സർവേ</string>
+    <string name="thank_you_for_participating">പങ്കെടുത്തതിന് നന്ദി</string>
+    <string name="we_use_this_to_make_jar_better">ജാർ ഉണ്ടാക്കാൻ ഞങ്ങൾ ഇത് ഉപയോഗിക്കുന്നു</string>
+    <string name="survey_pop_loader">സർവേ ലോഡ് ചെയ്യുന്നു, നിങ്ങളുടെ പ്രതികരണം ഞങ്ങളുടെ ഉൽപ്പന്നം മെച്ചപ്പെടുത്താൻ സഹായകരമാണ്</string>
+    <string name="question_d_by_d">ചോദ്യം %d/%d</string>
+    <string name="please_enter_valid_promo_code">ദയവായി സാധുവായ പ്രൊമോ കോഡ് നൽകുക</string>
+    <string name="n_string_gm_gold">%s ഗ്രാം സ്വർണം</string>
+    <string name="n_string_mg_gold">%s മില്ലിഗ്രാം സ്വർണം</string>
+    <string name="value_in_grams">മൂല്യം ഗ്രാമിൽ</string>
+    <string name="value_in_rupees">മൂല്യം രൂപയിൽ</string>
+    <string name="aggregate_buying_price_n_per_gm">മൊത്ത വാങ്ങൽ വില: \u20B9%.2f/ഗ്രാം</string>
+    <string name="automate_your_investment_through_autopay">നിങ്ങളുടെ നിക്ഷേപങ്ങൾ ഓട്ടോമേറ്റ് ചെയ്ത് സമയം ലാഭിക്കുക</string>
+    <string name="setup_autopay">ഓട്ടോപേ സെറ്റപ്പ് ചെയ്യുക</string>
+    <string name="invest_partial_amount">ഒരു ഭാഗം തുക നിക്ഷേപിക്കുക</string>
+    <string name="total_amount_pending_investment">നിക്ഷേപിക്കാത്ത ആകെ തുക</string>
+    <string name="skip_this_investment">ഈ നിക്ഷേപം ഒഴിവാക്കുക</string>
+    <string name="invest_n_percent">നിക്ഷേപിക്കുക %d%%</string>
+    <string name="know_more">കൂടുതൽ അറിയുക</string>
+
+    <string name="your_money_can_grow_if_you_continue_investing">നിങ്ങൾ നിക്ഷേപം തുടരുകയാണെങ്കിൽ\nനിങ്ങളുടെ പണം വളരും</string>
+    <string name="gold_market_terms_and_conditions">കണക്കുകൂട്ടലുകൾ സ്വർണ്ണത്തിന്റെ നിലവിലെ പ്രകടനത്തിന് വിധേയവും , വ്യത്യസ്തവുമായിരിക്കും. വായിക്കുക<a href="https://www.myjar.app/terms-and-conditions" /></string>
+    <string name="value_of_gold_if_you_sell_today_is_rs_">നിങ്ങൾ ഇന്ന് വിൽക്കുകയാണെങ്കിൽ സ്വർണ്ണത്തിന്റെ മൂല്യം ₹%.2f ആണ്</string>
+    <string name="don_t_sell">വിൽക്കരുത്</string>
+    <string name="sell_anyway">എങ്ങനെയും  വിൽക്കുക</string>
+    <string name="type_here">ഇവിടെ ടൈപ്പ് ചെയ്യൂ</string>
+    <string name="some_other_reason">മറ്റെന്തെങ്കിലും കാരണം</string>
+    <string name="why_are_you_withdrawing">എന്തുകൊണ്ടാണ് നിങ്ങള്‍ പിന്‍വലിക്കുന്നത്?</string>
+    <string name="please_select_reason">ദയവായി ഒരു കാരണം തിരഞ്ഞെടുക്കുക </string>
+    <string name="sell_in_grams">ഗ്രാമില്‍ വില്‍ക്കുക </string>
+    <string name="gm">ഗ്രാം </string>
+    <string name="available_to_sell">വില്‍ക്കാന്‍ ലഭ്യമാണ് </string>
+    <string name="no_amount">തുക ലഭ്യമല്ല</string>
+    <string name="aggregate_buying_price">മൊത്ത വാങ്ങല്‍ വില ₹%.2f</string>
+    <string name="_0">0</string>
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="sell">വില്‍ക്കുക </string>
+    <string name="sell_gold">സ്വര്‍ണ്ണം വില്‍ക്കുക   </string>
+    <string name="apprx_value_x">ലഭ്യമായ ഏകദേശം തുക: \u20B9%.2f</string>
+    <string name="amount_can_not_be_zero">തുക 0 ആകാന്‍ പാടില്ല</string>
+    <string name="amount_can_not_be_more_than_total">തുക നിങ്ങളുടെ കൈവശമുള്ളതില്‍ കൂടുതലാകരുത് : %.2f</string>
+    <string name="gold_price_not_available_please_retry">നിലവിലെ സ്വര്‍ണ്ണ വില ലഭ്യമല്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="select_wthdraw_method">പിന്‍വലിക്കല്‍ രീതി തിരഞ്ഞെടുക്കുക</string>
+    <string name="enter_upi_id">UPI ഐഡി നല്‍കുക</string>
+    <string name="your_upi_id_here">നിങ്ങളുടെ UPI ഐഡി ഇവിടെ</string>
+    <string name="save_for_later">പിന്നീട് ചെയ്യാൻ സേവ് ചെയ്യുക</string>
+    <string name="withdraw_now">ഇപ്പോള്‍ പിന്‍വലിക്കുക </string>
+    <string name="please_enter_valid_upi">ദയവായി ഒരു സാധുവായ UPI നല്‍കുക </string>
+    <string name="withdraw_savings">സമ്പാദ്യം പിന്‍വലിക്കുക</string>
+    <string name="if_keep_the_money">നിങ്ങള്‍ പണം സൂക്ഷിച്ച് \nനിക്ഷേപം തുടരുകയാണെങ്കില്‍,</string>
+    <string name="dont_withdraw">പിന്‍വലിക്കരുത്</string>
+    <string name="withdraw_anyways">എന്തായാലും പിന്‍വലിക്കുക</string>
+    <string name="current_sell_price">നിലവിലെ വില്‍പ്പന വില</string>
+    <string name="gold_amount_cannot_be_blank">സ്വര്‍ണ്ണമോ തുകയോ ശൂന്യമാക്കാന്‍ കഴിയില്ല!</string>
+    <string name="failed_to_fetch_sell_options">വില്‍പ്പന ഓപ്ഷനുകള്‍ ലഭ്യമാക്കുന്നതില്‍ പരാജയപ്പെട്ടു</string>
+    <string name="user_gold_balance_not_available">നിങ്ങളുടെ ഗോള്‍ഡ്‌ ബാലന്‍സ് ലഭ്യമല്ല.</string>
+    <string name="no_gold_amount_for_withdrawl">പിന്‍വലിക്കാന്‍ സ്വര്‍ണ്ണം ലഭ്യമല്ല.</string>
+    <string name="money_will_grow_to">നിങ്ങളുടെ പണം വർധിക്കുന്നത്</string>
+    <string name="next_10_years">അടുത്ത 10 വര്‍ഷത്തില്‍ </string>
+    <string name="gift_gold">സ്വര്‍ണ്ണം സമ്മാനിക്കൂ</string>
+    <string name="_100_secure_24k_99_95_pure_gold">100% സുരക്ഷിതം | 24K | 99.5% ശുദ്ധ സ്വര്‍ണ്ണം</string>
+    <string name="tap_to_enter_value_in_grams">ഗ്രാമില്‍ തുക നല്‍കാന്‍ അമര്‍ത്തുക</string>
+    <string name="price_valid_for_min">തുകയുടെ സാധുത —:— മിനിട്ട്</string>
+    <string name="pay_and_send">പണം നല്‍കി അയയ്ക്കുക</string>
+    <string name="insufficient_balance_in_you_jar_locker">നിങ്ങളുടെ ജാര്‍ ലോക്കറില്‍ മതിയായ ബാലന്‍സ് ഇല്ല</string>
+    <string name="send_gift">സമ്മാനം അയയ്ക്കുക</string>
+    <string name="amount_will_be_deducted_from_you_jar_locker">💡 നിങ്ങളുടെ ജാര്‍ ലോക്കറില്‍ നിന്ന് തുക കുറയ്ക്കും</string>
+    <string name="enter_your_phone_number">ഫോണ്‍ നമ്പര്‍ നല്‍കുക</string>
+    <string name="enter_mobile_number">മൊബൈല്‍ നമ്പര്‍ നല്‍കുക</string>
+    <string name="send_a_gift_securely">സമ്മാനം സുരക്ഷിതമായി അയയ്ക്കുക</string>
+    <string name="select_a_contact">ഒരു കോണ്‍ടാക്റ്റ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="you_pay">നിങ്ങള്‍ നൽകേണ്ട പണം</string>
+    <string name="rs_0">₹0.0</string>
+    <string name="_0_5gm">0.5ഗ്രാം </string>
+    <string name="_1gm">1ഗ്രാം </string>
+    <string name="_2gm">2ഗ്രാം </string>
+    <string name="_5gm">5ഗ്രാം </string>
+    <string name="most_gifted">ഏറ്റവും സമ്മാനിക്കപ്പെടുന്നത്</string>
+    <string name="rs_sign">₹</string>
+    <string name="_0_0000gm">0.0000ഗ്രാം </string>
+    <string name="text_101">₹101</string>
+    <string name="text_201">₹201</string>
+    <string name="text_501">₹501</string>
+    <string name="text_1001">₹1001</string>
+    <string name="text_5001">₹5001</string>
+    <string name="please_try_again_with_different_amount">ദയവായി മറ്റൊരു തുക വെച്ച് വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="who_do_you_want_to_gift_the_gold">നിങ്ങള്‍ക്ക് ആര്‍ക്കാണ് സ്വര്‍ണ്ണം സമ്മാനമായി നല്‍കേണ്ടത്?</string>
+    <string name="sending_to">അയയ്ക്കുന്നത്</string>
+    <string name="how_much_gold_you_want_to_gift">നിങ്ങള്‍ക്ക് എത്ര സ്വര്‍ണ്ണം സമ്മാനമായി നല്‍കണം?</string>
+    <string name="i_want_to_gift_gold">എനിക്ക് %sഗ്രാം സ്വര്‍ണ്ണം സമ്മാനമായി നല്‍കണം</string>
+    <string name="add_a_message_to_make_your_gift_special">നിങ്ങളുടെ സമ്മാനം സവിശേഷമാക്കുന്നതിന്\nഒരു സന്ദേശം ചേര്‍ക്കുക</string>
+    <string name="they_ll_get_a_message_soon">അവര്‍ക്ക് ഉടന്‍ ഒരു സന്ദേശം ലഭിക്കും</string>
+    <string name="current_gold_balance_">നിലവിലെ ഗോള്‍ഡ്‌ ബാലന്‍സ്: %.4f</string>
+    <string name="pay_remaining_rs">ബാക്കിയുള്ള പണം: ₹%.2f</string>
+    <string name="add_a_special_message">ഒരു പ്രത്യേക സന്ദേശം ചേര്‍ക്കുക</string>
+    <string name="mobile_number_can_not_be_empty">മൊബൈല്‍ നമ്പര്‍  ശൂന്യമായിരിക്കരുത്</string>
+    <string name="invalid_number">അസാധുവായ നമ്പര്‍</string>
+    <string name="you_gift">നിങ്ങള്‍ സമ്മാനിക്കുന്നത്</string>
+    <string name="special_message">പ്രത്യേക സന്ദേശം</string>
+    <string name="rs_value_strike"><strike>₹%.2f</strike></string>
+    <string name="rs_value">₹%.2f</string>
+    <string name="rs_value_int">₹%d</string>
+    <string name="rs_value_string">₹%s</string>
+    <string name="invest_percent"><strike>നിക്ഷേപിക്കുക %d%%</strike></string>
+    <string name="failed_to_get_contact">കോണ്‍ടാക്റ്റ് കിട്ടിയില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="current_buy_price_rs">നിലവിലെ വാങ്ങല്‍ തുക ₹%.2f</string>
+    <string name="please_try_again">ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="gift_summary">സമ്മാന ചുരുക്കം</string>
+    <string name="you_are_gifting">നിങ്ങള്‍ സമ്മാനിക്കുന്നു</string>
+    <string name="to_your_contact">നിങ്ങളുടെ കോണ്‍ടാക്റ്റിന്</string>
+    <string name="i_confirm">ഞാന്‍ സ്ഥിരീകരിക്കുന്നു</string>
+    <string name="gm_gold">%s ഗ്രാം സ്വര്‍ണ്ണം</string>
+    <string name="value_in_rupee_x">മൂല്യം രൂപയില്‍: ₹%s</string>
+    <string name="_0_140">0/140</string>
+    <string name="char_count_140">%d/140</string>
+    <string name="start_typing">ടൈപ്പ് ചെയ്യാന്‍ തുടങ്ങൂ...</string>
+    <string name="gift_share_msg">ഹായ്, ഞാന്‍ നിങ്ങള്‍ക്ക് ഒരു സ്വര്‍ണ്ണ സമ്മാനം അയയ്ക്കുന്നു, കാരണം നിങ്ങള്‍ എനിക്ക് അത്രയും വിലപ്പെട്ടതാണ്‌ 🎁\nജാര്‍ ആപ്പില്‍ അത് ഇപ്പോൾ നേടുക! %s</string>
+    <string name="not_allowed">അനുവദിക്കില്ല!</string>
+
+    <string name="free_gold_delivery">സൗജന്യ സ്വർണ ഡെലിവറി</string>
+    <string name="free_gold_delivery_description">24K 99.5% ശുദ്ധ സ്വര്‍ണ്ണ നാണയങ്ങള്‍ നിങ്ങളുടെ വീട്ടുപടിക്കൽ നേടൂ</string>
+
+    <string name="invest_winnings">വിജയങ്ങൾ നിക്ഷേപിക്കുക</string>
+    <string name="how_much_to_invest">എത്ര നിക്ഷേപിക്കണം?</string>
+    <string name="invest_all_winnings">എല്ലാ വിജയങ്ങളും നിക്ഷേപിക്കുക</string>
+    <string name="jar">ജാര്‍ </string>
+    <string name="our_servers_are_taking_a_short_maintenance_break">ഞങ്ങളുടെ സെര്‍വറുകളില്‍ ചെറിയ അറ്റകുറ്റപ്പണികള്‍ നടക്കുന്നു.</string>
+    <string name="it_will_be_back_in">%sല്‍ തിരിച്ചെത്തും</string>
+    <string name="savings_resumed">സമ്പാദ്യം പുനരാരംഭിച്ചു</string>
+    <string name="saving_paused_for">സമ്പാദ്യം താല്‍ക്കാലികമായി നിര്‍ത്തിയത്</string>
+    <string name="jar_wont_track_your_sms">ഈ സമയത്ത് ജാര്‍ നിങ്ങളുടെ ചില്ലറയും പ്രതിദിന തുകയും ട്രാക്ക് ചെയ്യുകയോ സേവ് ചെയ്യുകയോ ചെയ്യില്ല.</string>
+    <string name="its_good_to_see_you_save_again">നിങ്ങള്‍ വീണ്ടും സേവ് ചെയ്യുന്നത് കാണുന്നതില്‍ സന്തോഷമുണ്ട്.</string>
+    <string name="started_tracking_your_spare_change">നിങ്ങളുടെ ചില്ലറ ഞങ്ങള്‍ ട്രാക്ക് ചെയ്യാന്‍ തുടങ്ങി. നിങ്ങള്‍ പ്രതിദിന തുക നിശ്ചയിച്ചിട്ടുണ്ടെങ്കില്‍, ഇന്നത്തെ സമ്പാദ്യത്തിലേക്ക് ഞങ്ങള്‍ അതും ചേര്‍ക്കും.</string>
+    <string name="your_referrals">നിങ്ങളുടെ റെഫറലുകൾ</string>
+    <string name="no_referrals_found">റെഫറലുകളൊന്നും കണ്ടെത്തിയില്ല </string>
+    <string name="keep_investing_x_gms_to_go">നിക്ഷേപം തുടരുക | %.4fഗ്രാം കൂടെ</string>
+    <string name="you_in_top_5_percent_x_gms_to_go">നിങ്ങൾ മുകളിലെ 5%% ലാണ് | ഗംഭീരമായിരിക്കുന്നു | %.4fഗ്രാം കൂടെ </string>
+    <string name="you_in_top_1_percent_x_gms_to_go">നിങ്ങൾ മുകളിലെ 1%% ലാണ് | ഗംഭീരമായിരിക്കുന്നു | %.4fഗ്രാം കൂടെ </string>
+
+    <string name="version_name_number">%s(%d)</string>
+    <string name="you_have_successfully_changed_you_number">നിങ്ങള്‍ വിജയകരമായി നമ്പര്‍ മാറ്റി </string>
+    <string name="please_login_with_the_new_number">പുതിയ നമ്പര്‍ വെച്ച് ലോഗിന്‍ ചെയ്യുക. </string>
+    <string name="saving_simplified">സമ്പാദ്യം ലളിതമാക്കി. </string>
+    <string name="lets_finish_your_sign_up_and_help_you_save_money">നിങ്ങളുടെ സൈന്‍ അപ്പ് പൂര്‍ത്തിയാക്കി പണം സേവ് ചെയ്യാന്‍ നിങ്ങളെ സഹായിക്കാം!</string>
+    <string name="we_missed_you">ഞങ്ങള്‍ നിങ്ങളെ മിസ്സ് ചെയ്തു</string>
+    <string name="start_now">ഇപ്പോള്‍ തുടങ്ങുക</string>
+    <string name="by_proceeding_you_accept_the_terms_and_conditions_read_the_privacy_policy_here">തുടരുന്നതിലൂടെ, നിങ്ങള്‍ നിബന്ധനകളും വ്യവസ്ഥകളും അംഗീകരിക്കുന്നു \nസ്വകാര്യതാ നയം ഇവിടെ വായിക്കുക.</string>
+    <string name="enter_your_ten_digit_phone_number"><font size="14">നിങ്ങളുടെ 10-അക്ക ഫോണ്‍ നമ്പര്‍ നല്‍കുക</font></string>
+    <string name="enter_your_phone_number_to_start_saving">സേവിംഗ്സ് ആരംഭിക്കാന്‍ നിങ്ങളുടെ ഫോണ്‍ നമ്പര്‍ നല്‍കുക.</string>
+    <string name="get_otp">Otp നേടുക</string>
+    <string name="here">ഇവിടെ</string>
+
+    <string name="age_not_valid">പ്രായം 18ല്‍ കുറയരുത്</string>
+    <string name="amount_can_not_be_less_than">തുക %sല്‍ കുറയരുത്</string>
+    <string name="have_a_promo_code">പ്രൊമോ കോഡ് ഉണ്ടോ?</string>
+    <string name="gold_price_pure_99">സ്വര്‍ണ വില (99.99% ശുദ്ധം)</string>
+    <string name="free_limited_time_offer">സൗജന്യം (പരിമിത കാല ഓഫർ)</string>
+    <string name="no_delivery_address_available">ഡെലിവറി വിലാസം ലഭ്യമല്ല </string>
+
+    <string name="continue_with_truecaller"><u>ട്രൂകോളര്‍ വെച്ച് തുടരുകr</u></string>
+    <string name="mobile_number_is_not_valid">മൊബൈല്‍ നമ്പര്‍ സാധുവല്ല.</string>
+    <string name="mobile_number_should_be_of_10_digits">മൊബൈല്‍ നമ്പര്‍ 10 അക്കങ്ങളായിരിക്കണം.</string>
+
+    <string name="tap_to_reveal">വെളിപ്പെടുത്താന്‍ അമര്‍ത്തുക</string>
+    <string name="someone_has_sent_a_gift_for_you">ആരോ നിങ്ങള്‍ക്ക് ഒരു സമ്മാനം അയച്ചിട്ടുണ്ട്</string>
+    <string name="x_has_sent_a_gift_for_you">%s നിങ്ങള്‍ക്ക് ഒരു സമ്മാനം അയച്ചിട്ടുണ്ട്</string>
+    <string name="_99_percent_24k_pure_gold">99.5% | 24k | ശുദ്ധ സ്വര്‍ണ്ണം</string>
+    <string name="okay2">ശരി </string>
+    <string name="doubled_saving_share_msg">ഞാന്‍ ജാറിലെ എന്‍റെ സമ്പാദ്യം ഇരട്ടിയാക്കി! നിങ്ങളുടെ പണം സ്വര്‍ണ്ണത്തില്‍ നിക്ഷേപിക്കുന്നതിനുള്ള ഏറ്റവും സുരക്ഷിതമായ മാര്‍ഗ്ഗം. നിങ്ങള്‍ക്കും തല്‍ക്ഷണം സേവ് ചെയ്യാന്‍ തുടങ്ങാം. ആപ്പ് ഇപ്പോൾ ഡൌൺലോഡ് ചെയ്യുക.</string>
+    <string name="just_saved">ഞാന്‍ ലാഭിച്ചത് രൂപ.</string>
+    <string name="the_safest_way_to_save_your_money_in_gold">ജാര്‍ ആപ്പിൽ എന്‍റെ ചില്ലറ സേവ് ചെയ്ത് ഞാന്‍ ഇന്ന് \u20B9%d സമ്പാദിച്ചു! ദിവസേന പണം ലാഭിക്കുന്നതിനും സ്വര്‍ണ്ണത്തില്‍ നിക്ഷേപിക്കുന്നതിനുമുള്ള ലളിതവുമായ സുരക്ഷിതവുമായ ആപ്പാണിത്. എന്നോടൊപ്പം ജാര്‍ ആപ്പ് ഉപയോഗിച്ച് റിവാര്‍ഡ് നേടൂ.</string>
+    <string name="sure_to_logout">നിങ്ങള്‍ക്ക് ലോഗൗട്ട് ചെയ്യണമെന്ന് ഉറപ്പാണോ?</string>
+    <string name="no">അല്ല </string>
+    <string name="yes_logout">അതെ, ലോഗൗട്ട് ചെയ്യുക</string>
+
+    <string name="complete_your_kyc">നിങ്ങളുടെ KYC പൂര്‍ത്തിയാക്കൂ</string>
+    <string name="gold_investment_paused">സ്വര്‍ണ്ണ നിക്ഷേപം താല്‍ക്കാലികമായി നിര്‍ത്തി</string>
+    <string name="setup_kyc">KYC സെറ്റപ്പ് ചെയ്യുക</string>
+    <string name="we_need_your_pan_details">eKYCയുമായി മുന്നോട്ട് പോകാൻ ഞങ്ങള്‍ക്ക് നിങ്ങളുടെ PAN വിശദാംശങ്ങള്‍ ആവശ്യമാണ്</string>
+    <string name="we_need_kyc_details_subheading">സര്‍ക്കാര്‍ ചട്ടങ്ങള്‍ പ്രകാരം 30 ഗ്രാമിന് മുകളിൽ സ്വര്‍ണ്ണം സൂക്ഷിക്കാന്‍ KYC നിര്‍ബന്ധമാണ്‌, അതായത് ഏകദേശം ₹1.5 ലക്ഷം</string>
+    <string name="upload_pan_card">PAN കാര്‍ഡ് അപ്‌ലോഡ് ചെയ്യുക</string>
+    <string name="take_a_photo">ഒരു ഫോട്ടോ എടുക്കുക</string>
+    <string name="upload_photo">ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുക</string>
+    <string name="enter_pan_manually">PAN കാര്‍ഡ് വിശദാംശങ്ങള്‍ നേരിട്ട് നല്‍കുക</string>
+    <string name="verify_pan">PAN സ്ഥിരീകരിക്കുക</string>
+    <string name="i_consent_jar_ekyc">എന്‍റെ പേരില്‍ eKYC യുമായി മുന്നോട്ട് പോകാൻ ജാറിനു ഞാൻ സമ്മതം നൽകുന്നു</string>
+    <string name="complete_kyc">KYC പൂര്‍ത്തിയാക്കുക</string>
+    <string name="enter_your_pan_details">നിങ്ങളുട PAN വിശദാംശങ്ങള്‍ നല്‍കുക</string>
+    <string name="verify_pan_details">PAN വിശദാംശങ്ങള്‍ സ്ഥിരീകരിക്കുക</string>
+    <string name="kyc_verified_successfully">KYC വിജയകരമായി സ്ഥിരീകരിച്ചു</string>
+    <string name="kyc_verified_successfully_subheading">നിങ്ങളുടെ KYC വിജയകരമായി സ്ഥിരീകരിച്ചു. നിങ്ങള്‍ക്ക് വീണ്ടും നിക്ഷേപം തുടങ്ങാം.</string>
+    <string name="kyc_verification_failed">KYC സ്ഥിരീകരണം പരാജയപ്പെട്ടു</string>
+    <string name="kyc_verification_failed_subheading">നിങ്ങളുട KYC സ്ഥിരീകരിക്കുന്നതില്‍ ഒരു പ്രശ്നമുണ്ട്. ദയവായി അൽപ സമയത്തിന് ശേഷം വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="kyc_details">KYC വിശദാംശങ്ങള്‍</string>
+    <string name="verified_on">സ്ഥിരീകരിച്ചത് %s</string>
+    <string name="kyc_limit_reached_message">KYC ഇല്ലാതെ സ്വര്‍ണ്ണം വാങ്ങുന്നതിനുള്ള പരിധി എത്തി. ദയവായി നിങ്ങളുടെ KYC പൂര്‍ത്തിയാക്കുക.</string>
+    <string name="why_is_this_showing"><u>എന്തുകൊണ്ടാണ് ഇത് കാണിക്കുന്നത്?</u></string>
+    <string name="gifted_you_gold">%s നിങ്ങള്‍ക്ക് സ്വര്‍ണ്ണം സമ്മാനിച്ചു</string>
+    <string name="complete_the_kyc_to_claim_gold">നിങ്ങളുടെ സ്വര്‍ണ്ണം നേടാൻ KYC പൂര്‍ത്തിയാക്കുക</string>
+    <string name="set_up_kyc">KYC സെറ്റപ്പ് ചെയ്യുക</string>
+
+    <string name="pan_card_verification">പാന്‍ കാര്‍ഡ് സ്ഥിരീകരണം</string>
+    <string name="enter_your_full_name">മുഴുവന്‍ പേര് നല്‍കുക</string>
+    <string name="full_name_as_per_pan">മുഴുവന്‍ പേര് (പാന്‍ കാര്‍ഡ് പ്രകാരം)</string>
+    <string name="pan_number">പാന്‍ നമ്പര്‍ </string>
+    <string name="abcde_pan_hint">ABCDE****A</string>
+    <string name="date_of_birth">ജനന തീയതി </string>
+    <string name="yyyy_mm_dd">YYYY-MM-DD</string>
+    <string name="kyc_verified">KYC സ്ഥിരീകരിച്ചു </string>
+    <string name="please_try">ദയവായി ശ്രമിക്കുക </string>
+    <string name="uploaded">അപ്‌ലോഡ് ചെയ്തു </string>
+    <string name="image_recognition_failed">ചിത്രം തിരിച്ചറിയുന്നതില്‍ പരാജയപ്പെട്ടു</string>
+    <string name="pan_card">പാന്‍ കാര്‍ഡ്</string>
+    <string name="frequently_asked_questions">എപ്പോഴും ചോദിക്കുന്ന ചോദ്യങ്ങള്‍</string>
+
+    <string name="max_amount_cannot_be_more_than_rs_2000">പരമാവധി തുക \u20B92000 ല്‍ കൂടരുത്</string>
+    <string name="enter_the_otp">OTP നല്‍കുക</string>
+    <string name="we_ve_sent_to">ഞങ്ങള്‍ അയച്ചിരിക്കുന്നത്</string>
+    <string name="resend_otp">OTP വീണ്ടും അയയ്ക്കുക</string>
+    <string name="call_to_verify">സ്ഥിരീകരിക്കാനുള്ള കോൾ</string>
+    <string name="_in">വരുന്നത്</string>
+    <string name="verify">സ്ഥിരീകരിക്കുക</string>
+    <string name="verifying_phone_number">ഫോണ്‍ നമ്പര്‍ സ്ഥിരീകരിക്കുന്നു</string>
+    <string name="by_calling_you_on_n">%sല്‍ നിങ്ങളെ വിളിച്ച്</string>
+
+    <string name="get_started">തുടങ്ങൂ.</string>
+    <string name="x_y_steps_to_complete">പൂര്‍ത്തിയാക്കാന്‍ %1$d/%2$d ഘട്ടങ്ങള്‍</string>
+    <string name="whats_your_name">എന്താണ് നിന്‍റെ പേര്?</string>
+    <string name="name_seems_very_unique">അത് വളരെ പ്രത്യേകതയുള്ളതായി തോന്നുന്നു. ദയവായി യഥാര്‍ത്ഥമായ എന്തെങ്കിലും നല്‍കുക.</string>
+    <string name="enter_something_real">ദയവായി യഥാര്‍ത്ഥമായ എന്തെങ്കിലും നല്‍കുക.</string>
+    <string name="about_you">നിങ്ങളെക്കുറിച്ച് </string>
+    <string name="whats_your_age">എന്താണ് നിങ്ങളുടെ പ്രായം?</string>
+    <string name="prefer_not_to_say">പറയാതിരിക്കാനാണ് എനിക്കിഷ്ടം</string>
+    <string name="whats_your_gender">നിങ്ങളുടെ ജെന്‍ഡര്‍ ഏതാണ്?</string>
+
+    <string name="please_select_profile_pic">ദയവായി നിങ്ങളുടെ പ്രൊഫൈല്‍ ചിത്രം തിരഞ്ഞെടുക്കുക.</string>
+    <string name="can_be_changed_anytime">സെറ്റിങ്സിൽ എപ്പോള്‍ വേണമെങ്കിലും മാറ്റം വരുത്താവുന്നതാണ്.</string>
+    <string name="select_age">പ്രായം തിരഞ്ഞെടുക്കുക.</string>
+    <string name="allow_sms_permission">SMS അനുമതികള്‍ അനുവദിക്കുക</string>
+    <string name="sms_permission">SMS അനുമതി</string>
+    <string name="we_need_sms_permission_to_calculate">റൗണ്ട്ഓഫുകള്‍ കണക്കാക്കാന്‍ ഞങ്ങള്‍ക്ക് SMS അനുമതി ആവശ്യമാണ്‌. വ്യക്തിപരമായ SMS ഒന്നും വായിക്കില്ല.</string>
+    <string name="have_question_click_here">ചോദ്യങ്ങള്‍ ഉണ്ടോ? ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="permission">അനുമതി</string>
+    <string name="last_step_to_complete">പൂര്‍ത്തിയാക്കാനുള്ള അവസാന ഘട്ടം</string>
+    <string name="sms_permission_faq">SMS അനുമതി FAQ</string>
+    <string name="grant_permission">അനുമതി നല്‍കുക</string>
+    <string name="sms_permission_denied_error">നിങ്ങള്‍ SMS അനുമതി നല്‍കിയില്ലെങ്കില്‍, നിങ്ങള്‍ക്ക് ജാര്‍ സേവനങ്ങള്‍ ഉപയോഗിക്കാന്‍ കഴിയില്ല. ദയവായി SMS അനുമതി നല്‍കുക.</string>
+
+    <string name="success">വിജയം</string>
+    <string name="failure">പരാജയം</string>
+    <string name="dubled">ഇരട്ടിച്ചു</string>
+    <string name="okay_got_it">ശരി, മനസിലായി!</string>
+    <string name="get_timely_alerts_whenever_gold_prices_drop_so_you_can_invest_at_best_prices">മികച്ച വിലയിൽ നിക്ഷേപിക്കാൻ സ്വർണ വില കുറയുമ്പോൾ അറിയിപ്പുകൾ നേടൂ.</string>
+    <string name="get_price_alerts">വില അറിയിപ്പുകൾ നേടൂ</string>
+    <string name="rate_our_app">ഞങ്ങളുടെ ആപ്പ് റേറ്റ് ചെയ്യൂ</string>
+    <string name="rate_our_app_subheading">നിങ്ങൾക്ക് എന്ത് തോന്നുന്നു പറയൂ, നിങ്ങളുടെ പ്രതികരണം ഞങ്ങൾക്ക് പ്രധാനമാണ്. നന്ദി!</string>
+    <string name="very_good">വളരെ മികച്ചത്</string>
+    <string name="what_went_wrong">എന്ത് പിശകാണ് പറ്റിയത്?</string>
+    <string name="tel_us_what_you_think">നിങ്ങൾക്ക് എന്ത് തോന്നുന്നു എന്ന് പറയൂ</string>
+    <string name="thank_you_for_feedback">നിങ്ങളുടെ പ്രതികരണത്തിന് നന്ദി!</string>
+    <string name="your_last_savings_has_been_doubled">നിങ്ങളുടെ അവസാനത്തെ സമ്പാദ്യം ഇരട്ടിയായിരിക്കുന്നു</string>
+    <string name="please_upload_a_clear_image">ദയവായി വ്യക്തമായ ഒരു ചിത്രം അപ്‌ലോഡ് ചെയ്യുക</string>
+    <string name="more">കൂടുതൽ</string>
+    <string name="gold_stored_in_safe_and_secure_lockers">സ്വർണം സുരക്ഷിതം &amp; ഭദ്രം ആയ ലോക്കറുകളിൽ സൂക്ഷിക്കുന്നു</string>
+    <string name="insured_for_free_of_cost_by_our_partners">ഞങ്ങളുടെ പങ്കാളികൾ സൗജന്യമായി ഇൻഷ്വർ ചെയ്തിരിക്കുന്നു</string>
+    <string name="upi_verified">UPI സ്ഥിരീകരിച്ചത്</string>
+    <string name="sell_history_underline"><u>വിൽപന ചരിത്രം</u></string>
+    <string name="resuming_in_d_days">%d ദിവസം(ങ്ങളിൽ) പുനരാരംഭിക്കുന്നു</string>
+
+    <string name="could_not_connect_to_the_internet_please_try_again">ಇಂಟರ್ನೆಟ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ.\nದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="gst_n_perc_m_rupee_per_gm_on_buying_price">GST (%.1f%%) \u20B9%.2f ಪ್ರತಿ ಗ್ರಾಂ ಖರೀದಿ ಬೆಲೆಯಲ್ಲಿ</string>
+    <string name="looks_like_no_otp_enterd">ನೀವು OTP ಅನ್ನು ಎಂಟರ್ ಮಾಡಿಲ್ಲ ಎಂದು ತೋರುತ್ತಿದೆ. ಮುಂದುವರಿಯಲು ದಯವಿಟ್ಟು ರೀಸೆಂಡ್  ಒತ್ತಿರಿ.</string>
+    <string name="redeem_to_get_free_gold">ಉಚಿತ ಚಿನ್ನವನ್ನು ಪಡೆಯಲು ರಿಡೀಮ್ ಮಾಡಿ</string>
+    <string name="claim_promo_code">ಕ್ಲೈಮ್ ಪ್ರೋಮೋ ಕೋಡ್</string>
+    <string name="enter_promo_code">ಪ್ರೋಮೋ ಕೋಡ್ ಎಂಟರ್ ಮಾಡಿ</string>
+    <string name="promo_code">ಪ್ರೋಮೊ ಕೋಡ್</string>
+    <string name="available_promo_codes">ಲಭ್ಯವಿರುವ ಪ್ರೋಮೋ ಕೋಡ್‌ಗಳು</string>
+    <string name="invalid_promo_code">ಸರಿಯಿಲ್ಲದ ಪ್ರೋಮೋ ಕೋಡ್</string>
+    <string name="you_can_request_otp_after">ನಂತರ ನೀವು OTP ಗಾಗಿ ವಿನಂತಿಸಬಹುದು</string>
+    <string name="you_can_verify_via_call_after">ನಂತರ ನೀವು ಕರೆ ಮೂಲಕ ಪರಿಶೀಲಿಸಬಹುದು</string>
+    <string name="having_trouble_reach_out_to_us">ತೊಂದರೆ ಇದೆಯೇ? ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="otp_incorrect_try_again">ಎಂಟರ್ ಮಾಡಿದ OTP ತಪ್ಪಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="otp_limit_exhausted">OTP ಲಿಮಿಟ್ ಮುಗಿದಿದೆ. ದಯವಿಟ್ಟು 10 ನಿಮಿಷಗಳ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="come_back_start_journey">ದಯವಿಟ್ಟು ಹಿಂದೆಕ್ಕೆ ಹೋಗಿ ಮತ್ತು ನಿಮ್ಮ ಸೈನ್ ಅಪ್ ಅನ್ನು ಮತ್ತೆ ಆರಂಭಿಸಿ!</string>
+    <string name="dont_forget_to_grow_savings">ನಿಮ್ಮ ಸೇವಿಂಗ್ಸ್ ಅನ್ನು ಹೆಚ್ಚು ಮಾಡಲು ಮರೆಯಬೇಡಿ.</string>
+    <string name="would_you_like_us_to_auto_invest">ಯಾವುದೇ ಖರ್ಚು ಕಂಡುಬರದಿದ್ದಾಗ ನಾವು ರೂ.10 ಆಟೋ ಇನ್ವೆಸ್ಟ್ ಮಾಡಬೇಕೆಂದು ನೀವು ಬಯಸುವಿರಾ?</string>
+    <string name="how_auto_invest_work"><u>ಆಟೋ ಇನ್ವೆಸ್ಟ್ ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ?</u></string>
+    <string name="yes_save">ಹೌದು, ಸೇವ್ ಮಾಡಿ</string>
+    <string name="click_button_to_get_started">ಆರಂಭಿಸಲು ಈ ಬಟನ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.</string>
+    <string name="you_will_receive_call">ಇದಕ್ಕೆ ಇದಕ್ಕೆ ನಿಮಗೆ ಕರೆ ಮಾಡಲಾಗುತ್ತದೆ</string>
+    <string name="my_number_is_x_otp">ಹಾಯ್, ನನ್ನ ನಂಬರ್ %s ಆಗಿದೆ, ದಯವಿಟ್ಟು ನನಗೆ OTP ಪಡೆಯಲು ಸಹಾಯ ಮಾಡಿ.</string>
+    <string name="login">ಲಾಗಿನ್ ಮಾಡಿ</string>
+    <string name="you_have_account_with_us">ಈಗಾಗಲೇ ನಮ್ಮೊಂದಿಗೆ ನಿಮ್ಮ ಅಕೌಂಟ್ ಇದೆ.</string>
+    <string name="login_with_different_number"><u>ಬೇರೆ ನಂಬರ್ ನೊಂದಿಗೆ ಲಾಗಿನ್/ಸೈನ್ ಅಪ್ ಮಾಡಿ</u></string>
+    <string name="continue_with_x_number">%s ನೊಂದಿಗೆ ಮುಂದುವರಿಸಿ</string>
+
+    <string name="request">അപേക്ഷിക്കുക</string>
+    <string name="multiple_round_offs">അനേകം റൌണ്ട്-ഓഫുകൾ</string>
+    <string name="request_full_breakdown">മുഴുവൻ ബ്രേക്ക്ഡൌൺ അപേക്ഷിക്കുക</string>
+    <string name="breakdown_requested">ബ്രേക്ക്ഡൌൺ അപേക്ഷിച്ചു</string>
+    <string name="breakdown_available">ബ്രേക്ക്ഡൌൺ ലഭ്യമാണ്</string>
+    <string name="breakdown_requested_msg">ബ്രേക്ക്ഡൌൺ അപേക്ഷിച്ചു, നില പരിശോധിക്കാൻ ദയവായി കുറച്ച് സമയത്തിന് ശേഷം തിരികെ വരുക.</string>
+    <string name="auto_investment_details">ഓട്ടോ നിക്ഷേപ വിശദാംശങ്ങൾ</string>
+    <string name="manual_investment_details">മാന്വൽ നിക്ഷേപ വിശദാംശങ്ങൾ</string>
+    <string name="limited_time_offer">പരിമിത കാല ഓഫർ</string>
+    <string name="nearest_five">തൊട്ടടുത്ത അഞ്ച്</string>
+    <string name="nearest_ten">തൊട്ടടുത്ത പത്ത്</string>
+    <string name="the_link_is_copied">ലിങ്ക് കോപ്പി ചെയ്തു</string>
+    <string name="copy_code">കോഡ് കോപ്പി ചെയ്യൂ</string>
+    <string name="my_earnings">എന്റെ സമ്പാദ്യങ്ങൾ</string>
+    <string name="my_earnings_with_dot">എന്റെ സമ്പാദ്യങ്ങൾ <font color='#EB6A6E'>\u25CF</font></string>
+    <string name="share_invite_link">ക്ഷണിക്കാനുള്ള ലിങ്ക് ഷെയർ ചെയ്യൂ</string>
+    <string name="how_refer_and_earn_works"><u>റെഫർ ചെയ്തു സമ്പാദ്യം എങ്ങനെ പ്രവർത്തിക്കുന്നു?</u></string>
+    <string name="your_referral_code">നിങ്ങളുടെ റെഫറൽ കോഡ്</string>
+    <string name="get_free_gold">റെഫർ ചെയ്ത് സൗജന്യ സ്വർണം നേടൂ</string>
+    <string name="invite_your_friend_and_earn">നിങ്ങളുടെ സുഹൃത്തുക്കളെ ജാറിലേക്ക് ക്ഷണിച്ച് അവർ നിക്ഷേപങ്ങൾ നടത്തുന്നത് തുടരുമ്പോൾ എല്ലാ ആഴ്ചയും സൗജന്യ സ്വർണം നേടൂ</string>
+    <string name="whatsapp">വാട്സാപ്പ്</string>
+    <string name="sms">SMS/എസ്എംഎസ്</string>
+    <string name="start_earning">സമ്പാദ്യം തുടങ്ങൂ</string>
+    <string name="copy_link_label">ലിങ്ക് കോപ്പി ചെയ്യൂ</string>
+    <string name="messaging_app_not_installed">മെസേജ് ചെയ്യാൻ ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല</string>
+    <string name="email_app_not_installed">ഇമെയിൽ ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല</string>
+    <string name="sharing_app_not_installed">ഷെയർ ചെയ്യാൻ ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല</string>
+    <string name="read_now">ഇപ്പോൾ വായിക്കൂ</string>
+    <string name="check_out_help">എന്തെങ്കിലും പ്രശ്നം നേരിടുന്നോ?\nഞങ്ങളുടെ പിന്തുണ ലേഖനങ്ങൾ പരിശോധിക്കുക</string>
+    <string name="cannot_find_connect_on_whatsapp">നിങ്ങൾ നോക്കുന്നത് കണ്ടെത്താൻ കഴിഞ്ഞില്ലേ?\nഞങ്ങളുമായി വാട്സാപ്പിൽ ബന്ധപ്പെടുക</string>
+    <string name="no_results_found_for">\"%s\" ന് ഫലങ്ങൾ ഒന്നും ലഭിച്ചില്ല</string>
+    <string name="need_help">സഹായം വേണോ?</string>
+    <string name="download_invoice">ഇൻവോയ്‌സ്‌ ഡൌൺലോഡ് ചെയ്യുക</string>
+    <string name="transaction_id">ട്രാൻസാക്ഷൻ ഐഡി</string>
+    <string name="bank_level_security_by_jar">ജാർ വക ബാങ്ക് പോലെ സുരക്ഷr</string>
+    <string name="gold_in_locker">ലോക്കറിലെ സ്വർണം</string>
+    <string name="current_value">നിലവിലെ മൂല്യം</string>
+    <string name="history">ചരിത്രം</string>
+    <string name="convert_to_gold">സ്വർണമാക്കി മാറ്റുക</string>
+    <string name="spin_winnings">കറക്കൽ വിജയങ്ങൾ</string>
+    <string name="referral_winnings">റെഫറൽ വിജയങ്ങൾ</string>
+    <string name="partner_bonus">പങ്കാളി ബോണസ്</string>
+    <string name="winnings">വിജയങ്ങൾ</string>
+    <string name="convert_to_gold_option_will_be_enabled_after_your_winnings_are_more_than_100">നിങ്ങളുടെ വിജയങ്ങൾ ₹100 ലും കൂടുതൽ ആകുമ്പോൾ സ്വർണമാക്കി മാറ്റുക എന്ന ഓപ്‌ഷൻ ലഭ്യമാകും</string>
+    <string name="contact_us">ഞങ്ങളുമായി ബന്ധപ്പെടുക</string>
+    <string name="winnings_debited">ചിലവാക്കിയ വിജയങ്ങൾ</string>
+    <string name="tap_to_view_transaction_details">ട്രാൻസാക്ഷൻ വിശദാംശങ്ങൾ കാണാൻ അമർത്തുക</string>
+    <string name="you_can_see_all_your_transactions_here">നിങ്ങളുടെ എല്ലാ ട്രാൻസാക്ഷനുകളും ഇവിടെ കാണാം</string>
+    <string name="no_winning_yet">ഇത് വരെ വിജയങ്ങൾ ഒന്നുമില്ല</string>
+    <string name="you_can_see_all_winnings_here">നിങ്ങളുടെ എല്ലാ വിജയങ്ങളും ഇവിടെ കാണാം</string>
+    <string name="start_saving_earn_winnings">നിങ്ങളുടെ സമ്പാദ്യ യാത്ര തുടങ്ങി വിജയങ്ങൾ നേടൂ.</string>
+    <string name="no_transaction_yet">ഇത് വരെ ട്രാൻസാക്ഷൻ ഒന്നുമില്ല</string>
+    <string name="start_saving_journey">നിങ്ങളുടെ സമ്പാദ്യ യാത്ര തുടങ്ങൂ</string>
+    <string name="pull_down_to_refresh">റിഫ്രഷ് ചെയ്യാൻ താഴേക്ക് നീക്കൂ</string>
+    <string name="sent_to">അയക്കേണ്ടത്</string>
+    <string name="view_message">മെസേജ് കാണൂ</string>
+    <string name="tracking_link">ട്രാക്കിങ് ലിങ്ക്</string>
+    <string name="tracking_link_will_be_generated_after_the_gold_is_dispatched">സ്വർണം അയച്ച ശേഷം ട്രാക്കിങ് ലിങ്ക് കാണപ്പെടും.</string>
+    <string name="track_now"><u>ഇപ്പോൾ ട്രാക്ക് ചെയ്യൂ</u></string>
+    <string name="x_roundoff">%d റൌണ്ട്ഓഫുകൾ </string>
+    <string name="try_again">വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="others">മറ്റുള്ളവ</string>
+    <plurals name="x_filters_applied">
+        <item quantity="one">(%d) ഫിൽറ്റർ പ്രയോഗിച്ചു</item>
+        <item quantity="other">(%d) ഫിൽറ്ററുകൾ പ്രയോഗിച്ചു</item>
+    </plurals>
+    <string name="all">എല്ലാം</string>
+    <string name="received_from">ലഭിച്ചത്</string>
+    <string name="hey_need_help_with_transactions">ഹായ്! എന്റെ ട്രാൻസാക്ഷനുകളിൽ കുറച്ച് സഹായം വേണം.</string>
+    <string name="winnings_converted_to_gold_successfully">വിജയങ്ങൾ വിജയകരമായി സ്വർണമാക്കി മാറ്റി</string>
+    <string name="tracking_link_available">ട്രാക്കിങ് ലിങ്ക് ലഭ്യമാണ്</string>
+    <string name="account">അക്കൗണ്ട്</string>
+    <string name="enter_your_age">നിങ്ങളുടെ പ്രായം രേഖപ്പെടുത്തുക</string>
+    <string name="you_must_be_above_18">ഈ ആപ്പ് ഉപയോഗിക്കാൻ നിങ്ങളുടെ പ്രായം 18 വയസോ അതിൽ കൂടുതലോ ആയിരിക്കണം.</string>
+    <string name="maximum_age_limit_reached">പരമാവധി പ്രായ പരിധി ആയി. ദയവായി വേറൊരു പ്രായം രേഖപ്പെടുത്തി ശ്രമിക്കുക</string>
+    <string name="mandatory_update_required">നിർബന്ധമായും അപ്‌ഡേറ്റ് ആവശ്യമാണ്</string>
+    <string name="update_now">ഇപ്പോൾ അപ്‌ഡേറ്റ് ചെയ്യൂ</string>
+    <string name="mandatory_update_required_description">ചില പ്രധാന മെച്ചപ്പെടുത്തലുകൾ കാരണം, നിങ്ങൾ ആപ്പ് അപ്‌ഡേറ്റ് ചെയ്യണമെന്ന് അപേക്ഷിക്കുന്നു.</string>
+    <string name="no_app_found_enter_manually">അപേക്ഷ നിർവഹിക്കാൻ കഴിയുന്ന ആപ്പൊന്നും കണ്ടില്ല. ദയവായി ഫോൺ നമ്പർ നേരിട്ട് രേഖപ്പെടുത്തുക.</string>
+    <string name="kindly_reconfigure_autopay_to_set_your_new_daily_savings_amount">നിങ്ങളുടെ പുതിയ പ്രതിദിന സേവിങ്സ് തുക നിശ്ചയിക്കാൻ ദയവായി ഓട്ടോപേ റീകോൺഫിഗർ ചെയ്യുക.</string>
+    <string name="re_configure_autopay">ഓട്ടോപേ റീകോൺഫിഗർ ചെയ്യുക</string>
+    <string name="you_are_all_set_to_invest_n_everyday">\u20B9%.2f പ്രതിദിനം നിക്ഷേപിക്കാൻ നിങ്ങൾ തയ്യാറാണ്</string>
+    <string name="request_placed">അപേക്ഷ സമർപ്പിച്ചു</string>
+    <string name="buy_new_line_digital_gold">ഡിജിറ്റൽ സ്വർണം\nവാങ്ങൂ</string>
+    <string name="autopay_reconfiguration_failed">ഓട്ടോപേ റീകോൺഫിഗറേഷൻ പരാജയപ്പെട്ടു</string>
+    <string name="upload_pan_details">PAN വിശദാംശങ്ങൾ അപ്‌ലോഡ് ചെയ്യുക</string>
+    <string name="upload_pan_details_sub_heading">ആപ്പിലെ എല്ലാ സവിശേഷതകളും ലഭ്യമാകാൻ ദയവായി നിങ്ങളുടെ PAN വിശദാംശങ്ങൾ ചേർക്കുക. നിങ്ങളെ തിരിച്ചറിയാൻ ഇത് ഞങ്ങൾക്ക് ആവശ്യമാണ്.</string>
+    <string name="choose_from_gallery">ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക</string>
+    <string name="i_don_t_have_a_pan_card">എനിക്ക് PAN കാർഡ് ഇല്ല</string>
+    <string name="no_pan_msg">ഹായ്! എനിക്ക് PAN കാർഡ് ഇല്ല. ദയവായി KYC പരിശോധന പൂർത്തിയാക്കാൻ എന്നെ സഹായിക്കൂ.</string>
+    <string name="upload_pan_msg">ഹായ്! ദയവായി ഫോട്ടോ വ്യക്തമാണെന്നും സമാന്തരമായി വെച്ചിട്ടുണ്ടെന്നും ഉറപ്പാക്കുക.</string>
+    <string name="continue_str">തുടരുക</string>
+    <string name="retake">വീണ്ടും എടുക്കുക</string>
+    <string name="please_upload_a_clear_image_or_upload_manually">ദയവായി ഇമേജ് വീണ്ടും എടുക്കുക അല്ലെങ്കിൽ വിവരങ്ങൾ നേരിട്ട് രേഖപ്പെടുത്തുക</string>
+    <string name="open_camera">ക്യാമറ തുറക്കുക</string>
+    <string name="open_gallery">ഗാലറി തുറക്കുക</string>
+    <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="pan_10_digit_msg">Pan നമ്പർ 10 അക്കം ആയിരിക്കണം</string>
+    <string name="pan_no_space_msg">Pan നമ്പറിൽ സ്പേസ് ഉണ്ടായിരിക്കരുത്</string>
+    <string name="pan_failure_wa_msg">ഹായ്! എന്റെ PAN കാർഡ് പരിശോധന പരാജയപ്പെട്ടു.  ദയവായി KYC പരിശോധന പൂർത്തിയാക്കാൻ എന്നെ സഹായിക്കൂ.</string>
+    <string name="driving_license">ഡ്രൈവിംഗ് ലൈസൻസ്</string>
+    <string name="aadhaar_number">ആധാർ നമ്പർ</string>
+    <string name="voter_id">വോട്ടർ ഐഡി</string>
+    <string name="passport_number">പാസ്പോർട്ട് നമ്പർ</string>
+    <string name="document_id">ഡോക്യുമെന്റ് ഐഡി</string>
+    <string name="rotate">കറക്കുക</string>
+    <string name="show_pan_number">PAN നമ്പർ കാണിക്കുക</string>
+    <string name="hide_pan_number">PAN നമ്പർ മറയ്ക്കുക</string>
+    <string name="show_driving_license">ഡ്രൈവിങ് ലൈസൻസ് കാണിക്കുക</string>
+    <string name="hide_driving_license">ഡ്രൈവിങ് ലൈസൻസ് മറയ്ക്കുക</string>
+    <string name="show_voter_id">വോട്ടർ ഐഡി കാണിക്കുക</string>
+    <string name="hide_voter_id">വോട്ടർ ഐഡി മറയ്ക്കുക</string>
+    <string name="show_aadhaar_number">ആധാർ നമ്പർ കാണിക്കുക</string>
+    <string name="hide_aadhaar_number">ആധാർ നമ്പർ മറയ്ക്കുക</string>
+    <string name="show_passport_number">പാസ്പോർട്ട് നമ്പർ കാണിക്കുക</string>
+    <string name="hide_passport_number">പാസ്പോർട്ട് നമ്പർ മറയ്ക്കുക</string>
+    <string name="show_document_id">ഡോക്യുമെന്റ് ഐഡി കാണിക്കുക</string>
+    <string name="hide_document_id">ഡോക്യുമെന്റ് ഐഡി മറയ്ക്കുക</string>
+    <string name="get_your_gold_backed_credit_card">നിങ്ങളുടെ സ്വർണ നിറത്തിൽ പുറക് വശമുള്ള ക്രെഡിറ്റ് കാർഡ് നേടുക.</string>
+    <string name="earn_rewards_upto_5000_per_month"><b>പ്രതിമാസം ₹5000</b> വരെ നേടുക</string>
+    <string name="claim_early_access">നേരത്തെ കാണാൻ അവസരം നേടുക</string>
+    <string name="limited_entries_only">പരിമിതമായ എൻട്രികൾ മാത്രം <b>%s</b></string>
+    <string name="invite_your_friends_v2">നിങ്ങളുടെ സുഹൃത്തുക്കളെ ജാറിലേക്ക് ക്ഷണിച്ച്\n₹500 വരെ നേടുക</string>
+    <string name="you_earned">നിങ്ങൾ സമ്പാദിച്ചത്</string>
+    <string name="the_referral_is_copied">ഇൻവൈറ്റ് കോപ്പി ചെയ്തു</string>
+    <string name="start">തുടങ്ങുക</string>
+    <string name="claim_now">ഇപ്പോൾ ക്ലെയിം ചെയ്യുക</string>
+    <string name="bonuses_available">%d കൂടുതൽ ബോണസുകൾ ലഭ്യമാണ്</string>
+    <string name="bonus_available">%d കൂടുതൽ ബോണസ് ലഭ്യമാണ്</string>
+    <string name="show_all"><u>എല്ലാം കാണിക്കുക</u></string>
+    <string name="partnership_bonus">പങ്കാളിത്ത ബോണസ്</string>
+    <string name="claimed">ക്ലെയിം ചെയ്തു</string>
+    <string name="turn_your_saving_into_gold">ഒരു ക്ലിക്കിൽ നിങ്ങളുടെ  <b><font color="#FFFFFF">സമ്പാദ്യം</font></b> <b><font color="#FFEEC979">സ്വർണമാക്കി</font></b> മാറ്റുക</string>
+    <string name="delete">ഡിലീറ്റ് ചെയ്യുക</string>
+    <string name="notification_deleted">അറിയിപ്പ് ഡിലീറ്റ് ചെയ്തു</string>
+    <string name="no_new_notifications">പുതിയ അറിയിപ്പുകൾ ഒന്നുമില്ല</string>
+    <string name="all_caught_up">എല്ലാം കഴിഞ്ഞു</string>
+    <string name="x_new">%d പുതിയത്</string>
+    <string name="x_plus_new">%d+ പുതിയത്</string>
+    <string name="view_profile"><u>പ്രൊഫൈൽ കാണുക</u></string>
+    <string name="made_in_love_with_india">ഇന്ത്യയിൽ ❤️ ഓടെ നിർമിച്ചത്</string>
+    <string name="update_available"><u>അപ്‌ഡേറ്റ് ലഭ്യമാണ്</u></string>
+    <string name="update_failed">അപ്‌ഡേറ്റ് പരാജയപ്പെട്ടു, ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="profile">പ്രൊഫൈൽ</string>
+    <string name="copy_invite">ഇൻവൈറ്റ് കോപ്പി ചെയ്യുക</string>
+    <string name="share_invite">ഇൻവൈറ്റ് ഷെയർ ചെയ്യുക</string>
+    <string name="gold_in_locker_n_gm">ലോക്കറിൽ സ്വർണം : %sഗ്രാം</string>
+    <string name="setup_daily_savings">പ്രതിദിന സമ്പാദ്യം നിശ്ചയിക്കുക</string>
+    <string name="save_daily_on_jar">എന്നും ജാറിൽ മിച്ചം പിടിച്ച് നിങ്ങളുടെ പണം വളരുന്നത് കാണൂ</string>
+    <string name="name_cant_be_more_than_30">പേര് 30 അക്ഷരങ്ങളിൽ കൂടുതൽ ആകരുത്</string>
+    <string name="start_your_journey_with_us">ഞങ്ങളോടൊപ്പം നിങ്ങളുടെ യാത്ര തുടങ്ങൂ</string>
+    <string name="are_you_ready_to_save_rs_x_daily_on_jar">എന്നും ₹%d ജാറിൽ മിച്ചം പിടിക്കാൻ തയ്യാറാണോ?</string>
+    <string name="start_saving_rs_x">₹%d മിച്ചം പിടിക്കാൻ തുടങ്ങൂ </string>
+    <string name="start_saving">മിച്ചം പിടിക്കാൻ തുടങ്ങൂ</string>
+    <string name="easiest_way_to_start_saving">സമ്പാദ്യം തുടനാകുന്നുള്ള ഏറ്റവും എളുപ്പ വഴി </string>
+    <string name="free_gold_delivery_at_your_doorstep">നിങ്ങളുടെ വീട്ടു പടിക്കൽ സൗജന്യ സ്വർണം ഡെലിവറി</string>
+    <string name="withdraw_cash">പണം പിൻവലിക്കുക</string>
+    <string name="instantly_credited_to_your_bank_account">നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ടിലേക്ക് തൽക്ഷണം ക്രെഡിറ്റ് ആകുന്നു</string>
+    <string name="the_value_is_subject_to_historical_performance_of_gold">*വില സ്വർണത്തിന്റെ പിൻകാല പ്രകടനത്തെ അടിസ്ഥാനമാക്കിയാണ്</string>
+    <string name="feature_onboarding_save">സമ്പാദിക്കൂ</string>
+    <string name="feature_onboarding_daily_your_gold_will_be_worth">എന്നും &amp; നിങ്ങളുടെ സ്വർണത്തിന്റെ മൂല്യമായിരിക്കും</string>
+    <string name="you_can_save_upto_x_per_day">നിങ്ങൾക്ക് പ്രതിദിനം \u20B9%d വരെ സമ്പാദിക്കാം.</string>
+    <string name="start_saving_daily">എന്നും സമ്പാദിക്കാൻ തുടങ്ങൂ</string>
+    <string name="you_are_all_set_to_start_your_saving_journey">നിങ്ങളുടെ സമ്പാദ്യ യാത്ര തുടങ്ങാറായി.</string>
+    <string name="automate_daily_saving">പ്രതിദിന സമ്പാദ്യം ഓട്ടോമേറ്റ് ചെയ്യൂ</string>
+    <string name="minimum_value_should_be_x">കുറഞ്ഞ മൂല്യം \u20B9%d ആയിരിക്കണം</string>
+    <string name="setup_auto_save">ഓട്ടോ-സേവ് സെറ്റപ്പ് ചെയ്യൂ</string>
+    <string name="enter_your_phone_no_and_lets_get_saving">നിങ്ങളുടെ ഫോൺ നമ്പർ രേഖപ്പെടുത്തൂ &amp;നമുക്ക് സമ്പാദിക്കാൻ തുടങ്ങാം. അത്ര ലളിതമാണ്!</string>
+    <string name="otp_please">ദയവായി OTP തരൂ?</string>
+    <string name="lets_get_to_know_you">നിങ്ങളെ കുറിച്ച് കൂടുതൽ പറയാമോ?</string>
+    <string name="what_gender_do_you_identify_with">നിങ്ങളുടെ ജെണ്ടർ പറയാമോ?</string>
+    <string name="phew_just_one_last_step">കഴിഞ്ഞു, ഒരു ഘട്ടം കൂടി മാത്രം!</string>
+    <string name="please_allow_sms_permission">ദയവായി SMS അനുവാദം നൽകൂ.</string>
+    <string name="why_it_helps_us_detect_you_spends">എന്തിന്? നിങ്ങളുടെ ചിലവുകൾ മനസിലാക്കി, അവയെ റൌണ്ട് ഓഫ് ചെയ്ത്, 24K സ്വർണത്തിൽ നിക്ഷേപിക്കാൻ അത് ഞങ്ങളെ സഹായിക്കുന്നു.</string>
+    <string name="yes_allow">അതെ, അനുവദിക്കൂ!</string>
+    <string name="build_your_jar_of_savings">നിങ്ങളുടെ സമ്പാദ്യ ജാർ നിർമിക്കൂ</string>
+    <string name="auto_save_rs_10_everyday_even_when_no_spends_detected">ചിലവുകൾ ഒന്നുമില്ലെങ്കിലും രൂ 10 എന്നും ഓട്ടോസേവ് ചെയ്യട്ടെ?</string>
+    <string name="partnership_history">പങ്കാളിത്ത ചരിത്രം</string>
+    <string name="age_not_a_number">പ്രായം സാധുവായ ഒരു സംഖ്യ ആയിരിക്കണം.</string>
+    <string name="transaction_summary">ഇടപാട് ചുരുക്കം</string>
+    <string name="feature_refer_and_earn_how_does_it_work">ഇത് എങ്ങനെ പ്രവർത്തിക്കുന്നു?</string>
+    <string name="feature_onboarding_say_hello_to_savings">സമ്പാദ്യത്തെ വരവേൽക്കൂ</string>
+    <string name="feature_onboarding_name_as_per_aadhar">പേര് (ആധാർ പ്രകാരം)</string>
+    <string name="best_time_to_buy_gold">സ്വർണം വാങ്ങാൻ മികച്ച സമയം!</string>
+    <string name="dont_miss_the_opportunity_of_buying_gold_at_the_low_price">കുറഞ്ഞ വിലയിൽ സ്വർണം വാങ്ങാനുള്ള അവസരം നഷ്ടപ്പെടുത്താതിരിക്കൂ</string>
+    <string name="buy_gold_at">സ്വർണം വാങ്ങുന്നത്</string>
+    <string name="you_will_be_alerted_everytime_gold_price_drops">സ്വർണ വില ഓരോ തവണയും കുറയുമ്പോൾ നിങ്ങളെ അറിയിക്കും</string>
+    <string name="we_will_remind_you_once_gold_price_drops">സ്വർണ വില ഗണ്യമായി കുറയുമ്പോൾ ഞങ്ങൾ ഓർമ്മിപ്പിക്കും</string>
+    <string name="select_what_you_are_saving_for">നിങ്ങൾ എന്തിന് വേണ്ടി സമ്പാദിക്കുന്നു എന്ന് തിരഞ്ഞെടുക്കുക</string>
+    <string name="how_frequently_would_you_like_to_save">നിങ്ങൾക്ക് എത്ര തവണ മിച്ചം പിടിക്കണം?</string>
+    <string name="hey_user_saving_for_message">നമസ്‌കാരം %s, %s</string>
+    <string name="user_you_are_saving_for">%s, നിങ്ങൾ സമ്പാദിക്കുന്ന ആവശ്യമാണ്\n%s</string>
+    <string name="select_from_above_saving_options">മുകളിൽ തന്നിരിക്കുന്ന സമ്പാദ്യ ഓപ്‌ഷനുകളിൽ നിന്ന് തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_onboarding_by_proceeding">തുടരുന്നതിലൂടെ, നിങ്ങൾ സമ്മതിക്കുന്നു ജാറിന്റെ</string>
+    <string name="feature_onboarding_t_and_c">നിബന്ധനകൾ&amp;വ്യവസ്ഥകൾ</string>
+    <string name="feature_onboarding_and">കൂടാതെ</string>
+    <string name="feature_onboarding_privacy_policy">സ്വകാര്യത നയവും</string>
+    <string name="feature_onbaording_flow_experian_tc_button"><u>എക്സ്പീരിയന്റെ നിബന്ധനകൾ&amp;വ്യവസ്ഥകൾ.</u></string>
+    <string name="feature_onbaoring_flow_name_screen_header"><b><font color="#EEEAFF">നിങ്ങളുടെ പേര് നൽകുക</font></b> <font color="#ACA1D3">(ആധാർ പ്രകാരം)</font></string>
+    <string name="feature_onboarding_first_name">പേര്</string>
+    <string name="feature_onboarding_last_name">പേരിന്റെ അവസാന ഭാഗം</string>
+    <string name="feature_onboarding_age_header">നിങ്ങളുടെ പ്രായം?</string>
+    <string name="feature_onboarding_permission">അനുവാദങ്ങൾ</string>
+    <string name="feature_onboarding_divider_text">ആപ്പ് വെച്ച് ലോഗിൻ/സൈൻ അപ്പ് ചെയ്യുക</string>
+    <string name="feature_onboarding_terms_and_conditions">ജാറിന്റെ നിബന്ധനകൾ&amp;വ്യവസ്ഥകൾ</string>
+    <string name="feature_onboarding_otp_header">OTP അയച്ചിരിക്കുന്നത്</string>
+    <string name="feature_onboarding_sms_permission_body">റൌണ്ട് ഓഫ് കണക്കാക്കാൻ ഞങ്ങൾക്ക് SMS അനുവാദം വേണം. വ്യക്തിഗത SMS ഒന്നും വായിക്കില്ല.</string>
+    <string name="welcome_back">തിരികെ സ്വാഗതം!</string>
+    <string name="feature_autoinvest_welcome_back">തിരികെ സ്വാഗതം!</string>
+    <string name="feature_autoinvest_you_saved">നിങ്ങൾ സമ്പാദിച്ചത്</string>
+    <string name="feature_autoinvest_24k_gold">24K സ്വർണം</string>
+    <string name="feature_autoinvest_since_your_last_visit">കഴിഞ്ഞ സന്ദർശനത്തിന് ശേഷം...</string>
+    <string name="feature_experian_bottom_sheet_header">നിങ്ങളെ നന്നായി മനസിലാക്കാൻ \nഞങ്ങളെ സഹായിക്കൂ.</string>
+    <string name="feature_experian_bottom_sheet_description">മികച്ച ലോൺ ഓഫറിന് ജാറിനെ എക്സ്പീരിയനിൽ നിന്ന് ക്രെഡിറ്റ് റിപ്പോർട്ട് നേടാൻ അനുവദിക്കൂ. ഞാൻ സമ്മതിക്കുന്നു <u>എക്സ്പീരിയൻ നിബന്ധനകൾ&amp;വ്യവസ്ഥകൾ.</u> </string>
+    <string name="no_i_dont_want_to_continue"><u>വേണ്ട, എനിക്ക് തുടരേണ്ട</u></string>
+    <string name="feature_experian_bottom_sheet_cta_text">അതെ, എന്റെ അനുഭവം വ്യക്തിഗതമാക്കണം</string>
+    <string name="feature_experian_bottom_sheet_footer"><b><u>വേണ്ട, എനിക്ക് തുടരേണ്ട</u></b></string>
+    <string name="feature_onboarding_stories_footer">സ്വർണം സുരക്ഷിതവും ഭദ്രവുമായ ലോക്കറുകളിൽ സൂക്ഷിക്കുന്നു </string>
+    <string name="feature_onboarding_stories_header">❤️ ത്തോടെ \nഇന്ത്യയിൽ</string>
+    <string name="feature_onboarding_i_allow_to_fetch_credit_report"><b>RBI അംഗീകൃത</b> കമ്പനികളിൽ നിന്ന് മികച്ച ലോൺ ഓഫറുകൾക്കായി എന്റെ ക്രെഡിറ്റ് റിപ്പോർട്ട് കിട്ടാൻ ജാറിനെ അനുവദിക്കൂ. ഞാൻ സമ്മതിക്കുന്നു</string>
+    <string name="feature_onboarding_sms_permission_description">മികച്ച രീതിയിൽ സമ്പാദിക്കാൻ ഞങ്ങൾക്ക് SMS അനുവാദം വേണം.</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_header">റിവാർഡ്‌സ് നിങ്ങളെ കാത്തിരിക്കുന്നു!</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_description">നിങ്ങൾക്ക് ജാറിൽ നിന്ന് സ്വാഗത റിവാർഡ്‌സ് കിട്ടും</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_button_text">അക്കൗണ്ട് ഉണ്ടാക്കുന്നത് തുടരൂ</string>
+    <string name="feature_onboarding_abandon_bottom_sheet_footer_text"><u>ഞാൻ പിന്നീട് തിരികെ വരാം</u></string>
+    <string name="feature_onboarding_select_number_cta_2"><u>മറ്റൊരു നമ്പർ ഉപയോഗിക്കൂ</u></string>
+    <string name="feature_onboarding_enter_number_checkbox_text"><b>RBI അംഗീകൃത</b> കമ്പനികളിൽ നിന്ന് മികച്ച ലോൺ ഓഫറുകൾക്കായി എന്റെ ക്രെഡിറ്റ് റിപ്പോർട്ട് കിട്ടാൻ ജാറിനെ അനുവദിക്കൂ. ഞാൻ സമ്മതിക്കുന്നു <u><b>നിബന്ധനകൾ&amp;വ്യവസ്ഥകൾ.</b></u></string>
+    <string name="feature_onboarding_select_number_description">നിങ്ങൾ ജാർ കുടുംബാംഗമാണ്</string>
+    <string name="feature_onboarding_enter_name_tittle">നിങ്ങളുടെ പേര് നൽകുക</string>
+    <string name="feature_onboarding_enter_name_description">ആധാർ കാർഡ് പ്രകാരം</string>
+    <string name="feature_onboarding_enter_otp_tittle">OTP നൽകുക</string>
+    <string name="feature_onboarding_enter_otp_description">അയച്ചത് </string>
+    <string name="feature_onboarding_enter_otp_divider_text">അല്ലെങ്കിൽ</string>
+    <string name="feature_onboarding_select_number_welcome_back">തിരികെ സ്വാഗതം!</string>
+    <string name="feature_onboarding_flow_tc_text">ഞാൻ സമ്മതിക്കുന്നു <u><b>നിബന്ധനകൾ&amp;വ്യവസ്ഥകൾ</b></u> കൂടാതെ <u><b>സ്വകാര്യത നയവും</b></u></string>
+    <string name="feature_onboarding_experian_warning">തുടരാൻ ദയവായി ഇത് തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_onboarding_flow_verify">പരിശോധിക്കുക</string>
+    <string name="feature_onboarding_otp_valid_till">സാധുതയുള്ളത്</string>
+    <string name="feature_onboarding_truecaller_btn_text">ട്രൂകോളർ  വെച്ച് ലോഗിൻ ചെയ്യുക</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_core"
+    app:startDestination="@id/infoDialog">
+
+    <dialog
+        android:id="@+id/infoDialog"
+        android:name="com.jar.app.core_ui.info_dialog.InfoDialog"
+        android:label="InfoDialog"
+        tools:layout="@layout/core_ui_dialog_info">
+
+        <argument
+            android:name="infoDialogData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/infoDialog/{infoDialogData}" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/testComponenetFragment"
+        android:name="com.jar.app.core_ui.test_fragment.TestComponentsFragment"
+        android:label="TestComponenetsFragment"
+        tools:layout="@layout/fragment_test" >
+
+        <deepLink app:uri="android-app://com.jar.app/testComponents/" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/explanatoryVideoFragment"
+        android:name="com.jar.app.core_ui.explanatory_video.ExplanatoryVideoFragment"
+        tools:layout="@layout/core_ui_fragment_explanatory_video">
+
+        <argument
+            android:name="explanatoryVideoData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/explanatoryVideoFragment/{explanatoryVideoData}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/genericPostActionStatusFragment"
+        android:name="com.jar.app.core_ui.generic_post_action.fragment.GenericPostActionStatusFragment"
+        android:label="GenericPostActionStatusFragment"
+        tools:layout="@layout/core_ui_fragment_generic_post_action_status">
+
+        <argument
+            android:name="genericPostActionStatusData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/genericPostActionStatusFragment/{genericPostActionStatusData}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/genericPostActionStatusDialog"
+        android:name="com.jar.app.core_ui.generic_post_action.dialog.GenericPostActionStatusDialog"
+        android:label="GenericPostActionStatusDialog"
+        tools:layout="@layout/core_ui_dialog_generic_post_action_status">
+
+        <argument
+            android:name="genericPostActionDialogData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/genericPostActionStatusDialog/{genericPostActionDialogData}" />
+    </dialog>
+    <dialog
+        android:id="@+id/pauseSavingsBottomSheet"
+        android:name="com.jar.app.core_ui.pause_savings.PauseSavingsBottomSheet"
+        android:label="PauseSavingsBottomSheet"
+        tools:layout="@layout/core_ui_dialog_generic_post_action_status">
+
+        <argument
+            android:name="pauseSavingsData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/pauseSavingsBottomSheet/{pauseSavingsData}" />
+    </dialog>
+</navigation>

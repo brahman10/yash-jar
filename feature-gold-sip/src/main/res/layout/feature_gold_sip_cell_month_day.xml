@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvMonthDate"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonBoldTextViewStyle"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:background="@drawable/feature_gold_sip_bg_rounded_selector_10dp_7745ff_3c3357"
+    tools:text="1"
+    tools:layout_margin="4dp"/>

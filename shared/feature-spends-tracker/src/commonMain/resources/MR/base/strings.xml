@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_have_spent_780_higher_than_this_time_last_month">You have spent <font color ="#1EA787">₹780</font> higher than this time last month!</string>
+    <string name="spent_tracker">Spends Tracker</string>
+    <string name="report_this_transaction">Report this transaction</string>
+    <string name="reason_for_reporting">Reason for reporting</string>
+    <string name="self_transfer" translatable="false">Self Transfer</string>
+    <string name="wrong_amount" translatable="false">Wrong Amount</string>
+</resources>

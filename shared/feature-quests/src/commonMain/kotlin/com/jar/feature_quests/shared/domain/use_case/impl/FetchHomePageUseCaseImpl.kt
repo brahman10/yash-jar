@@ -1,0 +1,8 @@
+package com.jar.feature_quests.shared.domain.use_case.impl
+
+import com.jar.feature_quests.shared.data.repository.QuestsRepository
+import com.jar.feature_quests.shared.domain.use_case.FetchHomePageUseCase
+
+class FetchHomePageUseCaseImpl(private val repository: QuestsRepository) : FetchHomePageUseCase {
+    override suspend fun fetchHomePage() = repository.fetchHomePage()
+}

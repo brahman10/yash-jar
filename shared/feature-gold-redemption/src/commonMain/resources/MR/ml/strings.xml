@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="celebrate_every_occasion_with_gold_and_diamond_vouchers">ഓരോ ആഘോഷവും\nസ്വർണ\nരത്ന\nവൗച്ചറുകളോടൊപ്പം ആഘോഷിക്കൂ.</string>
+    <string name="feature_gold_redemption_brand_partners">ബ്രാൻഡ് പങ്കാളികൾ</string>
+    <string name="feature_gold_redemption_buy_vouchers">വൗച്ചറുകൾ വാങ്ങൂ</string>
+    <string name="feature_gold_redemption_how_voucher_work">വൗച്ചറുകൾ എങ്ങനെ പ്രവർത്തിക്കുന്നു?</string>
+    <string name="feature_gold_redemption_explore_vouchers">വൗച്ചറുകൾ കണ്ടെത്തൂ</string>
+    <string name="feature_gold_redemption_showing_d_vouchers">%d ഫലങ്ങൾ കാണിക്കുന്നു</string>
+    <string name="feature_gold_redemption_empty_voucher">ഇവിടെ ആകെ കാലിയാണല്ലോ!\nനമുക്ക് കുറച്ച് വൗച്ചറുകൾ വാങ്ങിയാലോ?</string>
+    <string name="feature_gold_redemption_empty_vouchers_listing">ക്ഷമിക്കണം, സ്വർണ വൗച്ചറുകൾ\nഇപ്പോൾ ലഭ്യമല്ല. ഉടനെ\nതിരിച്ച് വരൂ!</string>
+    <string name="feature_gold_redemption_view_details">വിവരങ്ങൾ കാണൂ</string>
+    <string name="feature_gold_redemption_faqs">എപ്പോഴും ചോദിക്കുന്ന ചോദ്യങ്ങൾ</string>
+    <string name="feature_gold_redemption_contact_support">സപ്പോർട്ടുമായി ബന്ധപ്പെടുക</string>
+    <string name="feature_gold_redemption_amount_s">\u20B9%d</string>
+    <string name="feature_gold_redemption_hide">മറയ്ക്കുക</string>
+    <string name="feature_gold_redemption_show">കാണിക്കുക</string>
+    <string name="feature_gold_redemption_hidden_card_no">xxxx xxxx xxxx xxxx</string>
+    <string name="feature_gold_redemption_see_details">വിവരങ്ങൾ കാണൂ</string>
+    <string name="feature_gold_redemption_offline_store_list">ഓഫ്‌ലൈൻ സ്റ്റോർ ലിസ്റ്റ്</string>
+    <string name="feature_gold_redemption_in_store">സ്റ്റോറിൽ നിന്ന് വീണ്ടെടുക്കൽ</string>
+    <string name="feature_gold_redemption_about_the_jeweller">ജ്വല്ലറിനെ കുറിച്ച്</string>
+    <string name="feature_gold_redemption_online_redemption">ഓൺലൈനിൽ വീണ്ടെടുക്കൽ</string>
+    <string name="feature_gold_redemption_offline_redemption">സ്റ്റോറിൽ നിന്ന് വീണ്ടെടുക്കൽ</string>
+    <string name="feature_gold_redemption_please_check_if_candere_has_stores_near_you">"കാൻഡറിന് നിങ്ങളുടെ അടുത്ത് സ്റ്റോറുകൾ ഉണ്ടോ എന്ന് ദയവായി നോക്കുക. "</string>
+
+    <string name="feature_gold_redemption_currency_sign_x_string">\u20B9%s</string>
+    <string name="feature_gold_redemption_total_amount">ആകെ തുക</string>
+    <string name="feature_gold_redemption_proceed">തുടരുക</string>
+    <string name="featuer_gold_redemption_copied_to_clipboard">ക്ലിപ്പ്ബോർഡിലേക്ക് കോപ്പി ചെയ്തു</string>
+
+
+    <string name="feature_gold_redemption_feature_buy_gold_currency_sign_x_string">\u20B9%s</string>
+    <string name="feature_gold_redemption__current_gold_price_rs">നിലവിലെ സ്വർണ വില</string>
+    <string name="feature_gold_redemption__n_double_gm">₹%.2f/ഗ്രാം</string>
+    <string name="feature_gold_redemption_check">പരിശോധിക്കുക</string>
+    <string name="feature_gold_redemption_gold_delivery">സ്വർണ ഡെലിവറി</string>
+
+    <string name="feature_gold_redemption_view_breakdown_underline"><u>ബ്രെയ്ക്ക്ഡൌൺ കാണുക</u></string>
+    <string name="feature_gold_redemption_notify_me_underline"><u>എന്നെ അറിയിക്കൂ</u></string>
+    <string name="feature_gold_redemption_track_order_underline"><u>ഓർഡർ ട്രാക്ക് ചെയ്യൂ</u></string>
+    <string name="feature_gold_redemption_track_shipment_underline"><u>ഷിപ്പ്മെന്റ്റ് ട്രാക്ക് ചെയ്യൂ</u></string>
+    <string name="feature_gold_redemption_download_order_underline"><u>ഡൌൺലോഡ് ചെയ്യുക</u></string>
+    <string name="feature_gold_redemption_checkout">ചെക്ക്‌ഔട്ട് ചെയ്യുക</string>
+    <string name="feature_gold_redemption_rupee_x_in_double_strike" translatable="false"><strike>\u20B9%.2f</strike></string>
+    <string name="feature_gold_redemption_free_limited_time_offer">സൗജന്യം (പരിമിത കാല ഓഫർ)</string>
+    <string name="feature_gold_redemption_edit_address">വിലാസം എഡിറ്റ് ചെയ്യുക</string>
+    <string name="feature_gold_redemption_update_address">വിലാസം അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="feature_gold_redemption_invoices">ഇൻവോയ്‌സ്‌</string>
+    <string name="feature_gold_redemption_add_delivery_details">പുതിയ വിലാസം ചേർക്കുക</string>
+    <string name="feature_gold_redemption_save_and_proceed">സേവ് ചെയ്ത് തുടരുക</string>
+    <string name="feature_gold_redemption_save_new_address">പുതിയ വിലാസം സേവ് ചെയ്യുക</string>
+
+    <string name="feature_gold_redemption_please_enter_a_valid_pincode">ദയവായി സാധുവായ പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="feature_gold_redemption_please_enter_a_valid_email">ദയവായി സാധുവായ ഇമെയിൽ രേഖപ്പെടുത്തുക</string>
+    <string name="feature_gold_redemption_please_fill_all_the_details">ദയവായി എല്ലാ വിവരങ്ങളും പൂരിപ്പിക്കുക</string>
+    <string name="feature_gold_redemption_this_area_is_not_servicable_currently">ഈ പ്രദേശം നിലവിൽ സേവന യോഗ്യമല്ല</string>
+    <string name="feature_gold_redemption_starting_from_rupee_x_in_double">തുടങ്ങുന്നത് ₹%.2f</string>
+    <string name="feature_gold_redemption_cart">കാർട്ട്</string>
+    <string name="feature_gold_redemption__2_weights_available">2 ഭാരങ്ങൾ ലഭ്യം</string>
+    <string name="feature_gold_redemption_best_seller">ഏറ്റവുമധികം വിൽപ്പനയുള്ളത്</string>
+    <string name="feature_gold_redemption_out_of_stock">സ്റ്റോക്കിൽ ഇല്ല</string>
+    <string name="feature_gold_redemption_add_new_address">പുതിയ വിലാസം ചേർക്കുക</string>
+    <string name="feature_gold_redemption_linked_to_your_adhaar">നിങ്ങളുടെ ആധാറുമായി ബന്ധിപ്പിച്ചിരിക്കുന്നു</string>
+    <string name="feature_gold_redemption_my_orders">എന്റെ ഓർഡറുകൾ</string>
+    <string name="feature_gold_redemption_success">വിജയകരം</string>
+    <string name="feature_gold_redemption_in_progress">പുരോഗമിക്കുന്നു</string>
+    <string name="feature_gold_redemption_failed">പരാജയപ്പെട്ടു</string>
+    <string name="feature_gold_redemption_product_removed_from_wishlist">ഉത്പന്നം വിഷ് ലിസ്റ്റിൽ നിന്ന് നീക്കി</string>
+    <string name="feature_gold_redemption_product_added_to_wishlist">ഉത്പന്നം വിഷ് ലിസ്റ്റിൽ ചേർത്തു</string>
+    <string name="feature_gold_redemption_something_went_wrong">എന്തോ പിശക് പറ്റി</string>
+    <string name="feature_gold_redemption_delivery_and_making_charges">ഡെലിവറി മേക്കിങ് നിരക്കുകൾ</string>
+    <string name="feature_gold_redemption_total_value">ആകെ മൂല്യം</string>
+    <string name="feature_gold_redemption_jar_savings">ജാർ സമ്പാദ്യം</string>
+    <string name="feature_gold_redemption_balance_amount">ബാക്കി തുക</string>
+    <string name="feature_gold_redemption_total_payable_amount">ആകെ അടയ്‌ക്കേണ്ട തുക</string>
+    <string name="feature_gold_redemption_delivery_address">ഡെലിവറി വിലാസം</string>
+    <string name="feature_gold_redemption_select_payment_method">പേയ്‌മെന്റ് മാർഗം തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_delivering_to">ഡെലിവർ ചെയ്യുന്നത്</string>
+    <string name="feature_gold_redemption_add_to_cart">കാർട്ടിലേക്ക് ചേർക്കുക</string>
+    <string name="feature_gold_redemption_update_cart">കാർട്ട് അപ്‌ഡേറ്റ് ചെയ്യുക</string>
+    <string name="feature_gold_redemption_already_in_cart">കാർട്ടിൽ ഉണ്ട്</string>
+    <string name="feature_gold_redemption_tracking_id">ട്രാക്കിങ് ഐഡി</string>
+    <string name="feature_gold_redemption_estimated_delivery">പ്രതീക്ഷിക്കുന്ന ഡെലിവറി</string>
+    <string name="feature_gold_redemption_used_jar_balance">ജാർ ബാക്കി ഉപയോഗിച്ചു</string>
+    <string name="feature_gold_redemption_last_24_hour">അവസാന 24 മണിക്കൂർ</string>
+    <string name="feature_gold_redemption_previous_orders">മുൻപത്തെ ഓർഡറുകൾ</string>
+    <string name="feature_gold_redemption_order_cancel">ഓർഡർ റദ്ദാക്കി</string>
+    <string name="feature_gold_redemption_order_details">ഓർഡർ വിശദാംശങ്ങൾ</string>
+    <string name="feature_gold_redemption_refund_details">റീഫണ്ട് വിശദാംശങ്ങൾ</string>
+    <string name="feature_gold_redemption_track_order">ഓർഡർ ട്രാക്ക് ചെയ്യൂ</string>
+    <string name="feature_gold_redemption_order_again">വീണ്ടും ഓർഡർ ചെയ്യൂ</string>
+    <string name="feature_gold_redemption_hey_need_some_help_buying_a_product">ഹായ്! ഒരു ഉത്പന്നം വാങ്ങാൻ സഹായം വേണം.</string>
+    <string name="feature_gold_redemption_copied_to_clipboard">ക്ലിപ്പ്ബോർഡിലേക്ക് കോപ്പി ചെയ്തു</string>
+    <string name="feature_gold_redemption_order_id">ഓർഡർ ഐഡി</string>
+    <string name="feature_gold_redemption_ordered_on">ഓർഡർ ചെയ്തത്</string>
+    <string name="feature_gold_redemption_placed_on">നൽകിയത്</string>
+    <string name="feature_gold_redemption_paid_via">പണം അടച്ചത്</string>
+    <string name="feature_gold_redemption_upi">UPI</string>
+    <string name="feature_gold_redemption_wishlist">വിഷ് ലിസ്റ്റ്</string>
+    <string name="feature_gold_redemption_please_select_an_item">ദയവായി ഒരു സാധനം തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_something_went_wrong_in_adding_items_to_cart">സാധനങ്ങൾ കാർട്ടിലേക്ക് ചേർക്കുന്നതിൽ എന്തോ പിശക് പറ്റി</string>
+    <string name="feature_gold_redemption_added_by_you">നിങ്ങൾ ചേർത്തത്</string>
+    <string name="feature_gold_redemption_set_to_notify">അറിയിക്കാൻ സെറ്റ് ചെയ്തിട്ടുണ്ട്</string>
+    <string name="feature_gold_redemption_refresh">റിഫ്രഷ് ചെയ്യുക</string>
+    <string name="feature_gold_redemption_go_back">തിരികെ പോകുക</string>
+    <string name="feature_gold_redemption_retry">വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="feature_gold_redemption_go_to_cart">കാർട്ടിലേക്ക് പോകുക</string>
+    <string name="feature_gold_redemption_order_placed">ഓർഡർ നൽകി</string>
+    <string name="feature_gold_redemption_placing_order_is_taking_a_little_longer">ഓർഡർ നൽകാൻ കുറച്ച് അധികം സമയം എടുക്കുന്നു.\nനില അപ്‌ഡേറ്റ് ആകാൻ കുറച്ച് സമയം കാത്തിരിക്കൂ.</string>
+    <string name="feature_gold_redemption_experiencing_bank_server_issue_please_try_again_to_place_your_order">ബാങ്ക് സെർവർ പ്രശ്നം നേരിടുന്നു. ഓർഡർ നൽകാൻ ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="feature_gold_redemption_invalid_pincode">അസാധുവായ പിൻകോഡ്</string>
+    <string name="feature_gold_redemption_all">എല്ലാം</string>
+    <string name="feature_gold_redemption_select_delivery_address">ഡെലിവറി വിലാസം തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_please_select_delivery_address">ഡെലിവറി വിലാസം ദയവായി തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_add_to_wishlist">വിഷ് ലിസ്റ്റിലേക്ക് ചേർക്കുക</string>
+    <string name="feature_gold_redemption_order_will_be_delivered_in_2_4_working_days">ഓർഡർ 2-4 പ്രവൃത്തി ദിവസങ്ങളിൽ ഡെലിവർ ചെയ്യും</string>
+    <string name="feature_gold_redemption_your_area_is_unservicable_at_the_moment">ഇപ്പോൾ നിങ്ങളുടെ പ്രദേശം സേവനയോഗ്യമല്ല</string>
+    <string name="feature_gold_redemption_product_will_be_notified">ഉത്പന്നം അറിയിക്കും</string>
+    <string name="feature_gold_redemption__no_delivery_address_available">ഡെലിവറി വിലാസം ലഭ്യമല്ല</string>
+
+    <string name="feature_gold_redemption_tracking_details">ട്രാക്കിങ് വിശദാംശങ്ങൾ</string>
+    <string name="feature_gold_redemption_delivery_details">ഡെലിവറി വിശദാംശങ്ങൾ</string>
+    <string name="feature_gold_redemption_payment_processing">പേയ്‌മെന്റ് പ്രോസസ്സ് ചെയ്യുന്നു</string>
+    <string name="feature_gold_redemption_placing_order_is_taking_a_little_longer_wait_for_few_seconds_for_the_status_to_get_updated">ഓർഡർ നൽകാൻ കുറച്ച് അധികം സമയം എടുക്കുന്നു. നില അപ്‌ഡേറ്റ് ആകാൻ കുറച്ച് സമയം കാത്തിരിക്കൂ.</string>
+    <string name="feature_gold_redemption_cancel_order">ഓർഡർ റദ്ദാക്കുക</string>
+    <string name="feature_gold_redemption_not_yet_dispatched">ഇത് വരെ അയച്ചിട്ടില്ല</string>
+    <string name="feature_gold_redemption_no_items_in_wishlist">വിഷ് ലിസ്റ്റിൽ സാധനങ്ങൾ ഒന്നുമില്ല</string>
+    <string name="feature_gold_redemption_name_here">ഇവിടെ പേര് പറയൂ</string>
+    <string name="feature_gold_redemption_our_partners">ഞങ്ങളുടെ പങ്കാളികൾ</string>
+    <string name="feature_gold_redemption_gold_partner">സ്വർണ പങ്കാളി</string>
+    <string name="feature_gold_redemption_payment_details">പേയ്‌മെന്റ് വിശദാംശങ്ങൾ</string>
+    <string name="feature_gold_redemption_source_of_payment">പേയ്‌മെന്റിന്റെ ഉറവിടം</string>
+    <string name="feature_gold_redemption_download_invoice">ഇൻവോയ്‌സ്‌ ഡൌൺലോഡ് ചെയ്യൂ</string>
+    <string name="feature_gold_redemption_need_help">സഹായം വേണോ?</string>
+    <string name="feature_gold_redemption_similar_products">സമാനമായ ഉത്പന്നങ്ങൾ</string>
+    <string name="feature_gold_redemption_items_in_your_cart">നിങ്ങളുടെ കാർട്ടിലെ സാധനങ്ങൾ</string>
+    <string name="feature_gold_redemption_do_you_want_to_add_the_same_item_again">നിങ്ങൾക്ക് അതെ സാധനം വീണ്ടും ചേർക്കണോ?</string>
+    <string name="feature_gold_redemption_yes_repeat_the_same_order">അതെ, ആ ഓർഡർ വീണ്ടും ആവർത്തിക്കൂ</string>
+    <string name="feature_gold_redemption_no_i_would_like_to_make_changes">വേണ്ട, എനിക്ക് മാറ്റങ്ങൾ വരുത്തണം</string>
+    <string name="feature_gold_redemption_are_you_sure_you_want_the_delete_this_item_from_cart">നിങ്ങൾക്ക് കാർട്ടിൽ നിന്ന് ഈ സാധനം നീക്കണം എന്ന് ഉറപ്പാണോ?</string>
+    <string name="feature_gold_redemption_yes_delete">അതെ, നീക്കൂ</string>
+    <string name="feature_gold_redemption_no_don_t_delete">വേണ്ട, നീക്കണ്ട</string>
+    <string name="feature_gold_redemption_products">ഉത്പന്നങ്ങൾ</string>
+    <string name="feature_gold_redemption__2_items">2 സാധനങ്ങൾ</string>
+    <string name="feature_gold_redemption_use_my_jar_savings">എന്റെ ജാർ സമ്പാദ്യം ഉപയോഗിക്കുക</string>
+    <string name="feature_gold_redemption_use_the_money_from_my_jar_locker">എന്റെ ജാർ ലോക്കറിൽ നിന്നുള്ള പണം ഉപയോഗിക്കുക</string>
+    <string name="feature_gold_redemption_username_phone_number">യൂസർനെയിം (ഫോൺ നമ്പർ)</string>
+    <string name="feature_gold_redemption_price_breakdown">വില ബ്രെയ്ക്ക്ഡൌൺ</string>
+    <string name="feature_gold_redemption_delivery_partner">ഡെലിവറി പങ്കാളി</string>
+    <string name="feature_gold_redemption_looks_like_you_haven_t_ordered_anything_yet">നിങ്ങൾ ഇത് വരെ ഒന്നും ഓർഡർ ചെയ്തിട്ടില്ല എന്ന് തോന്നുന്നു</string>
+    <string name="feature_gold_redemption_popular_products_on_jar">ജാറിലെ ജനപ്രിയ ഉത്പന്നങ്ങൾ</string>
+    <string name="feature_gold_redemption_order_failed">ഓർഡർ പരാജയപ്പെട്ടു</string>
+    <string name="feature_gold_redemption__24k_99_9_pure_gold">24k | 99.9% ശുദ്ധ സ്വർണം</string>
+    <string name="feature_gold_redemption_new_cart_value">പുതിയ കാർട്ട് മൂല്യം</string>
+    <string name="feature_gold_redemption_refund_in_progress_will_be_credited_to_source_account_in_2_4_working_days">റീഫണ്ട് നടന്നു കൊണ്ടിരിക്കുന്നു, ഉറവിട അക്കൗണ്ടിലേക്ക് 2-4 പ്രവൃത്തി ദിവസങ്ങളിൽ ക്രെഡിറ്റ് ചെയ്യും</string>
+    <string name="feature_gold_redemption_your_cart_is_empty">നിങ്ങളുടെ കാർട്ട് കാലിയാണ്!</string>
+    <string name="feature_gold_redemption_there_is_no_item_in_your_cart_let_s_add_some_products">നിങ്ങളുടെ കാർട്ടിൽ സാധനം ഒന്നുമില്ല. നമുക്ക്\nചില ഉത്പന്നങ്ങൾ ചേർക്കാം.</string>
+    <string name="feature_gold_redemption_exclusive_products">പ്രത്യേക ഉത്പന്നങ്ങൾ</string>
+    <string name="feature_gold_redemption_enter_pincode">പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="feature_gold_redemption_place_order">ഓർഡർ നൽകുക</string>
+    <string name="feature_gold_redemption_no_exchange">മാറ്റിയെടുക്കാൻ കഴിയില്ല</string>
+    <string name="feature_gold_redemption_faq_s">എപ്പോഴും ചോദിക്കുന്ന ചോദ്യങ്ങൾ</string>
+    <string name="feature_gold_redemption_more_info">കൂടുതൽ വിവരം</string>
+    <string name="feature_gold_redemption_get_notified_when_its_back">തിരികെ എത്തുമ്പോൾ അറിയിപ്പ് നേടൂ</string>
+    <string name="feature_gold_redemption_clear">മായ്ക്കുക</string>
+    <string name="feature_gold_redemption_incl_of_all_charges">എല്ലാ നിരക്കുകളും ഉൾപ്പെടെ</string>
+    <string name="feature_gold_redemption_gold_order_placed_nsuccessfully">സ്വർണ ഓർഡർ\nവിജയകരമായി നൽകി</string>
+    <string name="feature_gold_redemption_tracking_link_will_be_generated_in_72_hrs">ട്രാക്കിങ് ലിങ്ക് 72 മണിക്കൂറിൽ ഉണ്ടാക്കും</string>
+    <string name="feature_gold_redemption_please_share_feedback_on_your_ngold_order_experience">നിങ്ങളുടെ സ്വർണ ഓർഡർ അനുഭവത്തിന്റെ പ്രതികരണം\nദയവായി പങ്ക് വയ്ക്കുക</string>
+    <string name="feature_gold_redemption_very_bad">വളരെ മോശം</string>
+    <string name="feature_gold_redemption_bad">മോശം</string>
+    <string name="feature_gold_redemption_average">ശരാശരി</string>
+    <string name="feature_gold_redemption_happy">സന്തോഷം</string>
+    <string name="feature_gold_redemption_very_happy">വളരെ സന്തോഷം</string>
+    <string name="feature_gold_redemption_other_products">മറ്റ് ഉത്പന്നങ്ങൾ</string>
+    <string name="feature_gold_redemption_no_products_available">ഉത്പന്നങ്ങൾ ഒന്നും ലഭ്യമല്ല</string>
+    <string name="feature_gold_redemption_no_products_available_in"> \"%s\ ൽ\nഉത്പന്നങ്ങൾ ഒന്നും ലഭ്യമല്ല"</string>
+    <string name="feature_gold_redemption_we_will_try_to_improve_based_on_your_feedback">നിങ്ങളുടെ പ്രതികരണം അനുസരിച്ച് മെച്ചപ്പെടാൻ ഞങ്ങൾ ശ്രമിക്കാം</string>
+    <string name="feature_gold_redemption_thank_you_for_the_feedback">നിങ്ങളുടെ പ്രതികരണത്തിന് നന്ദി!</string>
+    <string name="feature_gold_redemption_name">പേര്</string>
+    <string name="feature_gold_redemption_phone_number">ഫോൺ നമ്പർ</string>
+    <string name="feature_gold_redemption_pincode">പിൻകോഡ്</string>
+
+    <string name="feature_gold_redemption_street_address_one">സ്ട്രീറ്റ് വിലാസം 1</string>
+    <string name="feature_gold_redemption_address_line_1">വിലാസം ലൈൻ 1</string>
+    <string name="feature_gold_redemption_address_line_2">വിലാസം ലൈൻ 2</string>
+    <string name="feature_gold_redemption_street_address_two">സ്ട്രീറ്റ് വിലാസം 2 (Optional)</string>
+    <string name="feature_gold_redemption_city">നഗരം</string>
+    <string name="feature_gold_redemption_enter_city">നഗരം രേഖപ്പെടുത്തുക</string>
+    <string name="feature_gold_redemption_state">സംസ്ഥാനം</string>
+    <string name="feature_gold_redemption_enter_state">സംസ്ഥാനം രേഖപ്പെടുത്തുക</string>
+    <string name="feature_gold_redemption_enter_pin_code">പിൻകോഡ് രേഖപ്പെടുത്തുക</string>
+    <string name="feature_gold_redemption_add_details">വിശദാംശങ്ങൾ ചേർക്കുക</string>
+
+
+    <string name="feature_gold_redemption_showing_all_products">എല്ലാ %1$d ഉത്പന്നങ്ങളും കാണിക്കുന്നു</string>
+    <string name="feature_gold_redemption_city_state_is_unserviceable">%1$s, %2$s സേവനയോഗ്യമല്ല</string>
+    <string name="feature_gold_redemption_city_state_is_serviceable">%1$s സേവനയോഗ്യമാണ്</string>
+    <string name="feature_gold_redemption_status">നില</string>
+    <string name="feature_gold_redemption_item_quantity_gm">%1$d സാധനം | %2$.1f ഗ്രാം</string>
+    <string name="feature_gold_redemption__share_text">ഹായ്! ഈ %1$s ജാർ ആപ്പിൽ നോക്കൂ! | 24k 99.5% ശുദ്ധ സ്വർണ നാണയങ്ങൾ ഏത് ആഘോഷത്തിനും - %2$s</string>
+    <string name="feature_gold_redemption_people_have_orderded_this_item">%s ആളുകൾ ഈ സാധനം ഓർഡർ ചെയ്തിട്ടുണ്ട്</string>
+    <string name="feature_gold_redemption_cancellation_policy">റദ്ദാക്കൽ നയം</string>
+    <string name="feature_gold_redemption_refund_policy">റീഫണ്ട് നയം</string>
+    <string name="feature_gold_redemption_product_details">ഉത്പന്ന വിശദാംശങ്ങൾ</string>
+
+    <string name="feature_gold_redemption_check_if_we_deliver_to_your_area">ഞങ്ങൾ നിങ്ങൾക്ക് ഡെലിവർ ചെയ്യുന്നോ എന്ന് നോക്കൂ</string>
+    <string name="feature_gold_redemption_explore_more">കൂടുതൽ കണ്ടെത്തൂ</string>
+    <string name="feature_gold_redemption_we_deliver_to_your_location">നിങ്ങളുടെ സ്ഥലത്ത് ഞങ്ങൾ ഡെലിവർ ചെയ്യുന്നു</string>
+    <string name="feature_gold_redemption_added_to_wishlist">വിഷ് ലിസ്റ്റിലേക്ക് ചേർത്തു</string>
+    <string name="feature_gold_redemption_you_will_be_notified_when_the_item_is_in_stock">സാധനം സ്റ്റോക്കിൽ ഉണ്ടാകുമ്പോൾ നിങ്ങളെ അറിയിക്കും</string>
+    <string name="feature_gold_redemption__n_gm">%sഗ്രാം</string>
+    <string name="feature_gold_redemption_max_limit">പരമാവധി വൗച്ചർ പരിധിയാണ് ₹1ലക്ഷം</string>
+    <string name="select_state">സംസ്ഥാനം തിരഞ്ഞെടുക്കുക</string>
+    <string name="all_states">എല്ലാ സംസ്ഥാനങ്ങളും</string>
+    <string name="feature_gold_redemption_go_to_my_orders">എന്റെ ഓർഡറുകളിലേക്ക് പോകുക</string>
+    <string name="feature_gold_redemption_congratulations_your_voucher_is_here">അഭിനന്ദനങ്ങൾ!\nനിങ്ങളുടെ വൗച്ചർ ഇവിടെയുണ്ട്!</string>
+    <string name="feature_gold_redemption_voucher_details">വൗച്ചർ വിശദാംശങ്ങൾ</string>
+    <string name="select_voucher_amount">വൗച്ചർ തുക തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_payment_history">പേയ്‌മെന്റ് ഹിസ്റ്ററി</string>
+    <string name="feature_gold_redemption_abandon_title">ഹായ് %s, ഇത്ര വേഗം പോകുകയാണോ?\nനിങ്ങൾ മിസ് ചെയ്യാൻ പോകുന്നു...</string>
+    <string name="feature_gold_redemption_continue">തുടരുക</string>
+    <string name="feature_gold_redemption_not_now">ഇപ്പോൾ അല്ല</string>
+    <string name="feature_gold_redemption_cancel">റദ്ദാക്കുക</string>
+    <string name="feature_gold_redemption_share_text">ഹായ്!\n\nഈ %s ജ്വല്ലറി വൗച്ചർ ജാർ ആപ്പിൽ നോക്കൂ 💍\n\nഓരോ ആഘോഷവും സ്വർണ രത്ന വൗച്ചറുകൾ കൊണ്ട് ആഘോഷിച്ച് ഓരോ വൗച്ചറിനൊപ്പവും 10 ശതമാനം വരെ അധിക സ്വർണം നേടൂ!🤑 %s</string>
+    <string name="feature_gold_redemption_diamond_voucher">രത്ന വൗച്ചർ</string>
+    <string name="feature_gold_redemption_gold_voucher">സ്വർണ രത്ന വൗച്ചറുകൾ കൊണ്ട് ആഘോഷിച്ച് ഓരോ വൗച്ചറിനൊപ്പവും 10 ശതമാനം വരെ അധി വൗച്ചർ</string>
+    <string name="feature_gold_redemption_voucher_pin">വൗച്ചർ പിൻ</string>
+    <string name="feature_gold_redemption_share_this_gold_coin">ഈ സ്വർണ നാണയം പങ്ക് വയ്ക്കൂ</string>
+    <string name="feature_gold_redemption_redeem_your_voucher">ഈ വൗച്ചർ മാറ്റിയെടുക്കൂ</string>
+    <string name="feature_gold_redemption_transaction_status">ഇടപാട് നില</string>
+    <string name="feature_gold_redemption_contact_us">ഞങ്ങളുമായി ബന്ധപ്പെടുക</string>
+    <string name="feature_gold_redemption_purchase_successful">വാങ്ങൽ വിജയകരം</string>
+    <string name="feature_gold_redemption_purchase_successful_title">വാങ്ങൽ വിജയകരം</string>
+    <string name="feature_gold_redemption_paid_for">അടച്ചത്</string>
+    <string name="feature_gold_redemption_select_quantity">അളവ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_select_amount">തുക തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_gold_redemption_no_search_results_state">“%s” ന് ഫലങ്ങൾ ഒന്നുമില്ല\nവേറെ എന്തെങ്കിലും തിരയാൻ നോക്കൂ</string>
+    <string name="feature_gold_redemption_showing_results_for">“%s” ന്റെ ഫലങ്ങൾ കാണിക്കുന്നു</string>
+</resources>

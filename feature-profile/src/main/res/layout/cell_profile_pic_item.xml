@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animationCache="true">
+
+    <com.jar.app.core_ui.widget.AvatarImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/feature_profile_bg_green_border_circle"
+        tools:src="@drawable/feature_profile_ic_male_new" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivProfile"
+        app:layout_constraintEnd_toEndOf="@id/ivProfile"
+        app:layout_constraintStart_toStartOf="@id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@id/ivProfile"
+        app:srcCompat="@drawable/feature_profile_ic_tick_green" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ivStatus,ivProfile" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChange"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/feature_profile_change_profile_picture"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+</androidx.constraintlayout.widget.ConstraintLayout>

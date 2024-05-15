@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_lending_kyc_you_can_finish_kyc_in_just_d_steps">
+        <item quantity="one">మీరు KYCని కేవలం %d దశలో పూర్తి చేయవచ్చు.</item>
+        <item quantity="other">మీరు KYCని కేవలం %d దశల్లో పూర్తి చేయవచ్చు.</item>
+    </plurals>
+</resources>

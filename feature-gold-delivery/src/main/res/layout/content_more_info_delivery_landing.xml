@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/expand_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_info_square" />
+
+            <TextView
+                android:id="@+id/expandable_tv_1"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:text="Cancellation Policy"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/expandable_iv_1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/down_arrow_hide_18dp"
+                app:tint="#ACA1D3" />
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_16dp"
+            app:el_duration="500"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:elevation="4dp"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                android:text="Once placed, an order cannot be cancelled. You can reject the order once it comes to your doorstep"
+                android:textAlignment="textStart"
+                android:textColor="#D5CDF2" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:background="#3C3357"
+        app:layout_constraintTop_toBottomOf="@id/moreOrderedTv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/expand_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_truck_delivery" />
+
+            <TextView
+                android:id="@+id/expandable_tv_2"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:text="Refund Policy"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/expandable_iv_2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/down_arrow_hide_18dp"
+                app:tint="#ACA1D3" />
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:elevation="4dp"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                android:text="Once the order is received back at the source, it will be checked for damages, and a refund will be initiated if order is in original condition. Refunds will be credited in 7-10 days."
+                android:textAlignment="textStart"
+                android:textColor="#D5CDF2" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+
+        android:background="#3C3357"
+        app:layout_constraintTop_toBottomOf="@id/moreOrderedTv" />
+
+</LinearLayout>

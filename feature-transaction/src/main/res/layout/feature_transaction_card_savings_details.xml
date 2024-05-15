@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_16dp"
+    android:orientation="vertical"
+    android:backgroundTint="@color/color_2e2942"
+    android:background="@drawable/core_ui_round_black_bg_16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SmallBoldTextViewStyle"
+        android:textColor="@color/color_ACA1D3"
+        tools:text="SAVING BREAKDOWN"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBreakdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        tools:itemCount="5"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/feature_transaction_cell_txn_breakdown_details" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

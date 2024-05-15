@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_story_available">Our team is working on putting out amazing content for you. Please be back soon!</string>
+    <string name="in_app_story">In App story</string>
+    <string name="download_story">Download story</string>
+    <string name="feature_in_app_story_sharing_text">"Check out Jar Stories. Click on the link below: "</string>
+</resources>

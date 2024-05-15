@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plurals name="feature_round_off_resuming_in">
+        <item quantity="one">மீண்டும் தொடங்குகிறது:%d நாட்கள்</item>
+        <item quantity="other">மீண்டும் தொடங்குகிறது:%d நாட்கள்</item>
+    </plurals>
+    <plurals name="feature_round_off_n_days">
+        <item quantity="one">%d நாட்கள்</item>
+        <item quantity="other">%d நாட்கள்</item>
+    </plurals>
+    <plurals name="feature_round_off_transactions">
+        <item quantity="zero">%d பரிவர்த்தனை</item>
+        <item quantity="one">%d பரிவர்த்தனை</item>
+        <item quantity="other">%d பரிவர்த்தனைகள்</item>
+    </plurals>
+</resources>

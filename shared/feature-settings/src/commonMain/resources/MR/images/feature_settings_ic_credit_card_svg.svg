@@ -1,0 +1,27 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    id="vector">
+    <path
+        id="path"
+        d="M 0 24 L 0 0 L 24 0 L 24 24 L 0 24 Z"
+        fill="#ffffff"
+        fill-opacity="0.01"
+        stroke-opacity="0.01"
+        fill-rule="evenodd"/>
+    <path
+        id="path_1"
+        d="M 20 16 C 20 16.552 19.552 17 19 17 L 5 17 C 4.448 17 4 16.552 4 16 L 4 11 L 20 11 L 20 16 Z M 4 8 C 4 7.448 4.448 7 5 7 L 19 7 C 19.552 7 20 7.448 20 8 L 20 9 L 4 9 L 4 8 Z M 19 5 L 5 5 C 3.343 5 2 6.343 2 8 L 2 16 C 2 17.657 3.343 19 5 19 L 19 19 C 20.657 19 22 17.657 22 16 L 22 8 C 22 6.343 20.657 5 19 5 Z"
+        fill="#ffffff"
+        fill-rule="evenodd"/>
+    <path
+        id="path_2"
+        d="M 7 15 L 11 15 C 11.552 15 12 14.552 12 14 C 12 13.448 11.552 13 11 13 L 7 13 C 6.448 13 6 13.448 6 14 C 6 14.552 6.448 15 7 15 Z"
+        fill="#ffffff"
+        fill-rule="evenodd"/>
+    <path
+        id="path_3"
+        d="M 15 15 L 17 15 C 17.552 15 18 14.552 18 14 C 18 13.448 17.552 13 17 13 L 15 13 C 14.448 13 14 13.448 14 14 C 14 14.552 14.448 15 15 15 Z"
+        fill="#ffffff"
+        fill-rule="evenodd"/>
+</svg>

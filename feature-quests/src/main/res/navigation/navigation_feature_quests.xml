@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feature_quests"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.jar.feature_quests.impl.ui.splash_screen.QuestsSplashScreenFragment"
+        android:label="SplashScreenFragment">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_splashScreenFragment_to_landingScreenFragment"
+            app:destination="@id/landingScreenFragment" />
+        <deepLink app:uri="android-app://com.jar.app/splashScreen/{fromScreen}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/landingScreenFragment"
+        android:name="com.jar.feature_quests.impl.ui.landing_screen.LandingScreenFragment"
+        android:label="LandingScreenFragment">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.jar.feature_quests.impl.ui.dashboard_screen.DashboardFragment"
+        android:label="DashboardFragment">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_questTriviaScreenFragment"
+            app:destination="@id/questTriviaScreenFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_jackpotPopupDialog"
+            app:destination="@id/jackpotPopupDialog" />
+        <deepLink app:uri="android-app://com.jar.app/dashboardScreen/{fromScreen}" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/completeSpinsDialogFragment"
+        android:name="com.jar.feature_quests.impl.ui.complete_spins.CompleteSpinsDialogFragment"
+        android:label="CompleteSpinsDialogFragment" >
+        <deepLink app:uri="android-app://com.jar.app/quest/backBottomSheet/{dialogDataString}" />
+        <argument
+            android:name="dialogDataString"
+            app:nullable="false"
+            app:argType="string" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/questTriviaScreenFragment"
+        android:name="com.jar.feature_quests.impl.ui.trivia_screen.QuestTriviaScreenFragment"
+        android:label="QuestTriviaScreenFragment" />
+
+    <dialog
+        android:id="@+id/jackpotPopupDialog"
+        android:name="com.jar.feature_quests.impl.ui.jackpot_popup.JackpotPopupDialog"
+        android:label="JackpotPopupDialog">
+        <argument
+            android:name="fromQuest"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="brandCouponOutcome"
+            app:nullable="false"
+            app:argType="com.jar.app.core_base.domain.model.SpinBrandCouponOutcomeResponse" />
+    </dialog>
+
+
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="com.jar.feature_quests.impl.ui.rewards_screen.RewardsScreenFragment"
+        android:label="RewardsFragment">
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/questRewards/{fromScreen}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questCouponDetailsFragment"
+        android:name="com.jar.feature_quests.impl.ui.coupon_details.QuestCouponDetailsFragment"
+        android:label="QuestCouponDetailsFragment" >
+        <argument
+            android:name="brandCouponId"
+            app:argType="string"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/questCouponDetails/{fromScreen}/{brandCouponId}" />
+    </fragment>
+
+</navigation>

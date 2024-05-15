@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_16dp"
+    android:orientation="vertical"
+    android:background="@drawable/core_ui_round_black_bg_16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SmallBoldTextViewStyle"
+        android:textColor="@color/color_ACA1D3"
+        tools:text="LEASE BREAKDOWN"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGoldLeaseBreakdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_15dp"
+        tools:itemCount="5"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/feature_transaction_cell_txn_breakdown_details" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/SmallTextViewStyle"
+        android:textColor="@color/color_ACA1D3"
+        android:drawableStart="@drawable/feature_transaction_ic_lock"
+        android:drawablePadding="@dimen/dimen_7dp"
+        android:gravity="start"
+        tools:text="Gold will be locked-in for 90 days"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBuyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BigTextViewStyle"
+        android:textSize="20sp"
+        tools:text="₹100"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExtraAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallBoldTextViewStyle"
+        app:textAllCaps="false"
+        android:textSize="10sp"
+        android:textColor="@color/color_EBB46A"
+        android:background="@drawable/feature_buy_gold_v2_bg_rounded_43353b_4dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:paddingHorizontal="@dimen/dimen_6dp"
+        app:layout_constraintTop_toTopOf="@id/tvBuyAmount"
+        app:layout_constraintStart_toEndOf="@id/tvBuyAmount"
+        app:layout_constraintBottom_toBottomOf="@id/tvBuyAmount"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        tools:text="@string/feature_buy_gold_v2_extra_x_rupees"
+        tools:ignore="SmallSp" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerExtraAmount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="@id/tvExtraAmount"
+        app:layout_constraintEnd_toEndOf="@id/tvExtraAmount"
+        app:layout_constraintStart_toStartOf="@id/tvExtraAmount"
+        app:layout_constraintTop_toTopOf="@id/tvExtraAmount"
+        app:shimmer_auto_start="true"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear"
+        app:shimmer_highlight_color="@color/white_opacity_60"
+        app:shimmer_tilt="30">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/core_ui_bg_shine" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupExtraAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="shimmerExtraAmount, tvExtraAmount"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvInclGstLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        android:textSize="10sp"
+        android:text="@string/feature_buy_gold_v2_incl_gst"
+        app:layout_constraintStart_toStartOf="@id/tvBuyAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvBuyAmount"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvInclGstLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/color_ACA1D3_opacity_10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvViewBreakdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallTextViewStyle"
+        android:textColor="@drawable/feature_buy_gold_v2_view_breakdown_selector_v2"
+        android:drawableEnd="@drawable/core_ui_ic_arrow_down"
+        app:drawableTint="@drawable/feature_buy_gold_v2_view_breakdown_selector_v2"
+        android:drawablePadding="@dimen/dimen_6dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separator"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"/>
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

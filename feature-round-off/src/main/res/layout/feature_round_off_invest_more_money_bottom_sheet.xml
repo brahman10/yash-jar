@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:paddingHorizontal="20dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="22dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_close"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHeaderIllustration"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/color_EEEAFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnClose"
+        tools:src="@drawable/ic_gold_coin_bubble" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWhatIfYouDontSpend"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="33dp"
+        android:text="@string/feature_round_off_what_if_you_dont_spend_any_money_in_a_day"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHeaderIllustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWishToSave10"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/feature_round_off_wish_to_save_10_if_you_dont_spend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWhatIfYouDontSpend" />
+
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnYesAllow"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="28dp"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        app:buttonText="@string/feature_round_off_yes_allow"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWishToSave10" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnNoDontAllow"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="36dp"
+        app:buttonEndColor="@color/bgColor"
+        app:buttonStartColor="@color/bgColor"
+        app:buttonText="@string/feature_round_off_no_dont_allow"
+        app:buttonType="secondaryHollowButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnYesAllow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

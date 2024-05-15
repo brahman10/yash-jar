@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/core_ui_bg_top_rounded_corner_light"
+        android:padding="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross"
+            android:paddingHorizontal="@dimen/dimen_12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvJewellerIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintTop_toBottomOf="@id/ivClose"
+            app:layout_constraintStart_toStartOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivJewellerIcon"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJewellerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/SmallTextViewStyle"
+            android:textColor="@color/color_EEEAFF"
+            tools:text="Sultania Jewellers"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            app:layout_constraintStart_toEndOf="@+id/cvJewellerIcon"
+            app:layout_constraintTop_toTopOf="@id/cvJewellerIcon"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJewellerEst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_D5CDF2"
+            style="@style/SmallTextViewStyle"
+            tools:text="Sultania Jewellers"
+            android:gravity="start"
+            android:layout_marginTop="2dp"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/tvJewellerName"
+            app:layout_constraintTop_toBottomOf="@id/tvJewellerName"
+            app:layout_constraintEnd_toEndOf="@id/tvJewellerName"
+            tools:ignore="SmallSp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTitleValuePairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            tools:listitem="@layout/cell_gold_lease_title_value_pair"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvJewellerIcon"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJewellerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            app:layout_constraintTop_toBottomOf="@id/rvTitleValuePairs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:el_duration="200"
+            app:el_expanded="true"
+            app:el_parallax="0.5"
+            app:layout_constraintTop_toBottomOf="@id/tvJewellerTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:el_expanded="true">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/color_D5CDF2"
+                tools:text="Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text" />
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExpand"
+            style="@style/SmallBoldTextViewStyle"
+            app:textAllCaps="false"
+            android:text="@string/feature_gold_lease_read_more"
+            android:gravity="start"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/expandableLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnOkay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:layout_constraintHeight_min="54dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            app:layout_constraintTop_toBottomOf="@id/tvExpand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:buttonText="@string/feature_gold_lease_okay"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/core_ui_bg_top_rounded_corner">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="?attr/actionBarItemBackground"
+        android:src="@drawable/core_ui_ic_close"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterCaptchaTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/feature_lending_kyc_enter_captcha"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterCaptchaShownBelow"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/color_ACA1D3"
+        android:layout_marginTop="4dp"
+        android:text="@string/feature_lending_kyc_enter_captcha_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterCaptchaTitle" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etCaptcha"
+        style="@style/BigTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/core_ui_bg_rounded_2e2942_10dp"
+        android:gravity="start"
+        android:hint="@string/feature_lending_kyc_captcha"
+        android:imeOptions="actionDone"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/color_3E3A4E"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tag="com.userexperior.dontmask"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterCaptchaShownBelow" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClear"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/etCaptcha"
+        app:layout_constraintEnd_toEndOf="@id/etCaptcha"
+        app:layout_constraintTop_toTopOf="@id/etCaptcha"
+        app:srcCompat="@drawable/ic_close_filled" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvError"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:textColor="@color/color_EB6A6E"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/core_ui_ic_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCaptcha"
+        tools:text="Some error"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCaptcha"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintHeight_min="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvError"
+        app:layout_constraintWidth_min="100dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivRefreshCaptcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/feature_lending_kyc_ic_white_refresh"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/ivCaptcha"
+        app:layout_constraintStart_toEndOf="@id/ivCaptcha"
+        app:layout_constraintTop_toTopOf="@id/ivCaptcha" />
+
+    <ProgressBar
+        android:id="@+id/pbCaptcha"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/ivRefreshCaptcha"
+        app:layout_constraintEnd_toEndOf="@id/ivRefreshCaptcha"
+        app:layout_constraintStart_toStartOf="@id/ivRefreshCaptcha"
+        app:layout_constraintTop_toTopOf="@id/ivRefreshCaptcha" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clConsentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCaptcha">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxConsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/core_ui_custom_checkbox"
+            android:checked="false"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvIHereByConsent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIHereByConsent"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:gravity="start"
+            android:text="@string/feature_lending_kyc_i_hereby_give_consent_for_my_aadhaar_s"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/checkboxConsent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="40dp"
+        app:buttonText="@string/feature_lending_kyc_verify"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clConsentHolder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

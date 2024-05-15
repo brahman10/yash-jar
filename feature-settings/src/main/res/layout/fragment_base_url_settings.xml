@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/core_ui_bg_top_rounded_corner"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    Ignore hardcoded text in this file should not be part of -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="Configure API Base URL"
+        style="@style/BigTextViewStyle"
+        android:id="@+id/tvHeader"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginStart="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24dp"
+        android:background="?attr/actionBarItemBackground"
+        android:src="@drawable/core_ui_ic_close"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etBaseUrl"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/core_ui_bg_rounded_2e2942_10dp"
+        android:gravity="start"
+        android:hint="Base Url prefix"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_16dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/color_3E3A4E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/tvUrlPart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUrlPart"
+        style="@style/BigTextViewStyle"
+        android:text=".myjar.app"
+        app:layout_constraintTop_toTopOf="@id/etBaseUrl"
+        app:layout_constraintBottom_toBottomOf="@id/etBaseUrl"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkboxConsent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:buttonTint="@color/white"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center_vertical"
+        style="@style/SmallTextViewStyle"
+        android:text="@string/is_automation_enabled"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBaseUrl" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUrlExamples"
+        android:gravity="start"
+        android:text="Note:- * Only change Base url to any testing dev env. Don't change to prod or prodReplica. "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxConsent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        app:buttonText="Change"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUrlExamples" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRequireRestart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSubmit"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="* This requires App to restart."
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/redirection_navigation"
+    app:startDestination="@id/redirectionFragment">
+
+    <include app:graph="@navigation/new_onboarding_navigation" />
+
+    <action
+        android:id="@+id/action_to_newOnBoarding"
+        app:destination="@id/new_onboarding_navigation" />
+
+    <action
+        android:id="@+id/action_to_completeOnboardingReminderDialog"
+        app:destination="@id/completeOnboardingReminderDialog" />
+
+    <dialog
+        android:id="@+id/completeOnboardingReminderDialog"
+        android:name="com.jar.app.feature.onboarding.ui.completion_reminder.CompleteOnboardingReminderDialog"
+        android:label="CompleteOnboardingReminderDialog"
+        tools:layout="@layout/dialog_complete_onboarding_reminder" />
+
+    <fragment
+        android:id="@+id/redirectionFragment"
+        android:name="com.jar.app.feature.splash.SplashFragment"
+        android:label="RedirectionFragment" />
+</navigation>

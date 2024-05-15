@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="1dp"
+        android:outlineAmbientShadowColor="@color/color_3C3357"
+        android:outlineSpotShadowColor="@color/color_3C3357"
+        app:layout_constraintHeight_min="57dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabIndicatorColor="@color/color_AF84FF"
+        app:tabSelectedTextColor="@color/color_ACA1D3"
+        app:tabTextAppearance="@style/CommonTextViewStyle"
+        app:tabTextColor="@color/white"
+        tools:targetApi="p" />
+
+    <com.jar.app.core_ui.widget.NestedScrollableHost
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/landingViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jar.app.core_ui.widget.NestedScrollableHost>
+</androidx.constraintlayout.widget.ConstraintLayout>

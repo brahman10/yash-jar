@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/goal_based_saving_nav"
+    app:startDestination="@id/goalBasedSavingFragment">
+    <fragment
+        android:id="@+id/goalBasedSavingFragment"
+        android:label="GoalBasedSavingFragment"
+        android:name="com.jar.app.feature_goal_based_saving.impl.ui.GoalBasedSavingFragment">
+        <deepLink app:uri="android-app://com.jar.app/savingsGoal" />
+    </fragment>
+</navigation>

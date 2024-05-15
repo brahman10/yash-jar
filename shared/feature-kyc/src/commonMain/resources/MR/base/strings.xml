@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_kyc_pan_hint" translatable="false">Eg: ASJHH8786Q</string>
+
+    <string name="feature_kyc_add_pan_details">Add PAN Details</string>
+    <string name="feature_kyc_upload_pan_details">Upload PAN Details</string>
+    <string name="feature_kyc_upload_pan_details_sub_heading">Please add your PAN details to access all features on the app. We need this to authorize your identity.</string>
+    <string name="feature_kyc_upload_pan_card">Upload PAN card</string>
+    <string name="feature_kyc_enter_pan_details_manually">Enter PAN details manually</string>
+    <string name="feature_kyc_i_dont_have_a_pan_card">I don’t have a PAN card</string>
+    <string name="feature_kyc_no_pan_msg">Hey! I don’t have a PAN card. Please help me finish my KYC verification.</string>
+    <string name="feature_kyc_enter_your_pan_details">Enter your PAN details</string>
+    <string name="feature_kyc_pan_number">PAN Number</string>
+    <string name="feature_kyc_name_as_per_pan">Name as per PAN</string>
+    <string name="feature_kyc_name">Name</string>
+    <string name="feature_kyc_date_of_birth">Date of birth</string>
+    <string name="feature_kyc_select_a_date">Select a date</string>
+    <string name="feature_kyc_consent">I consent to allow Jar to verify PAN on my behalf.</string>
+    <string name="feature_kyc_verify_pan_details">Verify PAN Details</string>
+    <string name="feature_kyc_enter_pan_number">Enter PAN Number</string>
+    <string name="feature_kyc_pan_10_digit_msg">Pan number must be 10 digit</string>
+    <string name="feature_kyc_pan_no_space_msg">Pan number should not contain space</string>
+    <string name="feature_kyc_enter_name">Enter name</string>
+    <string name="feature_kyc_select_dob">Select date of birth</string>
+    <string name="feature_kyc_details_verified">KYC Details Verified</string>
+    <string name="feature_kyc_contact_support">Contact Support</string>
+    <string name="feature_kyc_try_again">Try Again</string>
+    <string name="feature_kyc_goto_home">Goto Home</string>
+    <string name="feature_kyc_kyc">KYC</string>
+    <string name="feature_kyc_kyc_details">KYC Details</string>
+    <string name="feature_kyc_verified">Verified</string>
+    <string name="feature_kyc_driving_license">Driving Licence</string>
+    <string name="feature_kyc_aadhaar_number">Aadhaar Number</string>
+    <string name="feature_kyc_voter_id">Voter’s ID</string>
+    <string name="feature_kyc_passport_number">Passport Number</string>
+    <string name="feature_kyc_show_pan_number">Show PAN number</string>
+    <string name="feature_kyc_hide_pan_number">Hide PAN number</string>
+    <string name="feature_kyc_show_driving_license">Show Driving Licence</string>
+    <string name="feature_kyc_hide_driving_license">Hide Driving Licence</string>
+    <string name="feature_kyc_show_voter_id">Show Voter’s ID</string>
+    <string name="feature_kyc_hide_voter_id">Hide Voter’s ID</string>
+    <string name="feature_kyc_show_aadhaar_number">Show Aadhaar Number</string>
+    <string name="feature_kyc_hide_aadhaar_number">Hide Aadhaar Number</string>
+    <string name="feature_kyc_show_passport_number">Show Passport Number</string>
+    <string name="feature_kyc_hide_passport_number">Hide Passport Number</string>
+    <string name="feature_kyc_verified_on">Verified on %s</string>
+    <string name="feature_kyc_frequently_asked_questions">Frequently asked questions</string>
+    <string name="feature_kyc_choose_document">Choose document</string>
+    <string name="feature_kyc_aadhar_card">Aadhaar card</string>
+    <string name="feature_kyc_upload_aadhar_card">Upload Aadhaar card</string>
+    <string name="feature_kyc_upload_aadhar_card_des">Please add your Aadhaar details to access all features on the app. We need this to authorize your identity.</string>
+    <string name="feature_kyc_upload_driving_license">Upload Driving Licence</string>
+    <string name="feature_kyc_upload_driving_license_des">Please add your Driving Licence to access all features on the app. We need this to authorize your identity.</string>
+    <string name="feature_kyc_upload_voter_id">Upload Voter ID</string>
+    <string name="feature_kuc_upload_voter_id_des">Please add your Voter ID to access all features on the app. We need this to authorize your identity.</string>
+    <string name="feature_kyc_passport">Passport</string>
+    <string name="feature_kyc_upload_passport">Upload Passport</string>
+    <string name="feature_kyc_upload_passport_des">Please add your Passport to access all features on the app. We need this to authorize your identity.</string>
+    <string name="feature_kyc_use_alternative_document">Use alternative document</string>
+    <string name="feature_kyc_upload_document">Upload document</string>
+    <string name="feature_kyc_take_a_photo">Take a photo</string>
+    <string name="feature_kyc_choose_from_gallery">Choose from gallery</string>
+    <string name="feature_kyc_retake_photo">Retake Photo</string>
+    <string name="feature_kyc_photo_verification">Photo Verification</string>
+    <string name="feature_kyc_take_a_selfie">Take a selfie</string>
+    <string name="feature_kyc_photo_verification_des">We need to match the photo with that on the\nID proof that you provided.</string>
+    <string name="feature_kyc_retake_selfie">Retake Selfie</string>
+    <string name="feature_kyc_please_upload_a_clear_image_or_upload_manually">Please retake image or enter details manually</string>
+    <string name="feature_kyc_retry_limit_exhausted">Attempt limit with %s has exceeded. Try with other document.</string>
+    <string name="feature_kyc_identity_verification">Identity Verification</string>
+    <string name="feature_kyc_verify_now">Verify Now</string>
+    <string name="feature_kyc_prompt_des_winnings">Please complete your identity verification in order to convert winnings to gold.</string>
+    <string name="feature_kyc_prompt_des_sell_gold">Please complete your identity verification in order to sell gold.</string>
+    <string name="feature_kyc_pan_header">PAN</string>
+    <string name="feature_kyc_aadhar_header">Aadhaar</string>
+    <string name="feature_kyc_passport_header">Passport</string>
+    <string name="feature_kyc_dl_header">Driving Licence</string>
+    <string name="feature_kyc_voter_id_header">Voter ID</string>
+    <string name="feature_lending_kyc_verification">KYC Verification</string>
+    <string name="feature_kyc_empty" translatable="false" />
+
+</resources>

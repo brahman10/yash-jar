@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_simple_toolbar_with_need_help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterPanNumber"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/feature_lending_kyc_enter_pan_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.jar.app.core_ui.widget.CustomEditTextWithErrorHandling
+        android:id="@+id/customEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterPanNumber" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        app:buttonElevation="0dp"
+        app:buttonText="@string/core_ui_proceed"
+        app:buttonTextAllCaps="false"
+        app:buttonType="primaryButton"
+        app:layout_constraintHeight_min="54dp"
+        app:layout_constraintTop_toBottomOf="@id/customEditText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/captureGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvDivider,separatorLeft,separatorRight,clTakePhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnProceed" />
+
+    <View
+        android:id="@+id/separatorLeft"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/color_3c3357"
+        app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+        app:layout_constraintEnd_toStartOf="@id/tvDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDivider"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/core_ui_or"
+        app:layout_constraintEnd_toStartOf="@id/separatorRight"
+        app:layout_constraintStart_toEndOf="@id/separatorLeft"
+        app:layout_constraintTop_toBottomOf="@id/btnProceed" />
+
+    <View
+        android:id="@+id/separatorRight"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/color_3c3357"
+        app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDivider"
+        app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/clTakePhoto"
+        app:buttonBackgroundColor="@color/color_3C3357"
+        app:buttonBorderWidth="0dp"
+        android:layout_marginVertical="31dp"
+        app:buttonDrawableStart="@drawable/core_ui_ic_camera_outline"
+        app:buttonText="@string/core_ui_take_photo"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        app:buttonDrawablePadding="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDivider"
+        android:layout_height="56dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

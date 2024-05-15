@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:paddingHorizontal="12dp"
+            tools:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_auto_start="true"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/feature_gold_delivery_cell_location" />
+
+                <include layout="@layout/feature_gold_delivery_cell_location" />
+
+                <include layout="@layout/feature_gold_delivery_cell_location" />
+
+                <include layout="@layout/feature_gold_delivery_cell_location" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/contiunue_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/cell_saved_address" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="rvAddress,shimmerPlaceholder"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoAddress"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:drawablePadding="@dimen/dimen_16dp"
+            android:text="@string/feature_gold_delivery_no_delivery_address_available"
+            android:visibility="gone"
+            app:drawableTopCompat="@drawable/feature_gold_delivery_ic_no_transaction_placeholder"
+            app:layout_constraintBottom_toTopOf="@+id/contiunue_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rvAddress" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/contiunue_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:padding="16dp"
+            android:textAllCaps="true"
+            app:buttonText="Continue"
+            app:buttonTextAllCaps="false"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="54dp"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

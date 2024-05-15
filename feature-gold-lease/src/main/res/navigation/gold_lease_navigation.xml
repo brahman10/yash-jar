@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gold_lease_navigation"
+    app:startDestination="@id/goldLeaseV2SplashFragment">
+
+    <action
+        android:id="@+id/action_to_goldLeaseFaqBottomSheetFragment"
+        app:destination="@id/goldLeaseFaqBottomSheetFragment" />
+
+    <action
+        android:id="@+id/action_to_goldLeaseV2JewellerDetailsBottomSheetFragment"
+        app:destination="@id/goldLeaseV2JewellerDetailsBottomSheetFragment" />
+
+    <fragment
+        android:id="@+id/goldLeaseV2NewLeaseFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.new_lease_page.GoldLeaseV2NewLeaseFragment"
+        android:label="GoldLeaseV2NewLeaseFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_new_lease"/>
+
+    <fragment
+        android:id="@+id/goldLeaseV2LeasePlansFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.lease_plans.GoldLeaseV2LeasePlansFragment"
+        android:label="GoldLeaseV2OrderDetailsFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_lease_plans">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="isNewLeaseUser"
+            app:argType="boolean"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_goldLeaseV2LeasePlansFragment_to_goldLeaseV2OrderDetailFragment"
+            app:destination="@id/goldLeaseV2OrderDetailFragment" />
+        <deepLink app:uri="android-app://com.jar.app/goldLeasePlans/{flowType}/{isNewLeaseUser}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldLeaseV2OrderDetailFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.order_details.GoldLeaseV2OrderDetailFragment"
+        android:label="GoldLeaseV2OrderDetailFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_order_detail">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="leasePlan"
+            app:argType="com.jar.app.feature_gold_lease.shared.domain.model.LeasePlanList"
+            app:nullable="false"/>
+        <argument
+            android:name="isNewLeaseUser"
+            app:argType="boolean"
+            app:nullable="false"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/goldLeaseV2JewellerDetailsBottomSheetFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.jeweller_details.GoldLeaseV2JewellerDetailsBottomSheetFragment"
+        android:label="GoldLeaseV2JewellerDetailsBottomSheetFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_jeweller_details">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="jewellerId"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+
+    <fragment
+        android:id="@+id/goldLeaseLandingFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.landing.GoldLeaseLandingFragment"
+        android:label="GoldLeaseLandingFragment"
+        tools:layout="@layout/fragment_gold_lease_landing">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="tabPosition"
+            app:argType="integer"
+            app:nullable="false"/>
+        <argument
+            android:name="isNewLeaseUser"
+            app:argType="boolean"
+            app:nullable="false"/>
+        <argument
+            android:name="clickTime"
+            app:argType="string"
+            android:defaultValue="0"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldLeaseV2SplashFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.splash.GoldLeaseV2SplashFragment"
+        android:label="GoldLeaseV2SplashFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_splash">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="tabPosition"
+            app:argType="integer"
+            app:nullable="false"/>
+        <argument
+            android:name="isNewLeaseUser"
+            app:argType="boolean"
+            app:nullable="false"/>
+        <argument
+            android:name="clickTime"
+            app:argType="string"
+            android:defaultValue="0"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/goldLeaseV2Splash/{flowType}/{tabPosition}/{isNewLeaseUser}/{clickTime}" />
+        <action
+            android:id="@+id/action_goldLeaseV2SplashFragment_to_goldLeaseLandingFragment"
+            app:destination="@id/goldLeaseLandingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldLeaseV2OrderSummaryFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.order_summary.GoldLeaseV2OrderSummaryFragment"
+        android:label="GoldLeaseV2OrderSummaryFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_order_summary">
+        <argument
+            android:name="goldLeaseV2OrderSummaryArgsString"
+            app:argType="string"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_goldLeaseV2OrderSummaryFragment_to_goldLeaseBreakdownBottomSheetFragment"
+            app:destination="@id/goldLeaseBreakdownBottomSheetFragment" />
+        <action
+            android:id="@+id/action_goldLeaseV2OrderSummaryFragment_to_goldLeaseKycBottomSheetFragment"
+            app:destination="@id/goldLeaseKycBottomSheetFragment" />
+        <action
+            android:id="@+id/action_goldLeaseV2OrderSummaryFragment_to_goldLeaseRiskFactorBottomSheetFragment"
+            app:destination="@id/goldLeaseRiskFactorBottomSheetFragment" />
+        <action
+            android:id="@+id/action_goldLeaseV2OrderSummaryFragment_to_goldLeaseTNCBottomSheetFragment"
+            app:destination="@id/goldLeaseTNCBottomSheetFragment" />
+        <deepLink app:uri="android-app://com.jar.app/goldLeaseOrderSummary/{goldLeaseV2OrderSummaryArgsString}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldLeasePostOrderFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.post_order.GoldLeasePostOrderFragment"
+        android:label="GoldLeasePostOrderFragment"
+        tools:layout="@layout/fragment_gold_lease_post_order">
+        <argument
+            android:name="leaseId"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/goldLeasePostOrder/{leaseId}/{flowType}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldLeaseV2UserLeaseDetailsFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.user_lease_details.GoldLeaseV2UserLeaseDetailsFragment"
+        android:label="GoldLeaseV2UserLeaseDetailsFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_user_lease_details">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="leaseId"
+            app:argType="string"
+            app:nullable="false"/>
+        <deepLink app:uri="android-app://com.jar.app/goldLeaseUserLeaseDetails/{flowType}/{leaseId}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldLeaseV2MyOrdersFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.my_orders.GoldLeaseV2MyOrdersFragment"
+        android:label="GoldLeaseV2MyOrdersFragment"
+        tools:layout="@layout/fragment_gold_lease_v2_my_orders"/>
+
+    <dialog
+        android:id="@+id/goldLeaseFaqBottomSheetFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.faq.GoldLeaseFaqBottomSheetFragment"
+        android:label="GoldLeaseFaqBottomSheetFragment"
+        tools:layout="@layout/fragment_gold_lease_faq_bottom_sheet">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/goldLeaseTNCBottomSheetFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.terms_and_condition.GoldLeaseTNCBottomSheetFragment"
+        android:label="GoldLeaseTNCBottomSheetFragment"
+        tools:layout="@layout/fragment_gold_lease_tnc_bottom_sheet" />
+
+    <dialog
+        android:id="@+id/goldLeaseBreakdownBottomSheetFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.breakdown.GoldLeaseBreakdownBottomSheetFragment"
+        android:label="GoldLeaseBreakdownBottomSheetFragment"
+        tools:layout="@layout/fragment_gold_lease_breakdown_bottom_sheet">
+        <argument
+            android:name="goldVolume"
+            app:argType="float"
+            app:nullable="false"/>
+        <argument
+            android:name="goldPrice"
+            app:argType="float"
+            app:nullable="false"/>
+        <argument
+            android:name="totalPayableAmount"
+            app:argType="float"
+            app:nullable="false"/>
+        <argument
+            android:name="gstPercent"
+            app:argType="float"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/goldLeaseKycBottomSheetFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.kyc.GoldLeaseKycBottomSheetFragment"
+        android:label="GoldLeaseKycBottomSheetFragment"
+        tools:layout="@layout/fragment_gold_lease_kyc_bottom_sheet">
+        <argument
+            android:name="isEmailRequired"
+            app:argType="boolean"
+            app:nullable="false"/>
+    </dialog>
+
+    <dialog
+        android:id="@+id/goldLeaseRiskFactorBottomSheetFragment"
+        android:name="com.jar.app.feature_gold_lease.impl.ui.risk_factor.GoldLeaseRiskFactorBottomSheetFragment"
+        android:label="GoldLeaseRiskFactorBottomSheetFragment"
+        tools:layout="@layout/fragment_gold_lease_risk_factor_bottom_sheet"/>
+</navigation>

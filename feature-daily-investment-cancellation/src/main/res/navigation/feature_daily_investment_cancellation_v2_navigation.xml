@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feature_daily_investment_cancellation_v2_navigation"
+    app:startDestination="@id/dailyInvestmentSettingsV2Fragment">
+
+    <fragment
+        android:id="@+id/dailyInvestmentSettingsV2Fragment"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.intro_screen.DailyInvestmentSettingsV2Fragment"
+        android:label="DailyInvestmentSettingsV2Fragment">
+        <deepLink app:uri="android-app://com.jar.app/dailySavingsCancellation" />
+
+        <action
+            android:id="@+id/action_dailyInvestmentSettingsV2Fragment_to_stopDailySavingBottomSheetA"
+            app:destination="@id/stopDailySavingBottomSheetA" />
+        <action
+            android:id="@+id/action_dailyInvestmentSettingsV2Fragment_to_stopDailySavingBottomSheetB"
+            app:destination="@id/stopDailySavingBottomSheetB" />
+        <action
+            android:id="@+id/action_dailyInvestmentSettingsV2Fragment_to_pauseDailySavingBottomSheet"
+            app:destination="@id/pauseDailySavingBottomSheet" />
+        <action
+            android:id="@+id/action_dailyInvestmentSettingsV2Fragment_to_progressRedirectionFragment"
+            app:destination="@id/progressRedirectionFragment" />
+        <action
+            android:id="@+id/action_dailyInvestmentSettingsV2Fragment_to_stopDailySavingsScreenForV3"
+            app:destination="@id/stopDailySavingsScreenForV3" />
+    </fragment>
+    <dialog
+        android:id="@+id/stopDailySavingBottomSheetA"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.stop_daily_saving.StopDailySavingBottomSheetKnowledge"
+        android:label="StopDailySavingBottomSheetA">
+        <deepLink
+            android:id="@+id/deepLinkSetupDailySavingsDialog"
+            app:uri="android-app://com.jar.app/stopDailyInvestmentTemperingBottomSheetA/"/>
+        <action
+            android:id="@+id/action_stopDailySavingBottomSheetA_to_progressRedirectionFragment2"
+            app:destination="@id/progressRedirectionFragment" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/stopDailySavingBottomSheetB"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.stop_daily_saving.StopDailySavingBottomSheetStatistic"
+        android:label="StopDailySavingBottomSheetB">
+        <deepLink
+            android:id="@+id/deepLinkSetupDailySavingsDialog"
+            app:uri="android-app://com.jar.app/stopDailyInvestmentTemperingBottomSheetB/"/>
+        <action
+            android:id="@+id/action_stopDailySavingBottomSheetB_to_progressRedirectionFragment2"
+            app:destination="@id/progressRedirectionFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/pauseDailySavingBottomSheet"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.pause_daily_saving.PauseDailySavingBottomSheet"
+        android:label="PauseDailySavingBottomSheet">
+        <deepLink
+            android:id="@+id/pauseDailySavingBottomSheet"
+            app:uri="android-app://com.jar.app/pauseDailySavingBottomSheet"/>
+        <action
+            android:id="@+id/action_pauseDailySavingBottomSheet_to_progressRedirectionFragment"
+            app:destination="@id/progressRedirectionFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/progressRedirectionFragment"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.daily_investment_status_screen.ProgressRedirectionFragment"
+        android:label="ProgressRedirectionFragment" >
+        <deepLink
+            android:id="@+id/progressRedirectionFragment"
+            app:uri="android-app://com.jar.app/progressRedirectionFragment"/>
+        <argument
+            android:name="progressScreenData"
+            app:argType="com.jar.app.feature_daily_investment_cancellation.impl.util.ProgressScreenData"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_progressRedirectionFragment_to_dailyInvestmentSettingsV2Fragment"
+            app:destination="@id/dailyInvestmentSettingsV2Fragment" />
+        <action
+            android:id="@+id/action_progressRedirectionFragment_to_postCancellationFragment"
+            app:destination="@id/postCancellationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postCancellationFragment"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.post_cancellation.PostCancellationFragment"
+        android:label="PostCancellationFragment">
+        <deepLink
+            android:id="@+id/postCancellationFragment"
+            app:uri="android-app://com.jar.app/dailyInvestmentTemperingCancellationFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dailyInvestmentStatusFragment"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.daily_investment_status_screen.DailyInvestmentStatusFragment"
+        android:label="DailyInvestmentStatusFragment">
+        <argument
+            android:name="status"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink
+            android:id="@+id/dailyInvestmentStatusFragment"
+            app:uri="android-app://com.jar.app/dailyInvestmentStatusFragment/{status}" />
+    </fragment>
+    <fragment
+        android:id="@+id/stopDailySavingsScreenForV3"
+        android:name="com.jar.app.feature_daily_investment_cancellation.impl.ui.stop_daily_saving.StopDailySavingsV4Screen"
+        android:label="StopDailySavingsScreenForV3">
+        <deepLink
+            android:id="@+id/stopDailySavingsScreenForV3"
+            app:uri="android-app://com.jar.app/stopDailySavingsScreenForV3"/>
+        <action
+            android:id="@+id/action_stopDailySavingsScreenForV3_to_pauseDailySavingBottomSheet"
+            app:destination="@id/pauseDailySavingBottomSheet" />
+        <action
+            android:id="@+id/action_stopDailySavingsScreenForV3_to_progressRedirectionFragment"
+            app:destination="@id/progressRedirectionFragment" />
+    </fragment>
+</navigation>

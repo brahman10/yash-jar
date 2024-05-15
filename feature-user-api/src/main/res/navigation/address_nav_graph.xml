@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/address_nav_graph"
+    app:startDestination="@id/userSavedAddressFragment">
+
+    <fragment
+        android:id="@+id/userSavedAddressFragment"
+        android:name="com.jar.app.feature_user_api.impl.ui.saved_address.UserSavedAddressFragment"
+        android:label="UserSavedAddressFragment"
+        tools:layout="@layout/fragment_user_saved_address">
+
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <deepLink app:uri="android-app://com.jar.app/userSavedAddresses/{fromScreen}" />
+
+        <action
+            android:id="@+id/action_savedAddressFragment_to_editAddressFragment"
+            app:destination="@id/editAddressFragment" />
+        <action
+            android:id="@+id/action_savedAddressFragment_to_addDeliveryAddressFragment"
+            app:destination="@id/addAddressFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editAddressFragment"
+        android:name="com.jar.app.feature_user_api.impl.ui.edit_address.UserEditAddressFragment"
+        android:label="UserEditAddressFragment"
+        tools:layout="@layout/fragment_base_user_address">
+
+        <argument
+            android:name="address"
+            app:argType="com.jar.app.feature_user_api.domain.model.Address" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.jar.app.feature_user_api.impl.ui.add_address.UserAddAddressFragment"
+        android:label="UserAddAddressFragment"
+        tools:layout="@layout/fragment_base_user_address">
+
+        <argument
+            android:name="isFirstAddress"
+            app:argType="boolean" />
+        <argument
+            android:name="fromScreen"
+            app:argType="string"
+            android:defaultValue=""/>
+
+    </fragment>
+
+</navigation>

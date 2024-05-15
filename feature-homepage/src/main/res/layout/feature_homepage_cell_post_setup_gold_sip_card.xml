@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_black_bg_16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGoldSip"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="16dp"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/core_ui_gold_sip_main" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGoldSip"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:elevation="1dp"
+        android:text="@string/feature_home_page_gold_sip"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivGoldSip"
+        app:layout_constraintStart_toEndOf="@id/ivGoldSip"
+        app:layout_constraintTop_toTopOf="@id/ivGoldSip" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAutoSaveStatus"
+        style="@style/SmallBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/feature_homepage_bg_rounded_eb6a6e_5dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:text="@string/feature_home_page_auto_save_failed"
+        android:textAllCaps="false"
+        android:textColor="@color/color_EB6A6E"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivGoldSip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivGoldSip" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaymentStatusTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="1dp"
+        android:gravity="start"
+        android:text="@string/feature_home_page_payment_failed_due_to_low_bank_balance"
+        android:textColor="@color/color_ACA1D3"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivGoldSip" />
+
+    <View
+        android:id="@+id/topSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/core_ui_bg_top_rounded_corner"
+        android:backgroundTint="@color/color_3c3357"
+        app:layout_constraintBottom_toTopOf="@id/tvPendingAmountLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bottomSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/core_ui_bg_bottom_rounded_corner_16dp"
+        android:backgroundTint="@color/color_352F4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topSeparator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPendingAmountLabel"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:elevation="1dp"
+        android:gravity="start"
+        android:text="@string/feature_home_page_pending_amount"
+        android:textColor="@color/color_ACA1D3"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaymentStatusTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPendingAmount"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:elevation="1dp"
+        android:gravity="start"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPendingAmountLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPendingAmountLabel"
+        tools:text="@string/core_ui_rs_x_int" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        app:buttonText="@string/feature_gifting_pay_now"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPendingAmountLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

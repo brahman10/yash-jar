@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="412dp"
+    tools:background="@drawable/core_ui_rounded_black_bg_16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimeLeft"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        android:translationZ="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00:00"
+        tools:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReplay"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/core_ui_rounded_black_bg_16dp"
+        android:backgroundTint="@color/lightBgColor2"
+        android:drawablePadding="4dp"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:text="@string/core_ui_replay"
+        android:textSize="11sp"
+        android:translationZ="4dp"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/core_ui_ic_replay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:buffered_color="@color/transparent"
+            app:keep_content_on_player_reset="true"
+            app:played_color="@color/transparent"
+            app:resize_mode="fill"
+            app:shutter_background_color="@color/transparent"
+            app:surface_type="texture_view"
+            app:unplayed_color="@color/transparent"
+            app:use_controller="false" />
+    </androidx.cardview.widget.CardView>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="16dp"
+        android:elevation="4dp"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="46dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDarkColor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmiTitle"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_lending_loan_summary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/core_ui_ic_custom_question_mark"
+                app:tint="@color/white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardLoanDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/feature_lending_double_border_bg"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toBottomOf="@id/ivHelp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLoanDetails"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/feature_lending_loan_details"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvLoanDetails" />
+
+                <LinearLayout
+                    android:id="@+id/llAmount"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/feature_lending_purple_circle"
+                    android:gravity="center"
+                    android:minWidth="120dp"
+                    android:minHeight="120dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAmountToCreditedTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvProcessingFeeCut"
+                    tools:text="10000">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLoanAmount"
+                        style="@style/CommonBoldTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:text="10000" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/SmallTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:text="@string/feature_lending_loan_amount" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProcessingFeeCut"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@id/llAmount"
+                    app:layout_constraintTop_toBottomOf="@id/separator"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProcessingFee"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/color_ebb46a"
+                    app:layout_constraintStart_toEndOf="@id/tvProcessingFeeCut"
+                    app:layout_constraintTop_toTopOf="@id/tvProcessingFeeCut"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProcessingFeeTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature_lending_processing_fees"
+                    app:layout_constraintStart_toStartOf="@id/tvProcessingFeeCut"
+                    app:layout_constraintTop_toBottomOf="@id/tvProcessingFeeCut" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGstCut"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@id/tvProcessingFeeCut"
+                    app:layout_constraintTop_toBottomOf="@id/tvProcessingFeeTitle"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGst"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/color_ebb46a"
+                    app:layout_constraintStart_toEndOf="@id/tvGstCut"
+                    app:layout_constraintTop_toTopOf="@id/tvGstCut"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGstTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature_lending_gst"
+                    app:layout_constraintStart_toStartOf="@id/tvGstCut"
+                    app:layout_constraintTop_toBottomOf="@id/tvGstCut" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmountToCredited"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@id/tvGstCut"
+                    app:layout_constraintTop_toBottomOf="@id/tvGstTitle"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmountToCreditedTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_amount_to_be_credited"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvAmountToCredited"
+                    app:layout_constraintTop_toBottomOf="@id/tvAmountToCredited" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardEmiDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/feature_lending_double_border_bg"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toBottomOf="@id/cardLoanDetails">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmiDetails"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/feature_lending_emi_details"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/separator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmiDetails" />
+
+                <com.jar.app.feature_lending.impl.ui.common.custom_view.DashedCircleView
+                    android:id="@+id/dashedCircleView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvRepaymentAmountTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvEmiAmount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDuration"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/tvDurationTitle"
+                    app:layout_constraintEnd_toEndOf="@id/dashedCircleView"
+                    app:layout_constraintStart_toStartOf="@id/dashedCircleView"
+                    app:layout_constraintTop_toTopOf="@id/dashedCircleView"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    tools:text="10000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDurationTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="@string/feature_lending_duration"
+                    app:layout_constraintBottom_toBottomOf="@id/dashedCircleView"
+                    app:layout_constraintEnd_toEndOf="@id/dashedCircleView"
+                    app:layout_constraintStart_toStartOf="@id/dashedCircleView"
+                    app:layout_constraintTop_toBottomOf="@id/tvDuration" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmiAmount"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@id/dashedCircleView"
+                    app:layout_constraintTop_toBottomOf="@id/separator2"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmiAmountTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature_lending_emi_amount"
+                    app:layout_constraintStart_toStartOf="@id/tvEmiAmount"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmiAmount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmiDate"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@id/tvEmiAmount"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmiAmountTitle"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmiDateTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature_lending_first_emi_date"
+                    app:layout_constraintStart_toStartOf="@id/tvEmiDate"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmiDate" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRepaymentAmount"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@id/tvEmiDate"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmiDateTitle"
+                    tools:text="100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRepaymentAmountTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_total_repayment_amount"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvRepaymentAmount"
+                    app:layout_constraintTop_toBottomOf="@id/tvRepaymentAmount" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardBankDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/feature_lending_double_border_bg"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toBottomOf="@id/cardEmiDetails">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBankDetails"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/feature_lending_bank_details"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/separatorBankDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvBankDetails" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBankLogo"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAccountNumber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvBankName"
+                    tools:src="@tools:sample/avatars" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBankName"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivBankLogo"
+                    app:layout_constraintTop_toBottomOf="@id/separatorBankDetails"
+                    tools:text="@tools:sample/lorem" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAccountNumber"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/color_ACA1D3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivBankLogo"
+                    app:layout_constraintTop_toBottomOf="@id/tvBankName"
+                    tools:text="@tools:sample/lorem" />
+
+                <View
+                    android:id="@+id/separatorBankDetails2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvAccountNumber" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNameTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separatorBankDetails2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNameTitle"
+                    tools:text="@tools:sample/lorem" />
+
+                <View
+                    android:id="@+id/separatorBankDetails3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/core_ui_line_separator"
+                    app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvIfscTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:gravity="start"
+                    android:text="@string/feature_lending_ifsc_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separatorBankDetails3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvIfsc"
+                    style="@style/CommonTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvIfscTitle"
+                    tools:text="@tools:sample/lorem" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbTnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:button="@drawable/core_ui_custom_checkbox"
+            app:layout_constraintEnd_toStartOf="@id/tvTnc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTnc"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbTnC"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Terms ands conditions mddjjdjjd djdjdjdjd jjdjd jdjdd jdjdjjdjdjdjd djdjjdjd djdjjdjd jdjdjjddj ekekdkdk dkdkdkdkd dkdkddk djdjjdjdjdj djjdjdjd djdjjdjd ddjjdj djdjdjd jdjdjjd djdjdj" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        app:buttonText="@string/feature_lending_proceed" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.7"
+        android:drawableEnd="@drawable/feature_lending_ic_liqui_loans"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/feature_lending_powered_by"
+        android:textColor="@color/white" />
+</LinearLayout>

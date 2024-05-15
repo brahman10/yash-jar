@@ -1,0 +1,10 @@
+package com.jar.app.feature_gold_lease.shared.domain.use_case
+
+import com.jar.app.feature_gold_lease.shared.domain.model.GoldLeaseV2GoldOptions
+import com.jar.internal.library.jar_core_network.api.model.ApiResponseWrapper
+import com.jar.internal.library.jar_core_network.api.model.RestClientResult
+import kotlinx.coroutines.flow.Flow
+
+interface FetchGoldLeaseGoldOptionsUseCase {
+    suspend fun fetchGoldLeaseGoldOptions(planId: String): Flow<RestClientResult<ApiResponseWrapper<GoldLeaseV2GoldOptions?>>>
+}

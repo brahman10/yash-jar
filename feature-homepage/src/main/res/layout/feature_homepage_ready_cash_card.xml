@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/rounded_bg_3c3357_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieView"
+            android:layout_width="132dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:scaleType="fitEnd"
+            app:layout_constraintBottom_toTopOf="@id/llFooterHolder"
+            app:layout_constraintEnd_toStartOf="@id/centerBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_loop="true" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCardImage"
+            android:layout_width="132dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            app:layout_constraintBottom_toTopOf="@id/llFooterHolder"
+            app:layout_constraintEnd_toStartOf="@id/centerBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/centerBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="lottieView,ivCardImage" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYouAreEligible"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="@dimen/dimen_12dp"
+            android:gravity="start"
+            app:layout_constraintBottom_toTopOf="@id/tvOfferAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/centerBarrier"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="You are eligible for" />
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tvOfferAmount"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:gravity="start"
+            android:textAppearance="@style/BigTextViewStyle"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btnGetCash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/centerBarrier"
+            app:layout_constraintTop_toBottomOf="@id/tvYouAreEligible"
+            tools:text="₹0,00,000" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnGetCash"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            app:buttonRadius="2dp"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            app:buttonText="@string/feature_lending_get_cash"
+            app:layout_constraintBottom_toTopOf="@id/llFooterHolder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/centerBarrier"
+            app:layout_constraintTop_toBottomOf="@id/tvOfferAmount"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:textMarginEnd="36dp"
+            app:textMarginStart="36dp" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/buttonShimmer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/btnGetCash"
+            app:layout_constraintEnd_toEndOf="@id/btnGetCash"
+            app:layout_constraintStart_toStartOf="@id/btnGetCash"
+            app:layout_constraintTop_toTopOf="@id/btnGetCash"
+            app:shimmer_auto_start="false"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_duration="1000"
+            app:shimmer_fixed_width="56dp"
+            app:shimmer_highlight_color="@color/white_opacity_60"
+            app:shimmer_repeat_delay="2000"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear"
+            app:shimmer_tilt="30">
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFooterHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/footerCarousel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <!--   child views Added dynamically-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/footerCarousel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTopLabel"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_lending_bg_green_rounded_corner_6dp"
+        android:paddingHorizontal="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:textColor="@color/color_272239"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/clCard"
+        app:layout_constraintStart_toStartOf="@id/clCard"
+        app:layout_constraintTop_toTopOf="@id/clCard"
+        tools:ignore="SmallSp"
+        tools:text="Introducing JAR Cash" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_auto_start="true"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_duration="2000"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/core_ui_bg_shine" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

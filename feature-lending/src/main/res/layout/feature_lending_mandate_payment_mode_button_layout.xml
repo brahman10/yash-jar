@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/feature_lending_bg_outlined_846fc0_12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivStartIcon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:padding="2dp"
+            android:src="@drawable/core_ui_ic_bank"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPaymentModeTitle"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_8dp"
+            android:gravity="start"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivStartIcon"
+            app:layout_constraintEnd_toStartOf="@id/ivEndIcon"
+            app:layout_constraintStart_toEndOf="@id/ivStartIcon"
+            app:layout_constraintTop_toTopOf="@id/ivStartIcon"
+            tools:text="@string/feature_lending_please_try_again" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEndIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHeight_max="@dimen/dimen_20dp"
+            app:layout_constraintWidth_max="@dimen/dimen_20dp"
+            android:maxWidth="@dimen/dimen_20dp"
+            android:maxHeight="@dimen/dimen_20dp"
+            android:src="@drawable/feature_lending_ic_right_chevron"
+            app:layout_constraintBottom_toBottomOf="@id/tvPaymentModeTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvPaymentModeTitle"
+            app:layout_constraintTop_toTopOf="@id/tvPaymentModeTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvQuickerApproval"
+        style="@style/SmallBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_lending_bg_7745ff_2dp_solid"
+        android:paddingHorizontal="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:text="@string/feature_lending_kyc_quicker_approval"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/clRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/clRow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

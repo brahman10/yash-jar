@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Weekdays-->
+    <string name="feature_post_setup_monday">Monday</string>
+    <string name="feature_post_setup_tuesday">Tuesday</string>
+    <string name="feature_post_setup_wednesday">Wednesday</string>
+    <string name="feature_post_setup_thursday">Thursday</string>
+    <string name="feature_post_setup_friday">Friday</string>
+    <string name="feature_post_setup_saturday">Saturday</string>
+    <string name="feature_post_setup_sunday">Sunday</string>
+
+    <string name="feature_post_setup_mon">MON</string>
+    <string name="feature_post_setup_tue">TUE</string>
+    <string name="feature_post_setup_wed">WED</string>
+    <string name="feature_post_setup_thu">THU</string>
+    <string name="feature_post_setup_fri">FRI</string>
+    <string name="feature_post_setup_sat">SAT</string>
+    <string name="feature_post_setup_sun">SUN</string>
+
+
+    <string name="feature_post_setup_total_gold_purchase">Total Gold purchase</string>
+    <string name="feature_post_setup_total_amount_saved">Total amount saved</string>
+    <string name="feature_post_setup_active_for">Active for</string>
+    <string name="feature_post_setup_x_days">%d days</string>
+    <string name="feature_post_setup_x_days_capital">%d Days</string>
+    <string name="feature_post_setup_transaction_summary_s">Transaction summary %s</string>
+    <string name="feature_post_setup_save_now">Save Now</string>
+    <string name="feature_post_setup_settings">Settings</string>
+    <string name="feature_post_setup_quick_actions">Quick Actions</string>
+    <string name="feature_post_setup_daily_saving">Daily Saving</string>
+    <string name="feature_post_setup_contact_support">Contact \nSupport</string>
+    <string name="feature_post_setup_faqs">FAQs</string>
+    <string name="feature_post_setup_success">Success</string>
+    <string name="feature_post_setup_successful">Successful</string>
+    <string name="feature_post_setup_failed">Failed</string>
+    <string name="feature_post_setup_failure">Failure</string>
+    <string name="feature_post_setup_in_progress">In Progress</string>
+    <string name="feature_post_setup_scheduled">Scheduled</string>
+    <string name="feature_post_setup_paused">Paused</string>
+    <string name="feature_post_setup_you_can_choose_to_pay_for_less_days">*Partial payment available</string>
+    <string name="feature_post_setup_yay_savings_successful">Yay, savings successful!</string>
+    <string name="feature_post_setup_for_x_days">For %d days.</string>
+    <string name="feature_post_setup_xrs_fgm">\u20B9%d | %s</string>
+    <string name="feature_post_setup_xrs">\u20B9%d</string>
+    <string name="feature_post_setup_i_have_a_query_transaction_s_and_amount_s">I have a query with my Daily Savings transaction %s of amount %s. Could you please help?</string>
+
+    <string name="feature_post_setup_select_the_days_you_want_to_save_for">Select days to retry saving…</string>
+    <string name="feature_post_setup_selected">Selected </string>
+    <string name="feature_post_setup_total_amount">Total amount to be paid</string>
+    <string name="feature_post_setup_go_to_daily_saving">Go To Daily Saving</string>
+    <string name="feature_post_setup_gold_added_to_locker">Gold added to locker</string>
+    <string name="feature_post_setup_we_are_trying_to_buy_gold_worth_x">We are trying to buy gold \nworth ₹%d for you</string>
+    <string name="feature_post_setup_we_are_unable_to_buy_gold_worth_x">We are unable to buy gold \nworth ₹%d for you 🙁</string>
+    <string name="feature_post_setup_it_is_taking_longer">It is taking a little longer to buy \ngold for you due to server error.</string>
+    <string name="feature_post_setup_any_amount_debited_will_be_credited">Any amount debited, will be credited back to the source account in 48 hrs.</string>
+
+    <plurals name="feature_post_setup_n_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+
+    <string name="feature_post_setup_total_savings">Total savings</string>
+    <string name="feature_post_setup_spins_earned">Spins earned</string>
+    <string name="feature_post_setup_your_savings_are_paused_till_s">Your savings are paused till \n%s</string>
+    <string name="feature_post_setup_restart_your_daily_savings">Restart your daily savings \njourney</string>
+    <string name="feature_post_setup_setup_now"><u>Setup now</u></string>
+    <string name="feature_post_setup_resume_now"><u>Resume now</u></string>
+    <string name="feature_post_setup_gold_purchase_successful">Gold Purchase Successful</string>
+    <string name="feature_post_setup_go_back_to_main_screen">Go back to main screen</string>
+    <string name="feature_post_setup_24k_gold_bought">24K Gold bought</string>
+    <string name="feature_post_setup_unable_to_save_your_money">Unable to save your money</string>
+    <string name="feature_post_setup_there_has_been_recurring_failures">There has been recurring failures, due to low balance in bank account</string>
+    <string name="feature_post_setup_current_linked_bank_account">Current linked bank account</string>
+    <string name="feature_post_setup_update_auto_save">Update Auto-save</string>
+    <string name="feature_post_setup_we_are_unable_to_execute_for_x_days">We are unable to execute \nyour savings for %d days</string>
+    <string name="feature_post_setup_resolve_now"><u>Resolve Now</u></string>
+    <string name="feature_post_setup_ds_resumed_successfully">Yay..\nDaily saving resumed \nsuccessfully!</string>
+    <string name="feature_post_setup_your_saving_will_continue_from_tomorrow">Your savings will continue from tomorrow!</string>
+    <string name="feature_post_setup_daily_saving_paused">Daily saving paused</string>
+    <string name="feature_post_setup_we_will_not_save_for_you_for_the_next_s">We will not save daily for you for the next %s </string>
+    <string name="feature_post_setup_lets_automate_your_daily_saving_of_rs_x">Let’s automate your daily saving of ₹%d</string>
+    <string name="feature_post_setup_track_my_savings">Track my savings</string>
+    <string name="feature_post_setup_daily_saving_setup_successfully">Daily saving setup \nsuccessfully</string>
+    <string name="feature_post_setup_daily">Daily</string>
+    <string name="feature_post_setup_refresh">Refresh</string>
+    <string name="feature_post_setup_x_int">\u20B9%d</string>
+    <string name="feature_post_setup_retry">Retry</string>
+
+    <string name="feature_post_setup_if_money_was_debited">If your money was debited, no worries. You will get it all back in your account within 24 hours.</string>
+    <string name="feature_post_setup_dont_worry_we_will_notify_you">Don\'t worry, we\'ll notify you as soon as we get an update..</string>
+    <string name="feature_post_setup_savings_successful_for">Savings successful for</string>
+    <string name="feature_post_setup_savings_pending_for">Savings pending for</string>
+    <string name="feature_post_setup_savings_failed_for">Savings failed for</string>
+    <string name="feature_post_setup_"></string>
+    <string name="till_tomorrow">till tomorrow</string>
+    <string name="for_1_week">for 1 week</string>
+    <string name="for_2_week">for 2 weeks</string>
+    <string name="permanently">Permanently</string>
+    <string name="your_savings_will_resume_on">Your savings will automatically\nresume on </string>
+    <string name="savings_stopped">Savings stopped </string>
+    <string name="savings_stopped_permanently">Savings Stopped Permanently</string>
+    <string name="you_can_restart_when_you_need">You can restart when you are\nready to save again</string>
+</resources>

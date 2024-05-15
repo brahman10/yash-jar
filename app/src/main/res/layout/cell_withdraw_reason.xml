@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reasonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/round_black_bg_16dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dimen_20dp"
+    android:paddingVertical="@dimen/dimen_12dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReason"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        tools:text="@tools:sample/lorem/random" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="@dimen/dimen_22dp"
+        android:layout_height="@dimen/dimen_22dp"
+        android:src="@drawable/feature_duo_ic_check"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarThumbHorizontal="@null"
+    android:scrollbarThumbVertical="@null">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tools:background="@color/bgColor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/jar_logo_horizontal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/CustomProgressBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="12dp"
+                android:max="100"
+                android:progress="33"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderEnterOtp"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:textFontWeight="700"
+            android:textColor="@color/white"
+            android:text="@string/feature_onboarding_enter_otp_tittle"
+            android:textSize="24sp"
+            android:lineHeight="@dimen/dimen_32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_EEEAFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderEnterOtp"
+            tools:text="@string/feature_onboarding_otp_header" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:tag="com.userexperior.dontmask"
+            android:textColor="@color/white"
+            android:textSelectHandle="@drawable/ic_empty_handle"
+            android:textSize="20sp"
+            app:OtpItemCount="6"
+            app:OtpLineColor="@color/color_7745FF"
+            app:OtpViewType="line"
+            app:fontFamily="@font/inter_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription">
+
+            <requestFocus />
+        </com.mukesh.OtpView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOtpError"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:gravity="start"
+            android:textColor="@color/color_EB6A6E"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/dimen_4dp"
+            tools:visibility="visible"
+            android:drawableStart="@drawable/core_ui_ic_cross"
+            app:layout_constraintEnd_toEndOf="@id/otpView"
+            app:layout_constraintStart_toStartOf="@id/otpView"
+            app:layout_constraintTop_toBottomOf="@id/otpView"
+            tools:text="@string/some_error_occurred" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvOtpError,otpView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clOtpTextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrierOtp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCallTimer"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/color_D5CDF2"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/call_to_verify"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/resend_otp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvResendOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_D5CDF2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/resend_otp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="28dp"
+            android:visibility="visible"
+            app:buttonText="@string/feature_onboarding_flow_verify"
+            app:buttonTextAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/clOtpTextBtn"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTermsConditions"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/feature_onboarding_flow_tc_text"
+            app:layout_constraintTop_toBottomOf="@+id/btnVerify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/whatsappDataGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="btnViewOtpOnWhatsapp,tvDivider,divider1,divider2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDivider"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/bgColor"
+            android:text="@string/feature_onboarding_enter_otp_divider_text"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTermsConditions"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+            app:layout_constraintEnd_toStartOf="@id/tvDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDivider"
+            app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnLoginWithTruecaller"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:buttonDrawablePadding="@dimen/dimen_10dp"
+            app:buttonDrawableStart="@drawable/ic_truecaller_new"
+            app:buttonText="@string/feature_onboarding_truecaller_btn_text"
+            app:buttonType="secondaryButton"
+            app:buttonBackgroundColor="@color/color_3c3357"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDivider"
+            tools:visibility="visible" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnViewOtpOnWhatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="14dp"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:buttonDrawablePadding="@dimen/dimen_12dp"
+            app:buttonDrawableStart="@drawable/ic_whatsapp"
+            app:buttonEndColor="@color/bgColor"
+            app:buttonStartColor="@color/bgColor"
+            app:buttonText="@string/core_ui_view_otp_on_whatsapp"
+            app:buttonType="secondaryButton"
+            app:buttonBackgroundColor="@color/color_3c3357"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLoginWithTruecaller"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

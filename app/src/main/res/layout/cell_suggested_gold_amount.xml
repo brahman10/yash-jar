@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    tools:layout_marginHorizontal="6dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect_6dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_6dp"
+        android:textColor="@color/color_ACA1D3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₹1001" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_black_bg_16dp"
+        android:backgroundTint="@color/color_455FCE"
+        android:clickable="false"
+        android:focusable="false"
+        app:fontFamily="@font/inter_bold"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="2dp"
+        android:text="@string/best"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:translationY="-5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/tvAmount"
+        app:layout_constraintStart_toStartOf="@id/tvAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount"
+        app:textAllCaps="true"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

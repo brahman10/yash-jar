@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_121127">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_default_revamped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/flGoldPriceTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_532FA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <com.jar.app.core_ui.widget.PriceValidityTimer
+            android:id="@+id/goldPriceTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/feature_gold_lease_bg_gradient_order_detail"
+        app:layout_constraintBottom_toTopOf="@id/llInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flGoldPriceTimer">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvJewellerIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivJewellerIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivJewellerInfo"
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:src="@drawable/feature_gold_lease_ic_info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvJewellerName"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:gravity="start"
+                    android:textColor="@color/color_EEEAFF"
+                    app:layout_constraintEnd_toStartOf="@id/ivJewellerInfo"
+                    app:layout_constraintStart_toEndOf="@+id/cvJewellerIcon"
+                    app:layout_constraintTop_toTopOf="@id/cvJewellerIcon"
+                    tools:text="Sultania Jewellers" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvJewellerEst"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start"
+                    android:textColor="@color/color_D5CDF2"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/tvJewellerName"
+                    app:layout_constraintStart_toStartOf="@id/tvJewellerName"
+                    app:layout_constraintTop_toBottomOf="@id/tvJewellerName"
+                    tools:ignore="SmallSp"
+                    tools:text="Sultania Jewellers" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_16dp"
+                android:background="@drawable/feature_gold_lease_bg_rounded_d5cdf2_20dp"
+                android:paddingHorizontal="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGoldLeaseTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:gravity="start"
+                    android:textColor="@color/color_272239_70"
+                    app:layout_constraintEnd_toStartOf="@id/tvGoldLeaseEarningsTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Gold for lease" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGoldLeaseEarningsTitle"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_272239_70"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="GoldX earnings" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGoldLeaseValue"
+                    style="@style/BigTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_272239"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvGoldLeaseTitle"
+                    tools:text="0.5000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:text="@string/feature_gold_lease_gm"
+                    android:textColor="@color/color_272239_70"
+                    app:layout_constraintBottom_toBottomOf="@id/tvGoldLeaseValue"
+                    app:layout_constraintStart_toEndOf="@+id/tvGoldLeaseValue" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:src="@drawable/feature_gold_lease_v2_ic_plus"
+                    app:layout_constraintBottom_toBottomOf="@id/tvGoldLeaseEarningsValue"
+                    app:layout_constraintEnd_toStartOf="@id/tvGoldLeaseEarningsValue"
+                    app:layout_constraintStart_toEndOf="@id/tvGoldLeaseValue"
+                    app:layout_constraintTop_toTopOf="@id/tvGoldLeaseEarningsValue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGoldLeaseEarningsValue"
+                    style="@style/BigTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:textColor="@color/color_272239"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/tvEarningsGmLabel"
+                    app:layout_constraintTop_toBottomOf="@id/tvGoldLeaseTitle"
+                    tools:text="0.5000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEarningsGmLabel"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:text="@string/feature_gold_lease_gm"
+                    android:textColor="@color/color_272239_70"
+                    app:layout_constraintBottom_toBottomOf="@id/tvGoldLeaseEarningsValue"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLockInText"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:drawableStart="@drawable/feature_gold_lease_ic_lock_in"
+                    android:drawablePadding="@dimen/dimen_8dp"
+                    android:gravity="start"
+                    android:textColor="@color/color_272239"
+                    app:drawableTint="@color/color_272239"
+                    app:layout_constraintEnd_toStartOf="@id/tvEarningsPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvGoldLeaseValue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEarningsPercent"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_272239"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLockInText"
+                    app:layout_constraintEnd_toStartOf="@id/tvJarBonusTag"
+                    app:layout_constraintTop_toTopOf="@id/tvLockInText"
+                    tools:text="2.5% + 1%" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvJarBonusTag"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_gold_lease_bg_rounded_30_ebb46a"
+                    android:paddingHorizontal="@dimen/dimen_8dp"
+                    android:paddingVertical="@dimen/dimen_4dp"
+                    android:text="@string/feature_gold_lease_jar_bonus"
+                    android:textColor="@color/color_272239"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvEarningsPercent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvEarningsPercent"
+                    app:textAllCaps="false"
+                    tools:ignore="SmallSp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_gold_lease_bg_top_rounded_272239"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/core_ui_round_black_bg_16dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTabInRupees"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="@dimen/dimen_8dp"
+                android:text="@string/feature_bug_gold_v2_in_rupees"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTabInGrams"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_bg_3c3357_12dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="@dimen/dimen_8dp"
+                android:text="@string/feature_buy_gold_v2_in_grams"
+                android:textColor="@color/color_ACA1D3" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBuyGoldInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/core_ui_round_black_bg_16dp"
+            android:paddingHorizontal="@dimen/dimen_20dp"
+            android:paddingVertical="@dimen/dimen_18dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRupeeSymbol"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_buy_gold_v2_rupees_symbol"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etBuyGoldInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="0123456789."
+                android:fontFamily="@font/inter_bold"
+                android:gravity="start|center_vertical"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="9"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/dimen_12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_ACA1D3"
+                android:textSize="28sp"
+                app:fontFamily="@font/inter_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvGramSymbol"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/tvRupeeSymbol"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText">
+
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvGramSymbol"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_buy_gold_v2_gm_label"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvErrorMessage"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:textColor="@color/color_eb6a6e"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSuggestedGoldAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            tools:itemCount="5"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/cell_suggested_buy_gold_amount"
+            tools:orientation="horizontal" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clUserGoldBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUseJarGold"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/feature_gold_lease_ic_locker"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:gravity="start"
+                android:textColor="@color/color_EEEAFF"
+                app:drawableTint="@color/color_EEEAFF"
+                app:layout_constraintBottom_toBottomOf="@id/switchLocker"
+                app:layout_constraintEnd_toStartOf="@id/switchLocker"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/switchLocker"
+                tools:text="Use 1.0037 gm from your locker" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchLocker"
+                style="@style/SwitchStyleWithOnOffTextThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:switchMinWidth="0dp"
+                app:switchPadding="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/separatorLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginVertical="@dimen/dimen_18dp"
+            android:background="@color/color_776e94" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPayableAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPayableAmount"
+                style="@style/CommonBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_gold_lease_rupee_prefix_string"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPayableAmountDescription"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:gravity="start"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/tvPayableAmount"
+                app:layout_constraintEnd_toStartOf="@id/tvPayableAmount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvPayableAmount"
+                tools:text="Amount payable for 0.1 gm" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="54dp"
+            app:buttonText="@string/feature_gold_lease_proceed" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

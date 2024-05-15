@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">పేరు</string>
+    <string name="phone_number">ఫోన్ నంబర్</string>
+    <string name="please_fill_all_the_details">దయచేసి అన్ని వివరాలను పూరించండి</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="pincode">పిన్‌కోడ్</string>
+    <string name="city">నగరం</string>
+    <string name="enter_city">నగరాన్ని నమోదు చేయండి</string>
+    <string name="state">రాష్ట్రం</string>
+    <string name="enter_state">రాష్ట్రాన్ని నమోదు చేయండి</string>
+    <string name="enter_pin_code">పిన్ కోడ్‌ని నమోదు చేయండి</string>
+    <string name="add_details">వివరాలను జోడించు</string>
+    <string name="your_full_address">మీ పూర్తి చిరునామా</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">వివరాలను సబ్మిట్ చేయండి</string>
+    <string name="details_added">వివరాలు జోడించబడ్డాయి</string>
+    <string name="street_address_one">వీధి చిరునామా 1</string>
+    <string name="address_line_1">చిరునామా లైన్ 1</string>
+    <string name="address_line_2">చిరునామా లైన్ 2</string>
+    <string name="check">తనిఖీ చేయండి</string>
+    <string name="street_address_two">వీధి చిరునామా 2 (ఐచ్ఛికం)</string>
+    <string name="please_enter_a_valid_pincode">దయచేసి సరైన పిన్‌కోడ్‌ను నమోదు చేయండి</string>
+    <string name = "this_area_is_not_servicable_currently"> ఈ ప్రాంతనికి ప్రస్తుతం సర్వీస్ లేదు</string>
+    <string name="edit_address">చిరునామాను సవరించు</string>
+    <string name="add_new_address">కొత్త చిరునామాను జోడించు</string>
+    <string name="save_new_address">కొత్త చిరునామాను సేవ్ చేయి</string>
+    <string name="update_address">చిరునామాను అప్డేట్ చేయండి</string>
+    <string name="save_and_proceed">సేవ్ చేసి కొనసాగండి</string>
+    <string name="select_an_address_for_delivery">డెలివరీ కోసం చిరునామాను ఎంచుకోండి</string>
+    <string name="no_delivery_address_available">డెలివరీ చిరునామా అందుబాటులో లేదు</string>
+    <string name="saved_addresses">సేవ్ చేయబడిన చిరునామాలు</string>
+    <string name="add_delivery_details">డెలివరీ వివరాలను జోడించు</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">మీ ఆధార్ కార్డ్‌కి లింక్ చేయబడింది</string>
+    <string name="feature_user_api_saved_address">సేవ్ చేయబడిన చిరునామా</string>
+    <string name="feature_lending_recently_saved">ఇటీవల సేవ్ చేయబడింది</string>
+</resources>

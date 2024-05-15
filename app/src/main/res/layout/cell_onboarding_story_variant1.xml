@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoundedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_rounded_bottom_corner_40dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            tools:src="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:lineSpacingMultiplier="0.9"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="900"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="3sp"
+        android:autoSizeMaxTextSize="66sp"
+        android:autoSizeStepGranularity="1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clRoundedImageView"
+        app:layout_constraintBottom_toTopOf="@id/tvDescription"
+        app:textAllCaps="true"
+        tools:text="JOIN 1 CRORE+ INDIANS" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:fontFamily="@font/inter"
+        android:lineSpacingMultiplier="1.2"
+        android:textAlignment="center"
+        android:textColor="@color/color_D5CDF2"
+        android:textFontWeight="400"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="9sp"
+        android:autoSizeMaxTextSize="16dp"
+        android:autoSizeStepGranularity="1sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading"
+        app:layout_constraintVertical_bias="1"
+        tools:text="People from all over India trust us \nas their savings partner"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

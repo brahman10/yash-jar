@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    android:background="@drawable/bg_rounded_2e2942_10dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/coin_iv"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageView10percent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/coinName"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:textColor="#EEEAFF"
+        app:layout_constraintStart_toEndOf="@id/coin_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ganesh" />
+
+    <TextView
+        android:id="@+id/coinQuantity"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#ACA1D3"
+        app:layout_constraintStart_toEndOf="@id/coin_iv"
+        app:layout_constraintTop_toBottomOf="@id/coinName"
+        tools:text="1 Item" />
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:textColor="#ACA1D3"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/coinName"
+        tools:text="1 Item" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/coinQuantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coinQuantity"
+        tools:text="1 Item" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="#3C3357"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coin_iv" />
+
+
+    <TextView
+        android:id="@+id/viewTv"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="@dimen/dimen_14dp"
+        android:text="@string/view_details"
+        android:textColor="#ACA1D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_right_chevron"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

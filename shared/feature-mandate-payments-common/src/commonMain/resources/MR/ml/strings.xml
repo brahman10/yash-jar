@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_mandate_payment_proceed">തുടരുക</string>
+    <string name="feature_mandate_payment_invalid_upi_id">അസാധുവായി Upi ഐഡി</string>
+    <string name="feature_mandate_payment_upi_id_doesnt_support_mandate">Upi ഐഡി ഉത്തരവിനെ പിന്തുണക്കുന്നില്ല</string>
+    <string name="feature_mandate_payment_transaction_cancelled">ഇടപാട് റദ്ദാക്കി</string>
+    <string name="feature_mandate_payment_something_went_wrong">എന്തോ പിശകുണ്ടായി</string>
+    <string name="feature_mandate_payment_we_are_verifying_your_payment_status">ഞങ്ങൾ നിങ്ങളുടെ പേയ്‌മെന്റ് നില പരിശോധിക്കുന്നു.</string>
+    <string name="feature_mandate_rs_x_int_will_be_debited_from_your_bank_account">ഓട്ടോ-സേവ് സെറ്റപ്പ് ചെയ്യാൻ ₹%d നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ടിൽ നിന്ന് കുറയ്ക്കും</string>
+    <string name="feature_mandate_it_will_be_saved_in_gold_and_can_be_found_in_gold_locker">അത് സ്വർണമായി സൂക്ഷിക്കും കൂടാതെ നിങ്ങളുടെ സ്വർണ ലോക്കറിൽ അത് കാണാം</string>
+    <string name="feature_mandate_payment_select_preferred_way_to_autosave">ഓട്ടോ-സേവ് ചെയ്യാൻ ഇഷ്ടപ്പെട്ട മാർഗം തിരഞ്ഞെടുക്കുക</string>
+    <string name="feature_mandate_payment_using_upi_app">UPI ആപ്പ് ഉപയോഗിച്ച്</string>
+</resources>

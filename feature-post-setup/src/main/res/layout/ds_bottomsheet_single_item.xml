@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_rounded_776e94_10dp"
+    android:id="@+id/clRootContainer"
+    android:layout_marginBottom="@dimen/dimen_12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSelected"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_marginStart="@dimen/dimen_14dp"
+            android:src="@drawable/radio_button_selected" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLeftHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginVertical="@dimen/dimen_14dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/color_EEEAFF"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:text="Till Tomorrow"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="73dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRightHeader"
+            android:layout_marginEnd="@dimen/dimen_14dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/color_ACA1D3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Till Tomorrow" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

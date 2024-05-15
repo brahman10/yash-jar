@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_round_off"
+    app:startDestination="@id/roundOffDetailsFragment">
+
+    <action
+        android:id="@+id/action_to_smsPermissionFromRoundOffFragment"
+        app:destination="@id/smsPermissionFromRoundOffFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_selectRoundOffSaveMethodFragment"
+        app:destination="@id/selectRoundOffSaveMethodFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_preRoundOffAutopaySetupFragment"
+        app:destination="@id/preRoundOffAutopaySetupFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_roundOffAutoPaySuccessFragment"
+        app:destination="@id/roundOffAutoPaySuccessFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffCalculatedFragment"
+        app:destination="@id/roundOffCalculatedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_investMoreMoneyBottomSheet"
+        app:destination="@id/investMoreMoneyBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffCalculationLoadingFragment"
+        app:destination="@id/roundOffCalculationLoadingFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffChangeToManualBottomSheet"
+        app:destination="@id/roundOffChangeToManualBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_pauseRoundOffBottomSheet"
+        app:destination="@id/pauseRoundOffBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffAutoSaveResumeBottomSheet"
+        app:destination="@id/roundOffAutoSaveResumeBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_pauseOrDisableRoundOffBottomSheet"
+        app:destination="@id/pauseOrDisableRoundOffBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_disableRoundOffBottomSheet"
+        app:destination="@id/disableRoundOffBottomSheet"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffAutoSaveDisabledFragment"
+        app:destination="@id/roundOffAutoSaveDisabledFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffExplanationFragment"
+        app:destination="@id/roundOffExplanationFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_roundOffDetailsFragment"
+        app:destination="@id/roundOffDetailsFragment"
+        app:launchSingleTop="true" />
+
+    <dialog
+        android:id="@+id/disableRoundOffDialogFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_settings.disable_round_off.DisableRoundOffDialogFragment"
+        android:label="DisableRoundOffDialogFragment"
+        tools:layout="@layout/feature_round_off_dialog_disable_round_off" />
+
+    <dialog
+        android:id="@+id/roundOffResumedFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_settings.round_off_resumed.RoundOffResumedFragment"
+        android:label="RoundOffResumedFragment"
+        tools:layout="@layout/feature_round_off_resumed" />
+
+    <dialog
+        android:id="@+id/roundOffToNextDialogFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_settings.round_of_to.RoundOffToNextDialogFragment"
+        android:label="RoundOfToNextDialogFragment"
+        tools:layout="@layout/feature_round_off_dialog_round_off_to_next">
+        <argument
+            android:name="roundOffTo"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/pauseRoundOffDialogFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_settings.pause_round_off.PauseRoundOffDialogFragment"
+        android:label="PauseRoundOffDialogFragment"
+        tools:layout="@layout/feature_round_off_dialog_pause_round_off" />
+
+    <dialog
+        android:id="@+id/updateAutoSaveDialogFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_settings.update_auto_save.UpdateAutoSaveDialogFragment"
+        android:label="UpdateAutoSaveDialogFragment"
+        tools:layout="@layout/feature_round_off_dialog_update_auto_save" />
+
+    <fragment
+        android:id="@+id/roundOffExplanationFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.explanation.RoundOffExplanationFragment"
+        android:label="RoundOffExplanationFragment"
+        tools:layout="@layout/feature_round_off_fragment_explanation">
+        <deepLink app:uri="android-app://com.jar.app/roundOffExplanation/{isHelpFlow}/{clickTime}/{fromScreen}" />
+
+        <argument
+            android:name="isHelpFlow"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:nullable="false"
+            app:argType="string" />
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue="DEFAULT"
+            app:nullable="false"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/smsPermissionFromRoundOffFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.sms_permission.SmsPermissionFromRoundOffFragment"
+        android:label="SmsPermissionFromRoundOffFragment"
+        tools:layout="@layout/feature_round_off_fragment_sms_permission_from_round_off">
+        <action
+            android:id="@+id/action_smsPermissionFromRoundOffFragment_to_roundOffCalculationLoadingFragment"
+            app:destination="@id/roundOffCalculationLoadingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffCalculationLoadingFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.calculation_loading.RoundOffCalculationLoadingFragment"
+        android:label="RoundOffCalculationLoadingFragment"
+        tools:layout="@layout/feature_round_off_fragment_round_off_calculation_loading">
+        <deepLink app:uri="android-app://com.jar.app/roundOffLoading/{screenFlow}/{clickTime}" />
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:nullable="false"
+            app:argType="string" />
+        <argument
+            android:name="screenFlow"
+            android:defaultValue="DEFAULT"
+            app:nullable="false"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffCalculatedFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_calculated.RoundOffCalculatedFragment"
+        android:label="RoundOffCalculatedFragment"
+        tools:layout="@layout/feature_round_off_fragment_round_off_calculated">
+
+        <deepLink app:uri="android-app://com.jar.app/roundOffCalculated/{screenFlow}/{clickTime}" />
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:nullable="false"
+            app:argType="string" />
+        <argument
+            android:name="screenFlow"
+            android:defaultValue="DEFAULT"
+            app:nullable="false"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_roundOffCalculatedFragment_to_selectRoundOffSaveMethodFragment"
+            app:destination="@id/selectRoundOffSaveMethodFragment" />
+        <action
+            android:id="@+id/action_roundOffCalculatedFragment_to_initialRoundOffBottomSheet"
+            app:destination="@id/initialRoundOffBottomSheet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffAutoPaySuccessFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.post_autopay.success.RoundOffAutoPaySuccessFragment"
+        android:label="RoundOffAutoPaySuccessFragment"
+        tools:layout="@layout/feature_round_off_fragment_autopay_success">
+
+        <deepLink app:uri="android-app://com.jar.app/roundOffAutoPaySuccess/{fetchMandatePaymentStatusResponse}" />
+
+        <argument
+            android:name="fetchMandatePaymentStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffAutoPayPendingOrFailureFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.post_autopay.pending_or_failure.RoundOffAutoPayPendingOrFailureFragment"
+        android:label="RoundOffAutoPayPendingOrFailureFragment"
+        tools:layout="@layout/feature_round_off_fragment_autopay_pending_or_failure">
+
+        <deepLink app:uri="android-app://com.jar.app/roundOffAutoPayPendingOrFailure/{mandatePaymentResultFromSDK}/{fetchMandatePaymentStatusResponse}" />
+
+        <argument
+            android:name="mandatePaymentResultFromSDK"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="fetchMandatePaymentStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/preRoundOffAutopaySetupFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.pre_autopay.PreRoundOffAutopaySetupFragment"
+        android:label="PreRoundOffAutopaySetupFragment"
+        tools:layout="@layout/feature_round_off_fragment_pre_autopay_setup">
+
+        <deepLink app:uri="android-app://com.jar.app/preRoundOffAutopaySetup" />
+
+        <action
+            android:id="@+id/action_preRoundOffAutopaySetupFragment_to_roundOffAutoPaySuccessFragment"
+            app:destination="@id/roundOffAutoPaySuccessFragment" />
+        <action
+            android:id="@+id/action_preRoundOffAutopaySetupFragment_to_roundOffAutoPayPendingOrFailureFragment"
+            app:destination="@id/roundOffAutoPayPendingOrFailureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffPaymentSuccessFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.post_one_time_payment.success.RoundOffPaymentSuccessFragment"
+        android:label="RoundOffPaymentSuccessFragment"
+        tools:layout="@layout/feature_round_off_fragment_payment_success">
+
+        <argument
+            android:name="fetchManualPaymentStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/roundOffPaymentSuccess/{fetchManualPaymentStatusResponse}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffPaymentPendingOrFailureFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.post_one_time_payment.pending_or_failure.RoundOffPaymentPendingOrFailureFragment"
+        android:label="RoundOffPaymentPendingOrFailureFragment"
+        tools:layout="@layout/feature_round_off_fragment_payment_pending_or_failure">
+
+        <argument
+            android:name="fetchManualPaymentStatusResponse"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/roundOffPaymentPendingOrFailure/{fetchManualPaymentStatusResponse}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectRoundOffSaveMethodFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.save_method.SelectRoundOffSaveMethodFragment"
+        android:label="SelectRoundOffSaveMethodFragment"
+        tools:layout="@layout/feature_round_off_fragment_select_round_off_save_method">
+
+        <action
+            android:id="@+id/action_selectRoundOffSaveMethodFragment_to_roundOffPaymentPendingOrFailureFragment"
+            app:destination="@id/roundOffPaymentPendingOrFailureFragment" />
+        <action
+            android:id="@+id/action_selectRoundOffSaveMethodFragment_to_roundOffPaymentSuccessFragment"
+            app:destination="@id/roundOffPaymentSuccessFragment" />
+        <action
+            android:id="@+id/action_selectRoundOffSaveMethodFragment_to_roundOffActivatedBottomSheet"
+            app:destination="@id/roundOffActivatedBottomSheet" />
+        <action
+            android:id="@+id/action_selectRoundOffSaveMethodFragment_to_preRoundOffAutopaySetupFragment"
+            app:destination="@id/preRoundOffAutopaySetupFragment" />
+        <action
+            android:id="@+id/action_selectRoundOffSaveMethodFragment_to_manualRoundOffConfirmationBottomSheet"
+            app:destination="@id/manualRoundOffConfirmationBottomSheet" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/initialRoundOffBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.initial_round_off.InitialRoundOffBottomSheet"
+        android:label="InitialRoundOffBottomSheet"
+        tools:layout="@layout/feature_round_off_initial_round_off_bottom_sheet">
+
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="roundOffAmount"
+            app:argType="float"
+            app:nullable="false" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/roundOffActivatedBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_activated.RoundOffActivatedBottomSheet"
+        android:label="RoundOffActivatedBottomSheet"
+        tools:layout="@layout/feature_round_off_activated_bottom_sheet">
+
+        <argument
+            android:name="roundOffAmount"
+            android:defaultValue="20"
+            app:argType="float"
+            app:nullable="false" />
+
+        <argument
+            android:name="isSpendsDetected"
+            app:argType="boolean"
+            app:nullable="false" />
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/investMoreMoneyBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.invest_money.InvestMoreMoneyBottomSheet"
+        android:label="InvestMoreMoneyBottomSheet"
+        tools:layout="@layout/feature_round_off_invest_more_money_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/setupRoundOffFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.setup.SetupRoundOffFragment"
+        android:label="SetupRoundOffFragment"
+        tools:layout="@layout/feature_round_off_fragment_setup">
+
+        <deepLink app:uri="android-app://com.jar.app/setupRoundOff/{mandatePaymentProgressStatus}" />
+
+        <argument
+            android:name="mandatePaymentProgressStatus"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roundOffDetailsFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.round_off_details.RoundOffDetailsFragment"
+        android:label="RoundOffDetailsFragment"
+        tools:layout="@layout/feature_round_off_fragment_details">
+        <deepLink app:uri="android-app://com.jar.app/roundOffDetails/{clickTime}/{screenFlow}" />
+
+        <argument
+            android:name="clickTime"
+            android:defaultValue="0"
+            app:nullable="false"
+            app:argType="string" />
+
+        <argument
+            android:name="screenFlow"
+            android:defaultValue="DEFAULT"
+            app:nullable="false"
+            app:argType="string" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/roundOffAutoSaveDisabledFragment"
+        android:name="com.jar.app.feature_round_off.impl.ui.user_validation.auto_save.disable.RoundOffAutoSaveDisabledFragment"
+        android:label="RoundOffAutoSaveDisabledFragment"
+        tools:layout="@layout/feature_round_off_fragment_auto_save_disabled" />
+
+    <dialog
+        android:id="@+id/roundOffChangeToManualBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.user_validation.RoundOffChangeToManualBottomSheet"
+        android:label="RoundOffChangeToManualBottomSheet"
+        tools:layout="@layout/feature_round_off_change_to_manual_bottom_sheet" />
+
+    <dialog
+        android:id="@+id/pauseOrDisableRoundOffBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.user_validation.disable.PauseOrDisableRoundOffBottomSheet"
+        android:label="PauseOrDisableRoundOffBottomSheet"
+        tools:layout="@layout/feature_round_off_pause_or_disable_bottom_sheet">
+
+        <argument
+            android:name="paymentType"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/disableRoundOffBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.user_validation.disable.DisableRoundOffBottomSheet"
+        android:label="disableRoundOffBottomSheet"
+        tools:layout="@layout/feature_round_off_disable_bottom_sheet">
+
+
+        <argument
+            android:name="paymentType"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/pauseRoundOffBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.pause.PauseRoundOffBottomSheet"
+        android:label="PauseRoundOffBottomSheet"
+        tools:layout="@layout/feature_round_off_pause_bottom_sheet">
+
+        <argument
+            android:name="paymentType"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/roundOffAutoSaveResumeBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.user_validation.auto_save.resume.RoundOffAutoSaveResumeBottomSheet"
+        android:label="RoundOffAutoSaveResumeBottomSheet"
+        tools:layout="@layout/feature_round_off_resume_auto_save_bottom_sheet">
+
+        <argument
+            android:name="roundOffAmount"
+            app:argType="float"
+            app:nullable="false" />
+        <argument
+            android:name="mandateAmount"
+            app:argType="float"
+            app:nullable="false" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/manualRoundOffConfirmationBottomSheet"
+        android:name="com.jar.app.feature_round_off.impl.ui.manual_confirmation.ManualRoundOffConfirmationBottomSheet"
+        android:label="ManualRoundOffConfirmationBottomSheet"
+        tools:layout="@layout/feature_round_off_manual_confirmation_bottom_sheet">
+
+        <argument
+            android:name="roundOffAmount"
+            app:argType="float"
+            app:nullable="false" />
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+</navigation>

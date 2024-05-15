@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">নাম</string>
+    <string name="phone_number">ফোন নাম্বর</string>
+    <string name="please_fill_all_the_details">অনুগ্রহ করে সমস্ত বিবরণ পূরণ করুন</string>
+    <string name="email">ইমেইল</string>
+    <string name="pincode">পিনকোড</string>
+    <string name="city">শহর</string>
+    <string name="enter_city">শহরের নাম লিখুন</string>
+    <string name="state">রাজ্য</string>
+    <string name="enter_state">রাজ্যের নাম লিখুন</string>
+    <string name="enter_pin_code">পিন কোড দিন</string>
+    <string name="add_details">বিবরণ যোগ করুন</string>
+    <string name="your_full_address">আপনার সম্পূর্ণ ঠিকানা</string>
+    <string name="email_hint">youname@domain.com</string>
+    <string name="submit_details">বিবরণ জমা দিন</string>
+    <string name="details_added">বিবরণ যোগ করা হয়েছে</string>
+    <string name="street_address_one">রাস্তার ঠিকানা 1</string>
+    <string name="address_line_1">ঠিকানার লাইন 1</string>
+    <string name="address_line_2">ঠিকানার লাইন 2</string>
+    <string name="check">চেক করুন</string>
+    <string name="street_address_two">রাস্তার ঠিকানা 2 (ঐচ্ছিক)</string>
+    <string name="please_enter_a_valid_pincode">অনুগ্রহ করে সঠিক পিনকোড দিন</string>
+    <string name="this_area_is_not_servicable_currently">বর্তমানে এই এলাকায় পরিষেবা দেওয়া হচ্ছে না</string>
+    <string name="edit_address">ঠিকানা এডিট করুন</string>
+    <string name="add_new_address">নতুন ঠিকানা যোগ করুন</string>
+    <string name="save_new_address">নতুন ঠিকানা সেভ করুন</string>
+    <string name="update_address">ঠিকানা আপডেট করুন</string>
+    <string name="save_and_proceed">সেভ করুন এবং এগিয়ে যান</string>
+    <string name="select_an_address_for_delivery">ডেলিভারী করার জন্য একটা ঠিকানা নির্বাচন করুন</string>
+    <string name="no_delivery_address_available">ডেলিভারী করার জন্য কোনো ঠিকানা উপলব্ধ নেই</string>
+    <string name="saved_addresses">সেভ করা ঠিকানা</string>
+    <string name="add_delivery_details">ডেলিভারীর বিবরণ যোগ করুন</string>
+    <string name="feature_user_api_linked_to_you_aadhar_card">আপনার আধার কার্ডের সাথে লিংক করা হয়েছে</string>
+    <string name="feature_user_api_saved_address">সেভ করা ঠিকানা</string>
+    <string name="feature_lending_recently_saved">সম্প্রতি সেভ করা হয়েছে</string>
+    <string name="feature_user_api_day">দিন</string>
+    <string name="feature_user_api_days">দিন</string>
+    <string name="feature_user_api_week">সপ্তাহ</string>
+    <string name="feature_user_api_weeks">সপ্তাহ</string>
+    <string name="feature_user_api_month">মাস</string>
+    <string name="feature_user_api_months">মাস</string>
+</resources>

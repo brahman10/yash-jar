@@ -1,0 +1,10 @@
+<resources>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one"> மீண்டும் தொடங்குகிறது:%d நாட்கள் </item>
+        <item quantity="other"> மீண்டும் தொடங்குகிறது:%d நாட்கள் </item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d நாட்கள் </item>
+        <item quantity="other">%d நாட்கள் </item>
+    </plurals>
+</resources>

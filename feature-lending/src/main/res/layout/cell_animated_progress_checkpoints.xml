@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/clParent"
+    android:layout_gravity="center_horizontal"
+    tools:background="@color/bgColor">
+
+    <FrameLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/stepOneContainer"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/feature_lending_bg_animated_step_container_unselected"
+        app:layout_constraintBottom_toTopOf="@id/tvStepOne"
+        app:layout_constraintEnd_toStartOf="@id/progressBarOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStepNumberOne"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1"
+            android:textColor="@color/color_272239"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tvStepOne"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:lineHeight="14dp"
+        android:text="@string/feature_lending_choose_n_amount"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stepOneContainer"
+        app:layout_constraintStart_toStartOf="@id/stepOneContainer"
+        app:layout_constraintTop_toBottomOf="@id/stepOneContainer" />
+
+    <ProgressBar
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/progressBarOne"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_3dp"
+        android:progressBackgroundTint="@color/lightBgColor"
+        android:progressTint="@color/color_7745FF"
+        app:layout_constraintBottom_toBottomOf="@id/stepOneContainer"
+        app:layout_constraintEnd_toStartOf="@id/stepTwoContainer"
+        app:layout_constraintStart_toEndOf="@id/stepOneContainer"
+        app:layout_constraintTop_toTopOf="@id/stepOneContainer" />
+
+    <FrameLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/stepTwoContainer"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/feature_lending_bg_animated_step_container_unselected"
+        app:layout_constraintBottom_toTopOf="@id/tvStepTwo"
+        app:layout_constraintEnd_toStartOf="@id/progressBarTwo"
+        app:layout_constraintStart_toEndOf="@id/progressBarOne"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStepNumberTwo"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textColor="@color/color_272239"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tvStepTwo"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:text="@string/feature_lending_verify_n_kyc"
+        android:textSize="10sp"
+        android:lineHeight="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stepTwoContainer"
+        app:layout_constraintStart_toStartOf="@id/stepTwoContainer"
+        app:layout_constraintTop_toBottomOf="@id/stepTwoContainer" />
+
+    <ProgressBar
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/progressBarTwo"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_3dp"
+        android:progressBackgroundTint="@color/lightBgColor"
+        android:progressTint="@color/color_7745FF"
+        app:layout_constraintBottom_toBottomOf="@id/stepTwoContainer"
+        app:layout_constraintEnd_toStartOf="@id/stepThreeContainer"
+        app:layout_constraintStart_toEndOf="@id/stepTwoContainer"
+        app:layout_constraintTop_toTopOf="@id/stepTwoContainer" />
+
+    <FrameLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/stepThreeContainer"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        app:layout_goneMarginEnd="@dimen/dimen_16dp"
+        android:background="@drawable/feature_lending_bg_animated_step_container_unselected"
+        app:layout_constraintBottom_toTopOf="@id/tvStepThree"
+        app:layout_constraintEnd_toStartOf="@id/progressBarThree"
+        app:layout_constraintStart_toEndOf="@id/progressBarTwo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStepNumberThree"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3"
+            android:textColor="@color/color_272239"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tvStepThree"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_min="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:text="@string/feature_lending_bank_n_details"
+        android:textSize="10sp"
+        android:lineHeight="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stepThreeContainer"
+        app:layout_constraintStart_toStartOf="@id/stepThreeContainer"
+        app:layout_constraintTop_toBottomOf="@id/stepThreeContainer" />
+
+    <ProgressBar
+        android:visibility="gone"
+        tools:visibility="gone"
+        android:id="@+id/progressBarThree"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_3dp"
+        android:progressBackgroundTint="@color/lightBgColor"
+        android:progressTint="@color/color_7745FF"
+        app:layout_constraintBottom_toBottomOf="@id/stepThreeContainer"
+        app:layout_constraintEnd_toStartOf="@id/stepFourContainer"
+        app:layout_constraintStart_toEndOf="@id/stepThreeContainer"
+        app:layout_constraintTop_toTopOf="@id/stepThreeContainer" />
+
+    <FrameLayout
+        android:visibility="gone"
+        tools:visibility="gone"
+        android:id="@+id/stepFourContainer"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@drawable/feature_lending_bg_animated_step_container_unselected"
+        app:layout_constraintBottom_toTopOf="@id/tvStepFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/progressBarThree"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStepNumberFour"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="4"
+            android:textColor="@color/color_272239"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        tools:visibility="gone"
+        android:id="@+id/tvStepFour"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:text="@string/feature_lending_loan_n_agreement"
+        android:textSize="10sp"
+        android:lineHeight="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stepFourContainer"
+        app:layout_constraintStart_toStartOf="@id/stepFourContainer"
+        app:layout_constraintTop_toBottomOf="@id/stepFourContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

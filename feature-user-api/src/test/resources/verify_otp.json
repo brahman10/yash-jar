@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "data": {
+    "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2MjhmNDZhMGMzNTYyZTY5MDFmM2ZjMTkiLCJpYXQiOjE2NTQyNTIyNTYsImlzcyI6InN0YWdpbmciLCJleHAiOjE2NTQyODIyNTYsImh0dHBzOi8vaGFzdXJhLmlvL2p3dC9jbGFpbXMiOnsieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoidXNlciIsIngtaGFzdXJhLWNyZWF0ZWQtYXQiOjE2NTQyNTIyNTYzNDEsIngtaGFzdXJhLXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtdG9rZW4tdmVyc2lvbiI6IjAuMiIsIngtaGFzdXJhLWRldmljZS1pZCI6ImEwNmI4MDhiLWQ5ZDMtNDZhOS05MThmLTczMmNjYzQ3MWY2YiIsIngtaGFzdXJhLXBob25lLW51bWJlciI6Iis5MTg4MDA2MTQ4NDEiLCJ4LWhhc3VyYS1sZWdhY3ktdXNlci1pZCI6IjYyOGY0NmEwYzM1NjJlNjkwMWYzZmMxOSIsIngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsidXNlciJdfSwiaHR0cHM6Ly9teWphci5hcHAvand0L2NsYWltcyI6eyJhcHBWZXJzaW9uIjoiMjM0IiwicGhvbmVOdW1iZXIiOiIrOTE4ODAwNjE0ODQxIiwicm9sZSI6IlVTRVIiLCJpbXBlcnNvbmF0ZSI6ZmFsc2UsImNvdW50cnlDb2RlIjoiSU4iLCJhbGxvd2VkLXJvbGVzIjpbIlVTRVIiXSwidmVyc2lvbiI6IjAuMiIsImRldmljZS1pZCI6ImEwNmI4MDhiLWQ5ZDMtNDZhOS05MThmLTczMmNjYzQ3MWY2YiJ9fQ.n-1-6QgLGOeQKw5n7MeLTdOAP96lH19V4JqEB6dmrD_ic0MP26dh8zgfXPvv824BOXxtlruJabIv-HRYFGl43A",
+    "refreshToken": "145213f9-1b84-452f-8a36-831c77115484",
+    "user": {
+      "firstName": "ABC",
+      "lastName": "XYZ",
+      "age": 25,
+      "gender": "MALE",
+      "phoneNumber": "+911234567890",
+      "onboarded": true,
+      "createdAt": 1653556896106,
+      "userId": "628f46a0c3562e6901f3fc19"
+    },
+    "authType": "LOGIN"
+  }
+}

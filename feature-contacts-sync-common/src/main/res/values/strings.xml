@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_will_receive_whatsapp_notification">Contacts will receive an invite on whatsapp</string>
+    <string name="feature_contacts_sync_common_search_for_a_contact">Search for a contact</string>
+    <string name="feature_contacts_sync_common_sent_invite">Sent Invites</string>
+    <string name="didn_t_find">Didn\'t find the contact you are looking for?\nMay be they are already a Jar user or you have\nalready sent them an invite</string>
+    <string name="didn_t_find_underlined_text">sent them an invite</string>
+    <string name="feature_contacts_sync_common_jar_new_duo">New DUO</string>
+    <string name="feature_contacts_sync_common_allow_access_to_contacts">More Friends. More rewards.</string>
+    <string name="feature_contacts_sync_common_we_need_access_to_your_contacts_to_invite_your_friends">Jar requires contact access to find your friends</string>
+    <string name="feature_contacts_sync_common_give_us_a_few_moments_to_sync_your_contacts">Give us a few moments to sync your contacts</string>
+    <string name="feature_contacts_sync_common_invite_your_friend_start_a_duo">Invite your friends to\nstart a DUO</string>
+    <string name="feature_contacts_sync_common_no_result_found">No results found</string>
+    <string name="feature_contacts_sync_common_your_contacts">CONTACTS NOT ON JAR</string>
+    <string name="feature_contacts_sync_common_friend_on_jar">FRIENDS ON JAR</string>
+    <string name="feature_contacts_sync_common_invite_text">Invite %1$s Contacts</string>
+    <string name="feature_contacts_sync_common_no_invites_sent_error">You have not sent any invites."</string>
+    <string name="all_contact_invite_sent_successfully">Invitations to DUO have been successfully sent to all contacts</string>
+    <string name="multiple_invite_sent_successfully">%1$s people successfully invited</string>
+    <string name="feature_contacts_sync_common_no_sent_invite">Sent Invites (%1$s)</string>
+    <string name="feature_contacts_sync_common_permission_denied">Contact permission is required to refresh contacts.</string>
+    <string name="feature_contacts_sync_common_no_contact_found_for_search">No results for %1$s \nTry searching something else</string>
+    <string name="feature_contacts_sync_common_invite_all">Invite All</string>
+
+    <string name="feature_contacts_sync_common_saving_since_months">Saving since %1$s months</string>
+    <string name="feature_contacts_sync_common_saving_since_month">Saving since %1$s month</string>
+    <string name="feature_contacts_sync_common_saving_since_days">Saving since %1$s days</string>
+    <string name="feature_contacts_sync_common_saving_since_day">Saving since %1$s day</string>
+    <string name="feature_contacts_sync_common_invite">Invite</string>
+    <string name="feature_contacts_sync_common_invited">Invited</string>
+    <string name="feature_contacts_sync_common_reminder_sent_toast">Reminder was sent to %1$s</string>
+    <string name="feature_contacts_sync_common_sent_invites">Sent Invites</string>
+
+
+    <string name="feature_contacts_sync_common_create_duo">Create DUO</string>
+
+    <string name="feature_contacts_sync_common_request_sent">Request Sent</string>
+
+    <string name="feature_contacts_sync_common_sent_invite_remind">Remind</string>
+    <string name="feature_contacts_sync_common_sent_yesterday">Invited Yesterday</string>
+    <string name="feature_contacts_sync_common_sent_invite_remaining_time">Remind in\n%1$s</string>
+    <plurals name="feature_contacts_sync_common_invited_since_days" >
+        <item quantity="one">Invited %1$s day ago</item>
+        <item quantity="other">Invited %1$s days ago</item>
+    </plurals>
+    <string name="feature_contacts_sync_common_invited_today">Invited Today</string>
+    <string name="feature_contacts_sync_common_invited_justnow">Invited Just Now</string>
+
+    <string name="feature_contacts_sync_common_invited_since_months">Invited %1$s months ago</string>
+    <string name="feature_contacts_sync_common_contacts_syncing">Syncing your contacts</string>
+    <string name="feature_contacts_sync_common_you_seem_to_be_very_popular_the_process_is_taking_longer_than_expected">The process is taking longer than usual. You seem to be very popular</string>
+    <string name="feature_contacts_sync_common_no_of_contacts_synced">%s Contacts\nSynced</string>
+    <string name="feature_contacts_sync_common_no_contacts_found">No contacts found</string>
+    <string name="feature_contacts_sync_commoned_succesfully">Contacts Synced\nSuccessfully</string>
+    <string name="feature_contacts_sync_common_contact_permission_denied">Not able to access contact book, contact access permission denied.</string>
+    <string name="you_seem_to_be_very_popular_the_process_is_taking_longer_than_expected">The process is taking longer than usual. You seem to be very popular!</string>
+    <string name="feature_contacts_sync_common_more_friends">More Friends. More savings.</string>
+    <string name="feature_contacts_sync_common_jar_require">Jar requires contact access to find your friends</string>
+    <string name="proceed">Proceed</string>
+    <string name="feature_contacts_sync_common_contacts_synced">Contacts Synced\nSuccessfully</string>
+    <string name="feature_contacts_sync_common_cancel_sync">Cancel Sync</string>
+    <string name="feature_contacts_sync_common_start_contact_sync">Starting contact sync</string>
+    <string name="feature_contacts_sync_common_i_ll_do_it_later">I\\\'ll do it later</string>
+    <string name="feature_contacts_sync_common_allow_access">Allow Access</string>
+
+
+</resources>

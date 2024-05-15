@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/rounded_black_bg_12dp"
+    android:backgroundTint="@color/color_352F4F">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLightingDecoration"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/duoHomeCardMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_646EA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLightingDecoration">
+
+        <LinearLayout
+            android:id="@+id/pendingInviteHomeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user1Initials"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/feature_duo_rounded_text_view_with_transparent_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="KV" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user2Initials"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="-8dp"
+                android:background="@drawable/feature_duo_rounded_text_view_with_transparent_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/user1Initials"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="KV" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/duoHomeCardPendingMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/user1Initials"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/user2Initials"
+                app:layout_constraintTop_toTopOf="@+id/user1Initials"
+                tools:text="200+ Contact to be invited" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeMessageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/duoHomeCardMessageIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/feature_duo_contact_green_bg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/duoHomeCardContactMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/duoHomeCardMessageIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="200+ Contact to be invited" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHeaderStartIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/duo_masks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/core_ui_ic_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/duoHomePageBikeLottie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLightingDecoration" />
+
+    <FrameLayout
+        android:id="@+id/duoTitleTextCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="52dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnDuoAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLightingDecoration">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/duo_carousel_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/feature_duo_duo_text"
+        android:textAllCaps="true"
+        android:textColor="#EEEAFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLightingDecoration"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfo"
+        app:layout_constraintStart_toStartOf="@+id/ivLightingDecoration"
+        app:layout_constraintTop_toTopOf="@+id/ivLightingDecoration"
+        app:lineHeight="28sp" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/color_352F4F"
+        app:layout_constraintBottom_toTopOf="@id/btnDuoAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/feature_duo_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDuoAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        app:buttonText="@string/feature_duo_home_card_find_your_friends"
+        app:layout_constraintBottom_toBottomOf="@+id/duoHomePageBikeLottie"
+        app:layout_constraintEnd_toEndOf="@+id/duoHomePageBikeLottie"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

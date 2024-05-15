@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/showContactListFragment"
+    android:id="@+id/navigation_contacts_sync">
+
+<!--    <action-->
+<!--        android:id="@+id/action_to_contact_list_sync"-->
+<!--        app:destination="@id/showContactListFragment">-->
+<!--        <argument-->
+<!--            android:name="featureType"-->
+<!--            app:argType="string" />-->
+<!--    </action>-->
+
+
+    <fragment
+        android:id="@+id/showContactListFragment"
+        android:name="com.jar.app.feature_contacts_sync_common.impl.ui.contact_list.ContactsSyncShowContactListFragment"
+        android:label="ShowContactListFragment"
+        tools:layout="@layout/feature_contacts_sync_common_show_contact_list">
+        <deepLink app:uri="android-app://com.jar.app/contactsSync/{featureType}/{infoDeeplink}/" />
+        <deepLink app:uri="android-app://com.jar.app/contactsSync/{featureType}/" />
+        <argument
+            android:name="featureType"
+            app:nullable="false"
+            app:argType="string" />
+        <argument
+            android:name="infoDeeplink"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_showContactListFragment_to_duoSentInvitesFragment"
+            app:destination="@id/duoSentInvitesFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/duoSentInvitesFragment"
+        android:name="com.jar.app.feature_contacts_sync_common.impl.ui.sent_invites.ContactsSyncSentInvitesFragment"
+        android:label="DuoSentInvitesFragment"
+        tools:layout="@layout/feature_duo_sent_invite_screen">
+        <argument
+            android:name="showHeaders"
+            app:nullable="false"
+            app:argType="boolean" />
+        <argument
+            android:name="featureType"
+            app:nullable="false"
+            app:argType="string" />
+        <argument
+            android:name="infoDeeplink"
+            app:nullable="true"
+            app:argType="string" />
+
+<!--        <action-->
+<!--            android:id="@+id/action_duoSentInvitesFragment_to_duoOnIntroStoryFragment"-->
+<!--            app:destination="@id/duoOnIntroStoryFragment" />-->
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/contactPermissionFragment"
+        android:name="com.jar.app.feature_contacts_sync_common.impl.ui.permission.ContactsSyncPermissionFragment"
+        android:label="ContactPermissionFragment"
+        tools:layout="@layout/feature_contacts_sync_common_permission">
+        <deepLink app:uri="android-app://com.jar.app/allowContactPermission/{featureType}/" />
+        <deepLink app:uri="android-app://com.jar.app/allowContactPermission/{featureType}/{deeplink}/" />
+        <argument
+            android:name="featureType"
+            app:nullable="false"
+            app:argType="string" />
+        <argument
+            android:name="deeplink"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/bgColor"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_20dp"
+    android:paddingEnd="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLastUpdated"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Last Updated" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRefresh"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_324c45_10dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:text="@string/feature_buy_gold_refresh"
+        android:textColor="@color/color_58DDC8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGoldBuyPriceContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@drawable/round_black_bg_16dp"
+        android:padding="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toStartOf="@+id/clGoldSellPriceContainer"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefresh">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGoldBuyIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_gold_small" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBuyPrice"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:text="@string/buy_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivGoldBuyIcon" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerPlaceholderBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBuyPrice"
+            app:shimmer_auto_start="true"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear">
+
+            <View
+                android:layout_width="@dimen/dimen_93dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGoldBuyRate"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBuyPrice"
+            tools:text="54321.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBuyPriceDeltaPercent"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/color_2EB98E"
+            android:visibility="gone"
+            app:drawableLeftCompat="@drawable/ic_increase"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGoldBuyRate"
+            app:layout_constraintStart_toEndOf="@+id/tvGoldBuyRate"
+            app:layout_constraintTop_toTopOf="@+id/tvGoldBuyRate"
+            tools:text="4%" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGoldSellPriceContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_black_bg_16dp"
+        android:padding="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/clGoldBuyPriceContainer"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefresh">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGoldSellIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_gold_small" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSellPrice"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:text="@string/sell_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivGoldSellIcon" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerPlaceholderSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSellPrice"
+            app:shimmer_auto_start="true"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear">
+
+            <View
+                android:layout_width="@dimen/dimen_93dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:background="@drawable/bg_rounded_corner_20dp"
+                android:backgroundTint="@color/color_3D3755" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGoldSellRate"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSellPrice"
+            tools:text="54321.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSellPriceDeltaPercent"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/color_2EB98E"
+            android:visibility="gone"
+            app:drawableLeftCompat="@drawable/ic_increase"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGoldSellRate"
+            app:layout_constraintStart_toEndOf="@+id/tvGoldSellRate"
+            app:layout_constraintTop_toTopOf="@+id/tvGoldSellRate"
+            tools:text="4%" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGoldGst"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clGoldBuyPriceContainer"
+        tools:text="+GST (3%) ₹134.61 per gram on buying price" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoldGst" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvQuestions"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:text="@string/questions_you_may_have"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerPlaceholderFaqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tvFooter"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestions"
+        app:shimmer_auto_start="true"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="linear">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/cell_investment_history_transaction" />
+
+            <include layout="@layout/cell_investment_history_transaction" />
+
+            <include layout="@layout/cell_investment_history_transaction" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGoldFaq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toTopOf="@+id/tvFooter"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestions"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/cell_gold_faq" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFooter"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:text="@string/perc_100_secure_24k_pure_gold"
+        android:textColor="@color/color_5a5377"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPoweredBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPoweredBy"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/core_ui_ic_safe_gold_brinks"
+        android:drawablePadding="@dimen/dimen_12dp"
+        android:gravity="center_vertical"
+        android:text="@string/powered_by"
+        android:textColor="@color/color_5a5377"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

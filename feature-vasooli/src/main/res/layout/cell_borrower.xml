@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.jar.app.core_ui.widget.AvatarImageView
+            android:id="@+id/ivLender"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            style="@style/BigTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            app:layout_constraintStart_toEndOf="@id/ivLender"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Vasooli Bhai" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRepaid"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:drawableStart="@drawable/feature_vasooli_ic_green_tick"
+            android:drawablePadding="5dp"
+            android:textColor="@color/color_58DDC8"
+            android:visibility="gone"
+            android:text="@string/feature_vasooli_fully_repaid"
+            android:background="@drawable/feature_vasooli_rounded_58ddc8_5dp"
+            app:layout_constraintStart_toEndOf="@id/ivLender"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountDue"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            app:layout_constraintStart_toEndOf="@id/ivLender"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            tools:text="@string/feature_vasooli_due_amount_x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountTotal"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            app:layout_constraintStart_toEndOf="@id/tvAmountDue"
+            app:layout_constraintBottom_toBottomOf="@id/tvAmountDue"
+            tools:text="@string/feature_vasooli_total_amount_y" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountLastRepayment"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:visibility="gone"
+            android:text="@string/feature_vasooli_last_repayment_x"
+            app:layout_constraintStart_toEndOf="@id/ivLender"
+            app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDateLastRepayment"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/ivLender"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountLastRepayment" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_forward" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tvAmountDue, tvAmountTotal"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvAmountDue, tvRepaid" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

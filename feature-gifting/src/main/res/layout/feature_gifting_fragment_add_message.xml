@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_16dp"
+    android:backgroundTint="@color/color_2E2942"
+    android:padding="22dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_gifting_add_a_special_message"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvHeader"
+        app:srcCompat="@drawable/core_ui_ic_close"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMessage"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:gravity="start|top"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        android:maxLength="140"
+        android:background="@drawable/rounded_black_bg_8dp"
+        android:backgroundTint="@color/color_272239"
+        android:hint="@string/feature_gifting_start_typing"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/color_ACA1D3"
+        android:textColorHint="@color/color_ACA1D3"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCharCount"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="0/140"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnDone"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        app:buttonRadius="4dp"
+        android:layout_marginTop="14dp"
+        app:buttonText="@string/feature_gifting_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMessage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

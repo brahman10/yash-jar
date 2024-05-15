@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_duo_introduncing_jar_duo">ஜார் டியோவை அறிமுகப்படுத்துகிறோம்</string>
+    <string name="feature_duo_buddy_up_and_build_a_savings_habit_together">நண்பர்களாகுங்க, ஒன்றாக சேமிக்கும் பழக்கத்தை உருவாக்குங்கள்!</string>
+    <string name="feature_duo_invite_your_friend_and_start_your_jar_duo">நண்பரை அழைக்கவும் &amp; உங்கள் ஜார் டியோவைத் தொடங்கவும்</string>
+    <string name="feature_duo_build_savings_habit_together">ஒன்றாகச் சேமிக்கும் பழக்கத்தை உருவாக்குங்கள்</string>
+    <string name="feature_duo_allow_access_to_contacts">தொடர்புகளுக்கான அணுகலை அனுமதிக்கவும்</string>
+    <string name="feature_duo_we_need_access_to_your_contacts_to_invite_your_friends">உங்கள் நண்பர்களை அழைக்க நாங்கள் உங்கள் தொடர்புகளை அணுக வேண்டும்</string>
+    <string name="feature_duo_start_your_first_duo">உங்கள் முதல் டியோவை தொடங்கவும்</string>
+    <string name="feature_duo_jar_duo">ஜார் டியோ</string>
+    <string name="feature_duo_what_details_are_shared">என்ன விவரங்கள் பகிரப்படுகின்றன?</string>
+    <string name="feature_duo_learn_and_build_habit_of_savings_with_a_buddy">நண்பருடன் சேமிப்பு பழக்கத்தை கற்றுக் கொள்ளுங்கள்</string>
+    <string name="feature_duo_invite_your_friend_start_a_duo">உங்கள் தோழரை அழைக்கவும், டியோவைத் தொடங்கவும்</string>
+    <string name="feature_duo_give_us_a_few_moments_to_sync_your_contacts">உங்கள் தொடர்புகளை சின்க் செய்ய எங்களுக்கு சில தருணங்களை கொடுங்கள்</string>
+    <string name="feature_duo_compete_with_your_friends_and_understand_their_investing_habits">உங்கள் நண்பர்களுடன் போட்டியிட்டு அவர்களின் முதலீட்டுப் பழக்கத்தைப் புரிந்து கொள்ளுங்கள்</string>
+    <string name="feature_duo_what_is_jar_duo">ஜார் டியோ என்றால் என்ன?</string>
+    <string name="feature_duo_is_inviting_you_to_create_a_duo_on_jar">ஜார் டியோவை உருவாக்க உங்களை அழைக்கிறது</string>
+    <string name="feature_duo_enter_a_name">பெயரை உள்ளிடவும்</string>
+    <string name="feature_duo_cancel">ரத்து செய்க</string>
+    <string name="feature_duo_no_result_found">முடிவுகள் எதுவும் இல்லை</string>
+    <string name="feature_duo_create_duo">டியோவை உருவாக்கவும்</string>
+    <string name="feature_duo_request_sent">வேண்டுகோள் அனுப்பப்பட்டது</string>
+    <string name="feature_duo_invite">அழைக்கவும்</string>
+    <string name="feature_duo_invited">அழைக்கப்பட்டது</string>
+    <string name="feature_duo_jar_duo_sample_page">ஜார் டியோவின் மாதிரி பக்கம்</string>
+    <string name="feature_duo_search_for_a_contact">தொடர்பைத் தேடுங்கள்</string>
+    <string name="feature_duo_friend_on_jar">ஜாரில் உள்ள நண்பர்கள்</string>
+    <string name="feature_duo_your_contacts">உங்கள் தொடர்புகள்</string>
+    <string name="feature_duo_view_invites">அழைப்பிதழ்களைக் காண்க</string>
+    <string name="feature_duo_compete_with_your_friends_and_build_saving_habits_together">உங்கள் நண்பர்களுடன் போட்டியிட்டு \n ஒன்றாகச் சேர்ந்து சேமிப்புப் பழக்கத்தை உருவாக்குங்கள்</string>
+    <string name="feature_duo_you_have_pending_invites_to_create_a_duo_onn_jar">ஜாரில் டியோவை உருவாக்க \n அழைப்புகள் நிலுவையில் உள்ளன</string>
+    <string name="feature_duo_saving_together_and_competing_with_friends_will_keep_you_motivated_to_save">ஒன்றாகச் சேமிப்பதும், நண்பர்களுடன் போட்டி போடுவதும் \n உங்களை மேலும் சேமிக்க தூண்டும்</string>
+    <string name="feature_duo_sure_you_want_to_delete_this_duo">இந்த டியோவை நிச்சயமாக நீக்க விரும்புகிறீர்களா?</string>
+    <string name="feature_duo_delete">நீக்கவும்</string>
+    <string name="feature_duo_do_not_delete">நீக்க வேண்டாம்</string>
+    <string name="feature_duo_please_enter_the_group_name">குழுவின் பெயரை உள்ளிடவும்</string>
+    <string name="feature_duo_your_friend">உங்கள் நண்பர்</string>
+    <string name="feature_duo_yay_name_updated_successfully">ஆம்! பெயர் வெற்றிகரமாக புதுப்பிக்கப்பட்டது</string>
+    <string name="feature_duo_accept">ஏற்றுக்கொள்க</string>
+    <string name="feature_duo_duo_requests">டியோ கோரிக்கைகள்</string>
+    <string name="feature_duo_your_duos">உங்கள் டியோக்கள்</string>
+    <string name="feature_duo_rename">மறுபெயரிடவும்</string>
+    <string name="feature_duo_on">ஆன்</string>
+    <string name="feature_duo_off">ஆஃப்</string>
+    <string name="feature_duo_permission_denied">அனுமதி மறுக்கப்பட்டது</string>
+    <string name="feature_duo_this_permission_is_required_in_order_to_use_this_feature">இந்த அம்சத்தைப் பயன்படுத்த, இந்த அனுமதி தேவை</string>
+    <string name="feature_duo_save">சேமிக்கவும்</string>
+    <string name="feature_duo_delete_small">அழிக்கவும்</string>
+
+    <string name="feature_duo_start">துவங்கவும்</string>
+</resources>

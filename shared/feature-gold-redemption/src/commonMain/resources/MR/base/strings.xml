@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"  tools:ignore="MissingTranslation">
+
+    <string name="jewellery_vouchers" tools:ignore="MissingTranslation">Jewellery Vouchers</string>
+    <string name="celebrate_every_occasion_with_gold_and_diamond_vouchers">Celebrate every\noccasion with gold\nand diamond\nvouchers.</string>
+    <string name="feature_gold_redemption_brand_partners">Brand Partners</string>
+    <string name="feature_gold_redemption_buy_vouchers">Buy Vouchers</string>
+    <string name="feature_gold_redemption_how_voucher_work">How do vouchers work?</string>
+    <string name="feature_gold_redemption_explore_vouchers">Explore vouchers</string>
+    <string name="feature_gold_redemption_showing_d_vouchers">Showing %d results</string>
+    <string name="feature_gold_redemption_empty_voucher">It’s so empty here!\nLet’s buy some vouchers?</string>
+    <string name="feature_gold_redemption_empty_vouchers_listing">Sorry, no gold vouchers\navailable right now. Come\nback soon!</string>
+    <string name="feature_gold_redemption_view_details">View details</string>
+    <string name="feature_gold_redemption_faqs">FAQs</string>
+    <string name="feature_gold_redemption_contact_support">Contact Support</string>
+    <string name="feature_gold_redemption_amount_s">\u20B9%d</string>
+    <string name="feature_gold_redemption_hide">Hide</string>
+    <string name="feature_gold_redemption_show">Show</string>
+    <string name="feature_gold_redemption_hidden_card_no">xxxx xxxx xxxx xxxx</string>
+    <string name="feature_gold_redemption_see_details">See details</string>
+    <string name="feature_gold_redemption_offline_store_list">offline store list</string>
+    <string name="feature_gold_redemption_in_store">IN-Store redemption</string>
+    <string name="feature_gold_redemption_about_the_jeweller">About the jeweller</string>
+    <string name="feature_gold_redemption_online_redemption">online redemption</string>
+    <string name="feature_gold_redemption_offline_redemption">in-store redemption</string>
+    <string name="feature_gold_redemption_please_check_if_candere_has_stores_near_you">"Please check if Candere has stores near you. "</string>
+
+    <string name="feature_gold_redemption_currency_sign_x_string">\u20B9%s</string>
+    <string name="feature_gold_redemption_total_amount">Total amount</string>
+    <string name="feature_gold_redemption_proceed">Proceed</string>
+    <string name="featuer_gold_redemption_copied_to_clipboard">Copied to clipboard</string>
+
+
+    <string name="feature_gold_redemption_feature_buy_gold_currency_sign_x_string">\u20B9%s</string>
+    <string name="feature_gold_redemption__current_gold_price_rs">Current gold price</string>
+    <string name="feature_gold_redemption__n_double_gm">₹%.2f/gm</string>
+    <string name="feature_gold_redemption_check">Check</string>
+    <string name="feature_gold_redemption_gold_delivery">Gold delivery</string>
+
+    <string name="feature_gold_redemption_view_breakdown_underline"><u>View Breakdown</u></string>
+    <string name="feature_gold_redemption_notify_me_underline"><u>Notify me</u></string>
+    <string name="feature_gold_redemption_track_order_underline"><u>Track Order</u></string>
+    <string name="feature_gold_redemption_track_shipment_underline"><u>Track Shipment</u></string>
+    <string name="feature_gold_redemption_download_order_underline"><u>Download Now</u></string>
+    <string name="feature_gold_redemption_checkout">Checkout</string>
+    <string name="feature_gold_redemption_rupee_x_in_double_strike" translatable="false"><strike>\u20B9%.2f</strike></string>
+    <string name="feature_gold_redemption_free_limited_time_offer">Free (Limited Time Offer)</string>
+    <string name="feature_gold_redemption_edit_address">Edit Address</string>
+    <string name="feature_gold_redemption_update_address">Update Address</string>
+    <string name="feature_gold_redemption_invoices">Invoice</string>
+    <string name="feature_gold_redemption_add_delivery_details">Add New Address</string>
+    <string name="feature_gold_redemption_save_and_proceed">Save And Proceed</string>
+    <string name="feature_gold_redemption_save_new_address">Save new Address</string>
+
+    <string name="feature_gold_redemption_please_enter_a_valid_pincode">Please enter a valid pincode</string>
+    <string name="feature_gold_redemption_please_enter_a_valid_email">Please enter a valid email</string>
+    <string name="feature_gold_redemption_please_fill_all_the_details">Please fill all the details</string>
+    <string name="feature_gold_redemption_this_area_is_not_servicable_currently">This area is not serviceable currently</string>
+    <string name="feature_gold_redemption_starting_from_rupee_x_in_double">Starting ₹%.2f</string>
+    <string name="feature_gold_redemption_cart">Cart</string>
+    <string name="feature_gold_redemption__2_weights_available">2 weights available</string>
+    <string name="feature_gold_redemption_best_seller">BEST SELLER</string>
+    <string name="feature_gold_redemption_out_of_stock">OUT OF STOCK</string>
+    <string name="feature_gold_redemption_add_new_address">Add new address</string>
+    <string name="feature_gold_redemption_linked_to_your_adhaar">Linked to your Adhaar</string>
+    <string name="feature_gold_redemption_my_orders">My Orders</string>
+    <string name="feature_gold_redemption_success">Success</string>
+    <string name="feature_gold_redemption_in_progress">In Progress</string>
+    <string name="feature_gold_redemption_failed">Failed</string>
+    <string name="feature_gold_redemption_product_removed_from_wishlist">Product removed from wishlist</string>
+    <string name="feature_gold_redemption_product_added_to_wishlist">Product added to wishlist</string>
+    <string name="feature_gold_redemption_something_went_wrong">Something went wrong</string>
+    <string name="feature_gold_redemption_delivery_and_making_charges">Delivery and making charges</string>
+    <string name="feature_gold_redemption_total_value">Total value</string>
+    <string name="feature_gold_redemption_jar_savings">Jar Savings</string>
+    <string name="feature_gold_redemption_balance_amount">Balance Amount</string>
+    <string name="feature_gold_redemption_total_payable_amount">Total payable amount</string>
+    <string name="feature_gold_redemption_delivery_address">DELIVERY ADDRESS</string>
+    <string name="feature_gold_redemption_select_payment_method">SELECT PAYMENT METHOD</string>
+    <string name="feature_gold_redemption_delivering_to">DELIVERING TO</string>
+    <string name="feature_gold_redemption_add_to_cart">ADD TO CART</string>
+    <string name="feature_gold_redemption_update_cart">UPDATE CART</string>
+    <string name="feature_gold_redemption_already_in_cart">Already in cart</string>
+    <string name="feature_gold_redemption_tracking_id">Tracking ID</string>
+    <string name="feature_gold_redemption_estimated_delivery">Estimated Delivery</string>
+    <string name="feature_gold_redemption_used_jar_balance">Used Jar Balance</string>
+    <string name="feature_gold_redemption_last_24_hour">Last 24 Hour</string>
+    <string name="feature_gold_redemption_previous_orders">Previous Orders</string>
+    <string name="feature_gold_redemption_order_cancel">Order cancel</string>
+    <string name="feature_gold_redemption_order_details">Order Details</string>
+    <string name="feature_gold_redemption_refund_details">Refund Details</string>
+    <string name="feature_gold_redemption_track_order">Track Order</string>
+    <string name="feature_gold_redemption_order_again">Order Again</string>
+    <string name="feature_gold_redemption_hey_need_some_help_buying_a_product">Hey! need some help buying a product.</string>
+    <string name="feature_gold_redemption_copied_to_clipboard">Copied to clipboard</string>
+    <string name="feature_gold_redemption_order_id">Order ID</string>
+    <string name="feature_gold_redemption_ordered_on">Ordered on</string>
+    <string name="feature_gold_redemption_placed_on">Placed on</string>
+    <string name="feature_gold_redemption_paid_via">Paid Via</string>
+    <string name="feature_gold_redemption_upi">UPI</string>
+    <string name="feature_gold_redemption_wishlist">Wishlist</string>
+    <string name="feature_gold_redemption_please_select_an_item">Please select an item</string>
+    <string name="feature_gold_redemption_something_went_wrong_in_adding_items_to_cart">Something went wrong in adding items to cart</string>
+    <string name="feature_gold_redemption_added_by_you">ADDED BY YOU</string>
+    <string name="feature_gold_redemption_set_to_notify">SET TO NOTIFY</string>
+    <string name="feature_gold_redemption_refresh">Refresh</string>
+    <string name="feature_gold_redemption_go_back">Go back</string>
+    <string name="feature_gold_redemption_retry">Retry</string>
+    <string name="feature_gold_redemption_go_to_cart">Go to cart</string>
+    <string name="feature_gold_redemption_order_placed">Order Placed</string>
+    <string name="feature_gold_redemption_placing_order_is_taking_a_little_longer">Placing order is taking a little longer.\nWait for few seconds for the status to get updated.</string>
+    <string name="feature_gold_redemption_experiencing_bank_server_issue_please_try_again_to_place_your_order">Experiencing bank server issue. Please try again to place your order.</string>
+    <string name="feature_gold_redemption_invalid_pincode">Invalid Pincode</string>
+    <string name="feature_gold_redemption_all">All</string>
+    <string name="feature_gold_redemption_select_delivery_address">Select Delivery Address</string>
+    <string name="feature_gold_redemption_please_select_delivery_address">Please select delivery address</string>
+    <string name="feature_gold_redemption_add_to_wishlist">ADD TO WISHLIST</string>
+    <string name="feature_gold_redemption_order_will_be_delivered_in_2_4_working_days">Order will be delivered in 2-4 working days</string>
+    <string name="feature_gold_redemption_your_area_is_unservicable_at_the_moment">Your area is unservicable at the moment</string>
+    <string name="feature_gold_redemption_product_will_be_notified">Product will be notified</string>
+    <string name="feature_gold_redemption__no_delivery_address_available">No delivery address available</string>
+
+    <string name="feature_gold_redemption_tracking_details">Tracking Details</string>
+    <string name="feature_gold_redemption_delivery_details">Delivery Details</string>
+    <string name="feature_gold_redemption_payment_processing">Payment Processing</string>
+    <string name="feature_gold_redemption_placing_order_is_taking_a_little_longer_wait_for_few_seconds_for_the_status_to_get_updated">Placing order is taking a little longer. Wait for few seconds for the status to get updated.</string>
+    <string name="feature_gold_redemption_cancel_order">Cancel Order</string>
+    <string name="feature_gold_redemption_not_yet_dispatched">Not yet dispatched</string>
+    <string name="feature_gold_redemption_no_items_in_wishlist">No items in wishlist</string>
+    <string name="feature_gold_redemption_name_here">Name here</string>
+    <string name="feature_gold_redemption_our_partners">Our Partners</string>
+    <string name="feature_gold_redemption_gold_partner">Gold Partner</string>
+    <string name="feature_gold_redemption_payment_details">Payment Details</string>
+    <string name="feature_gold_redemption_source_of_payment">Source of payment</string>
+    <string name="feature_gold_redemption_download_invoice">Download Invoice</string>
+    <string name="feature_gold_redemption_need_help">Need Help?</string>
+    <string name="feature_gold_redemption_similar_products">Similar Products</string>
+    <string name="feature_gold_redemption_items_in_your_cart">ITEMS IN YOUR CART</string>
+    <string name="feature_gold_redemption_do_you_want_to_add_the_same_item_again">Do you want to add the same item again?</string>
+    <string name="feature_gold_redemption_yes_repeat_the_same_order">Yes, repeat the same order</string>
+    <string name="feature_gold_redemption_no_i_would_like_to_make_changes">No, I would like to make changes</string>
+    <string name="feature_gold_redemption_are_you_sure_you_want_the_delete_this_item_from_cart">Are you sure you want the delete this item from cart?</string>
+    <string name="feature_gold_redemption_yes_delete">Yes, Delete</string>
+    <string name="feature_gold_redemption_no_don_t_delete">No, Don\'t Delete</string>
+    <string name="feature_gold_redemption_products">PRODUCTS</string>
+    <string name="feature_gold_redemption__2_items">2 ITEMS</string>
+    <string name="feature_gold_redemption_use_my_jar_savings">Use my Jar savings</string>
+    <string name="feature_gold_redemption_use_the_money_from_my_jar_locker">Use the money from my jar locker</string>
+    <string name="feature_gold_redemption_username_phone_number">Username (Phone number)</string>
+    <string name="feature_gold_redemption_price_breakdown">PRICE BREAKDOWN</string>
+    <string name="feature_gold_redemption_delivery_partner">Delivery Partner</string>
+    <string name="feature_gold_redemption_looks_like_you_haven_t_ordered_anything_yet">Looks like you haven’t ordered anything yet</string>
+    <string name="feature_gold_redemption_popular_products_on_jar">Popular Products on Jar</string>
+    <string name="feature_gold_redemption_order_failed">Order Failed</string>
+    <string name="feature_gold_redemption__24k_99_9_pure_gold">24k | 99.9% pure gold</string>
+    <string name="feature_gold_redemption_new_cart_value">New cart value</string>
+    <string name="feature_gold_redemption_refund_in_progress_will_be_credited_to_source_account_in_2_4_working_days">Refund in progress, will be credited to source account in 2-4 working days</string>
+    <string name="feature_gold_redemption_your_cart_is_empty">Your cart is empty!</string>
+    <string name="feature_gold_redemption_there_is_no_item_in_your_cart_let_s_add_some_products">There is no item in your cart. Let’s\nadd some products.</string>
+    <string name="feature_gold_redemption_exclusive_products">Exclusive products</string>
+    <string name="feature_gold_redemption_enter_pincode">Enter pincode</string>
+    <string name="feature_gold_redemption_place_order">PLACE ORDER</string>
+    <string name="feature_gold_redemption_no_exchange">No Exchange</string>
+    <string name="feature_gold_redemption_faq_s">FAQ\'s</string>
+    <string name="feature_gold_redemption_more_info">More Info</string>
+    <string name="feature_gold_redemption_get_notified_when_its_back">Get notified when its back</string>
+    <string name="feature_gold_redemption_clear">CLEAR</string>
+    <string name="feature_gold_redemption_incl_of_all_charges">Incl. of all charges</string>
+    <string name="feature_gold_redemption_gold_order_placed_nsuccessfully">Gold order placed\nsuccessfully</string>
+    <string name="feature_gold_redemption_tracking_link_will_be_generated_in_72_hrs">Tracking link will be generated in 72 hrs</string>
+    <string name="feature_gold_redemption_please_share_feedback_on_your_ngold_order_experience">Please share feedback on your\ngold order experience</string>
+    <string name="feature_gold_redemption_very_bad">Very Bad</string>
+    <string name="feature_gold_redemption_bad">Bad</string>
+    <string name="feature_gold_redemption_average">Average</string>
+    <string name="feature_gold_redemption_happy">Happy</string>
+    <string name="feature_gold_redemption_very_happy">Very Happy</string>
+    <string name="feature_gold_redemption_other_products">Other Products</string>
+    <string name="feature_gold_redemption_no_products_available">No products available</string>
+    <string name="feature_gold_redemption_no_products_available_in">No products available\nin \"%s\"</string>
+    <string name="feature_gold_redemption_we_will_try_to_improve_based_on_your_feedback">We will try to improve based on your feedback</string>
+    <string name="feature_gold_redemption_thank_you_for_the_feedback">Thank you for the feedback!</string>
+    <string name="feature_gold_redemption_name">Name</string>
+
+    <string name="feature_gold_redemption_phone_number">Phone Number</string>
+    <string name="feature_gold_redemption_pincode">Pincode</string>
+
+    <string name="feature_gold_redemption_street_address_one">Street address 1</string>
+    <string name="feature_gold_redemption_address_line_1">Address Line 1</string>
+    <string name="feature_gold_redemption_address_line_2">Address Line 2</string>
+    <string name="feature_gold_redemption_street_address_two">Street address 2 (Optional)</string>
+    <string name="feature_gold_redemption_city">City</string>
+    <string name="feature_gold_redemption_enter_city">Enter City</string>
+    <string name="feature_gold_redemption_state">State</string>
+    <string name="feature_gold_redemption_enter_state">Enter State</string>
+    <string name="feature_gold_redemption_enter_pin_code">Enter Pin Code</string>
+    <string name="feature_gold_redemption_add_details">Add Details</string>
+
+
+    <string name="feature_gold_redemption_showing_all_products">Showing all %1$d products</string>
+    <string name="feature_gold_redemption_city_state_is_unserviceable">%1$s, %2$s is unserviceable</string>
+    <string name="feature_gold_redemption_city_state_is_serviceable">%1$s is serviceable</string>
+    <string name="feature_gold_redemption_status">Status</string>
+    <string name="feature_gold_redemption_item_quantity_gm">%1$d Item | %2$.1f gm</string>
+    <string name="feature_gold_redemption__share_text">Hey! Check out this %1$s on Jar App! | 24k 99.5% Pure Gold Coins to Celebrate Every Occasion - %2$s</string>
+    <string name="feature_gold_redemption_people_have_orderded_this_item">%s People have ordered this item</string>
+    <string name="feature_gold_redemption_cancellation_policy">Cancellation Policy</string>
+    <string name="feature_gold_redemption_refund_policy">Refund Policy</string>
+    <string name="feature_gold_redemption_product_details">Product Details</string>
+    <string name="feature_gold_redemption_check_if_we_deliver_to_your_area">Check if we deliver to you</string>
+    <string name="feature_gold_redemption_explore_more">EXPLORE MORE</string>
+    <string name="feature_gold_redemption_we_deliver_to_your_location">We deliver at your location</string>
+    <string name="feature_gold_redemption_added_to_wishlist">Added to Wishlist</string>
+    <string name="feature_gold_redemption_you_will_be_notified_when_the_item_is_in_stock">You will be notified when the item is in stock</string>
+    <string name="feature_gold_redemption__n_gm">%sgm</string>
+    <string name="feature_gold_redemption_max_limit">Maximum voucher limit is ₹1L</string>
+    <string name="select_state">Search State</string>
+    <string name="all_states">All states</string>
+    <string name="feature_gold_redemption_go_to_my_orders">Go to My Orders</string>
+    <string name="feature_gold_redemption_congratulations_your_voucher_is_here">Congratulations!\nYour voucher is here!</string>
+    <string name="feature_gold_redemption_voucher_details">Voucher details</string>
+    <string name="select_voucher_amount">Select voucher amount</string>
+    <string name="feature_gold_redemption_payment_history">Payment History</string>
+    <string name="feature_gold_redemption_abandon_title">Hey %s, leaving so soon?\nYou will miss out on...</string>
+    <string name="feature_gold_redemption_continue">Continue</string>
+    <string name="feature_gold_redemption_not_now">Not now</string>
+    <string name="feature_gold_redemption_cancel">Cancel</string>
+    <string name="feature_gold_redemption_share_text">Hey!\n\nCheck out this %s Jewellery Voucher on Jar App! | 💍\n\nCelebrate every occasion with gold and diamond vouchers &amp; get upto 10 extra gold with each voucher!🤑\n %s</string>
+    <string name="feature_gold_redemption_diamond_voucher">Diamond voucher</string>
+    <string name="feature_gold_redemption_gold_voucher">Gold voucher</string>
+    <string name="feature_gold_redemption_voucher_pin">Voucher pin</string>
+    <string name="feature_gold_redemption_share_this_gold_coin">Share this Gold Coin</string>
+    <string name="feature_gold_redemption_redeem_your_voucher">Redeem your voucher</string>
+    <string name="feature_gold_redemption_transaction_status">Transaction status</string>
+    <string name="feature_gold_redemption_contact_us">Contact Us</string>
+    <string name="feature_gold_redemption_purchase_successful">Purchase successful</string>
+    <string name="feature_gold_redemption_purchase_successful_title">Purchase successful</string>
+    <string name="feature_gold_redemption_paid_for">Paid for</string>
+    <string name="feature_gold_redemption_select_quantity">Select quantity</string>
+    <string name="feature_gold_redemption_select_amount">Select amount</string>
+    <string name="feature_gold_redemption_no_search_results_state">No results for “%s”\nTry searching something else</string>
+    <string name="feature_gold_redemption_showing_results_for">Showing results for “%s”</string>
+    <string name="feature_gold_redemption_search_state">Search state</string>
+    <string name="feature_gold_redemption_added_for">Added for</string>
+    <string name="feature_gold_redemption_voucher_purchase_summary">Voucher purchase summary</string>
+    <string name="feature_gold_redemption_bonus_succesful">Bonus Successful</string>
+    <string name="feature_gold_redemption_how_to_redeem">How to redeem</string>
+    <string name="feature_gold_redemption_terms_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="feature_gold_redemption_transaction_id">Transaction ID</string>
+    <string name="feature_gold_redemption_amount">Amount</string>
+    <string name="feature_gold_redemption_upi_id">UPI Id</string>
+    <string name="feature_gold_redemption_payment">Payment</string>
+    <string name="feature_gold_redemption_voucher_purchase">Voucher purchase</string>
+    <string name="feature_gold_redemption_validity">Validity</string>
+    <string name="feature_gold_redemption_quantity">Quantity</string>
+    <string name="feature_gold_redemption_voucher_type">Voucher type</string>
+    <string name="feature_gold_redemption_brand">Brand</string>
+    <string name="feature_gold_redemption_bonus_successful">Bonus successful</string>
+    <string name="feature_gold_redemption_purchase_pending">Purchase Pending</string>
+    <string name="feature_gold_redemption_purchase_failed">Purchase Failed</string>
+    <string name="feature_gold_redemption_voucher_purchase_failed">Voucher Purchase Failed</string>
+    <string name="feature_gold_redemption_maximum_voucher_limit_is_one_lakh">Maximum voucher limit is ₹1L</string>
+    <string name="feature_gold_redemption_only_four_allowed">Only 4 allowed</string>
+    <string name="feature_gold_redemption_gold_worth_amount_will_be_added_to_your_jar_locker">Gold worth ₹%.1f will be added to your Jar locker</string>
+    <string name="feature_gold_redemption_hey_i_m_having_trouble_in_gold_redemption">Hey, I\'m having trouble in Gold Redemption</string>
+    <string name="feature_gold_redemption_copy">Copy</string>
+    <string name="feature_gold_redemption_voucher_bonus">Voucher bonus</string>
+    <string name="feature_gold_redemption_your_payment_was_unsuccessful">Your payment was unsuccessful.</string>
+    <string name="feature_gold_redemption_active_d">Active (%d)</string>
+    <string name="feature_gold_redemption_all_d">All (%d)</string>
+    <string name="feature_gold_redemption_share_this_gold_coin_2">Share this Gold Coin</string>
+    <string name="feature_gold_redemption_share_voucher">"Hey! Check out this %s on Jar App! | 24k 99.5%% Pure Gold Coins to Celebrate Every Occasion - %s"</string>
+    <string name="feature_gold_redemption_processing">Processing</string>
+    <string name="feature_gold_redemption_hey_i_m_having_trouble_in_gold_redemption_with_order_id">Hey, I\'m having trouble in Gold Redemption with order id %1$s</string>
+
+    <string name="feature_gold_redemption_your_order_is_being_processed">Your order is being processed</string>
+    <string name="feature_gold_redemption_we_unable_to_process">We are unable to process your order.</string>
+    <string name="feature_gold_redemption_continue_shopping">Continue shopping</string>
+    <string name="feature_gold_redemption_refunded_to">Refunded to</string>
+    <string name="feature_gold_redemption_refunded_on">Refunded on</string>
+    <string name="feature_gold_redemption_refund_initiated">Refund initiated</string>
+    <string name="feature_gold_redemption_refund_completed">Refund successful</string>
+    <string name="feature_gold_redemption_share_this_gold_voucher">Share this gold voucher</string>
+    <string name="feature_gold_redemption_active_voucher_share_text">
+    Hey, congrats! %s has gifted you a voucher from %s through Jar App!\n\n
+    Steps to redeem this voucher:\n
+    1. Visit a %s\'s store, or visit their website.\n
+    2. Select jewellery of your choice.\n
+    3. Use the voucher code (%s) while making the payment!\n
+    4. The amount will be deducted from your final bill\n
+    </string>
+    <string name="feature_gold_redemption_active_voucher_share_text_pin">
+        Hey, congrats! %s has gifted you a voucher from %s through Jar App!\n\n
+        Steps to redeem this voucher:\n
+        1. Visit a %s\'s store, or visit their website.\n
+        2. Select jewellery of your choice.\n
+        3. Use the voucher code (%s) and Pin (%s) while making the payment!\n
+        4. The amount will be deducted from your final bill\n
+    </string>
+    <string name="feature_gold_redemption_initiated">Initiated</string>
+    <string name="feature_gold_redemption_refund_complete">Refund complete</string>
+    <string name="feature_gold_redemption_amount_refunded">The amount will be refunded to your source account within 48 hours.</string>
+    <string name="feature_gold_redemption_processing_voucher_purchase">We\'re processing your voucher purchase and will update you within 30 minutes.</string>
+    <string name="feature_gold_redemption_days_left">%1$s days left</string>
+</resources>

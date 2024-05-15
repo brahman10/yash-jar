@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_gold_redemption_items">
+        <item quantity="one"> ஐட்டம்</item>
+        <item quantity="other"> ஐட்டம்ஸ்</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_my_orders_x">
+        <item quantity="one">எனது ஆர்டர்</item>
+        <item quantity="other">எனது ஆர்டர் (%d)</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_items_available">
+        <item quantity="one">%d எடை உள்ளது</item>
+        <item quantity="other">%d எடைகள் உள்ளன </item>
+    </plurals>
+    <plurals name="feature_gold_redemption_showing_cities">
+        <item quantity="one">%d நகரத்தைக் காண்பிக்கிறது</item>
+        <item quantity="other">%d நகரங்களைக் காண்பிக்கிறது</item>
+    </plurals>
+</resources>

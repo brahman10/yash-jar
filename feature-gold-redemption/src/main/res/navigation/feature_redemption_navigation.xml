@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/introScreenFragment"
+    android:id="@+id/feature_redemption_navigation">
+
+    <fragment
+        android:id="@+id/introScreenFragment"
+        android:name="com.jar.gold_redemption.impl.ui.intro_screen.IntroScreenFragment" >
+        <deepLink app:uri="android-app://com.jar.app/goldRedemption/{sourceScreen}/{clickTime}" />
+        <argument
+            android:name="sourceScreen"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="clickTime"
+            app:argType="string"
+            android:defaultValue="0"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_introScreenFragment_to_myVouchersFragment"
+            app:destination="@id/myVouchersFragment" />
+        <action
+            android:id="@+id/action_introScreenFragment_to_brandCatalougeFragment"
+            app:destination="@id/brandCatalougeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandCatalougeFragment"
+        android:name="com.jar.gold_redemption.impl.ui.brand_catalogue.BrandCatalougeFragment">
+        <deepLink app:uri="android-app://com.jar.app/brandCatalougeFragment/{sourceScreen}" />
+        <argument
+            android:name="sourceScreen"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink app:uri="android-app://com.jar.app/brandCatalougeFragment" />
+        <action
+            android:id="@+id/action_brandCatalougeFragment_to_myVouchersFragment"
+            app:destination="@id/myVouchersFragment" />
+        <action
+            android:id="@+id/action_brandCatalougeFragment_to_voucherPurchase"
+            app:destination="@id/voucherPurchase" />
+        <action
+            android:id="@+id/action_brandCatalougeFragment_to_voucherDetail"
+            app:destination="@id/voucherDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/myVouchersFragment"
+        android:name="com.jar.gold_redemption.impl.ui.my_vouchers.MyVouchersFragment" >
+        <deepLink app:uri="android-app://com.jar.app/myOrdersFragment/{tabType}" />
+        <action
+            android:id="@+id/action_myVouchersFragment_to_brandCatalougeFragment"
+            app:destination="@id/brandCatalougeFragment" />
+        <action
+            android:id="@+id/action_myVouchersFragment_to_faqsScreen"
+            app:destination="@id/faqsScreen" />
+        <action
+            android:id="@+id/action_myVouchersFragment_to_voucherDetail"
+            app:destination="@id/voucherDetail" />
+        <action
+            android:id="@+id/action_myVouchersFragment_to_voucherStatusFragment"
+            app:destination="@id/voucherStatusFragment" />
+        <argument android:name="tabType" android:defaultValue="@null" app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/voucherStatusFragment"
+        android:name="com.jar.gold_redemption.impl.ui.voucher_status.VoucherStatusFragment" >
+        <deepLink app:uri="android-app://com.jar.app/voucherStatusFragment/{sourceScreen}/{orderId}/{enumType}" />
+        <deepLink app:uri="android-app://com.jar.app/voucherStatusFragment/{sourceScreen}/{enumType}" />
+        <argument android:name="orderId" app:argType="string" app:nullable="true" />
+        <argument android:name="enumType" app:argType="string" app:nullable="true" />
+        <argument android:name="sourceScreen" app:argType="string" app:nullable="true"  />
+        <argument android:name="isSuccessful" app:argType="boolean" android:defaultValue="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/faqsScreen"
+        android:name="com.jar.gold_redemption.impl.ui.faq_screen.FAQsScreenFragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/voucherDetail"
+        android:name="com.jar.gold_redemption.impl.ui.voucher_detail.VoucherDetailFragment">
+
+        <argument
+            android:name="voucherId"
+            app:argType="string" />
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_voucherDetail_to_voucherStatusFragment"
+            app:destination="@id/voucherStatusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/voucherPurchase"
+        android:name="com.jar.gold_redemption.impl.ui.voucher_purchase.VoucherPurchaseFragment">
+
+        <argument
+            android:name="voucherId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_voucherPurchase_to_completePayment"
+            app:destination="@id/completePayment" />
+        <deepLink app:uri="android-app://com.jar.app/voucherPurchase/{voucherId}" />
+    </fragment>
+    <fragment
+        android:id="@+id/completePayment"
+        android:name="com.jar.gold_redemption.impl.ui.cart_complete_payment.CompletePaymentFragment">
+        <deepLink app:uri="android-app://com.jar.app/voucherCompletePaymentFrag/{orderId}/{statusApiData}/{initOrderRequest}" />
+
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <argument
+            android:name="statusApiData"
+            app:argType="string" />
+
+        <argument
+            android:name="initOrderRequest"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_completePayment_to_introScreenFragment"
+            app:destination="@id/introScreenFragment" />
+        <action
+            android:id="@+id/action_completePayment_self"
+            app:destination="@id/completePayment" />
+        <action
+            android:id="@+id/action_completePayment_to_voucherPurchase"
+            app:destination="@id/voucherPurchase" />
+        <action
+            android:id="@+id/action_completePayment_to_myVouchersFragment"
+            app:destination="@id/myVouchersFragment" />
+        <action
+            android:id="@+id/action_completePayment_to_brandCatalougeFragment"
+            app:destination="@id/brandCatalougeFragment" />
+    </fragment>
+</navigation>

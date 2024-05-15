@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plurals name="feature_refer_earn_bottomsheet_header">
+        <item quantity="one">Your referral (%d)</item>
+        <item quantity="other">Your referrals (%d)</item>
+    </plurals>
+
+    <plurals name="feature_refer_view_referrals">
+        <item quantity="zero">View referrals -></item>
+        <item quantity="other">View referrals (%d) -></item>
+    </plurals>
+
+</resources>

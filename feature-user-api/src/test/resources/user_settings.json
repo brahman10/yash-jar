@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "data": {
+    "isSavingsPaused": false,
+    "isPushNotificationEnabled": true,
+    "isReminderSetup": false,
+    "whatsAppOptin": true,
+    "isAutopayEnabled": false,
+    "payoutSavedVpas": [],
+    "isGoldPriceAlertEnabled": false,
+    "isAuspiciousDateAlertEnabled": false,
+    "isKYCVerified": false,
+    "autoInvestNoSpends": true,
+    "isGiftingEnabled": true,
+    "investRoundOffs": true,
+    "deliveryChargeDiscountPercentage": 0.0,
+    "deliveryChargeText": "Gold at your Doorstep"
+  }
+}

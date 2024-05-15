@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:clipChildren="false"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    tools:background="@color/bgColor">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMinWinningMessage"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/feature_transaction_background_green_ticker_12dp"
+        android:backgroundTint="#24eb8d6a"
+        android:padding="10dp"
+        android:textColor="@color/color_FFC576"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/feature_transaction_min_gold_req_for_delivery_is_n_gm" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCurrentWinnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/feature_transaction_bg_border_black_20dp"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMinWinningMessage">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderCurrentWinnings"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/feature_transaction_your_current_winnings"
+            app:layout_constraintEnd_toStartOf="@id/tvValue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvValue"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="₹60" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintTop_toBottomOf="@id/clCurrentWinnings" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderHowMuchToInvest"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:fontFamily="@font/inter_bold"
+        android:text="@string/feature_transaction_how_much_to_invest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rounded_black_bg_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderHowMuchToInvest"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rsSymbol"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/feature_transaction_currency_sign"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/color_707070_opacity_10"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rsSymbol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="0123456789"
+            app:fontFamily="@font/inter_bold"
+            android:gravity="start|center_vertical"
+            android:hint="0"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/color_EEEAFF"
+            android:textColorHint="@color/color_ACA1D3"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/line1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText">
+
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/btnInvestAllWinnings"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:button="@drawable/feature_transaction_checkbox_selector"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+        android:text="@string/feature_transaction_invest_all_winnings"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/clAmount" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="tvCurrentBuyPrice,tvPriceValidity"
+        app:layout_constraintTop_toBottomOf="@id/btnInvestAllWinnings" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrentBuyPrice"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/color_ebb46a"
+        app:layout_constraintBottom_toTopOf="@+id/separatorPay"
+        app:layout_constraintEnd_toStartOf="@id/tvPriceValidity"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Current buy price ₹5120/gm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceValidity"
+        style="@style/SmallTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="end|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/separatorPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCurrentBuyPrice"
+        tools:text="@string/feature_transaction_price_valid_for_n_min" />
+
+    <View
+        android:id="@+id/separatorPay"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintBottom_toTopOf="@id/btnInvestInGold" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnInvestInGold"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="false"
+        android:elevation="0dp"
+        android:focusable="false"
+        android:gravity="center"
+        app:textMarginStart="@dimen/dimen_50dp"
+        app:textMarginEnd="@dimen/dimen_50dp"
+        app:buttonText="@string/feature_transaction_invest_in_gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

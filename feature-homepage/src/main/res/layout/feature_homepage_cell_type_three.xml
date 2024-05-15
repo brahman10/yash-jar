@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shimmerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shimmer_auto_start="false"
+    app:shimmer_base_alpha="1"
+    app:shimmer_duration="2000"
+    app:shimmer_highlight_alpha="0.6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@drawable/rounded_black_bg_12dp"
+        android:backgroundTint="@color/color_3C3357"
+        android:clickable="false"
+        android:focusable="false"
+        tools:layout_width="102dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStartIcon"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toTopOf="@id/tvHeader"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:src="@drawable/weekly_magic_hat" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ivStartIconLottie"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toTopOf="@id/tvHeader"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:src="@drawable/weekly_magic_hat"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivStartIcon"
+            app:lineHeight="18sp"
+            tools:text="Lease\nGold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

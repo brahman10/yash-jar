@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_mandate_payment_proceed">தொடரவும்</string>
+    <string name="feature_mandate_payment_invalid_upi_id">தவறான Upi ஐடி</string>
+    <string name="feature_mandate_payment_upi_id_doesnt_support_mandate">Upi ஐடி மேன்டேட்டை ஆதரிக்காது</string>
+    <string name="feature_mandate_payment_transaction_cancelled">பரிவர்த்தனை ரத்து செய்யப்பட்டது</string>
+    <string name="feature_mandate_payment_something_went_wrong">ஏதோ தவறு நடைபெற்றிருக்கிறது</string>
+    <string name="feature_mandate_payment_we_are_verifying_your_payment_status">உங்கள் கட்டண நிலையை நாங்கள் சரிபார்க்கிறோம்.</string>
+    <string name="feature_mandate_rs_x_int_will_be_debited_from_your_bank_account">ஆட்டோ-சேவை அமைக்க, உங்கள் வங்கிக் கணக்கிலிருந்து ₹%d டெபிட் செய்யப்படும்</string>
+    <string name="feature_mandate_it_will_be_saved_in_gold_and_can_be_found_in_gold_locker">இது தங்கத்தில் சேமிக்கப்படும் மற்றும் தங்க லாக்கரில் காணலாம்</string>
+    <string name="feature_mandate_payment_select_preferred_way_to_autosave">ஆட்டோ-சேவ் செய்ய விருப்பப்பட்ட வழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="feature_mandate_payment_using_upi_app">UPI ஆப்-ஐப் பயன்படுத்துதல்</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A162A">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:lineHeight="36sp"
+        android:text="You have reached your goal!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icGoalIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView6"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6"
+        app:srcCompat="@drawable/jewel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvYouSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.02"
+        android:lineHeight="@dimen/dimen_18sp"
+        android:text="You Saved"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="200"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintEnd_toEndOf="@+id/icGoalIcon"
+        app:layout_constraintStart_toStartOf="@+id/icGoalIcon"
+        app:layout_constraintTop_toBottomOf="@+id/icGoalIcon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRupee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.02"
+        android:lineHeight="@dimen/dimen_18sp"
+        android:text="₹34,000"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvYouSaved"
+        app:layout_constraintStart_toStartOf="@+id/tvYouSaved"
+        app:layout_constraintTop_toBottomOf="@+id/tvYouSaved"
+        app:lineHeight="36sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvInHowManyMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.01"
+        android:lineHeight="@dimen/dimen_18sp"
+        android:text="in 12 months "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="600"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRupee"
+        app:layout_constraintStart_toStartOf="@+id/tvRupee"
+        app:layout_constraintTop_toBottomOf="@+id/tvRupee"
+        app:lineHeight="@dimen/dimen_18sp" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnPrimary"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:buttonText="Start new goal"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInHowManyMonths"
+        app:layout_constraintVertical_bias="1" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnSecondary"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:buttonBackgroundColor="#282339"
+        app:buttonBorderWidth="@dimen/dimen_1dp"
+        app:buttonStrokeColor="#846FC0"
+        app:buttonText="Withdraw"
+        app:buttonType="secondaryButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

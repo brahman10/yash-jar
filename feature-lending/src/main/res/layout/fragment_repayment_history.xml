@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context=".impl.ui.repayments.history.RepaymentHistoryFragment">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/custom_toolbar_default_revamped" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/round_black_bg_4dp"
+        android:backgroundTint="@color/color_3c3357"
+        app:tabIndicator="@drawable/feature_lending_bg_aca1d3_4dp_solid"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/color_ACA1D3"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="40dp"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/color_272239"
+        app:tabTextAppearance="@style/tabLayoutSemiBold"
+        app:tabTextColor="@color/white" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

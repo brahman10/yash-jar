@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardWinCoupon"
+    style="@style/SpinCommonTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCouponWinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineProvider="background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#431860"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:tint="@color/white"
+                android:elevation="@dimen/dimen_20dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/close_icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:layout_marginBottom="30dp"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sparkle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:lineSpacingExtra="11sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textFontWeight="700"
+                android:textSize="16sp"
+                app:lineHeight="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/ivGoldBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivClose"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                tools:text="You won a Jackpot!" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGoldBox"
+                android:layout_width="122dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/_20ssp"
+                app:srcCompat="@drawable/gold_brick"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toBottomOf="@id/tvHeading" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessageTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="6sp"
+                android:textColor="#EBB46A"
+                android:textSize="20sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/ivGoldBox"
+                tools:text="2% Extra gold coupon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCouponDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvMessageTwo"
+                app:layout_constraintStart_toStartOf="@+id/tvMessageTwo"
+                app:layout_constraintTop_toBottomOf="@id/tvMessageTwo"
+                tools:text="On your next gold purchase of ₹100 or more. " />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#431860"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/topMain"
+            app:layout_constraintLeft_toLeftOf="@id/topMain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topMain">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/dottedBorder"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#431860"
+                android:src="@drawable/core_ui_dotted_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLabelValidFor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="Valid for"
+                android:textColor="#ACA1D3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxt1"
+                android:layout_width="19dp"
+                android:layout_height="26dp"
+                android:background="@drawable/counter_bg"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="5dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxt2"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelValidFor"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor"
+                tools:text="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxt2"
+                android:layout_width="19dp"
+                android:layout_height="26dp"
+                android:background="@drawable/counter_bg"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="5dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingTop="2dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxtFullColonOne"
+                app:layout_constraintStart_toEndOf="@+id/tvTxt1"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor"
+                tools:text="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxtHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"
+                android:text="hour"
+                android:textColor="#776E94"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTxt2"
+                app:layout_constraintStart_toStartOf="@+id/tvTxt1"
+                app:layout_constraintTop_toBottomOf="@+id/tvTxt1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxtFullColonOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxt3"
+                app:layout_constraintStart_toEndOf="@+id/tvTxt2"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxt3"
+                android:layout_width="19dp"
+                android:layout_height="26dp"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="5dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingTop="2dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/counter_bg"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxt4"
+                app:layout_constraintStart_toEndOf="@+id/tvTxtFullColonOne"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor"
+                tools:text="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxt4"
+                android:layout_width="19dp"
+                android:layout_height="26dp"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="5dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingTop="2dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/counter_bg"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxtFullColonTwo"
+                app:layout_constraintStart_toEndOf="@+id/tvTxt3"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor"
+                tools:text="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxtMinute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"
+                android:text="minute"
+                android:textColor="#776E94"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTxt4"
+                app:layout_constraintStart_toStartOf="@+id/tvTxt3"
+                app:layout_constraintTop_toBottomOf="@+id/tvTxt3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxtFullColonTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxt5"
+                app:layout_constraintStart_toEndOf="@+id/tvTxt4"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxt5"
+                android:layout_width="19dp"
+                android:layout_height="26dp"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="5dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingTop="2dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/counter_bg"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTxt6"
+                app:layout_constraintStart_toEndOf="@+id/tvTxtFullColonTwo"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor"
+                tools:text="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxt6"
+                android:layout_width="19dp"
+                android:layout_height="26dp"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="5dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingTop="2dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/counter_bg"
+                android:padding="4dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvLabelValidFor"
+                app:layout_constraintStart_toEndOf="@+id/tvTxt5"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelValidFor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTxtSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"
+                android:text="second"
+                android:textColor="#776E94"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTxt6"
+                app:layout_constraintStart_toStartOf="@+id/tvTxt5"
+                app:layout_constraintTop_toBottomOf="@+id/tvTxt5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRedeemCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:background="@drawable/play_backgroud"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTxtSecond"
+                tools:text="Redeem coupon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlayAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnRedeemCoupon"
+                tools:text="SPIN AGAIN" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:alpha="0.3"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/black"
+            android:translationX="-10dp"
+            android:translationY="10dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomMain"
+            app:layout_constraintStart_toStartOf="@id/topMain" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:alpha="0.3"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/black"
+            android:translationX="10dp"
+            android:translationY="10dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomMain"
+            app:layout_constraintEnd_toEndOf="@id/topMain" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

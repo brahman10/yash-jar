@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1041006598540",
+    "project_id": "changejarstaging",
+    "storage_bucket": "changejarstaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041006598540:android:0f37991ef36ecbb97c5ea9",
+        "android_client_info": {
+          "package_name": "com.aso_centric.jar.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041006598540-cltqls4s7di39vblb7l52mln7fuuafj8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aso_centric.jar.staging",
+            "certificate_hash": "9db83d4dc2398c01fe1e3c34b866e125ab0da6ec"
+          }
+        },
+        {
+          "client_id": "1041006598540-s9sq6crotkmedh8hu33of53aa7r6tf8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aso_centric.jar.staging",
+            "certificate_hash": "2185210c464cf25bd4841a384c4b760613352ef1"
+          }
+        },
+        {
+          "client_id": "1041006598540-hrfdme4ark9nl8tjpa3lgb5bkt1kt7um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh60mbdUJc5i2wQpjQXWELsNucmKKFOpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041006598540-hrfdme4ark9nl8tjpa3lgb5bkt1kt7um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

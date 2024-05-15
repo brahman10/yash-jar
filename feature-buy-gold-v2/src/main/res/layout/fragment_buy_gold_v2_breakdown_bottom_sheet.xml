@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dimen_20dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:background="@drawable/core_ui_bg_top_rounded_corner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/BigTextViewStyle"
+            android:gravity="start"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/ivClose"
+            app:layout_constraintTop_toTopOf="@id/ivClose"
+            app:layout_constraintEnd_toStartOf="@id/ivClose"
+            android:text="@string/feature_buy_gold_v2_total_amount_payable"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_close"
+            app:tint="@color/white"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBreakdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rounded_black_bg_12dp"
+            android:padding="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labelViewPriceBreakdown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:text="@string/feature_buy_gold_v2_view_price_breakdown"
+                app:layout_constraintEnd_toStartOf="@id/tvPayableAmount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPayableAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonBoldTextViewStyle"
+                android:textColor="@color/white"
+                tools:text="₹30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:id="@+id/dottedLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:background="@drawable/core_ui_dotted_line_534a71"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                app:layout_constraintTop_toBottomOf="@id/labelViewPriceBreakdown" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAmountWithReward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feature_buy_gold_v2_bg_rounded_stroke_58ddc8_8dp"
+                android:paddingVertical="@dimen/dimen_8dp"
+                android:paddingHorizontal="@dimen/dimen_12dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/dimen_12dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonTextViewStyle"
+                    android:textColor="@color/color_58DDC8"
+                    android:text="@string/feature_buy_gold_v2_you_are_get_gold_worth"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    app:layout_constraintEnd_toStartOf="@id/tvAmountWithReward"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmountWithReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonBoldTextViewStyle"
+                    android:textColor="@color/color_58DDC8"
+                    tools:text="₹30"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labelGoldQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:text="@string/feature_buy_gold_v2_gold_quantity"
+                app:layout_constraintEnd_toStartOf="@id/tvGoldQuantity"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                app:layout_constraintTop_toBottomOf="@id/clAmountWithReward"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvGoldQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                tools:text="0.083gm"
+                android:layout_marginEnd="@dimen/dimen_4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/labelGoldQuantity"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labelGoldValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:text="@string/feature_buy_gold_v2_gold_value"
+                app:layout_constraintEnd_toStartOf="@id/tvGoldValue"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                app:layout_constraintTop_toBottomOf="@id/tvGoldQuantity"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvGoldValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                tools:text="₹30"
+                android:layout_marginEnd="@dimen/dimen_4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/labelGoldValue"/>
+
+            <View
+                android:id="@+id/dottedLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:background="@drawable/core_ui_dotted_line_534a71"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                app:layout_constraintTop_toBottomOf="@id/labelGoldValue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labelGst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:text="@string/feature_buy_gold_v2_gst_x"
+                app:layout_constraintEnd_toStartOf="@id/tvGst"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine2"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvGst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextViewStyle"
+                android:textColor="@color/white"
+                tools:text="₹30"
+                android:layout_marginEnd="@dimen/dimen_4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/labelGst"/>
+
+            <View
+                android:id="@+id/dottedLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:background="@drawable/core_ui_dotted_line_534a71"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/labelGst" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCouponCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SmallTextViewStyle"
+                android:textColor="@color/color_58DDC8"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="@string/feature_buy_gold_v2_coupon_applied_x_code"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRewardTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/SmallTextViewStyle"
+                android:textColor="@color/color_EBB46A"
+                app:textAllCaps="false"
+                android:gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/tvCouponCode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvRewardAmount"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:drawablePadding="@dimen/dimen_6dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="@string/feature_buy_gold_v2_jar_winnings_applied"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRewardAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SmallTextViewStyle"
+                android:textColor="@color/color_EBB46A"
+                app:layout_constraintTop_toBottomOf="@id/tvCouponCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="@string/feature_buy_gold_v2_extra_x_of_gold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnBuyNow"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="54dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginHorizontal="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            app:layout_constraintTop_toBottomOf="@id/clBreakdown"
+            app:buttonText="@string/feature_buy_gold_v2_buy_now"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

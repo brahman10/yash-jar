@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/goldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_black_bg_16dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="3dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYouOwn"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/feature_transaction_ic_gold_brick"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/gold_in_locker"
+            app:layout_constraintEnd_toStartOf="@id/tvCurrentValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDisclaimer"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_24_karat_gold_99_5_purity"
+            android:textSize="10sp"
+            android:translationY="-4dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@id/tvCurrentValue"
+            app:layout_constraintStart_toStartOf="@+id/tvYouOwn"
+            app:layout_constraintTop_toBottomOf="@+id/tvYouOwn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCurrentValue"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:drawableEnd="@drawable/feature_homepage_ic_custom_info"
+            android:drawablePadding="12dp"
+            android:textColor="@color/color_EEEAFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="27sp"
+            tools:text="Rs 81212.99" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSellOptions"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:paddingVertical="16dp"
+            app:buttonText="@string/sell_options"
+            app:buttonType="secondaryHollowButton"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/btnSellHistory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDisclaimer" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnSellHistory"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingVertical="16dp"
+            app:buttonText="@string/sell_history"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSellOptions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSellOptions"
+            app:layout_constraintTop_toTopOf="@+id/btnSellOptions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/layoutTicker"
+        layout="@layout/layout_ticker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/goldLayout"
+        app:layout_constraintTop_toBottomOf="@+id/goldLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

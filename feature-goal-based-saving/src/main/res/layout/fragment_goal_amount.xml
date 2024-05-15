@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CommonStyle"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text=""
+        android:textSize="32sp"
+        android:lineHeight="40sp"
+        android:textColor="#EEEAFF"
+        app:fontFamily="@font/inter_bold"
+        android:textFontWeight="700"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/llEnterAmount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="@drawable/dummy_et_bg"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_16dp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:scaleType="centerInside"
+            android:text="\u20B9"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="#ACA1D3"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivIcon"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dimen_0dp"
+            android:textColor="@color/white"
+            android:textColorHint="#776E94"
+            android:layout_centerVertical="true"
+            tools:hint="Enter amount" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCorrectAmount"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            app:srcCompat="@drawable/core_ui_ic_green_tick"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_10dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icClearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel_editing"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"/>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llErrorContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:visibility="gone"
+        tools:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llEnterAmount">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivErrorIcon"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            tools:srcCompat="@drawable/core_ui_ic_error"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvErrorMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Amount cannot be more than ₹15,00,000 "
+            android:textColor="#EB6A6E"
+            android:layout_marginStart="@dimen/dimen_10dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llInfoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llEnterAmount">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfoIcon"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            app:srcCompat="@drawable/core_ui_ic_info"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInfoMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Amount can be from ₹1000 to ₹15,00,000"
+            android:textColor="#ACA1D3"
+            android:layout_marginStart="@dimen/dimen_10dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/infoBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="llInfoContainer, llErrorContainer" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnNext"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        app:buttonDrawableEnd="@drawable/ic_arrow_right"
+        app:buttonText="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoBarrier"
+        app:layout_constraintVertical_bias="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

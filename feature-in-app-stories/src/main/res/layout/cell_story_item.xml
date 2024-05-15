@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clParent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/bg_rounded_bottom"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:cardCornerRadius="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/gradient_story"
+                android:elevation="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                app:layout_constraintGuide_percent="0.1" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivGuide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/bottomRoundedImageView"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/videoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:cardCornerRadius="@dimen/dimen_16dp">
+
+                <SurfaceView
+                    android:id="@+id/storyVideoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:surface_type="surface_view"
+                    app:use_controller="false"
+                    android:visibility="visible"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/refresh"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please try again"
+                android:visibility="invisible"
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintTop_toBottomOf="@id/ivRefresh"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLabelImage"
+                android:layout_width="@dimen/dimen_15dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/jar_logo"
+                android:backgroundTint="@null"
+                android:transitionName="shared_element"
+                app:contentPadding="2dp"
+                android:elevation="@dimen/dimen_20dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/circleImageView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Jar Stories"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:elevation="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivLabelImage"
+                app:layout_constraintStart_toEndOf="@+id/ivLabelImage"
+                app:layout_constraintTop_toTopOf="@+id/ivLabelImage"
+                app:lineHeight="18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/expiryTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/inter"
+                android:text="18h"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:elevation="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivLabelImage"
+                app:layout_constraintStart_toEndOf="@+id/tvLabelText"
+                app:layout_constraintTop_toTopOf="@+id/ivLabelImage"
+                app:lineHeight="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ivMute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_volume_on"
+                android:translationZ="@dimen/dimen_10dp"
+                android:tint="@color/white"
+                android:background="@null"
+                android:elevation="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLabelText"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                app:layout_constraintTop_toTopOf="@+id/tvLabelText" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_close"
+                android:translationZ="@dimen/dimen_10dp"
+                android:tint="@color/white"
+                android:background="@null"
+                android:elevation="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLabelText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvLabelText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUserAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical"
+        android:layout_weight="1"
+        android:weightSum="8"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/jarLogo"
+        android:layout_width="72dp"
+        android:layout_height="84dp"
+        android:alpha="0.3"
+        android:src="@drawable/jar_logo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="#48FFFFFF"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="@dimen/dimen_12dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:backgroundTint="#48FFFFFF"
+                app:cardCornerRadius="@dimen/dimen_12dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="42dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="42dp"
+                android:backgroundTint="#48FFFFFF"
+
+                app:cardCornerRadius="@dimen/dimen_12dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:backgroundTint="#48FFFFFF"
+                android:layout_weight="8"
+                app:cardCornerRadius="@dimen/dimen_12dp"/>
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/color_EBB46A"
+        android:translationZ="@dimen/dimen_10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/ivMessageIcon"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:src="@drawable/ic_no_internet"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/black"
+            android:progressTint="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+            app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+            app:layout_constraintEnd_toStartOf="@+id/appCompatTextView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="This is taking longer than expected"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivMessageIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/storyContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="cardView,llUserAction"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="jarLogo,shimmerLayout,message"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

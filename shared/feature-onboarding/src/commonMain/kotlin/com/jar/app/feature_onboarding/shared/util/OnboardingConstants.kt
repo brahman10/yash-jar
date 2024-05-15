@@ -1,0 +1,70 @@
+package com.jar.app.feature_onboarding.shared.util
+
+object OnboardingConstants {
+
+    internal object Endpoints {
+        const val LOGIN_VIA_TRUECALLER = "v2/api/auth/truecaller"
+        const val REQUEST_OTP = "v2/api/auth/requestOTP"
+        const val REQUEST_OTP_VIA_CALL = "v2/api/auth/sendOTP/call"
+        const val VERIFY_OTP = "v2/api/auth/verifyOTP"
+        const val LOGOUT = "v1/api/auth/logOut"
+        const val FETCH_PHONE_NUMBER_FOR_DEVICE = "v2/api/auth/phoneNumbers"
+        const val FETCH_OTP_STATUS = "v2/api/auth/otpStatus"
+        const val FETCH_SAVINGS_GOAL = "v2/api/dashboard/static"
+        const val POST_SAVING_GOAL = "v1/api/user/settings/preferences"
+        const val FETCH_USER_SAVING_PREFERENCE = "v1/api/user/settings/preferences"
+        const val FETCH_ONBOARDING_STORIES = "v2/api/public/static"
+        const val FETCH_EXPERIAN_TNC = "v2/api/public/static"
+        const val FETCH_SUPPORTED_LANGUAGES = "api/preferences/languages"
+        const val FETCH_DASHBOARD_STATIC_CONTENT = "v2/api/dashboard/static"
+        const val VERIFY_OTL = "v2/api/auth/otl/verify"
+    }
+
+    object AnalyticsKeys {
+        const val CLEVERTAP_IDENTITY = "Identity"
+        const val CLEVERTAP_NAME = "Name"
+        const val CLEVERTAP_GENDER = "Gender"
+        const val CLEVERTAP_PHONE = "Phone"
+        const val CLEVERTAP_MOBILE = "mobile"
+        const val TIME_SPENT = "timeSpent"
+        const val RESPONSE = "Response"
+        const val Is_New_Flow = "Is_New_Flow"
+        const val NUMBER_DETECTED = "NUMBER_DETECTED"
+        const val ENABLED = "enabled"
+        const val Login_type = "Login type"
+        const val OTL = "OTL"
+        const val NUMBER = "number"
+        const val Is_checked = "Is_checked"
+        const val AuthType = "authType"
+        const val OTP = "OTP"
+        const val ERROR = "Error"
+        const val TRUECALLER = "Truecaller"
+        const val PROP_SOURCE = "source"
+        const val OLD_USER_LOGIN = "old_user_login"
+        const val NEW_USER_SIGNUP = "new_user_signup"
+        const val AUTH_SUCCESSFUL = "auth_successful"
+
+        const val Initiated_newphonenumberhint = "Initiated_newphonenumberhint"
+        const val Clicked_UseTruecaller_Onboarding = "Clicked_UseTruecaller_Onboarding"
+        const val Exit_Truecaller_Onboarding = "Exit_Truecaller_Onboarding"
+        const val Exit_LoginScreen_Onboarding = "Exit_LoginScreen_Onboarding"
+        const val Exit_OtlStatusScreen_Onboarding = "Exit_OtlStatusScreen_Onboarding"
+        const val Clicked_AnotherMobileNumber_Onboarding = "Clicked_AnotherMobileNumber_Onboarding"
+        const val Clicked_Another_Mobile_Number_Onboarding = "ClickedAnotherMobileNumber_Onboarding"
+        const val ClickedNumber_PhoneNumberSuggestion_Onboarding = "ClickedNumber_PhoneNumberSuggestion_Onboarding"
+        const val Dismissed_PhoneNumberSuggestion_Onboarding = "Dismissed_PhoneNumberSuggestion_Onboarding"
+        const val Shown_LoginScreen_Onboarding = "Shown_LoginScreen_Onboarding"
+        const val ClickedTermsAndConditions_LoginScreen_Onboarding = "ClickedTermsAndConditions_LoginScreen_Onboarding"
+        const val ClickedPrivacyPolicy_LoginScreen_Onboarding = "ClickedPrivacyPolicy_LoginScreen_Onboarding"
+        const val ClickedGetOTP_LoginScreen_Onboarding = "ClickedGetOTP_LoginScreen_Onboarding"
+        const val Clicked_ContinueWithTruecaller_Onboarding = "Clicked_ContinueWithTruecaller_Onboarding"
+        const val ClickedLanguageButton_LoginScreen_Onboarding = "ClickedLanguageButton_LoginScreen_Onboarding"
+        const val ClickedEnterPhoneNumber_LoginScreen_Onboarding = "ClickedEnterPhoneNumber_LoginScreen_Onboarding"
+        const val Clicked_experian_checkbox = "Clicked_experian_checkbox"
+        const val Shown_Truecaller_Onboarding = "Shown_Truecaller_Onboarding"
+        const val Shown_newphonenumberhint = "Shown_newphonenumberhint"
+        const val Shown_PhoneNumberSuggestion_Onboarding = "Shown_PhoneNumberSuggestion_Onboarding"
+
+    }
+
+}

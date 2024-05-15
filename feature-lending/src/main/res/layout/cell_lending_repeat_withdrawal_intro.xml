@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feature_lending_bg_ready_cash_intro_cards"
+    android:minWidth="284dp"
+    app:layout_constraintWidth_min="284dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUspIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feature_lending_ic_usp_collateral" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivEndIllustration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feature_lending_bg_card_end_gradient_illustration" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:gravity="start"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/feature_lending_money_in_your_account_is_few_clicks_away"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:id="@+id/tvUspTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivUspIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

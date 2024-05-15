@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plurals name="feature_round_off_resuming_in">
+        <item quantity="one">पुन्हा सुरु होत आहे : %d दिवस</item>
+        <item quantity="other">पुन्हा सुरु होत आहे : %d दिवस</item>
+    </plurals>
+    <plurals name="feature_round_off_n_days">
+        <item quantity="one">%d दिवस</item>
+        <item quantity="other">%d दिवस</item>
+    </plurals>
+    <plurals name="feature_round_off_transactions">
+        <item quantity="zero">%d ट्रँजॅक्शन</item>
+        <item quantity="one">%d ट्रँजॅक्शन</item>
+        <item quantity="other">%d ट्रँजॅक्शन्स</item>
+    </plurals>
+</resources>

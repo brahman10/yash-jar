@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_weekly_magic_common_weekly_magic">പ്രതിവാര മാജിക്</string>
+    <string name="feature_weekly_magic_common_get_mystery_card">GET MYSTERY CARD</string>
+    <string name="feature_weekly_magic_common_save_s_or_more_to_get_a_card">ഒരു കാർഡ് കിട്ടാൻ ₹%s അല്ലെങ്കിൽ കൂടുതൽ സമ്പാദിക്കുക</string>
+    <string name="feature_weekly_magic_common_lets_go">നമുക്ക് പോകാം!</string>
+    <string name="feature_weekly_magic_common_one_day_left">1 ദിവസം ബാക്കി</string>
+    <string name="feature_weekly_magic_common_s_days_left">%s ദിവസങ്ങൾ ബാക്കി</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in_s">അടുത്ത വെല്ലുവിളി തുടങ്ങുന്നത് %s...</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in">അടുത്ത വെല്ലുവിളി തുടങ്ങുന്നത്</string>
+    <string name="feature_weekly_magic_common_next_challenge_starts_in">അടുത്ത വെല്ലുവിളി തുടങ്ങുന്നത്</string>
+    <string name="feature_weekly_magic_common_magic_hat">മാജിക് ഹാറ്റ്</string>
+    <string name="feature_weekly_magic_common_is_here">ഇവിടെയുണ്ട്!</string>
+    <string name="feature_weekly_magic_common_you_won_gold_worth">നിങ്ങൾ വിജയിച്ചിരിക്കുന്നു സ്വർണത്തിന്റെ മൂല്യം</string>
+    <string name="feature_weekly_magic_common_added_to_your_locker">നിങ്ങളുടെ ലോക്കറിലേക്ക് ചേർത്തു!</string>
+    <string name="feature_weekly_magic_common_days">ദിവസങ്ങൾ</string>
+    <string name="feature_weekly_magic_common_day">ദിവസം</string>
+    <string name="show_me">എനിക്ക് കാണിച്ച് തരൂ!</string>
+    <string name="feature_weekly_magic_common_i_ll_check_later">ഞാൻ പിന്നീട് നോക്കാം</string>
+    <string name="feature_weekly_magic_common_omg_you_won_a_mystery_card">കൊള്ളാം, നിങ്ങൾ ഒരു രഹസ്യ കാർഡ് നേടി!</string>
+    <string name="feature_weekly_magic_common_on_your_transaction_of">നിങ്ങളുടെ ₹%d ഇടപാടിന്</string>
+    <string name="feature_weekly_magic_common_gold_purchase_n_successful">സ്വർണം വാങ്ങൽ\nവിജയകരം!</string>
+    <string name="feature_weekly_magic_common_you_got">നിങ്ങൾ നേടി</string>
+    <string name="feature_weekly_magic_common_n_n_">%d/%d</string>
+    <string name="feature_weekly_magic_common_cards">കാർഡുകൾ</string>
+    <string name="feature_weekly_magic_common_you_won">നിങ്ങൾ വിജയിച്ചു!</string>
+    <string name="feature_weekly_magic_common_in_">ൽ</string>
+    <string name="feature_weekly_magic_common_your_collection_is_complete">നിങ്ങളുടെ ശേഖരം പൂർത്തിയായി!</string>
+    <string name="feature_weekly_magic_common_collect_all_cards_and_win_up_in_gold">എല്ലാ കാർഡുകളും ശേഖരിച്ച് ₹%s വരെ സ്വർണമായി നേടുക!</string>
+    <string name="feature_weekly_magic_common_you_won_a_mystery_card_on_this_transaction">ഈ ഇടപാടിൽ നിങ്ങൾക്കൊരു രഹസ്യ കാർഡ് കിട്ടി!</string>
+    <string name="feature_weekly_magic_common_current_challenge">നിലവിലെ വെല്ലുവിളി</string>
+
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_one">ഹലോ, ഞാൻ ആണ് മാജിക് ഹാറ്റ്!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_two">…നിങ്ങളുടെ സമ്പാദ്യം രസകരമാക്കാൻ ആണ് \n ഞാൻ ഇവിടെ ഉള്ളത്!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_three">എങ്ങനെ എന്ന് ചോദിക്കൂ? \n തീർച്ചയായും എന്റെ മാജിക് ഉപയോഗിച്ച്!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_one">മിച്ചം പിടിക്കൂ അല്ലെങ്കിൽ ഓട്ടോ-സേവ് ചെയ്യൂ, \n എന്റെ രഹസ്യ കാർഡുകൾ നേടൂ!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_two">ആഴ്ചയിലെ കാർഡുകൾ എല്ലാം ശേഖരിക്കൂ \n &amp; അപ്പോൾ ഞാൻ തരാം ആവേശകരമായ ഒരു സമ്മാനം!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_one">എത്ര വലുതാണോ നിങ്ങളുടെ സമ്പാദ്യം, \n അത്രയും വലുതാകും നിങ്ങൾക്കുള്ള എന്റെ സമ്മാനങ്ങൾ!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_two">അപ്പോൾ എന്തിന് കാത്തിരിക്കുന്നു? \n Let’s begin!</string>
+    <string name="feature_weekly_magic_common_hooray">അടിപൊളി!</string>
+    <string name="feature_weekly_magic_common_click_any_where_to_continue">തുടരാൻ എവിടെയെങ്കിലും അമർത്തൂ...</string>
+    <string name="feature_weekly_magic_common_congratulations">അഭിനന്ദനങ്ങൾ!</string>
+    <string name="feature_weekly_magic_common_challenge_not_found">വെല്ലുവിളി കണ്ടില്ല</string>
+    <string name="feature_weekly_magic_common_week_n">ആഴ്ച %s</string>
+    <string name="feature_weekly_magic_common_click_left">ഇടത് അമർത്തുക</string>
+    <string name="feature_weekly_magic_common_click_right">വലത് അമർത്തുക</string>
+    <string name="feature_weekly_magic_common_feature_description">പ്രതിവാര സവിശേഷത വിവരണം</string>
+    <string name="feature_weekly_magic_common_next">അടുത്തത്</string>
+    <string name="feature_weekly_magic_common_close">അവസാനിപ്പിക്കുക</string>
+    <string name="feature_weekly_magic_common_details_not_found">വിവരങ്ങൾ ഒന്നും കണ്ടില്ല</string>
+    <string name="feature_weekly_magic_common_people_participated">പങ്കെടുത്ത ആളുകൾ</string>
+    <string name="feature_weekly_magic_common_worth_of_gold_was_won">മൂല്യത്തിന് സ്വർണം നേടി</string>
+    <string name="feature_weekly_magic_common_collect">ശേഖരിക്കുക </string>
+    <string name="feature_weekly_magic_common_weekly_magic_currency_in_s">\u20B9%s</string>
+</resources>

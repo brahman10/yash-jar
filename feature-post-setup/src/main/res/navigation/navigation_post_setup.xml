@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_post_setup"
+    app:startDestination="@id/postSetupDetailsFragment">
+
+    <action
+        android:id="@+id/action_to_failedTransactionFragment"
+        app:destination="@+id/failedTransactionFragment" />
+
+    <action
+        android:id="@+id/action_to_paymentSuccessFragment"
+        app:destination="@+id/paymentSuccessFragment" />
+
+    <action
+        android:id="@+id/action_to_paymentPendingOrFailureFragment"
+        app:destination="@+id/paymentPendingOrFailureFragment" />
+
+    <fragment
+        android:id="@+id/postSetupDetailsFragment"
+        android:name="com.jar.android.feature_post_setup.impl.ui.setup_details.PostSetupDetailsFragment"
+        android:label="PostSetupDetailsFragment"
+        tools:layout="@layout/feature_post_setup_fragment_details">
+        <deepLink app:uri="android-app://com.jar.app/postSetupDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/failedTransactionFragment"
+        android:name="com.jar.android.feature_post_setup.impl.ui.failed_transactions.FailedTransactionFragment"
+        android:label="FailedTransactionFragment"
+        tools:layout="@layout/feature_post_setup_fragment_failed_transaction">
+
+        <argument
+            android:name="monthIndex"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentPendingOrFailureFragment"
+        android:name="com.jar.android.feature_post_setup.impl.ui.status.failure_or_pending.PaymentPendingOrFailureFragment"
+        android:label="PaymentPendingOrFailureFragment"
+        tools:layout="@layout/feature_post_setup_fragment_payment_pending_or_failure">
+        <argument
+            android:name="failureOrPendingData"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/postSetupStatus/{failureOrPendingData}" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/paymentSuccessFragment"
+        android:name="com.jar.android.feature_post_setup.impl.ui.status.success.PaymentSuccessFragment"
+        android:label="PaymentSuccessFragment"
+        tools:layout="@layout/feature_post_setup_fragment_payment_success">
+        <argument
+            android:name="transactionId"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/postSetupSuccessStatus/{transactionId}" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/failedRenewalBottomSheet"
+        android:name="com.jar.android.feature_post_setup.impl.ui.failed_renewal.FailedRenewalBottomSheet"
+        android:label="FailedRenewalBottomSheet"
+        tools:layout="@layout/feature_post_setup_failed_renewal_bottom_sheet">
+        <argument
+            android:name="dSFailureInfo"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink app:uri="android-app://com.jar.app/failedRenewalBottomSheet/{dSFailureInfo}" />
+    </dialog>
+    <dialog
+        android:id="@+id/postSetupDSCancellationBottomSheet"
+        android:name="com.jar.android.feature_post_setup.impl.ui.setup_details.PostSetupDSCancellationBottomSheet"
+        android:label="PostSetupDSCancellationBottomSheet">
+
+        <deepLink app:uri="android-app://com.jar.app/postSetupDSCancellationBottomSheet" />
+    </dialog>
+    <dialog
+        android:id="@+id/dailySavingPauseProgressScreen"
+        android:name="com.jar.android.feature_post_setup.impl.ui.setup_details.DailySavingPauseProgressScreen"
+        android:label="DailySavingPauseProgressScreen" >
+
+        <argument
+            android:name="status"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="heading"
+            app:argType="string"
+            app:nullable="false" />
+
+        <deepLink app:uri="android-app://com.jar.app/dailySavingPauseProgressScreen/{status}/{heading}" />
+
+    </dialog>
+
+</navigation>

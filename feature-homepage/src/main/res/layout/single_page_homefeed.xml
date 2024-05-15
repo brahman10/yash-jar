@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_3C3357"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llHeaderHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/single_homepage_top_gradient_bg"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dimen_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivHeaderImage"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:src="@drawable/core_ui_ic_gold_bricks_with_star" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderSPH"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/inter"
+            android:textFontWeight="400"
+            android:text="@string/your_money_is_saved_in_24k_digital_gold"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFragmentHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_bold"
+        android:lineHeight="28dp"
+        android:text="@string/save_10_in_gold_instead_nof_spending_on_snacks"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/llHeaderHolder"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFragmentSubHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginTop="12.8dp"
+        android:fontFamily="@font/inter"
+        android:lineHeight="24dp"
+        android:text="@string/start_saving_in_gold_right_now"
+        android:textColor="@color/color_D5CDF2"
+        android:textFontWeight="400"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFragmentHeading"
+        tools:ignore="UnusedAttribute" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBgImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="@color/color_3C3357"
+        app:layout_constraintBottom_toTopOf="@+id/clCouponHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFragmentSubHeading" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCouponHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="9dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/ivBgImage"
+        app:layout_constraintBottom_toTopOf="@+id/llBtnHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/iCouponLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            layout="@layout/home_feed_single_coupon_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tvTrustedBy"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:visibility="visible"
+        android:background="@color/color_3C3357"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/llBtnHolder"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:lineHeight="@dimen/dimen_14dp"
+            android:text="@string/trusted_by"
+            android:textColor="@color/color_D5CDF2"
+            android:textFontWeight="400"
+            android:textSize="10sp"
+            tools:ignore="UnusedAttribute" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tvTrustedImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/core_bg_trust_image" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBtnHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/line"
+            tools:layout_editor_absoluteX="16dp">
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/leftCTA"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_6dp"
+                android:layout_weight="1"
+                app:buttonBackgroundColor="@color/color_3C3357"
+                app:buttonBorderWidth="@dimen/dimen_0dp"
+                app:buttonText="@string/save_now"
+                app:buttonTextAllCaps="false" />
+
+            <com.jar.app.core_ui.widget.button.CustomButtonV2
+                android:id="@+id/rightCTA"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_weight="1"
+                app:buttonText="@string/save_daily" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="0.6dp"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/core_ui_separator_v2"
+            app:layout_constraintBottom_toTopOf="@+id/showMore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/showMore"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:visibility="visible"
+            app:buttonDrawablePadding="@dimen/dimen_8dp"
+            app:buttonType="secondaryHollowButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

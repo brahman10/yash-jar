@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        tools:background="@color/bgColor">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmount"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="8dp"
+            android:textSize="28sp"
+            app:drawableEndCompat="@drawable/feature_homepage_ic_custom_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="₹100" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnFullPayment"
+            android:layout_width="108dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="20dp"
+            app:buttonText="@string/feature_homepage_invest_now"
+            app:buttonTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvAmount" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDivider"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor"
+            android:elevation="2dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/feature_homepage_or"
+            app:layout_constraintBottom_toBottomOf="@id/separator"
+            app:layout_constraintEnd_toEndOf="@id/separator"
+            app:layout_constraintStart_toStartOf="@id/separator"
+            app:layout_constraintTop_toTopOf="@id/separator"
+            app:textAllCaps="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="42dp"
+            app:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator"
+            tools:text="Title goes here.." />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:text="Description goes here.." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPartPaymentOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription"
+            tools:itemCount="3"
+            tools:listitem="@layout/feature_homepage_cell_partial_payment" />
+
+        <View
+            android:id="@+id/separatorTwo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintTop_toBottomOf="@id/rvPartPaymentOptions" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOrTwo"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor"
+            android:elevation="2dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/feature_homepage_or"
+            app:layout_constraintBottom_toBottomOf="@id/separatorTwo"
+            app:layout_constraintEnd_toEndOf="@id/separatorTwo"
+            app:layout_constraintStart_toStartOf="@id/separatorTwo"
+            app:layout_constraintTop_toTopOf="@id/separatorTwo"
+            app:textAllCaps="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnSkipInvestment"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_black_bg_16dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/feature_homepage_skip_this_investment"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/separatorTwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSkipInfo"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:textColor="@color/color_ACA1D3"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSkipInvestment"
+            tools:text="Skip info goes here.." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

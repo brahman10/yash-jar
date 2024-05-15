@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDarkColor">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:minHeight="?android:actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCross"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/actionBarItemBackground"
+            android:padding="4dp"
+            android:src="@drawable/feature_lending_bottom_sheet_cross_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="1dp"
+            android:background="#776E94"
+            android:visibility="visible"
+           app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/feature_lending_circle_doc_bg"
+        android:backgroundTint="@color/purple400"
+        android:padding="24dp"
+        android:src="@drawable/feature_lending_ic_sad_emoji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clToolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvScreenTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIllustration"
+        tools:text="@string/feature_lending_please_try_again" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/color_ACA1D3"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScreenTitle"
+        tools:text="@string/feature_lending_we_couldnt_proceed_because_of_some_technical_problems" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clOptionHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:background="@color/red_opacity_10"
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.jar.app.feature_lending.impl.ui.mandate.custom.MandateModeSetupButtonView
+            android:id="@+id/btnDebitCard"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:modeButton_startIcon="@drawable/feature_lending_ic_debit_card"
+            app:modeButton_type="next"
+            tools:visibility="visible"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            app:modeButton_title="@string/feature_lending_debit_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDebitCardAlert"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/feature_lending_ic_info"
+            app:drawableTint="@color/color_C5B0FF"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:gravity="center_vertical"
+            tools:text="@string/feature_lending_keep_these_details_ready"
+            android:textColor="@color/color_C5B0FF"
+            app:layout_constraintEnd_toEndOf="@id/btnDebitCard"
+            app:layout_constraintStart_toStartOf="@id/btnDebitCard"
+            app:layout_constraintTop_toBottomOf="@id/btnDebitCard" />
+        <com.jar.app.feature_lending.impl.ui.mandate.custom.MandateModeSetupButtonView
+            android:id="@+id/btnNetBanking"
+            style="@style/CommonBoldTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            app:modeButton_startIcon="@drawable/feature_lending_bank_icon_36dp"
+            app:modeButton_type="next"
+            tools:visibility="visible"
+            app:modeButton_title="@string/feature_lending_net_banking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDebitCardAlert" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNetBankingAlert"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/feature_lending_ic_info"
+            app:drawableTint="@color/color_C5B0FF"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:gravity="center_vertical"
+            android:text="@string/feature_lending_keep_these_details_ready"
+            android:textColor="@color/color_C5B0FF"
+            app:layout_constraintEnd_toEndOf="@id/btnNetBanking"
+            app:layout_constraintStart_toStartOf="@id/btnNetBanking"
+            app:layout_constraintTop_toBottomOf="@id/btnNetBanking" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContactSupport"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_semi_bold"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="@string/feature_lending_contact_support"
+        android:textSize="14sp"
+        android:textColor="@color/color_D5CDF2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@+id/clOptionHolder"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

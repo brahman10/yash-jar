@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMoneyCredited"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:drawableStart="@drawable/feature_sell_gold_ic_auto_flash"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/feature_sell_gold_money_credited" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/core_ui_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyCredited" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clipChildren="false"
+        app:layout_constraintTop_toBottomOf="@id/line2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvConfetti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/feature_sell_gold_bg_rounded_3c3357_10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animViewConfetti"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintEnd_toEndOf="@id/animViewConfetti"
+                app:layout_constraintStart_toStartOf="@id/animViewConfetti"
+                app:layout_constraintTop_toTopOf="@id/animViewConfetti"
+                app:layout_constraintBottom_toBottomOf="@id/animViewConfetti"
+                app:srcCompat="@drawable/feature_sell_gold_ic_heart_emo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvThankYou"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_sell_gold_thank_you_for_your_feedback"
+                app:layout_constraintBottom_toBottomOf="@id/animViewConfetti"
+                app:layout_constraintStart_toEndOf="@id/animViewConfetti"
+                app:layout_constraintTop_toTopOf="@id/animViewConfetti" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvConfetti"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            app:buttonText="@string/feature_sell_gold_done" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/dynamicRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+        android:requiresFadingEdge="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvDone"
+        tools:itemCount="2"
+        tools:listitem="@layout/dynamic_cards_cell_strip_two"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

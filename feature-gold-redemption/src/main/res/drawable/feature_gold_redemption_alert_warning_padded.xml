@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    android:drawable="@drawable/alert_warning"-->
+    <item
+        android:bottom="6dp"
+        android:drawable="@drawable/ic_copy"
+        android:left="6dp"
+        android:right="6dp"
+        android:top="6dp" />
+</layer-list>

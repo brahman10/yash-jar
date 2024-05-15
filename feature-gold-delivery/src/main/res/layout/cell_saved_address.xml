@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_black_bg_16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_4dp"
+    tools:layout_margin="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/categoryTv"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feature_gold_delivery_bg_rounded_yellow_43353b_6dp"
+        android:paddingHorizontal="@dimen/dimen_12dp"
+        android:paddingVertical="@dimen/dimen_6dp"
+        android:text="@string/linked_to_your_adhaar"
+        android:textColor="#EBB46A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameTv"
+        style="@style/CommonBoldTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/radioCheck"
+        app:layout_constraintStart_toEndOf="@id/radioCheck"
+        app:layout_constraintTop_toTopOf="@id/radioCheck"
+        tools:text="Name" />
+
+    <RadioButton
+        android:id="@+id/radioCheck"
+        android:layout_width="50dp"
+        android:buttonTint="#EEEAFF"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryTv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNameAddress"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"
+        app:layout_constraintStart_toStartOf="@+id/nameTv"
+        app:layout_constraintTop_toBottomOf="@id/nameTv"
+        tools:maxLines="6"
+        tools:text="97951922" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddress"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:textColor="#ACA1D3"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"
+        app:layout_constraintStart_toStartOf="@+id/nameTv"
+        app:layout_constraintTop_toBottomOf="@id/tvNameAddress"
+        tools:maxLines="6"
+        tools:text="@tools:sample/lorem/random" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/core_ui_ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/nameTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

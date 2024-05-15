@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_weekly_magic_to_win"> ಗೆಲ್ಲಲು</string>
+    <string name="feature_weekly_magic_upto_s_in_gold">ಚಿನ್ನದಲ್ಲಿ ₹%s ವರೆಗೆ!</string>
+    <string name="feature_weekly_magic_s_mystery_cards">%s ಮಿಸ್ಟರಿ ಕಾರ್ಡ್‌ಗಳು</string>
+    <string name="feature_weekly_magic_s_mystery_card">%s ಮಿಸ್ಟರಿ ಕಾರ್ಡ್</string>
+</resources>

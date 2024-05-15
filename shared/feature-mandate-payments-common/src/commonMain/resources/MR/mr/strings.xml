@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_mandate_payment_proceed">पुढे जा</string>
+    <string name="feature_mandate_payment_invalid_upi_id">अवैध UPI आयडी</string>
+    <string name="feature_mandate_payment_upi_id_doesnt_support_mandate">UPI आयडी मॅनडेटला सपोर्ट करत नाही</string>
+    <string name="feature_mandate_payment_transaction_cancelled">ट्रँजॅक्शन कॅन्सल केले आहे</string>
+    <string name="feature_mandate_payment_something_went_wrong">काहीतरी चूक झाली आहे</string>
+    <string name="feature_mandate_payment_we_are_verifying_your_payment_status">आम्ही तुमचे पेमेंट स्टेटस व्हेरिफाय करत आहोत.</string>
+    <string name="feature_mandate_rs_x_int_will_be_debited_from_your_bank_account">ऑटो-सेव्ह सेटअप करण्यासाठी तुमच्या बँक अकाऊंटमधून  ₹%d डेबिट केले जातील</string>
+    <string name="feature_mandate_it_will_be_saved_in_gold_and_can_be_found_in_gold_locker">हे सोन्याच्या रूपात सेव्ह केले जातील आणि सोन्याच्या लॉकरमध्ये दिसतील</string>
+    <string name="feature_mandate_payment_select_preferred_way_to_autosave">ऑटो -सेव्ह करण्यासाठी प्राधान्यकृत मार्ग निवडा</string>
+    <string name="feature_mandate_payment_using_upi_app">UPI ॲप कसे वापरावे</string>
+</resources>

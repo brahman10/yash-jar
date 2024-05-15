@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/into_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/close_button"
+        android:layout_width="20dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_arrow_back"
+        android:layout_height="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="-1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeadingFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:text="Achieve goals."
+        android:layout_marginTop="@dimen/dp_25"
+        android:textSize="40sp"
+        android:lineHeight="40sp"
+        android:textFontWeight="700"
+        app:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="-8sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/close_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeadingSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:text="Save gold daily."
+        android:textSize="40sp"
+        android:lineHeight="40sp"
+        android:textFontWeight="700"
+        app:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="-8sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvHeadingFirst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        tools:buttonText="Create Goal"
+        app:buttonTextSize="14sp"
+        app:buttonTextBold="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

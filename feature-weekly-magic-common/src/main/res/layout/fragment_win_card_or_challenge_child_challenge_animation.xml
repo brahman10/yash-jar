@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/transparent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bg_challenge_won_stars"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_congrats"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_weekly_magic_common_congratulations"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/iv_stars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".78" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWonAmount"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="start"
+        android:textColor="@color/color_FFDA2D"
+        android:textSize="60sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_value"
+        app:layout_constraintEnd_toEndOf="@id/gl_end_value"
+        app:layout_constraintStart_toStartOf="@id/gl_start_value"
+        app:layout_constraintTop_toTopOf="@id/gl_top_value"
+        tools:text="₹30"
+        tools:visibility="visible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animViewPoof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_value"
+        app:layout_constraintEnd_toEndOf="@id/gl_end_value"
+        app:layout_constraintStart_toStartOf="@id/gl_start_value"
+        app:layout_constraintTop_toTopOf="@id/gl_top_value" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="gl_bottom_value,iv_stars" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_next_challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier_bottom">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessageTimer"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_ACA1D3"
+                android:visibility="invisible"
+                tools:text="Next challenge begins in"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerMessageTimerValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxt1"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_corner_776e94_3dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxt2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxt2"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/bg_rounded_corner_776e94_3dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxtFullColonOne"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxt1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxtFullColonOne"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:padding="4dp"
+                    android:text="@string/full_colon"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxt3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxt2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxt3"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/bg_rounded_corner_776e94_3dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxt4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxtFullColonOne"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxt4"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/bg_rounded_corner_776e94_3dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxtFullColonTwo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxt3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxtFullColonTwo"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:padding="4dp"
+                    android:text="@string/full_colon"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxt5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxt4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxt5"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/bg_rounded_corner_776e94_3dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTxt6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxtFullColonTwo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxt6"
+                    style="@style/SmallBoldTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/bg_rounded_corner_776e94_3dp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/tvTxt5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxtHour"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/hour"
+                    android:textColor="@color/color_776E94"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTxt2"
+                    app:layout_constraintStart_toStartOf="@+id/tvTxt1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTxt1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxtMinute"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/minute"
+                    android:textColor="@color/color_776E94"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTxt4"
+                    app:layout_constraintStart_toStartOf="@+id/tvTxt3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTxt3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTxtSecond"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/second"
+                    android:textColor="@color/color_776E94"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTxt6"
+                    app:layout_constraintStart_toStartOf="@+id/tvTxt5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTxt5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_calender"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_calender"
+            android:padding="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ll_next_challenge"
+            app:layout_constraintStart_toEndOf="@+id/ll_next_challenge"
+            app:layout_constraintTop_toTopOf="@+id/ll_next_challenge"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_top"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".34" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvValueDay"
+                style="@style/SmallBoldTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvLabelDay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/gl_top"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:targetApi="p"
+                tools:text="2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLabelDay"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueDay"
+                tools:text="Days"
+                tools:ignore="SmallSp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

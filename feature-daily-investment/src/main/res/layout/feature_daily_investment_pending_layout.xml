@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieCelebration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/clPendingContainer"
+            app:layout_constraintEnd_toEndOf="@id/clPendingContainer"
+            app:layout_constraintStart_toStartOf="@id/clPendingContainer"
+            app:layout_constraintTop_toTopOf="@id/clPendingContainer"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPending"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="8dp"
+            android:translationZ="8dp"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/color_3c3357"
+            app:srcCompat="@drawable/core_ui_ic_hour_glass"
+            app:layout_constraintBottom_toTopOf="@id/clPendingContainer"
+            app:layout_constraintEnd_toEndOf="@id/clPendingContainer"
+            app:layout_constraintStart_toStartOf="@id/clPendingContainer"
+            app:layout_constraintTop_toTopOf="@id/clPendingContainer" />
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/core_ui_bg_circle_white"
+            android:backgroundTint="@color/bgColor"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toTopOf="@id/clPendingContainer"
+            app:layout_constraintEnd_toEndOf="@id/clPendingContainer"
+            app:layout_constraintStart_toStartOf="@id/clPendingContainer"
+            app:layout_constraintTop_toTopOf="@id/clPendingContainer" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPendingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="90dp"
+            android:background="@drawable/rounded_black_bg_10dp"
+            android:backgroundTint="@color/color_3c3357"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/BigTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="56dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/feature_daily_investment_uh_oh_daily_saving_pending"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/core_ui_bg_circle_white"
+                android:backgroundTint="@color/bgColor"
+                android:elevation="10dp"
+                android:translationX="-10dp"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/dottedLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dottedLine" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/core_ui_bg_circle_white"
+                android:backgroundTint="@color/bgColor"
+                android:elevation="10dp"
+                android:translationX="10dp"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/dottedLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dottedLine" />
+
+            <View
+                android:id="@+id/dottedLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/core_ui_dotted_line"
+                android:elevation="9dp"
+                android:translationZ="9dp"
+                app:layout_constraintBottom_toTopOf="@id/tvDescription"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                style="@style/CommonTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="@dimen/dimen_32dp"
+                android:gravity="center"
+                android:text="@string/feature_daily_investment_you_will_be_notified_as_soon_as_we_get_an_update"
+                android:textColor="@color/color_ACA1D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dottedLine" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnGoToHome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="84dp"
+            app:buttonBorderWidth="1dp"
+            app:buttonEndColor="@color/bgColor"
+            app:buttonStartColor="@color/bgColor"
+            app:buttonStrokeColor="@color/color_846FC0"
+            app:buttonText="@string/core_ui_go_to_homepage"
+            app:buttonType="secondaryHollowButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clPendingContainer" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.1"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/btnGoToHome" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNeedHelp"
+            style="@style/BigTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/core_ui_need_help_question_mark"
+            app:layout_constraintBottom_toTopOf="@id/tvContactSupport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContactSupport"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp"
+            android:drawablePadding="10dp"
+            android:text="@string/core_ui_contact_support"
+            android:textFontWeight="600"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/ic_arrow_forward"
+            app:drawableStartCompat="@drawable/ic_whatsapp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

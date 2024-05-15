@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lending_steps_navigation"
+    app:startDestination="@id/dummyScreenFragment">
+
+    <include app:graph="@navigation/feature_lending_kyc_steps_navigation" />
+
+    <action
+        android:id="@+id/action_to_automateEmiFragment"
+        app:destination="@id/automateEmiFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_loanReasonFragment"
+        app:destination="@id/loanReasonFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingEligibilityLoadingFragment"
+        app:destination="@id/lendingEligibilityLoadingFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_loanAgreementFragment"
+        app:destination="@id/loanAgreementFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_bankDetailsFragment"
+        app:destination="@id/bankDetailsFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_selectEMIFragment"
+        app:destination="@id/selectEMIFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_selectLoanAmountFragment"
+        app:destination="@id/selectLoanAmountFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingSelectAddressFragment"
+        app:destination="@id/lendingSelectAddressFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingConfirmDetailsFragment"
+        app:destination="@id/lendingConfirmDetailsFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingKycViewOnlyFragment"
+        app:destination="@id/lendingKycViewOnlyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingPersonalDetailsViewOnlyFragment"
+        app:destination="@id/lendingPersonalDetailsViewOnlyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_lendingSummaryViewOnlyFragment"
+        app:destination="@id/lendingSummaryViewOnlyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_transitionFragmentState"
+        app:destination="@id/transitionFragmentState"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_lendingWebViewFragment"
+        app:destination="@id/lendingWebViewFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_confirmLendingKycFragment"
+        app:destination="@id/confirmLendingKycFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_lendingBackPressedFragment"
+        app:destination="@id/lendingBackPressedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_pennyDropVerificationFragment"
+        app:destination="@id/pennyDropVerificationFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_bankViewOnlyFragment"
+        app:destination="@id/bankViewOnlyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_bankApplicationRejectedFragment"
+        app:destination="@id/bankApplicationRejectedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_loanConsentFragment"
+        app:destination="@id/loanMandateConsentFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_madateStatusFragment"
+        app:destination="@id/mandateStatusFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_loanAgreementV2Fragment"
+        app:destination="@id/loanAgreementV2Fragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_loanPendingFragment"
+        app:destination="@id/loanPendingFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_to_loanFailureFragment"
+        app:destination="@id/loanFailureFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_to_loanMandateFailureFragment"
+        app:destination="@id/loanMandateFailureFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_loanSummaryV2Fragment"
+        app:destination="@id/loanSummaryV2Fragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_global_otpVerificationFragment"
+        app:destination="@id/loanOtpVerificationFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_global_serverTimeOutOrPending"
+        app:destination="@id/serverTimeOutOrPending"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_global_lendingWithdrawalWaitFragment"
+        app:destination="@id/lendingWithdrawalWaitFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/lendingEducationalIntroFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.educational_intro.LendingEducationalIntroFragment"
+        android:label="LendingEducationalIntroFragment"
+        tools:layout="@layout/feature_lending_fragment_educational_intro">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/lendingEducationalIntroFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/readyCashLandingFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.onboarding.ReadyCashLandingFragment"
+        android:label="ReadyCashLandingFragment"
+        tools:layout="@layout/feature_lending_fragment_ready_cash_landing">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/readyCashLandingFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellGoldFlowLandingFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.onboarding.SellGoldFlowLandingFragment"
+        android:label="SellGoldFlowLandingFragment"
+        tools:layout="@layout/feature_lending_fragment_sell_gold_flow_landing">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/sellGoldLandingFragment/{screenArgs}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repeatWithdrawalLandingFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.repeat_withdrawal_landing.RepeatWithdrawalLandingFragment"
+        android:label="RepeatWithdrawalLandingFragment"
+        tools:layout="@layout/feature_lending_fragment_repeat_withdrawal_landing">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/lendingRepeatWithdrawal/{screenArgs}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectLoanAmountFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.choose_amount.amount.SelectLoanAmountFragment"
+        android:label="SelectLoanAmountFragment"
+        tools:layout="@layout/fragment_select_loan_amount">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/selectLoanAmount/{screenArgs}" />
+        <action
+            android:id="@+id/action_selectLoanAmountFragment_to_selectEMIFragment"
+            app:destination="@id/selectEMIFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectEMIFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.choose_amount.emi.SelectEMIFragment"
+        android:label="SelectEMIFragment"
+        tools:layout="@layout/fragment_select_emi_plan">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/selectEMIFragment/{screenArgs}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmBankDetailFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.confirm_bank.ConfirmBankDetailFragment"
+        android:label="ConfirmBankDetailFragment"
+        tools:layout="@layout/feature_lending_fragment_confirm_bank_detail">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/confirmBankDetailFragment/{screenArgs}" />
+        <action
+            android:id="@+id/action_confirmBankDetailFragment_to_changeYourBankBottomSheet"
+            app:destination="@id/changeYourBankBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanSummaryAndAgreementRetryFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.agreement.LoanSummaryAndAgreementRetryFragment"
+        android:label="LoanSummaryAndAgreementRetryFragment"
+        tools:layout="@layout/feature_lending_fragment_loan_summary_and_agreement_retry">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/loanSummaryAndAgreementRetryFragment/{screenArgs}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/changeYourBankBottomSheet"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.confirm_bank.ChangeYourBankBottomSheet"
+        android:label="ChangeYourBankBottomSheet"
+        tools:layout="@layout/feature_lending_bottomsheet_change_your_bank" />
+
+    <fragment
+        android:id="@+id/loanAgreementFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.abandoned.LoanSummaryFragment"
+        android:label="LoanAgreementFragment"
+        tools:layout="@layout/fragment_loan_aggreement">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_loanAgreementFragment_to_otpVerificationFragment"
+            app:destination="@id/loanOtpVerificationFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/lendingConfirmDetailsFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.confirm_bottomsheet.LendingConfirmDetailsBottomSheetFragment"
+        android:label="LendingConfirmDetailsBottomSheetFragment"
+        tools:layout="@layout/fragment_lending_confirm_details">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="des"
+            app:argType="string" />
+        <argument
+            android:name="positiveCtaText"
+            app:argType="string" />
+        <argument
+            android:name="negativeCtaText"
+            app:argType="string" />
+        <argument
+            android:name="bankDataEncoded"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+    <fragment
+        android:id="@+id/lendingEmploymentDetailsFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.personal_details.employment.LendingEmploymentDetailsFragment"
+        android:label="LendingEmploymentDetailsFragment"
+        tools:layout="@layout/fragment_lending_employment_details">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_lendingEmploymentDetailsFragment_to_breakdownInfoBottomSheetFragment2"
+            app:destination="@id/breakdownInfoBottomSheetFragment2" />
+        <deepLink app:uri="android-app://com.jar.app/lendingEmploymentDetailsFragment/{screenArgs}" />
+    </fragment>
+    <dialog
+        android:id="@+id/breakdownInfoBottomSheetFragment2"
+        android:name="com.jar.app.feature_lending.impl.ui.agreement.BreakdownInfoBottomSheetFragment"
+        android:label="fragment_breakdown_info_bottom_sheet"
+        tools:layout="@layout/fragment_breakdown_info_bottom_sheet">
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+    <fragment
+        android:id="@+id/lendingSelectAddressFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.personal_details.address.select_address.LendingSelectAddressFragment"
+        android:label="LendingSelectAddressFragment"
+        tools:layout="@layout/fragment_lending_select_address">
+        <argument
+            android:name="isNewAddressAdded"
+            app:argType="boolean"
+            app:nullable="false" />
+        <argument
+            android:name="newAddressAddedVia"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_lendingSelectAddressFragment_to_lendingAddressOptionFragment"
+            app:destination="@id/lendingAddressOptionFragment" />
+        <action
+            android:id="@+id/action_lendingSelectAddressFragment_to_lendingAddAddressFragment"
+            app:destination="@id/lendingAddAddressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lendingAddressOptionFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.personal_details.address.address_option.LendingAddressOptionFragment"
+        android:label="LendingAddressOptionFragment"
+        tools:layout="@layout/fragment_lending_address_option">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_lendingAddressOptionFragment_to_lendingAddAddressFragment"
+            app:destination="@id/lendingAddAddressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lendingAddAddressFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.personal_details.address.add_address.LendingAddAddressFragment"
+        android:label="LendingAddAddressFragment"
+        tools:layout="@layout/fragment_lending_add_address">
+        <argument
+            android:name="address"
+            app:argType="com.jar.app.feature_user_api.domain.model.Address"
+            app:nullable="true" />
+        <argument
+            android:name="placePrediction"
+            app:argType="com.jar.app.feature_lending.shared.domain.model.PlacesPrediction"
+            app:nullable="true" />
+        <argument
+            android:name="lat"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="long"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="newAddressAddedVia"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_lendingAddAddressFragment_to_lendingSelectAddressFragment"
+            app:destination="@id/lendingSelectAddressFragment" />
+        <action
+            android:id="@+id/action_lendingAddAddressFragment_to_lendingAddressOptionFragment"
+            app:destination="@id/lendingAddressOptionFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/loanOtpVerificationFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.otp.LoanOtpVerificationFragment"
+        android:label="OtpVerificationFragment"
+        tools:layout="@layout/fragment_otp_verification">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="isFromRepeatWithdrawal"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/lendingKycViewOnlyFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.view_only.kyc_details.LendingKycViewOnlyFragment"
+        android:label="LendingKycViewOnlyFragment"
+        tools:layout="@layout/fragment_lending_kyc_view_only">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lendingPersonalDetailsViewOnlyFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.view_only.personal_details.LendingPersonalDetailsViewOnlyFragment"
+        android:label="LendingPersonalDetailsViewOnlyFragment"
+        tools:layout="@layout/fragment_lending_personal_details_view_only">
+        <argument
+            android:name="loanApplicationDetail"
+            app:argType="com.jar.app.feature_lending.shared.domain.model.temp.LoanApplicationDetail"
+            app:nullable="true" />
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lendingSummaryViewOnlyFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.view_only.summary.LendingSummaryViewOnlyFragment"
+        android:label="LendingSummaryViewOnlyFragment"
+        tools:layout="@layout/fragment_lending_summary_view_only">
+        <argument
+            android:name="loanApplicationDetail"
+            app:argType="com.jar.app.feature_lending.shared.domain.model.temp.LoanApplicationDetail"
+            app:nullable="true" />
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dummyScreenFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.common.LendingDummyScreenFragment"
+        android:label="LendingDummyScreenFragment"
+        tools:layout="@layout/fragment_lending_dummy_screen" />
+    <fragment
+        android:id="@+id/automateEmiFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.automate_emi.AutomateEmiFragment"
+        android:label="AutomateEmiFragment"
+        tools:layout="@layout/fragment_automate_emi">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanFailureFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.loan_status.LoanFailureFragment"
+        android:label="LoanFailureFragment"
+        tools:layout="@layout/fragment_loan_failure">
+        <argument
+            android:name="flowType"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loanPendingFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.loan_status.LoanPendingFragment"
+        android:label="LoanPendingFragment"
+        tools:layout="@layout/fragment_loan_pending">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/loanPendingFragment/{screenArgs}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transitionFragmentState"
+        android:name="com.jar.app.feature_lending.impl.ui.common.TransitionFragmentState"
+        android:label="TransitionFragmentState">
+        <argument
+            android:name="screenArgs"
+            app:argType="com.jar.app.feature_lending.impl.domain.model.TransitionStateScreenArgs"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loanReasonFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.reason.LoanReasonFragment"
+        android:label="LoanReasonFragment"
+        tools:layout="@layout/fragment_loan_details">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/loanReasonFragment/{screenArgs}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mandateStatusFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.mandate.status.MandateStatusFragment"
+        android:label="MandateStatusFragment"
+        tools:layout="@layout/fragment_madate_status">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/mandateStatusFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/lendingWebViewFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.common.LendingWebViewFragment"
+        android:label="LendingWebViewFragment"
+        tools:layout="@layout/fragment_feature_lending_webview">
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="isInAppHelp"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+        <argument
+            android:name="isMandateFlow"
+            android:defaultValue="false"
+            app:argType="boolean"
+            app:nullable="false" />
+        <argument
+            android:name="fromStepName"
+            android:defaultValue="CHOOSE_AMOUNT"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_lendingWebViewFragment_to_mandateStatusFragment"
+            app:destination="@id/mandateStatusFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bankDetailsFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.enter_account.BankDetailsFragment"
+        android:label="BankDetailsFragment"
+        tools:layout="@layout/fragment_bank_details">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/bankDetailsFragment/{screenArgs}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pennyDropVerificationFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.penny_drop.PennyDropVerificationFragment"
+        android:label="PennyDropVerificationFragment"
+        tools:layout="@layout/fragment_penny_drop_verification">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/pennyDropVerification/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/abflWaitingFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.waiting.ABFLWaitingFragment"
+        android:label="ABFLWaitingFragment"
+        tools:layout="@layout/feature_lending_fragment_abfl_waiting">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/abflWaitingFragment/{screenArgs}" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/lendingBackPressedFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.host_container.back_pressed.LendingBackPressedBottomSheetFragment"
+        android:label="LendingBackPressedBottomSheetFragment"
+        tools:layout="@layout/fragment_lending_back_pressed">
+        <argument
+            android:name="currentScreenName"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+    <fragment
+        android:id="@+id/bankApplicationRejectedFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.application_rejected.LoanApplicationRejectedFragment"
+        android:label="BankApplicationRejectedFragment"
+        tools:layout="@layout/fragment_loan_application_rejected">
+        <argument
+            android:name="lender"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/confirmLendingKycFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.kyc.confirm_kyc.ConfirmLendingKycFragment"
+        android:label="ConfirmLendingKycFragment"
+        tools:layout="@layout/feature_lending_fragment_confirm_kyc">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/kycConsent/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmCkycDetailsFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.kyc.ckyc.ConfirmCkycDetailsFragment"
+        android:label="ConfirmLendingKycFragment"
+        tools:layout="@layout/feature_lending_fragment_confirm_ckyc_details">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/confirmCkycDetailsFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankViewOnlyFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.bank.verified.BankViewOnlyFragment"
+        android:label="BankViewOnlyFragment"
+        tools:layout="@layout/fragment_bank_details_view_only" />
+    <fragment
+        android:id="@+id/loanMandateConsentFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.mandate.consent.LoanMandateConsentFragment"
+        android:label="LoanMandateConsentFragment"
+        tools:layout="@layout/fragment_loan_mandate_consent">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/loanMandateConsentFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanSummaryV2Fragment"
+        android:name="com.jar.app.feature_lending.impl.ui.agreement.LoanSummaryV2Fragment"
+        android:label="LoanSummaryV2Fragment"
+        tools:layout="@layout/fragment_loan_summary_v2">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_loanSummaryV2Fragment_to_breakdownInfoBottomSheetFragment"
+            app:destination="@id/breakdownInfoBottomSheetFragment" />
+        <deepLink app:uri="android-app://com.jar.app/loanSummaryV2Fragment/{screenArgs}" />
+    </fragment>
+    <dialog
+        android:id="@+id/breakdownInfoBottomSheetFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.agreement.BreakdownInfoBottomSheetFragment"
+        android:label="fragment_breakdown_info_bottom_sheet"
+        tools:layout="@layout/fragment_breakdown_info_bottom_sheet">
+        <argument
+            android:name="loanId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/breakdownInfoBottomSheetFragment/{loanId}/{type}" />
+    </dialog>
+    <fragment
+        android:id="@+id/loanAgreementV2Fragment"
+        android:name="com.jar.app.feature_lending.impl.ui.agreement.LoanAgreementV2Fragment"
+        android:label="LoanAgreementV2Fragment"
+        tools:layout="@layout/fragment_loan_agreement_v2">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/loanAgreementFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverTimeOutOrPending"
+        android:name="com.jar.app.feature_lending.impl.ui.withdrawal_wait.LendingServerTimeOutOrPendingFragment"
+        android:label="LendingServerTimeOutOrPendingFragment"
+        tools:layout="@layout/feature_lending_fragment_server_time_out_or_pending">
+        <argument
+            android:name="flowType"
+            app:argType="integer"
+            app:nullable="false" />
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/serverTimeOutOrPending/{flowType}/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/lendingWithdrawalWaitFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.withdrawal_wait.LendingWithdrawalWaitFragment"
+        android:label="LendingWithdrawalWaitFragment"
+        tools:layout="@layout/fragment_breakdown_info_bottom_sheet">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/lendingWithdrawalWaitFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/partnerDownTimeFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.downtime.PartnerDownTimeFragment"
+        android:label="PartnerDownTimeFragment"
+        tools:layout="@layout/fragment_partner_down_time">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/partnerDownTimeFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/lendingTransitionFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.transition.LendingTransitionFragment"
+        android:label="LendingTransitionFragment"
+        tools:layout="@layout/feature_lending_fragment_transition">
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/lendingTransitionFragment/{screenArgs}" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanMandateFailureFragment"
+        android:name="com.jar.app.feature_lending.impl.ui.mandate.failure.LoanMandateFailureFragment"
+        android:label="LoanMandateFailureFragment" >
+        <argument
+            android:name="screenArgs"
+            app:argType="string"
+            app:nullable="false" />
+        <deepLink app:uri="android-app://com.jar.app/loanMandateFailureFragment/{screenArgs}" />
+
+    </fragment>
+</navigation>

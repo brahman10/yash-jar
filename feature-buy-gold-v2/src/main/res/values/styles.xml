@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="goldPurchase">
+        <item name="android:textSize">
+            20sp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="we_are_trying">
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="it_is_taking">
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textColor">
+            #ACA1D3
+        </item>
+    </style>
+
+    <style name="need_help_">
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="contact_sup">
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:textColor">
+            #EEEAFF
+        </item>
+    </style>
+
+</resources>

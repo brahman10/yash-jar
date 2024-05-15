@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <plurals name="feature_gold_redemption_items">
+        <item quantity="one">ఐటెమ్</item>
+        <item quantity="other"> ఐటెమ్స్</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_my_orders_x">
+        <item quantity="one">నా ఆర్డర్</item>
+        <item quantity="other">నా ఆర్డర్‌లు (%d)</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_items_available">
+        <item quantity="one">%d బరువు అందుబాటులో ఉంది</item>
+        <item quantity="other">%d బరువులు అందుబాటులో ఉన్నాయి</item>
+    </plurals>
+    <plurals name="feature_gold_redemption_showing_cities">
+        <item quantity="one">%d నగరాన్ని చూపుతోంది</item>
+        <item quantity="other">%d నగరాలను చూపుతోంది</item>
+    </plurals>
+
+</resources>

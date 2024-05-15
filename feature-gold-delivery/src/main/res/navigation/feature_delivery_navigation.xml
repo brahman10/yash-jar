@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feature_delivery_navigation"
+    app:startDestination="@id/deliveryStoreItemListFragment">
+
+    <fragment
+        android:id="@+id/cartNoCancelForOrderFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.cancel_order.CartNoCancelFragment"
+        android:label="CartNoCancelFragment"
+        tools:layout="@layout/fragment_no_order_cancel">
+    </fragment>
+    <fragment
+        android:id="@+id/cartMyOrdersFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.my_orders.CartMyOrdersFragment"
+        android:label="CartMyOrdersFragment"
+        tools:layout="@layout/fragment_cart_my_orders">
+
+        <action
+            android:id="@+id/action_cartMyOrdersFragment_to_cartMyOrderDetailFragment"
+            app:destination="@id/cartMyOrderDetailFragment" />
+        <action
+            android:id="@+id/action_cartMyOrdersFragment_to_storeItemDetailFragment"
+            app:destination="@id/storeItemDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.wishlist.CartWishListFragment"
+        android:label="CartWishListFragment"
+        tools:layout="@layout/fragment_cart_wishlist">
+
+        <action
+            android:id="@+id/action_wishlistFragment_to_cartItemsQuantityEditFragment"
+            app:destination="@id/cartItemsQuantityEditFragment" />
+        <action
+            android:id="@+id/action_wishlistFragment_to_storeItemDetailFragment"
+            app:destination="@id/storeItemDetailFragment" />
+        <action
+            android:id="@+id/action_wishlistFragment_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment" />
+        <action
+            android:id="@+id/action_wishlistFragment_to_deliveryStoreItemListFragment"
+            app:destination="@id/deliveryStoreItemListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartMyOrderDetailFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.cart_order_details.CartOrderDetailsFragment"
+        android:label="CartOrderDetailFragment"
+        tools:layout="@layout/fragment_cart_order_details">
+
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="assetSourceType"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="assetTxnId"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_cartMyOrderDetailFragment_to_storeItemDetailFragment"
+            app:destination="@id/storeItemDetailFragment" />
+        <action
+            android:id="@+id/action_cartMyOrderDetailFragment_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment" />
+        <action
+            android:id="@+id/action_cartMyOrderDetailFragment_to_cartNoCancelForOrderFragment"
+            app:destination="@id/cartNoCancelForOrderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deliveryStoreItemListFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.list.DeliveryStoreItemListFragment"
+        android:label="DeliveryStoreItemListFragment"
+        tools:layout="@layout/fragment_delivery_store">
+        <argument
+            android:name="pinCodeEntered"
+            app:argType="string"
+            android:defaultValue=""
+            app:nullable="true" />
+        <argument
+            android:name="productItToNavigate"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true" />
+
+        <deepLink app:uri="android-app://com.jar.app/goldCoinStore/{productItToNavigate}" />
+        <action
+            android:id="@+id/action_deliveryStoreItemListFragment_to_storeItemDetailFragment"
+            app:destination="@id/storeItemDetailFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreItemListFragment_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment">
+
+            <argument
+                android:name="pinCodeEntered"
+                app:argType="string"
+                app:nullable="true" />
+
+        </action>
+        <action
+            android:id="@+id/action_deliveryStoreItemListFragment_to_cartMyOrdersFragment"
+            app:destination="@id/cartMyOrdersFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreItemListFragment_to_wishlistFragment"
+            app:destination="@id/wishlistFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreItemListFragment_to_cartItemsFragment"
+            app:destination="@id/cartItemsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deliveryStoreCartFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.cart.CartDetailFragment"
+        android:label="StoreCartFragment"
+        tools:layout="@layout/fragment_store_cart">
+        <deepLink app:uri="android-app://com.jar.app/goldCoinStoreCart/" />
+
+        <argument
+            android:name="pinCodeEntered"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_savedAddressFragment"
+            app:destination="@id/savedAddressFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_completePaymentFragment"
+            app:destination="@id/completePaymentFragment">
+
+        </action>
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_cartItemsQuantityEditFragment"
+            app:destination="@id/cartItemsQuantityEditFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_cartItemAddFragemnt"
+            app:destination="@id/cartItemAddFragemnt" />
+
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_storeItemDetailFragment"
+            app:destination="@id/storeItemDetailFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_cartSuccessFragment"
+            app:destination="@id/cartSuccessFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_deliveryStoreItemListFragment"
+            app:destination="@id/deliveryStoreItemListFragment" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_cartItemDeleteFragemnt"
+            app:destination="@id/cartItemDeleteFragemnt" />
+        <action
+            android:id="@+id/action_deliveryStoreCartFragment_to_cartPinCodeFragment"
+            app:destination="@id/cartPinCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storeItemDetailFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.detail.StoreItemDetailFragment"
+        android:label="StoreItemDetailFragment"
+        tools:layout="@layout/fragment_store_item_detail">
+        <deepLink app:uri="android-app://com.jar.app/goldCoinStore" />
+
+        <argument
+            android:name="label"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="pinCodeEntered"
+            app:argType="string" />
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_storeItemDetailFragment_to_addDeliveryAddressFragment"
+            app:destination="@id/addDeliveryAddressFragment" />
+        <action
+            android:id="@+id/action_storeItemDetailFragment_to_savedAddressFragment"
+            app:destination="@id/savedAddressFragment" />
+        <action
+            android:id="@+id/action_storeItemDetailFragment_to_cartItemsFragment2"
+            app:destination="@id/cartItemsFragment" />
+        <action
+            android:id="@+id/action_storeItemDetailFragment_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment" />
+        <action
+            android:id="@+id/action_storeItemDetailFragment_to_wishlistFragment"
+            app:destination="@id/wishlistFragment" />
+        <action
+            android:id="@+id/action_storeItemDetailFragment_self"
+            app:destination="@id/storeItemDetailFragment" />
+        <action
+            android:id="@+id/action_storeItemDetailFragment_to_cartMyOrdersFragment"
+            app:destination="@id/cartMyOrdersFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/cartItemDeleteFragemnt"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.cart_item_delete.CartItemsDeleteFragment"
+        android:label="cartItemsDeleteFragment"
+        tools:layout="@layout/fragment_cart_items_delete">
+
+        <argument
+            android:name="cartItemData"
+            app:argType="com.jar.app.feature_gold_delivery.shared.domain.model.CartItemData"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_cartItemDeleteFragemnt_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/cartPinCodeFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.cart_bottomsheet_pincode.CartBottomSheetPincodeFragment"
+        android:label="cartItemsDeleteFragment"
+        tools:layout="@layout/fragment_cart_bottomsheet_pincode">
+    </dialog>
+
+    <dialog
+        android:id="@+id/cartItemAddFragemnt"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.cart_item_add.CartItemsAddFragment"
+        android:label="CartItemsAddFragment"
+        tools:layout="@layout/fragment_cart_items_add">
+
+        <argument
+            android:name="cartItemData"
+            app:argType="com.jar.app.feature_gold_delivery.shared.domain.model.CartItemData"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_cartItemAddFragemnt_to_cartItemsQuantityEditFragment"
+            app:destination="@id/cartItemsQuantityEditFragment" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/cartItemsQuantityEditFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.cart_items_quantity_edit.CartItemsQuantityEditFragment"
+        android:label="CartItemsQuantityEditFragment"
+        tools:layout="@layout/fragment_cart_quantity_edit_items">
+
+        <argument
+            android:name="item"
+            app:argType="com.jar.app.feature_gold_delivery.shared.domain.model.CartItemData"
+            app:nullable="true" />
+        <argument
+            android:name="isItemAddFlow"
+            app:argType="boolean" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/addDeliveryAddressFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.add_address.AddDeliveryAddressFragment"
+        android:label="AddDeliveryDetailFragment"
+        tools:layout="@layout/fragment_add_address">
+        <argument
+            android:name="isFirstAddress"
+            app:argType="boolean" />
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartSuccessFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.cart_success.CartSuccessFragment"
+        android:label="CartSuccessFragment"
+        tools:layout="@layout/fragment_cart_success">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <argument
+            android:name="paymentDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="paymentMethod"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="payerVpa"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="deliveryProductResponse"
+            app:argType="com.jar.app.feature_one_time_payments_common.shared.DeliverProductResponse" />
+        <action
+            android:id="@+id/action_cartSuccessFragment_to_cartMyOrderDetailFragment"
+            app:destination="@id/cartMyOrderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/completePaymentFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.store_item.cart_complete_payment.CompletePaymentFragment"
+        android:label="CompletePaymentFragment"
+        tools:layout="@layout/fragment_payment_status_cart">
+
+        <deepLink app:uri="android-app://com.jar.app/completePaymentFrag/{orderId}/{paymentResponse}/{placeOrderRequest}" />
+
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="placeOrderRequest"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true" />
+        <argument
+            android:name="paymentResponse"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_completePaymentFragment_to_cartSuccessFragment"
+            app:destination="@id/cartSuccessFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_completePaymentFragment_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_completePaymentFragment_to_cartMyOrdersFragment"
+            app:destination="@id/cartMyOrdersFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_completePaymentFragment_to_deliveryStoreItemListFragment"
+            app:destination="@id/deliveryStoreItemListFragment" />
+        <action
+            android:id="@+id/action_completePaymentFragment_self"
+            app:destination="@id/completePaymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedAddressFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.saved_address.SavedAddressFragment"
+        android:label="SavedAddressFragment"
+        tools:layout="@layout/fragment_saved_address">
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="selectedAddressId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <deepLink app:uri="android-app://com.jar.app/savedAddresses" />
+        <action
+            android:id="@+id/action_savedAddressFragment_to_editAddressFragment"
+            app:destination="@id/editAddressFragment" />
+        <action
+            android:id="@+id/action_savedAddressFragment_to_addDeliveryAddressFragment"
+            app:destination="@id/addDeliveryAddressFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/cartItemsFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.cart_items.CartItemsFragment"
+        android:label="CartItemsFragment"
+        tools:layout="@layout/fragment_cart_items">
+
+        <argument
+            android:name="fromScreen"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="pincodeEntered"
+            app:argType="string" />
+
+        <argument
+            android:name="cartData"
+            app:argType="com.jar.app.feature_gold_delivery.shared.domain.model.CartAPIData" />
+        <action
+            android:id="@+id/action_cartItemsFragment_to_deliveryStoreCartFragment"
+            app:destination="@id/deliveryStoreCartFragment" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/editAddressFragment"
+        android:name="com.jar.app.feature_gold_delivery.impl.ui.edit_address.EditAddressFragment"
+        android:label="EditAddressFragment"
+        tools:layout="@layout/fragment_add_address">
+
+        <argument
+            android:name="address"
+            app:argType="com.jar.app.feature_user_api.domain.model.Address" />
+    </fragment>
+
+</navigation>

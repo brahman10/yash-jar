@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="12dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvYourDuos"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="20dp"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNewDuo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnNewDuo"
+        app:lineHeight="24sp"
+        tools:text="Your Duos" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/viewAllButton"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="View All Invites"
+      android:layout_marginEnd="25dp"
+      android:visibility="visible"
+      android:textColor="@color/color_ACA1D3"
+      app:drawableTint="@color/color_ACA1D3"
+      android:textSize="14sp"
+      android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"/>
+
+</LinearLayout>

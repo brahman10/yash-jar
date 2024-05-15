@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="66dp"
+    android:paddingHorizontal="18dp"
+    android:paddingVertical="12dp"
+    app:layout_constraintHeight_min="66dp"
+    tools:background="@drawable/bg_edit_text_rounded_corner_white_8dp"
+    tools:backgroundTint="@color/color_3D3255">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/white"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toStartOf="@id/btnResume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Round-off paused" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start|center_vertical"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/btnResume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="Paused for 15 Days"
+        tools:textColor="#ACA1D3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edit_text_rounded_corner_white_8dp"
+        android:backgroundTint="#7745FF"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/white"
+        app:fontFamily="@font/inter_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnClose"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Resume" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="1dp"
+        android:src="@drawable/core_ui_ic_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

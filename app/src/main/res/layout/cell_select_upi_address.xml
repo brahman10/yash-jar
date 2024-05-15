@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/round_black_bg_16dp"
+    android:padding="8dp">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkVpa"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:layoutDirection="rtl"
+        android:longClickable="false"
+        android:text="@string/withdraw_now"
+        android:textSize="16sp" />
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_image_picker_use_photo">புகைப்படத்தைப் பயன்படுத்தவும்</string>
+    <string name="core_image_picker_retake">மீண்டும் எடுக்கவும்</string>
+    <string name="core_image_picker_choose_different">இன்னொன்றைத் தேர்வு செய்யவும்</string>
+    <string name="core_image_picker_upload_photo">புகைப்படத்தைப் பதிவேற்றவும்</string>
+    <string name="core_image_picker_rotate">திருப்பு</string>
+    <string name="core_image_picker_provide_camera_permissions">தயவு செய்து கேமரா அனுமதிகளை வழங்கவும்!!</string>
+    <string name="core_image_picker_take_photo">போட்டோ எடுக்கவும்</string>
+    <string name="core_image_picker_take_selfie">செல்ஃபி எடு</string>
+    <string name="core_image_picker_make_sure_photo_is_visible">உங்கள் போட்டோ தெளிவாக இருப்பதை உறுதிசெய்யவும்.</string>
+    <string name="core_image_picker_place_your_document_inside_the_frame">உங்கள் %s ஐ ஃபிரேமிற்குள் வைக்கவும்.</string>
+    <string name="core_image_picker_pan_card">PANகார்டு</string>
+    <string name="core_image_picker_aadhar_card">ஆதார் கார்டு</string>
+    <string name="core_image_picker_driving_license">டிரைவிங் லைசென்ஸ்</string>
+    <string name="core_image_picker_passport">பாஸ்போர்ட்</string>
+    <string name="core_image_picker_voters_id">வாக்காளர் ஐடி</string>
+    <string name="core_image_picker_make_sure_your_face_is_in_the_frame">ஃபிரேமில் உங்கள் முகம் இருப்பதை உறுதிசெய்யவும்.</string>
+    <string name="core_image_picker_please_make_sure_the_photo_is_clear">தயவு செய்து போட்டோ தெளிவாக இருப்பதை உறுதி செய்து கொள்ளவும்.</string>
+    <string name="core_image_picker_front_side">முன் புறம்</string>
+    <string name="core_image_picker_provide_gallery_permissions">దయచేసి ఫైల్‌లు మరియు మీడియా చూడడానికి అనుమతులను అందించండి!</string>
+    <string name="core_image_picker_document">డాక్యుమెంట్</string>
+    <string name="core_image_picker_powered_by_hyperverge">హైపర్‌వర్జ్ ద్వారా ఆధారితం</string>
+    <string name="core_image_picker_something_went_wrong">ఏదో తప్పు జరిగింది! దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="core_image_picker_preview">ప్రివ్యూ</string>
+    <string name="core_image_picker_document_easy_to_read">మీ పత్రాన్ని చదవడం సులభం కాదా?</string>
+    <string name="core_image_picker_please_make_sure_document_is_clear_and_visible">దయచేసి మీ మొత్తం పత్రం స్పష్టంగా మరియు స్పష్టంగా ఉందని నిర్ధారించుకోండి.</string>
+    <string name="core_image_picker_crop_and_rotate">క్రాప్ చేసి &amp; రొటేట్ చేయండి </string>
+    <string name="core_image_picker_crop_image">ఇమేజ్ ని క్రాప్ చేయండి</string>
+    <string name="core_image_picker_confirm">నిర్ధారించండి </string>
+    <string name="core_image_picker_done">పూర్తయింది</string>
+    <string name="core_image_picker_cancel">రద్దు చేయండి</string>
+    <string name="core_image_picker_retake_photo"><u>ఫోటోను మళ్లీ తీయండి</u></string>
+    <string name="core_image_picker_retake_selfie"><u>సెల్ఫీని మళ్లీ తీయండి</u></string>
+    <string name="core_image_picker_choose_a_different_photo"><u>విభిన్న ఫోటోను ఎంచుకోండి</u></string>
+    <string name="core_image_picker_drag_the_handles_to_crop_the_photo">ఫోటోను క్రాప్ చేయడానికి హ్యాండిల్‌లను లాగండి.</string>
+    <string name="core_image_picker_preview_your_selfie">మీ సెల్ఫీని ప్రివ్యూ చేయండి</string>
+    <string name="core_image_picker_please_check_selfie_is_clear">దయచేసి మీ సెల్ఫీ స్పష్టంగా ఉందో లేదో తనిఖీ చేయండి.</string>
+    <string name="core_image_picker_awesome_click_the_selfie_now">అద్భుతం. ఇప్పుడే సెల్ఫీని క్లిక్ చేయండి.</string>
+    <string name="core_image_picker_provide_permission">అనుమతిని అనుమతించండి</string>
+    <string name="core_image_picker_access_to_your_camera_has_been_prohibited_message"><b>మీ కెమెరాకు యాక్సెస్ నిషేధించబడింది.</b> \n\nదయచేసి మీ ధృవీకరణ ప్రక్రియను కొనసాగించడానికి మీ ఫోన్ కెమెరాను యాక్సెస్ చేయడానికి Jar యాప్‌ని ప్రారంభించండి. </string>
+</resources>

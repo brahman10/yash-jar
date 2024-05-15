@@ -1,0 +1,10 @@
+<resources>
+    <plurals name="feature_settings_round_off_resuming_in">
+        <item quantity="one">Resuming in : %d দিন</item>
+        <item quantity="other">Resuming in : %d দিন</item>
+    </plurals>
+    <plurals name="feature_settings_n_days">
+        <item quantity="one">%d দিন</item>
+        <item quantity="other">%d দিন</item>
+    </plurals>
+</resources>

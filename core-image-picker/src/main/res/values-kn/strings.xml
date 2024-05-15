@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_image_picker_use_photo">ಫೋಟೋ ಬಳಸಿ</string>
+    <string name="core_image_picker_retake">ರೀಟೇಕ್</string>
+    <string name="core_image_picker_choose_different">ವಿಭಿನ್ನವಾಗಿ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="core_image_picker_upload_photo">ಫೋಟೋ ಅಪ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="core_image_picker_rotate">ತಿರುಗಿಸಿ</string>
+    <string name="core_image_picker_provide_camera_permissions">ದಯವಿಟ್ಟು ಕ್ಯಾಮರಾ ಅನುಮತಿಗಳನ್ನು ಒದಗಿಸಿ!!</string>
+    <string name="core_image_picker_take_photo">ಫೋಟೋ ತೆಗೆಯಿರಿ</string>
+    <string name="core_image_picker_take_selfie">ಸೆಲ್ಫಿ ತೆಗೆದುಕೊಳ್ಳಿ</string>
+    <string name="core_image_picker_make_sure_photo_is_visible">ನಿಮ್ಮ ಫೋಟೋ ಕಾಣಿಸುತ್ತಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.</string>
+    <string name="core_image_picker_place_your_document_inside_the_frame">ನಿಮ್ಮ %s ಅನ್ನು ಫ್ರೇಮ್ ಒಳಗೆ ಇರಿಸಿ.</string>
+    <string name="core_image_picker_pan_card">PAN ಕಾರ್ಡ್</string>
+    <string name="core_image_picker_aadhar_card">ಆಧಾರ್ ಕಾರ್ಡ್</string>
+    <string name="core_image_picker_driving_license">ಡ್ರೈವಿಂಗ್ ಲೈಸನ್ಸ್</string>
+    <string name="core_image_picker_passport">ಪಾಸ್ಪೋರ್ಟ್</string>
+    <string name="core_image_picker_voters_id">ವೋಟರ್ ID</string>
+    <string name="core_image_picker_make_sure_your_face_is_in_the_frame">ನಿಮ್ಮ ಮುಖವು ಫ್ರೇಮ್ ನಲ್ಲಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.</string>
+    <string name="core_image_picker_please_make_sure_the_photo_is_clear">ದಯವಿಟ್ಟು ಫೋಟೋ ಸ್ಪಷ್ಟವಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.</string>
+    <string name="core_image_picker_front_side">ಮುಂಭಾಗದ ಭಾಗ</string>
+    <string name="core_image_picker_provide_gallery_permissions">ದಯವಿಟ್ಟು ಫೈಲ್‌ಗಳು ಮತ್ತು ಮೀಡಿಯಾವನ್ನು ಓದುವ ಪರ್ಮಿಷನ್ ಗಳನ್ನು ನೀಡಿ!</string>
+    <string name="core_image_picker_document">ಡಾಕ್ಯುಮೆಂಟ್</string>
+    <string name="core_image_picker_powered_by_hyperverge">ಹೈಪರ್‌ವರ್ಜ್‌ನಿಂದ ನಡೆಸಲ್ಪಡುತ್ತಿದೆ</string>
+    <string name="core_image_picker_something_went_wrong">ಏನೋ ತಪ್ಪಾಗಿದೆ! ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="core_image_picker_preview">ಪ್ರಿವ್ಯೂ ಮಾಡಿ</string>
+    <string name="core_image_picker_document_easy_to_read">ನಿಮ್ಮ ಡಾಕ್ಯುಮೆಂಟ್ ಓದಲು ಸುಲಭವಾಗಿದೆಯೇ?</string>
+    <string name="core_image_picker_please_make_sure_document_is_clear_and_visible">ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಪಷ್ಟವಾಗಿದೆ ಮತ್ತು ಸರಿಯಾಗಿ ಕಾಣಿಸುತ್ತದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.</string>
+    <string name="core_image_picker_crop_and_rotate">ಕ್ರಾಪ್ ಮಾಡಿ &amp; ರೊಟೇಟ್ ಮಾಡಿ </string>
+    <string name="core_image_picker_crop_image">ಇಮೇಜ್ ಅನ್ನು ಕ್ರಾಪ್ ಮಾಡಿ</string>
+    <string name="core_image_picker_confirm">ಕನ್ಫರ್ಮ್ ಮಾಡಿ</string>
+    <string name="core_image_picker_done">ಮುಗಿದಿದೆ</string>
+    <string name="core_image_picker_cancel">ಕ್ಯಾನ್ಸಲ್ ಮಾಡಿ</string>
+    <string name="core_image_picker_retake_photo"><u>ಫೋಟೋವನ್ನು ಪುನಃ ತೆಗೆದುಕೊಳ್ಳಿ</u></string>
+    <string name="core_image_picker_retake_selfie"><u>ಸೆಲ್ಫಿ ಪುನಃ ತೆಗೆದುಕೊಳ್ಳಿ</u></string>
+    <string name="core_image_picker_choose_a_different_photo"><u>ಬೇರೆ ಫೋಟೋ ಆಯ್ಕೆಮಾಡಿ</u></string>
+    <string name="core_image_picker_drag_the_handles_to_crop_the_photo">ಫೋಟೋವನ್ನು ಕ್ರಾಪ್ ಮಾಡಲು ಹ್ಯಾಂಡಲ್‌ಗಳನ್ನು ಎಳೆಯಿರಿ.</string>
+    <string name="core_image_picker_preview_your_selfie">ನಿಮ್ಮ ಸೆಲ್ಫಿಯನ್ನು ಪ್ರಿವ್ಯೂ ಮಾಡಿ</string>
+    <string name="core_image_picker_please_check_selfie_is_clear">ನಿಮ್ಮ ಸೆಲ್ಫಿ ಸ್ಪಷ್ಟವಾಗಿದೆಯೇ ಎಂದು ಚೆಕ್ ಮಾಡಿ.</string>
+    <string name="core_image_picker_awesome_click_the_selfie_now">ಅದ್ಭುತ. ಈಗ ಸೆಲ್ಫಿ ಕ್ಲಿಕ್ ಮಾಡಿ.</string>
+    <string name="core_image_picker_provide_permission">ಪರ್ಮಿಷನ್ ನೀಡಿ</string>
+    <string name="core_image_picker_access_to_your_camera_has_been_prohibited_message"><b>ನಿಮ್ಮ ಕ್ಯಾಮರಾಗೆ ಆಕ್ಸೆಸ್ ನಿಷೇಧಿಸಲಾಗಿದೆ.</b> \n\nನಿಮ್ಮ ವೆರಿಫಿಕೇಷನ್ ಪ್ರೋಸೆಸ್ ಅನ್ನು ಮುಂದುವರಿಸಲು ನಿಮ್ಮ ಫೋನ್ ಕ್ಯಾಮರಾವನ್ನು ಆಕ್ಸೆಸ್ ಮಾಡಲು ದಯವಿಟ್ಟು ಜಾರ್ ಆಪ್ ಅನ್ನು ಎನೇಬಲ್ ಮಾಡಿ. </string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@null"
+    android:scrollbarThumbHorizontal="@null"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/bgColor"
+        android:clipChildren="false">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnChangeLanguage"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/round_black_bg_16dp"
+            android:drawableStart="@drawable/ic_language"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:drawablePadding="12dp"
+            android:minWidth="100dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_min="100dp"
+            tools:text="English" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toTopOf="@id/clContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            app:layout_constraintBottom_toTopOf="@id/barrier"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeaderOne"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invest_your_spare_change"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineHeight="36sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeaderTwo"
+                style="@style/BigTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/feature_transaction_ic_gold_brick"
+                android:drawablePadding="8dp"
+                android:text="@string/in_24k_gold"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeaderOne"
+                app:lineHeight="36sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeaderSecure"
+                style="@style/SmallTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:drawableStart="@drawable/ic_tick_green"
+                android:drawablePadding="8dp"
+                android:text="@string/perc_100_safe_and_secure"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeaderTwo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/spinnerCountryCode"
+            style="@style/BigTextViewStyle"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:translationZ="4dp"
+            app:ccp_arrowSize="26sp"
+            app:ccp_backgroundColor="#F7F7F7"
+            app:ccp_clickable="false"
+            app:ccp_defaultNameCode="in"
+            app:ccp_hideNameCode="true"
+            app:ccp_showFlag="false"
+            app:ccp_textColor="@color/color_282e3d"
+            app:ccp_textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etNumber"
+            app:layout_constraintStart_toStartOf="@+id/etNumber"
+            app:layout_constraintTop_toTopOf="@+id/etNumber" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="etNumber"
+            app:layout_constraintTop_toBottomOf="@id/clContent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNumber"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:autofillHints="phoneNational"
+            android:digits="0123456789"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/enter_phone_number"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="yes"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="90dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="33dp"
+            app:buttonText="@string/next"
+            app:buttonTextAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/tvDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/core_ui_separator"
+            app:layout_constraintBottom_toBottomOf="@id/tvDivider"
+            app:layout_constraintTop_toTopOf="@id/tvDivider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDivider"
+            style="@style/SmallTextViewStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@color/bgColor"
+            android:text="@string/or"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btnLoginWithTruecaller"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.jar.app.core_ui.widget.button.CustomButtonV2
+            android:id="@+id/btnLoginWithTruecaller"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginEnd="65dp"
+            app:buttonText="@string/login_with_truecaller"
+            app:buttonTextAllCaps="false"
+            app:buttonType="secondaryHollowButton"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

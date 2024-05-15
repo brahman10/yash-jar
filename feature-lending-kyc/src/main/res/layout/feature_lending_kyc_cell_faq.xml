@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvTitle"
+    style="@style/CommonBoldTextViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_bg_8dp"
+    android:backgroundTint="@color/color_3c3357"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="20dp"
+    app:drawableEndCompat="@drawable/ic_arrow_forward"
+    tools:text="About KYC" />

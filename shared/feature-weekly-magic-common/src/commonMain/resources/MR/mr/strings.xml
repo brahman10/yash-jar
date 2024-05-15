@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_weekly_magic_common_weekly_magic">साप्ताहिक जादू</string>
+    <string name="feature_weekly_magic_common_get_mystery_card">मिस्ट्री कार्ड मिळवा</string>
+    <string name="feature_weekly_magic_common_save_s_or_more_to_get_a_card">कार्ड मिळवण्यासाठी ₹%s किंवा अधिकची बचत करा</string>
+    <string name="feature_weekly_magic_common_lets_go">चला जाऊया!</string>
+    <string name="feature_weekly_magic_common_one_day_left">1 दिवस बाकी आहे</string>
+    <string name="feature_weekly_magic_common_s_days_left">%s दिवस बाकी आहेत</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in_s">पुढील चॅलेंज %s मध्ये सुरू होईल...</string>
+    <string name="feature_weekly_magic_common_next_challenge_begins_in">पुढील चॅलेंजला....वेळेत सुरुवात होईल</string>
+    <string name="feature_weekly_magic_common_next_challenge_starts_in">पुढील चॅलेंज....वेळेत सुरु होईल</string>
+    <string name="feature_weekly_magic_common_magic_hat">मॅजिक हॅट</string>
+    <string name="feature_weekly_magic_common_is_here">येथे आहे!</string>
+    <string name="feature_weekly_magic_common_you_won_gold_worth">तुम्ही मूल्याचे सोने जिंकले आहे</string>
+    <string name="feature_weekly_magic_common_added_to_your_locker">तुमच्या लॉकरमध्ये जोडले आहेत!</string>
+    <string name="feature_weekly_magic_common_days">दिवस</string>
+    <string name="feature_weekly_magic_common_day">दिवस</string>
+    <string name="feature_weekly_magic_common_show_me">मला दाखवा!</string>
+    <string name="feature_weekly_magic_common_i_ll_check_later">मी नंतर बघेन</string>
+    <string name="feature_weekly_magic_common_omg_you_won_a_mystery_card">बापरे! तुम्ही एक मिस्ट्री कार्ड जिंकले आहे!</string>
+    <string name="feature_weekly_magic_common_on_your_transaction_of">तुमच्या ₹%d च्या ट्रँजॅक्शनवर</string>
+    <string name="feature_weekly_magic_common_gold_purchase_n_successful">सोने खरेदी\nयशस्वी झाली आहे!</string>
+    <string name="feature_weekly_magic_common_you_got">तुम्हाला मिळाले आहेत</string>
+    <string name="feature_weekly_magic_common_n_n_">%d/%d</string>
+    <string name="feature_weekly_magic_common_cards">कार्ड</string>
+    <string name="feature_weekly_magic_common_you_won">तुम्ही जिंकले आहेत!</string>
+    <string name="feature_weekly_magic_common_in_">मध्ये</string>
+    <string name="feature_weekly_magic_common_your_collection_is_complete">तुमचे कलेक्शन पूर्ण झाले आहे!</string>
+    <string name="feature_weekly_magic_common_collect_all_cards_and_win_up_in_gold">सर्व कार्ड्स जमा करा आणि ₹%s पर्यंतचे सोने जिंका!</string>
+    <string name="feature_weekly_magic_common_you_won_a_mystery_card_on_this_transaction">तुम्ही या ट्रँजॅक्शनसाठी एक मिस्ट्री कार्ड जिंकले आहे!</string>
+    <string name="feature_weekly_magic_common_current_challenge">सध्याचे चॅलेंज</string>
+
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_one">नमस्कार, मी आहे मॅजिक हॅट!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_two">…आणि सेव्हिंगला एक आनंद बनवण्यासाठी\n मी हजर आहे!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_one_line_three">तुम्ही कसे का विचारता? \n अर्थातच माझी मॅजिक वापरून!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_one">सेव्ह किंवा ऑटो सेव्ह करा, \n आणि माझी मिस्ट्री कार्ड मिळवा!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_two_line_two">आठवड्याचे सर्व कार्ड्स जमा करा \n &amp; मी तुम्हाला एक आकर्षक रिवॉर्ड्स देईन!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_one">तुमची बचत जितकी मोठी असेल, \n तुमच्यासाठी माझे रिवॉर्ड्स तितके मोठे असेल!</string>
+    <string name="feature_weekly_magic_common_on_boarding_screen_three_line_two">मग तुम्ही कशाची वाट पाहत आहात? \n चला सुरुवात करूया!</string>
+    <string name="feature_weekly_magic_common_hooray">हुर्रे!</string>
+    <string name="feature_weekly_magic_common_click_any_where_to_continue">सुरू ठेवण्यासाठी कुठेही क्लिक करा...</string>
+    <string name="feature_weekly_magic_common_congratulations">अभिनंदन!</string>
+    <string name="feature_weekly_magic_common_challenge_not_found">चॅलेंज सापडले नाही</string>
+    <string name="feature_weekly_magic_common_week_n">आठवडा %s</string>
+    <string name="feature_weekly_magic_common_click_left">डावीकडे दाबा</string>
+    <string name="feature_weekly_magic_common_click_right">उजवीकडे दाबा</string>
+    <string name="feature_weekly_magic_common_feature_description">साप्ताहिक फीचरचे वर्णन</string>
+    <string name="feature_weekly_magic_common_next">पुढील</string>
+    <string name="feature_weekly_magic_common_close">बंद करा</string>
+    <string name="feature_weekly_magic_common_details_not_found">डिटेल्स आढळले नाहीत</string>
+    <string name="feature_weekly_magic_common_people_participated">लोकांनी सहभाग घेतला आहे</string>
+    <string name="feature_weekly_magic_common_worth_of_gold_was_won">किमतीचे सोने जिंकले आहे</string>
+    <string name="feature_weekly_magic_common_collect">कलेक्ट करा</string>
+    <string name="feature_weekly_magic_common_weekly_magic_currency_in_s">\u20B9%s</string>
+</resources>

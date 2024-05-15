@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_simple_toolbar_with_need_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginVertical="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:src="@drawable/core_ui_ic_spinner_new" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCreditReportTitle"
+        style="@style/BigTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="36dp"
+        tools:text="@string/feature_lending_kyc_pan_verification"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIllustration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivQuestionMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvCreditReportTitle"
+        app:layout_constraintStart_toEndOf="@id/tvCreditReportTitle"
+        app:layout_constraintTop_toTopOf="@id/tvCreditReportTitle"
+        app:srcCompat="@drawable/core_ui_ic_custom_question_mark"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        tools:text="@string/feature_lending_kyc_enter_pan_using_one_of_these_methods"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCreditReportTitle" />
+
+    <com.jar.app.core_ui.widget.button.CustomButtonV2
+        android:id="@+id/btnPrimaryAction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        app:buttonText="@string/feature_lending_kyc_use_my_pan_saved_with_jar"
+        app:buttonTextAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/btnSecondaryAction"
+        app:layout_constraintHeight_min="46dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnSecondaryAction"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:text="@string/feature_lending_kyc_enter_pan_manually"
+        android:textColor="@color/color_ACA1D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JarApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/colorAccent</item>
+
+        <!-- App colors. -->
+        <item name="android:statusBarColor">@color/bgColor</item>
+        <item name="android:windowBackground">@color/bgColor</item>
+        <item name="android:navigationBarColor">@color/bgColor</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/inter</item>
+
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.App.DatePicker</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/bgColor</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="ThemeOverlay.App.DatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/bgColor</item>  <!--Header background-->
+        <item name="colorOnPrimary">@color/white</item>  <!--Selected month date year -->
+        <item name="android:textColor">#B0000000</item>  <!--M T W T F S S-->
+        <item name="colorSurface">@color/white</item> <!--Calendar body color-->
+        <item name="android:textColorPrimary">@color/black</item><!-- Text input color. -->
+        <item name="colorOnSurface">@color/black</item> <!--Used to set text color of the calendar body-->
+        <!--Top left body month year color eg:- Feb,2022-->
+        <item name="materialCalendarMonthNavigationButton">@color/black</item>
+        <item name="materialCalendarYearNavigationButton">@color/black</item>
+
+        <!-- Calender Action buttons style. -->
+        <item name="buttonBarPositiveButtonStyle">@style/CalederButton.Style</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CalederButton.Style</item>
+        <item name="rangeFillColor">#337745FF</item>
+    </style>
+
+    <style name="CalederButton.Style" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/color_6200ee</item>
+    </style>
+</resources>

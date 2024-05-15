@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="top"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/ivCellFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_12sp"
+        android:minWidth="@dimen/dimen_12sp"
+        tools:src="@tools:sample/avatars"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/tvCellFooter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:maxLines="3"
+        android:text="Trusted by 2L+ Jar usersdskjfbsbgs kgbskg bwkbgw wkgbjfwg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_12sp"
+        android:lineHeight="@dimen/dimen_16dp"/>
+
+</LinearLayout>
